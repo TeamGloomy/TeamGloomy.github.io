@@ -9,6 +9,7 @@ permalink: mydoc_skr_1.1_connected_wifi.html
 folder: mydoc
 comments: false
 toc: false
+datatable: true
 ---
 
 ## Overview
@@ -41,6 +42,8 @@ The pinout for the SKR v1.1 can be found [here](https://github.com/gloomyandy/Re
 
 The table below shows the pins required on the ESP and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
+<div class="datatable-begin"></div>
+
 | ESP Pin       | SKR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | RST           | 1.31          | 470R            |
@@ -52,6 +55,8 @@ The table below shows the pins required on the ESP and what they are connected t
 | LPC_DATA_Ready/GPIO4   | 1.30          | None            |
 | VIN(5v)   | 5v on EXP1          | None             |
 | GND   | GND on EXP1          | 2200R to RST             |
+
+<div class="datatable-end"></div>
 
 ### Prepare the SD Card
 
@@ -68,7 +73,6 @@ lpc.board = biquskr_1.1
 8266wifi.espDataReadyPin = 2.11
 8266wifi.lpcTfrReadyPin = 1.30
 8266wifi.espResetPin = 1.31
-adc.prefilter.enable = true
 ```
 
 ### Final Setup

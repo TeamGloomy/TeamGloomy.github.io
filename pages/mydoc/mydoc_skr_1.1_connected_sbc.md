@@ -9,6 +9,7 @@ permalink: mydoc_skr_1.1_connected_sbc.html
 folder: mydoc
 comments: false
 toc: false
+datatable: true
 ---
 
 ## Overview
@@ -39,6 +40,8 @@ The pinout for the SKR can be found [here](https://github.com/gloomyandy/RepRapF
 
 The table below shows the pins required on the SBC and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
+<div class="datatable-begin"></div>
+
 | SBC Pin       | SKR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | 23/BCM11/SPI0 Clk           | 0.15          | 100R            |
@@ -47,6 +50,8 @@ The table below shows the pins required on the SBC and what they are connected t
 | 24/BCM8/SPIO CE0   | 0.16          | 100R             |
 | 22/BCM25  | 1.31          | 100R             |
 | 6/GND   | GND on EXP1          | None             |
+
+<div class="datatable-end"></div>
 
 Don't power the raspberry pi from the SKR. Either us a 12/24v to 5v step down transformer or power the pi from the micro usb or usb-c port.
 
@@ -58,7 +63,6 @@ All the SD card on the SKR v1.1 needs is the board.txt file with the following c
 //Config for BIQU SKR v1.1
 lpc.board = biquskr_1.1
 sbc.lpcTfrReadyPin = 1.31
-adc.prefilter.enable =true
 ```
 
 Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the SKR v1.1.   
