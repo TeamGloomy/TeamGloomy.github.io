@@ -68,12 +68,16 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Getting Connected
-      url: /mydoc_install_jekyll_on_mac.html
+    - title: Connecting via WiFi
+      url: /mydoc_skr_1.1_connected_wifi.html
+      output: web, pdf
+
+    - title: Connecting via SBC
+      url: /mydoc_skr_1.1_connected_sbc.html
       output: web, pdf
 
     - title: Pin Names
-      url: /mydoc_install_jekyll_on_windows.html
+      url: /mydoc_skr_1.1_pins.html
       output: web, pdf
 
   - title: SKR 1.3
