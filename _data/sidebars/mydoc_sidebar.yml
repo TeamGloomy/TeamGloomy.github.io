@@ -23,25 +23,33 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Get started
+    - title: Homepage
       url: /index.html
       output: web, pdf
       type: homepage
 
-    - title: Introduction
-      url: /mydoc_introduction.html
+    - title: Getting Started
+      url: /mydoc_getting_started.html
       output: web, pdf
 
-    - title: Supported features
-      url: /mydoc_supported_features.html
+    - title: Supported Boards and Drivers
+      url: /mydoc_supported_boards.html
       output: web, pdf
 
-    - title: About the theme author
-      url: /mydoc_about.html
+    - title: Differents to Duet3D's Version
+      url: /mydoc_differences.html
       output: web, pdf
 
-    - title: Support
+    - title: Getting Support
       url: /mydoc_support.html
+      output: web, pdf
+
+    - title: FAQ
+      url: /mydoc_faq.html
+      output: web, pdf
+
+    - title: TeamGloomy
+      url: /mydoc_TeamGloomy.html
       output: web, pdf
 
   - title: Release Notes
