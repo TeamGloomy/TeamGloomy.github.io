@@ -76,6 +76,19 @@ entries:
       url: /mydoc_fly_cdy_pins.html
       output: web, pdf
 
+  - title: MKS Sbase v1.3
+    output: web, pdf
+    folderitems:
+
+    - title: Connecting via WiFi
+      url: /mydoc_mks_sbase_connected_wifi.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: /mydoc_mks_sbase_pins.html
+      output: web, pdf
+
+
   - title: SKR v1.1
     output: web, pdf
     folderitems:
