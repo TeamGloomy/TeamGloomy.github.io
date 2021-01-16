@@ -96,14 +96,34 @@ entries:
       url: /mydoc_skr_1.3_pins.html
       output: web, pdf
 
-  - title: SKR 1.4
+  - title: SKR v1.4 and v1.4T
     output: web, pdf
-
     folderitems:
-    - title: Getting Connected
-      url: /mydoc_adding_tooltips.html
+
+    - title: Connecting via WiFi
+      url: /mydoc_skr_1.4_connected_wifi.html
+      output: web, pdf
+
+    - title: Connecting via SBC
+      url: /mydoc_skr_1.4_connected_sbc.html
       output: web, pdf
 
     - title: Pin Names
-      url: /mydoc_alerts.html
+      url: /mydoc_skr_1.4_pins.html
+      output: web, pdf
+
+  - title: SKR E3 Turbo 
+  output: web, pdf
+  folderitems:
+
+    - title: Connecting via WiFi
+      url: /mydoc_skr_E3T_connected_wifi.html
+      output: web, pdf
+
+    - title: Connecting via SBC
+      url: /mydoc_skr_E3T_connected_sbc.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: /mydoc_skr_E3T_pins.html
       output: web, pdf

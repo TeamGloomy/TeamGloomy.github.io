@@ -1,9 +1,9 @@
 ---
-title: Connecting an SKR v1.3 via SBC
+title: Connecting an SKR v1.4 and v1.4T via SBC
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "Connecting an SKR v1.3 via SBC"
+summary: "Connecting an SKR v1.4 and v1.4T via SBC"
 sidebar: mydoc_sidebar
 permalink: mydoc_skr_1.3_connected_sbc.html
 folder: mydoc
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The SKR 1.3 is an LPC1768 based board.
+The SKR 1.4 is an LPC1768 based board and the v1.4T is an LPC1769 based board. They have the same pinout etc, only the MCU (micro controller unit) is different. All tasks are applicable to both the SKR v1.4 and SKR v1.4T.
 
 ## Firmware File
 
@@ -33,7 +33,7 @@ Follow the instructions detailed [here](https://github.com/gloomyandy/RepRapFirm
 * 5 x 100R resistor
 * jumpers or other ways of connecting to the SKR
 
-### Connecting the SBC to the SKR v1.3
+### Connecting the SBC to the SKR v1.4 and v1.4T
 
 The pinout for the SKR can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/blob/master/BTT%20SKR%20V1.4/Hardware/BTT%20SKR%20V1.4PIN.pdf) and the schematic for the Duet 3 for reference can be found [here](https://github.com/Duet3D/Duet3-Mainboard-6HC/blob/master/Duet3_Mainboard_v1.0/Duet3_MB_schematic_v1.0.pdf). The raspberry pi GPIO pinout can be found [here](https://www.google.com/search?q=raspberry+pi+gpio+pinout&rlz=1C1CHBD_en-GBGB889GB889&sxsrf=ALeKk01CVlA8N_CGAQqQGp-7_N3pXiV0LA:1586203613303&source=lnms&tbm=isch&sa=X&ved=2ahUKEwid56X3zNToAhXSURUIHX3IAnkQ_AUoAXoECA0QAw&biw=1920&bih=937). 
 
@@ -52,18 +52,18 @@ The table below shows the pins required on the SBC and what they are connected t
 
 <div class="datatable-end"></div>
 
-{% include image.html file="skr_1.3_sbc.jpg" alt="SKR v1.3 SBC" caption="SKR v1.3 to SBC" %} 
+{% include image.html file="skr_1.3_sbc.jpg" alt="SKR v1.4 SBC" caption="SKR v1.4 to SBC" %} 
 Image created by [teaching tech](https://www.youtube.com/channel/UCbgBDBrwsikmtoLqtpc59Bw)
 
 Don't power the raspberry pi from the SKR. Either us a 12/24v to 5v step down transformer or power the pi from the micro usb or usb-c port.
 
 ### Prepare the SD Card
 
-All the SD card on the SKR v1.3 needs is the board.txt file with the following contents.
+All the SD card on the SKR v1.4 needs is the board.txt file with the following contents.
 
 ```
-//Config for BIQU SKR v1.3
-lpc.board = biquskr_1.3
+//Config for BIQU SKR v1.4
+lpc.board = biquskr_1.4
 sbc.lpcTfrReadyPin = 1.31
 ```
 
@@ -79,7 +79,7 @@ stepper.TmcDiagPins = {1.29, 1.28, 1.27, 1.26, 1.25}
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.28 in your board.txt file.
 
-Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the SKR v1.3.   
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the SKR v1.4.   
 
 ### Finally...
 
