@@ -40,7 +40,7 @@ Three components need to be removed from the board using a soldering iron.
 They are R39, R42 and C32 and can be found next to the Xmin endstop.
 Once removed, R42 (the bottom one) should be bridged. I used a small piece of wire.
 Below is a photo of a modified board.
-{% include image.html file="mks_sbase_mod.png" alt="MKS Sbase MOD" caption="MKS Sbase Modification" %}
+{% include image.html file="mks_sbase_mod.jpg" alt="MKS Sbase MOD" caption="MKS Sbase Modification" %}
 
 ### BOM
 
