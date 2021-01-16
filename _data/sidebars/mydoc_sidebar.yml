@@ -36,10 +36,6 @@ entries:
       url: /mydoc_supported_boards.html
       output: web, pdf
 
-    - title: Differents to Duet3D's Version
-      url: /mydoc_differences.html
-      output: web, pdf
-
     - title: Getting Support
       url: /mydoc_support.html
       output: web, pdf
@@ -64,122 +60,155 @@ entries:
       url: /mydoc_release_notes_3.2_RC2.html
       output: web, pdf
 
-  - title: Fly-CDY
+  - title: LPC Boards
     output: web, pdf
     folderitems:
 
-    - title: Connecting via WiFi
-      url: /mydoc_fly_cdy_connected_wifi.html
+    - title: LPC Firmware Restrictions
+      url: /mydoc_differences.html
       output: web, pdf
 
-    - title: Pin Names
-      url: /mydoc_fly_cdy_pins.html
+    - title: Configuring an ESP8266 for LPC Boards
+      url: /mydoc_lpc_esp.html
       output: web, pdf
 
-  - title: MKS Sbase v1.3
-    output: web, pdf
-    folderitems:
-
-    - title: Connecting via WiFi
-      url: /mydoc_mks_sbase_connected_wifi.html
+    - title: Configuring an SBC for LPC Boards
+      url: /mydoc_lpc_sbc.html
       output: web, pdf
 
-    - title: Pin Names
-      url: /mydoc_mks_sbase_pins.html
-      output: web, pdf
+      subfolders:  
+      - title: Fly-CDY
+        output: web, pdf
+        subfolderitems:
 
-  - title: MKS SGen L v1.0
-    output: web, pdf
-    folderitems:
+        - title: Connecting via WiFi
+          url: /mydoc_fly_cdy_connected_wifi.html
+          output: web, pdf
 
-    - title: Connecting via WiFi
-      url: /mydoc_mks_sgen_l_1_connected_wifi.html
-      output: web, pdf
+        - title: Pin Names
+          url: /mydoc_fly_cdy_pins.html
+          output: web, pdf
 
-    - title: Connecting via SBC
-      url: /mydoc_mks_sgen_l_1_connected_sbc.html
-      output: web, pdf
+      - title: MKS Sbase v1.3
+        output: web, pdf
+        subfolderitems:
 
-    - title: Pin Names
-      url: /mydoc_mks_sgen_l_1_pins.html
-      output: web, pdf
+        - title: Connecting via WiFi
+          url: /mydoc_mks_sbase_connected_wifi.html
+          output: web, pdf
 
-  - title: MKS SGen L v2.0
-    output: web, pdf
-    folderitems:
+        - title: Pin Names
+          url: /mydoc_mks_sbase_pins.html
+          output: web, pdf
 
-    - title: Connecting via WiFi
-      url: /mydoc_mks_sgen_l_2_connected_wifi.html
-      output: web, pdf
+      - title: MKS SGen L v1.0
+        output: web, pdf
+        subfolderitems:
 
-    - title: Connecting via SBC
-      url: /mydoc_mks_sgen_l_2_connected_sbc.html
-      output: web, pdf
+        - title: Connecting via WiFi
+          url: /mydoc_mks_sgen_l_1_connected_wifi.html
+          output: web, pdf
 
-    - title: Pin Names
-      url: /mydoc_mks_sgen_l_2_pins.html
-      output: web, pdf
+        - title: Connecting via SBC
+          url: /mydoc_mks_sgen_l_1_connected_sbc.html
+          output: web, pdf
 
-  - title: SKR v1.1
-    output: web, pdf
-    folderitems:
+        - title: Pin Names
+          url: /mydoc_mks_sgen_l_1_pins.html
+          output: web, pdf
 
-    - title: Connecting via WiFi
-      url: /mydoc_skr_1.1_connected_wifi.html
-      output: web, pdf
+      - title: MKS SGen L v2.0
+        output: web, pdf
+        subfolderitems:
 
-    - title: Connecting via SBC
-      url: /mydoc_skr_1.1_connected_sbc.html
-      output: web, pdf
+        - title: Connecting via WiFi
+          url: /mydoc_mks_sgen_l_2_connected_wifi.html
+          output: web, pdf
 
-    - title: Pin Names
-      url: /mydoc_skr_1.1_pins.html
-      output: web, pdf
+        - title: Connecting via SBC
+          url: /mydoc_mks_sgen_l_2_connected_sbc.html
+          output: web, pdf
 
-  - title: SKR v1.3
-    output: web, pdf
-    folderitems:
+        - title: Pin Names
+          url: /mydoc_mks_sgen_l_2_pins.html
+          output: web, pdf
 
-    - title: Connecting via WiFi
-      url: /mydoc_skr_1.3_connected_wifi.html
-      output: web, pdf
+      - title: Re-Arm
+        output: web, pdf
+        subfolderitems:
 
-    - title: Connecting via SBC
-      url: /mydoc_skr_1.3_connected_sbc.html
-      output: web, pdf
+        - title: Connecting via WiFi
+          url: /mydoc_re_arm_connected_wifi.html
+          output: web, pdf
 
-    - title: Pin Names
-      url: /mydoc_skr_1.3_pins.html
-      output: web, pdf
+        - title: Connecting via SBC
+          url: /mydoc_re_arm_connected_sbc.html
+          output: web, pdf
 
-  - title: SKR v1.4 and v1.4T
-    output: web, pdf
-    folderitems:
+        - title: Pin Names
+          url: /mydoc_re_arm_pins.html
+          output: web, pdf
 
-    - title: Connecting via WiFi
-      url: /mydoc_skr_1.4_connected_wifi.html
-      output: web, pdf
+      - title: SKR v1.1
+        output: web, pdf
+        subfolderitems:
 
-    - title: Connecting via SBC
-      url: /mydoc_skr_1.4_connected_sbc.html
-      output: web, pdf
+        - title: Connecting via WiFi
+          url: /mydoc_skr_1.1_connected_wifi.html
+          output: web, pdf
 
-    - title: Pin Names
-      url: /mydoc_skr_1.4_pins.html
-      output: web, pdf
+        - title: Connecting via SBC
+          url: /mydoc_skr_1.1_connected_sbc.html
+          output: web, pdf
 
-  - title: SKR E3 Turbo
-    output: web, pdf
-    folderitems:
+        - title: Pin Names
+          url: /mydoc_skr_1.1_pins.html
+          output: web, pdf
 
-    - title: Connecting via WiFi
-      url: /mydoc_skr_E3T_connected_wifi.html
-      output: web, pdf
+      - title: SKR v1.3
+        output: web, pdf
+        subfolderitems:
 
-    - title: Connecting via SBC
-      url: /mydoc_skr_E3T_connected_sbc.html
-      output: web, pdf
+        - title: Connecting via WiFi
+          url: /mydoc_skr_1.3_connected_wifi.html
+          output: web, pdf
 
-    - title: Pin Names
-      url: /mydoc_skr_E3T_pins.html
-      output: web, pdf
+        - title: Connecting via SBC
+          url: /mydoc_skr_1.3_connected_sbc.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /mydoc_skr_1.3_pins.html
+          output: web, pdf
+
+      - title: SKR v1.4 and v1.4T
+        output: web, pdf
+        subfolderitems:
+
+        - title: Connecting via WiFi
+          url: /mydoc_skr_1.4_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting via SBC
+          url: /mydoc_skr_1.4_connected_sbc.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /mydoc_skr_1.4_pins.html
+          output: web, pdf
+
+      - title: SKR E3 Turbo
+        output: web, pdf
+        subfolderitems:
+
+        - title: Connecting via WiFi
+          url: /mydoc_skr_E3T_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting via SBC
+          url: /mydoc_skr_E3T_connected_sbc.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /mydoc_skr_E3T_pins.html
+          output: web, pdf

@@ -1,9 +1,9 @@
 ---
-title: Differents to Duet3D's Version
+title: LPC Firmware Restrictions
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "Differences to RepRapFirmware available on Duet3D hardware"
+summary: "Restrictions in the LPC firmware compared to RepRapFirmware available on Duet3D hardware"
 sidebar: mydoc_sidebar
 permalink: mydoc_differences.html
 folder: mydoc
@@ -11,7 +11,7 @@ comments: false
 toc: false
 ---
 
-# Differences to [Duet3D's RepRapFirmware](https://github.com/Duet3D/RepRapFirmware) - Applicable to the LPC Build only
+## Differences to [Duet3D's RepRapFirmware](https://github.com/Duet3D/RepRapFirmware)
 
 The CPUs targeted in this port only have 64K RAM which is less than those that run dc42s RepRapFirmware. Further, there is also some differences between the CPUs, and the following outlines the main differences in this port:  
 * A maximum of 4 files can be open at a time.
