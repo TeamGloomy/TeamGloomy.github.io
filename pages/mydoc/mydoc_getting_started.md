@@ -15,12 +15,14 @@ To run this on a supported LPC or STM32 based board, a number of items are requi
 
 ## Firmware
 A copy of the firmware is required and can be found [here](https://github.com/gloomyandy/RepRapFirmware/releases) (remember to rename it to just firmware.bin). This is placed on the root of the SD card and is flashed to the board on first boot of the device.  
-There are two versions of the firmware:  
-* Wifi
-* SBC
+There are four versions of the firmware:  
+* LPC-Wifi
+* LPC-SBC
+* STM32F4-Wifi
+* STM32F4-SBC
 
 ### Wifi
-This version is for use on board that are going to be used with a wifi connection. Information can be found on the corresponding boards page.  
+This version is for use on boards that are going to be used with a wifi connection. Information can be found on the corresponding boards page.  
 
 ### SBC
 This version uses an SBC (Single Board Computer) such as a raspberry pi to serve up the webpage, allowing both an ethernet or wifi connection. This acts in the same way as the new Duet 3 + SBC. Information can be found on the corresponding boards page.  
@@ -30,7 +32,7 @@ The SD Card structure as detailed [here](https://duet3d.dozuki.com/Wiki/Firmware
 This is applicable only to wifi and ethernet versions of the firmware.  
 
 ## DuetWebControl
-The standard version of DuetWebControl is now fully compatible with the LPC port.  
+The standard version of DuetWebControl (DWC) is now fully compatible with the LPC port.  
 It can be found [here](https://github.com/Duet3D/DuetWebControl/releases).  
 
 ## Configuration Files

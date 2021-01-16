@@ -1,11 +1,11 @@
 ---
-title: Connecting a Fly-CDY via Wifi
+title: Connecting a Fly-E3 via Wifi
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "Connecting a Fly-CDY via Wifi"
+summary: "Connecting a Fly-E3 via Wifi"
 sidebar: mydoc_sidebar
-permalink: mydoc_fly_cdy_connected_wifi.html
+permalink: mydoc_fly_e3_connected_wifi.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,22 +14,16 @@ datatable: true
 
 ## Overview
 
-The Fly-CDY is an LPC1769 based board.  
+The Fly-E3 is an STM32F407ZGT6 based board.  
 This board is very unique in that it has been created as a reprapfirmware board first and foremost.  
 That means than unlike other LPC based board, an ESP8266 has been provided on board, no adapter required.  
 
-## Board Preparation
-
-Certain jumpers are required to be fitted to the board before the onboard wifi module can be used.  
-Make sure your jumper arrangement matches the following image.  
-{% include image.html file="fly_cdy_jumpers.png" alt="Fly-CDY Jumpers" caption="Fly-CDY WiFi Jumpers" %}
-
 ## Flashing the board firmware
 
-Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin.  Put it in the root of the SD card.  
+Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
 
 ## WiFi firmware preparation
-Choose the correct corresponding firmware (DuetWiFiServer-lpc.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  
+Choose the correct corresponding firmware (DuetWiFiServer-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  
 
 ### Prepare the SD Card
 
@@ -40,13 +34,13 @@ Follow the instructions on [Getting Started with RRF3](https://github.com/gloomy
 You will also need a board.txt file in the sys folder. Below are the contents that should be used.
 
 ```
-//Config for fly-CDY
-lpc.board = fly_cdy
+//Config for fly-E3
+lpc.board = fly_e3
 //wifi pins
-8266wifi.espDataReadyPin = 0.28;
-8266wifi.lpcTfrReadyPin = 2.7;
-8266wifi.espResetPin = 2.6;
-8266wifi.serialRxTxPins = { 0.1, 0.0 } ;
+8266wifi.espDataReadyPin = E.13;
+8266wifi.lpcTfrReadyPin = E.14;
+8266wifi.espResetPin = E.15;
+8266wifi.serialRxTxPins = { D.9, D.8 } ;
 ```
 
 If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
@@ -57,9 +51,9 @@ Where X is the number of drivers fitted. The drivers must be continuous and star
 
 If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
 ```
-stepper.TmcDiagPins = {1.29, 1.28, 1.27, 1.25, 1.22, 1.19}
+stepper.TmcDiagPins = {A.2, A.1, C.5}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.28 in your board.txt file.
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.2 and A.1 in your board.txt file.
 
 ### Config.g adjustments
 
@@ -75,7 +69,6 @@ M997 S1
 ```
 Wait for the uploading of the wifi firmware to finish. Then send the following
 ```
-M552 S-1
 M552 S0
 M587 S"your SSID" P"your password"
 M552 S1

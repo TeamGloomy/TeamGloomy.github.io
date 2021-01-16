@@ -65,7 +65,7 @@ entries:
     folderitems:
 
     - title: LPC Firmware Restrictions
-      url: /mydoc_differences.html
+      url: /mydoc_lpc_differences.html
       output: web, pdf
 
     - title: Configuring an ESP8266 for LPC Boards
@@ -211,4 +211,81 @@ entries:
 
         - title: Pin Names
           url: /mydoc_skr_E3T_pins.html
+          output: web, pdf
+
+  - title: STM32 Boards
+    output: web, pdf
+    folderitems:
+
+    - title: STM32 Firmware Restrictions
+      url: /mydoc_stm32_differences.html
+      output: web, pdf
+
+    - title: Configuring an ESP8266 for STM32 Boards
+      url: /mydoc_stm32_esp.html
+      output: web, pdf
+
+    - title: Configuring an SBC for STM32 Boards
+      url: /mydoc_stm32_sbc.html
+      output: web, pdf
+
+      subfolders:  
+      - title: Fly-407ZG
+        output: web, pdf
+        subfolderitems:
+
+        - title: Connecting via WiFi
+          url: /mydoc_fly_407zg_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting via SBC
+          url: /mydoc_fly_407zg_connected_sbc.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /mydoc_fly_407zg_pins.html
+          output: web, pdf
+
+      - title: Fly-E3
+        output: web, pdf
+        subfolderitems:
+
+        - title: Connecting via WiFi
+          url: /mydoc_fly_e3_connected_wifi.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /mydoc_fly_e3_pins.html
+          output: web, pdf
+
+      - title: GTR + M5
+        output: web, pdf
+        subfolderitems:
+
+        - title: Connecting via WiFi
+          url: /mydoc_gtr_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting via SBC
+          url: /mydoc_gtr_connected_sbc.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /mydoc_gtr_pins.html
+          output: web, pdf
+
+      - title: SKR Pro v1.1 and v1.2
+        output: web, pdf
+        subfolderitems:
+
+        - title: Connecting via WiFi
+          url: /mydoc_skr_pro_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting via SBC
+          url: /mydoc_skr_pro_connected_sbc.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /mydoc_skr_pro_pins.html
           output: web, pdf
