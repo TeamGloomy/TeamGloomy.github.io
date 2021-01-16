@@ -64,7 +64,7 @@ entries:
       url: /mydoc_release_notes_3.2_RC2.html
       output: web, pdf
 
-  - title: SKR 1.1
+  - title: SKR v1.1
     output: web, pdf
     folderitems:
 
@@ -80,16 +80,20 @@ entries:
       url: /mydoc_skr_1.1_pins.html
       output: web, pdf
 
-  - title: SKR 1.3
+  - title: SKR v1.3
     output: web, pdf
-
     folderitems:
-    - title: Getting Connected
-      url: /mydoc_pages.html
+
+    - title: Connecting via WiFi
+      url: /mydoc_skr_1.3_connected_wifi.html
+      output: web, pdf
+
+    - title: Connecting via SBC
+      url: /mydoc_skr_1.3_connected_sbc.html
       output: web, pdf
 
     - title: Pin Names
-      url: /mydoc_posts.html
+      url: /mydoc_skr_1.3_pins.html
       output: web, pdf
 
   - title: SKR 1.4

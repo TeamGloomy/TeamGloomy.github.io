@@ -1,9 +1,9 @@
 ---
-title: Connecting an SKR 1.1 via SBC
+title: Connecting an SKR v1.1 via SBC
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "Connecting an SKR 1.1 via SBC"
+summary: "Connecting an SKR v1.1 via SBC"
 sidebar: mydoc_sidebar
 permalink: mydoc_skr_1.1_connected_sbc.html
 folder: mydoc
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The SKR 1.1 is an LPC1768 based board.
+The SKR v1.1 is an LPC1768 based board.
 
 ## Firmware File
 
@@ -27,7 +27,6 @@ Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4
 ### Prepare the Raspberry Pi
 
 Follow the instructions detailed [here](https://github.com/gloomyandy/RepRapFirmware/wiki/SBC-LPC-Stable) for Stable builds
-Follow the instructions detailed [here](https://github.com/gloomyandy/RepRapFirmware/wiki/SBC-LPC-Unstable) for Unstable/Beta builds
 
 ### BOM
 
@@ -49,7 +48,7 @@ The table below shows the pins required on the SBC and what they are connected t
 | 19/BCM10/SPI0 Mosi   | 0.18          | 100R             |
 | 24/BCM8/SPIO CE0   | 0.16          | 100R             |
 | 22/BCM25  | 1.31          | 100R             |
-| 6/GND   | GND on EXP1          | None             |
+| 20/GND   | GND on EXP1          | None             |
 
 <div class="datatable-end"></div>
 
