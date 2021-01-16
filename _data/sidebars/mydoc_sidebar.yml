@@ -112,9 +112,9 @@ entries:
       url: /mydoc_skr_1.4_pins.html
       output: web, pdf
 
-  - title: SKR E3 Turbo 
-  output: web, pdf
-  folderitems:
+  - title: SKR E3 Turbo
+    output: web, pdf
+    folderitems:
 
     - title: Connecting via WiFi
       url: /mydoc_skr_E3T_connected_wifi.html
