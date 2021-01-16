@@ -64,6 +64,18 @@ entries:
       url: /mydoc_release_notes_3.2_RC2.html
       output: web, pdf
 
+  - title: Fly-CDY
+    output: web, pdf
+    folderitems:
+
+    - title: Connecting via WiFi
+      url: /mydoc_fly_cdy_connected_wifi.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: /mydoc_fly_cdy_pins.html
+      output: web, pdf
+
   - title: SKR v1.1
     output: web, pdf
     folderitems:
