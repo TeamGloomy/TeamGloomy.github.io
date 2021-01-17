@@ -206,6 +206,10 @@ entries:
           url: /mydoc_mks_sgen_l_2_screen.html
           output: web, pdf
 
+        - title: Connecting a BLTouch
+          url: /mydoc_mks_sgen_l_2_bltouch.html
+          output: web, pdf
+
         - title: Pin Names
           url: /mydoc_mks_sgen_l_2_pins.html
           output: web, pdf
