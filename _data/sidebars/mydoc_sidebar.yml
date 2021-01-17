@@ -85,6 +85,10 @@ entries:
           url: /mydoc_fly_cdy_connected_wifi.html
           output: web, pdf
 
+        - title: Connecting a Screen
+          url: /mydoc_fly_cdy_screen.html
+          output: web, pdf
+
         - title: Pin Names
           url: /mydoc_fly_cdy_pins.html
           output: web, pdf
@@ -246,6 +250,10 @@ entries:
           url: /mydoc_fly_407zg_connected_sbc.html
           output: web, pdf
 
+        - title: Connecting a Screen
+          url: /mydoc_fly_407zg_screen.html
+          output: web, pdf
+
         - title: Pin Names
           url: /mydoc_fly_407zg_pins.html
           output: web, pdf
@@ -256,6 +264,10 @@ entries:
 
         - title: Connecting via WiFi
           url: /mydoc_fly_e3_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /mydoc_fly_e3_screen.html
           output: web, pdf
 
         - title: Pin Names
@@ -272,6 +284,10 @@ entries:
 
         - title: Connecting via SBC
           url: /mydoc_gtr_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /mydoc_gtr_screen.html
           output: web, pdf
 
         - title: Pin Names
