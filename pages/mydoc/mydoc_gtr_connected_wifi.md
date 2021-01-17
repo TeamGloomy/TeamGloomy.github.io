@@ -18,11 +18,11 @@ The GTR is an STM32F407ZGT6 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin
+Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
 
 ## Wifi
 
-I’ve used a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
+Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
 If you would prefer a PCB connected to the board, user PCR has created a wifi board for the SKR GTR v1.0. It can be purchased on tindie [here](https://www.tindie.com/products/21169/)  
 
@@ -32,21 +32,21 @@ If you would prefer a PCB connected to the board, user PCR has created a wifi bo
 * 3 x 47R resistor
 * 1 x 470R resistor
 * 3 x 2200R resistor
-* jumpers or other ways of connecting to the SKR
+* jumpers or other ways of connecting to the GTR
 
 ### Preparing the ESP
 
-Follow the instructions [here](https://github.com/gloomyandy/RepRapFirmware/wiki/ESP8266-LPC).
+Follow the instructions [here](mydoc_stm32_esp.html).
 
 ### Connecting the ESP
 
-The pinout for the SKR GTR v1.0 can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+The pinout for the GTR can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
 
 The table below shows the pins required on the ESP8266 and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
 <div class="datatable-begin"></div>
 
-| ESP Pin       | SKR Pin       | Resistor Value  |
+| ESP Pin       | GTR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | RST           | PB10          | 470R            |
 | CS/GPIO15     | PB12          | 2200R           |
@@ -78,11 +78,11 @@ lpc.board = biqugtr_1.0
 8266wifi.espResetPin = B.10
 ```
 
-If using TMC22XX drivers (thats either the TMC2208 or TMC2209), the following line must also be added to the board.txt file
+If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
-Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.
+Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the GTR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.
 
 {% include warning.html content="The GTR sensorless homing jumpers don't do anything so if you don't want to use sensorless homing and use normal endstops, you will have to remove the diag pin from your drivers - [Evidence](https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/issues/12)" %}
 
@@ -102,7 +102,7 @@ M587 S"your SSID" P"your password"
 M552 S1
 ```
 
-**DO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks).
+{% include warning.html content="**DO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. <br/>  If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks)." %}
 
 The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 

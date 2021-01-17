@@ -18,11 +18,11 @@ The SKR v1.3 is an LPC1768 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin
+Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
 
 ## Wifi
 
-I’ve used a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
+Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
 If you would prefer a PCB connected to the board, user PCR has created a wifi board for the SKR v1.3. It can be purchased on tindie [here](https://www.tindie.com/products/pcr/reprapfirmware-wifi-adapterboard-for-skr1314/) 
 
@@ -36,11 +36,11 @@ If you would prefer a PCB connected to the board, user PCR has created a wifi bo
 
 ### Preparing the ESP
 
-Follow the instructions [here](https://github.com/gloomyandy/RepRapFirmware/wiki/ESP8266-LPC).
+Follow the instructions [here](mydoc_lpc_esp.html).
 
 ### Connecting the ESP
 
-The pinout for the SKR v1.3 can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/blob/master/BTT%20SKR%20V1.4/Hardware/BTT%20SKR%20V1.4PIN.pdf) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+The pinout for the SKR v1.3 can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/blob/master/BTT%20SKR%20V1.3/hardware/SKR-V1.3-PIN.pdf) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
 
 The table below shows the pins required on the ESP8266 and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
@@ -77,7 +77,7 @@ lpc.board = biquskr_1.3
 8266wifi.espResetPin = 1.31
 ```
 
-If using TMC22XX drivers (thats either the TMC2208 or TMC2209), the following line must also be added to the board.txt file
+If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
@@ -99,7 +99,7 @@ M587 S"your SSID" P"your password"
 M552 S1
 ```
 
-**DO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks).
+{% include warning.html content="**DO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. <br/>  If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks)." %}
 
 The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 

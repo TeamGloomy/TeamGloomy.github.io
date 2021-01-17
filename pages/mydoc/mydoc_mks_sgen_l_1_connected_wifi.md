@@ -22,7 +22,7 @@ Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [h
 
 ## Wifi
 
-I’ve used a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
+Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
 ### BOM
 
@@ -34,7 +34,7 @@ I’ve used a nodemcu ESP8266 with USB programming as it already 5v tolerant and
 
 ### Preparing the ESP
 
-Follow the instructions [here](https://github.com/gloomyandy/RepRapFirmware/wiki/ESP8266-LPC).
+Follow the instructions [here](mydoc_lpc_esp.html).
 
 ### Connecting the ESP
 
@@ -75,7 +75,7 @@ lpc.board = mkssgenl_1.0
 8266wifi.espResetPin = 1.31
 ```
 
-If using TMC22XX drivers (thats either the TMC2208 or TMC2209), the following line must also be added to the board.txt file
+If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
@@ -97,7 +97,7 @@ M587 S"your SSID" P"your password"
 M552 S1
 ```
 
-**DO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks).
+{% include warning.html content="**DO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. <br/>  If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks)." %}
 
 The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 

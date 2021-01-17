@@ -18,7 +18,7 @@ The SKR 1.4 is an LPC1768 based board and the v1.4T is an LPC1769 based board. T
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin
+Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
 
 ## SBC
 
@@ -26,7 +26,7 @@ Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4
 
 ### Prepare the Raspberry Pi
 
-Follow the instructions detailed [here](https://github.com/gloomyandy/RepRapFirmware/wiki/SBC-LPC-Stable) for Stable builds
+Follow the instructions detailed [here](mydoc_lpc_sbc.html).
 
 ### BOM
 
@@ -67,7 +67,7 @@ lpc.board = biquskr_1.4
 sbc.lpcTfrReadyPin = 1.31
 ```
 
-If using TMC22XX drivers (thats either the TMC2208 or TMC2209), the following line must also be added to the board.txt file
+If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```

@@ -14,11 +14,11 @@ datatable: true
 
 ## Overview
 
-The SKR 1.3 is an LPC1768 based board.
+The SKR v1.3 is an LPC1768 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin
+Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
 
 ## SBC
 
@@ -26,7 +26,7 @@ Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4
 
 ### Prepare the Raspberry Pi
 
-Follow the instructions detailed [here](https://github.com/gloomyandy/RepRapFirmware/wiki/SBC-LPC-Stable) for Stable builds
+Follow the instructions detailed [here](mydoc_lpc_sbc.html).
 
 ### BOM
 
@@ -35,7 +35,7 @@ Follow the instructions detailed [here](https://github.com/gloomyandy/RepRapFirm
 
 ### Connecting the SBC to the SKR v1.3
 
-The pinout for the SKR can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/blob/master/BTT%20SKR%20V1.4/Hardware/BTT%20SKR%20V1.4PIN.pdf) and the schematic for the Duet 3 for reference can be found [here](https://github.com/Duet3D/Duet3-Mainboard-6HC/blob/master/Duet3_Mainboard_v1.0/Duet3_MB_schematic_v1.0.pdf). The raspberry pi GPIO pinout can be found [here](https://www.google.com/search?q=raspberry+pi+gpio+pinout&rlz=1C1CHBD_en-GBGB889GB889&sxsrf=ALeKk01CVlA8N_CGAQqQGp-7_N3pXiV0LA:1586203613303&source=lnms&tbm=isch&sa=X&ved=2ahUKEwid56X3zNToAhXSURUIHX3IAnkQ_AUoAXoECA0QAw&biw=1920&bih=937). 
+The pinout for the SKR can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/blob/master/BTT%20SKR%20V1.3/hardware/SKR-V1.3-PIN.pdf) and the schematic for the Duet 3 for reference can be found [here](https://github.com/Duet3D/Duet3-Mainboard-6HC/blob/master/Duet3_Mainboard_v1.0/Duet3_MB_schematic_v1.0.pdf). The raspberry pi GPIO pinout can be found [here](https://www.google.com/search?q=raspberry+pi+gpio+pinout&rlz=1C1CHBD_en-GBGB889GB889&sxsrf=ALeKk01CVlA8N_CGAQqQGp-7_N3pXiV0LA:1586203613303&source=lnms&tbm=isch&sa=X&ved=2ahUKEwid56X3zNToAhXSURUIHX3IAnkQ_AUoAXoECA0QAw&biw=1920&bih=937). 
 
 The table below shows the pins required on the SBC and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
@@ -67,7 +67,7 @@ lpc.board = biquskr_1.3
 sbc.lpcTfrReadyPin = 1.31
 ```
 
-If using TMC22XX drivers (thats either the TMC2208 or TMC2209), the following line must also be added to the board.txt file
+If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```

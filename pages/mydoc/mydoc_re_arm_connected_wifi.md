@@ -18,11 +18,11 @@ The Re-Arm is an LPC1768 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin
+Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
 
 ## Wifi
 
-I’ve used a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
+Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
 ### BOM
 
@@ -30,11 +30,11 @@ I’ve used a nodemcu ESP8266 with USB programming as it already 5v tolerant and
 * 3 x 47R resistor
 * 1 x 470R resistor
 * 3 x 2200R resistor
-* jumpers or other ways of connecting to the SKR
+* jumpers or other ways of connecting to the Re-Arm
 
 ### Preparing the ESP
 
-Follow the instructions [here](https://github.com/gloomyandy/RepRapFirmware/wiki/ESP8266-LPC).
+Follow the instructions [here](mydoc_lpc_esp.html).
 
 ### Connecting the ESP
 
@@ -44,7 +44,7 @@ The table below shows the pins required on the ESP and what they are connected t
 
 <div class="datatable-begin"></div>
 
-| ESP Pin       | RE-Arm Pin       | Resistor Value  |
+| ESP Pin       | Re-Arm Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | RST           | 1.31          | 470R            |
 | CS/GPIO15     | 0.16          | 2200R           |
@@ -85,7 +85,7 @@ M587 S"your SSID" P"your password"
 M552 S1
 ```
 
-**DO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks).
+{% include warning.html content="**DO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. <br/>  If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks)." %}
 
 The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 

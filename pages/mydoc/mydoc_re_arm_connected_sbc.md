@@ -18,7 +18,7 @@ The Re-Arm is an LPC1768 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin
+Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
 
 ## SBC
 
@@ -26,22 +26,22 @@ Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4
 
 ### Prepare the Raspberry Pi
 
-Follow the instructions detailed [here](https://github.com/gloomyandy/RepRapFirmware/wiki/SBC-LPC-Stable) for Stable builds
+Follow the instructions detailed [here](mydoc_lpc_sbc.html).
 
 ### BOM
 
 * 5 x 100R resistor
-* jumpers or other ways of connecting to the SKR
+* jumpers or other ways of connecting to the Re-Arm
 
 ### Connecting the SBC to the Re-Arm
 
-The pinout for the RE-Arm can be found [here](https://github.com/gloomyandy/RepRapFirmware/wiki/Re-Arm-Pins) and the schematic for the Duet 3 for reference can be found [here](https://github.com/Duet3D/Duet3-Mainboard-6HC/blob/master/Duet3_Mainboard_v1.0/Duet3_MB_schematic_v1.0.pdf). The raspberry pi GPIO pinout can be found [here](https://www.google.com/search?q=raspberry+pi+gpio+pinout&rlz=1C1CHBD_en-GBGB889GB889&sxsrf=ALeKk01CVlA8N_CGAQqQGp-7_N3pXiV0LA:1586203613303&source=lnms&tbm=isch&sa=X&ved=2ahUKEwid56X3zNToAhXSURUIHX3IAnkQ_AUoAXoECA0QAw&biw=1920&bih=937). 
+The pinout for the Re-Arm can be found [here](https://github.com/gloomyandy/RepRapFirmware/wiki/Re-Arm-Pins) and the schematic for the Duet 3 for reference can be found [here](https://github.com/Duet3D/Duet3-Mainboard-6HC/blob/master/Duet3_Mainboard_v1.0/Duet3_MB_schematic_v1.0.pdf). The raspberry pi GPIO pinout can be found [here](https://www.google.com/search?q=raspberry+pi+gpio+pinout&rlz=1C1CHBD_en-GBGB889GB889&sxsrf=ALeKk01CVlA8N_CGAQqQGp-7_N3pXiV0LA:1586203613303&source=lnms&tbm=isch&sa=X&ved=2ahUKEwid56X3zNToAhXSURUIHX3IAnkQ_AUoAXoECA0QAw&biw=1920&bih=937). 
 
-The table below shows the pins required on the SBC and what they are connected to on the RE-Arm. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.   
+The table below shows the pins required on the SBC and what they are connected to on the Re-Arm. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.   
 
 <div class="datatable-begin"></div>
 
-| SBC Pin       | RE-Arm Pin       | Resistor Value  |
+| SBC Pin       | Re-Arm Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | 23/BCM11/SPI0 Clk           | 0.15          | 100R            |
 | 21/BCM9/SPI0 Miso    | 0.17          | 100R           |
@@ -52,11 +52,11 @@ The table below shows the pins required on the SBC and what they are connected t
 
 <div class="datatable-end"></div>
 
-Don't power the raspberry pi from the SKR. Either us a 12/24v to 5v step down transformer or power the pi from the micro usb or usb-c port.
+Don't power the raspberry pi from the Re-Arm. Either us a 12/24v to 5v step down transformer or power the pi from the micro usb or usb-c port.
 
 ### Prepare the SD Card
 
-All the SD card on the RE-Arm needs is the board.txt file with the following contents.
+All the SD card on the Re-Arm needs is the board.txt file with the following contents.
 
 ```
 //Config for RE-Arm
@@ -64,7 +64,7 @@ lpc.board = rearm
 sbc.lpcTfrReadyPin = 1.31
 ```
 
-Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the RE-Arm.   
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Re-Arm.   
 
 ### Finally...
 

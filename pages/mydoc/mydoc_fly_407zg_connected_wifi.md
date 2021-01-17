@@ -22,7 +22,7 @@ Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) fro
 
 ## Wifi
 
-Use nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
+Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
 ### BOM
 

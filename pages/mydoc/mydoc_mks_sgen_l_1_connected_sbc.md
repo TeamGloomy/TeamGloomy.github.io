@@ -18,7 +18,7 @@ The MKS SGen L v1.0 is an LPC1769 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin
+Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
 
 ## SBC
 
@@ -26,12 +26,12 @@ Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4
 
 ### Prepare the Raspberry Pi
 
-Follow the instructions detailed [here](https://github.com/gloomyandy/RepRapFirmware/wiki/SBC-LPC-Stable) for Stable builds
+Follow the instructions detailed [here](mydoc_lpc_sbc.html).
 
 ### BOM
 
 * 5 x 100R resistor
-* jumpers or other ways of connecting to the SKR
+* jumpers or other ways of connecting to the MKS SGen L v1.0
 
 ### Connecting the SBC to the MKS SGen L v1.0
 
@@ -52,7 +52,7 @@ The table below shows the pins required on the SBC and what they are connected t
 
 <div class="datatable-end"></div>
 
-Don't power the raspberry pi from the SKR. Either us a 12/24v to 5v step down transformer or power the pi from the micro usb or usb-c port.
+Don't power the raspberry pi from the MKS SGen L v2.0. Either us a 12/24v to 5v step down transformer or power the pi from the micro usb or usb-c port.
 
 ### Prepare the SD Card
 
@@ -64,7 +64,7 @@ lpc.board = mkssgenl_1.0
 sbc.lpcTfrReadyPin = 1.31
 ```
 
-If using TMC22XX drivers (thats either the TMC2208 or TMC2209), the following line must also be added to the board.txt file
+If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```

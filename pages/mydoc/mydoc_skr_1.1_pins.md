@@ -1,9 +1,9 @@
 ---
-title: SKR 1.1 Pin Names in Firmware
+title: SKR v1.1 Pin Names in Firmware
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "SKR 1.1 Pin Names"
+summary: "SKR v1.1 Pin Names"
 sidebar: mydoc_sidebar
 permalink: mydoc_skr_1.1_pins.html
 folder: mydoc

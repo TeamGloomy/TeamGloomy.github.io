@@ -18,7 +18,7 @@ The SKR v1.1 is an LPC1768 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin
+Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
 
 ## SBC
 
@@ -26,7 +26,7 @@ Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4
 
 ### Prepare the Raspberry Pi
 
-Follow the instructions detailed [here](https://github.com/gloomyandy/RepRapFirmware/wiki/SBC-LPC-Stable) for Stable builds
+Follow the instructions detailed [here](mydoc_lpc_sbc.html).
 
 ### BOM
 
