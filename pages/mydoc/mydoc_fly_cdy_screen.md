@@ -32,7 +32,7 @@ serial.aux.rxTxPins = {0.3, 0.2}
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="paneldue" markdown="1">
 
-Use pins +5V, GND, TX0 and RX0. These should be connected to +5V, GND, TX and RX on the PanelDue, making sure that TX and RX are swapped.
+Use pins +5V, GND, TX and RX on the socket to the right of the SD card. These should be connected to +5V, GND, TX and RX on the PanelDue, making sure that TX and RX are swapped.
 
 In config.g, the following command should be added.   
 ```
@@ -44,7 +44,7 @@ From RepRapFirmware 3.2, it is possible to update the firmware on the PanelDue d
 
 <div role="tabpanel" class="tab-pane" id="tft" markdown="1">
 
-Use pins +5V, GND, TX0 and RX0. These should be connected to +5V, GND, TX and RX on the TFT, making sure that TX and RX are swapped.
+Use pins +5V, GND, TX and RX on the socket to the right of the SD card. These should be connected to +5V, GND, TX and RX on the TFT, making sure that TX and RX are swapped.
 
 In config.g, the following command should be added.   
 ```
@@ -61,6 +61,8 @@ Please see [here](/mydoc_tft.html) for further information on ensuring you have 
 
 Please note the pinout of 5v (connected to NC), TX, RX and 0v.  
 The cable that is supplied may be equipped with the correct connection for a duet board, so the plug will need changing to fit these boards. Remember to make sure that TX and RX are swapped.  
+
+Use pins +5V, GND, TX and RX on the socket to the right of the SD card. These should be connected to +5V, GND, TX and RX on the Fly Screen, making sure that TX and RX are swapped.
 
 In config.g, the following command should be added.   
 ```
