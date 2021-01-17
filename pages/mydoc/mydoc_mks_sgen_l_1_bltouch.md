@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to an SKR v1.4
+title: Connecting a BLTouch to an MKS SGen L v1.0
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "Connecting a BLTouch to an SKR v1.4"
+summary: "Connecting a BLTouch to an MKS SGen L v1.0"
 sidebar: mydoc_sidebar
-permalink: mydoc_skr_1.4_bltouch.html
+permalink: mydoc_mks_sgen_l_1_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,17 +14,15 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the SKR v1.4 as shown below.  
+Connect the BLTouch to the MKS SGen L v1.0 as shown below.  
 
-{% include image.html file="skr_1.4_bltouch.jpg" alt="SKR v1.4 BLTouch Connections" caption="Connecting a BLTouch to the SKR v1.4" %}
-
-This image is from this blog post from [3dpblog](https://3dpblog.com/bltouch-installation-skr-board/)
+{% include image.html file="mks_sgen_l_1_bltouch.jpg" alt="MKS SGen L v1.0 BLTouch Connections" caption="Connecting a BLTouch to the MKS SGen L v1.0" %}
 
 ### Config.g Changes
 
 Your config.g should be modified as below.
 ```
-M558 P9 H6 F120 T8000 C"^probe"       ; disable Z probe but set dive height, probe speed and travel speed
+M558 P9 H6 F120 T8000 C"^zstop"       ; disable Z probe but set dive height, probe speed and travel speed
 M950 S0 C"servo0"                              ; Setup servo 0 as servo port on SKR
 ```
 
@@ -114,7 +112,7 @@ M98 P"homez.g"
 
 ## Testing Macros
 
-It is suggested that you create a number of macros to allow testing of your BLTouch. These should each be created in the macros folder.  
+It is suggested that you create a number of macros to allow testing of your BLTouch. These should each be created in the macros folder.   
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#alarm" data-toggle="tab">alarm release + pin</a></li>

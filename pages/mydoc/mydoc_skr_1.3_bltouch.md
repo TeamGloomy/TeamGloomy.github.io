@@ -47,7 +47,7 @@ Create a file in your sys folder called
 ```
 deployprobe.g
 ```
-In it, you could paste the following code
+In it, paste the following code
 ```
 M280 P0 S10
 ```
@@ -60,7 +60,7 @@ Create a file in your sys folder called
 ```
 retractprobe.g
 ```
-In it, you could paste the following code
+In it, paste the following code
 ```
 M280 P0 S90
 ```
@@ -114,7 +114,7 @@ M98 P"homez.g"
 
 ## Testing Macros
 
-You could create a number of macros to allow testing of your BLTouch. These should each be created in the macros folder.  
+It is suggested that you create a number of macros to allow testing of your BLTouch. These should each be created in the macros folder.  
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#alarm" data-toggle="tab">alarm release + pin</a></li>
@@ -129,7 +129,7 @@ Create a file in your macros folder called
 ```
 alarm release + pin
 ```
-In it, you could paste the following code
+In it, paste the following code
 ```
 M280 P0 S160 ; Alarm Release and Push-Pin UP
 ```
@@ -142,7 +142,7 @@ Create a file in your macros folder called
 ```
 pin up
 ```
-In it, you could paste the following code
+In it, paste the following code
 ```
 M280 P0 S90 ; Send PWM channel 0 the s90 (angle) command
 ```
@@ -155,7 +155,7 @@ Create a file in your macros folder called
 ```
 pin down
 ```
-In it, you could paste the following code
+In it, paste the following code
 ```
 M280 P0 S10 ; Send PWM channel 0 the S10 (angle) command
 ```
@@ -168,7 +168,7 @@ Create a file in your macros folder called
 ```
 self-test
 ```
-In it, you could paste the following code
+In it, paste the following code
 ```
 M280 P0 S120 ; Send PWM channel 7 the S10 (angle) command
 ```
