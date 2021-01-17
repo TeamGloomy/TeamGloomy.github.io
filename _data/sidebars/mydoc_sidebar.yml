@@ -88,6 +88,10 @@ entries:
       url: /mydoc_neopixels.html
       output: web, pdf
 
+    - title: Connecting a Smart Effector
+      url: /mydoc_smart_effector.html
+      output: web, pdf
+
     - title: TFT Screen Configuration
       url: /mydoc_tft.html
       output: web, pdf
