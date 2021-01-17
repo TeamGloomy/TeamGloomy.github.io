@@ -282,6 +282,10 @@ entries:
           url: /mydoc_skr_1.4_screen.html
           output: web, pdf
 
+        - title: Connecting a BLTouch
+          url: /mydoc_skr_1.4_bltouch.html
+          output: web, pdf
+
         - title: Connecting a BTT-MOT-EXP
           url: /mydoc_skr_1.4_btt_mot_exp.html
           output: web, pdf

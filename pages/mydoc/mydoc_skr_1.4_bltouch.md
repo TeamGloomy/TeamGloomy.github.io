@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to an SKR v1.3
+title: Connecting a BLTouch to an SKR v1.4
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "Connecting a BLTouch to an SKR v1.3"
+summary: "Connecting a BLTouch to an SKR v1.4"
 sidebar: mydoc_sidebar
-permalink: mydoc_skr_1.3_bltouch.html
+permalink: mydoc_skr_1.4_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,9 +14,9 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the SKR v1.3 as shown below.  
+Connect the BLTouch to the SKR v1.4 as shown below.  
 
-{% include image.html file="skr_1.3_bltouch.jpg" alt="SKR v1.3 BLTouch Connections" caption="Connecting a BLTouch to the SKR v1.3" %}
+{% include image.html file="skr_1.4_bltouch.jpg" alt="SKR v1.4 BLTouch Connections" caption="Connecting a BLTouch to the SKR v1.4" %}
 
 This image is from this blog post from [3dpblog](https://3dpblog.com/bltouch-installation-skr-board/)
 
@@ -24,7 +24,7 @@ This image is from this blog post from [3dpblog](https://3dpblog.com/bltouch-ins
 
 Your config.g should be modified as below.
 ```
-M558 P9 H6 F120 T8000 C"^zstop"       ; disable Z probe but set dive height, probe speed and travel speed
+M558 P9 H6 F120 T8000 C"^probe"       ; disable Z probe but set dive height, probe speed and travel speed
 M950 S0 C"servo0"                              ; Setup servo 0 as servo port on SKR
 ```
 
