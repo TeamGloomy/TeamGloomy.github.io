@@ -60,6 +60,59 @@ entries:
       url: /mydoc_release_notes_3.2_RC2.html
       output: web, pdf
 
+  - title: General
+    output: web, pdf
+    folderitems:
+
+    - title: Custom Commands and G-Code
+      url: /mydoc_custom.html
+      output: web, pdf
+
+    - title: Driver Timings
+      url: /mydoc_driver_timings.html
+      output: web, pdf
+
+    - title: Board.txt Configurables
+      url: /mydoc_board_txt.html
+      output: web, pdf
+
+    - title: Sensorless Homing and Stall Detection
+      url: /mydoc_sensorless.html
+      output: web, pdf
+
+    - title: Adding a Camera
+      url: /mydoc_camera.html
+      output: web, pdf
+
+    - title: Configuring Neopixels
+      url: /mydoc_neopixels.html
+      output: web, pdf
+
+    - title: TFT Screen Configuration
+      url: /mydoc_tft.html
+      output: web, pdf
+
+    - title: Firmware Build Instructions
+      url: /mydoc_firmware_build.html
+      output: web, pdf
+
+      subfolders:  
+      - title: User Created Content
+        output: web, pdf
+        subfolderitems:
+
+        - title: User Created Guides
+          url: /mydoc_user_guides.html
+          output: web, pdf
+
+        - title: User Created Configs
+          url: /mydoc_user_configs.html
+          output: web, pdf
+
+        - title: User Created Videos
+          url: /mydoc_user_videos.html
+          output: web, pdf
+  
   - title: LPC Boards
     output: web, pdf
     folderitems:
@@ -199,6 +252,10 @@ entries:
         
         - title: Connecting a Screen
           url: /mydoc_skr_1.3_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /mydoc_skr_1.3_bltouch.html
           output: web, pdf
 
         - title: Connecting a BTT-MOT-EXP
