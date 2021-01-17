@@ -181,6 +181,10 @@ entries:
           url: /mydoc_skr_1.3_pins.html
           output: web, pdf
 
+        - title: Connecting a BTT-MOT-EXP
+          url: /mydoc_skr_1.3_btt_mot_exp.html
+          output: web, pdf
+
       - title: SKR v1.4 and v1.4T
         output: web, pdf
         subfolderitems:
