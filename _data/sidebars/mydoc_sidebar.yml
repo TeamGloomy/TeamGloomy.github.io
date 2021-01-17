@@ -101,6 +101,10 @@ entries:
           url: /mydoc_mks_sbase_connected_wifi.html
           output: web, pdf
 
+        - title: Connecting a Screen
+          url: /mydoc_mks_sbase_screen.html
+          output: web, pdf
+
         - title: Pin Names
           url: /mydoc_mks_sbase_pins.html
           output: web, pdf
@@ -117,6 +121,10 @@ entries:
           url: /mydoc_mks_sgen_l_1_connected_sbc.html
           output: web, pdf
 
+        - title: Connecting a Screen
+          url: /mydoc_mks_sgen_l_1_screen.html
+          output: web, pdf
+
         - title: Pin Names
           url: /mydoc_mks_sgen_l_1_pins.html
           output: web, pdf
@@ -131,6 +139,10 @@ entries:
 
         - title: Connecting via SBC
           url: /mydoc_mks_sgen_l_2_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /mydoc_mks_sgen_l_2_screen.html
           output: web, pdf
 
         - title: Pin Names
@@ -165,6 +177,10 @@ entries:
           url: /mydoc_skr_1.1_connected_sbc.html
           output: web, pdf
 
+        - title: Connecting a Screen
+          url: /mydoc_skr_1.1_screen.html
+          output: web, pdf
+
         - title: Pin Names
           url: /mydoc_skr_1.1_pins.html
           output: web, pdf
@@ -180,13 +196,17 @@ entries:
         - title: Connecting via SBC
           url: /mydoc_skr_1.3_connected_sbc.html
           output: web, pdf
-
-        - title: Pin Names
-          url: /mydoc_skr_1.3_pins.html
+        
+        - title: Connecting a Screen
+          url: /mydoc_skr_1.3_screen.html
           output: web, pdf
 
         - title: Connecting a BTT-MOT-EXP
           url: /mydoc_skr_1.3_btt_mot_exp.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /mydoc_skr_1.3_pins.html
           output: web, pdf
 
       - title: SKR v1.4 and v1.4T
@@ -199,6 +219,14 @@ entries:
 
         - title: Connecting via SBC
           url: /mydoc_skr_1.4_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /mydoc_skr_1.4_screen.html
+          output: web, pdf
+
+        - title: Connecting a BTT-MOT-EXP
+          url: /mydoc_skr_1.4_btt_mot_exp.html
           output: web, pdf
 
         - title: Pin Names
@@ -215,6 +243,10 @@ entries:
 
         - title: Connecting via SBC
           url: /mydoc_skr_E3T_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /mydoc_skr_E3T_screen.html
           output: web, pdf
 
         - title: Pin Names
@@ -304,6 +336,14 @@ entries:
 
         - title: Connecting via SBC
           url: /mydoc_skr_pro_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /mydoc_skr_pro_screen.html
+          output: web, pdf
+
+        - title: Connecting a BTT-MOT-EXP
+          url: /mydoc_skr_pro_btt_mot_exp.html
           output: web, pdf
 
         - title: Pin Names
