@@ -33,6 +33,8 @@ Follow the instructions detailed [here](mydoc_stm32_sbc.html).
 * 5 x 100R resistor
 * jumpers or other ways of connecting to the SKR
 
+{% include tip.html content="If you would prefer a premade adapter to enable an SBC connection, TeamGloomy have created a plugin SBC adapter board for the SKR Pro v1.1 and v1.2. It can be purchased on tindie [here](https://www.tindie.com/products/pcr/reprapfirmware-raspberry-pi-to-skr-1314progtr/) " %}
+
 ### Connecting the SBC to the SKR Pro v1.1 and 1.2
 
 The pinout for the SKR (The EXP1 and EXP2 pinouts are the same for the SKR Pro v1.1 and 1.2) can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf) and the schematic for the Duet 3 for reference can be found [here](https://github.com/Duet3D/Duet3-Mainboard-6HC/blob/master/Duet3_Mainboard_v1.0/Duet3_MB_schematic_v1.0.pdf). The raspberry pi GPIO pinout can be found [here](https://www.google.com/search?q=raspberry+pi+gpio+pinout&rlz=1C1CHBD_en-GBGB889GB889&sxsrf=ALeKk01CVlA8N_CGAQqQGp-7_N3pXiV0LA:1586203613303&source=lnms&tbm=isch&sa=X&ved=2ahUKEwid56X3zNToAhXSURUIHX3IAnkQ_AUoAXoECA0QAw&biw=1920&bih=937). 

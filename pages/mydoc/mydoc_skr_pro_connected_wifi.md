@@ -24,7 +24,7 @@ Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) fro
 
 Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
-If you would prefer a PCB connected to the board, user PCR has created a wifi board for the SKR Pro v1.1 and 1.2. It can be purchased on tindie [here](https://www.tindie.com/products/21168/) 
+{% include tip.html content="If you would prefer a premade adapter to enable WiFi, TeamGloomy have created a plugin WiFi adapter board for the SKR Pro v1.1 and v1.2. It can be purchased on tindie [here](https://www.tindie.com/products/pcr/reprapfirmware-wifi-adapterboard-for-skr-pro/) " %}
 
 ### BOM
 

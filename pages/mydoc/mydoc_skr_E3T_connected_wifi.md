@@ -24,7 +24,7 @@ Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [h
 
 Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
-If you would prefer a PCB connected to the board, user PCR has created a wifi board for the SKR E3 Turbo. It can be purchased on tindie **Link to follow**
+{% include tip.html content="If you would prefer a premade adapter to enable WiFi, TeamGloomy have created a plugin WiFi adapter board for the SKR E3 Turbo. It can be purchased on tindie [here](https://www.tindie.com/products/pcr/reprapfirmware-wifi-adapterboard-for-skr-e3-turbo/) " %}
 
 ### BOM
 

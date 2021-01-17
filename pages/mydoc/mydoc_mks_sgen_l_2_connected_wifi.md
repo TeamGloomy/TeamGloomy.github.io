@@ -24,6 +24,8 @@ Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [h
 
 Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
+{% include tip.html content="If you would prefer a premade adapter to enable WiFi, TeamGloomy have created a plugin WiFi adapter board for the MKS SGen L v1.0. It can be purchased on tindie [here](https://www.tindie.com/products/pcr/reprapfirmware-wifi-adapterboard-for-mks-sgen-l/) " %}
+
 ### BOM
 
 * 1 x nodemcu ESP8266 or Wemos D1 mini
