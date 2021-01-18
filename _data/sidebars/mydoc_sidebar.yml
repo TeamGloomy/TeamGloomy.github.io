@@ -96,6 +96,10 @@ entries:
       url: /mydoc_tft.html
       output: web, pdf
 
+    - title: Useful Macros
+      url: /mydoc_useful_macros.html
+      output: web, pdf
+
     - title: Firmware Build Instructions
       url: /mydoc_firmware_build.html
       output: web, pdf
