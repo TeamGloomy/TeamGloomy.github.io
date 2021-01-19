@@ -6,7 +6,7 @@ topnav:
     - title: GitHub
       external_url: https://github.com/TeamGloomy
     - title: News
-      url: /news
+      url: /newsite.html
     - title: Configurator
       url: /Configurator
     - title: Discord
