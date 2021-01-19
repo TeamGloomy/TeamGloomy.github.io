@@ -5,7 +5,7 @@ keywords:
 last_updated: 15/01/2021
 summary: "Connecting an SKR v1.4 or v1.4T via Wifi"
 sidebar: mydoc_sidebar
-permalink: mydoc_skr_1.3_connected_wifi.html
+permalink: mydoc_skr_1.4_connected_wifi.html
 folder: mydoc
 comments: false
 toc: false
