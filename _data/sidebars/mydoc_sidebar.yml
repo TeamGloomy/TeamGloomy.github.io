@@ -92,10 +92,6 @@ entries:
       url: /mydoc_smart_effector.html
       output: web, pdf
 
-    - title: TFT Screen Configuration
-      url: /mydoc_tft.html
-      output: web, pdf
-
     - title: Useful Macros
       url: /mydoc_useful_macros.html
       output: web, pdf
@@ -351,6 +347,10 @@ entries:
         output: web, pdf
         subfolderitems:
 
+        - title: Fly-407ZG General Information
+          url: /mydoc_fly_407zg_general.html
+          output: web, pdf
+        
         - title: Connecting via WiFi
           url: /mydoc_fly_407zg_connected_wifi.html
           output: web, pdf
@@ -426,3 +426,15 @@ entries:
         - title: Pin Names
           url: /mydoc_skr_pro_pins.html
           output: web, pdf
+
+  - title: Screens
+    output: web, pdf
+    folderitems:
+
+    - title: TFT Screen Configuration
+      url: /mydoc_tft.html
+      output: web, pdf
+
+    - title: Paneldue Information
+      url: /mydoc_paneldue.html
+      output: web, pdf
