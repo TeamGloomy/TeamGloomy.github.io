@@ -5,7 +5,7 @@ keywords:
 last_updated: 20/01/2021
 summary: "Connecting a BLTouch to a GTR"
 sidebar: mydoc_sidebar
-permalink: mydoc_fly_gtr_bltouch.html
+permalink: mydoc_gtr_bltouch.html
 folder: mydoc
 comments: false
 toc: false
