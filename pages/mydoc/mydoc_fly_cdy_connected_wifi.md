@@ -2,7 +2,7 @@
 title: Connecting a Fly-CDY via Wifi
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting a Fly-CDY via Wifi"
 sidebar: mydoc_sidebar
 permalink: mydoc_fly_cdy_connected_wifi.html
@@ -26,7 +26,7 @@ Make sure your jumper arrangement matches the following image.
 
 ## Flashing the board firmware
 
-Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin.  Put it in the root of the SD card.  
+Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
 ## WiFi firmware preparation
 Choose the correct corresponding firmware (DuetWiFiServer-lpc.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  

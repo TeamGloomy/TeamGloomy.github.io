@@ -2,7 +2,7 @@
 title: Connecting a BLTouch to an SKR v1.3
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting a BLTouch to an SKR v1.3"
 sidebar: mydoc_sidebar
 permalink: mydoc_skr_1.3_bltouch.html
@@ -15,6 +15,18 @@ datatable: true
 ## Physical Connections
 
 Connect the BLTouch to the SKR v1.3 as shown below.  
+
+<div class="datatable-begin"></div>
+
+|BLTouch Wire Colour|SKR v1.3 Pin|SKR v1.3 Pin Name|
+|:---|:---|:---|
+|Brown|GND||
+|Red|NPWR||
+|Yellow|2.0|Servo0|
+|Black|GND||
+|White|1.25|zstop|
+
+<div class="datatable-end"></div>
 
 {% include image.html file="skr_1.3_bltouch.jpg" alt="SKR v1.3 BLTouch Connections" caption="Connecting a BLTouch to the SKR v1.3" %}
 
@@ -180,3 +192,7 @@ M280 P0 S120 ; Send PWM channel 7 the S10 (angle) command
 
 [Connecting a BLTouch](https://duet3d.dozuki.com/Wiki/Connecting_a_Z_probe#Section_BLTouch)  
 [Troubleshooting a BLTouch](https://duet3d.dozuki.com/Wiki/BLTouch_Troubleshooting)
+
+## Marlin Fast Probe
+
+There is a guide to replicating Marlins Fast Probe feature [here](https://forum.duet3d.com/topic/14544/guide-to-marlin-s-fast-bltouch-probing-feature-on-duet).

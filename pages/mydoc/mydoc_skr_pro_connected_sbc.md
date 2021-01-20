@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via SBC
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting an SKR Pro v1.1 and v1.2 via SBC"
 sidebar: mydoc_sidebar
 permalink: mydoc_skr_pro_connected_sbc.html
@@ -18,11 +18,11 @@ The SKR Pro v1.1 and v1.2 are STM32F407ZGT6 based boards.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-stm32f4-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
+Choose the correct corresponding firmware (firmware-stm32f4-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.  
 
 ## SBC
 
-Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4
+Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4.
 
 ### Prepare the Raspberry Pi
 
@@ -45,11 +45,11 @@ The table below shows the pins required on the SBC and what they are connected t
 
 | SBC Pin       | SKR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
-| 23/BCM11/SPI0 Clk           | PB13          | 100R            |
-| 21/BCM9/SPI0 Miso    | PB14          | 100R           |
-| 19/BCM10/SPI0 Mosi   | PB15          | 100R             |
-| 24/BCM8/SPIO CE0   | PB12          | 100R             |
-| 22/BCM25  | PF12          | 100R             |
+| 23/BCM11/SPI0 Clk           | PB13 on EXP2         | 100R            |
+| 21/BCM9/SPI0 Miso    | PB14 on EXP2         | 100R           |
+| 19/BCM10/SPI0 Mosi   | PB15 on EXP2         | 100R             |
+| 24/BCM8/SPIO CE0   | PB12 on EXP2         | 100R             |
+| 22/BCM25  | PF12 on EXP2         | 100R             |
 | 6/GND   | GND on EXP2          | None             |
 
 <div class="datatable-end"></div>

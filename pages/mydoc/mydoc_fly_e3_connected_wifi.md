@@ -2,7 +2,7 @@
 title: Connecting a Fly-E3 via Wifi
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting a Fly-E3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: mydoc_fly_e3_connected_wifi.html
@@ -20,7 +20,7 @@ That means than unlike other LPC based board, an ESP8266 has been provided on bo
 
 ## Flashing the board firmware
 
-Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
+Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
 ## WiFi firmware preparation
 Choose the correct corresponding firmware (DuetWiFiServer-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  

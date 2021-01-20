@@ -2,7 +2,7 @@
 title: Connecting a BLTouch to an MKS SGen L v1.0
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting a BLTouch to an MKS SGen L v1.0"
 sidebar: mydoc_sidebar
 permalink: mydoc_mks_sgen_l_1_bltouch.html
@@ -15,6 +15,18 @@ datatable: true
 ## Physical Connections
 
 Connect the BLTouch to the MKS SGen L v1.0 as shown below.  
+
+<div class="datatable-begin"></div>
+
+|BLTouch Wire Colour|MKS SGen L v1.0 Pin|MKS SGen L v1.0 Pin Name|
+|:---|:---|:---|
+|Brown|GND||
+|Red|NPWR||
+|Yellow|1.25|servo0|
+|Black|GND||
+|White|1.25|zstop|
+
+<div class="datatable-end"></div>
 
 {% include image.html file="mks_sgen_l_1_bltouch.jpg" alt="MKS SGen L v1.0 BLTouch Connections" caption="Connecting a BLTouch to the MKS SGen L v1.0" %}
 

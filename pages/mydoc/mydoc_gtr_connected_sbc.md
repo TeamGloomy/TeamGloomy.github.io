@@ -2,7 +2,7 @@
 title: Connecting a GTR via SBC
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting a GTR via SBC"
 sidebar: mydoc_sidebar
 permalink: mydoc_gtr_connected_sbc.html
@@ -18,7 +18,7 @@ The GTR is an STM32F407ZGT6 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-stm32f4-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
+Choose the correct corresponding firmware (firmware-stm32f4-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
 ## SBC
 
@@ -45,11 +45,11 @@ The table below shows the pins required on the SBC and what they are connected t
 
 | SBC Pin       | GTR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
-| 23/BCM11/SPI0 Clk           | PB13          | 100R            |
-| 21/BCM9/SPI0 Miso    | PB14          | 100R           |
-| 19/BCM10/SPI0 Mosi   | PB15          | 100R             |
-| 24/BCM8/SPIO CE0   | PB12          | 100R             |
-| 22/BCM25  | PB10          | 100R             |
+| 23/BCM11/SPI0 Clk           | PB13 on EXP2          | 100R            |
+| 21/BCM9/SPI0 Miso    | PB14 on EXP2          | 100R           |
+| 19/BCM10/SPI0 Mosi   | PB15 on EXP2          | 100R             |
+| 24/BCM8/SPIO CE0   | PB12 on EXP2          | 100R             |
+| 22/BCM25  | PB10 on EXP2          | 100R             |
 | 20/GND   | GND on EXP2          | None             |
 
 <div class="datatable-end"></div>

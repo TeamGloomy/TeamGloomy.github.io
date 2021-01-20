@@ -2,7 +2,7 @@
 title: Connecting an MKS SGen L v1.0 via Wifi
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting an MKS SGen L v1.0 via Wifi"
 sidebar: mydoc_sidebar
 permalink: mydoc_mks_sgen_l_1_connected_wifi.html
@@ -14,11 +14,11 @@ datatable: true
 
 ## Overview
 
-The MKS SGen L v1.0 is an LPC1769 based board.
+The MKS SGen L v1.0 is an LPC1769 based board. 
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin
+Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin.  Put it in the root of a FAT32 formatted SD card.   
 
 ## Wifi
 
@@ -48,13 +48,13 @@ The table below shows the pins required on the ESP and what they are connected t
 
 | ESP Pin       | MKS SGen Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
-| RST           | 1.31          | 470R            |
-| CS/GPIO15     | 0.16          | 2200R           |
-| MOSI/GPIO13   | 0.18          | 47R             |
-| MISO/GPIO12   | 0.17          | 47R             |
-| SCLK/GPIO14  | 0.15          | 47R             |
-| ESP_DATA_Ready/GPIO0   | 0.28          | 2200R             |
-| LPC_DATA_Ready/GPIO4   | 1.30          | None            |
+| RST           | 1.31 on EXP1          | 470R            |
+| CS/GPIO15     | 0.16 on EXP1         | 2200R           |
+| MOSI/GPIO13   | 0.18 on EXP1         | 47R             |
+| MISO/GPIO12   | 0.17 on EXP1         | 47R             |
+| SCLK/GPIO14  | 0.15 on EXP1         | 47R             |
+| ESP_DATA_Ready/GPIO0   | 0.28 on EXP2         | 2200R             |
+| LPC_DATA_Ready/GPIO4   | 1.30 on EXP1         | None            |
 | VIN(5v)   | 5v on EXP1          | None             |
 | GND   | GND on EXP1          | 2200R to RST             |
 

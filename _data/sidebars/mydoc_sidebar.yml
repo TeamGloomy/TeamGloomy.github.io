@@ -146,6 +146,10 @@ entries:
           url: /mydoc_fly_cdy_screen.html
           output: web, pdf
 
+        - title: Connecting a BLTouch
+          url: /mydoc_fly_cdy_bltouch.html
+          output: web, pdf
+
         - title: Pin Names
           url: /mydoc_fly_cdy_pins.html
           output: web, pdf
@@ -159,6 +163,10 @@ entries:
           output: web, pdf
 
         - title: Connecting a Screen
+          url: /mydoc_mks_sbase_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
           url: /mydoc_mks_sbase_screen.html
           output: web, pdf
 
@@ -363,6 +371,10 @@ entries:
           url: /mydoc_fly_407zg_screen.html
           output: web, pdf
 
+        - title: Connecting a BLTouch
+          url: /mydoc_fly_407zg_bltouch.html
+          output: web, pdf
+
         - title: Pin Names
           url: /mydoc_fly_407zg_pins.html
           output: web, pdf
@@ -377,6 +389,10 @@ entries:
 
         - title: Connecting a Screen
           url: /mydoc_fly_e3_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /mydoc_fly_e3_bltouch.html
           output: web, pdf
 
         - title: Pin Names
@@ -397,6 +413,10 @@ entries:
 
         - title: Connecting a Screen
           url: /mydoc_gtr_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /mydoc_gtr_bltouch.html
           output: web, pdf
 
         - title: Pin Names

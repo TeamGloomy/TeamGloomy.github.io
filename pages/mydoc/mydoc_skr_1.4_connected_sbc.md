@@ -2,7 +2,7 @@
 title: Connecting an SKR v1.4 and v1.4T via SBC
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting an SKR v1.4 and v1.4T via SBC"
 sidebar: mydoc_sidebar
 permalink: mydoc_skr_1.4_connected_sbc.html
@@ -18,11 +18,11 @@ The SKR 1.4 is an LPC1768 based board and the v1.4T is an LPC1769 based board. T
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
+Choose the correct corresponding firmware (firmware-lpc-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
 ## SBC
 
-Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4
+Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4.
 
 ### Prepare the Raspberry Pi
 
@@ -45,12 +45,12 @@ The table below shows the pins required on the SBC and what they are connected t
 
 | SBC Pin       | SKR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
-| 23/BCM11/SPI0 Clk           | 0.15          | 100R            |
-| 21/BCM9/SPI0 Miso    | 0.17          | 100R           |
-| 19/BCM10/SPI0 Mosi   | 0.18          | 100R             |
-| 24/BCM8/SPIO CE0   | 0.16          | 100R             |
-| 22/BCM25  | 1.31          | 100R             |
-| 20/GND   | GND on EXP1          | None             |
+| 23/BCM11/SPI0 Clk           | 0.15 on EXP2         | 100R            |
+| 21/BCM9/SPI0 Miso    | 0.17 on EXP2         | 100R           |
+| 19/BCM10/SPI0 Mosi   | 0.18 on EXP2         | 100R             |
+| 24/BCM8/SPIO CE0   | 0.16 on EXP2         | 100R             |
+| 22/BCM25  | 1.31 on EXP2         | 100R             |
+| 20/GND   | GND on EXP2          | None             |
 
 <div class="datatable-end"></div>
 

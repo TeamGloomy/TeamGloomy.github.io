@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via Wifi
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting an SKR Pro v1.1 and v1.2 via Wifi"
 sidebar: mydoc_sidebar
 permalink: mydoc_skr_pro_connected_wifi.html
@@ -18,7 +18,7 @@ The SKR Pro v1.1 and v1.2 are STM32F407ZGT6 based boards.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
+Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.  
 
 ## Wifi
 
@@ -48,13 +48,13 @@ The table below shows the pins required on the ESP8266 and what they are connect
 
 | ESP Pin       | SKR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
-| RST           | PF12          | 470R            |
-| CS/GPIO15     | PB12          | 2200R           |
-| MOSI/GPIO13   | PB15          | 47R             |
-| MISO/GPIO12   | PB14          | 47R             |
-| SCLK/GPIO14  | PB13          | 47R             |
-| ESP_DATA_Ready/GPIO0   | PA8          | 2200R             |
-| LPC_DATA_Ready/GPIO4   | PG4          | None            |
+| RST           | PF12 on EXP2         | 470R            |
+| CS/GPIO15     | PB12 on EXP2         | 2200R           |
+| MOSI/GPIO13   | PB15 on EXP2         | 47R             |
+| MISO/GPIO12   | PB14 on EXP2         | 47R             |
+| SCLK/GPIO14  | PB13 on EXP2         | 47R             |
+| ESP_DATA_Ready/GPIO0   | PA8 on EXP1         | 2200R             |
+| LPC_DATA_Ready/GPIO4   | PG4 on EXP1         | None            |
 | VIN(5v)   | 5v on EXP1          | None             |
 | GND   | GND on EXP1          | 2200R to RST             |
 

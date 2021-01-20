@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to an SKR v1.4
+title: Connecting a BLTouch to a Fly-CDY
 tags: []
 keywords: 
 last_updated: 20/01/2021
-summary: "Connecting a BLTouch to an SKR v1.4"
+summary: "Connecting a BLTouch to a Fly-CDY"
 sidebar: mydoc_sidebar
-permalink: mydoc_skr_1.4_bltouch.html
+permalink: mydoc_fly_cdy_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,23 +14,19 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the SKR v1.4 as shown below.  
+Connect the BLTouch to the Fly-CDY as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|SKR v1.4 Pin|SKR v1.4 Pin Name|
+|BLTouch Wire Colour|Fly-CDY Pin|Fly-CDY Pin Name|
 |:---|:---|:---|
 |Brown|GND||
 |Red|NPWR||
-|Yellow|2.0|Servo0|
+|Yellow|1.26|Servo0|
 |Black|GND||
-|White|0.10|Probe|
+|White|1.22|zstop|
 
 <div class="datatable-end"></div>
-
-{% include image.html file="skr_1.4_bltouch.jpg" alt="SKR v1.4 BLTouch Connections" caption="Connecting a BLTouch to the SKR v1.4" %}
-
-This image is from this blog post from [3dpblog](https://3dpblog.com/bltouch-installation-skr-board/)
 
 ### Config.g Changes
 

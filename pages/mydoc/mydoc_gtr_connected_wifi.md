@@ -2,7 +2,7 @@
 title: Connecting a GTR via Wifi
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 20/01/2021
 summary: "Connecting a GTR via Wifi"
 sidebar: mydoc_sidebar
 permalink: mydoc_gtr_connected_wifi.html
@@ -14,11 +14,11 @@ datatable: true
 
 ## Overview
 
-The GTR is an STM32F407ZGT6 based board.
+The GTR is an STM32F407ZGT6 based board. 
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of the SD card.
+Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
 ## Wifi
 
@@ -48,13 +48,13 @@ The table below shows the pins required on the ESP8266 and what they are connect
 
 | ESP Pin       | GTR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
-| RST           | PB10          | 470R            |
-| CS/GPIO15     | PB12          | 2200R           |
-| MOSI/GPIO13   | PB15          | 47R             |
-| MISO/GPIO12   | PB14          | 47R             |
-| SCLK/GPIO14  | PB13          | 47R             |
-| ESP_DATA_Ready/GPIO0   | PA15          | 2200R             |
-| LPC_DATA_Ready/GPIO4   | PC11          | None            |
+| RST           | PB10 on EXP2         | 470R            |
+| CS/GPIO15     | PB12 on EXP2         | 2200R           |
+| MOSI/GPIO13   | PB15 on EXP2         | 47R             |
+| MISO/GPIO12   | PB14 on EXP2         | 47R             |
+| SCLK/GPIO14  | PB13 on EXP2         | 47R             |
+| ESP_DATA_Ready/GPIO0   | PA15 on EXP1         | 2200R             |
+| LPC_DATA_Ready/GPIO4   | PC11 on EXP1         | None            |
 | VIN(5v)   | 5v on EXP1          | None             |
 | GND   | GND on EXP1          | 2200R to RST             |
 
