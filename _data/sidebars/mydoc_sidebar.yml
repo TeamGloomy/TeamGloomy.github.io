@@ -415,10 +415,6 @@ entries:
           url: /mydoc_gtr_screen.html
           output: web, pdf
 
-        - title: Connecting a BLTouch
-          url: /mydoc_gtr_bltouch.html
-          output: web, pdf
-
         - title: Pin Names
           url: /mydoc_gtr_pins.html
           output: web, pdf
