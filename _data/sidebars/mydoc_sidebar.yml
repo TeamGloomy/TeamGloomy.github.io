@@ -167,7 +167,7 @@ entries:
           output: web, pdf
 
         - title: Connecting a BLTouch
-          url: /mydoc_mks_sbase_screen.html
+          url: /mydoc_mks_sbase_bltouch.html
           output: web, pdf
 
         - title: Pin Names

@@ -5,7 +5,7 @@ keywords:
 last_updated: 20/01/2021
 summary: "Connecting a BLTouch to an MKS Sbase v1.3"
 sidebar: mydoc_sidebar
-permalink: mydoc_fly_cdy_bltouch.html
+permalink: mydoc_mks_sbase_bltouch.html
 folder: mydoc
 comments: false
 toc: false
