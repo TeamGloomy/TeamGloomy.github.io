@@ -110,6 +110,6 @@ sudo raspi-config
 ```
 3. Select “System Options” -> Hostname-> “OK”-> and set the new printername/hostname.
 
-{% include note.html content="The hostname must confirm to certain limitations to be valid. Valid characters for hostnames are letters from a to z, the digits from 0 to 9, the hyphen (-)." %}
-
 4. Select “Finish” and reboot.
+
+{% include note.html content="The hostname must confirm to certain limitations to be valid. Valid characters for hostnames are letters from a to z, the digits from 0 to 9, the hyphen (-)." %}

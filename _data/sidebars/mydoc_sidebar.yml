@@ -96,6 +96,10 @@ entries:
       url: /smart_effector.html
       output: web, pdf
 
+    - title: Configuring a BTT Smart Filament Monitor
+      url: /btt_smart_filament.html
+      output: web, pdf
+
     - title: Useful Macros
       url: /useful_macros.html
       output: web, pdf
@@ -391,12 +395,20 @@ entries:
           url: /fly_e3_connected_wifi.html
           output: web, pdf
 
-        - title: Connecting a Screen
+        - title: Connecting a Serial Screen
           url: /fly_e3_screen.html
+          output: web, pdf
+
+        - title: Connecting a 12864 Screen
+          url: /fly_e3_screen_12864.html
           output: web, pdf
 
         - title: Connecting a BLTouch
           url: /fly_e3_bltouch.html
+          output: web, pdf
+
+        - title: Connecting a PT100 or Type 'K' Thermocouple
+          url: /fly_e3_pt100.html
           output: web, pdf
 
         - title: Pin Names
