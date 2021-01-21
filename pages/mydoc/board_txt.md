@@ -27,13 +27,13 @@ Examples are given using LPC pins.
 |8266wifi.espResetPin|8266wifi.espResetPin = 1.31|This sets the reset pin to use when connecting an ESP8266|||
 |8266wifi.lpcTfrReadyPin (8266wifi.TfrReadyPin is also supported from 3.2_4)|8266wifi.lpcTfrReadyPin = 1.30|This sets the transfer ready pin when connecting an ESP8266|||
 |8266wifi.serialRxTxPins|8266wifi.serialRxTxPins = {0.3, 0.2}|This sets the pin numbers to use for RX and TX when connecting an ESP8266. See table below for allowable RX and TX pins|||
-|adc.prefilter.enable|adc.prefilter.enable = true|This enables or disables the analogue to digital converter filter. Can be either true or false|||
-|adc.preFilter.numberSamples|adc.preFilter.numberSamples = 8|This sets the number of samples to be used to get each value. The larger the value, the smoother the value but lag may also be introduced. The default is 8|||
-|adc.preFilter.sampleRate|adc.preFilter.sampleRate = 10000|This sets the analogue to digital converter sample rate in Hz|||
+|adc.prefilter.enable|adc.prefilter.enable = true|This enables or disables the analogue to digital converter filter. Can be either true or false||LPC Only|
+|adc.preFilter.numberSamples|adc.preFilter.numberSamples = 8|This sets the number of samples to be used to get each value. The larger the value, the smoother the value but lag may also be introduced. The default is 8||LPC Only|
+|adc.preFilter.sampleRate|adc.preFilter.sampleRate = 10000|This sets the analogue to digital converter sample rate in Hz||LPC Only|
 |atx.initialPowerOn|atx.initialPowerOn = 1|This sets the ATX power pin as on as soon as the board powers up rather than having to wait for M80 to be ran. The default is true|||
 |atx.powerPin|atx.PowerPin = 2.12|This sets the pin to be used for controlling an ATX power supply|||
 |atx.powerPinInverted|atx.powerPinInverted = 0|Some ATX power supplies are active low for off and some are active high. This allows that to be set. Use either 0 or 1|||
-|heat.spiTempSensorChannel|heat.spiTempSensorChannel = 255|this selects which SPI channel is used to communicate with the temperature sensor board. Can be set to 255 to indicate no channel to be used|LPC has three SPI interfaces (two channels 0 and 1 are hardware based - SSP0 and SSP1 and channel 2 is software| STM32 has six SPI interfaces (three channels 0, 1 and 3 are hardware based although only 1 and 2 are implemented - SSP0 and SSP1 and channel 3, 4 and 5 are software|
+|heat.spiTempSensorChannel|heat.spiTempSensorChannel = 255|this selects which SPI channel is used to communicate with the temperature sensor board. Can be set to 255 to indicate no channel to be used|LPC has three SPI interfaces (two channels 0 and 1 are hardware based - SSP0 and SSP1 and channel 2 is software| STM32 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software)|
 |heat.spiTempSensorCSPins|heat.spiTempSensorCSPins = {1.21, NoPin}|Sets the SPI temperature sensor chip select pin. Can be set to 255 to indicate no channel to be used|LPC accepts a maximum of 2 sensors|STM32 accepts a maximum of 2 sensors|
 |heat.tempSensePins|heat.tempSensePins = {0.25,0.23}|Sets the temperature sensor pins starting with the bed|LPC Accepts a maximum of 3 entries|STM32 accepts a maximum of 9 entries|
 |lcd.encoderPinA|lcd.encoderPinA = 3.25|Sets the pin for connection A of the encoder|Not supported on LPC||
@@ -43,7 +43,7 @@ Examples are given using LPC pins.
 |lcd.lcdCSPin|lcd.lcdCSPin = 0.16|Sets the LCD chip select pin|Not supported on LPC||
 |lcd.lcdDCPin|lcd.lcdDCPin = 2.11|Sets the data control pin (A0)|Not supported on LPC||
 |lcd.panelButtonPin|lcd.panelButtonPin = 2.11|For use when a connected display has an extra button|Not supported on LPC||
-|lcd.spiChannel|lcd.spiChannel = 255|This selects which SPI channel is used to communicate with the LCD. Can be set to 255 to indicate no channel to be used|Not supported on LPC| STM32 has six SPI interfaces (three channels 0, 1 and 3 are hardware based although only 1 and 2 are implemented - SSP0 and SSP1 and channel 3, 4 and 5 are software|
+|lcd.spiChannel|lcd.spiChannel = 255|This selects which SPI channel is used to communicate with the LCD. Can be set to 255 to indicate no channel to be used|Not supported on LPC|STM32 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software)|
 |led.neopixelPin|led.neopixelPin = 1.24|This sets the output pin for neopixel control|||
 |leds.diagnostic|leds.diagnostic = 1.18|This would set the correct pin for controlling a diagnostic pin|||
 |lpc.board ("board" is also supported from 3.2_4)|lpc.board = fly_e3|This sets the correct board pin mapping to load. See table below for current list|||
