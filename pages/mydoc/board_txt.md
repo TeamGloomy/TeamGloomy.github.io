@@ -45,7 +45,7 @@ Examples are given using LPC pins.
 |lcd.panelButtonPin|lcd.panelButtonPin = 2.11|For use when a connected display has an extra button|Not supported on LPC||
 |lcd.spiChannel|lcd.spiChannel = 255|This selects which SPI channel is used to communicate with the LCD. Can be set to 255 to indicate no channel to be used|Not supported on LPC|STM32 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software)|
 |led.neopixelPin|led.neopixelPin = 1.24|This sets the output pin for neopixel control|||
-|leds.diagnostic|leds.diagnostic = 1.18|This would set the correct pin for controlling a diagnostic pin|||
+|leds.diagnostic|leds.diagnostic = 1.18|This would set the correct pin for controlling a diagnostic LED|||
 |lpc.board ("board" is also supported from 3.2_4)|lpc.board = fly_e3|This sets the correct board pin mapping to load. See table below for current list|||
 |sbc.csPin||sbc.csPin = 0.16|Allow use of non standard CS pin|||
 |sbc.lpcTfrReadyPin ("sbc.TfrReadyPin" is also supported from 3.2_4)|sbc.lpcTfrReadyPin = 0.28 or sbc.TfrReadyPin = 0.28|This sets the transfer ready pin when attaching an SBC|||
@@ -59,8 +59,8 @@ Examples are given using LPC pins.
 |softwareSPI.pins|softwareSPI.pins = {0.15,0.17,0.16}|Sets the software SPI pins in the order SCK, MISO, MOSI|||
 |softwareSPI1.pins|softwareSPI1.pins = {0.15,0.17,0.16}|Sets the software SPI pins in the order SCK, MISO, MOSI|Not supported on LPC||
 |softwareSPI2.pins|softwareSPI2.pins = {0.15,0.17,0.16}|Sets the software SPI pins in the order SCK, MISO, MOSI|Not supported on LPC||
-|SSP0.pins|SSP0.pins = {0.15,0.17,1.24,0.16}|Sets the pins to be used for SSP0 in the order SCK, MISO, MOSI, CS|||
-|stepper.digipotFactor|stepper.digipotFactor = 113.33|Sets the output current for a built in driver as a factor of 255 against max current|||
+|SSP0.pins|SSP0.pins = {0.15,0.17,1.24,0.16}|Sets the pins to be used for SSP0 in the order SCK, MISO, MOSI, CS||LPC Only|
+|stepper.digipotFactor|stepper.digipotFactor = 113.33|Sets the output current for a built in driver as a factor of 255 against max current|MKS Sbase and Smoothieboard only||
 |stepper.directionPins|stepper.directionPins = { 0.5,0.11,0.20,0.22,2.13}|Sets the driver direction pins in the order 0, 1, 2, 3 and so on|LPC supports a maximum of 7 drivers|STM32 supports a maximum of 11 drivers|
 |stepper.enablePins|stepper.enablePins = {0.4,0.10,0.19,0.21,4.29}|Sets the driver enable pins in the order 0, 1, 2, 3 and so on|LPC supports a maximum of 7 drivers|STM32 supports a maximum of 11 drivers|
 |stepper.numSmartDrivers|stepper.numSmartDrivers = 3|Sets the number of TMC22XX drivers installed between 1 and 11. Drivers must be installed from drive 0|||
