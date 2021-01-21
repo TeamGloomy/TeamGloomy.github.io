@@ -30,6 +30,7 @@ Examples are given using LPC pins.
 |adc.prefilter.enable|adc.prefilter.enable = true|This enables or disables the analogue to digital converter filter. Can be either true or false|
 |adc.preFilter.numberSamples|adc.preFilter.numberSamples = 8|This sets the number of samples to be used to get each value. The larger the value, the smoother the value but lag may also be introduced. The default is 8|
 |adc.preFilter.sampleRate|adc.preFilter.sampleRate = 10000|This sets the analogue to digital converter sample rate in Hz|
+|atx.initialPowerOn|atx.initialPowerOn = 1|This sets the ATX power pin as on as soon as the board powers up rather than having to wait for M80 to be ran. The default is true|
 |atx.powerPin|atxPowerPin = 2.12|This sets the pin to be used for controlling an ATX power supply|
 |atx.powerPinInverted|atx.powerPinInverted = 0|Some ATX power supplies are active low for off and some are active high. This allows that to be set. Use either 0 or 1|
 |heat.spiTempSensorChannel|heat.spiTempSensorChannel = 255| LPC has three SPI interfaces (two channels 0 and 1 are hardware based - SSP0 and SSP1 channel 2 is software), this selects which SPI channel is used to communicate with the temperature sensor board. Can be set to 255 to indicate no channel to be used|

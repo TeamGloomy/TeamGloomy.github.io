@@ -29,15 +29,15 @@ entries:
       type: homepage
 
     - title: Getting Started
-      url: /mydoc_getting_started.html
+      url: /getting_started.html
       output: web, pdf
 
     - title: Supported Boards and Drivers
-      url: /mydoc_supported_boards.html
+      url: /supported_boards.html
       output: web, pdf
 
     - title: Getting Support
-      url: /mydoc_support.html
+      url: /support.html
       output: web, pdf
 
     - title: FAQ
@@ -45,7 +45,7 @@ entries:
       output: web, pdf
 
     - title: TeamGloomy
-      url: /mydoc_TeamGloomy.html
+      url: /TeamGloomy.html
       output: web, pdf
 
   - title: Release Notes
@@ -53,11 +53,11 @@ entries:
     folderitems:
 
     - title: 3.2_1 Release Notes
-      url: /mydoc_release_notes_3.2_1.html
+      url: /release_notes_3.2_1.html
       output: web, pdf
 
     - title: 3.2 RC2 Release notes
-      url: /mydoc_release_notes_3.2_RC2.html
+      url: /release_notes_3.2_RC2.html
       output: web, pdf
 
   - title: General
@@ -77,7 +77,7 @@ entries:
       output: web, pdf
 
     - title: Sensorless Homing and Stall Detection
-      url: /mydoc_sensorless.html
+      url: /sensorless.html
       output: web, pdf
 
     - title: Adding a Camera
@@ -85,19 +85,19 @@ entries:
       output: web, pdf
 
     - title: Configuring Neopixels
-      url: /mydoc_neopixels.html
+      url: /neopixels.html
       output: web, pdf
 
     - title: Connecting a Smart Effector
-      url: /mydoc_smart_effector.html
+      url: /smart_effector.html
       output: web, pdf
 
     - title: Useful Macros
-      url: /mydoc_useful_macros.html
+      url: /useful_macros.html
       output: web, pdf
 
     - title: Firmware Build Instructions
-      url: /mydoc_firmware_build.html
+      url: /firmware_build.html
       output: web, pdf
 
       subfolders:  
@@ -106,15 +106,15 @@ entries:
         subfolderitems:
 
         - title: User Created Guides
-          url: /mydoc_user_guides.html
+          url: /user_guides.html
           output: web, pdf
 
         - title: User Created Configs
-          url: /mydoc_user_configs.html
+          url: /user_configs.html
           output: web, pdf
 
         - title: User Created Videos
-          url: /mydoc_user_videos.html
+          url: /user_videos.html
           output: web, pdf
   
   - title: LPC Boards
@@ -122,15 +122,15 @@ entries:
     folderitems:
 
     - title: LPC Firmware Restrictions
-      url: /mydoc_lpc_differences.html
+      url: /lpc_differences.html
       output: web, pdf
 
     - title: Configuring an ESP8266 for LPC Boards
-      url: /mydoc_lpc_esp.html
+      url: /lpc_esp.html
       output: web, pdf
 
     - title: Configuring an SBC for LPC Boards
-      url: /mydoc_lpc_sbc.html
+      url: /lpc_sbc.html
       output: web, pdf
 
       subfolders:  
@@ -139,19 +139,19 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_fly_cdy_connected_wifi.html
+          url: /fly_cdy_connected_wifi.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_fly_cdy_screen.html
+          url: /fly_cdy_screen.html
           output: web, pdf
 
         - title: Connecting a BLTouch
-          url: /mydoc_fly_cdy_bltouch.html
+          url: /fly_cdy_bltouch.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_fly_cdy_pins.html
+          url: /fly_cdy_pins.html
           output: web, pdf
 
       - title: MKS Sbase v1.3
@@ -159,19 +159,19 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_mks_sbase_connected_wifi.html
+          url: /mks_sbase_connected_wifi.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_mks_sbase_screen.html
+          url: /mks_sbase_screen.html
           output: web, pdf
 
         - title: Connecting a BLTouch
-          url: /mydoc_mks_sbase_bltouch.html
+          url: /mks_sbase_bltouch.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_mks_sbase_pins.html
+          url: /mks_sbase_pins.html
           output: web, pdf
 
       - title: MKS SGen L v1.0
@@ -179,23 +179,23 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_mks_sgen_l_1_connected_wifi.html
+          url: /mks_sgen_l_1_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_mks_sgen_l_1_connected_sbc.html
+          url: /mks_sgen_l_1_connected_sbc.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_mks_sgen_l_1_screen.html
+          url: /mks_sgen_l_1_screen.html
           output: web, pdf
 
         - title: Connecting a BLTouch
-          url: /mydoc_mks_sgen_l_1_bltouch.html
+          url: /mks_sgen_l_1_bltouch.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_mks_sgen_l_1_pins.html
+          url: /mks_sgen_l_1_pins.html
           output: web, pdf
 
       - title: MKS SGen L v2.0
@@ -203,23 +203,23 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_mks_sgen_l_2_connected_wifi.html
+          url: /mks_sgen_l_2_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_mks_sgen_l_2_connected_sbc.html
+          url: /mks_sgen_l_2_connected_sbc.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_mks_sgen_l_2_screen.html
+          url: /mks_sgen_l_2_screen.html
           output: web, pdf
 
         - title: Connecting a BLTouch
-          url: /mydoc_mks_sgen_l_2_bltouch.html
+          url: /mks_sgen_l_2_bltouch.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_mks_sgen_l_2_pins.html
+          url: /mks_sgen_l_2_pins.html
           output: web, pdf
 
       - title: Re-Arm
@@ -227,15 +227,15 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_re_arm_connected_wifi.html
+          url: /re_arm_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_re_arm_connected_sbc.html
+          url: /re_arm_connected_sbc.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_re_arm_pins.html
+          url: /re_arm_pins.html
           output: web, pdf
 
       - title: SKR v1.1
@@ -243,19 +243,19 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_skr_1.1_connected_wifi.html
+          url: /skr_1.1_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_skr_1.1_connected_sbc.html
+          url: /skr_1.1_connected_sbc.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_skr_1.1_screen.html
+          url: /skr_1.1_screen.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_skr_1.1_pins.html
+          url: /skr_1.1_pins.html
           output: web, pdf
 
       - title: SKR v1.3
@@ -263,27 +263,27 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_skr_1.3_connected_wifi.html
+          url: /skr_1.3_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_skr_1.3_connected_sbc.html
+          url: /skr_1.3_connected_sbc.html
           output: web, pdf
         
         - title: Connecting a Screen
-          url: /mydoc_skr_1.3_screen.html
+          url: /skr_1.3_screen.html
           output: web, pdf
 
         - title: Connecting a BLTouch
-          url: /mydoc_skr_1.3_bltouch.html
+          url: /skr_1.3_bltouch.html
           output: web, pdf
 
         - title: Connecting a BTT-MOT-EXP
-          url: /mydoc_skr_1.3_btt_mot_exp.html
+          url: /skr_1.3_btt_mot_exp.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_skr_1.3_pins.html
+          url: /skr_1.3_pins.html
           output: web, pdf
 
       - title: SKR v1.4 and v1.4T
@@ -291,27 +291,27 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_skr_1.4_connected_wifi.html
+          url: /skr_1.4_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_skr_1.4_connected_sbc.html
+          url: /skr_1.4_connected_sbc.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_skr_1.4_screen.html
+          url: /skr_1.4_screen.html
           output: web, pdf
 
         - title: Connecting a BLTouch
-          url: /mydoc_skr_1.4_bltouch.html
+          url: /skr_1.4_bltouch.html
           output: web, pdf
 
         - title: Connecting a BTT-MOT-EXP
-          url: /mydoc_skr_1.4_btt_mot_exp.html
+          url: /skr_1.4_btt_mot_exp.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_skr_1.4_pins.html
+          url: /skr_1.4_pins.html
           output: web, pdf
 
       - title: SKR E3 Turbo
@@ -319,19 +319,19 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_skr_E3T_connected_wifi.html
+          url: /skr_E3T_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_skr_E3T_connected_sbc.html
+          url: /skr_E3T_connected_sbc.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_skr_E3T_screen.html
+          url: /skr_E3T_screen.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_skr_E3T_pins.html
+          url: /skr_E3T_pins.html
           output: web, pdf
 
   - title: STM32 Boards
@@ -339,15 +339,15 @@ entries:
     folderitems:
 
     - title: STM32 Firmware Restrictions
-      url: /mydoc_stm32_differences.html
+      url: /stm32_differences.html
       output: web, pdf
 
     - title: Configuring an ESP8266 for STM32 Boards
-      url: /mydoc_stm32_esp.html
+      url: /stm32_esp.html
       output: web, pdf
 
     - title: Configuring an SBC for STM32 Boards
-      url: /mydoc_stm32_sbc.html
+      url: /stm32_sbc.html
       output: web, pdf
 
       subfolders:  
@@ -356,27 +356,27 @@ entries:
         subfolderitems:
 
         - title: Fly-407ZG General Information
-          url: /mydoc_fly_407zg_general.html
+          url: /fly_407zg_general.html
           output: web, pdf
         
         - title: Connecting via WiFi
-          url: /mydoc_fly_407zg_connected_wifi.html
+          url: /fly_407zg_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_fly_407zg_connected_sbc.html
+          url: /fly_407zg_connected_sbc.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_fly_407zg_screen.html
+          url: /fly_407zg_screen.html
           output: web, pdf
 
         - title: Connecting a BLTouch
-          url: /mydoc_fly_407zg_bltouch.html
+          url: /fly_407zg_bltouch.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_fly_407zg_pins.html
+          url: /fly_407zg_pins.html
           output: web, pdf
 
       - title: Fly-E3
@@ -384,19 +384,19 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_fly_e3_connected_wifi.html
+          url: /fly_e3_connected_wifi.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_fly_e3_screen.html
+          url: /fly_e3_screen.html
           output: web, pdf
 
         - title: Connecting a BLTouch
-          url: /mydoc_fly_e3_bltouch.html
+          url: /fly_e3_bltouch.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_fly_e3_pins.html
+          url: /fly_e3_pins.html
           output: web, pdf
 
       - title: GTR + M5
@@ -404,19 +404,19 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_gtr_connected_wifi.html
+          url: /gtr_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_gtr_connected_sbc.html
+          url: /gtr_connected_sbc.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_gtr_screen.html
+          url: /gtr_screen.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_gtr_pins.html
+          url: /gtr_pins.html
           output: web, pdf
 
       - title: SKR Pro v1.1 and v1.2
@@ -424,23 +424,23 @@ entries:
         subfolderitems:
 
         - title: Connecting via WiFi
-          url: /mydoc_skr_pro_connected_wifi.html
+          url: /skr_pro_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
-          url: /mydoc_skr_pro_connected_sbc.html
+          url: /skr_pro_connected_sbc.html
           output: web, pdf
 
         - title: Connecting a Screen
-          url: /mydoc_skr_pro_screen.html
+          url: /skr_pro_screen.html
           output: web, pdf
 
         - title: Connecting a BTT-MOT-EXP
-          url: /mydoc_skr_pro_btt_mot_exp.html
+          url: /skr_pro_btt_mot_exp.html
           output: web, pdf
 
         - title: Pin Names
-          url: /mydoc_skr_pro_pins.html
+          url: /skr_pro_pins.html
           output: web, pdf
 
   - title: Screens
@@ -448,9 +448,9 @@ entries:
     folderitems:
 
     - title: TFT Screen Configuration
-      url: /mydoc_tft.html
+      url: /tft.html
       output: web, pdf
 
     - title: Paneldue Information
-      url: /mydoc_paneldue.html
+      url: /paneldue.html
       output: web, pdf
