@@ -2,7 +2,7 @@
 title: Connecting an MKS SGen L v2.0 via Wifi
 tags: []
 keywords: 
-last_updated: 20/01/2021
+last_updated: 21/01/2021
 summary: "Connecting an MKS SGen L v2.0 via Wifi"
 sidebar: mydoc_sidebar
 permalink: mks_sgen_l_2_connected_wifi.html
@@ -91,7 +91,7 @@ Please only include the diag pin numbers where you intend to use sensorless homi
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as [termite](https://www.compuphase.com/software_termite.htm), connect to the board. Then type in the following
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as [termite](https://www.compuphase.com/software_termite.htm), connect to the board. As of release 3.2_4, the recommended terminal program is [YAT](https://sourceforge.net/projects/y-a-terminal/). Then type in the following
 
 ```
 M552 S0

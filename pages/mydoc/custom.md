@@ -22,5 +22,8 @@ M350 - For many of the drivers used on the supported board, the microstepping is
 
 M915 - Stall detection is now supported on the SKR v1.3, SKR v1.4, SKR E3 Turbo, SKR GTR, SKR Pro, fly-CDY and MKS SGen L v1 and v2 when using TMC2209 drivers
 
+thermocouple-max6675 has been added as a thermistor input type for M308. e.g. 
+```M308 S0 P"C7" Y"thermocouple-max6675"```
+
 ## Additional Meta Information
 Version 3.01 and upwards of RRF includes support for conditional gcode. It does this through [meta commands](https://duet3d.dozuki.com/Wiki/GCode_Meta_Commands) and querying data stored in the [object model](https://duet3d.dozuki.com/Wiki/Object_Model_of_RepRapFirmware).
