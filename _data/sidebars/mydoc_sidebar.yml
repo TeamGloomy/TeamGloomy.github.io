@@ -379,6 +379,10 @@ entries:
           url: /fly_407zg_screen.html
           output: web, pdf
 
+        - title: Connecting a 12864 Screen
+          url: /fly_407zg_screen_12864.html
+          output: web, pdf
+
         - title: Connecting a BLTouch
           url: /fly_407zg_bltouch.html
           output: web, pdf
@@ -429,6 +433,14 @@ entries:
 
         - title: Connecting a Screen
           url: /gtr_screen.html
+          output: web, pdf
+
+        - title: Connecting a 12864 Screen
+          url: /gtr_screen_12864.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /gtr_bltouch.html
           output: web, pdf
 
         - title: Pin Names

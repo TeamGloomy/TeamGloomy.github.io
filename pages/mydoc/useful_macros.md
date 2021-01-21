@@ -18,6 +18,7 @@ Here are some example macros
     <li><a class="noCrossRef" href="#bedmanual" data-toggle="tab">Manual Bed Levelling</a></li>
     <li><a class="noCrossRef" href="#stop" data-toggle="tab">Example stop.g</a></li>
     <li><a class="noCrossRef" href="#bltouch" data-toggle="tab">Calibrating a BLTouch Trigger Height</a></li>
+	<li><a class="noCrossRef" href="#fysetc" data-toggle="tab">Fysetc Mini Neopixels</a></li>
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="g32" markdown="1">
@@ -194,6 +195,42 @@ M291 P"Check console for results and enter average value in G31 Z parameter of c
  
  
 M564 S0 H1 ; Reset limits	                                                            ; Home Z
+```
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="fysetc" markdown="1">
+
+A macro to enable the fysetc mini v2.1 and fade up the display/set Button colours
+
+```
+; ST7567 Init for FYSETC Mini12864 Panel V2.1
+
+; Turn off backlight
+m150 X2 R0 U0 B0 S3 F0
+; Configure reset pin
+M950 P1 C"PI.4" 						; Modify this pin to suit installation (or comment out for Duet boards)
+; hardware reset of LCD
+M42 P1 S0
+G4 P500
+M42 P1 S1
+; Turn display on
+M918 P2 C30 F1000000 E4
+; Fade in backlight
+while iterations < 256
+    m150 X2 R255 U255 B255 P{iterations} S1 F0
+    G4 P20
+; flash Button 3 times
+while iterations < 3
+    m150 X2 R255 U255 B255 P255 S1 F1
+    m150 X2 R0 U255 B0 P255 S2 F0
+    G4 P250
+    m150 X2 R255 U255 B255 P255 S1 F1
+    m150 X2 R0 U255 B0 P0 S2 F0
+    G4 P250
+; Display "ready" button state  
+m150 X2 R255 U255 B255 P255 S1 F1
+m150 X2 R255 U0 B0 P255 S2 F0
 ```
 
 </div>
