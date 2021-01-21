@@ -5,7 +5,7 @@ keywords:
 last_updated: 15/01/2021
 summary: "Driver Timings"
 sidebar: mydoc_sidebar
-permalink: mydoc_driver_timings.html
+permalink: driver_timings.html
 folder: mydoc
 comments: false
 toc: false

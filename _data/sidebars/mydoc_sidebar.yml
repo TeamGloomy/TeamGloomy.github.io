@@ -41,7 +41,7 @@ entries:
       output: web, pdf
 
     - title: FAQ
-      url: /mydoc_faq.html
+      url: /faq.html
       output: web, pdf
 
     - title: TeamGloomy
@@ -65,15 +65,15 @@ entries:
     folderitems:
 
     - title: Custom Commands and G-Code
-      url: /mydoc_custom.html
+      url: /custom.html
       output: web, pdf
 
     - title: Driver Timings
-      url: /mydoc_driver_timings.html
+      url: /driver_timings.html
       output: web, pdf
 
     - title: Board.txt Configurables
-      url: /mydoc_board_txt.html
+      url: /board_txt.html
       output: web, pdf
 
     - title: Sensorless Homing and Stall Detection
@@ -81,7 +81,7 @@ entries:
       output: web, pdf
 
     - title: Adding a Camera
-      url: /mydoc_camera.html
+      url: /camera.html
       output: web, pdf
 
     - title: Configuring Neopixels

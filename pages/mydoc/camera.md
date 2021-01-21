@@ -5,7 +5,7 @@ keywords:
 last_updated: 15/01/2021
 summary: "Adding a Camera"
 sidebar: mydoc_sidebar
-permalink: mydoc_camera.html
+permalink: camera.html
 folder: mydoc
 comments: false
 toc: false

@@ -5,7 +5,7 @@ keywords:
 last_updated: 15/01/2021
 summary: "Board.txt Configurables"
 sidebar: mydoc_sidebar
-permalink: mydoc_board_txt.html
+permalink: board_txt.html
 folder: mydoc
 comments: false
 toc: false

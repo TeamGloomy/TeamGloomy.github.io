@@ -5,7 +5,7 @@ keywords:
 last_updated: 15/01/2021
 summary: "Custom Commands and G-Code"
 sidebar: mydoc_sidebar
-permalink: mydoc_custom.html
+permalink: custom.html
 folder: mydoc
 comments: false
 toc: false
