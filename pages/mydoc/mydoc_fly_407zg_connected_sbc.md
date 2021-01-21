@@ -61,7 +61,7 @@ All the SD card on the Fly-407ZG needs is the board.txt file with the following 
 ```
 //Config for Fly-407ZG
 lpc.board = fly_f407zg
-sbc.lpcTfrReadyPin = B2
+sbc.lpcTfrReadyPin = B.2
 sbc.csPin = F.11
 ```
 
