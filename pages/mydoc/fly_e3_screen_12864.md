@@ -41,3 +41,17 @@ Add the following line to the end of your config.g
 ```
 M918 P1 E4 F1000000
 ```
+
+## Menu Files
+
+Menu files must be uploaded to allow the display to generate the correct information. This can be done in two ways.
+First, obtain the recommended menu files from [here](https://github.com/jadonmmiller/UltimateDuetMenuSystem/releases/)
+
+### Method 1
+
+Extract the contents of the zip file you downloaded above and place them in a folder called "Menu" on the SD card of the Fly-E3. 
+
+### Method 2
+
+Activate the display using the config.g changes above.  
+A side menu called "Display" should appear in DWC. Navigate to it and upload the zip file.  
