@@ -29,3 +29,5 @@ For configuring them, use this [documentation](https://duet3d.dozuki.com/Wiki/Gc
 Do not try to update the neopixels during motion or a momentary pause in movement would be caused.  
 It is ok to change their status at the start and end of a print.  
 Don't be tempted to use daemon.g unless you are able to arrange it to take place at a layer change.  
+
+This may not work at all on any pin on the SKR-Pro as Neopixels really need a 5V control signal, which is why many boards like the GTR and SKR V1.4 have specific neopixel pins. Those pins have a level shifter that boosts the 3.3V signal to 5V. The SKR Pro does not have this. Sometimes you can make it work by providing the neopixels with a lower than 5V supply voltage, but it pretty much depends on the pixels that you have. Another option would be to use a level shifter.

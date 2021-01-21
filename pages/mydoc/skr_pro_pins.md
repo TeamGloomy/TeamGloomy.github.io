@@ -44,9 +44,11 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
 |PA_1| servo0||
-|PA_15| X-CS|PA15|
 |PA_2| probe||
 |PA_8| PA8||
+|PA_9|PA9||
+|PA_10|PA10||
+|PA_15| X-CS|PA15|
 |PB_0| e2heat|he2|
 |PB_1| e0heat|he0|
 |PB_10| xstop|x-stop|
@@ -70,13 +72,13 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |PC_8| fan0|fan|
 |PC_9| PC9||
 |PD_0| PD0||
-|PD_0| PD5||
 |PD_10| PD10||
 |PD_11| PD11||
 |PD_12| bed|hbed|
 |PD_14| e1heat|he1|
 |PD_2| PD2||
 |PD_3| PD3||
+|PD_5| PD5||
 |PD_8| PD8||
 |PD_9| PD9||
 |PE_0| PE0||
