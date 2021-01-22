@@ -23,7 +23,7 @@ comments: false
 
 The image for to flash to the ESP can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases).  
 
-{% include note.html content="Use the latest release for stable builds and the newest pre-release for unstable builds.  </br>
+{% include note.html content="Use the latest release for stable builds and the newest pre-release for unstable builds.  <br/>
 Make sure you download DuetWifiServer-stm32f4.bin  " %} 
 
 It should be flashed using [esptool.py](https://github.com/espressif/esptool). Use the code below as an example. Change the Com port to match the ESP device and make sure you give the .bin file its complete file location if its not in the same folder as esptools.
