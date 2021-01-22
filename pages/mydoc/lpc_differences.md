@@ -5,7 +5,7 @@ keywords:
 last_updated: 15/01/2021
 summary: "Restrictions in the LPC firmware compared to RepRapFirmware available on Duet3D hardware"
 sidebar: mydoc_sidebar
-permalink: differences.html
+permalink: lpc_differences.html
 folder: mydoc
 comments: false
 toc: false
