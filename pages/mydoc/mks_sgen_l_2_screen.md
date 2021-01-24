@@ -51,7 +51,7 @@ In config.g, the following command should be added.
 M575 P1 S1 B57600
 M555 P2
 ```
-Please see [here](/mydoc_tft.html) for further information on ensuring you have the correct firmware installed.
+Please see [here](/tft.html) for further information on ensuring you have the correct firmware installed.
 
 </div>
 

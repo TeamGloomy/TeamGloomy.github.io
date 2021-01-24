@@ -34,7 +34,7 @@ Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allo
 
 ### Preparing the ESP
 
-Follow the instructions [here](mydoc_lpc_esp.html).
+Follow the instructions [here](lpc_esp.html).
 
 ### Connecting the ESP
 

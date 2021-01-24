@@ -13,7 +13,7 @@ comments: false
 
 
 <ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#preparing" data-toggle="tab">Intial Configuration</a></li>
+    <li class="active"><a class="noCrossRef" href="#preparing" data-toggle="tab">Initial Configuration</a></li>
     <li><a class="noCrossRef" href="#updating" data-toggle="tab">Updating Existing</a></li>
 </ul>
   <div class="tab-content">

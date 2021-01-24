@@ -26,7 +26,7 @@ Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4.
 
 ### Prepare the Raspberry Pi
 
-Follow the instructions detailed [here](mydoc_stm32_sbc.html).
+Follow the instructions detailed [here](stm32_sbc.html).
 
 ### BOM
 

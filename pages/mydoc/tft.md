@@ -9,8 +9,30 @@ permalink: tft.html
 folder: mydoc
 comments: false
 toc: false
+datatable: true
 ---
 
-User thro42's version of the [TFT firmware](https://github.com/Thro42/BTT-SOVOL-TouchScreenFirmware-Duet) is currently the most feature complete available. It is based off the work of [jimmymaddness](https://github.com/JimmymaDdness/Mks-TouchScreenFirmware-Duet), which is turn based off the work of [bcmob](https://github.com/bcmob/BIGTREETECH-TouchScreenFirmware).  
+## Overview
 
-Work is being undertaken to get full RepRapFirmware support in the [standard bigtreetech firmware](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware)
+The most recent version of the [standard bigtreetech TFT firmware](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware) has built in support for RepRapFirmware. The pre-built images have this enabled by default.
+
+## Config.ini changes
+
+There are some changes that should be made when loading the TFT firmware on to the screen.
+They are as follows:
+```
+baudrate:4
+onboard_sd_support:1
+
+<div class="datatable-begin"></div>
+
+|Attribute Name|Default Value|New Value|
+| :------------- |:-------------|:-------------|
+|baudrate|5|4|
+|onboard_sd_support|2|1|
+|serial_always_on|0|1|
+
+<div class="datatable-end"></div>
+
+M575 P1 S3 B57600
+M122

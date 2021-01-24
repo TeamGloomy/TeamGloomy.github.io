@@ -52,7 +52,7 @@ Once removed, R42 (the bottom one) should be bridged. A small piece of wire can 
 
 ### Preparing the ESP
 
-Follow the instructions [here](mydoc_lpc_esp.html).
+Follow the instructions [here](lpc_esp.html).
 
 ### Connecting the ESP
 
