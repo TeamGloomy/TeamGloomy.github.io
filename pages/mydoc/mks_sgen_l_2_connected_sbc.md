@@ -5,7 +5,7 @@ keywords:
 last_updated: 20/01/2021
 summary: "Connecting an MKS SGen L v2.0 via SBC"
 sidebar: mydoc_sidebar
-permalink: mydoc_mks_sgen_l_2_connected_sbc.html
+permalink: mks_sgen_l_2_connected_sbc.html
 folder: mydoc
 comments: false
 toc: false
