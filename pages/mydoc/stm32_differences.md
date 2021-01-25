@@ -15,7 +15,7 @@ toc: false
 
 * No support for 12864 Displays. **Support has been added as part of release 3.2_4.**  
 * Configuration:
-  * See [Driver Timings](https://github.com/gloomyandy/RepRapFirmware/wiki/driver-timings) for information about setting the correct timings.
-  * See [Custom Commands and Gcode](https://github.com/gloomyandy/RepRapFirmware/wiki/Custom-Commands-and-GCode) for information about additional gcode and unsupported gcode. 
+  * See [Driver Timings](driver_timings.html) for information about setting the correct timings.
+  * See [Custom Commands and Gcode](custom.html) for information about additional gcode and unsupported gcode. 
 * To support the number of different boards, a /sys/board.txt config file is required. More information can be found [here](board_txt.html).
 * M150 does not support X0 or X1. If being used with neopixels, X2 should be used.  

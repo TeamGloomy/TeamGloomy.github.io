@@ -2,7 +2,7 @@
 title:  Configuring an ESP8266 for STM32 Boards
 tags: 
 keywords: 
-last_updated: 16/01/2021
+last_updated: 25/01/2021
 summary: "Configuring an ESP8266 for STM32 Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_esp.html
@@ -46,7 +46,7 @@ This method follows the flashing instructions for preparation. To allow the ESP 
 
 ### DWC based Updating
 
-{% include warning.html content="This cannot be used in conjunction with using a screen on the SKR v1.3" %} 
+{% include warning.html content="This cannot be used in conjunction with using a screen on the Fly-407ZG" %} 
 
 To allow this to take place, extra cables will require adding between the board and the ESP. 
 The WiFi UART interface will also require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:

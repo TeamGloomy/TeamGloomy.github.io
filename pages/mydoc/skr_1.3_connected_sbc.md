@@ -69,17 +69,27 @@ lpc.board = biquskr_1.3
 sbc.lpcTfrReadyPin = 1.31
 ```
 
+#### Smart Drivers
+
 If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
-Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remaining driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.
+Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.  
+
+#### Sensorless Homing
 
 If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
 ```
 stepper.TmcDiagPins = {1.29, 1.28, 1.27, 1.26, 1.25}
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.28 in your board.txt file.
+
+#### Driver Diag Pin
+
+If you are not using sensorless homing, ensure you remove the sensorless homing jumper for each driver.
+
+### Board.txt Location
 
 Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the SKR v1.3.   
 

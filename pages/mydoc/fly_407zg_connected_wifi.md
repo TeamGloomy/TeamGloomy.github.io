@@ -2,7 +2,7 @@
 title: Connecting a Fly-407ZG via Wifi
 tags: []
 keywords: 
-last_updated: 21/01/2021
+last_updated: 25/01/2021
 summary: "Connecting a Fly-407ZG via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_wifi.html
@@ -60,11 +60,11 @@ The table below shows the pins required on the ESP8266 and what they are connect
 
 {% include warning.html content="The cables used need to be very very short. Even 10cm ones don't work so they must be shorter than that" %}
 
-If you would rather use a pre-made wifi board, then the one produced by [flymaker](https://www.aliexpress.com/item/1005001370540066.html?spm=2114.12010612.8148356.21.10de78beainjQN) is recommended.  
+If you would rather use a pre-made wifi board, then the one produced by [flymaker](https://www.aliexpress.com/item/1005001370540066.html) is recommended.  
 
 ### Prepare the SD Card
 
-Follow the instructions on [Getting Started with RRF3](https://github.com/gloomyandy/RepRapFirmware/wiki/Getting-Started---RRF3)
+Follow the instructions on [Getting Started with RRF3](getting_started.html)
 
 ### Board.txt file
 
@@ -79,11 +79,21 @@ lpc.board = fly_f407zg
 8266wifi.csPin = F.11
 ```
 
+#### Smart Drivers
+
 If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
 Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the Fly-407ZG board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.  
+
+#### Sensorless Homing
+
+To be able to use sensorless homing on this board, a jumper cable needs to be installed between the diag pin of the driver and an endstop input.  
+
+### Board.txt Location
+
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Fly-407ZG.   
 
 ### Final Setup
 

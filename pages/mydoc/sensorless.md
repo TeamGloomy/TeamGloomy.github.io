@@ -2,7 +2,7 @@
 title:  Sensorless Homing and Stall Detection
 tags: 
 keywords: 
-last_updated: 16/01/2021
+last_updated: 25/01/2021
 summary: "Sensorless Homing and Stall Detection"
 sidebar: mydoc_sidebar
 permalink: sensorless.html
@@ -60,7 +60,8 @@ Once you have confirmed that your motors are stalling, adapt the example cartesi
 
 The S, H and R values will probably need tweaking for your system.  
 H is typically 200 for 1.8 degree motors and 400 for 0.9 degree motors.
-S is the stall detection threshold which should be between -127 and +127. The LPC port has a wider sensitivity range than the duet version of RRF.  
+S is the stall detection threshold which should be between -127 and +127.
+{% include tip.html content="This port has a wider sensitivity range than the duet version of RRF (which is -64 to +64)." %}
 R is the action to take on detecting a stall. 0 = no action (default), 1 = just report it, 2 = pause print, 3 = pause print, execute /sys/rehome/.g, and resume print
 
 <ul id="profileTabs" class="nav nav-tabs">

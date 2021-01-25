@@ -2,7 +2,7 @@
 title: Connecting a Fly-E3 via Wifi
 tags: []
 keywords: 
-last_updated: 21/01/2021
+last_updated: 25/01/2021
 summary: "Connecting a Fly-E3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_e3_connected_wifi.html
@@ -27,7 +27,7 @@ Choose the correct corresponding firmware (DuetWiFiServer-stm32f4.bin) from [her
 
 ### Prepare the SD Card
 
-Follow the instructions on [Getting Started with RRF3](https://github.com/gloomyandy/RepRapFirmware/wiki/Getting-Started---RRF3)
+Follow the instructions on [Getting Started with RRF3](getting_started.html)
 
 ### Board.txt file
 
@@ -43,17 +43,31 @@ lpc.board = fly_e3
 8266wifi.serialRxTxPins = { D.9, D.8 } ;
 ```
 
+#### Smart Drivers
+
 If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
-Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.   
+Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.
+
+#### Sensorless Homing
 
 If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
 ```
 stepper.TmcDiagPins = {A.2, A.1, C.5}
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.2 and A.1 in your board.txt file.
+
+#### Driver Diag Pin
+
+The driver diag pin is used for sensorless homing and stall detection.  
+The Fly-E3 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers ](https://www.aliexpress.com/item/1005001877899893.html) which have a switch on the underside of them for disabling the diag pin.  
+If you plan on using endstops rather than sensorless homing and do not have the Fly-2209 drivers, you need to bend or remove the diag pin.  
+
+### Board.txt Location
+
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Fly-E3.   
 
 ### Config.g adjustments
 

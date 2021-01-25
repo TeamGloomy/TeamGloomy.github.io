@@ -494,3 +494,11 @@ entries:
     - title: Fly Screen Information
       url: /fly_screen.html
       output: web, pdf
+
+  - title: Adapters
+    output: web, pdf
+    folderitems:
+
+    - title: Available WiFi/SBC Adapters
+      url: /adapters.html
+      output: web, pdf

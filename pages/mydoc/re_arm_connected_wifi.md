@@ -2,7 +2,7 @@
 title: Connecting a Re-Arm via Wifi
 tags: []
 keywords: 
-last_updated: 21/01/2021
+last_updated: 25/01/2021
 summary: "Connecting a Re-Arm via Wifi"
 sidebar: mydoc_sidebar
 permalink: re_arm_connected_wifi.html
@@ -60,7 +60,7 @@ The table below shows the pins required on the ESP and what they are connected t
 
 ### Prepare the SD Card
 
-Follow the instructions on [Getting Started with RRF3](https://github.com/gloomyandy/RepRapFirmware/wiki/Getting-Started---RRF3)
+Follow the instructions on [Getting Started with RRF3](getting_started.html)
 
 ### Board.txt file
 

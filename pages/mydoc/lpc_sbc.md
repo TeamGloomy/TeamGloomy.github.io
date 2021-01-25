@@ -2,7 +2,7 @@
 title:  Configuring an SBC for LPC Boards
 tags: 
 keywords: 
-last_updated: 21/01/2021
+last_updated: 25/01/2021
 summary: "Configuring an SBC for LPC Boards"
 sidebar: mydoc_sidebar
 permalink: lpc_sbc.html
@@ -46,7 +46,7 @@ Regardless of whether you are installing the LPC specific DSF changes for the fi
 To use the automatic updater, send the following:
 
 ```
-wget https://raw.githubusercontent.com/P-C-R/LPC-DSF-Install_Script/master/RRF_LPC_3_2.sh
+wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_LPC_3_2.sh
 sudo chmod 755 RRF_LPC_3_2.sh
 ./RRF_LPC_3_2.sh
 ```

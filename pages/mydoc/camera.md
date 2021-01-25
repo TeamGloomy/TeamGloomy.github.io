@@ -2,7 +2,7 @@
 title: Adding a Camera
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 25/01/2021
 summary: "Adding a Camera"
 sidebar: mydoc_sidebar
 permalink: camera.html
@@ -25,5 +25,5 @@ You can also add this to the general setting tab in the DUET, and have the webca
 
 ## DSF Plugin - Pi Cam only
 
-There us a DSF plugin for using a camera.  
+There is a DSF plugin for using a pi camera.  
 Information and instructions can be found [here](https://github.com/TLAS11/DWC-PiWebcam)

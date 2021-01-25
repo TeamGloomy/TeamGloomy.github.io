@@ -2,7 +2,7 @@
 title: Connecting an MKS SGen L v1.0 via SBC
 tags: []
 keywords: 
-last_updated: 20/01/2021
+last_updated: 25/01/2021
 summary: "Connecting an MKS SGen L v1.0 via SBC"
 sidebar: mydoc_sidebar
 permalink: mks_sgen_l_1_connected_sbc.html
@@ -64,11 +64,15 @@ lpc.board = mkssgenl_1.0
 sbc.lpcTfrReadyPin = 1.31
 ```
 
+#### Smart Drivers
+
 If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
 Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the MKS SGen L board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.  
+
+#### Sensorless Homing
 
 If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
 ```
@@ -76,7 +80,15 @@ stepper.TmcDiagPins = {1.29, 1.27, 1.25, 1.28, 1.26}
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.27 in your board.txt file.
 
-Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the MKS SGen L v1.0 
+#### Driver Diag Pin
+
+The driver diag pin is used for sensorless homing and stall detection.  
+The MKS-SGen L v1.0 **does not** have a way of disabling the diag pin.
+If you plan on using endstops rather than sensorless homing, you need to bend or remove the diag pin.  
+
+### Board.txt Location
+
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the MKS SGen L v1.0.   
 
 ### Finally...
 

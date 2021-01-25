@@ -23,8 +23,8 @@ The CPUs targeted in this port only have 64K RAM which is less than those that r
 * Disabled Ftp and Telnet interfaces
 * No support for 12864 Displays
 * Configuration:
-  * See [Driver Timings](https://github.com/gloomyandy/RepRapFirmware/wiki/driver-timings) for information about setting the correct timings.
-  * See [Custom Commands and Gcode](https://github.com/gloomyandy/RepRapFirmware/wiki/Custom-Commands-and-GCode) for information about additional gcode and unsupported gcode.  
+  * See [Driver Timings](driver_timings.html) for information about setting the correct timings.
+  * See [Custom Commands and Gcode](custom.html) for information about additional gcode and unsupported gcode.  
 * Auto-calibration restrictions to save memory:
   * Maximum number of probe points of 121; and
   * Delta maximum calibration points of 16

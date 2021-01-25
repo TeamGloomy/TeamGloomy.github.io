@@ -2,7 +2,7 @@
 title: Connecting an SKR E3 Turbo via Wifi
 tags: []
 keywords: 
-last_updated: 21/01/2021
+last_updated: 25/01/2021
 summary: "Connecting an SKR E3 Turbo via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_E3T_connected_wifi.html
@@ -62,7 +62,7 @@ The table below shows the pins required on the ESP8266 and what they are connect
 
 ### Prepare the SD Card
 
-Follow the instructions on [Getting Started with RRF3](https://github.com/gloomyandy/RepRapFirmware/wiki/Getting-Started---RRF3)
+Follow the instructions on [Getting Started with RRF3](getting_started.html)
 
 ### Board.txt file
 
@@ -77,17 +77,31 @@ lpc.board = biquskr_e3t
 8266wifi.espResetPin = 2.8
 ```
 
+#### Smart Drivers
+
 If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
 Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.  
 
+#### Sensorless Homing
+
 If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
 ```
 stepper.TmcDiagPins = {1.29, 1.28, 1.27, 1.26, 1.25}
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.28 in your board.txt file.
+
+#### Driver Diag Pin
+
+The driver diag pin is used for sensorless homing and stall detection.  
+The SKR E3 Turbo **does not** have a way of disabling the diag pin.
+If you plan on using endstops rather than sensorless homing, you need to bend or remove the diag pin.  
+
+### Board.txt Location
+
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the SKR E3 Turbo.
 
 ### Final Setup
 
