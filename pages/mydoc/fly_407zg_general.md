@@ -2,7 +2,7 @@
 title: Fly-407ZG General Information
 tags: []
 keywords: 
-last_updated: 20/01/2021
+last_updated: 25/01/2021
 summary: "General information regarding the Fly-407ZG"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_general.html
@@ -14,7 +14,8 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the Fly-407ZG board.
+This page covers any general information for the Fly-407ZG board.  
+It is currently available through [AliExpress](https://www.aliexpress.com/item/4000609195834.html)
 
 ### Heatsinks
 

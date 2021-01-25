@@ -146,6 +146,10 @@ entries:
         output: web, pdf
         subfolderitems:
 
+        - title: Fly-CDY General Information
+          url: /fly_cdy_general.html
+          output: web, pdf
+        
         - title: Connecting via WiFi
           url: /fly_cdy_connected_wifi.html
           output: web, pdf
@@ -485,4 +489,8 @@ entries:
 
     - title: Paneldue Information
       url: /paneldue.html
+      output: web, pdf
+
+    - title: Fly Screen Information
+      url: /fly_screen.html
       output: web, pdf
