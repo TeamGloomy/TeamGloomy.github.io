@@ -2,7 +2,7 @@
 title: TFT Screen Configuration
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 25/01/2021
 summary: "TFT Screen Configuration"
 sidebar: mydoc_sidebar
 permalink: tft.html
@@ -21,8 +21,6 @@ The most recent version of the [standard bigtreetech TFT firmware](https://githu
 There are some changes that should be made when loading the TFT firmware on to the screen.
 They are as follows:
 ```
-baudrate:4
-onboard_sd_support:1
 
 <div class="datatable-begin"></div>
 
@@ -34,5 +32,8 @@ onboard_sd_support:1
 
 <div class="datatable-end"></div>
 
-M575 P1 S3 B57600
-M122
+## Config Changes
+
+Add the following line to your config.g to enable the screen
+
+```M575 P1 S3 B57600```
