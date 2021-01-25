@@ -34,7 +34,7 @@ M575 P1 S0 B57600
 
 The hardware information for the 4.3" screen can be found [here](https://github.com/FLYmaker/FLY-Screen/tree/master/Size%20drawing)
 
-{% include image.html file="fly_43.png" alt="Fly 4.3" Screen" caption="Fly 4.3" Screen" %}
+{% include image.html file="fly_43.png" alt="Fly 4.3 inch Screen" caption="Fly 4.3 inch Screen" %}
 
 If you have purchased the Marlin version it is easy to convert it to a Duet version, just follow the update instructions below.
 
@@ -50,7 +50,7 @@ Once finished, remove the SD card and power cycle the screen.
 
 The hardware information for the 7" screen can be found [here](https://github.com/FLYmaker/FLY-Screen/tree/master/Size%20drawing)
 
-{% include image.html file="fly_7.png" alt="Fly 7" Screen" caption="Fly 7" Screen" %}
+{% include image.html file="fly_7.png" alt="Fly 7 inch Screen" caption="Fly 7 inch Screen" %}
 
 If you have purchased the Marlin version it is easy to convert it to a Duet version, just follow the update instructions below.
 
