@@ -2,7 +2,7 @@
 title: LPC Firmware Restrictions
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 25/01/2021
 summary: "Restrictions in the LPC firmware compared to RepRapFirmware available on Duet3D hardware"
 sidebar: mydoc_sidebar
 permalink: lpc_differences.html
@@ -25,7 +25,9 @@ The CPUs targeted in this port only have 64K RAM which is less than those that r
 * Configuration:
   * See [Driver Timings](https://github.com/gloomyandy/RepRapFirmware/wiki/driver-timings) for information about setting the correct timings.
   * See [Custom Commands and Gcode](https://github.com/gloomyandy/RepRapFirmware/wiki/Custom-Commands-and-GCode) for information about additional gcode and unsupported gcode.  
-  * Auto-calibration restrictions to save memory:
-    * Maximum number of probe points of 121; and
-    * Delta maximum calibration points of 16
-  * To support the number of different boards, a /sys/board.txt config file. More information can be found here.
+* Auto-calibration restrictions to save memory:
+  * Maximum number of probe points of 121; and
+  * Delta maximum calibration points of 16
+* To support the number of different boards, a /sys/board.txt config file is required. More information can be found [here](board_txt.html).
+* M150 does not support X0 or X1. If being used with neopixels, X2 should be used. 
+* There is no support for "mcu-temp" as a sensor type in M308 as the LPC1768/69 MCU does not have a built in temperature sensor.

@@ -395,6 +395,10 @@ entries:
         output: web, pdf
         subfolderitems:
 
+        - title: Fly-E3 General Information
+          url: /fly_e3_general.html
+          output: web, pdf
+        
         - title: Connecting via WiFi
           url: /fly_e3_connected_wifi.html
           output: web, pdf

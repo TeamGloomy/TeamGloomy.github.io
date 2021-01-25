@@ -2,7 +2,7 @@
 title: Fly-407ZG Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 25/01/2021
 summary: "Fly-407ZG Pin Names"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_pins.html
@@ -15,6 +15,8 @@ datatable: true
 ## Fly-407ZG Pinout Diagram
 
 {% include image.html file="fly_407zg.png" alt="Fly-407ZG" caption="Fly-407ZG Pinout" %}
+
+{% include image.html file="fly_407zg_other.png" alt="Fly-407ZG Other" caption="Fly-407ZG Power Information" %}
 
 ## Fly-407ZG Pins in Firmware
 
