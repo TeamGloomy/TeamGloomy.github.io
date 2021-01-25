@@ -18,8 +18,8 @@ It was originally ported by [sadvi](https://github.com/sdavi), but is now mainta
 
 ## Latest Stable
 
-The latest stable version is 3.2_1
+The latest stable version is [3.2_1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.2_1)
 
 ## Latest Unstable
 
-The latest beta/unstable version is 3.2_4
+The latest beta/unstable version is [3.2_4](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.2_4)
