@@ -19,21 +19,21 @@ The following instructions will guide you to install and run DuetSoftwareFramewo
 
 ### Supported boards
 
-You could find a list of supported SoCs in [this section of the armbian documentation](https://docs.armbian.com/#supported-socs).\
+You could find a list of supported SoCs in [this section of the armbian documentation](https://docs.armbian.com/#supported-socs).  
 Also, you may find your board in [the download page of Armbian website](https://www.armbian.com/download/).
 
 However, DSF in targeted at **armv7** processors so your should support these instructions.
 
 ### Choosing the build variant
 
-On the Armbian download page, you may find multiple build variants.\
-DSF may be installed on any of those variants and [this forum post](https://forum.armbian.com/topic/14874-bionic-vs-focal-vs-buster/?do=findComment&comment=106714) may help you to choose the one suitable to your needs.\
+On the Armbian download page, you may find multiple build variants.  
+DSF may be installed on any of those variants and [this forum post](https://forum.armbian.com/topic/14874-bionic-vs-focal-vs-buster/?do=findComment&comment=106714) may help you to choose the one suitable to your needs.  
 
 {% include note.html content="Keep in mind if you go for a minimal version, you could still install a GUI/desktop on your system later using the package manager (apt)."%}
 
 ### Armbian installation
 
-Armbian installation instruction could be found at [the official documentation page](https://docs.armbian.com/User-Guide_Getting-Started/).\
+Armbian installation instruction could be found at [the official documentation page](https://docs.armbian.com/User-Guide_Getting-Started/).  
 Please be sure :
 
 * A **proper power supply** according to the board requirements
@@ -53,7 +53,7 @@ If your SBC has onboard wireless capability or if you use a 3rd party wireless a
 
 ## Wiring
 
-The communication between the board and the SBC use Serial Peripheral Interface (SPI) bus.\
+The communication between the board and the SBC use Serial Peripheral Interface (SPI) bus.  
 A SPI bus use 4 GPIO pins:
 
 * CLK (A clock to synchronize the data exchange)
@@ -66,8 +66,8 @@ Two more GPIO pins are also required :
 * Transfer Ready (input on SBC which is toggled by the board).
 * GND (ground signal)
 
-You may have to find where these GPIO pins are located on your SBC.\
-However, in general, the GPIO headers are RasperryPi-compatible so the instructions given in the "Connecting a SBC board" section related to your board may apply here.\
+You may have to find where these GPIO pins are located on your SBC.  
+However, in general, the GPIO headers are RasperryPi-compatible so the instructions given in the "Connecting a SBC board" section related to your board may apply here.  
 Also, please **use resistors** to these pins (except GND) !
 
 ## Configure Armbian
@@ -81,15 +81,15 @@ overlays=spi-spidev
 param_spidev_spi_bus=1
 ```
 
-*The* `param_spidev_spi_bus` *parameter value depends on your board.\
+*The* `param_spidev_spi_bus` *parameter value depends on your board.  
 Please look at* `/boot/dtb/chipsetManufacturer/overlay/README.chipsetManufacturer-overlays` *and* `spi-spidev` *section for more information about it.*
 
-*You may also need to use* `param_spidev_spi_cs` *depending on which GPIO pin you plan to use for SPI CS.\
+*You may also need to use* `param_spidev_spi_cs` *depending on which GPIO pin you plan to use for SPI CS.  
 See the README file mentionned above for more information.*
 
-To do so, type `sudo nano /boot/armbianEnv.txt` and add these two lines.\
+To do so, type `sudo nano /boot/armbianEnv.txt` and add these two lines.  
 
-{% include note.html content="If you already have an overlays parameter, add `spi-spidev` by separating it from the other using a space character.\"%}
+{% include note.html content="If you already have an overlays parameter, add `spi-spidev` by separating it from the other using a space character."%}
 
 Your `armbianEnv.txt` file may look like below
 
@@ -104,7 +104,7 @@ param_spidev_spi_bus=1
 usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
 ```
 
-After rebooting your SBC, you may now have a `/dev/spidevX.Y` device.\
+After rebooting your SBC, you may now have a `/dev/spidevX.Y` device.  
 You can run `ls /dev/spi*` to check:
 
 ```
@@ -116,14 +116,14 @@ Let's write down it, you will need it at DSF configuration section.
 
 ### Increase SPI Buffer size
 
-DCS uses SPI buffer sizes of 8KiB whereas the default Armbian buffer size is limited to 4KiB.\
+DCS uses SPI buffer sizes of 8KiB whereas the default Armbian buffer size is limited to 4KiB.  
 In order to change it, you can adjust the boot arguments by creating a new file `/etc/modprobe.d/spidev.conf` by issuing the following command
 
 ```
 $ echo "options spidev bufsiz=8192" | sudo tee /etc/modprobe.d/spidev.conf
 ```
 
-After that, restart your SBC to apply the new buffer size.\
+After that, restart your SBC to apply the new buffer size.  
 You can check the new settings are applied by issuing :
 
 ```
@@ -133,7 +133,7 @@ $ cat /sys/module/spidev/parameters/bufsiz
 
 ### Transfer ready GPIO pin
 
-Now you need to identify the GPIO controller and its offset at which the GPIO pin is exposed.\
+Now you need to identify the GPIO controller and its offset at which the GPIO pin is exposed.  
 This may be a bit tricky.
 
 Obviously, this apply for the SBC that aren't known yet. For the known ones you can get the information you need at the related section below.
@@ -286,7 +286,7 @@ Once it's done, write changes using `CTRL + O`, then exit using `CTRL + X`
 
 ### Starting Duet Control Server
 
-Now you have installed Duet Software Framework, but none of the services has been started yet. As a first step, it is important to start the main application of DSF called Duet Control Server.\
+Now you have installed Duet Software Framework, but none of the services has been started yet. As a first step, it is important to start the main application of DSF called Duet Control Server.  
 To do this, make sure you have the LPC/STM board attached to your SBC and run :
 
 ```
@@ -315,7 +315,7 @@ sudo journalctl -u duetwebserver
 
 ### Autostart on boot
 
-Once DCS and DWC are both successfully started, you may want to start them automatically on boot.\
+Once DCS and DWC are both successfully started, you may want to start them automatically on boot.  
 To do so, run:
 
 ```
@@ -350,8 +350,8 @@ Run the utility :
 sudo armbian-config
 ```
 
-Choose Personal -> Hostname.\
-Then write the hostname you want and validate.\
+Choose Personal -> Hostname.  
+Then write the hostname you want and validate.  
 Reboot the SBC to apply the changes.
 
 {% include note.html content="The hostname must confirm to certain limitations to be valid. Valid characters for hostnames are letters from a to z, the digits from 0 to 9, the hyphen (-)."%} 
