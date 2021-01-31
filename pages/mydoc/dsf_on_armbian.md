@@ -88,7 +88,9 @@ Please look at* `/boot/dtb/chipsetManufacturer/overlay/README.chipsetManufacture
 See the README file mentionned above for more information.*
 
 To do so, type `sudo nano /boot/armbianEnv.txt` and add these two lines.\
+
 {% include note.html content="If you already have an overlays parameter, add `spi-spidev` by separating it from the other using a space character.\"%}
+
 Your `armbianEnv.txt` file may look like below
 
 ```
