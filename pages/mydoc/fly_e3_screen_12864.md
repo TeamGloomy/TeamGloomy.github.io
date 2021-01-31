@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-E3
 tags: []
 keywords: 
-last_updated: 21/01/2021
+last_updated: 31/01/2021
 summary: "Connecting a 12864 screen to a Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_screen_12864.html
@@ -30,7 +30,7 @@ lcd.encoderPinB=E.10
 lcd.encoderPinSw=E.11
 lcd.lcdCSPin=E.7
 lcd.spiChannel=4
-softwareSPI.pins={E.8, NoPin, B.1}
+softwareSPI1.pins={E.8, NoPin, B.1}
 lcd.lcdBeepPin = E.12
 ```
 
@@ -49,7 +49,7 @@ First, obtain the recommended menu files from [here](https://github.com/jadonmmi
 
 ### Method 1
 
-Extract the contents of the zip file you downloaded above and place them in a folder called "Menu" on the SD card of the Fly-E3. 
+Extract the contents of the zip file you downloaded above and place them in a folder called "menu" on the SD card of the Fly-E3. 
 
 ### Method 2
 
