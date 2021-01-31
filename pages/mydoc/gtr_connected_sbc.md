@@ -2,7 +2,7 @@
 title: Connecting a GTR via SBC
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 31/01/2021
 summary: "Connecting a GTR via SBC"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_sbc.html
@@ -27,6 +27,8 @@ Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4
 ### Prepare the Raspberry Pi
 
 Follow the instructions detailed [here](stm32_sbc.html).
+
+{% include tip.html content="If you want to use a board other than a Raspberry Pi, please follow the guide [here](dsf_on_armbian.html)"%}
 
 ### BOM
 

@@ -125,6 +125,10 @@ entries:
           url: /user_videos.html
           output: web, pdf
   
+    - title: DSF on Armbian
+      url: /dsf_on_armbian.html
+      output: web, pdf
+
   - title: LPC Boards
     output: web, pdf
     folderitems:

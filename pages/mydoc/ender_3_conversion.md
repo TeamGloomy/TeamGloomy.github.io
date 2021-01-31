@@ -13,7 +13,9 @@ toc: false
 
 ## Overview
 
-This guide will walk you through converting a stock Ender 3 to RRF using a Fly-E3 board.
+This guide will walk you through converting a stock Ender 3 to RRF using a Fly-E3 board.  
+
+{% include note.html content="Although written around the original Ender 3, this guide is also applicable for the Ender 3 Pro and the Ender 3 V2"%} 
 
 {% include image.html file="ender_1.jpg" alt="ender_1" caption="Ender 1" %}
 
@@ -49,7 +51,7 @@ Using a 2mm allen key, remove the screw highlighted below.
 ### Step 3
 
 Push the bed back to its maximum position.  
-Using a 2mm allen key, remove the two screws highlighted below.  
+Using a 2mm allen key, remove the two screws highlighted below. On the Ender 3 Pro and V2, these can be found on the underside of the case.  
 
 {% include image.html file="ender_3.jpg" alt="ender_3" caption="Ender 3" %}
 
