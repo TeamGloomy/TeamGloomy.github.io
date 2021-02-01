@@ -512,10 +512,15 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Ender 3
+    - title: Printer Guides
+      url: /printers.html
       output: web, pdf
 
-      subfolders: 
-      - title: Installing and configuring a Fly-E3 to an Ender 3
-        url: /ender_3_conversion.html
+      subfolders:
+      - title: Ender 3
         output: web, pdf
+        subfolderitems:
+
+        - title: Installing and configuring a Fly-E3 to an Ender 3
+          url: /ender_3_conversion.html
+          output: web, pdf
