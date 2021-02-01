@@ -508,14 +508,14 @@ entries:
       output: web, pdf
 
   - title: Printer Specific Guides
+    url: /firmware_build.html
     output: web, pdf
     folderitems:
- 
+
     - title: Ender 3
       output: web, pdf
-      subfolderitems:
 
       subfolders: 
-      - title: Installing a Fly-E3 on an Ender 3, Pro or V2
+      - title: Installing and configuring a Fly-E3 to an Ender 3
         url: /ender_3_conversion.html
         output: web, pdf
