@@ -2,7 +2,7 @@
 title: Fly-E3 General Information
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 01/02/2021
 summary: "General information regarding the Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_general.html
@@ -39,3 +39,7 @@ If you plan on using endstops rather than sensorless homing and do not have the 
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
 Follow the [WiFi instructions](fly_e3_connected_wifi.html).
+
+## Ender 3 Conversion
+
+There is an [Ender 3 Conversion guide](ender_3_conversion.html) that gives a full walkthrough from start to finish.
