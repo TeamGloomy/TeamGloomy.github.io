@@ -2,7 +2,7 @@
 title: Installing a Fly-E3 in an Ender 3
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 04/02/2021
 summary: "How to install a Fly-E3 in an Ender 3"
 sidebar: mydoc_sidebar
 permalink: ender_3_conversion.html
@@ -96,6 +96,12 @@ Lay the Fly-E3 down in front of you. The first thing to do is to install a jumpe
 
 ### Step 10
 
+Install jumpers on the other Z output as shown below.
+
+{% include image.html file="fly_e3_z_jumpers.png" alt="Fly-E3 Z Jumpers" caption="Fly-E3 Driver Z Jumper Locations" %}
+
+### Step 11
+
 Depending on which drivers you are going to use will determine what you do for this step.  
 
 #### Fly Drivers
@@ -104,17 +110,17 @@ The Fly-2209 drivers come with a small switch on the underside. This is used to 
 
 {% include image.html file="ender_10.jpg" alt="ender_10" caption="Ender 10" %}
 
-#### Other 2209 Drivers
+#### Non-Fly 2209 and 2226 Drivers
 
-The Fly-E3 does not have a way to enable and disable the diag pin on drivers on the motherboard itself. Its designed to be used with the Fly-2209 driver. Therefore, when not using sensorless homing (and whats the point when you already have endstops installed), the diag pin needs to be removed from the driver for the endstops to function. Using cutters, remove the diag pin from the X, Y and Z motors.
+The Fly-E3 does not have a way to enable and disable the diag pin on drivers on the motherboard itself. Its designed to be used with the Fly-2209 driver. Therefore, when not using sensorless homing (and whats the point when you already have endstops installed), the diag pin needs to be removed from the driver for the endstops to function. Using cutters, remove the diag pin from the X, Y and Z stepper drivers.
 
 {% include image.html file="ender_11.jpg" alt="ender_11" caption="Ender 11" %}
 
-### Step 11
+### Step 12
 
 Install the drivers into the Fly-E3. You will have been supplied with two heatsinks with the Fly-E3. These are to be installed on top of the drivers installed in Z and E. This is because with full sized heatsinks, the cover can't be installed with the fan attached.
 
-### Step 12
+### Step 13
 
 This step falls into the category of advised (but really advised!).  
 Creality have, in their infinite wisdom, tinned the ends of the power cables and bed cables using solder (shown below). This is a bad idea as it can lead to cables that can break more easily and if the connection becomes hot, the solder can soften, reducing the force on the contact from the terminal, eventually resulting in shorts and fire. [Here](https://cdn.thomasnet.com/ccp/00142951/263810.pdf) is a document for more detail about the issue.  
@@ -129,7 +135,7 @@ As well as installing ferrules to the power and bed cables, you should also cons
 
 {% include image.html file="ender_14.jpg" alt="ender_14" caption="Ender 14" %}
 
-### Step 13
+### Step 14
 
 This step falls into the category of advised. 
 On a stock Ender 3, the hotend cooling fan is wired to be permanently running when power to the system is applied. If you are happy with the arrangement, then you can skip this step. If you prefer that your hotend fan is only on when the hotend is on, then you'll need to crimp a new connector on the end. As with the ferrules, sets can be purchased on [Amazon](https://www.amazon.co.uk/s?k=jst+kit&ref=nb_sb_noss_2).  
@@ -138,31 +144,33 @@ Crimp the connectors on to the thin red and black cables (the only free cables l
 
 {% include image.html file="ender_15.jpg" alt="ender_15" caption="Ender 15" %}
 
-### Step 14
+### Step 15
+
+{% include image.html file="fly_e3.png" alt="Fly-E3" caption="Fly-E3 Pinout" %}
 
 I found that it was much easier to install the cables in the terminal blocks before installing the board back into the case.  Therefore install the power cables (paying attention to the polarity), the hotend fan (if not following the step before), the bed cables and the hotend cables. They should match the image below. Remember, the first two terminals out of the 6 (the ones closest to the power input terminal) are always powered and should only be used for the hotend fan if you are not going for thermostatic control as per step 13.
 
 {% include image.html file="ender_16.jpg" alt="ender_16" caption="Ender 16" %}
 
-### Step 15
+### Step 16
 
 Feed the antenna for the WiFi through the first slot in the side of the case.
 
 {% include image.html file="ender_17.jpg" alt="ender_17" caption="Ender 17" %}
 
-### Step 16
+### Step 17
 
 Install the board into the case, using the screws that you removed earlier.  
 
 {% include image.html file="ender_18.jpg" alt="ender_18" caption="Ender 18" %}
 
-### Step 17
+### Step 18
 
 Connect the remainder of the cables to the board. The fan with the yellow and blue cables should be connected to Fan0. If you installed a JST connector to the hotend fan, install it in the Fan1 slot. The connector with the two black cables is the bed thermistor and the connector with the two white cables is the hotend thermistor. Please use the [pinout](fly_e3_pins.html) for reference. None of the stock Ender 3 cables require adapting.
 
 {% include image.html file="ender_19.jpg" alt="ender_19" caption="Ender 19" %}
 
-### Step 18
+### Step 19
 
 Reconnect the power to the power supply and then we will move on to preparing the software.
 

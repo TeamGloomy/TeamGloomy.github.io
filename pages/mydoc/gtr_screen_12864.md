@@ -16,7 +16,7 @@ datatable: true
 
 ## Overview
 
-The information here is aimed at connecting a Fysetc Mini v2.1 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).
+The information here is aimed at connecting a Fysetc Mini v2.1 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  This is only applicable from 3.2_7.  
 
 ## Board.txt modifications
 
@@ -31,7 +31,7 @@ lcd.lcdDCPin=I.10
 lcd.encoderPinA=I.8
 lcd.encoderPinB=H.8
 lcd.encoderPinSw=H.7
-softwareSPI.pins={I.9, B.11, H.11}
+SPI3.pins={I.9, B.11, H.11}
 ```
 
 ## Config.g

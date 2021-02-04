@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to LPC and STM32
 tags: []
 keywords: 
-last_updated: 21/01/2021
+last_updated: 04/02/2021
 summary: "Board.txt Configurables Applicable to LPC and STM32"
 sidebar: mydoc_sidebar
 permalink: board_txt.html
@@ -36,18 +36,18 @@ Examples are given using LPC pins.
 |heat.spiTempSensorChannel|heat.spiTempSensorChannel = 255|this selects which SPI channel is used to communicate with the temperature sensor board. Can be set to 255 to indicate no channel to be used|LPC has three SPI interfaces (two channels 0 and 1 are hardware based - SSP0 and SSP1 and channel 2 is software| STM32 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software)|
 |heat.spiTempSensorCSPins|heat.spiTempSensorCSPins = {1.21, NoPin}|Sets the SPI temperature sensor chip select pin. Can be set to 255 to indicate no channel to be used|LPC accepts a maximum of 2 sensors|STM32 accepts a maximum of 2 sensors|
 |heat.tempSensePins|heat.tempSensePins = {0.25,0.23}|Sets the temperature sensor pins starting with the bed|LPC Accepts a maximum of 3 entries|STM32 accepts a maximum of 9 entries|
-|lcd.encoderPinA|lcd.encoderPinA = 3.25|Sets the pin for connection A of the encoder|Not supported on LPC||
-|lcd.encoderPinB|lcd.encoderPinB = 3.26|Sets the pin for connection B of the encoder|Not supported on LPC||
-|lcd.encoderPinSw|lcd.encoderPinSw = 1.30|Sets the pin to be used for the encoder click|Not supported on LPC||
-|lcd.lcdBeepPin|lcd.lcdBeepPin = 1.31|Sets the pin to be used to control the display beeper|Not supported on LPC||
-|lcd.lcdCSPin|lcd.lcdCSPin = 0.16|Sets the LCD chip select pin|Not supported on LPC||
-|lcd.lcdDCPin|lcd.lcdDCPin = 2.11|Sets the data control pin (A0)|Not supported on LPC||
-|lcd.panelButtonPin|lcd.panelButtonPin = 2.11|For use when a connected display has an extra button|Not supported on LPC||
-|lcd.spiChannel|lcd.spiChannel = 255|This selects which SPI channel is used to communicate with the LCD. Can be set to 255 to indicate no channel to be used|Not supported on LPC|STM32 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software)|
+|lcd.encoderPinA|lcd.encoderPinA = 3.25|Sets the pin for connection A of the encoder|STM32 Only||
+|lcd.encoderPinB|lcd.encoderPinB = 3.26|Sets the pin for connection B of the encoder|STM32 Only||
+|lcd.encoderPinSw|lcd.encoderPinSw = 1.30|Sets the pin to be used for the encoder click|STM32 Only||
+|lcd.lcdBeepPin|lcd.lcdBeepPin = 1.31|Sets the pin to be used to control the display beeper|STM32 Only||
+|lcd.lcdCSPin|lcd.lcdCSPin = 0.16|Sets the LCD chip select pin|STM32 Only||
+|lcd.lcdDCPin|lcd.lcdDCPin = 2.11|Sets the data control pin (A0)|STM32 Only||
+|lcd.panelButtonPin|lcd.panelButtonPin = 2.11|For use when a connected display has an extra button|STM32 Only||
+|lcd.spiChannel|lcd.spiChannel = 255|This selects which SPI channel is used to communicate with the LCD. Can be set to 255 to indicate no channel to be used|STM32 Only|STM32 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software)|
 |led.neopixelPin|led.neopixelPin = 1.24|This sets the output pin for neopixel control|||
 |leds.diagnostic|leds.diagnostic = 1.18|This would set the correct pin for controlling a diagnostic LED|||
 |lpc.board ("board" is also supported from 3.2_4)|lpc.board = fly_e3|This sets the correct board pin mapping to load. See table below for current list|||
-|sbc.csPin||sbc.csPin = 0.16|Allow use of non standard CS pin|||
+|sbc.csPin|sbc.csPin = 0.16|Allow use of non standard CS pin|||
 |sbc.lpcTfrReadyPin ("sbc.TfrReadyPin" is also supported from 3.2_4)|sbc.lpcTfrReadyPin = 0.28 or sbc.TfrReadyPin = 0.28|This sets the transfer ready pin when attaching an SBC|||
 |sdCard.external.cardDetectPin|externalSDCard.cardDetectPin|Sets the external SD card detect pin|||
 |sdCard.external.csPin|externalSDCard.csPin|Sets the external SD card chip select pin|||
@@ -57,8 +57,12 @@ Examples are given using LPC pins.
 |serial.aux.rxTxPins|serial.aux.rxTxPins = {0.3, 0.2}|This sets the pin numbers to use for RX and TX on AUX1. Typically uses UART0. See table below for allowable RX and TX pins|||
 |serial.aux2.rxTxPins|serial.aux2.rxTxPins = {0.11, 0.10}|This sets the pin numbers to use for RX and TX on AUX2. Typically uses UART2. See table below for allowable RX and TX pins|||
 |softwareSPI.pins|softwareSPI.pins = {0.15,0.17,0.16}|Sets the software SPI pins in the order SCK, MISO, MOSI|||
-|softwareSPI1.pins|softwareSPI1.pins = {0.15,0.17,0.16}|Sets the software SPI pins in the order SCK, MISO, MOSI|Not supported on LPC||
-|softwareSPI2.pins|softwareSPI2.pins = {0.15,0.17,0.16}|Sets the software SPI pins in the order SCK, MISO, MOSI|Not supported on LPC||
+|SPI0.pins|SPI0.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 0 - 3.2_7 Onwards|Hardware|Hardware - Not Configurable|
+|SPI1.pins|SPI1.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 1 - 3.2_7 Onwards|Hardware|Hardware - Not Configurable|
+|SPI2.pins|SPI2.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 2 - 3.2_7 Onwards|Software|Hardware - Not Configurable|
+|SPI3.pins|SPI3.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 3 - 3.2_7 Onwards|STM32 Only|Software|
+|SPI4.pins|SPI4.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 4 - 3.2_7 Onwards|STM32 Only|Software|
+|SPI5.pins|SPI5.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 5 - 3.2_7 Onwards|STM32 Only|Software|
 |SSP0.pins|SSP0.pins = {0.15,0.17,1.24,0.16}|Sets the pins to be used for SSP0 in the order SCK, MISO, MOSI, CS||LPC Only|
 |stepper.digipotFactor|stepper.digipotFactor = 113.33|Sets the output current for a built in driver as a factor of 255 against max current|MKS Sbase and Smoothieboard only||
 |stepper.directionPins|stepper.directionPins = { 0.5,0.11,0.20,0.22,2.13}|Sets the driver direction pins in the order 0, 1, 2, 3 and so on|LPC supports a maximum of 7 drivers|STM32 supports a maximum of 11 drivers|
@@ -87,9 +91,11 @@ Current preprogrammed boards
 |biquskr_1.3|SKR v1.3|LPC|
 |biquskr_1.4|SKR v1.4|LPC|
 |biquskr_e3t|SKR E3 Turbo|LPC|
+|biquskr_rrf_e3_1.0|SKR RRF E3 v1.0|STM32|
 |biquskrpro_1.1|SKR Pro v1.1 and 1.2|STM32|
 |fly_407zg|Fly-407ZG|STM32|
 |fly_cdy|Fly-CDY|LPC|
+|fly_cdyv2|Fly-CDY2|STM32|
 |fly_E3|Fly-E3|STM32|
 |generic|maps all pins as available by pin number. Not recommended for normal use||
 |mbed|For the mbed developer board|LPC|

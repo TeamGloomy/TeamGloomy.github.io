@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via SBC
 tags: []
 keywords: 
-last_updated: 31/01/2021
+last_updated: 04/02/2021
 summary: "Connecting an SKR Pro v1.1 and v1.2 via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_sbc.html
@@ -52,7 +52,7 @@ The table below shows the pins required on the SBC and what they are connected t
 | 19/BCM10/SPI0 Mosi   | PB15 on EXP2         | 100R             |
 | 24/BCM8/SPIO CE0   | PB12 on EXP2         | 100R             |
 | 22/BCM25  | PF12 on EXP2         | 100R             |
-| 6/GND   | GND on EXP2          | None             |
+| 20/GND   | GND on EXP2          | None             |
 
 <div class="datatable-end"></div>
 
