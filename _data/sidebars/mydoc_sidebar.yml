@@ -528,3 +528,7 @@ entries:
         - title: Installing and configuring a Fly-E3 to an Ender 3
           url: /ender_3_conversion.html
           output: web, pdf
+
+        - title: Installing and configuring a BLTouch to an Ender 3 (with a Fly-E3 installed)
+          url: /ender_3_bltouch.html
+          output: web, pdf
