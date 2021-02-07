@@ -270,4 +270,4 @@ Plug the fan on the cover into fan2 and secure the cover in place using the 3 sc
 
 Thats it.  
 Set up your favourite slicing software, remembering to set relative extrusion, firmware retraction and reprap or reprapfirmware as the type of gcode to output.  
-Some slicers support automatica uploading (prusa slicer has it built in, cura has a plugin).  
+Some slicers support automatic uploading (prusa slicer has it built in, cura has a plugin).  

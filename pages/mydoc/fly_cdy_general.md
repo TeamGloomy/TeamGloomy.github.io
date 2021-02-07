@@ -38,7 +38,7 @@ There are 2 methods that can be employed to fix this issue.
 
 Rather then installing the jumper for UART mode as described above, install it as shown in the image below.  
 
-{% include image.html file="fly_cdy_fix.png" alt="Fly-CDY Fix" caption="Fly-CDY E1 Jumper Fix Method 1" %}
+{% include image.html file="fly_cdy_fix.jpg" alt="Fly-CDY Fix" caption="Fly-CDY E1 Jumper Fix Method 1" %}
 
 Then include the following line in the board.txt file.  
 ```
@@ -63,7 +63,7 @@ Connect the USB TTL to the Fly-CDY.
 
 <div class="datatable-end"></div>
 
-{% include image.html file="fly_cdy_fix2.png" alt="Fly-CDY Fix 2" caption="Fly-CDY E1 Jumper Fix Method 2" %}
+{% include image.html file="fly_cdy_fix2.jpg" alt="Fly-CDY Fix 2" caption="Fly-CDY E1 Jumper Fix Method 2" %}
 
 Download and install [Flash Magic](https://www.flashmagictool.com/download.html&d=10.90/FlashMagic.exe).  
 Download and install the updated bootloader from [here](https://github.com/FLYmaker/FLY-CDY/blob/master/Bootloader/CDY_bootloader.hex).
