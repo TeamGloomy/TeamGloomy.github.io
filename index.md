@@ -22,4 +22,4 @@ The latest stable version is [3.2_1](https://github.com/gloomyandy/RepRapFirmwar
 
 ## Latest Unstable
 
-The latest beta/unstable version is [3.2_4](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.2_4)
+The latest beta/unstable version is [3.2_7](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.2_7)
