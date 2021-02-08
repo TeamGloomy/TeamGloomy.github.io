@@ -2,7 +2,7 @@
 title: Connecting a BLTouch to a Fly-E3
 tags: []
 keywords: 
-last_updated: 20/01/2021
+last_updated: 08/02/2021
 summary: "Connecting a BLTouch to a Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_bltouch.html
@@ -27,6 +27,8 @@ Connect the BLTouch to the Fly-E3 as described in the table below.
 |White|PC4|Probe|
 
 <div class="datatable-end"></div>
+
+{% include image.html file="fly_e3_bltouch.png" alt="Fly-E3 BLTouch" caption="Fly-E3 BLTouch Wiring" %}
 
 ### Config.g Changes
 

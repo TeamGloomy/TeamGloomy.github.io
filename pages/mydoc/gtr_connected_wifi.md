@@ -2,7 +2,7 @@
 title: Connecting a GTR via Wifi
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 08/02/2021
 summary: "Connecting a GTR via Wifi"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_wifi.html
@@ -92,7 +92,8 @@ If using sensorless homing/stall detection (supported by only the TMC2209 or TMC
 ```
 stepper.TmcDiagPins = {F.2, C.13, E.0, G.14, G.9, D.3, I.4, F.4, F.6, I.7, F.12}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include F.2 and C.13 in your board.txt file.
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include F.2 and C.13 in your board.txt file.  
+For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 #### Driver Diag Pin
 

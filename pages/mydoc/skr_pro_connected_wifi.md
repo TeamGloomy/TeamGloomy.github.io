@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via Wifi
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 08/02/2021
 summary: "Connecting an SKR Pro v1.1 and v1.2 via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_wifi.html
@@ -92,7 +92,8 @@ If using sensorless homing/stall detection (supported by only the TMC2209 or TMC
 ```
 stepper.TmcDiagPins = {B.10, E.12, G.8, E.15, E.10, G.5}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include B.10 and E.12 in your board.txt file.
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include B.10 and E.12 in your board.txt file.  
+For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 #### Driver Diag Pin
 

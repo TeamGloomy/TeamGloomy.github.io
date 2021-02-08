@@ -2,7 +2,7 @@
 title: Connecting a GTR via SBC
 tags: []
 keywords: 
-last_updated: 31/01/2021
+last_updated: 08/02/2021
 summary: "Connecting a GTR via SBC"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_sbc.html
@@ -74,7 +74,8 @@ If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226)
 ```
 stepper.numSmartDrivers = X
 ```
-Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the GTR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.
+Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the GTR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.  
+For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 #### Sensorless Homing
 

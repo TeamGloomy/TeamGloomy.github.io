@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The most recent version of the [standard bigtreetech TFT firmware](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware) has built in support for RepRapFirmware. The pre-built images have this enabled by default.
+The most recent version of the [standard bigtreetech TFT firmware](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware/tree/master/Copy%20to%20SD%20Card%20root%20directory%20to%20update) has built in support for RepRapFirmware. The pre-built images have this enabled by default.
 
 ## Config.ini changes
 

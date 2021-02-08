@@ -2,7 +2,7 @@
 title: Connecting a Fly-E3 via Wifi
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 08/02/2021
 summary: "Connecting a Fly-E3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_e3_connected_wifi.html
@@ -57,7 +57,8 @@ If using sensorless homing/stall detection (supported by only the TMC2209 or TMC
 ```
 stepper.TmcDiagPins = {A.2, A.1, C.5}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.2 and A.1 in your board.txt file.
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.2 and A.1 in your board.txt file.  
+For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 #### Driver Diag Pin
 

@@ -2,7 +2,7 @@
 title: Connecting an MKS SGen L v2.0 via SBC
 tags: []
 keywords: 
-last_updated: 31/01/2021
+last_updated: 08/02/2021
 summary: "Connecting an MKS SGen L v2.0 via SBC"
 sidebar: mydoc_sidebar
 permalink: mks_sgen_l_2_connected_sbc.html
@@ -41,7 +41,6 @@ The pinout for the MKS SGen L can be found [here](https://github.com/makerbase-m
 
 The table below shows the pins required on the SBC and what they are connected to on the MKS SGen L. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
  
-
 <div class="datatable-begin"></div>
 
 | SBC Pin       | MKS SGen L Pin       | Resistor Value  |
@@ -81,7 +80,8 @@ If using sensorless homing/stall detection (supported by only the TMC2209 or TMC
 ```
 stepper.TmcDiagPins = {1.29, 1.27, 1.25, 1.28, 1.26}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.27 in your board.txt file.
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.27 in your board.txt file.  
+For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 #### Driver Diag Pin
 

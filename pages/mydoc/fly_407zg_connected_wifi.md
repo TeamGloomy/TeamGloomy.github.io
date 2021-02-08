@@ -2,7 +2,7 @@
 title: Connecting a Fly-407ZG via Wifi
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 08/02/2021
 summary: "Connecting a Fly-407ZG via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_wifi.html
@@ -90,6 +90,7 @@ Where X is the number of drivers fitted. The drivers must be continuous and star
 #### Sensorless Homing
 
 To be able to use sensorless homing on this board, a jumper cable needs to be installed between the diag pin of the driver and an endstop input.  
+For more information about setting up sensorless homing, please read [this](sensorless.html).   
 
 ### Board.txt Location
 
