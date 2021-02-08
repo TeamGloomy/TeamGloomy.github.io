@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to a GTR
+title: Connecting a BLTouch to an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
 last_updated: 20/01/2021
-summary: "Connecting a BLTouch to a GTR"
+summary: "Connecting a BLTouch to an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
-permalink: gtr_bltouch.html
+permalink: skr_pro_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,19 +14,21 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the GTR as described in the table below.  
+Connect the BLTouch to the SKR SKR Pro v1.1 and v1.2 as described in the table below.  
+
+{% include note.html content="You could possibly tie the grounds together but it will be easier to use the ground connection on Extension 2 as described below."%}
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|GTR Pin|GTR Pin Name|
+|BLTouch Wire Colour|SKR Pro|SKR Pro Pin Name|
 |:---|:---|:---|
-|Brown|GND||
-|Red|NPWR||
-|Yellow|PB11|Servo0|
+|Brown|GND|on Extension 2|
+|Red|5v||
+|Yellow|PA.1|Servo0|
 |Black|GND||
-|White|PH11|Probe|
+|White|PA.2|probe|
 
-{% include image.html file="gtr_bltouch.png" alt="GTR BLTouch" caption="GTR BLTouch Connection" %}
+{% include image.html file="skr_pro_bltouch.png" alt="SKR SKR Pro v1.1 and v1.2 BLTouch" caption="SKR SKR Pro v1.1 and v1.2 BLTouch Connection" %}
 
 <div class="datatable-end"></div>
 

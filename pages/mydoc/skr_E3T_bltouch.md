@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to a GTR
+title: Connecting a BLTouch to an SKR E3 Turbo
 tags: []
 keywords: 
 last_updated: 20/01/2021
-summary: "Connecting a BLTouch to a GTR"
+summary: "Connecting a BLTouch to an SKR E3 Turbo"
 sidebar: mydoc_sidebar
-permalink: gtr_bltouch.html
+permalink: skr_E3T_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,19 +14,19 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the GTR as described in the table below.  
+Connect the BLTouch to the SKR E3 Turbo as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|GTR Pin|GTR Pin Name|
+|BLTouch Wire Colour|SKR E3 Turbo|SKR E3 Turbo Pin Name|
 |:---|:---|:---|
 |Brown|GND||
-|Red|NPWR||
-|Yellow|PB11|Servo0|
+|Red|PWR||
+|Yellow|1.23|Servo0|
 |Black|GND||
-|White|PH11|Probe|
+|White|1.22|probe|
 
-{% include image.html file="gtr_bltouch.png" alt="GTR BLTouch" caption="GTR BLTouch Connection" %}
+{% include image.html file="skr_E3T_bltouch.png" alt="SKR E3 Turbo BLTouch" caption="SKR E3 Turbo BLTouch Connection" %}
 
 <div class="datatable-end"></div>
 

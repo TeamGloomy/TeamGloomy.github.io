@@ -122,25 +122,25 @@ Install the drivers into the Fly-E3. You will have been supplied with two heatsi
 
 ### Step 13
 
-This step falls into the category of advised (but really advised!).  
-Creality have, in their infinite wisdom, tinned the ends of the power cables and bed cables using solder (shown below). This is a bad idea as it can lead to cables that can break more easily and if the connection becomes hot, the solder can soften, reducing the force on the contact from the terminal, eventually resulting in shorts and fire. [Here](https://cdn.thomasnet.com/ccp/00142951/263810.pdf) is a document for more detail about the issue.  
+{% include callout.html content="This step falls into the category of advised (but really advised!).  
+Creality have, in their infinite wisdom, tinned the ends of the power cables and bed cables using solder (shown below). This is a bad idea as it can lead to cables that can break more easily and if the connection becomes hot, the solder can soften, reducing the force on the contact from the terminal, eventually resulting in shorts and fire. [Here](https://cdn.thomasnet.com/ccp/00142951/263810.pdf) is a document for more detail about the issue." type="info" %}   
 
 {% include image.html file="ender_12.jpg" alt="ender_12" caption="Ender 12" %}
 
-Therefore, on the power and bed cables, the first 20mm of cable needs to be removed to get rid of the solder, and the end crimped with a ferrule. Sets can be purchased on [Amazon](https://www.amazon.co.uk/Wire-Ferrules/s?k=Wire+Ferrules) with a range of sizes. I prefer the ferrules without the plastic ends but its personal preference.
+{% include callout.html content="Therefore, on the power and bed cables, the first 20mm of cable needs to be removed to get rid of the solder, and the end crimped with a ferrule. Sets can be purchased on [Amazon](https://www.amazon.co.uk/Wire-Ferrules/s?k=Wire+Ferrules) with a range of sizes. I prefer the ferrules without the plastic ends but its personal preference." type="info" %}   
 
 {% include image.html file="ender_13.jpg" alt="ender_13" caption="Ender 13" %}
 
-As well as installing ferrules to the power and bed cables, you should also consider installing them on the hotend cables. Luckily, these don't come tinned so its just a case of crimping a ferrule on the end.  
+{% include callout.html content="As well as installing ferrules to the power and bed cables, you should also consider installing them on the hotend cables. Luckily, these don't come tinned so its just a case of crimping a ferrule on the end." type="info" %}     
 
 {% include image.html file="ender_14.jpg" alt="ender_14" caption="Ender 14" %}
 
 ### Step 14
 
-This step falls into the category of advised. 
+{% include callout.html content="This step falls into the category of advised. 
 On a stock Ender 3, the hotend cooling fan is wired to be permanently running when power to the system is applied. If you are happy with the arrangement, then you can skip this step. If you prefer that your hotend fan is only on when the hotend is on, then you'll need to crimp a new connector on the end. As with the ferrules, sets can be purchased on [Amazon](https://www.amazon.co.uk/s?k=jst+kit&ref=nb_sb_noss_2).  
 
-Crimp the connectors on to the thin red and black cables (the only free cables left that we didn't add ferrules to) and insert them into the housing as shown below.
+Crimp the connectors on to the thin red and black cables (the only free cables left that we didn't add ferrules to) and insert them into the housing as shown below." type="info" %}   
 
 {% include image.html file="ender_15.jpg" alt="ender_15" caption="Ender 15" %}
 

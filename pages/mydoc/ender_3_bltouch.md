@@ -1,9 +1,9 @@
 ---
-title: Installing a BLTouch to a Fly-E3 in an Ender 3
+title: Installing a BLTouch to a Fly-E3 on an Ender 3
 tags: []
 keywords: 
 last_updated: 04/02/2021
-summary: "Installing a BLTouch to a Fly-E3 in an Ender 3"
+summary: "Installing a BLTouch to a Fly-E3 on an Ender 3"
 sidebar: mydoc_sidebar
 permalink: ender_3_bltouch.html
 folder: mydoc

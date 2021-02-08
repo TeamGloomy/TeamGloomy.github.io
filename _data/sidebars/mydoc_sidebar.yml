@@ -349,6 +349,10 @@ entries:
         - title: Connecting a Screen
           url: /skr_E3T_screen.html
           output: web, pdf
+        
+        - title: Connecting a BLTouch
+          url: /skr_E3T_bltouch.html
+          output: web, pdf
 
         - title: Pin Names
           url: /skr_E3T_pins.html
@@ -477,6 +481,10 @@ entries:
 
         - title: Connecting a Screen
           url: /skr_pro_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /skr_pro_bltouch.html
           output: web, pdf
 
         - title: Connecting a BTT-MOT-EXP
