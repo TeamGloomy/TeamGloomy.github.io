@@ -15,7 +15,8 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fly-E3 board.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/1005001999686167.html)
+It is currently available through [AliExpress](https://www.aliexpress.com/item/1005001999686167.html).  
+It is also available with a PT100 chip installed on [aliexpress](https://www.aliexpress.com/item/1005002096165911.html).  
 
 ### Driver Jumpers
 
