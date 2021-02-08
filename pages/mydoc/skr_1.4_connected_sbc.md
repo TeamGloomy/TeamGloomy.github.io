@@ -21,7 +21,7 @@ The SKR 1.4 is an LPC1768 based board and the v1.4T is an LPC1769 based board. T
 2. Use either a ribbon cable, or if using jumper wires then use ribbon-style jumper wire strips with the individual conductors separate only at the ends <br/>
 3. Use multiple ground connections between the two<br/>
 4. Beware of [ground loops](https://duet3d.dozuki.com/Wiki/USB_ground_loops). Problems are likely if more than one of the the PSU supplying the controller, the PSU supplying the Pi, and any other equipment that the Pi is connected to (other than via Ethernet) has its signal ground connected to the mains ground in the 3-pin plug that supplies the power. RPi PSUs are usually not grounded. ATX PSUs always are. Meanwell-style PSUs have a ground connection, but it is up to you whether you link mains ground to PSU negative output.<br/>
-In short, these disconnects may happen to you or they may not. If they happen and you are unable to fix them, then the only remaing options are track down the noise by changing components one by one or switch to using WiFi rather than an SBC." %}
+In short, these disconnects may happen to you or they may not. If they happen and you are unable to fix them, then the only remaining options are track down the noise by changing components one by one or switch to using WiFi rather than an SBC." %}
 
 ## Firmware File
 
