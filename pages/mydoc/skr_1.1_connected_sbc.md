@@ -2,7 +2,7 @@
 title: Connecting an SKR v1.1 via SBC
 tags: []
 keywords: 
-last_updated: 31/01/2021
+last_updated: 08/02/2021
 summary: "Connecting an SKR v1.1 via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_1.1_connected_sbc.html
@@ -15,6 +15,13 @@ datatable: true
 ## Overview
 
 The SKR v1.1 is an LPC1768 based board.
+
+{% include warning.html content="There have been a small number of users who have been suffering from random disconnects between the board and the SBC during printing. This has been due to the type of communication connection used by the DuetSoftwareFramework on the SBC to talk to the board being affected by electrical noise from either something on the printer or equipment near by. <br/> There are a number of steps that can be done to limit this issue.<br/>
+1. Keep the wires between the controller and the Pi short <br/>
+2. Use either a ribbon cable, or if using jumper wires then use ribbon-style jumper wire strips with the individual conductors separate only at the ends <br/>
+3. Use multiple ground connections between the two<br/>
+4. Beware of [ground loops](https://duet3d.dozuki.com/Wiki/USB_ground_loops). Problems are likely if more than one of the the PSU supplying the controller, the PSU supplying the Pi, and any other equipment that the Pi is connected to (other than via Ethernet) has its signal ground connected to the mains ground in the 3-pin plug that supplies the power. RPi PSUs are usually not grounded. ATX PSUs always are. Meanwell-style PSUs have a ground connection, but it is up to you whether you link mains ground to PSU negative output.<br/>
+In short, these disconnects may happen to you or they may not. If they happen and you are unable to fix them, then the only remaing options are track down the noise by changing components one by one or switch to using WiFi rather than an SBC." %}
 
 ## Firmware File
 

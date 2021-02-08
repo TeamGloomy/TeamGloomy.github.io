@@ -14,12 +14,16 @@ Welcome to the RepRapFirmware on LPC and STM32 boards.
 This software is a port of the open source RepRapFirmware produced by [Duet3D](http://www.duet3d.com) for their Duet range of boards.  
 It was originally ported by [sadvi](https://github.com/sdavi), but is now maintained by TeamGloomy.
 
-# Latest versions
+## Latest versions
 
-## Latest Stable
+### Latest Stable
 
 The latest stable version is [3.2_1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.2_1)
 
-## Latest Unstable
+### Latest Unstable
 
 The latest beta/unstable version is [3.2_7](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.2_7)
+
+## Partnership
+
+TeamGloomy are working in close partnership with Flymaker/Mellow to ensure that 100% compatability is obtained with their boards and to cover all of your 3D printer electronics requirements.  
