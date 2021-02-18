@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via Wifi
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting an SKR Pro v1.1 and v1.2 via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_wifi.html
@@ -76,6 +76,7 @@ lpc.board = biquskrpro_1.1
 8266wifi.espDataReadyPin = A.8
 8266wifi.lpcTfrReadyPin = G.4
 8266wifi.espResetPin = F.12
+heat.tempSensePins = { F.6, F.3, F.4, F.5 }
 ```
 
 #### Smart Drivers

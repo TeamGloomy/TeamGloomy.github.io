@@ -2,7 +2,7 @@
 title: Connecting an SKR E3 Turbo via Wifi
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting an SKR E3 Turbo via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_E3T_connected_wifi.html
@@ -75,6 +75,7 @@ lpc.board = biquskr_e3t
 8266wifi.espDataReadyPin = 0.19
 8266wifi.lpcTfrReadyPin = 0.20
 8266wifi.espResetPin = 2.8
+heat.tempSensePins = { 0.25, 0.24, 0.23 }
 ```
 
 #### Smart Drivers

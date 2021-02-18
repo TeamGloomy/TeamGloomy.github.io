@@ -2,7 +2,7 @@
 title: Connecting a Fly-CDY via Wifi
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting a Fly-CDY via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_cdy_connected_wifi.html
@@ -47,6 +47,7 @@ lpc.board = fly_cdy
 8266wifi.lpcTfrReadyPin = 2.7;
 8266wifi.espResetPin = 2.6;
 8266wifi.serialRxTxPins = { 0.1, 0.0 } ;
+heat.tempSensePins = { 0.23, 0.26, 0.25 }
 ```
 
 #### Smart Drivers

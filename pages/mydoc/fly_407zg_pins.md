@@ -2,7 +2,7 @@
 title: Fly-407ZG Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 18/02/2021
 summary: "Fly-407ZG Pin Names"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_pins.html
@@ -84,7 +84,7 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |PF_0|zmin|zstop|
 |PF_2|ymin|ystop|
 |PF_3|bedtemp|tb|
-|PF_3|ymax|ystopmax|
+|PF_1|ymax|ystopmax|
 |PF_4|e5temp|t5|
 |PF_5|e4temp|t4|
 |PF_6|e1heat|he1|

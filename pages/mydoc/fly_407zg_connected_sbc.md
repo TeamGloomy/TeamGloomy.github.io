@@ -2,7 +2,7 @@
 title: Connecting a Fly-407ZG via SBC
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting a Fly-407ZG via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_sbc.html
@@ -73,6 +73,7 @@ All the SD card on the Fly-407ZG needs is the board.txt file with the following 
 lpc.board = fly_f407zg
 sbc.lpcTfrReadyPin = B.2
 sbc.csPin = F.11
+heat.tempSensePins = { F.3, A.0, C.1, C.0, F.10, F.5, F.4 }
 ```
 
 #### Smart Drivers

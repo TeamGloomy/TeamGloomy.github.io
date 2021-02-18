@@ -77,6 +77,7 @@ lpc.board = fly_f407zg
 8266wifi.lpcTfrReadyPin = B.10
 8266wifi.espResetPin = B.2
 8266wifi.csPin = F.11
+heat.tempSensePins = { F.3, A.0, C.1, C.0, F.10, F.5, F.4 }
 ```
 
 #### Smart Drivers

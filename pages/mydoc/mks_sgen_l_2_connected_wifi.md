@@ -2,7 +2,7 @@
 title: Connecting an MKS SGen L v2.0 via Wifi
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting an MKS SGen L v2.0 via Wifi"
 sidebar: mydoc_sidebar
 permalink: mks_sgen_l_2_connected_wifi.html
@@ -75,6 +75,7 @@ lpc.board = mkssgenl_2.0
 8266wifi.espDataReadyPin = 0.28
 8266wifi.lpcTfrReadyPin = 1.30
 8266wifi.espResetPin = 1.31
+heat.tempSensePins = { 0.24, 0.23, 0.25 }
 ```
 
 #### Smart Drivers

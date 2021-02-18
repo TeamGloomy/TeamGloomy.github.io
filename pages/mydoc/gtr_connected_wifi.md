@@ -2,7 +2,7 @@
 title: Connecting a GTR via Wifi
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting a GTR via Wifi"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_wifi.html
@@ -76,6 +76,7 @@ lpc.board = biqugtr_1.0
 8266wifi.espDataReadyPin = A.15
 8266wifi.lpcTfrReadyPin = C.11
 8266wifi.espResetPin = B.10
+heat.tempSensePins = { C.0, C.1, C.2, C.3, A.3, F.9, F.10, F.7, F.5 }
 ```
 
 #### Smart Drivers

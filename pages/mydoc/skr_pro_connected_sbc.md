@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via SBC
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting an SKR Pro v1.1 and v1.2 via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_sbc.html
@@ -74,7 +74,7 @@ All the SD card on the SKR Pro v1.1 and 1.2 needs is the board.txt file with the
 //Config for SKR Pro v1.1 and 1.2
 lpc.board = biquskrpro_1.1
 sbc.lpcTfrReadyPin = F.12
-adc.prefilter.enable =true
+heat.tempSensePins = { F.6, F.3, F.4, F.5 }
 ```
 
 #### Smart Drivers

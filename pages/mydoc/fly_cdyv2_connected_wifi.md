@@ -1,11 +1,11 @@
 ---
-title: Connecting a Fly-E3 via Wifi
+title: Connecting a Fly-CDYv2 via Wifi
 tags: []
 keywords: 
 last_updated: 18/02/2021
-summary: "Connecting a Fly-E3 via Wifi"
+summary: "Connecting a Fly-CDYv2 via Wifi"
 sidebar: mydoc_sidebar
-permalink: fly_e3_connected_wifi.html
+permalink: fly_cdyv2_connected_wifi.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The Fly-E3 is an STM32F407ZGT6 based board.  
+The Fly-CDYv2 is an STM32F407ZGT6 based board.  
 This board is very unique in that it has been created as a reprapfirmware board first and foremost.  
 That means than unlike other boards, an ESP8266 has been provided on board, no adapter required.  
 
@@ -34,14 +34,14 @@ Follow the instructions on [Getting Started with RRF3](getting_started.html)
 You will also need a board.txt file in the sys folder. Below are the contents that should be used.
 
 ```
-//Config for fly-E3
-lpc.board = fly_e3
+//Config for fly-CDY
+board = fly_cdyv2
 //wifi pins
-8266wifi.espDataReadyPin = E.13;
-8266wifi.lpcTfrReadyPin = E.14;
-8266wifi.espResetPin = E.15;
-8266wifi.serialRxTxPins = { D.9, D.8 } ;
-heat.tempSensePins = { A.3 , A.4 }
+8266wifi.espDataReadyPin = E.10;
+8266wifi.TfrReadyPin = E.12;
+8266wifi.espResetPin = E.11;
+8266wifi.serialRxTxPins = { D.9, D.8 } 
+heat.tempSensePins = { B.1 , A.3 , C.4 , D.14}
 ```
 
 #### Smart Drivers
@@ -50,30 +50,45 @@ If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226)
 ```
 stepper.numSmartDrivers = X
 ```
-Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.
+Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.  
 
 #### Sensorless Homing
 
 If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
 ```
-stepper.TmcDiagPins = {A.2, A.1, C.5}
+stepper.TmcDiagPins = {C.7,C.6,D.11,D.10,B.10,B.11}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.2 and A.1 in your board.txt file.  
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include C.7 and C.6 in your board.txt file.  
+The driver diag pins correspond to the following endstops.  
+
+<div class="datatable-begin"></div>
+
+|Driver|Endstop|
+| :------------- |:-------------|
+|X|X-Min|
+|Y|X-Max|
+|Z|Y-Min|
+|E0|Y-Max|
+|E1|Z-Min|
+|E2|Z-Max|
+
+<div class="datatable-end"></div>
+
 For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 #### Driver Diag Pin
 
 The driver diag pin is used for sensorless homing and stall detection.  
-The Fly-E3 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers ](https://www.aliexpress.com/item/1005001877899893.html) which have a switch on the underside of them for disabling the diag pin.  
+The Fly-CDYv2 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers ](https://www.aliexpress.com/item/1005001877899893.html) which have a switch on the underside of them for disabling the diag pin.  
 If you plan on using endstops rather than sensorless homing and do not have the Fly-2209 drivers, you need to bend or remove the diag pin.  
 
 ### Board.txt Location
 
-Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Fly-E3.   
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Fly-CDYv2.   
 
 ### Config.g adjustments
 
-The fly-CDY board is delivered without any firmware on the wifi chip so as part of that process we need to set it up.  
+The fly-CDYv2 board is delivered without any firmware on the wifi chip so as part of that process we need to set it up.  
 Open the config.g file that has been placed in the sys folder of the SD card and comment out any M552 commands that are there using ; e.g. ;M552 S1.  
 
 ### Final Setup
@@ -85,6 +100,7 @@ M997 S1
 ```
 Wait for the uploading of the wifi firmware to finish. Then send the following
 ```
+M552 S-1
 M552 S0
 M587 S"your SSID" P"your password"
 M552 S1

@@ -2,7 +2,7 @@
 title: Connecting an SKR v1.3 via SBC
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting an SKR v1.3 via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_1.3_connected_sbc.html
@@ -76,6 +76,7 @@ All the SD card on the SKR v1.3 needs is the board.txt file with the following c
 //Config for BIQU SKR v1.3
 lpc.board = biquskr_1.3
 sbc.lpcTfrReadyPin = 1.31
+heat.tempSensePins = { 0.23, 0.24, 0.25 }
 ```
 
 #### Smart Drivers

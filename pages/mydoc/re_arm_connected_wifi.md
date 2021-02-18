@@ -2,7 +2,7 @@
 title: Connecting a Re-Arm via Wifi
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 18/02/2021
 summary: "Connecting a Re-Arm via Wifi"
 sidebar: mydoc_sidebar
 permalink: re_arm_connected_wifi.html
@@ -73,6 +73,7 @@ lpc.board = rearm
 8266wifi.espDataReadyPin = 2.11
 8266wifi.lpcTfrReadyPin = 1.30
 8266wifi.espResetPin = 1.31
+heat.tempSensePins = { 0.24, 0.23, 0.25 }
 ```
 
 ### Final Setup

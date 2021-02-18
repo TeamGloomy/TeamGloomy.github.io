@@ -2,7 +2,7 @@
 title: Connecting a GTR via SBC
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting a GTR via SBC"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_sbc.html
@@ -74,6 +74,7 @@ All the SD card on the SKR GTR needs is the board.txt file with the following co
 //Config for SKR GTR v1.0
 lpc.board = biqugtr_1.0
 sbc.lpcTfrReadyPin = B.10
+heat.tempSensePins = { C.0, C.1, C.2, C.3, A.3, F.9, F.10, F.7, F.5 }
 ```
 
 #### Smart Drivers

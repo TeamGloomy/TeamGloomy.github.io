@@ -407,6 +407,30 @@ entries:
           url: /fly_407zg_pins.html
           output: web, pdf
 
+      - title: Fly-CDYv2
+        output: web, pdf
+        subfolderitems:
+
+        - title: Fly-CDYv2 General Information
+          url: /fly_cdyv2_general.html
+          output: web, pdf
+        
+        - title: Connecting via WiFi
+          url: /fly_cdyv2_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /fly_cdyv2_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /fly_cdyv2_bltouch.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /fly_cdyv2_pins.html
+          output: web, pdf
+
       - title: Fly-E3
         output: web, pdf
         subfolderitems:

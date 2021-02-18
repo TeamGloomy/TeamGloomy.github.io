@@ -2,7 +2,7 @@
 title: Connecting an SKR E3 Turbo via SBC
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 18/02/2021
 summary: "Connecting an SKR E3 Turbo via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_E3T_connected_sbc.html
@@ -72,6 +72,7 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 lpc.board = biquskr_e3t
 sbc.lpcTfrReadyPin = 2.8
 adc.prefilter.enable = true
+heat.tempSensePins = { 0.25, 0.24, 0.23 }
 ```
 
 #### Smart Drivers

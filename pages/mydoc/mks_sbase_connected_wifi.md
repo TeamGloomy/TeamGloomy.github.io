@@ -2,7 +2,7 @@
 title: Connecting an MKS Sbase v1.3 via Wifi
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 18/02/2021
 summary: "Connecting an MKS Sbase v1.3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: mks_sbase_connected_wifi.html
@@ -94,6 +94,7 @@ lpc.board = mkssbase_1.3
 8266wifi.lpcTfrReadyPin = 1.30
 8266wifi.espResetPin = 1.31
 SSP0.pins = {0.15, 0.17, 1.24, 0.16}
+heat.tempSensePins = { 0.23, 0.24, 0.25 }
 ```
 
 ### Final Setup
