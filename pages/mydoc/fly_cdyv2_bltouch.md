@@ -24,7 +24,7 @@ Connect the BLTouch to the Fly-CDYv2 as described in the table below.
 |Red|NPWR||
 |Yellow|E.6|Servo0|
 |Black|GND||
-|White|C.2|zstop|
+|White|C.2|probe|
 
 <div class="datatable-end"></div>
 
