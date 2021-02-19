@@ -2,7 +2,7 @@
 title:  Configuring an SBC for STM32 Boards
 tags: 
 keywords: 
-last_updated: 25/01/2021
+last_updated: 19/02/2021
 summary: "Configuring an SBC for STM32 Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_sbc.html
@@ -37,7 +37,8 @@ If you want to enable SSH on the DuetPi with GUI image, SSH can be enabled by pl
 Regardless of whether you are installing the LPC specific DSF changes for the first time or are updating to the latest stable version, the procedure is the same. We suggest using the automatic mode.
 
 <ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#automatic" data-toggle="tab">Automatic Mode</a></li>
+    <li class="active"><a class="noCrossRef" href="#automatic" data-toggle="tab">Automatic Mode Stable</a></li>
+    <li><a class="noCrossRef" href="#autobeta" data-toggle="tab">Automatic Mode Unstable</a></li>
     <li><a class="noCrossRef" href="#manual" data-toggle="tab">Manual Mode</a></li>
 </ul>
   <div class="tab-content">
@@ -49,6 +50,29 @@ To use the automatic updater, send the following:
 wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_STM_3_2.sh
 sudo chmod 755 RRF_STM_3_2.sh
 ./RRF_STM_3_2.sh
+```
+
+This does everything from the manual section. 
+
+If the updates fail with an error exit status 1, run the following and then rerun the script.  
+```
+sudo mv /var/lib/dpkg/info/duet* /tmp/
+sudo mv /var/lib/dpkg/info/reprapfirmware.* /tmp/
+sudo apt-get update
+sudo dpkg --configure -a
+sudo apt-get install --reinstall duetcontrolserver
+```
+
+</div>
+
+<div role="tabpanel" class="tab-pane active" id="autobeta" markdown="1">
+
+To use the automatic updater, send the following:
+
+```
+wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_STM_3_2_2.sh
+sudo chmod 755 RRF_STM_3_2_2.sh
+./RRF_STM_3_2_2.sh
 ```
 
 This does everything from the manual section. 
