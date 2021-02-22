@@ -2,7 +2,7 @@
 title: Connecting an SKR E3 Turbo via SBC
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 22/02/2021
 summary: "Connecting an SKR E3 Turbo via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_E3T_connected_sbc.html
@@ -108,7 +108,7 @@ Turn it all on and you should be good to go.
 
 You can either navigate to duet3.local or find the IP address of the rasberry pi using your router. If you don't have access to that, use something like [Fing](https://www.fing.com/products/fing-desktop) to scan your network.
 
-Once you've connected to the raspberry pi through your router, start to customise your config.g file etc or upload the outputted zip file from the [Configurator](https://teamgloomy.github.io/LPCConfigurator) to the pi using the system tab of DWC.
+Once you've connected to the raspberry pi through your router, start to customise your config.g file etc or upload the outputted zip file from the [Configurator](https://teamgloomy.github.io/Configurator) to the pi using the system tab of DWC.
 
 ### Errors
 
