@@ -2,7 +2,7 @@
 title: Installing a Fly-E3 in an Ender 3
 tags: []
 keywords: 
-last_updated: 04/02/2021
+last_updated: 24/02/2021
 summary: "How to install a Fly-E3 in an Ender 3"
 sidebar: mydoc_sidebar
 permalink: ender_3_conversion.html
@@ -14,6 +14,7 @@ toc: false
 ## Overview
 
 This guide will walk you through converting a stock Ender 3 to RRF using a Fly-E3 board.  
+Chris's Basement have also made a [video](https://www.youtube.com/watch?v=NynXQwTTFx0) that you can follow in conjunction with this guide.  
 
 {% include note.html content="Although written around the original Ender 3, this guide is also applicable for the Ender 3 Pro and the Ender 3 V2"%} 
 
