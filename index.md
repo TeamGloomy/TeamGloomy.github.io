@@ -26,4 +26,4 @@ The latest beta/unstable version is [3.2.2_2](https://github.com/gloomyandy/RepR
 
 ## Partnership
 
-TeamGloomy are working in close partnership with Flymaker/Mellow to ensure that 100% compatability is obtained with their boards and to cover all of your 3D printer electronics requirements.  
+TeamGloomy are working in close partnership with Flymaker/Mellow to ensure that 100% compatibility is obtained with their boards and to cover all of your 3D printer electronics requirements.  
