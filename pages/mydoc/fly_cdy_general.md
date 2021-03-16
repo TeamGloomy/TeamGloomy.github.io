@@ -73,7 +73,7 @@ Download and install [Flash Magic](https://www.flashmagictool.com/download.html&
 Download and install the updated bootloader from [here](https://github.com/FLYmaker/FLY-CDY/blob/master/Bootloader/CDY_bootloader.hex).
 Launch flash magic. 
 
-{% include image.html file="flash_magic.jpg" alt="Flash Magic" caption="Flash Magic Settings" %}
+{% include image.html file="flash_magic.png" alt="Flash Magic" caption="Flash Magic Settings" %}
 
 As shown above, instep 1 select LPC1769 in the first box, the COM port should be the COM port of your Fly-CDY board and set the baudrate to 38400.  
 In step 2, make sure "Erase all..." is unticked and "Erase blocks..." is ticked.  

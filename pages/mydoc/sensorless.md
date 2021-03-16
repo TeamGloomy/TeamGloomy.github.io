@@ -78,36 +78,36 @@ R is the action to take on detecting a stall. 0 = no action (default), 1 = just 
 ; homex.g
 ; called to home the X axis
 ;
-M400					; Wait for motion to stop
-G91						; Use relative moves
-G1 H2 X0.01	Z0.01		; Move X a small amount to enable
-M400					; Wait for stop
-G4 P200					; Delay to allow TMC to detect stopped state
-M915 p0 s-10 H200 r0	; Configure stall detect
-M574 X1 S3				; Configure X endstop
-M913 X50 Z50			; Lower X and Z power
-G4 P200					; Delay to ensure settings are made
-G1 H2 Z5 F2500			; lift Z relative to current position
-g1 H1 X20 F2000			; back away from endstop
-M400
-M915 p0 s-30 H200 r0	; Configure stall detect
-G4 P200
-G1 H1 X-230 F2000		; Move towards endstop until it stalls
-M400					; Wait until all stopped
-M915 p0 s-10 H200 r0	; Configure stall detect
-G4 P200					; Delay to ensure settings are made
-g1 H1 X10 F2000			; back away from endstop
-M400
-M915 p0 s-30 H200 r0	; Configure stall detect
-G4 P200
-G1 H1 X-230 F2000		; Move towards endstop until it stalls
-M915 p0 s-10 H200 r0	; Configure stall detect to be less sensitive
-G1 X1 F1000				; Move away from stop and clear stall
-G1 H2 Z-5 F2500			; Return Z to original position
-M400					; wait complete
-G90						; Absolute positioning
-M913 X100 Z100			; back to full power
-M915 P0 S20 H200 R1		; Report any stalls
+M400					          ; Wait for all moves to stop
+G91						          ; Use relative moves
+G1 H2 X0.01	Z0.01		    ; Move X a small amount to enable
+M400					          ; Wait for all moves to stop
+G4 P200					        ; Delay to allow TMC to detect stopped state
+M915 P0 S-10 H200 R0	  ; Configure stall detect
+M574 X1 S3				      ; Configure X endstop
+M913 X50 Z50			      ; Lower X and Z power
+G4 P200					        ; Delay to ensure settings are made
+G1 H2 Z5 F2500			    ; Lift Z relative to current position
+G1 H1 X20 F2000			    ; Back away from endstop
+M400					          ; Wait for all moves to stop
+M915 P0 Ss-30 H200 R0	  ; Configure stall detect
+G4 P200					        ; Delay to ensure settings are made
+G1 H1 X-230 F2000		    ; Move towards endstop until it stalls
+M400					          ; Wait for all moves to stop
+M915 P0 S-10 H200 R0	  ; Configure stall detect
+G4 P200					        ; Delay to ensure settings are made
+G1 H1 X10 F2000			    ; Back away from endstop
+M400					          ; Wait for all moves to stop
+M915 P0 S-30 H200 R0	  ; Configure stall detect
+G4 P200                 ; Delay to ensure settings are made
+G1 H1 X-230 F2000		    ; Move towards endstop until it stalls
+M915 P0 S-10 H200 R0	  ; Configure stall detect to be less sensitive
+G1 X1 F1000				      ; Move away from stop and clear stall
+G1 H2 Z-5 F2500			    ; Return Z to original position
+M400					          ; Wait for all moves to stop
+G90						          ; Absolute positioning
+M913 X100 Z100			    ; Back to full power
+M915 P0 S20 H200 R1		  ; Report any stalls
 ```
 
 </div>
@@ -118,36 +118,36 @@ M915 P0 S20 H200 R1		; Report any stalls
 ; homey.g
 ; called to home the X axis
 ;
-M400					; Wait for motion to stop
-G91						; Use relative moves
-G1 H2 Y0.01	Z0.01		; Move Y a small amount to enable
-M400					; Wait for stop
-G4 P200					; Delay to allow TMC to detect stopped state
-M915 p1 s-10 H200 r0	; Configure stall detect
-M574 Y1 S3				; Configure X endstop
-M913 Y50 Z50			; Lower X and Z power
-G4 P200					; Delay to ensure settings are made
-G1 H2 Z5 F2500			; lift Z relative to current position
-g1 H1 Y20 F2000			; back away from endstop
-M400					; Wait for stop
-M915 p1 s-30 H200 r0	; Configure stall detect
-G4 P200					; Delay to ensure settings are made
-G1 H1 Y-300 F2000		; Move towards endstop until it stalls
-M400					; Wait until all stopped
-M915 p1 s-10 H200 r0	; Configure stall detect
-G4 P200					; Delay to ensure settings are made
-g1 H1 Y10 F2000			; back away from endstop
-M400
-M915 p1 s-30 H200 r0	; Configure stall detect
-G4 P200
-G1 H1 Y-300 F2000		; Move towards endstop until it stalls
-M915 p1 s-10 H200 r0	; Configure stall detect to be less sensitive
-G1 Y1 F1000				; Move away from stop and cancel stall
-G1 H2 Z-5 F2500			; Return Z to original position
-M400					; wait complete
-G90						; Absolute positioning
-M913 Y100 Z100			; back to full power
-M915 P1 S20 H200 R1		; Report any stalls
+M400					          ; Wait for all moves to stop
+G91						          ; Use relative moves
+G1 H2 Y0.01	Z0.01		    ; Move Y a small amount to enable
+M400					          ; Wait for all moves to stop
+G4 P200					        ; Delay to allow TMC to detect stopped state
+M915 P1 S-10 H200 R0	  ; Configure stall detect
+M574 Y1 S3				      ; Configure Y endstop
+M913 Y50 Z50			      ; Lower Y and Z power
+G4 P200					        ; Delay to ensure settings are made
+G1 H2 Z5 F2500			    ; lift Z relative to current position
+G1 H1 Y20 F2000			    ; back away from endstop
+M400					          ; Wait for all moves to stop
+M915 P1 S-30 H200 R0	  ; Configure stall detect
+G4 P200					        ; Delay to ensure settings are made
+G1 H1 Y-300 F2000		    ; Move towards endstop until it stalls
+M400					          ; Wait for all moves to stop
+M915 P1 S-10 H200 R0	  ; Configure stall detect
+G4 P200					        ; Delay to ensure settings are made
+g1 H1 Y10 F2000			    ; Back away from endstop
+M400                    ; Wait for all moves to stop
+M915 P1 S-30 H200 R0	  ; Configure stall detect
+G4 P200                 ; Delay to ensure settings are made
+G1 H1 Y-300 F2000		    ; Move towards endstop until it stalls
+M915 P1 S-10 H200 R0	  ; Configure stall detect to be less sensitive
+G1 Y1 F1000				      ; Move away from stop and cancel stall
+G1 H2 Z-5 F2500			    ; Return Z to original position
+M400					          ; Wait for all moves to stop
+G90						          ; Absolute positioning
+M913 Y100 Z100			    ; back to full power
+M915 P1 S20 H200 R1		  ; Report any stalls
 ```
 
 </div>
@@ -164,48 +164,48 @@ M915 P1 S20 H200 R1		; Report any stalls
 ; endstops and to try and ensure that stall detect operates correctly. To
 ; do this and to minimise and damage if we hit the machine we operate at a
 ; reduced current during these moves.
-M400					; Wait for motion to stop
-G91						; Use relative moves
-G1 H2 X0.01 Y0.01 Z0.01	; Move X, Y and Z a small amount to force enable
-G4 P200					; Wait to ensure TMC sees this as stopped state
-M915 p0 s-10 H200 r0	; Configure stall detect in case we hit max endstops
-M915 p1 s-10 H200 r0	; Configure stall detect
-M574 X1 S3				; Configure X endstop
-M574 Y1 S3				; Configure Y endstop
-M913 X50 Y50 Z50		; Lower X, Y and Z power
-G4 p200					; Wait to ensure settings are in place
-G1 H2 Z5 F2500			; lift Z relative to current position
-G1 H1 X20 Y20 F2800		; back away from endstop
-M400
-M915 p0 s-30 H200 r0	; Configure stall detect for home, use more sensitive setting
-M915 p1 s-30 H200 r0	; Configure stall detect
-G4 P200
-G1 H1 X-300 Y-300 F2800	; Move towards endstop until it stalls
-M400					; Wait for motion to stop, we should now be home
+M400					            ; Wait for all moves to stop
+G91						            ; Use relative moves
+G1 H2 X0.01 Y0.01 Z0.01	  ; Move X, Y and Z a small amount to force enable
+G4 P200					          ; Wait to ensure TMC sees this as stopped state
+M915 P0 S-10 H200 R0	    ; Configure stall detect in case we hit max endstops
+M915 P1 S-10 H200 R0	    ; Configure stall detect
+M574 X1 S3				        ; Configure X endstop
+M574 Y1 S3				        ; Configure Y endstop
+M913 X50 Y50 Z50		      ; Lower X, Y and Z power
+G4 P200					          ; Delay to ensure settings are made
+G1 H2 Z5 F2500			      ; Lift Z relative to current position
+G1 H1 X20 Y20 F2800		    ; Back away from endstop
+M400                      ; Wait for all moves to stop
+M915 P0 S-30 H200 R0	    ; Configure stall detect for home, use more sensitive setting
+M915 P1 S-30 H200 R0	    ; Configure stall detect
+G4 P200                   ; Delay to ensure settings are made
+G1 H1 X-300 Y-300 F2800	  ; Move towards endstop until it stalls
+M400					            ; Wait for motion to stop, we should now be home
 ; There is a small chance that the above sequence did not work
 ; sometimes the inital movements after the printer has been powered
 ; on trigger stall detection. To avoid having the home position set
 ; incorrectly, we repeat the home operation again to be safe.
-M915 p0 s-10 H200 r0	; Configure stall detect
-M915 p1 s-10 H200 r0	; Configure stall detect
-G1 H1 X10 Y10 F2800		; back away from endstop
-M400
-M915 p0 s-30 H200 r0	; Configure stall detect for home detect
-M915 p1 s-30 H200 r0	; Configure stall detect
-G4 P200
-G1 H1 X-300 Y-300 F2800	; Move towards endstop until it stalls
-M400					; Wait until all stopped
-M915 p0 s-10 H200 r0	; Configure stall detect to be less sensitive
-M915 p1 s-10 H200 r0	; Configure stall detect
-G4 P200
-G1 X1 Y1 F1000			; Move away from stop and cancel stall
-M400					; wait complete
-G90						; Absolute positioning
-G1 X117 Y128 F5000      ; go to first bed probe point and home Z
-G30                     ; home Z by probing the bed
-M913 X100 Y100 Z100		; back to full power
-M915 p0 S20 H200 r2		; Configure stall detect to report stalls
-M915 p1 S20 H200 r2		; on both X and Y
+M915 P0 S-10 H200 R0	    ; Configure stall detect
+M915 P1 S-10 H200 R0	    ; Configure stall detect
+G1 H1 X10 Y10 F2800		    ; Back away from endstop
+M400                      ; Wait for all moves to stop
+M915 P0 S-30 H200 R0	    ; Configure stall detect for home detect
+M915 P1 S-30 H200 R0	    ; Configure stall detect
+G4 P200                   ; Delay to ensure settings are made
+G1 H1 X-300 Y-300 F2800	  ; Move towards endstop until it stalls
+M400					            ; Wait for all moves to stop
+M915 P0 S-10 H200 R0	    ; Configure stall detect to be less sensitive
+M915 P1 S-10 H200 R0	    ; Configure stall detect
+G4 P200                   ; Delay to ensure settings are made
+G1 X1 Y1 F1000			      ; Move away from stop and cancel stall
+M400					            ; Wait for all moves to stop
+G90						            ; Absolute positioning
+G1 X117 Y128 F5000        ; Go to first bed probe point and home Z
+G30                       ; Home Z by probing the bed
+M913 X100 Y100 Z100		    ; Back to full power
+M915 P0 S20 H200 R2		    ; Configure stall detect to report stalls
+M915 P1 S20 H200 R2		    ; on both X and Y
 ```
 
 </div>
