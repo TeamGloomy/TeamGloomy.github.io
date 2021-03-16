@@ -2,7 +2,7 @@
 title: Custom Commands and G-Code
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 16/03/2021
 summary: "Custom Commands and G-Code"
 sidebar: mydoc_sidebar
 permalink: custom.html
@@ -15,7 +15,7 @@ There has been some additions made to [standard gcodes](https://duet3d.dozuki.co
 
 ## Additional GCodes
 - M122 P200 - This gives an output of pin assignments for the configured board
-- M150 - X2 has been added for the Neopixels. It should be used instead of X1. This is only applicable to this LPC/STM32.
+- M150 - X2 has been added for the Neopixels. It should be used instead of X1. This is only applicable to this LPC/STM32 port.
 - M308 - "thermocouple-max6675" has been added as an additional sensor type. This is only applicable to this LPC/STM32 port.
 
 ## Unsupported GCodes

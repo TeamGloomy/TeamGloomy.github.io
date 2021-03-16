@@ -2,7 +2,7 @@
 title: Connecting an MKS Sbase v1.3 via Wifi
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 11/03/2021
 summary: "Connecting an MKS Sbase v1.3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: mks_sbase_connected_wifi.html
@@ -88,10 +88,10 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 
 ```
 //Config for MKS Sbase v1.3
-lpc.board = mkssbase_1.3
+board = mkssbase_1.3
 //wifi pins
 8266wifi.espDataReadyPin = 2.11
-8266wifi.lpcTfrReadyPin = 1.30
+8266wifi.TfrReadyPin = 1.30
 8266wifi.espResetPin = 1.31
 SSP0.pins = {0.15, 0.17, 1.24, 0.16}
 heat.tempSensePins = { 0.23, 0.24, 0.25 }

@@ -2,7 +2,7 @@
 title: Connecting an SKR v1.4 and v1.4T via SBC
 tags: []
 keywords: 
-last_updated: 22/02/2021
+last_updated: 11/03/2021
 summary: "Connecting an SKR v1.4 and v1.4T via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_1.4_connected_sbc.html
@@ -74,8 +74,8 @@ All the SD card on the SKR v1.4 needs is the board.txt file with the following c
 
 ```
 //Config for BIQU SKR v1.4
-lpc.board = biquskr_1.4
-sbc.lpcTfrReadyPin = 1.31
+board = biquskr_1.4
+sbc.TfrReadyPin = 1.31
 heat.tempSensePins = { 0.25, 0.24, 0.23 }
 ```
 

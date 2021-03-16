@@ -2,7 +2,7 @@
 title: Connecting a Re-Arm via SBC
 tags: []
 keywords: 
-last_updated: 22/02/2021
+last_updated: 11/03/2021
 summary: "Connecting a Re-Arm via SBC"
 sidebar: mydoc_sidebar
 permalink: re_arm_connected_sbc.html
@@ -69,8 +69,8 @@ All the SD card on the Re-Arm needs is the board.txt file with the following con
 
 ```
 //Config for RE-Arm
-lpc.board = rearm
-sbc.lpcTfrReadyPin = 1.31
+board = rearm
+sbc.TfrReadyPin = 1.31
 heat.tempSensePins = { 0.24, 0.23, 0.25 }
 ```
 

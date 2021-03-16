@@ -52,6 +52,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 3.3beta1_3 Release Notes
+      url: /release_notes_3.3beta1_3.html
+      output: web, pdf
+    
     - title: 3.2.2_2 Release Notes
       url: /release_notes_3.2.2_2.html
       output: web, pdf
@@ -106,6 +110,18 @@ entries:
 
     - title: Configuring a BTT Smart Filament Monitor
       url: /btt_smart_filament.html
+      output: web, pdf
+
+    - title: Configuring ExeconMcode
+      url: /execonmcode.html
+      output: web, pdf
+
+    - title: Short to Ground Errors
+      url: /short_to_ground.html
+      output: web, pdf
+
+    - title: SBC Transfer Ready Pin Timeouts
+      url: /sbc_transfer_timeout.html
       output: web, pdf
 
     - title: Useful Macros

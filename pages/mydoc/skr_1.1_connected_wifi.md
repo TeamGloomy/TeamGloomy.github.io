@@ -2,7 +2,7 @@
 title: Connecting an SKR v1.1 via Wifi
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 11/03/2021
 summary: "Connecting an SKR v1.1 via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_1.1_connected_wifi.html
@@ -68,10 +68,10 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 
 ```
 //Config for BIQU SKR v1.1
-lpc.board = biquskr_1.1
+board = biquskr_1.1
 //wifi pins
 8266wifi.espDataReadyPin = 2.11
-8266wifi.lpcTfrReadyPin = 1.30
+8266wifi.TfrReadyPin = 1.30
 8266wifi.espResetPin = 1.31
 heat.tempSensePins = { 0.23, 0.24, 0.25 }
 ```

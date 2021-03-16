@@ -2,7 +2,7 @@
 title: TFT Screen Configuration
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 11/03/2021
 summary: "TFT Screen Configuration"
 sidebar: mydoc_sidebar
 permalink: tft.html
@@ -29,6 +29,7 @@ They are as follows:
 |baudrate|5|4|
 |onboard_sd_support|2|1|
 |serial_always_on|0|1|
+|rrf_macros_on|0|1|
 
 <div class="datatable-end"></div>
 

@@ -2,7 +2,7 @@
 title: Adding a Camera
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 11/03/2021
 summary: "Adding a Camera"
 sidebar: mydoc_sidebar
 permalink: camera.html
@@ -27,3 +27,9 @@ You can also add this to the general setting tab in the DUET, and have the webca
 
 There is a DSF plugin for using a pi camera.  
 Information and instructions can be found [here](https://github.com/TLAS11/DWC-PiWebcam)
+
+## RPi-Cam-Web-Interface - Pi Cam Only
+
+Follow the installation instructions found [here](https://elinux.org/RPi-Cam-Web-Interface#Installation_Instructions)
+
+Set the webcam URL as http://IPAddress/html/cam_pic_new.php

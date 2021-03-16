@@ -2,7 +2,7 @@
 title: Connecting a Fly-407ZG via SBC
 tags: []
 keywords: 
-last_updated: 22/02/2021
+last_updated: 11/03/2021
 summary: "Connecting a Fly-407ZG via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_sbc.html
@@ -70,19 +70,34 @@ All the SD card on the Fly-407ZG needs is the board.txt file with the following 
 
 ```
 //Config for Fly-407ZG
-lpc.board = fly_f407zg
-sbc.lpcTfrReadyPin = B.2
+board = fly_f407zg
+sbc.TfrReadyPin = B.2
 sbc.csPin = F.11
 heat.tempSensePins = { F.3, A.0, C.1, C.0, F.10, F.5, F.4 }
 ```
 
-#### Smart Drivers
+### Smart Drivers
 
-If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
+If using TMC5160 or TMC22XX drivers (where 22XX is either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
-Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the Fly-407ZG board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.  
+Where X is the number of drivers fitted in total.
+
+#### TMC22XX UART Drivers
+
+The drivers must be continuous and start at unit 0 (unless TMC5160 are also used, which case they must be installed after them). So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder. 
+
+#### TMC5160 SPI Drivers
+
+TMC5160 drivers are supported from 3.3 beta 1 onwards.
+If using TMC5160 drivers, the following lines must also be added to the board.txt file.  
+```
+stepper.num5160Drivers = X
+stepper.spiChannel = 2
+```
+Where X is the number of 5160 drivers fitted. The drivers must be continuous and start at unit 0. So, if you have say 3 TMC5160s and 1 TMC22XX and 1 other driver, the 5160s must be in slots 0, 1, and 2, the TMC22XX in slot 3 and the remainiong driver in 4. You can use RRF to assign any of those slots to an axis/extruder.  
+
 
 #### Sensorless Homing
 

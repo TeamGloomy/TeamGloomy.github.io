@@ -47,6 +47,8 @@ Examples are given using LPC pins.
 |led.neopixelPin|led.neopixelPin = 1.24|This sets the output pin for neopixel control|||
 |leds.diagnostic|leds.diagnostic = 1.18|This would set the correct pin for controlling a diagnostic LED|||
 |lpc.board ("board" is also supported from 3.2_4)|lpc.board = fly_e3|This sets the correct board pin mapping to load. See table below for current list|||
+|power.VInDetectPin|powerVInDetectPin = C.3|Sets the pin to use for voltage monitoring|STM32 Only||
+|power.voltage|power.voltage = 24|Sets a voltage when no voltage monitoring is present on the board|STM32 Only||
 |sbc.csPin|sbc.csPin = 0.16|Allow use of non standard CS pin|||
 |sbc.lpcTfrReadyPin ("sbc.TfrReadyPin" is also supported from 3.2_4)|sbc.lpcTfrReadyPin = 0.28 or sbc.TfrReadyPin = 0.28|This sets the transfer ready pin when attaching an SBC|||
 |sdCard.external.cardDetectPin|externalSDCard.cardDetectPin|Sets the external SD card detect pin|||
@@ -67,7 +69,9 @@ Examples are given using LPC pins.
 |stepper.digipotFactor|stepper.digipotFactor = 113.33|Sets the output current for a built in driver as a factor of 255 against max current|MKS Sbase and Smoothieboard only||
 |stepper.directionPins|stepper.directionPins = { 0.5,0.11,0.20,0.22,2.13}|Sets the driver direction pins in the order 0, 1, 2, 3 and so on|LPC supports a maximum of 7 drivers|STM32 supports a maximum of 11 drivers|
 |stepper.enablePins|stepper.enablePins = {0.4,0.10,0.19,0.21,4.29}|Sets the driver enable pins in the order 0, 1, 2, 3 and so on|LPC supports a maximum of 7 drivers|STM32 supports a maximum of 11 drivers|
-|stepper.numSmartDrivers|stepper.numSmartDrivers = 3|Sets the number of TMC22XX drivers installed between 1 and 11. Drivers must be installed from drive 0|||
+|stepper.numSmartDrivers|stepper.numSmartDrivers = 3|Sets the number of TMC22XX drivers installed between 1 and 11. Drivers must be installed from drive 0 after 5160 drivers|||
+|stepper.num5160Drivers|stepper.num5160Drivers = 3|Sets the number of TMC22XX drivers installed between 1 and 11. Drivers must be installed from drive 0 before 22XX drivers|STM32 Only||
+|stepper.spiChannel|stepper.spiChannel = 3|Sets the SPI channel to use for 5160 drivers|STM32 Only||
 |stepper.stepPins|stepper.stepPins = {2.0,2.1,2.2,2.3,2.8}|Sets the driver step pins in the order 0, 1, 2, 3 and so on|LPC supports a maximum of 7 drivers|STM32 supports a maximum of 11 drivers|
 |stepper.TmcDiagPins|stepper.TmcDiagPins = {1.29, 1.28}|Sets the stall detection diag pins. Typically same pin as the endstop pin|||
 |stepper.TmcUartPins|stepper.TmcUartPins = {1.10,1.9,1.8,1.4,1.1}|Sets the pin numbers used for communications with TMC22XX drivers using a UART interface|LPC supports a maximum of 7 drivers|STM32 supports a maximum of 11 drivers|
@@ -95,7 +99,7 @@ Current preprogrammed boards
 |biquskrpro_1.1|SKR Pro v1.1 and 1.2|STM32|
 |fly_407zg|Fly-407ZG|STM32|
 |fly_cdy|Fly-CDY|LPC|
-|fly_cdyv2|Fly-CDY2|STM32|
+|fly_cdyv2|Fly-CDYv2|STM32|
 |fly_E3|Fly-E3|STM32|
 |generic|maps all pins as available by pin number. Not recommended for normal use||
 |mbed|For the mbed developer board|LPC|

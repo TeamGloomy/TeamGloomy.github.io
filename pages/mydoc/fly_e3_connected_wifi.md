@@ -2,7 +2,7 @@
 title: Connecting a Fly-E3 via Wifi
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 11/03/2021
 summary: "Connecting a Fly-E3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_e3_connected_wifi.html
@@ -35,22 +35,37 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 
 ```
 //Config for fly-E3
-lpc.board = fly_e3
+board = fly_e3
 //wifi pins
 8266wifi.espDataReadyPin = E.13;
-8266wifi.lpcTfrReadyPin = E.14;
+8266wifi.TfrReadyPin = E.14;
 8266wifi.espResetPin = E.15;
 8266wifi.serialRxTxPins = { D.9, D.8 } ;
 heat.tempSensePins = { A.3 , A.4 }
 ```
 
-#### Smart Drivers
+### Smart Drivers
 
-If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
+If using TMC5160 or TMC22XX drivers (where 22XX is either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
 ```
 stepper.numSmartDrivers = X
 ```
-Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.
+Where X is the number of drivers fitted in total.
+
+#### TMC22XX UART Drivers
+
+The drivers must be continuous and start at unit 0 (unless TMC5160 are also used, which case they must be installed after them). So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder. 
+
+#### TMC5160 SPI Drivers
+
+TMC5160 drivers are supported from 3.3 beta 1 onwards.
+If using TMC5160 drivers, the following lines must also be added to the board.txt file.  
+```
+stepper.num5160Drivers = X
+stepper.spiChannel = 2
+```
+Where X is the number of 5160 drivers fitted. The drivers must be continuous and start at unit 0. So, if you have say 3 TMC5160s and 1 TMC22XX and 1 other driver, the 5160s must be in slots 0, 1, and 2, the TMC22XX in slot 3 and the remainiong driver in 4. You can use RRF to assign any of those slots to an axis/extruder.  
+
 
 #### Sensorless Homing
 
@@ -73,7 +88,7 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 
 ### Config.g adjustments
 
-The fly-CDY board is delivered without any firmware on the wifi chip so as part of that process we need to set it up.  
+The Fly-E3 board is delivered without any firmware on the wifi chip so as part of that process we need to set it up.  
 Open the config.g file that has been placed in the sys folder of the SD card and comment out any M552 commands that are there using ; e.g. ;M552 S1.  
 
 ### Final Setup

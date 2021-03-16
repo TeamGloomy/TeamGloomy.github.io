@@ -2,7 +2,7 @@
 title: Connecting an SKR E3 Turbo via Wifi
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 11/03/2021
 summary: "Connecting an SKR E3 Turbo via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_E3T_connected_wifi.html
@@ -70,10 +70,10 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 
 ```
 //Config for SKR E3 Turbo
-lpc.board = biquskr_e3t
+board = biquskr_e3t
 //wifi pins
 8266wifi.espDataReadyPin = 0.19
-8266wifi.lpcTfrReadyPin = 0.20
+8266wifi.TfrReadyPin = 0.20
 8266wifi.espResetPin = 2.8
 heat.tempSensePins = { 0.25, 0.24, 0.23 }
 ```

@@ -67,6 +67,11 @@ Fly produce a single WiFi module that has a pinout that is compatible with the f
 
 They can be purchased from [AliExpress](https://www.aliexpress.com/item/1005001370540066.html)
 
+There are now two versions of this board. The blue one is the original version and had 2 sets of EXP1 and EXP 1 headers. The new version has a black PCB and passes 8 pins (10 pins including 5v and Gnd) through. This allows use of a 12864 display on an STM32 based board. Below is the pinout.  
+
+{% include image.html file="fly_wifi_pinout.png" alt="Fly Wifi Pinout" caption="Fly Wifi Pinout" %}  
+{% include image.html file="fly_wifi_sizes.png" alt="Fly Wifi Sizes" caption="Fly Wifi Sizes" %}
+
 </div>
 
 <div role="tabpanel" class="tab-pane" id="BTT" markdown="1">

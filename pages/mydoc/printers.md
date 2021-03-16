@@ -11,4 +11,4 @@ toc: false
 comments: false
 ---
 
-There will be different guides written for different printers a time progresses.
+There will be different guides written for different printers as time progresses.

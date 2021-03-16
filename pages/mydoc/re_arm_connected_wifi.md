@@ -2,7 +2,7 @@
 title: Connecting a Re-Arm via Wifi
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 11/03/2021
 summary: "Connecting a Re-Arm via Wifi"
 sidebar: mydoc_sidebar
 permalink: re_arm_connected_wifi.html
@@ -68,10 +68,10 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 
 ```
 //Config for RE-Arm
-lpc.board = rearm
+board = rearm
 //wifi pins
 8266wifi.espDataReadyPin = 2.11
-8266wifi.lpcTfrReadyPin = 1.30
+8266wifi.TfrReadyPin = 1.30
 8266wifi.espResetPin = 1.31
 heat.tempSensePins = { 0.24, 0.23, 0.25 }
 ```

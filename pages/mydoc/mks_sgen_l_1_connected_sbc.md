@@ -2,7 +2,7 @@
 title: Connecting an MKS SGen L v1.0 via SBC
 tags: []
 keywords: 
-last_updated: 22/02/2021
+last_updated: 11/03/2021
 summary: "Connecting an MKS SGen L v1.0 via SBC"
 sidebar: mydoc_sidebar
 permalink: mks_sgen_l_1_connected_sbc.html
@@ -69,8 +69,8 @@ All the SD card on the MKS SGen L needs is the board.txt file with the following
 
 ```
 //Config for MKS SGen L
-lpc.board = mkssgenl_1.0
-sbc.lpcTfrReadyPin = 1.31
+board = mkssgenl_1.0
+sbc.TfrReadyPin = 1.31
 heat.tempSensePins = { 0.24, 0.23, 0.25 }
 ```
 

@@ -2,7 +2,7 @@
 title: Meet the Team
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 11/03/2021
 summary: "Meet the Team"
 sidebar: mydoc_sidebar
 permalink: TeamGloomy.html
@@ -13,7 +13,7 @@ toc: false
 
 ### Gloomyandy
 
-Lead developer
+Lead Developer
 
 ### PCR
 

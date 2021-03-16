@@ -2,7 +2,7 @@
 title: Fly Screens General Information
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 11/03/2021
 summary: "Fly Screens General Information"
 sidebar: mydoc_sidebar
 permalink: fly_screen.html
@@ -40,7 +40,7 @@ If you have purchased the Marlin version it is easy to convert it to a Duet vers
 
 ### Updating
 
-To update the firmware on your screen, download the update.img file from [here](https://github.com/FLYmaker/FLY-Screen/tree/master/reprap/4.3inch).  
+To update the firmware on your screen, download the update.img file from [here](https://github.com/FLYmaker/FLY-Screen-RepRap/releases).  
 Put the file into the root of a FAT32 formatted card and install it in the screen. You should then be prompted to install the update.  
 Once finished, remove the SD card and power cycle the screen.  
 
@@ -56,7 +56,7 @@ If you have purchased the Marlin version it is easy to convert it to a Duet vers
 
 ### Updating
 
-To update the firmware on your screen, download the update.img file from [here](https://github.com/FLYmaker/FLY-Screen/tree/master/reprap/7inch).  
+To update the firmware on your screen, download the update.img file from [here](https://github.com/FLYmaker/FLY-Screen-RepRap/releases).  
 Put the file into the root of a FAT32 formatted card and install it in the screen. You should then be prompted to install the update.  
 Once finished, remove the SD card and power cycle the screen.  
 

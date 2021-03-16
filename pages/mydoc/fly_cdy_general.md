@@ -2,7 +2,7 @@
 title: Fly-CDY General Information
 tags: []
 keywords: 
-last_updated: 03/02/2021
+last_updated: 16/03/2021
 summary: "General information regarding the Fly-CDY"
 sidebar: mydoc_sidebar
 permalink: fly_cdy_general.html
@@ -22,6 +22,10 @@ It is currently available through [AliExpress](https://www.aliexpress.com/item/1
 The jumpers should be installed as below. "Common Interpolation" should be used for standalone drivers. "SPI mode Interpolation" is not a currently supported configuration as this port does not support SPI communication to drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226)
 
 {% include image.html file="fly_e3_jumpers.png" alt="Fly-E3 Jumpers" caption="Fly-E3 Driver Jumper Locations" %}
+
+### Input voltage
+
+The board can handle an input voltage up to 32v.
 
 ### Initial Installation
 

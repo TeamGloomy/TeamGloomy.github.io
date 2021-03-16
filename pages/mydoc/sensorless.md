@@ -2,7 +2,7 @@
 title:  Sensorless Homing and Stall Detection
 tags: 
 keywords: 
-last_updated: 25/01/2021
+last_updated: 11/03/2021
 summary: "Sensorless Homing and Stall Detection"
 sidebar: mydoc_sidebar
 permalink: sensorless.html
@@ -13,6 +13,7 @@ comments: false
 
 Sensorless homing and stall detection is now functional for the TMC2209's and TMC2226's. This is supported on the following boards.
 * Fly-CDY
+* Fly-CDYv2
 * Fly-E3
 * MKS SGen L v1
 * MKS SGen L v2
@@ -21,6 +22,7 @@ Sensorless homing and stall detection is now functional for the TMC2209's and TM
 * SKR E3 Turbo
 * SKR GTR
 * SKR Pro
+* SKR RRF E3
 
 Getting stall detection working can be tricky and sensorless homing will almost certainly require some tuning.  
  

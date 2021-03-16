@@ -2,7 +2,7 @@
 title: Connecting a Fly-CDY via Wifi
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 11/03/2021
 summary: "Connecting a Fly-CDY via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_cdy_connected_wifi.html
@@ -41,10 +41,10 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 
 ```
 //Config for fly-CDY
-lpc.board = fly_cdy
+board = fly_cdy
 //wifi pins
 8266wifi.espDataReadyPin = 0.28;
-8266wifi.lpcTfrReadyPin = 2.7;
+8266wifi.TfrReadyPin = 2.7;
 8266wifi.espResetPin = 2.6;
 8266wifi.serialRxTxPins = { 0.1, 0.0 } ;
 heat.tempSensePins = { 0.23, 0.26, 0.25 }
