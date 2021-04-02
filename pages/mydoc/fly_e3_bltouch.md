@@ -34,8 +34,8 @@ Connect the BLTouch to the Fly-E3 as described in the table below.
 
 Your config.g should be modified as below.
 ```
-M558 P9 H6 F120 T8000 C"^probe".          ; set Z probe type to bltouch and the dive height + speeds
-M950 S0 C"servo0"                         ; Setup servo 0 as servo port on board
+M558 P9 H6 F120 T8000 C"^probe"          ; set Z probe type to bltouch and the dive height + speeds
+M950 S0 C"servo0"                        ; Setup servo 0 as servo port on board
 ```
 
 You will also need to set up your probe offset using [G31](https://duet3d.dozuki.com/Wiki/Gcode#Section_G31_Set_or_Report_Current_Probe_status) and your [mesh probing grid](https://duet3d.dozuki.com/Wiki/Gcode#Section_M557_Set_Z_probe_point_or_define_probing_grid)
