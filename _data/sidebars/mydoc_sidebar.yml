@@ -447,6 +447,10 @@ entries:
           url: /fly_cdyv2_bltouch.html
           output: web, pdf
 
+        - title: Input Voltage Monitoring
+          url: /fly_cdyv2_voltage.html
+          output: web, pdf
+
         - title: Pin Names
           url: /fly_cdyv2_pins.html
           output: web, pdf
@@ -481,6 +485,42 @@ entries:
 
         - title: Pin Names
           url: /fly_e3_pins.html
+          output: web, pdf
+
+      - title: Fly-E3-Pro
+        output: web, pdf
+        subfolderitems:
+
+        - title: Fly-E3-Pro General Information
+          url: /fly_e3_pro_general.html
+          output: web, pdf
+        
+        - title: Connecting via WiFi
+          url: /fly_e3_pro_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting a Serial Screen
+          url: /fly_e3_pro_screen.html
+          output: web, pdf
+
+        - title: Connecting a 12864 Screen
+          url: /fly_e3_pro_screen_12864.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /fly_e3_pro_bltouch.html
+          output: web, pdf
+
+        - title: Connecting a PT100 or Type 'K' Thermocouple
+          url: /fly_e3_pro_pt100.html
+          output: web, pdf
+
+        - title: Input Voltage Monitoring
+          url: /fly_e3_pro_voltage.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /fly_e3_pro_pins.html
           output: web, pdf
 
       - title: GTR + M5
