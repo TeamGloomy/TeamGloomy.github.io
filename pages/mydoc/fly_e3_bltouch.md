@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to a Fly-E3
+title: Connecting a BLTouch to a Fly-E3-Pro
 tags: []
 keywords: 
 last_updated: 08/02/2021
-summary: "Connecting a BLTouch to a Fly-E3"
+summary: "Connecting a BLTouch to a Fly-E3-Pro"
 sidebar: mydoc_sidebar
-permalink: fly_e3_bltouch.html
+permalink: fly_e3_pro_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,11 +14,11 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the Fly-E3 as described in the table below.  
+Connect the BLTouch to the Fly-E3-Pro as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|Fly-E3 Pin|Fly-E3 Pin Name|
+|BLTouch Wire Colour|Fly-E3-Pro Pin|Fly-E3-Pro Pin Name|
 |:---|:---|:---|
 |Brown|GND||
 |Red|NPWR||
@@ -28,7 +28,7 @@ Connect the BLTouch to the Fly-E3 as described in the table below.
 
 <div class="datatable-end"></div>
 
-{% include image.html file="fly_e3_bltouch.png" alt="Fly-E3 BLTouch" caption="Fly-E3 BLTouch Wiring" %}
+{% include image.html file="fly_e3_bltouch.png" alt="Fly-E3 BLTouch" caption="Fly-E3-Pro BLTouch Wiring" %}
 
 ### Config.g Changes
 

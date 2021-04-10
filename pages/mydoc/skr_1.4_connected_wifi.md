@@ -60,6 +60,9 @@ The table below shows the pins required on the ESP8266 and what they are connect
 
 <div class="datatable-end"></div>
 
+Discord user themarinus has created this image to aid in creating your own wifi adapter.  
+{% include image.html file="skr_1.4_wifi" alt="SKR 1.4 Wifi Connection" caption="SKR 1.4 Wifi Connection" %}
+
 ### Prepare the SD Card
 
 Follow the instructions on [Getting Started with RRF3](getting_started.html)

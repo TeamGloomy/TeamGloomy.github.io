@@ -1,11 +1,11 @@
 ---
-title: Connecting a screen to an SKR E3 Turbo
+title: Connecting a screen to a Fly-E3-Pro
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "Connecting a screen to an SKR E3 Turbo"
+summary: "Connecting a screen to a Fly-E3-Pro"
 sidebar: mydoc_sidebar
-permalink: skr_E3T_screen.html
+permalink: fly_e3_pro_screen.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,17 +14,16 @@ datatable: true
 
 ## Overview
 
-Only screens that use a serial connection can be connected to the SKR E3 Turbo
+Both serial screens (e.g. Fly Screens, BTT TFT, Paneldue) and 12864 displays (like the stock ender 3 screen) can be connected to a Fly-E3-Pro.  
+These instructions cover serial screens. Instructions for 12864 screens can be found [here](/fly_e3_pro_screen_12864.html).  
 
 ### Board.txt Preparation
 
 To enable a screen to function correctly, the following lines need to be added to the board.txt file.  
 
 ```
-serial.aux.rxTxPins = {0.3, 0.2}
+serial.aux.rxTxPins = {A.10, A.9}
 ```
-
-{% include important.html content="A screen can't be used in conjunction with upgrading the WiFi adapter via DWC as there is only one serial connection available. The pins on the TFT header and AUX-1 are the same pins." %}
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#paneldue" data-toggle="tab">PanelDue</a></li>
@@ -34,7 +33,7 @@ serial.aux.rxTxPins = {0.3, 0.2}
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="paneldue" markdown="1">
 
-Use pins +5V, GND, TX0 and RX0 on the TFT header. These should be connected to +5V, GND, TX and RX on the PanelDue, making sure that TX and RX are swapped.
+Use pins +5V, GND, TX and RX on the "screen" header. These should be connected to +5V, GND, TX and RX on the PanelDue, making sure that TX and RX are swapped.
 
 In config.g, the following command should be added.   
 ```
@@ -46,7 +45,7 @@ From RepRapFirmware 3.2, it is possible to update the firmware on the PanelDue d
 
 <div role="tabpanel" class="tab-pane" id="tft" markdown="1">
 
-Use pins +5V, GND, TX0 and RX0 on the TFT header. These should be connected to +5V, GND, TX and RX on the TFT, making sure that TX and RX are swapped.
+Use pins +5V, GND, TX and RX on the "screen" header. These should be connected to +5V, GND, TX and RX on the TFT, making sure that TX and RX are swapped.
 
 ## Overview
 
@@ -98,7 +97,7 @@ Add the following line in your cancel.g file to allow the screen to know when a 
 Please note the pinout of 5v (connected to NC), TX, RX and 0v.  
 The cable that is supplied may be equipped with the correct connection for a duet board, so the plug will need changing to fit these boards. Remember to make sure that TX and RX are swapped.  
 
-Use pins +5V, GND, TX0 and RX0 on the TFT header. These should be connected to +5V, GND, TX and RX on the Fly Screen, making sure that TX and RX are swapped.
+Use pins +5V, GND, TX and RX on the "screen" header. These should be connected to +5V, GND, TX and RX on the Fly Screen, making sure that TX and RX are swapped.
 
 In config.g, the following command should be added.   
 ```

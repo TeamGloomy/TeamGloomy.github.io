@@ -90,7 +90,7 @@ G4 P200					        ; Delay to ensure settings are made
 G1 H2 Z5 F2500			    ; Lift Z relative to current position
 G1 H1 X20 F2000			    ; Back away from endstop
 M400					          ; Wait for all moves to stop
-M915 P0 Ss-30 H200 R0	  ; Configure stall detect
+M915 P0 S-30 H200 R0	  ; Configure stall detect
 G4 P200					        ; Delay to ensure settings are made
 G1 H1 X-230 F2000		    ; Move towards endstop until it stalls
 M400					          ; Wait for all moves to stop
@@ -204,8 +204,8 @@ G90						            ; Absolute positioning
 G1 X117 Y128 F5000        ; Go to first bed probe point and home Z
 G30                       ; Home Z by probing the bed
 M913 X100 Y100 Z100		    ; Back to full power
-M915 P0 S20 H200 R2		    ; Configure stall detect to report stalls
-M915 P1 S20 H200 R2		    ; on both X and Y
+M915 P0 S20 H200 R1		    ; Configure stall detect to report stalls
+M915 P1 S20 H200 R1		    ; on both X and Y
 ```
 
 </div>

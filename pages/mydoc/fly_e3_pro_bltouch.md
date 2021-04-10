@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to a Fly-CDY
+title: Connecting a BLTouch to a Fly-E3
 tags: []
 keywords: 
-last_updated: 20/01/2021
-summary: "Connecting a BLTouch to a Fly-CDY"
+last_updated: 08/02/2021
+summary: "Connecting a BLTouch to a Fly-E3"
 sidebar: mydoc_sidebar
-permalink: fly_cdy_bltouch.html
+permalink: fly_e3_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,25 +14,27 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the Fly-CDY as described in the table below.  
+Connect the BLTouch to the Fly-E3 as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|Fly-CDY Pin|Fly-CDY Pin Name|
+|BLTouch Wire Colour|Fly-E3 Pin|Fly-E3 Pin Name|
 |:---|:---|:---|
 |Brown|GND||
 |Red|NPWR||
-|Yellow|1.26|Servo0|
+|Yellow|PB0|Servo0|
 |Black|GND||
-|White|1.22|zstop|
+|White|PC4|Probe|
 
 <div class="datatable-end"></div>
+
+{% include image.html file="fly_e3_bltouch.png" alt="Fly-E3 BLTouch" caption="Fly-E3 BLTouch Wiring" %}
 
 ### Config.g Changes
 
 Your config.g should be modified as below.
 ```
-M558 P9 H6 F120 T8000 C"^zstop"       ; disable Z probe but set dive height, probe speed and travel speed
+M558 P9 H6 F120 T8000 C"^probe"       ; disable Z probe but set dive height, probe speed and travel speed
 M950 S0 C"servo0"                              ; Setup servo 0 as servo port on SKR
 ```
 
