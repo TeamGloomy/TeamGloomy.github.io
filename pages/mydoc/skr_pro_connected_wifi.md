@@ -99,7 +99,30 @@ If using TMC5160 drivers, the following lines must also be added to the board.tx
 stepper.num5160Drivers = X
 stepper.spiChannel = 2
 ```
-Where X is the number of 5160 drivers fitted. The drivers must be continuous and start at unit 0. So, if you have say 3 TMC5160s and 1 TMC22XX and 1 other driver, the 5160s must be in slots 0, 1, and 2, the TMC22XX in slot 3 and the remainiong driver in 4. You can use RRF to assign any of those slots to an axis/extruder. 
+Where X is the number of TMC5160 drivers fitted. The drivers must be continuous and start at unit 0. So, if you have say 3 TMC5160s and 1 TMC22XX and 1 other driver, the 5160s must be in slots 0, 1, and 2, the TMC22XX in slot 3 and the remainiong driver in 4. You can use RRF to assign any of those slots to an axis/extruder.  
+
+The SKR Pro also uses a different pin for the CS for SPI so you need to modify stepper.TmcUartPins in board.txt accordingly.
+
+<div class="datatable-begin"></div>
+
+| Driver       | UART Pin       | SPI Pin  |
+| :-------------: |:-------------:| :---------------:|
+| X           | C.13         | A.15           |
+| Y     | E.3         | B.8           |
+| Z   | E.1         | B.9             |
+| E0   | D.4        | B.3             |
+| E1  | D.1         | G.15             |
+| E2   | D.6        | G.12             |
+| BTT-EXP-MOT 1 | F.11 ||
+| BTT-EXP-MOT 2 | G.10 ||
+
+<div class="datatable-end"></div>
+
+For example, if you had TMC5160s on X and Y, you would add the following line to your board.txt
+```
+stepper.TmcUartPins = { A.15 B.8 E.1 D.4 D.1 D.6 F.11 G.10 NoPin NoPin NoPin }
+```
+Note the added two SPI pins for the TMC5160s and then the remainder of the pins are the UART pins used by TMC22XX drivers.
 
 #### Sensorless Homing
 
