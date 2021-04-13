@@ -38,7 +38,6 @@ Regardless of whether you are installing the LPC specific DSF changes for the fi
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#automatic" data-toggle="tab">Automatic Mode Stable</a></li>
-    <li><a class="noCrossRef" href="#autobeta" data-toggle="tab">Automatic Mode Unstable</a></li>
     <li><a class="noCrossRef" href="#manual" data-toggle="tab">Manual Mode</a></li>
 </ul>
   <div class="tab-content">
@@ -47,9 +46,9 @@ Regardless of whether you are installing the LPC specific DSF changes for the fi
 To use the automatic updater, send the following:
 
 ```
-wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_STM_3_2.sh
-sudo chmod 755 RRF_STM_3_2.sh
-./RRF_STM_3_2.sh
+wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_STM_3_2.2.sh
+sudo chmod 755 RRF_STM_3_2.2.sh
+./RRF_STM_3_2.2.sh
 ```
 
 This does everything from the manual section. 
