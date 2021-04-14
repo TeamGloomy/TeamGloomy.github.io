@@ -2,7 +2,7 @@
 title: Connecting a BLTouch to a Fly-CDYv2
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 14/04/2021
 summary: "Connecting a BLTouch to a Fly-CDYv2"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_bltouch.html
@@ -21,7 +21,7 @@ Connect the BLTouch to the Fly-CDYv2 as described in the table below.
 |BLTouch Wire Colour|Fly-CDYv2 Pin|Fly-CDYv2 Pin Name|
 |:---|:---|:---|
 |Brown|GND||
-|Red|NPWR||
+|Red|5v||
 |Yellow|E.6|Servo0|
 |Black|GND||
 |White|C.2|probe|

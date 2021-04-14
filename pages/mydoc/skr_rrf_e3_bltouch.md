@@ -1,5 +1,5 @@
 ---
-title: Connecting a BLTouch to a Fly-E3
+title: Connecting a BLTouch to a SKR-RRF-E3
 tags: []
 keywords: 
 last_updated: 08/02/2021
@@ -14,28 +14,28 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the Fly-E3 as described in the table below.  
+Connect the BLTouch to the SKR-RRF-E3 as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|Fly-E3 Pin|Fly-E3 Pin Name|
+|BLTouch Wire Colour|SKR-RRF-E3 Pin|SKR-RRF-E3 Pin Name|
 |:---|:---|:---|
 |Brown|GND||
-|Red|5v||
+|Red|NPWR||
 |Yellow|PB0|Servo0|
 |Black|GND||
-|White|PC4|Probe|
+|White|PC5|Probe|
 
 <div class="datatable-end"></div>
 
-{% include image.html file="fly_e3_bltouch.png" alt="Fly-E3 BLTouch" caption="Fly-E3 BLTouch Wiring" %}
+{% include image.html file="skr_rrf_e3_bltouch.png" alt="SKR-RRF-E3 BLTouch" caption="SKR-RRF-E3 BLTouch Wiring" %}
 
 ### Config.g Changes
 
 Your config.g should be modified as below.
 ```
 M558 P9 H6 F120 T8000 C"^probe"       ; disable Z probe but set dive height, probe speed and travel speed
-M950 S0 C"servo0"                              ; Setup servo 0 as servo port on Fly-E3-Pro
+M950 S0 C"servo0"                     ; Setup servo 0 as servo port on SKR
 ```
 
 You will also need to set up your probe offset using [G31](https://duet3d.dozuki.com/Wiki/Gcode#Section_G31_Set_or_Report_Current_Probe_status) and your [mesh probing grid](https://duet3d.dozuki.com/Wiki/Gcode#Section_M557_Set_Z_probe_point_or_define_probing_grid)

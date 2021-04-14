@@ -583,6 +583,34 @@ entries:
           url: /skr_pro_pins.html
           output: web, pdf
 
+      - title: SKR-RRF-E3 + IDEX
+        output: web, pdf
+        subfolderitems:
+
+        - title: SKR-RRF-E3 General Information
+          url: /skr_rrf_e3_general.html
+          output: web, pdf
+        
+        - title: Connecting via WiFi
+          url: /skr_rrf_e3_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting a Serial Screen
+          url: /skr_rrf_e3_screen.html
+          output: web, pdf
+
+        - title: Connecting a 12864 Screen
+          url: /skr_rrf_e3_screen_12864.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /skr_rrf_e3_bltouch.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /skr_rrf_e3_pins.html
+          output: web, pdf
+
   - title: Screens
     output: web, pdf
     folderitems:

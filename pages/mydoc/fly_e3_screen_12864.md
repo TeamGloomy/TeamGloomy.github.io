@@ -78,3 +78,9 @@ Extract the contents of the zip file you downloaded above and place them in a fo
 
 Activate the display using the config.g changes above.  
 A side menu called "Display" should appear in DWC. Navigate to it and upload the zip file.  
+
+## Hardware
+
+Add a jumper to J2
+
+{% include image.html file="fly_e3_screen_jumper.png" alt="Fly-E3 Screen Jumper" caption="Fly-E3 Screen Jumper" %}

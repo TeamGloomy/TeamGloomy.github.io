@@ -2,7 +2,7 @@
 title: GTR + M5 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 14/04/2021
 summary: "GTR + M5 Pin Names"
 sidebar: mydoc_sidebar
 permalink: gtr_pins.html
@@ -33,7 +33,7 @@ Driver pin numbers. They are separated into driver number.
 |Enable Pins|PF_1|PE_4|PB_9|PG_13|PD_7|PD_2|PF_8|PG_2|PF_4|PE_8|PI_0|
 |Step Pins|PC_15|PE_3|PB_8|PG_12|PD_6|PD_1|PF_3|PD_14|PE_12|PG_0|PH_12|
 |Direction Pins|PF_0|PE_2|PB_7|PG_11|PD_5|PD_0|PG_3|PD_11|PE_10|PG_1|PH_15|
-|UART Pins|PC_13|PC_14|PE_1|PB_5|PG_10|PD_4|PC_12|PG_4|PE_15|PE_7|PF_15|PH_14|
+|UART Pins|PC_14|PE_1|PB_5|PG_10|PD_4|PC_12|PG_4|PE_15|PE_7|PF_15|PH_14|
 
 <div class="datatable-end"></div>
 
