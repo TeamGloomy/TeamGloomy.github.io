@@ -27,7 +27,7 @@ Driver pin numbers. They are separated into driver number.
 |Step Pins|PC_13|PE_3|PB_9|PB_3|
 |Direction Pins|PC_14|PE_4|PE_0|PB_4|
 |Enable Pins|PC_15|PE_5|PE_1|PB_5|
-|UART Pins|PE_6|PE_2|PD_5|PD_7|
+|UART Pins|PE_6|PE_2|PB_8|PD_7|
 
 <div class="datatable-end"></div>
 
