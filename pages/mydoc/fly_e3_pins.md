@@ -22,7 +22,7 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-begin"></div>
 
-|Pin Type|0|1|2|3|
+|Pin Type|0 (X)|1 (Y)|2 (Z)|3 (E0)|
 | :------------- |:-------------|:-------------|:-------------|:-------------|
 |Step Pins|PC_13|PE_3|PB_9|PB_3|
 |Direction Pins|PC_14|PE_4|PE_0|PB_4|
