@@ -1,11 +1,11 @@
 ---
-title: Connecting a screen to a Fly-E3-Pro
+title: Connecting a screen to a Fly-E3
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "Connecting a screen to a Fly-E3-Pro"
+summary: "Connecting a screen to a Fly-E3"
 sidebar: mydoc_sidebar
-permalink: fly_e3_pro_screen.html
+permalink: fly_e3_screen.html
 folder: mydoc
 comments: false
 toc: false
