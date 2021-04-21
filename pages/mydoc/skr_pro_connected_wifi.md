@@ -125,12 +125,13 @@ stepper.TmcUartPins = { A.15 B.8 E.1 D.4 D.1 D.6 F.11 G.10 NoPin NoPin NoPin }
 Note the added two SPI pins for the TMC5160s and then the remainder of the pins are the UART pins used by TMC22XX drivers.
 
 #### Sensorless Homing
-
-If using sensorless homing/stall detection (supported by only the TMC2209, TMC2226 and TMC5160), the following line must be added to the board.txt file.
+**Supported by only the TMC2209, TMC2226 and TMC5160**
+If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file.
 ```
 stepper.TmcDiagPins = {B.10, E.12, G.8, E.15, E.10, G.5}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include B.10 and E.12 in your board.txt file.  
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis.
+For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include B.10 and E.12 in your board.txt file.  
 For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 #### Driver Diag Pin
