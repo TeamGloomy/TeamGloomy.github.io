@@ -2,7 +2,7 @@
 title: Connecting a Fly-E3 via Wifi
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 22/04/2021
 summary: "Connecting a Fly-E3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_e3_connected_wifi.html
@@ -66,14 +66,15 @@ stepper.spiChannel = 2
 ```
 Where X is the number of 5160 drivers fitted. The drivers must be continuous and start at unit 0. So, if you have say 3 TMC5160s and 1 TMC22XX and 1 other driver, the 5160s must be in slots 0, 1, and 2, the TMC22XX in slot 3 and the remainiong driver in 4. You can use RRF to assign any of those slots to an axis/extruder.  
 
-
 #### Sensorless Homing
 
-If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
+**Supported by only the TMC2209, TMC2226 and TMC5160**
+If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
 stepper.TmcDiagPins = {A.2, A.1, C.5}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.2 and A.1 in your board.txt file.  
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
+For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.2 and A.1 in your board.txt file.  
 For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 #### Driver Diag Pin
@@ -93,7 +94,7 @@ Open the config.g file that has been placed in the sys folder of the SD card and
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as [termite](https://www.compuphase.com/software_termite.htm), connect to the board. As of release 3.2_4, the recommended terminal program is [YAT](https://sourceforge.net/projects/y-a-terminal/). Then type in the following
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
 
 ```
 M997 S1

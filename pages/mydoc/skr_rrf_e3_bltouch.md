@@ -2,7 +2,7 @@
 title: Connecting a BLTouch to a SKR-RRF-E3
 tags: []
 keywords: 
-last_updated: 08/02/2021
+last_updated: 22/04/2021
 summary: "Connecting a BLTouch to a Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_bltouch.html
@@ -34,7 +34,7 @@ Connect the BLTouch to the SKR-RRF-E3 as described in the table below.
 
 Your config.g should be modified as below.
 ```
-M558 P9 H6 F120 T8000 C"^probe"       ; disable Z probe but set dive height, probe speed and travel speed
+M558 P9 H6 F120 T8000 C"^probe"       ; set Z probe type to bltouch and the dive height + speeds
 M950 S0 C"servo0"                     ; Setup servo 0 as servo port on SKR
 ```
 

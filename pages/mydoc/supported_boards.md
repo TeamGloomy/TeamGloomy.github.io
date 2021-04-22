@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 22/04/2021
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -37,6 +37,8 @@ There are a number of boards which have configurations pre-configured. They are
 * Fly-407ZG
 * Fly-CDYv2
 * Fly-E3
+* Fly-E3-Pro
+* SKR v2
 * SKR-RRF-E3 + Expansion Board
 * SKR Pro v1.1
 * SKR Pro v1.2
@@ -61,5 +63,5 @@ The following drivers support firmware setting of microsteps and motor current.
 
 ### SPI Drivers
 
-From 3.3 Beta 1_3, the following SPI drivers are supported on STM32 only
+From 3.3 Beta 1_3, the following SPI drivers are supported on STM32 only (except the Fly-407ZG)
 - TMC5160

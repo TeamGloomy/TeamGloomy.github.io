@@ -2,7 +2,7 @@
 title: Connecting a Fly-CDYv2 via Wifi
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 22/04/2021
 summary: "Connecting a Fly-CDYv2 via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_connected_wifi.html
@@ -69,11 +69,13 @@ Where X is the number of 5160 drivers fitted. The drivers must be continuous and
 
 #### Sensorless Homing
 
-If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
+**Supported by only the TMC2209, TMC2226 and TMC5160**
+If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
 stepper.TmcDiagPins = {C.7,C.6,D.11,D.10,B.10,B.11}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include C.7 and C.6 in your board.txt file.  
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
+For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include C.7 and C.6 in your board.txt file.  
 The driver diag pins correspond to the following endstops.  
 
 <div class="datatable-begin"></div>
@@ -108,7 +110,7 @@ Open the config.g file that has been placed in the sys folder of the SD card and
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as [termite](https://www.compuphase.com/software_termite.htm), connect to the board. As of release 3.2_4, the recommended terminal program is [YAT](https://sourceforge.net/projects/y-a-terminal/). Then type in the following
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
 
 ```
 M997 S1

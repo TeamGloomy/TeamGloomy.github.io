@@ -2,7 +2,7 @@
 title: Connecting a SKR-RRF-E3 via Wifi
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 22/04/2021
 summary: "Connecting a SKR-RRF-E3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_connected_wifi.html
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The SKR-RRF-E3 is an STM32F407ZGT6 based board.  
+The SKR-RRF-E3 is an STM32F407VGT6 based board.  
 It is officially supported by TeamGloomy from release 3.3b1_5.  
 
 ## Flashing the board firmware
@@ -34,12 +34,13 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 
 ```
 //Config for SKR-RRF-E3
-board = biquskr_rrf_e3_1.1; 
+board = biquskr_rrf_e3_1.1
 //wifi pins
-8266wifi.espDataReadyPin = A.6;
-8266wifi.TfrReadyPin = A.7;
-8266wifi.espResetPin = A.4;
-8266wifi.serialRxTxPins = { D.9, D.8 } ;
+8266wifi.espDataReadyPin = A.6
+8266wifi.TfrReadyPin = A.7
+8266wifi.espResetPin = A.4
+8266wifi.serialRxTxPins = { D.9, D.8 } 
+serial.aux.rxTxPins = { A.10, A.9 }
 heat.tempSensePins = { A.0, A.1, A.2, A.3 }
 ```
 
@@ -64,7 +65,7 @@ Open the config.g file that has been placed in the sys folder of the SD card and
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as [termite](https://www.compuphase.com/software_termite.htm), connect to the board. As of release 3.2_4, the recommended terminal program is [YAT](https://sourceforge.net/projects/y-a-terminal/). Then type in the following
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
 
 ```
 M997 S1

@@ -2,7 +2,7 @@
 title:  Configuring an ESP8266 for STM32 Boards
 tags: 
 keywords: 
-last_updated: 25/01/2021
+last_updated: 22/04/2021
 summary: "Configuring an ESP8266 for STM32 Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_esp.html
@@ -18,6 +18,8 @@ comments: false
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="preparing" markdown="1">
+
+## Initial Configuration
 
 {% include warning.html content="An ESP-01 cannot be used with RRF." %}  
 
@@ -37,6 +39,8 @@ On a side note, I have a very handy little tool installed on my main laptop that
 </div>
 
 <div role="tabpanel" class="tab-pane" id="updating" markdown="1">
+
+## Updating Existing
 
 There are two methods to update the boards if a new version of the ESP firmware is released
 

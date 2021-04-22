@@ -2,7 +2,7 @@
 title: Connecting a Fly-E3-Pro via Wifi
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 22/04/2021
 summary: "Connecting a Fly-E3-Pro via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_connected_wifi.html
@@ -66,8 +66,7 @@ Open the config.g file that has been placed in the sys folder of the SD card and
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/), connect to the board.  
-Then type in the following
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
 
 ```
 M997 S1

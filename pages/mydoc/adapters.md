@@ -2,7 +2,7 @@
 title: Available WiFi/SBC Adapters
 tags: []
 keywords: 
-last_updated: 21/01/2021
+last_updated: 22/04/2021
 summary: "Available WiFi Adapters"
 sidebar: mydoc_sidebar
 permalink: adapters.html
@@ -23,6 +23,8 @@ They are detailed below.
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="PCR" markdown="1">
+
+## TeamGloomy Adapters
 
 PCR/TeamGloomy have been producing adapters for different boards for a long time now.  
 They can be purchased through [tindie](https://www.tindie.com/stores/pcr/).  
@@ -55,6 +57,8 @@ Information about each can be found on the relevant board pages.
 
 <div role="tabpanel" class="tab-pane" id="Fly" markdown="1">
 
+## Fly Adapters
+
 Fly produce a single WiFi module that has a pinout that is compatible with the following boards:
 
 - Fly-407ZG
@@ -75,6 +79,8 @@ There are now two versions of this board. The blue one is the original version a
 </div>
 
 <div role="tabpanel" class="tab-pane" id="BTT" markdown="1">
+
+## BTT Adapters
 
 BigTreeTech (BTT) produce a single WiFi module that has a pinout that is compatible with the following boards:
 

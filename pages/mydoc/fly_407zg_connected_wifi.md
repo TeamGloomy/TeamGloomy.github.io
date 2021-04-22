@@ -2,7 +2,7 @@
 title: Connecting a Fly-407ZG via Wifi
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 22/04/2021
 summary: "Connecting a Fly-407ZG via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_wifi.html
@@ -80,6 +80,14 @@ board = fly_f407zg
 heat.tempSensePins = { F.3, A.0, C.1, C.0, F.10, F.5, F.4 }
 ```
 
+### Updating the ESP8266 by DWC
+
+If you have a WiFi adapter that supports updating via DWC, you need to add the following information to the board.txt file.  
+```
+8266wifi.serialRxTxPins = { A.10, A.9 }
+serial.aux.rxTxPins = { nopin, nopin }
+```
+
 ### Smart Drivers
 
 If using TMC5160 or TMC22XX drivers (where 22XX is either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
@@ -94,14 +102,7 @@ The drivers must be continuous and start at unit 0 (unless TMC5160 are also used
 
 #### TMC5160 SPI Drivers
 
-TMC5160 drivers are supported from 3.3 beta 1 onwards.
-If using TMC5160 drivers, the following lines must also be added to the board.txt file.  
-```
-stepper.num5160Drivers = X
-stepper.spiChannel = 2
-```
-Where X is the number of 5160 drivers fitted. The drivers must be continuous and start at unit 0. So, if you have say 3 TMC5160s and 1 TMC22XX and 1 other driver, the 5160s must be in slots 0, 1, and 2, the TMC22XX in slot 3 and the remainiong driver in 4. You can use RRF to assign any of those slots to an axis/extruder.  
-
+The Fly-407ZG is the only STM32 board that can't be used with 5160 drivers. This is due to them sharing the SPI pins used to also gain SBC support.
 
 #### Sensorless Homing
 
@@ -114,7 +115,7 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as [termite](https://www.compuphase.com/software_termite.htm), connect to the board. As of release 3.2_4, the recommended terminal program is [YAT](https://sourceforge.net/projects/y-a-terminal/). Then type in the following
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
 
 ```
 M552 S0

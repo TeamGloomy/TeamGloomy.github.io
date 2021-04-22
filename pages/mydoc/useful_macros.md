@@ -2,7 +2,7 @@
 title: Useful Macros
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 22/04/2021
 summary: "Useful Macros for RRF"
 sidebar: mydoc_sidebar
 permalink: useful_macros.html
@@ -22,6 +22,8 @@ Here are some example macros
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="g32" markdown="1">
+
+## Bed.g file for G32
 
 Here is a sample bed levelling file to be used with G32. Both of these files are to be placed in the sys folder.
 
@@ -62,12 +64,16 @@ G28 Z							                        ; home z
 
 <div role="tabpanel" class="tab-pane" id="bedmanual" markdown="1">
 
+## Manual Bed Levelling
+
 This macro is for levelling a bed that is secured to the printer using 4 screws. It should be placed in the macros folder.  
 The location of the screws should be updated in M671 as required as well as the probe locations. The probe locations should be as close to the screw locations as possible. The order of the probe points should match the order of the screw locations declared in M671.  
 The P0.5 in M671 is the thread pitch for M3 screws. If your bed is secured by larger screws, also adjust this value to suit.  
 
 ```
 M671 x15:250:15:250 y25:25:260:260 P0.5                             ; The location of the four bed securing screws
+
+; M558 P0												; Uncomment this if you don't have a Z Probe
 
 G28 Z                                                               ; Home Z
 
@@ -82,6 +88,8 @@ G28 Z                                                               ; Home Z
 </div>
 
 <div role="tabpanel" class="tab-pane" id="stop" markdown="1">
+
+## Example stop.g
 
 This is an example of stop.g.
 Essentially the only thing in my slicer end code is M0 to call stop.g
@@ -134,6 +142,8 @@ G90 ; absolute positioning
 </div>
 
 <div role="tabpanel" class="tab-pane" id="bltouch" markdown="1">
+
+## Calibrating a BLTouch Trigger Height
 
 A macro to calibrate a BLTouch
 
@@ -194,6 +204,8 @@ M564 S0 H1 ; Reset limits	                                                      
 </div>
 
 <div role="tabpanel" class="tab-pane" id="fysetc" markdown="1">
+
+## Fysetc Mini Neopixels
 
 A macro to enable the fysetc mini v2.1 and fade up the display/set Button colours
 

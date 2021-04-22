@@ -2,7 +2,7 @@
 title: Connecting a Re-Arm via Wifi
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 22/04/2021
 summary: "Connecting a Re-Arm via Wifi"
 sidebar: mydoc_sidebar
 permalink: re_arm_connected_wifi.html
@@ -78,7 +78,7 @@ heat.tempSensePins = { 0.24, 0.23, 0.25 }
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as [termite](https://www.compuphase.com/software_termite.htm), connect to the board. As of release 3.2_4, the recommended terminal program is [YAT](https://sourceforge.net/projects/y-a-terminal/). Then type in the following
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
 
 ```
 M552 S0

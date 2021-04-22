@@ -2,7 +2,7 @@
 title: Connecting a GTR via SBC
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 22/04/2021
 summary: "Connecting a GTR via SBC"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_sbc.html
@@ -101,11 +101,13 @@ Where X is the number of 5160 drivers fitted. The drivers must be continuous and
 
 #### Sensorless Homing
 
-If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
+**Supported by only the TMC2209, TMC2226 and TMC5160**
+If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
 stepper.TmcDiagPins = {F.2, C.13, E.0, G.14, G.9, D.3, I.4, F.4, F.6, I.7, F.12}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include F.2 and C.13 in your board.txt file.
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
+For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include F.2 and C.13 in your board.txt file.
 For more information about setting up sensorless homing, please read [this](sensorless.html). 
 
 #### Driver Diag Pin

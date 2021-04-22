@@ -2,7 +2,7 @@
 title:  Configuring an SBC for STM32 Boards
 tags: 
 keywords: 
-last_updated: 19/02/2021
+last_updated: 22/04/2021
 summary: "Configuring an SBC for STM32 Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_sbc.html
@@ -43,6 +43,8 @@ Regardless of whether you are installing the LPC specific DSF changes for the fi
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="automatic" markdown="1">
 
+## Automatic Mode Stable
+
 To use the automatic updater, send the following:
 
 ```
@@ -66,6 +68,8 @@ sudo apt-get install --reinstall duetcontrolserver
 
 <div role="tabpanel" class="tab-pane active" id="autobeta" markdown="1">
 
+## Automatic Mode Beta
+
 To use the automatic updater, send the following:
 
 ```
@@ -88,6 +92,8 @@ sudo apt-get install --reinstall duetcontrolserver
 </div>
 
 <div role="tabpanel" class="tab-pane" id="manual" markdown="1">
+
+## Manual Instructions
 
 SSH into your SBC and follow the instructions below
 If you've held the packages to prevent updating, run
