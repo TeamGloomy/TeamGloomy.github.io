@@ -76,9 +76,9 @@ board = biquskr_1.1
 heat.tempSensePins = { 0.23, 0.24, 0.25 }
 ```
 
-### Updating the ESP8266 by DWC
+### Updating the ESP8266 by RRF
 
-If you have a WiFi adapter that supports updating via DWC, you need to add the following information to the board.txt file.  
+If you have a WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
 ```
 8266wifi.serialRxTxPins = { 0.3, 0.2
 serial.aux.rxTxPins = { nopin, nopin }

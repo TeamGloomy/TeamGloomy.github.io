@@ -80,9 +80,9 @@ board = fly_f407zg
 heat.tempSensePins = { F.3, A.0, C.1, C.0, F.10, F.5, F.4 }
 ```
 
-### Updating the ESP8266 by DWC
+### Updating the ESP8266 by RRF
 
-If you have a WiFi adapter that supports updating via DWC, you need to add the following information to the board.txt file.  
+If you have a WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
 ```
 8266wifi.serialRxTxPins = { A.10, A.9 }
 serial.aux.rxTxPins = { nopin, nopin }
