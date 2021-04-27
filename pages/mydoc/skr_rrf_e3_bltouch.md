@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to a SKR-RRF-E3
+title: Connecting a BLTouch to an SKR-RRF-E3
 tags: []
 keywords: 
 last_updated: 22/04/2021
-summary: "Connecting a BLTouch to a Fly-E3"
+summary: "Connecting a BLTouch to an SKR-RRF-E3"
 sidebar: mydoc_sidebar
-permalink: fly_e3_bltouch.html
+permalink: skr_rrf_e3_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -21,7 +21,7 @@ Connect the BLTouch to the SKR-RRF-E3 as described in the table below.
 |BLTouch Wire Colour|SKR-RRF-E3 Pin|SKR-RRF-E3 Pin Name|
 |:---|:---|:---|
 |Brown|GND||
-|Red|NPWR||
+|Red|5v||
 |Yellow|PB0|Servo0|
 |Black|GND||
 |White|PC5|Probe|

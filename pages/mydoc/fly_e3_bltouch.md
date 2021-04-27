@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to a Fly-E3-Pro
+title: Connecting a BLTouch to a Fly-E3
 tags: []
 keywords: 
 last_updated: 22/04/2021
-summary: "Connecting a BLTouch to a Fly-E3-Pro"
+summary: "Connecting a BLTouch to a Fly-E3"
 sidebar: mydoc_sidebar
-permalink: fly_e3_pro_bltouch.html
+permalink: fly_e3_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,11 +14,11 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the Fly-E3-Pro as described in the table below.  
+Connect the BLTouch to the Fly-E3 as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|Fly-E3-Pro Pin|Fly-E3-Pro Pin Name|
+|BLTouch Wire Colour|Fly-E3 Pin|Fly-E3 Pin Name|
 |:---|:---|:---|
 |Brown|GND||
 |Red|5v||
@@ -28,14 +28,14 @@ Connect the BLTouch to the Fly-E3-Pro as described in the table below.
 
 <div class="datatable-end"></div>
 
-{% include image.html file="fly_e3_bltouch.png" alt="Fly-E3 BLTouch" caption="Fly-E3-Pro BLTouch Wiring" %}
+{% include image.html file="fly_e3_bltouch.png" alt="Fly-E3 BLTouch" caption="Fly-E3 BLTouch Wiring" %}
 
 ### Config.g Changes
 
 Your config.g should be modified as below.
 ```
 M558 P9 H6 F120 T8000 C"^probe"       ; set Z probe type to bltouch and the dive height + speeds
-M950 S0 C"servo0"                              ; Setup servo 0 as servo port on Fly-E3
+M950 S0 C"servo0"                              ; Setup servo 0 as servo port on Fly-E3-Pro
 ```
 
 You will also need to set up your probe offset using [G31](https://duet3d.dozuki.com/Wiki/Gcode#Section_G31_Set_or_Report_Current_Probe_status) and your [mesh probing grid](https://duet3d.dozuki.com/Wiki/Gcode#Section_M557_Set_Z_probe_point_or_define_probing_grid)

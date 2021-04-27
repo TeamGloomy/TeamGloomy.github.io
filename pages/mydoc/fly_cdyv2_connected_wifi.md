@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The Fly-CDYv2 is an STM32F407ZGT6 based board.  
+The Fly-CDYv2 is an STM32F407VGT6 based board.  
 This board is very unique in that it has been created as a reprapfirmware board first and foremost.  
 That means than unlike other boards, an ESP8266 has been provided on board, no adapter required.  
 
