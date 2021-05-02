@@ -2,7 +2,7 @@
 title:  Configuring an ESP8266 for STM32 Boards
 tags: 
 keywords: 
-last_updated: 22/04/2021
+last_updated: 02/05/2021
 summary: "Configuring an ESP8266 for STM32 Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_esp.html
@@ -21,9 +21,11 @@ comments: false
 
 ## Initial Configuration
 
+### Manual Flashing
+
 {% include warning.html content="An ESP-01 cannot be used with RRF." %}  
 
-The image for to flash to the ESP can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases).  
+The image to flash to the ESP can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases).  
 
 {% include note.html content="Use the latest release for stable builds and the newest pre-release for unstable builds.  <br/>
 Make sure you download DuetWifiServer-stm32f4.bin  " %} 
@@ -35,6 +37,27 @@ It should be flashed using [esptool.py](https://github.com/espressif/esptool). U
 You can also follow [PCR's instructions](https://rosspeter.org/flashing-the-webserver-on-my-rff-skr-adapterboard) if you don't get on with esptool.
 
 On a side note, I have a very handy little tool installed on my main laptop thats monitoring for any serial devices as they are plugged in and you get a popup with the Com port number. If you’re interested, it can be found [here](https://helmpcb.com/software/serial-port-monitor).
+
+### RRF based flashing
+
+{% include warning.html content="This cannot be used in conjunction with using a screen on the Fly-407ZG" %} 
+
+The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:
+`8266wifi.serialRxTxPins = {RXPin, TXPin}`
+This information has been added to the connecting via WiFi page for each board.  
+
+You will also need to hook up the ESP8266 UART pins (marked RX/TX on most modules).
+
+Download the latest stable DuetWiFiServer-stm32f4.bin (or the latest unstable release if using unstable releases) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases), rename it to DuetWiFiServer.bin and put it in the sys folder on the SD card.
+
+{% include important.html content="From 3.3, the DuetWiFiServer.bin file needs to be placed in a folder called firmware. This folder should be placed in the root of the SD card."%}  
+
+Then send the following commands  
+```
+M552 S0
+M997 S1
+M552 S0
+```
 
 </div>
 
@@ -52,13 +75,13 @@ This method follows the flashing instructions for preparation. To allow the ESP 
 
 {% include warning.html content="This cannot be used in conjunction with using a screen on the Fly-407ZG" %} 
 
-To allow this to take place, extra cables will require adding between the board and the ESP. 
-The WiFi UART interface will also require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:
+The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:
 `8266wifi.serialRxTxPins = {RXPin, TXPin}`
+This information has been added to the connecting via WiFi page for each board.  
 
-You will also need to hook up the ESP8266 UART pins (marked RX/TX on most modules) and to allow the LPC to put the module in to flash mode you may need to change the resistor that goes to the GPIO0 pin from the 2200 Ohm specified to a lower value, such as 47 Ohm.  
+You will also need to hook up the ESP8266 UART pins (marked RX/TX on most modules).
 
-Upload the new firmware for the ESP to the system folder using DWC. Then issue the command M997 S1.
+Download the latest stable DuetWiFiServer-stm32f4.bin (or the latest unstable release if using unstable releases) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases) and upload it to the system folder using DWC. DWC should ask you if you want to install the update. If it doesn't, issue the command M997 S1.
 
 </div>
 

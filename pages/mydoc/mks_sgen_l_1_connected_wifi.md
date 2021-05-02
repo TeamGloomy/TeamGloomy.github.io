@@ -2,7 +2,7 @@
 title: Connecting an MKS SGen L v1.0 via Wifi
 tags: []
 keywords: 
-last_updated: 22/04/2021
+last_updated: 02/05/2021
 summary: "Connecting an MKS SGen L v1.0 via Wifi"
 sidebar: mydoc_sidebar
 permalink: mks_sgen_l_1_connected_wifi.html
@@ -124,6 +124,8 @@ M552 S1
 ```
 
 {% include warning.html content="**DO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. <br/>  If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://duet3d.dozuki.com/Wiki/Gcode#Section_M587_Add_WiFi_host_network_to_remembered_list_or_list_remembered_networks)." %}
+
+{% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}
 
 The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 

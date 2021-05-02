@@ -1,11 +1,11 @@
 ---
-title: Connecting an SKR E3 Turbo via Wifi
+title: Connecting an SKR v2.0 via Wifi
 tags: []
 keywords: 
-last_updated: 02/05/2021
-summary: "Connecting an SKR E3 Turbo via Wifi"
+last_updated: 22/04/2021
+summary: "Connecting an SKR v2.0 via Wifi"
 sidebar: mydoc_sidebar
-permalink: skr_E3T_connected_wifi.html
+permalink: skr_2.0_connected_wifi.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,51 +14,21 @@ datatable: true
 
 ## Overview
 
-The SKR E3 Turbo is an LPC1769 based board.
+The SKR v2.0 is an STM32F407VGT6 based board.
 
-## Firmware File
+## Flashing the board firmware
 
-Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
+Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
+
+## WiFi firmware preparation
+Choose the correct corresponding firmware (DuetWiFiServer-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  
+
+{% include important.html content="From 3.3, the DuetWiFiServer.bin file needs to be placed in a folder called firmware. This folder should be placed in the root of the SD card."%}  
+
 
 ## Wifi
 
-Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
-
-{% include tip.html content="If you would prefer a premade adapter to enable WiFi, TeamGloomy have created a plugin WiFi adapter board for the SKR E3 Turbo. It can be purchased on tindie [here](https://www.tindie.com/products/pcr/reprapfirmware-wifi-adapterboard-for-skr-e3-turbo/) " %}
-
-### BOM
-
-* 1 x nodemcu ESP8266 or Wemos D1 mini
-* 3 x 47R resistor
-* 1 x 470R resistor
-* 3 x 2200R resistor
-* jumpers or other ways of connecting to the SKR
-
-### Preparing the ESP
-
-Follow the instructions [here](https://github.com/gloomyandy/RepRapFirmware/wiki/ESP8266-LPC).
-
-### Connecting the ESP
-
-The pinout for the SKR E3 Turbo can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-E3-Turbo/blob/master/Hardware/BTT%20SKR%20E3%20Turbo-Pin.pdf) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
-
-The table below shows the pins required on the ESP8266 and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
-
-<div class="datatable-begin"></div>
-
-| ESP Pin       | SKR Pin       | Resistor Value  |
-| :-------------: |:-------------:| :---------------:|
-| RST           | 2.8 on EXP1         | 470R            |
-| CS/GPIO15     | 0.16 on EXP1         | 2200R           |
-| MOSI/GPIO13   | 0.18 on EXP1         | 47R             |
-| MISO/GPIO12   | 0.17 on EXP1         | 47R             |
-| SCLK/GPIO14  | 0.15 on EXP1         | 47R             |
-| ESP_DATA_Ready/GPIO0   | 0.19 on EXP1         | 2200R             |
-| LPC_DATA_Ready/GPIO4   | 0.20 on EXP1         | None            |
-| VIN(5v)   | 5v on EXP1          | None             |
-| GND   | GND on EXP1          | 2200R to RST             |
-
-<div class="datatable-end"></div>
+You will need a BTT produced wifi module.  
 
 ### Prepare the SD Card
 
@@ -69,21 +39,16 @@ Follow the instructions on [Getting Started with RRF3](getting_started.html)
 You will also need a board.txt file in the sys folder. Below are the contents that should be used. 
 
 ```
-//Config for SKR E3 Turbo
-board = biquskr_e3t
+//Config for BIQU SKR v1.4
+board = biquskr_2.0
 //wifi pins
-8266wifi.espDataReadyPin = 0.19
-8266wifi.TfrReadyPin = 0.20
-8266wifi.espResetPin = 2.8
-heat.tempSensePins = { 0.25, 0.24, 0.23 }
-```
-
-### Updating the ESP8266 by RRF
-
-If you have a WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
-```
-8266wifi.serialRxTxPins = { 0.3, 0.2} 
-serial.aux.rxTxPins = { nopin, nopin }
+8266wifi.espDataReadyPin = PB.10;
+8266wifi.TfrReadyPin = PB.11;
+8266wifi.espResetPin = PE.14;
+//ESP RX/TX Settings
+8266wifi.serialRxTxPins = { PD.9, PD.8 } ;
+serial.aux.rxTxPins = { PA.10, PA.9 };
+heat.tempSensePins = { PD.7, PB.3, PB.4 }
 ```
 
 #### Smart Drivers
@@ -106,12 +71,12 @@ For more information about setting up sensorless homing, please read [this](sens
 #### Driver Diag Pin
 
 The driver diag pin is used for sensorless homing and stall detection.  
-The SKR E3 Turbo **does not** have a way of disabling the diag pin.
+The SKR v1.4 **does not** have a way of disabling the diag pin.
 If you plan on using endstops rather than sensorless homing, you need to bend or remove the diag pin.  
 
 ### Board.txt Location
 
-Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the SKR E3 Turbo.
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the SKR v1.4.   
 
 ### Final Setup
 

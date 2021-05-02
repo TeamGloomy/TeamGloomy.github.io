@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to LPC and STM32
 tags: []
 keywords: 
-last_updated: 04/02/2021
+last_updated: 02/05/2021
 summary: "Board.txt Configurables Applicable to LPC and STM32"
 sidebar: mydoc_sidebar
 permalink: board_txt.html
@@ -27,6 +27,7 @@ Examples are given using LPC pins.
 |8266wifi.espResetPin|8266wifi.espResetPin = 1.31|This sets the reset pin to use when connecting an ESP8266|||
 |8266wifi.lpcTfrReadyPin (8266wifi.TfrReadyPin is also supported from 3.2_4)|8266wifi.lpcTfrReadyPin = 1.30|This sets the transfer ready pin when connecting an ESP8266|||
 |8266wifi.serialRxTxPins|8266wifi.serialRxTxPins = {0.3, 0.2}|This sets the pin numbers to use for RX and TX when connecting an ESP8266. See table below for allowable RX and TX pins|||
+|accelerometer.spiChannel| accelerometer.spiChannel = 4 | This sets the SPI channel to be used for the accelerometer. From 3.3b3_2 onwards |STM32 Only||
 |adc.prefilter.enable|adc.prefilter.enable = true|This enables or disables the analogue to digital converter filter. Can be either true or false||LPC Only|
 |adc.preFilter.numberSamples|adc.preFilter.numberSamples = 8|This sets the number of samples to be used to get each value. The larger the value, the smoother the value but lag may also be introduced. The default is 8||LPC Only|
 |adc.preFilter.sampleRate|adc.preFilter.sampleRate = 10000|This sets the analogue to digital converter sample rate in Hz||LPC Only|
@@ -113,7 +114,7 @@ Current preprogrammed boards
 
 ## UART Useable Pins - LPC Based Boards
 
-There are 4 UARTS and each can use a selection of pins
+There are 4 UARTS and each can use a selection of pins.  
 
 <div class="datatable-begin"></div>
 
@@ -128,7 +129,7 @@ There are 4 UARTS and each can use a selection of pins
 
 ## UART Useable Pins - STM32 Based Boards
 
-There are 3 UARTS and each can use a selection of pins
+There are 3 UARTS and each can use a selection of pins.  
 
 <div class="datatable-begin"></div>
 
@@ -139,3 +140,6 @@ There are 3 UARTS and each can use a selection of pins
 |UART6|PC.7|PC.6|
 
 <div class="datatable-end"></div>
+
+{% include note.html content="From 3.3b3_2, all UART devices (1, 2, 3, 4, 5 and 6. Not just 1, 3 and 6) are available along with all the associated pins they could use."%}
+  
