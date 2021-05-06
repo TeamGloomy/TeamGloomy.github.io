@@ -27,7 +27,7 @@ The jumpers should be installed as below. "Common Interpolation" should be used 
 
 If only one Z output is being used, jumpers should be installed on the other Z output as shown below.
 
-{% include image.html file="fly_407zg_jumpers.png" alt="Fly-CDYv2 Z Jumpers" caption="Fly-CDYv2 Driver Z Jumper Locations" %}
+{% include image.html file="fly_407zg_Z_Jumpers.PNG" alt="Fly-CDYv2 Z Jumpers" caption="Fly-CDYv2 Driver Z Jumper Locations" %}
 
 ### Input voltage
 
