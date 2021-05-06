@@ -2,7 +2,7 @@
 title: Fly-CDYv2 General Information
 tags: []
 keywords: 
-last_updated: 16/03/2021
+last_updated: 06/05/2021
 summary: "General information regarding the Fly-CDYv2"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_general.html
@@ -27,7 +27,7 @@ The jumpers should be installed as below. "Common Interpolation" should be used 
 
 If only one Z output is being used, jumpers should be installed on the other Z output as shown below.
 
-{% include image.html file="fly_407zg_Z_Jumpers.png" alt="Fly-CDYv2 Z Jumpers" caption="Fly-CDYv2 Driver Z Jumper Locations" %}
+{% include image.html file="fly_407zg_jumpers.png" alt="Fly-CDYv2 Z Jumpers" caption="Fly-CDYv2 Driver Z Jumper Locations" %}
 
 ### Input voltage
 
