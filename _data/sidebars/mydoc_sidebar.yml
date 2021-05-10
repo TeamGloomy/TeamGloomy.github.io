@@ -583,6 +583,10 @@ entries:
           url: /skr_pro_screen.html
           output: web, pdf
 
+        - title: Connecting a 12864 Screen
+          url: /skr_pro_screen_12864.html
+          output: web, pdf
+
         - title: Connecting a BLTouch
           url: /skr_pro_bltouch.html
           output: web, pdf

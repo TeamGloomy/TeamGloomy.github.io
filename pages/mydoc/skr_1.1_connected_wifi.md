@@ -2,7 +2,7 @@
 title: Connecting an SKR v1.1 via Wifi
 tags: []
 keywords: 
-last_updated: 02/05/2021
+last_updated: 10/05/2021
 summary: "Connecting an SKR v1.1 via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_1.1_connected_wifi.html
@@ -100,4 +100,22 @@ M552 S1
 
 The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 
-The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the wifi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP chip.
+The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the wifi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP chip.  
+
+### Once up and running
+
+You will need to PID tune your tools and your bed. Please be aware that bed tuning may take up to an hour and tool tuning normally takes around 15 minutes. If it takes longer, that is also fine as up to 30 cycles may be ran.  
+
+To tune the bed, run the following command, changing the temperature (the S value) if a different tuning temperature is required.  
+```
+M303 H0 S60
+```  
+
+To tune each tool, run the following command, changing the temperature (the S value) if a different tuning temperature is required. This proceedure will activate the part cooling fans during the final phase of the tuning process so their effect is taken into account. If your printer has more than one tool, make sure each one of them is tuned.  
+```
+M303 T0 S220
+```
+
+Once the tuning is complete, either copy the M307 command into the heater definitions or send M500, ensuring you have M501 at the end of your config.g.  
+If the tuning fails at the end, carry on saving the values as in most cases the outputted values still work correctly.  
+If the values still result in a heater fault, please refer to [this](https://duet3d.dozuki.com/Wiki/Tuning_the_heater_temperature_control#Section_Setting_the_model_parameters_manually) wiki page for information about how to adjust the values manually.  

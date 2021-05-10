@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a GTR
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 10/05/2021
 summary: "Connecting a 12864 screen to a GTR"
 sidebar: mydoc_sidebar
 permalink: gtr_screen_12864.html
@@ -81,3 +81,12 @@ Extract the contents of the zip file you downloaded above and place them in a fo
 
 Activate the display using the config.g changes above.  
 A side menu called "Display" should appear in DWC. Navigate to it and upload the zip file.  
+
+### Troubleshooting
+
+If the screen is showing artifacts/random characters on the screen, the following may improve/eliminate the issue
+
+* Lower the SPI frequency by half. This is the F value in M918.  
+* Reduce the length of the cable between the screen and the board.  
+* Ensure that the cable between the screen and the board is routed away from other cables, especially motor cables.  
+* Add a ferrite ring to the cable between the screen and the board.  

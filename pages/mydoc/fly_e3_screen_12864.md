@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-E3
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 10/05/2021
 summary: "Connecting a 12864 screen to a Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_screen_12864.html
@@ -41,7 +41,6 @@ Use the image below as a guide. Thanks @Samsan
 </div>
 
 </div>
-
 
 ## Board.txt modifications
 
@@ -84,3 +83,12 @@ A side menu called "Display" should appear in DWC. Navigate to it and upload the
 Add a jumper to J2
 
 {% include image.html file="fly_e3_screen_jumper.png" alt="Fly-E3 Screen Jumper" caption="Fly-E3 Screen Jumper" %}
+
+### Troubleshooting
+
+If the screen is showing artifacts/random characters on the screen, the following may improve/eliminate the issue
+
+* Lower the SPI frequency by half. This is the F value in M918.  
+* Reduce the length of the cable between the screen and the board.  
+* Ensure that the cable between the screen and the board is routed away from other cables, especially motor cables.  
+* Add a ferrite ring to the cable between the screen and the board.  

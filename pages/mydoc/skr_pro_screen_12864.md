@@ -1,11 +1,11 @@
 ---
-title: Connecting a 12864 screen to a SKR-RRF-E3
+title: Connecting a 12864 screen to an SKR Pro
 tags: []
 keywords: 
-last_updated: 10/05/2021
-summary: "Connecting a 12864 screen to a SKR-RRF-E3"
+last_updated: 09/05/2021
+summary: "Connecting a 12864 screen to an SKR Pro"
 sidebar: mydoc_sidebar
-permalink: skr_rrf_e3_screen_12864.html
+permalink: skr_pro_screen_12864.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,32 +14,41 @@ datatable: true
 
 ## Overview
 
-The information here is aimed at connecting a stock ender 3 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based). 
+## Overview
+
+The information here is aimed at connecting a Fysetc Mini v1.2 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
 
 ## Wiring
 
-The ender 3 stock display can be connected directly to the EXP header of the SKR-RRF-E3. No modifications are required.
+Connect the screen as shown below.  
+
+{% include image.html file="skr_pro_mini.png" alt="SKR Pro and Fysetc Mini v1.2" caption="SKR Pro and Fysetc Mini v1.2" %}
 
 ## Board.txt modifications
 
-The following lines should be added to the board.txt file.
+Add the following lines to the board.txt file
 
 ```
-lcd.encoderPinA=B.2
-lcd.encoderPinB=E.7
-lcd.encoderPinSw=E.9
-lcd.lcdCSPin=B.1
-lcd.spiChannel=4
-SPI4.pins={E.10, NoPin, E.11}
-lcd.lcdBeepPin = E.8
+//Fysetc MINI 12864
+lcd.encoderPinA=G.11
+lcd.encoderPinB=C.4
+lcd.encoderPinSw=F.9
+lcd.lcdCSPin=D.3
+lcd.lcdDCPin=G.13
+lcd.spiChannel=3
+SPI3.pins={G.14, C.1, F.7} //Set to GPIO pins to use as SCK, MISO, MOSI
+//lcd.lcdBeepPin=NoPin
 ```
 
-## Config.g changes
+## Config.g
 
-Add the following line to the end of your config.g
-
+Add this line to config.g
 ```
-M918 P1 E4 F100000
+M950 P1 C"C.5"
+M42 P1 S0
+G4 P500
+M42 P1 S1
+M918 P2 C30 F1000000 E4
 ```
 
 ## Menu Files
@@ -47,9 +56,9 @@ M918 P1 E4 F100000
 Menu files must be uploaded to allow the display to generate the correct information. This can be done in two ways.
 First, obtain the recommended menu files from [here](https://github.com/jadonmmiller/UltimateDuetMenuSystem/releases/)
 
-### Method 1
+### Method 1 - Wifi Mode only
 
-Extract the contents of the zip file you downloaded above and place them in a folder called "menu" on the SD card of the SKR-RRF-E3. 
+Extract the contents of the zip file you downloaded above and place them in a folder called "Menu" on the SD card of the GTR. 
 
 ### Method 2
 

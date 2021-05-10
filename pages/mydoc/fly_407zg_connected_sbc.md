@@ -2,7 +2,7 @@
 title: Connecting a Fly-407ZG via SBC
 tags: []
 keywords: 
-last_updated: 22/04/2021
+last_updated: 10/05/2021
 summary: "Connecting a Fly-407ZG via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_sbc.html
@@ -131,3 +131,21 @@ sudo raspi-config
 4. Select “Finish” and reboot.
 
 {% include note.html content="The hostname must confirm to certain limitations to be valid. Valid characters for hostnames are letters from a to z, the digits from 0 to 9, the hyphen (-)." %}
+
+### Once up and running
+
+You will need to PID tune your tools and your bed. Please be aware that bed tuning may take up to an hour and tool tuning normally takes around 15 minutes. If it takes longer, that is also fine as up to 30 cycles may be ran.  
+
+To tune the bed, run the following command, changing the temperature (the S value) if a different tuning temperature is required.  
+```
+M303 H0 S60
+```  
+
+To tune each tool, run the following command, changing the temperature (the S value) if a different tuning temperature is required. This proceedure will activate the part cooling fans during the final phase of the tuning process so their effect is taken into account. If your printer has more than one tool, make sure each one of them is tuned.  
+```
+M303 T0 S220
+```
+
+Once the tuning is complete, either copy the M307 command into the heater definitions or send M500, ensuring you have M501 at the end of your config.g.  
+If the tuning fails at the end, carry on saving the values as in most cases the outputted values still work correctly.  
+If the values still result in a heater fault, please refer to [this](https://duet3d.dozuki.com/Wiki/Tuning_the_heater_temperature_control#Section_Setting_the_model_parameters_manually) wiki page for information about how to adjust the values manually.  
