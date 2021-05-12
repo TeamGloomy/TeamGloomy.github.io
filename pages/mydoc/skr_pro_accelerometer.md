@@ -46,7 +46,7 @@ The accelerometer should be mounted firmly to the tool. For a bed slinger (such 
 
 Add the following to board.txt
 ```
-accelerometer.spiChannel = 1
+accelerometer.spiChannel = 2
 ```
 
 ### Config.g Changes
