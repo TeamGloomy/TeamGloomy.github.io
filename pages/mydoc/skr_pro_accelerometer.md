@@ -19,7 +19,7 @@ From 3.3b3_2, an accelerometer can be connected to collect resonance data. Nothi
 ### Wiring
 
 One possible method of connecting the accelerometer to the an SKR Pro v1.1 and v1.2 is described in the table below. This wiring method uses the hardware SPI2. The image can be used to aid in identification.  
-Because the firmware is so flexible and we're using software SPI, most pins can be used for this.  
+We are going to use Hardware SPI in this guide but if 5160 drivers are being used, software SPI will have to be used instead and most pins can be used for this.  
 These connections are on the SPI and I2C header on the board.  
 
 <div class="datatable-begin"></div>
