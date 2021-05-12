@@ -20,7 +20,7 @@ From 3.3b3_2, an accelerometer can be connected to collect resonance data. Nothi
 
 One possible method of connecting the accelerometer to the Fly-CDYv2 is described in the table below. The image can be used to aid in identification.  
 Because the firmware is so flexible and we're using software SPI, most pins can be used for this.  
-These connections are on the EXP2 header on the board.  
+These connections are on the EXP1 header on the board.  
 
 <div class="datatable-begin"></div>
 
