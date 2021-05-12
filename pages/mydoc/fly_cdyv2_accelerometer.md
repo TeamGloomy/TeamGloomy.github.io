@@ -5,7 +5,7 @@ keywords:
 last_updated: 12/05/2021
 summary: "Connecting an accelerometer to a CDYv2"
 sidebar: mydoc_sidebar
-permalink: fly_CDYv2_accelerometer.html
+permalink: fly_cdyv2_accelerometer.html
 folder: mydoc
 comments: false
 toc: false
