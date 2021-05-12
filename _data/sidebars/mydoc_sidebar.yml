@@ -439,6 +439,10 @@ entries:
           url: /fly_407zg_bltouch.html
           output: web, pdf
 
+        - title: Connecting an Accelerometer
+          url: /fly_407zg_accelerometer.html
+          output: web, pdf
+
         - title: Pin Names
           url: /fly_407zg_pins.html
           output: web, pdf
@@ -535,6 +539,10 @@ entries:
           url: /fly_e3_pro_bltouch.html
           output: web, pdf
 
+        - title: Connecting an Accelerometer
+          url: /fly_e3_pro_accelerometer.html
+          output: web, pdf
+
         - title: Connecting a PT100 or Type 'K' Thermocouple
           url: /fly_e3_pro_pt100.html
           output: web, pdf
@@ -571,6 +579,10 @@ entries:
           url: /gtr_bltouch.html
           output: web, pdf
 
+        - title: Connecting an Accelerometer
+          url: /gtr_accelerometer.html
+          output: web, pdf
+
         - title: Pin Names
           url: /gtr_pins.html
           output: web, pdf
@@ -597,6 +609,10 @@ entries:
 
         - title: Connecting a BLTouch
           url: /skr_pro_bltouch.html
+          output: web, pdf
+
+        - title: Connecting an Accelerometer
+          url: /skr_pro_accelerometer.html
           output: web, pdf
 
         - title: Connecting a BTT-MOT-EXP
@@ -629,6 +645,10 @@ entries:
 
         - title: Connecting a BLTouch
           url: /skr_rrf_e3_bltouch.html
+          output: web, pdf
+
+        - title: Connecting an Accelerometer
+          url: /skr_prrf_e3_accelerometer.html
           output: web, pdf
 
         - title: Pin Names

@@ -1,11 +1,11 @@
 ---
-title: Connecting an accelerometer to a Fly-CDYv2
+title: Connecting an accelerometer to a Fly-E3-Pro
 tags: []
 keywords: 
 last_updated: 12/05/2021
-summary: "Connecting an accelerometer to a CDYv2"
+summary: "Connecting an accelerometer to a Fly-E3-Pro"
 sidebar: mydoc_sidebar
-permalink: fly_cdyv2_accelerometer.html
+permalink: fly_e3_pro_accelerometer.html
 folder: mydoc
 comments: false
 toc: false
@@ -18,7 +18,7 @@ From 3.3b3_2, an accelerometer can be connected to collect resonance data. Nothi
 
 ### Wiring
 
-One possible method of connecting the accelerometer to the Fly-CDYv2 is described in the table below. The image can be used to aid in identification.  
+One possible method of connecting the accelerometer to the Fly-E3-Pro is described in the table below. The image can be used to aid in identification.  
 Because the firmware is so flexible and we're using software SPI, most pins can be used for this.  
 These connections are on the EXP1 header on the board.  
 
@@ -28,11 +28,11 @@ These connections are on the EXP1 header on the board.
 |:---|:---|:---|:---|:----|
 |Red|VIN| +5v Input| +5v| -|
 |Black|GND|Ground|GND|-|
-|Yellow|SCL|SPI SCK|A.13|lcdd6|
-|Green|SDA|SPI MOSI|A.14|lcdd7|
-|Blue|SDO|SPI MISO|E.15|lcdd4|
-|White|CS|Chip Select|E.14|lcdd5|
-|Purple|Int|Interupt|B.2||
+|Yellow|SCL|SPI SCK|E.7|lcdrs|
+|Green|SDA|SPI MOSI|E.9|btnen2|
+|Blue|SDO|SPI MISO|E.10|btnen1|
+|White|CS|Chip Select|E.8|lcdd4|
+|Purple|Int|Interupt|B.1|lcden|
 
 <div class="datatable-end"></div>
 
@@ -46,7 +46,7 @@ The accelerometer should be mounted firmly to the tool. For a bed slinger (such 
 
 Add the following to board.txt
 ```
-SPI5.pins = {A.13,E.15,A.14}
+SPI5.pins = {E.7,E.10,E.9}
 accelerometer.spiChannel = 5
 ```
 
@@ -54,7 +54,7 @@ accelerometer.spiChannel = 5
 
 Your config.g should be modified as below.
 ```
-M955 P0 C"E.14+B.2" I20
+M955 P0 C"E.8+B.1" I20
 ```  
 The I (orientation) parameter tells the firmware which of the 24 possible orientations the accelerometer chip is in relative to the printer axes. It is expressed as a 2-digit number.  
 The first digit specifies which machine direction the Z axis of the accelerometer chip (usually the top face of the chip) faces, as follows: 0 = +X, 1 = +Y, 2 = +Z, 4 = -X, 5 = -Y, 6 = -Z. The second digit expresses which direction the X axis of the accelerometer chip faces, using the same code. The direction of positive X is printed on the circuit board. If the board was mounted in the orientation shown in the above image, with +X of the machine being to the right, Y+ being behind and Z+ being up, the I value would be 54. This [document](https://www.dropbox.com/s/hu2w5mk57l4zqpg/Accelerometer%20Orientation.pdf?dl=0) gives information regarding the I value for the new Duet toolboard with accelerometer.  
