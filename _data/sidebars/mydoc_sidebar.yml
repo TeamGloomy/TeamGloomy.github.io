@@ -463,6 +463,10 @@ entries:
           url: /fly_cdyv2_bltouch.html
           output: web, pdf
 
+        - title: Connecting an Accelerometer
+          url: /fly_cdyv2_accelerometer.html
+          output: web, pdf
+
         - title: Input Voltage Monitoring
           url: /fly_cdyv2_voltage.html
           output: web, pdf
