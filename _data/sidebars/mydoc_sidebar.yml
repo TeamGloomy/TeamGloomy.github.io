@@ -648,7 +648,7 @@ entries:
           output: web, pdf
 
         - title: Connecting an Accelerometer
-          url: /skr_prrf_e3_accelerometer.html
+          url: /skr_rrf_e3_accelerometer.html
           output: web, pdf
 
         - title: Pin Names
