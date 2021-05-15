@@ -27,6 +27,7 @@ Examples are given using LPC pins.
 |8266wifi.espResetPin|8266wifi.espResetPin = 1.31|This sets the reset pin to use when connecting an ESP8266|||
 |8266wifi.lpcTfrReadyPin (8266wifi.TfrReadyPin is also supported from 3.2_4)|8266wifi.lpcTfrReadyPin = 1.30|This sets the transfer ready pin when connecting an ESP8266|||
 |8266wifi.serialRxTxPins|8266wifi.serialRxTxPins = {0.3, 0.2}|This sets the pin numbers to use for RX and TX when connecting an ESP8266. See table below for allowable RX and TX pins|||
+|8266wifi.spiChannel|8266wifi.spiChannel=1|This allows the SPI channel to be set that is used for WiFi. The default is 1. It can only be set to channel 1 (SPI2) or channel 2 (SPI3). From 3.3rc2_2 only|STM32 Only||
 |accelerometer.spiChannel| accelerometer.spiChannel = 4 | This sets the SPI channel to be used for the accelerometer. From 3.3b3_2 onwards |STM32 Only||
 |adc.prefilter.enable|adc.prefilter.enable = true|This enables or disables the analogue to digital converter filter. Can be either true or false||LPC Only|
 |adc.preFilter.numberSamples|adc.preFilter.numberSamples = 8|This sets the number of samples to be used to get each value. The larger the value, the smoother the value but lag may also be introduced. The default is 8||LPC Only|
@@ -52,6 +53,7 @@ Examples are given using LPC pins.
 |power.voltage|power.voltage = 24|Sets a voltage when no voltage monitoring is present on the board|STM32 Only||
 |sbc.csPin|sbc.csPin = 0.16|Allow use of non standard CS pin|||
 |sbc.lpcTfrReadyPin ("sbc.TfrReadyPin" is also supported from 3.2_4)|sbc.lpcTfrReadyPin = 0.28 or sbc.TfrReadyPin = 0.28|This sets the transfer ready pin when attaching an SBC|||
+|sbc.spiChannel|sbc.spiChannel=1|This allows the SPI channel to be set that is used for SBC. The default is 1. It can only be set to channel 1 (SPI2) or channel 2 (SPI3). From 3.3rc2_2 only|STM32 Only||
 |sdCard.external.cardDetectPin|externalSDCard.cardDetectPin|Sets the external SD card detect pin|||
 |sdCard.external.csPin|externalSDCard.csPin|Sets the external SD card chip select pin|||
 |sdCard.external.spiChannel|sdCard.external.spiChannel = 255|this selects which one is used for the external SD card, can also be set to 255 to indicate no channel is used|||

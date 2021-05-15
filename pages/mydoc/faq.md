@@ -1,5 +1,5 @@
 ---
-title: FAQ layout
+title: FAQ
 permalink: faq.html
 sidebar: mydoc_sidebar
 tags: [special_layouts]

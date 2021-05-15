@@ -14,15 +14,25 @@ Welcome to the RepRapFirmware on LPC and STM32 boards.
 This software is a port of the open source RepRapFirmware produced by [Duet3D](http://www.duet3d.com) for their Duet range of boards.  
 It was originally ported by [sadvi](https://github.com/sdavi), but is now maintained by TeamGloomy.
 
-## Latest versions
+## Latest Firmware Versions
 
 ### Latest Stable
 
 The latest stable version is [3.2.2_2](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.2.2_2)
 
+### Latest UnstableS
+
+The latest beta/unstable version is [3.3rc2+1_1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.3beta3_2)
+
+## Latest Wifi Firmware Versions
+
+### Latest Stable
+
+The latest stable WiFi firmware version is [1.25-01](https://github.com/gloomyandy/DuetWiFiSocketServer/releases/tag/V1.25-01)
+
 ### Latest Unstable
 
-The latest beta/unstable version is [3.3beta3_2](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.3beta3_2)
+The latest beta/unstable WiFi firmware version is [1.26-01](https://github.com/gloomyandy/DuetWiFiSocketServer/releases/tag/V1.26-01)
 
 ## Partnership
 
