@@ -62,9 +62,9 @@ Thats the SBC prepared and ready.
 To use the automatic updater, send the following:
 
 ```
-wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_LPC_3_3_Beta_3.sh
-sudo chmod 755 RRF_LPC_3_3_Beta_3.sh
-./RRF_LPC_3_3_Beta_3.sh
+wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_LPC_3_3_RC_2.sh
+sudo chmod 755 RRF_LPC_3_3_RC_2.sh
+./RRF_LPC_3_3_RC_2.sh
 ```
 
 This does everything from the manual section. 
