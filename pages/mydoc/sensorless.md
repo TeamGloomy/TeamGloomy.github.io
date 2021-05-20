@@ -213,8 +213,8 @@ M915 P1 S20 H200 R1		    ; on both X and Y
 </div>
 
 ### Example files links  
-- [cartesian](https://drive.google.com/drive/folders/1WnLpNlcJDQvxbuI_45OOlouHLRHWYFNu)
-- [corexy](https://drive.google.com/file/d/13wBrTU-znwl0BmK4Yl2o9nwEww_Cc6zg/view?usp=sharing)
+- [cartesian](https://drive.google.com/drive/folders/1WnLpNlcJDQvxbuI_45OOlouHLRHWYFNu){:target="_blank"}
+- [corexy](https://drive.google.com/file/d/13wBrTU-znwl0BmK4Yl2o9nwEww_Cc6zg/view?usp=sharing){:target="_blank"}
 
 ## Troubleshooting
 
