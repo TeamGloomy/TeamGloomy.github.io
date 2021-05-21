@@ -26,7 +26,7 @@ Sensorless homing and stall detection is now functional for the TMC2209's and TM
 
 Getting stall detection working can be tricky and sensorless homing will almost certainly require some tuning.  
  
-As always the Duet help pages provide a lot of information that may also be of [help](https://duet3d.dozuki.com/Wiki/Stall_detection_and_sensorless_homing).
+As always the Duet help pages provide a lot of information that may also be of [help](https://duet3d.dozuki.com/Wiki/Stall_detection_and_sensorless_homing){:target="_blank"}.
 
 ### board.txt Changes
 
