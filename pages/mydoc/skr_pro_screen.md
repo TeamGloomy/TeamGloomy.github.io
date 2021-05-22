@@ -14,7 +14,8 @@ datatable: true
 
 ## Overview
 
-Currently, only screens that use a serial connection can be connected to the SKR Pro v1.1 and v1.2
+Both serial screens (e.g. Fly Screens, BTT TFT, Paneldue) and 12864 displays (like the stock ender 3 screen) can be connected to an SKR-Pro v1.1 and v1.2  
+These instructions cover serial screens. Instructions for 12864 screens can be found [here](/skr_pro_screen_12864.html).  
 
 ### Board.txt Preparation
 

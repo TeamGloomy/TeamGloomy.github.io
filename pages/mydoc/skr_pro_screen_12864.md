@@ -14,8 +14,6 @@ datatable: true
 
 ## Overview
 
-## Overview
-
 The information here is aimed at connecting a Fysetc Mini v1.2 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
 
 ## Wiring

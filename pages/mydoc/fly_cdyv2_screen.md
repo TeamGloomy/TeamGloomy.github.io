@@ -14,7 +14,8 @@ datatable: true
 
 ## Overview
 
-Only screens that use a serial connection can be connected to the Fly-CDYv2.
+Both serial screens (e.g. Fly Screens, BTT TFT, Paneldue) and 12864 displays (like the stock ender 3 screen) can be connected to a Fly-CDYv2.  
+These instructions cover serial screens. Instructions for 12864 screens can be found [here](/fly_cdyv2_screen_12864.html).  
 
 ### Board.txt Preparation
 

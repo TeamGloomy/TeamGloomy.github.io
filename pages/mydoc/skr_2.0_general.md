@@ -14,7 +14,10 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the SKR v2.0 board.  
+This page covers any general information for the SKR v2.0 board. 
+
+{% include warning.html content="There was an issue with the original boards damaging TMC drivers. Please see [here](https://docs.google.com/document/d/1IeKgfE2WIDjqH1fx5Yg7n1FOHVwhDFmDlZ-7QMlOEV0/edit?fbclid=IwAR2-b687dNy2ktrpiLEf-orZke0lbB_FhXCG9NwP7MFVzUYijo__ZRVMrks){:target="_blank"} and [here](https://docs.google.com/document/d/1swmc4HvP9vxrxV2b9LVGa_I7GLTQGogQns7CfMYCckA/edit?fbclid=IwAR2-b687dNy2ktrpiLEf-orZke0lbB_FhXCG9NwP7MFVzUYijo__ZRVMrks){:target="_blank"} for details about how to fix a board.  
+Please be aware that the reverse driver protection feature has been disabled from 3.3RC1" %}
 
 ### Driver Jumpers
 
@@ -34,4 +37,4 @@ If you want to use sensorless homing, a jumper needs adding under each driver yo
 
 ### Initial Installation
 
-Follow the [WiFi instructions](skr_2.0_connected_wifi.html).
+Follow the [WiFi instructions](skr_2.0_connected_wifi.html){:target="_blank"}.
