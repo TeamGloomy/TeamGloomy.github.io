@@ -63,7 +63,7 @@ The table below shows the pins required on the SBC and what they are connected t
 
 Make sure the jumpers are installed next to the wifi headers as shown below. 
 
-{% include image.html file="skr_2.0_wifi.png" alt="SKR v2.0 WiFi Jumpers" caption="SKR v2.0 WiFi Jumpers" %}
+{% include image.html file="skr_2.0_wifi.PNG" alt="SKR v2.0 WiFi Jumpers" caption="SKR v2.0 WiFi Jumpers" %}
 
 Don't power the raspberry pi from the SKR v2.0. Either us a 12/24v to 5v step down transformer or power the pi from the micro usb or usb-c port.
 

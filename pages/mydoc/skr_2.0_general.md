@@ -23,11 +23,11 @@ Please be aware that the reverse driver protection feature has been disabled fro
 
 The jumpers should be installed as below. "Normal" should be used for standalone drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226). 
 
-{% include image.html file="skr_2.0_normal.png" alt="SKR v2.0 Normal" caption="SKR v2.0 Normal Driver Jumper Locations" %}
+{% include image.html file="skr_2.0_normal.PNG" alt="SKR v2.0 Normal" caption="SKR v2.0 Normal Driver Jumper Locations" %}
 
-{% include image.html file="skr_2.0_UART.png" alt="SKR v2.0 UART" caption="SKR v2.0 UART Driver Jumper Locations" %}
+{% include image.html file="skr_2.0_UART.PNG" alt="SKR v2.0 UART" caption="SKR v2.0 UART Driver Jumper Locations" %}
 
-{% include image.html file="skr_2.0_SPI.png" alt="SKR v2.0 SPI" caption="SKR v2.0 SPI Driver Jumper Locations" %}
+{% include image.html file="skr_2.0_SPI.PNG" alt="SKR v2.0 SPI" caption="SKR v2.0 SPI Driver Jumper Locations" %}
 
 ### Driver Diag Pin
 

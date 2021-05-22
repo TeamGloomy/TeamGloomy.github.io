@@ -31,7 +31,7 @@ You will need a BTT or MKS produced wifi module.
 
 Make sure the jumpers are installed next to the wifi headers as shown below. 
 
-{% include image.html file="skr_2.0_wifi.png" alt="SKR v2.0 WiFi Jumpers" caption="SKR v2.0 WiFi Jumpers" %}
+{% include image.html file="skr_2.0_wifi.PNG" alt="SKR v2.0 WiFi Jumpers" caption="SKR v2.0 WiFi Jumpers" %}
 
 ### Prepare the SD Card
 
