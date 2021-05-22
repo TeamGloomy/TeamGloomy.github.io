@@ -36,7 +36,7 @@ Connecting a Single Board Computer, such as a raspberry pi 3B/3B+/4.
 
 Follow the instructions detailed [here](stm32_sbc.html){:target="_blank"}.
 
-{% include tip.html content="If you want to use a board other than a Raspberry Pi, please follow the guide [here](dsf_on_armbian.html){:target="_blank"}"%}
+{% include tip.html content="If you want to use a board other than a Raspberry Pi, please follow the guide [here](dsf_on_armbian.html)"%}
 
 ### BOM
 
