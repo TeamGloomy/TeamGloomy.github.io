@@ -3,7 +3,7 @@ title: Connecting a BTT-MOT-EXP to an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "Connecting a BTT-MOT_EXP to an SKR Pro v1.1 and v1.2"
+summary: "Connecting a BTT-MOT-EXP to an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
 permalink: skr_pro_btt_mot_exp.html
 folder: mydoc
@@ -32,7 +32,7 @@ If using the drivers in UART mode, a jumper should be added to the pins undernea
 
 ## SKR Pro v1.1 and v1.2 Board.txt configuration
 
-Please edit the stepper.numSmartDrivers in the board.txt file to 7 (assuming you have TMC2208, TMC2009, TMC2225 or TMC2226 drivers in all other sockets).  
+Please edit the stepper.numSmartDrivers in the board.txt file to 8 (assuming you have TMC2208, TMC2009, TMC2225 or TMC2226 drivers in all other sockets).  
 ```
 stepper.numSmartDrivers = 8
 ```

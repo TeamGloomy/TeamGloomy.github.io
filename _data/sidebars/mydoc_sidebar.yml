@@ -651,6 +651,14 @@ entries:
           url: /skr_2.0_bltouch.html
           output: web, pdf
 
+        - title: Connecting an Accelerometer
+          url: /skr_2.0_accelerometer.html
+          output: web, pdf
+
+        - title: Connecting a BTT-MOT-EXP
+          url: /skr_2.0_btt_mot_exp.html
+          output: web, pdf
+
         - title: Pin Names
           url: /skr_2.0_pins.html
           output: web, pdf
