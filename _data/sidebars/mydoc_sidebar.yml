@@ -459,8 +459,12 @@ entries:
           url: /fly_cdyv2_connected_wifi.html
           output: web, pdf
 
-        - title: Connecting a Screen
+        - title: Connecting a Serial Screen
           url: /fly_cdyv2_screen.html
+          output: web, pdf
+
+        - title: Connecting a 12864 Screen
+          url: /fly_cdyv2_screen_12864.html
           output: web, pdf
 
         - title: Connecting a BLTouch
