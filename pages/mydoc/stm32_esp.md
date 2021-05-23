@@ -36,6 +36,9 @@ It should be flashed using [esptool.py](https://github.com/espressif/esptool). U
 
 You can also follow [PCR's instructions](https://rosspeter.org/flashing-the-webserver-on-my-rff-skr-adapterboard) if you don't get on with esptool.
 
+If flashing a board with 16MB flash size, such as the Wemos Mini Pro, the following code should be used.  
+`esptool.py --port COM4 write_flash --flash_size 4MB 0x00000 DuetWiFiServer-stm32f4.bin`
+
 On a side note, I have a very handy little tool installed on my main laptop thats monitoring for any serial devices as they are plugged in and you get a popup with the Com port number. If you’re interested, it can be found [here](https://helmpcb.com/software/serial-port-monitor).
 
 ### RRF based flashing

@@ -2,7 +2,7 @@
 title:  Configuring an SBC for STM32 Boards
 tags: 
 keywords: 
-last_updated: 02/05/2021
+last_updated: 23/05/2021
 summary: "Configuring an SBC for STM32 Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_sbc.html
@@ -67,7 +67,7 @@ sudo apt-get install --reinstall duetcontrolserver
 
 </div>
 
-<div role="tabpanel" class="tab-pane active" id="autobeta" markdown="1">
+<div role="tabpanel" class="tab-pane" id="autobeta" markdown="1">
 
 ## Automatic Mode Unstable
 
