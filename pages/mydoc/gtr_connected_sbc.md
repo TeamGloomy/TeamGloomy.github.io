@@ -2,7 +2,7 @@
 title: Connecting a GTR via SBC
 tags: []
 keywords: 
-last_updated: 10/05/2021
+last_updated: 23/05/2021
 summary: "Connecting a GTR via SBC"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_sbc.html
@@ -95,7 +95,8 @@ TMC5160 drivers are supported from 3.3 beta 1 onwards.
 If using TMC5160 drivers, the following lines must also be added to the board.txt file.  
 ```
 stepper.num5160Drivers = X
-stepper.spiChannel = 2
+stepper.spiChannel = 5
+SPI5.pins={B.3, B.6, G.15}
 ```
 Where X is the number of 5160 drivers fitted. The drivers must be continuous and start at unit 0. So, if you have say 3 TMC5160s and 1 TMC22XX and 1 other driver, the 5160s must be in slots 0, 1, and 2, the TMC22XX in slot 3 and the remainiong driver in 4. You can use RRF to assign any of those slots to an axis/extruder.  
 
