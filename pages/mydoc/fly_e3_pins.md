@@ -48,6 +48,8 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |PA_8|PA8||
 |PA_9|TX1||
 |PA_10|RX1||
+|PA_13|SWDIO||
+|PA_14|SWCLK||
 |PA_15|SDCD||
 |PB_0|servo0||
 |PB_1|lcden||

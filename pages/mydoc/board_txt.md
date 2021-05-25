@@ -18,6 +18,8 @@ Anything entered in the board.txt file takes precidence over what is set in the 
 
 Examples are given using LPC pins.
 
+For STM32 boards, pins can take the form of PC.1, PC_1, C.1, C_1 or the pin name.  
+
 <div class="datatable-begin"></div>
 
 |Item Name|Example|Description|LPC Comments|STM32 Comments|

@@ -47,7 +47,7 @@ board = biquskr_2.0
 //wifi pins
 8266wifi.espDataReadyPin = PB.10;
 8266wifi.TfrReadyPin = PB.11;
-8266wifi.espResetPin = PE.14;
+8266wifi.espResetPin = PC.14;
 //ESP RX/TX Settings
 8266wifi.serialRxTxPins = { PD.9, PD.8 } ;
 serial.aux.rxTxPins = { PA.10, PA.9 };

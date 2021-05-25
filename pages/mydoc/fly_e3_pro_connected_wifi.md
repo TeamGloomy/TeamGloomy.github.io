@@ -53,7 +53,7 @@ If using sensorless homing/stall detection, the following line must be added to 
 ```
 stepper.TmcDiagPins = {A.2, B.10, C.4, D.0, D.1}
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.2 and A.1 in your board.txt file.  
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.2 and B.10 in your board.txt file.  
 Also, the diag pin jumpers need to be installed for each driver that you intend to use sensorless homing with.
 For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
