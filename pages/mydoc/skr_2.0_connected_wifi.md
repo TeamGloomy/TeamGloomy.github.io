@@ -98,9 +98,14 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html){:target="_blank"} to set it up for RRF. Then type in the following  
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
 
 ```
+M997 S1
+```
+Wait for the uploading of the wifi firmware to finish. Then send the following
+```
+M552 S-1
 M552 S0
 M587 S"your SSID" P"your password"
 M552 S1
