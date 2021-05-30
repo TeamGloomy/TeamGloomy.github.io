@@ -2,7 +2,7 @@
 title: Fly-CDYv2 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/02/2021
+last_updated: 25/05/2021
 summary: "Fly-CDYv2 Pin Names"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_pins.html
@@ -24,10 +24,10 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0|1|2|3|4|5|
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|:----|
-|Enable Pins|PC_1|PC_14|PB_8|PD_7|PD_4|PD_0|
-|Step Pins|PE_5|PE_4|PE_3|PE_2|PE_1|PE_0|
-|Direction Pins|PC_0|PC_13|PB_7|PD_6|PD_3|PA_15|
-|UART Pins|PC_15|PA_8|PB_6|PD_5|PD_1|PE_9|
+|Enable Pins|C.1|C.14|B.8|D.7|D.4|D.0|
+|Step Pins|E.5|E.4|E.3|E.2|E.1|E.0|
+|Direction Pins|C.0|C.13|B.7|D.6|D.3|A.15|
+|UART Pins|C.15|A.8|B.6|D.5|D.1|E.9|
 
 
 <div class="datatable-end"></div>
@@ -38,49 +38,49 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
-|PA_3|e0temp|t0|
-|PC_4|e1temp|t1|
-|PC_5|e2temp|t2|
-|PB_1|bedtemp|tb|
-|PC_7|xmin|xstop|
-|PC_6|xmax|xstopmax|
-|PD_11|ymin|ystop|
-|PD_10|ymax|ystopmax|
-|PB_10|zmin|zstop|
-|PB_11|zmax|zstopmax|
-|PE_6|servo0||
-|PC_2|probe||
-|PB_0|bed|hbed|
-|PD_12|e0heat|he0|
-|PD_13|e1heat|he1|
-|PD_14|e2heat|he2|
-|PA_0|fan0|fan|
-|PA_1|fan1||
-|PA_2|fan2||
-|PA_14|lcdd7||
-|PA_13|lcdd6||
-|PE_15|lcdd4||
-|PE_14|lcdd5||
-|PB_1|lcden||
-|PE_13|tfcd||
-|PA_9|TX1|btnenc|
-|PA_10|RX1|lcdrs|
-|PD_8|PD8|btnen2|
-|PD_9|PD9|btnen1|
-|PE_10|PE10||
-|PE_11|PE11||
-|PE_12|PE12||
-|PA_4|PA4|SPI1SDCS|
-|PA_5|PA5|SPI1SCK|
-|PA_6|PA6|SPI1MISO|
-|PA_7|PA7|SPI1MOSI|
-|PE_7|PE7|SPI1CS1|
-|PE_8|PE8|SPI1CS2|
-|PB_3|PB3|MOTSCK|
-|PB_4|PB4|MOTMISO|
-|PB_5|PB5|MOTMOSI|
-|PD_15|Neopixel|LED|
-|PB_9|PB9|Laser|
-|PC_3|Power_ADC|PC3|
+|A.3|e0temp|t0|
+|C.4|e1temp|t1|
+|C.5|e2temp|t2|
+|B.1|bedtemp|tb|
+|C.7|xmin|xstop|
+|C.6|xmax|xstopmax|
+|D.11|ymin|ystop|
+|D.10|ymax|ystopmax|
+|B.10|zmin|zstop|
+|B.11|zmax|zstopmax|
+|E.6|servo0||
+|C.2|probe||
+|B.0|bed|hbed|
+|D.12|e0heat|he0|
+|D.13|e1heat|he1|
+|D.14|e2heat|he2|
+|A.0|fan0|fan|
+|A.1|fan1||
+|A.2|fan2||
+|A.14|lcdd7||
+|A.13|lcdd6||
+|E.15|lcdd4||
+|E.14|lcdd5||
+|B.1|lcden||
+|E.13|tfcd||
+|A.9|TX1|btnenc|
+|A.10|RX1|lcdrs|
+|D.8|PD8|btnen2|
+|D.9|PD9|btnen1|
+|E.10|PE10||
+|E.11|PE11||
+|E.12|PE12||
+|A.4|PA4|SPI1SDCS|
+|A.5|PA5|SPI1SCK|
+|A.6|PA6|SPI1MISO|
+|A.7|PA7|SPI1MOSI|
+|E.7|PE7|SPI1CS1|
+|E.8|PE8|SPI1CS2|
+|B.3|PB3|MOTSCK|
+|B.4|PB4|MOTMISO|
+|B.5|PB5|MOTMOSI|
+|D.15|Neopixel|LED|
+|B.9|PB9|Laser|
+|C.3|Power_ADC|PC3|
 
 <div class="datatable-end"></div>

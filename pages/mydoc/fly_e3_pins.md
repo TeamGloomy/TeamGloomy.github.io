@@ -24,10 +24,10 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0 (X)|1 (Y)|2 (Z)|3 (E0)|
 | :------------- |:-------------|:-------------|:-------------|:-------------|
-|Step Pins|PC_13|PE_3|PB_9|PB_3|
-|Direction Pins|PC_14|PE_4|PE_0|PB_4|
-|Enable Pins|PC_15|PE_5|PE_1|PB_5|
-|UART Pins|PE_6|PE_2|PB_8|PD_7|
+|Step Pins|C.13|E.3|B.9|B.3|
+|Direction Pins|C.14|E.4|E.0|B.4|
+|Enable Pins|C.15|E.5|E.1|B.5|
+|UART Pins|E.6|E.2|B.8|D.7|
 
 <div class="datatable-end"></div>
 

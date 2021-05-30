@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-CDYv2
 tags: []
 keywords: 
-last_updated: 10/05/2021
+last_updated: 30/05/2021
 summary: "Connecting a 12864 screen to a Fly-CDYv2"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_screen_12864.html
@@ -14,9 +14,7 @@ datatable: true
 
 ## Overview
 
-## Overview
-
-The information here is aimed at connecting a RepRap 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based). This is only applicable from 3.2_7.  
+The information here is aimed at connecting a RepRap 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
 
 {% include important.html content="When using a 12864 screen, if the encoder is in a certain position (not clicked fully in to place), then the WiFi module does not start. It does not even flash the blue light on board reset. This is because the encoder pins are shared with the ESP TX/RX pins and if the  BTN_EN1 pin (which is the ESP8266 TX pin) is shorted to ground when you try and reset the ESP8266 then it will not boot. Normally the encoder will have neither of the pins shorted to ground. But if you happen to have it positioned between two of the indent positions then the switches will be closed and the ESP8266 will not boot." %}
 
@@ -68,3 +66,14 @@ If the screen is showing artifacts/random characters on the screen, the followin
 * Reduce the length of the cable between the screen and the board.  
 * Ensure that the cable between the screen and the board is routed away from other cables, especially motor cables.  
 * Add a ferrite ring to the cable between the screen and the board.  
+
+## Using the SD card slot on the screen
+
+From 3.3RC3, it is possible to use the external SD card.  
+To do so, add the following lines to your board.txt
+
+```
+sdCard.external.spiChannel=0
+sdCard.external.csPin=A.4
+sdCard.external.cardDetectPin=E.13
+```

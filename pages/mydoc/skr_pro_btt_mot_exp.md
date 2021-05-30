@@ -2,7 +2,7 @@
 title: Connecting a BTT-MOT-EXP to an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 30/05/2021
 summary: "Connecting a BTT-MOT-EXP to an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
 permalink: skr_pro_btt_mot_exp.html
@@ -38,6 +38,7 @@ stepper.numSmartDrivers = 8
 ```
 
 {% include important.html content="The defining of the pins is not required from RepRapFirmware version 3.2 onwards. This information is retained here for reference." %}
+{% include important.html content="The defining of the pins is required from RepRapFirmware version 3.3-RC3 onwards due to spare pins can now also be mapped for 12864 screens and accelerometers." %}
 
 Please add the following lines to the board.txt.  
 ```

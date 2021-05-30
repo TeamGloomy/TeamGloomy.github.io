@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-407ZG
 tags: []
 keywords: 
-last_updated: 10/05/2021
+last_updated: 25/05/2021
 summary: "Connecting a 12864 screen to a Fly-407ZG"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_screen_12864.html
@@ -16,7 +16,7 @@ datatable: true
 
 ## Overview
 
-The information here is aimed at connecting a RepRap 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based). This is only applicable from 3.2_7.  
+The information here is aimed at connecting a RepRap 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).
 
 ## Board.txt modifications
 
