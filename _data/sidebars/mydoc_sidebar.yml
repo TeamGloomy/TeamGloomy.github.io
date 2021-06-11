@@ -487,6 +487,10 @@ entries:
           url: /fly_cdyv2_voltage.html
           output: web, pdf
 
+        - title: Connecting a PT100 or Type 'K' Thermocouple
+          url: /fly_cdyv2_pt100.html
+          output: web, pdf
+
         - title: Pin Names
           url: /fly_cdyv2_pins.html
           output: web, pdf

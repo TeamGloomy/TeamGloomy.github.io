@@ -69,3 +69,14 @@ If the screen is showing artifacts/random characters on the screen, the followin
 * Reduce the length of the cable between the screen and the board.  
 * Ensure that the cable between the screen and the board is routed away from other cables, especially motor cables.  
 * Add a ferrite ring to the cable between the screen and the board.  
+
+## Using the SD card slot on the screen
+
+From 3.3RC3, it is possible to use the external SD card.  
+To do so, add the following lines to your board.txt
+
+```
+sdCard.external.spiChannel=0
+sdCard.external.csPin=A.4
+sdCard.external.cardDetectPin=C.4
+```
