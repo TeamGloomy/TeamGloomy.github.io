@@ -20,7 +20,7 @@ It was originally ported by [sadvi](https://github.com/sdavi), but is now mainta
 
 The latest stable version is [3.2.2_2](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.2.2_2)
 
-### Latest UnstableS
+### Latest Unstable
 
 The latest beta/unstable version is [3.3rc3_2](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.3-RC3_2)
 
