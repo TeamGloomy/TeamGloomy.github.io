@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to LPC and STM32
 tags: []
 keywords: 
-last_updated: 02/05/2021
+last_updated: 20/06/2021
 summary: "Board.txt Configurables Applicable to LPC and STM32"
 sidebar: mydoc_sidebar
 permalink: board_txt.html
@@ -99,6 +99,7 @@ Current preprogrammed boards
 |biquskr_1.1|SKR v1.1|LPC|
 |biquskr_1.3|SKR v1.3|LPC|
 |biquskr_1.4|SKR v1.4|LPC|
+|biquskr_2.0|SKR v1.4|STM32|
 |biquskr_e3t|SKR E3 Turbo|LPC|
 |biquskr_rrf_e3_1.0|SKR RRF E3 v1.0|STM32|
 |biquskrpro_1.1|SKR Pro v1.1 and 1.2|STM32|
@@ -106,6 +107,7 @@ Current preprogrammed boards
 |fly_cdy|Fly-CDY|LPC|
 |fly_cdyv2|Fly-CDYv2|STM32|
 |fly_E3|Fly-E3|STM32|
+|fysetc_spider|Fysetc Spider 407 Version|STM32|
 |generic|maps all pins as available by pin number. Not recommended for normal use||
 |mbed|For the mbed developer board|LPC|
 |mkssbase_1.3|MKS Sbase v1.3|LPC|
