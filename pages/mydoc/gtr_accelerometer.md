@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to a GTR
 tags: []
 keywords: 
-last_updated: 12/05/2021
+last_updated: 22/06/2021
 summary: "Connecting an accelerometer to a GTR"
 sidebar: mydoc_sidebar
 permalink: gtr_accelerometer.html
@@ -24,7 +24,7 @@ These connections are on the Extension header 0, 1 and 2 on the board.
 
 <div class="datatable-begin"></div>
 
-|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|Fly-E3 Pin|Fly-E3 Pin Name|
+|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|GTR Pin|GTR Pin Name|
 |:---|:---|:---|:---|:----|
 |Red|VIN| +5v Input| +5v| -|
 |Black|GND|Ground|GND|-|

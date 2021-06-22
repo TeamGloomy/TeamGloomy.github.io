@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to a Fly-CDYv2
 tags: []
 keywords: 
-last_updated: 12/05/2021
+last_updated: 22/06/2021
 summary: "Connecting an accelerometer to a CDYv2"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_accelerometer.html
@@ -24,7 +24,7 @@ These connections are on the EXP1 header on the board.
 
 <div class="datatable-begin"></div>
 
-|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|Fly-E3 Pin|Fly-E3 Pin Name|
+|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|Fly-CDYv2 Pin|Fly-CDYv2 Pin Name|
 |:---|:---|:---|:---|:----|
 |Red|VIN| +5v Input| +5v| -|
 |Black|GND|Ground|GND|-|

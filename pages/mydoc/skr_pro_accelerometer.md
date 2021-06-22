@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
-last_updated: 12/05/2021
+last_updated: 22/06/2021
 summary: "Connecting an accelerometer to an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
 permalink: skr_pro_accelerometer.html
@@ -24,7 +24,7 @@ These connections are on the SPI and I2C header on the board.
 
 <div class="datatable-begin"></div>
 
-|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|Fly-E3 Pin|Fly-E3 Pin Name|
+|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|SKR Pro Pin|SKR Pro Pin Name|
 |:---|:---|:---|:---|:----|
 |Red|VIN| +5v Input| +5v| -|
 |Black|GND|Ground|GND|-|
