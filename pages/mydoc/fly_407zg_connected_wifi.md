@@ -2,7 +2,7 @@
 title: Connecting a Fly-407ZG via Wifi
 tags: []
 keywords: 
-last_updated: 10/05/2021
+last_updated: 23/06/2021
 summary: "Connecting a Fly-407ZG via Wifi"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_wifi.html
@@ -41,6 +41,8 @@ Follow the instructions [here](stm32_esp.html).
 The pinout for the Fly-407ZG can be found [here](https://github.com/FLYmaker/FLYF407ZG/blob/master/picture/Pin%20diagram.png) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
 
 The table below shows the pins required on the ESP8266 and what they are connected to on the Fly-407ZG. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
+
+There is an alternative method of connecting the ESP8266 detailed [here](/fly_407zg_alternative_esp.html).  
 
 <div class="datatable-begin"></div>
 

@@ -435,6 +435,10 @@ entries:
           url: /fly_407zg_connected_wifi.html
           output: web, pdf
 
+        - title: Alternative WiFi Connection
+          url: /fly_407zg_alternative_esp.html
+          output: web, pdf
+
         - title: Connecting via SBC
           url: /fly_407zg_connected_sbc.html
           output: web, pdf
