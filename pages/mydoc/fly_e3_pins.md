@@ -2,7 +2,7 @@
 title: Fly-E3 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 23/06/2021
 summary: "Fly-E3 Pin Names"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pins.html
@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-E3 Pinout Diagram
 
-{% include image.html file="fly_e3.png" alt="Fly-E3" caption="Fly-E3 Pinout" %}
+{% include image.html file="fly_e3.svg" alt="Fly-E3" caption="Fly-E3 Pinout" %}
 
 ## Fly-E3 Pins in Firmware
 
