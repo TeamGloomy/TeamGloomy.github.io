@@ -18,7 +18,7 @@ Connect the BLTouch to the SKR-RRF-E3 as described in the table below.
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|SKR-RRF-E3 Pin|SKR-RRF-E3 Pin Name|
+|BLTouch Wire Colour|SKR-RRF-E3 Pin|SKR-RRF-E3 Pin Name| 
 |:---|:---|:---|
 |Brown|GND||
 |Red|5v||
@@ -28,7 +28,7 @@ Connect the BLTouch to the SKR-RRF-E3 as described in the table below.
 
 <div class="datatable-end"></div>
 
-{% include image.html file="skr_rrf_e3_bltouch.png" alt="SKR-RRF-E3 BLTouch" caption="SKR-RRF-E3 BLTouch Wiring" %}
+{% include image.html file="skr_rrf_e3_bltouch.PNG" alt="SKR-RRF-E3 BLTouch" caption="SKR-RRF-E3 BLTouch Wiring" %}
 
 ### Config.g Changes
 
