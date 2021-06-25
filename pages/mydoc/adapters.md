@@ -102,7 +102,7 @@ Firstly, cut the two PCB traces shown in the image below.
 {% include image.html file="btt_rrf_wifi_mod.png" alt="BTT RRF Wifi Mod" caption="Traces to cut on BTT-RRF-WiFi" %}
 
 Solder two cables at the two points shown below.  
-{% include image.html file="btt_rrf_wifi_mod1.png" alt="BTT RRF Wifi Mod" caption="Cables to solder on BTT-RRF-WiFi" %}
+{% include image.html file="btt_rrf_wifi_mod1.PNG" alt="BTT RRF Wifi Mod" caption="Cables to solder on BTT-RRF-WiFi" %}
 
 Connect the TX cable from the adapter to the RX connection on the board. Connect the RX cable from the adapter to the TX connection on the board.  
 Add the correct information for the board being used to the board.txt file. Thia can be found in the Updating the ESP8266 by RRF section on each connectiong via wifi page.  
