@@ -2,7 +2,7 @@
 title: SBC Transfer Ready Timeouts
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 25/06/2021
 summary: "Information about Transfer Ready Timeouts"
 sidebar: mydoc_sidebar
 permalink: sbc_transfer_timeout.html
@@ -23,3 +23,7 @@ https://forum.duet3d.com/topic/21834/restart-duetcontrolserver-sbc/5
 https://forum.duet3d.com/topic/21357/duet2-wifi-duex5-and-sbc?_=1614522809264
 
 Gloomyandy runs two SBC based printers (one STM32 one LPC) and has no issues with the connection between the boards. In both cases he has the rPi mounted "back to back" with the main board and run a very short ribbon cable that does not run over the main board and that forms a "U" shape between the two boards. 
+
+Another potential solution is to install a 0.47uf Y1 capacitor across the negative terminal of the power supply to the earth terminal of the power supply that connects to the mains ground. Also remove the negative supply from the raspberry pi power supply and attached the negative supply of the printer power supply to the Pi power supply at the terminals on the power supply. This got rid the high resistance ground connection that connected the Pi to the Skr pro experienced by @jimmaymaddness.
+
+Another potential solution is to shield the bed temperature cable, with the shield grounded to the chassis of the printer. Thanks @jimmaymaddness.  
