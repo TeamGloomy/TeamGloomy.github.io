@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to an SKR v2.0
 tags: []
 keywords: 
-last_updated: 22/06/2021
+last_updated: 12/07/2021
 summary: "Connecting an accelerometer to an SKR v2.0"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_accelerometer.html
@@ -31,7 +31,7 @@ These connections are on the EXP1 header on the board.
 |Yellow|SCL|SPI SCK|C.5||
 |Green|SDA|SPI MOSI|B.0||
 |Blue|SDO|SPI MISO|B.1||
-|White|CS|Chip Select|B.9||
+|White|CS|Chip Select|E.9||
 |Purple|Int|Interupt|E.10||
 
 <div class="datatable-end"></div>
@@ -54,7 +54,7 @@ accelerometer.spiChannel = 5
 
 Your config.g should be modified as below.
 ```
-M955 P0 C"B.9+E.10" I20
+M955 P0 C"E.9+E.10" I20
 ```  
 The I (orientation) parameter tells the firmware which of the 24 possible orientations the accelerometer chip is in relative to the printer axes. It is expressed as a 2-digit number.  
 The first digit specifies which machine direction the Z axis of the accelerometer chip (usually the top face of the chip) faces, as follows: 0 = +X, 1 = +Y, 2 = +Z, 4 = -X, 5 = -Y, 6 = -Z. The second digit expresses which direction the X axis of the accelerometer chip faces, using the same code. The direction of positive X is printed on the circuit board. If the board was mounted in the orientation shown in the above image, with +X of the machine being to the right, Y+ being behind and Z+ being up, the I value would be 54. This [document](https://www.dropbox.com/s/hu2w5mk57l4zqpg/Accelerometer%20Orientation.pdf?dl=0) gives information regarding the I value for the new Duet toolboard with accelerometer.  
