@@ -2,7 +2,7 @@
 title: Adding a Camera
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 12/07/2021
 summary: "Adding a Camera"
 sidebar: mydoc_sidebar
 permalink: camera.html
@@ -33,3 +33,7 @@ Information and instructions can be found [here](https://github.com/TLAS11/DWC-P
 Follow the installation instructions found [here](https://elinux.org/RPi-Cam-Web-Interface#Installation_Instructions)
 
 Set the webcam URL as http://IPAddress/html/cam_pic_new.php
+
+## Videostream - Both USB Camera's and Pi Camera's
+
+Follow the instructions here [here](https://github.com/stuartofmt/videostream)
