@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-E3-Pro
 tags: []
 keywords: 
-last_updated: 13/06/2021
+last_updated: 14/07/2021
 summary: "Connecting a 12864 screen to a Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_screen_12864.html
@@ -120,7 +120,7 @@ lcd.encoderPinA=E.9
 lcd.encoderPinB=E.10
 lcd.encoderPinSw=E.11
 lcd.lcdCSPin=E.7
-SPI4.pins={E.8, E.NoPin, B.1}
+SPI4.pins={E.8, NoPin, B.1}
 lcd.spiChannel=4
 lcd.lcdDCPin = E.12
 led.neopixelPin=B.11
