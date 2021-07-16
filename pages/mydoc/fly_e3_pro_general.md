@@ -2,7 +2,7 @@
 title: Fly-E3-Pro General Information
 tags: []
 keywords: 
-last_updated: 16/03/2021
+last_updated: 14/07/2021
 summary: "General information regarding the Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_general.html
@@ -21,7 +21,7 @@ It is currently available through [AliExpress](https://www.aliexpress.com/item/1
 
 If only one Z output is being used, jumpers should be installed on the other Z output as shown below.
 
-{% include image.html file="fly_e3_z_jumpers.png" alt="Fly-E3 Z Jumpers" caption="Fly-E3 Driver Z Jumper Locations" %}
+{% include image.html file="fly_e3_z_jumpers.png" alt="Fly-E3-Pro Z Jumpers" caption="Fly-E3-Pro Driver Z Jumper Locations" %}
 
 ### Driver Diag Pin
 

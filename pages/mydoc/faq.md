@@ -16,7 +16,7 @@ comments: false
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Can I use the BTT wifi chip or an ESP-01 (non RRF version)?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Can I use the BTT WiFi chip or an ESP-01 (non RRF version)?</a>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse noCrossRef">
@@ -29,12 +29,12 @@ comments: false
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Can I use the wifi header on the SKR 1.4 and SKR Pro?</a>
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Can I use the WiFi header on the SKR 1.4 and SKR Pro?</a>
                             </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse noCrossRef">
                             <div class="panel-body">
-                                No. It doesn't have SPI available, which is used by RRF for the wifi connection.
+                                No. It doesn't have SPI available, which is used by RRF for the WiFi connection.
                             </div>
                         </div>
                     </div>

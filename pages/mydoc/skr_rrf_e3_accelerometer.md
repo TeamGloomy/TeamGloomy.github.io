@@ -2,8 +2,8 @@
 title: Connecting an accelerometer to an SKR-RRF-E3
 tags: []
 keywords: 
-last_updated: 12/05/2021
-summary: "Connecting an accelerometer to an SKR-RRF-E3"
+last_updated: 15/07/2021
+summary: "How to connect an accelerometer to an SKR-RRF-E3"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_accelerometer.html
 folder: mydoc
@@ -46,7 +46,7 @@ The accelerometer should be mounted firmly to the tool. For a bed slinger (such 
 
 Add the following to board.txt
 ```
-SPI5.pins = {B.1,EB.2,E.11}
+SPI5.pins = { B.1, B.2, E.11 }
 accelerometer.spiChannel = 5
 ```
 

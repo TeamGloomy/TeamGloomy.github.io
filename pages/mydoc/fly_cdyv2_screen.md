@@ -3,7 +3,7 @@ title: Connecting a screen to a Fly-CDYv2
 tags: []
 keywords: 
 last_updated: 18/02/2021
-summary: "Connecting a screen to a Fly-CDYv2"
+summary: "How to connect a serial screen to a Fly-CDYv2"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_screen.html
 folder: mydoc

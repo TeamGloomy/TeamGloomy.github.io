@@ -49,7 +49,7 @@ On the first login, you will be asked to change this password and to create anot
 
 ### How to connect to wireless
 
-If your SBC has onboard wireless capability or if you use a 3rd party wireless adapter on USB supported by Armbian, you can use `nmtui-connect` to browse and connect to your Wifi AP.
+If your SBC has onboard wireless capability or if you use a 3rd party wireless adapter on USB supported by Armbian, you can use `nmtui-connect` to browse and connect to your WiFi AP.
 
 ## Wiring
 

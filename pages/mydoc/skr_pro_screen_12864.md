@@ -2,8 +2,8 @@
 title: Connecting a 12864 screen to an SKR Pro
 tags: []
 keywords: 
-last_updated: 09/05/2021
-summary: "Connecting a 12864 screen to an SKR Pro"
+last_updated: 15/07/2021
+summary: "How to connect a 12864 screen to an SKR Pro"
 sidebar: mydoc_sidebar
 permalink: skr_pro_screen_12864.html
 folder: mydoc
@@ -34,7 +34,7 @@ lcd.encoderPinSw=F.9
 lcd.lcdCSPin=D.3
 lcd.lcdDCPin=G.13
 lcd.spiChannel=3
-SPI3.pins={G.14, C.1, F.7} //Set to GPIO pins to use as SCK, MISO, MOSI
+SPI3.pins={ G.14, C.1, F.7 } //Set to GPIO pins to use as SCK, MISO, MOSI
 //lcd.lcdBeepPin=NoPin
 ```
 
@@ -54,7 +54,7 @@ M918 P2 C30 F1000000 E4
 Menu files must be uploaded to allow the display to generate the correct information. This can be done in two ways.
 First, obtain the recommended menu files from [here](https://github.com/jadonmmiller/UltimateDuetMenuSystem/releases/)
 
-### Method 1 - Wifi Mode only
+### Method 1 - WiFi Mode only
 
 Extract the contents of the zip file you downloaded above and place them in a folder called "Menu" on the SD card of the GTR. 
 

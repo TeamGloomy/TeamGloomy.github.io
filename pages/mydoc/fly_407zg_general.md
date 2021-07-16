@@ -2,7 +2,7 @@
 title: Fly-407ZG General Information
 tags: []
 keywords: 
-last_updated: 02/05/2021
+last_updated: 14/07/2021
 summary: "General information regarding the Fly-407ZG"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_general.html
@@ -36,7 +36,7 @@ The board can handle an input voltage up to 32v.
 ### Initial Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
-Follow the [WiFi instructions](fly_407zg_connected_wifi.html) or the [SBC instructions](fly_407zg_connected_sbc.html) for what to do next.
+Follow the [ESP8266 WiFi instructions](fly_407zg_connected_wifi_8266.html) or the [SBC instructions](fly_407zg_connected_sbc.html) for what to do next.
 
 ## Issues
 

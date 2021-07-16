@@ -3,7 +3,7 @@ title: Connecting an accelerometer to a Fly-E3
 tags: []
 keywords: 
 last_updated: 12/05/2021
-summary: "Connecting an accelerometer to a Fly-E3"
+summary: "How to connect an accelerometer to a Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_accelerometer.html
 folder: mydoc

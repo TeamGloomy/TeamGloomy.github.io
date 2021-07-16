@@ -2,8 +2,8 @@
 title: Connecting an accelerometer to a Fly-E3-Pro
 tags: []
 keywords: 
-last_updated: 22/06/2021
-summary: "Connecting an accelerometer to a Fly-E3-Pro"
+last_updated: 14/07/2021
+summary: "How to connect an accelerometer to a Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_accelerometer.html
 folder: mydoc

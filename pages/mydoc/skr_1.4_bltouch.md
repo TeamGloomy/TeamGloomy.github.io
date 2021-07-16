@@ -2,8 +2,8 @@
 title: Connecting a BLTouch to an SKR v1.4
 tags: []
 keywords: 
-last_updated: 22/04/2021
-summary: "Connecting a BLTouch to an SKR v1.4"
+last_updated: 15/07/2021
+summary: "How to connect a BLTouch to an SKR v1.4"
 sidebar: mydoc_sidebar
 permalink: skr_1.4_bltouch.html
 folder: mydoc
@@ -21,7 +21,7 @@ Connect the BLTouch to the SKR v1.4 as shown below.
 |BLTouch Wire Colour|SKR v1.4 Pin|SKR v1.4 Pin Name|
 |:---|:---|:---|
 |Brown|GND||
-|Red|NPWR||
+|Red|+5v||
 |Yellow|2.0|Servo0|
 |Black|GND||
 |White|0.10|Probe|

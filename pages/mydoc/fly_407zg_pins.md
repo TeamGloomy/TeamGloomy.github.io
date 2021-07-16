@@ -2,8 +2,8 @@
 title: Fly-407ZG Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 25/05/2021
-summary: "Fly-407ZG Pin Names"
+last_updated: 14/07/2021
+summary: "The pin names of the Fly-407ZG used in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_pins.html
 folder: mydoc
@@ -31,7 +31,8 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).
+Other pin numbers. Either name can be used in the firmware (config.g).  
+If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  
 
 <div class="datatable-begin"></div>
 
@@ -43,18 +44,11 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |A.3|dljc||
 |A.9|TX1||
 |A.10|RX1||
-|B.2|PB2||
-|B.10|PB10||
 |B.11|fan5||
-|B.13|PB13||
-|B.14|PB14||
-|B.15|PB15||
 |C.0|e2temp|t2|
 |C.1|e1temp|t1|
 |C.2|xmax|xstopmax|
 |C.3|xmin|xstop|
-|C.4|PC4||
-|C.5|PC5||
 |C.8|SDD0||
 |C.9|SDD1||
 |C.10|SDD2||
@@ -69,15 +63,9 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |E.4|e4heat|he4|
 |E.5|e3heat|he3|
 |E.6|e2heat|he2|
-|E.7|PE7||
 |E.8|fan0|fan|
-|E.9|PE9||
-|E.10|PE10||
 |E.11|servo0||
-|E.12|PE12||
 |E.13|fan4||
-|E.14|PE14||
-|E.15|PE15||
 |F.0|zmin|zstop|
 |F.2|ymin|ystop|
 |F.3|bedtemp|tb|
@@ -88,6 +76,5 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |F.7|e0heat|he0|
 |F.9|fan1||
 |F.10|e3temp|t3|
-|F.11|PF11||
 
 <div class="datatable-end"></div>

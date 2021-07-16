@@ -29,7 +29,7 @@ This will involve soldering some cables to the board.
 
 ## Connecting the Adapter
 
-This example uses the Fly Wifi Adapter but the instructions are applicable to all 3 types.  
+This example uses the Fly WiFi Adapter but the instructions are applicable to all 3 types.  
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#method1" data-toggle="tab">Method 1</a></li>
@@ -72,7 +72,7 @@ Connect a cable between EXP1 on the Fly-407ZG and the adapter.
 The following changes should be made to the board.txt file
 
 ```
-//ESP Settings
+//ESP8266 Settings
 8266wifi.espDataReadyPin = E.15;
 8266wifi.TfrReadyPin = B.10;
 8266wifi.espResetPin = E.14;
@@ -120,15 +120,15 @@ The remainder of the cables are to be connected to the adapter as shown below.
 The following changes should be made to the board.txt file
 
 ```
-//ESP Settings
-SPI2.pins={B.3, B.4, B.5}
+//ESP8266 Settings
+SPI2.pins={ B.3, B.4, B.5 }
 8266wifi.espDataReadyPin = B.7
 8266wifi.lpcTfrReadyPin = B.6
 8266wifi.espResetPin = A.4
 8266wifi.csPin = G.15
 8266wifi.spiChannel=2
-serial.aux.rxTxPins = {A.10, A.9}
-8266wifi.serialRxTxPins = {G.9, G.14}
+serial.aux.rxTxPins = { A.10, A.9 }
+8266wifi.serialRxTxPins = { G.9, G.14 }
 ```
 
 </div>

@@ -3,7 +3,7 @@ title:  Configuring an SBC for LPC Boards
 tags: 
 keywords: 
 last_updated: 30/05/2021
-summary: "Configuring an SBC for LPC Boards"
+summary: "How to configure an SBC for use with LPC based Boards"
 sidebar: mydoc_sidebar
 permalink: lpc_sbc.html
 folder: mydoc
@@ -11,7 +11,7 @@ toc: false
 comments: false
 ---
 
-A Raspberry Pi 3/3+/4 is recommended (Raspberry Pi Zero and lower than a 3 (i.e. the original and 2b) are not supported)
+A Raspberry Pi 3/3+/4 is recommended (Raspberry Pi Zero and lower than a 3 (i.e. the original and 2b) are not supported).
 
 ## Prepare the Raspberry Pi
 

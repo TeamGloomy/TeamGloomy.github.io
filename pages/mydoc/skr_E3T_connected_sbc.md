@@ -2,8 +2,8 @@
 title: Connecting an SKR E3 Turbo via SBC
 tags: []
 keywords: 
-last_updated: 10/05/2021
-summary: "Connecting an SKR E3 Turbo via SBC"
+last_updated: 15/07/2021
+summary: "How to connect to an SKR E3 Turbo via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_E3T_connected_sbc.html
 folder: mydoc

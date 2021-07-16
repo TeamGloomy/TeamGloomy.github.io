@@ -2,7 +2,7 @@
 title: Connecting a SKR-RRF-E3 via Wifi
 tags: []
 keywords: 
-last_updated: 10/05/2021
+last_updated: 15/07/2021
 summary: "Connecting a SKR-RRF-E3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_connected_wifi.html
@@ -37,7 +37,7 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 ```
 //Config for SKR-RRF-E3
 board = biquskr_rrf_e3_1.1
-//wifi pins
+//WiFi pins
 8266wifi.espDataReadyPin = A.6
 8266wifi.TfrReadyPin = A.7
 8266wifi.espResetPin = A.4
@@ -50,7 +50,7 @@ heat.tempSensePins = { A.0, A.1, A.2, A.3 }
 
 If using sensorless homing/stall detection, the following line must be added to the board.txt file.
 ```
-stepper.TmcDiagPins = {C.0, C.1, C.2, C.3, B.11, B.10}
+stepper.TmcDiagPins = { C.0, C.1, C.2, C.3, B.11, B.10 }
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include C.0 and C.1 in your board.txt file.  
 Also, the diag pin jumpers need to be installed for each driver that you intend to use sensorless homing with.
@@ -72,7 +72,7 @@ Once connected, power up the board using 12-24v and connect to the USB port on t
 ```
 M997 S1
 ```
-Wait for the uploading of the wifi firmware to finish. Then send the following
+Wait for the uploading of the WiFi firmware to finish. Then send the following
 ```
 M552 S0
 M587 S"your SSID" P"your password"
@@ -83,9 +83,9 @@ M552 S1
 
 {% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}
 
-The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
+The blue light on the WiFi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 
-The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the wifi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP chip.
+The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the WiFi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP8266 chip.
 
 ### Once up and running
 

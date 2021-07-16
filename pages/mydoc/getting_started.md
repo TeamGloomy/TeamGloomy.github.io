@@ -2,7 +2,7 @@
 title: Getting Started
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 14/07/2021
 summary: "An overview of how to get started with RepRapFirmware3"
 sidebar: mydoc_sidebar
 permalink: getting_started.html
@@ -16,23 +16,23 @@ To run this on a supported LPC or STM32 based board, a number of items are requi
 ## Firmware
 A copy of the firmware is required and can be found [here](https://github.com/gloomyandy/RepRapFirmware/releases) (remember to rename it to just firmware.bin). This is placed on the root of the SD card and is flashed to the board on first boot of the device.  
 There are four versions of the firmware:  
-* LPC-Wifi
+* LPC-WiFi
 * LPC-SBC
-* STM32F4-Wifi
+* STM32F4-WiFi
 * STM32F4-SBC
 
-### Wifi
-This version is for use on boards that are going to be used with a wifi connection. Information can be found on the corresponding boards page.  
+### WiFi
+This version is for use on boards that are going to be used with an ESP8266 WiFi connection. Information can be found on the corresponding boards page.  
 
 ### SBC
-This version uses an SBC (Single Board Computer) such as a raspberry pi to serve up the webpage, allowing both an ethernet or wifi connection. This acts in the same way as the new Duet 3 + SBC. Information can be found on the corresponding boards page.  
+This version uses an SBC (Single Board Computer) such as a raspberry pi to serve up the webpage, allowing both an ethernet or WiFi connection. This acts in the same way as the new Duet 3 + SBC. Information can be found on the corresponding boards page.  
 
 ## SD Card Structure
 The SD Card structure as detailed [here](https://duet3d.dozuki.com/Wiki/Firmware_Overview#Section_SD_card_structure).  
-This is applicable only to wifi and ethernet versions of the firmware.  
+This is applicable only to WiFi versions of the firmware.  
 
 ## DuetWebControl
-The standard version of DuetWebControl (DWC) is now fully compatible with the LPC port.  
+The standard version of DuetWebControl (DWC) is now fully compatible with this port.  
 It can be found [here](https://github.com/Duet3D/DuetWebControl/releases).  
 
 ## Configuration Files
@@ -41,13 +41,13 @@ All boards that are currently supported are available on the webpage.
 These should be added to the /sys folder on the SD Card or uploaded via DWC to the SBC.  
 
 ## Board.txt file
-This needs to be added to the /sys folder on the SD Card for the wifi, ethernet and SBC version.  
+This needs to be added to the /sys folder on the SD Card for the WiFi and SBC version.  
 This can be generated using the [Configurator](https://teamgloomy.github.io/Configurator).  
 
 ## Updating
 When updating to new versions of the firmware, please read the following files:  
-- [Whats new in RRF](https://github.com/Duet3D/RepRapFirmware/blob/v3-dev/WHATS_NEW_RRF3.md) This details all of the changes made to the RepRapFirmware between each version.  
-- [Whats new in RRF - LPC/STM32 Specific](https://github.com/gloomyandy/RepRapFirmware/blob/v3.02-dev-unified/WHATS_NEW_UNIFIED.md) This details any LPC specific changes which have been made to RepRapFirmware between each version.  
+- [Whats new in RRF](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x) This details all of the changes made to the RepRapFirmware between each version.  
+- [Whats new in RRF - LPC/STM32 Specific](https://github.com/gloomyandy/RepRapFirmware/blob/v3.02-dev-unified/WHATS_NEW_UNIFIED.md) This details any specific changes which have been made to RepRapFirmware between each version.  
 
 ## If new to RRF
 

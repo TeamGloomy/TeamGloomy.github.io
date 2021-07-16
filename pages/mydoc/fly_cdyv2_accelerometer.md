@@ -2,8 +2,8 @@
 title: Connecting an accelerometer to a Fly-CDYv2
 tags: []
 keywords: 
-last_updated: 22/06/2021
-summary: "Connecting an accelerometer to a CDYv2"
+last_updated: 14/07/2021
+summary: "How to connect an accelerometer to a CDYv2"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_accelerometer.html
 folder: mydoc

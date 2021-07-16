@@ -2,8 +2,8 @@
 title: Connecting a 12864 screen to a Fly-407ZG
 tags: []
 keywords: 
-last_updated: 25/05/2021
-summary: "Connecting a 12864 screen to a Fly-407ZG"
+last_updated: 14/07/2021
+summary: "How to connect a 12864 screen to a Fly-407ZG"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_screen_12864.html
 folder: mydoc
@@ -44,7 +44,7 @@ M918 P1 E4 F100000
 Menu files must be uploaded to allow the display to generate the correct information. This can be done in two ways.
 First, obtain the recommended menu files from [here](https://github.com/jadonmmiller/UltimateDuetMenuSystem/releases/)
 
-### Method 1 - Wifi Mode only
+### Method 1 - WiFI Mode only
 
 Extract the contents of the zip file you downloaded above and place them in a folder called "Menu" on the SD card of the Fly-407ZG. 
 

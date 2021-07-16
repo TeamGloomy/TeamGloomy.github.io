@@ -2,8 +2,8 @@
 title: SKR E3 Turbo Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 15/01/2021
-summary: "SKR E3 Turbo Pin Names"
+last_updated: 15/07/2021
+summary: "The pin names of the SKR E3 Turbo in the firmware"
 sidebar: mydoc_sidebar
 permalink: skr_E3T_pins.html
 folder: mydoc
@@ -31,7 +31,8 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).
+Other pin numbers. Either name can be used in the firmware (config.g).  
+If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of P0.1, P0_1, 0.1 or 0_1.  
 
 <div class="datatable-begin"></div>
 
@@ -39,12 +40,6 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 | :------------- |:-------------|:-------------|
 |0.0|eeprom0|SDA1|
 |0.1|eeprom1|SCL1|
-|0.15|P0.15||
-|0.16|P0.16||
-|0.17|P0.17||
-|0.18|P0.18||
-|0.19|P0.19||
-|0.20|P0.20||
 |0.23|e1temp|th1|
 |0.24|e0temp|th0|
 |0.25|bedtemp|tb|
@@ -52,7 +47,7 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |1.21|pson||
 |1.22|probe1||
 |1.23|probe0||
-|1.24|neopixel|P1.24|
+|1.24|neopixel||
 |1.25|e1stop||
 |1.26|e0stop||
 |1.27|zstop||
@@ -63,6 +58,5 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |2.3|e1heat||
 |2.4|e0heat||
 |2.5|bed||
-|2.8|P2.8||
 
 <div class="datatable-end"></div>

@@ -2,8 +2,8 @@
 title: Configuring a BTT Smart Filament Monitor
 tags: []
 keywords: 
-last_updated: 21/01/2021
-summary: "Configuring a BTT Smart Filament Monitor"
+last_updated: 14/07/2021
+summary: "How to configuring a BTT Smart Filament Monitor"
 sidebar: mydoc_sidebar
 permalink: btt_smart_filament.html
 folder: mydoc

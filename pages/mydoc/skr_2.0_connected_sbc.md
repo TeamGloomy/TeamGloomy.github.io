@@ -3,7 +3,7 @@ title: Connecting an SKR v2.0 via SBC
 tags: []
 keywords: 
 last_updated: 09/07/2021
-summary: "Connecting an SKR v2.0 via SBC"
+summary: "How to connect to an SKR v2.0 via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_connected_sbc.html
 folder: mydoc
@@ -61,7 +61,7 @@ The table below shows the pins required on the SBC and what they are connected t
 
 <div class="datatable-end"></div>
 
-Make sure the jumpers are installed next to the wifi headers as shown below. 
+Make sure the jumpers are installed next to the WiFi headers as shown below. 
 
 {% include image.html file="skr_2.0_wifi.PNG" alt="SKR v2.0 WiFi Jumpers" caption="SKR v2.0 WiFi Jumpers" %}
 
@@ -140,7 +140,7 @@ This is an optional step if you only have a single duet3 on your network. It is 
 
 The name of the printer is its hostname on the network, you will need to connect to the SBC over SSH in order to run the Raspberry Pi configuration utility and change the hostname.
 
-{% include note.html content="you cannot currently use the gcode command M550 to set your printer hostname, as you can when using a wifi setup" %}
+{% include note.html content="you cannot currently use the gcode command M550 to set your printer hostname, as you can when using a WiFi setup" %}
 
 1. Connect via ssh
 2. At a command prompt type

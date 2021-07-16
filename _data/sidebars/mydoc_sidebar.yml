@@ -190,7 +190,7 @@ entries:
       output: web, pdf
 
     - title: Configuring an ESP8266 for LPC Boards
-      url: /lpc_esp.html
+      url: /lpc_esp8266.html
       output: web, pdf
 
     - title: Configuring an SBC for LPC Boards
@@ -226,8 +226,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /mks_sbase_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /mks_sbase_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting a Screen
@@ -246,8 +246,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /mks_sgen_l_1_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /mks_sgen_l_1_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC
@@ -270,8 +270,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /mks_sgen_l_2_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /mks_sgen_l_2_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC
@@ -294,8 +294,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /re_arm_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /re_arm_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC
@@ -310,8 +310,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /skr_1.1_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /skr_1.1_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC
@@ -330,8 +330,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /skr_1.3_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /skr_1.3_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC
@@ -358,8 +358,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /skr_1.4_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /skr_1.4_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC
@@ -386,8 +386,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /skr_E3T_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /skr_E3T_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC
@@ -415,7 +415,7 @@ entries:
       output: web, pdf
 
     - title: Configuring an ESP8266 for STM32 Boards
-      url: /stm32_esp.html
+      url: /stm32_esp8266.html
       output: web, pdf
 
     - title: Configuring an SBC for STM32 Boards
@@ -431,8 +431,8 @@ entries:
           url: /fly_407zg_general.html
           output: web, pdf
         
-        - title: Connecting via WiFi
-          url: /fly_407zg_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /fly_407zg_connected_wifi_8266 .html
           output: web, pdf
 
         - title: Alternative WiFi Connection
@@ -583,8 +583,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /gtr_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /gtr_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC
@@ -615,8 +615,8 @@ entries:
         output: web, pdf
         subfolderitems:
 
-        - title: Connecting via WiFi
-          url: /skr_pro_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /skr_pro_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC
@@ -655,8 +655,8 @@ entries:
           url: /skr_2.0_general.html
           output: web, pdf
         
-        - title: Connecting via WiFi
-          url: /skr_2.0_connected_wifi.html
+        - title: Connecting via an ESP8266 WiFi Adapter
+          url: /skr_2.0_connected_wifi_8266.html
           output: web, pdf
 
         - title: Connecting via SBC

@@ -2,8 +2,8 @@
 title: Fly-E3 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 23/06/2021
-summary: "Fly-E3 Pin Names"
+last_updated: 14/07/2021
+summary: "The pin names of the Fly-E3 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pins.html
 folder: mydoc
@@ -31,62 +31,52 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).
+Other pin numbers. Either name can be used in the firmware (config.g).  
+If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  
 
 <div class="datatable-begin"></div>
 
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
-|PA_0|bed|hbed|
-|PA_1|ymin|ystop|
-|PA_2|xmin|xstop|
-|PA_3|bedtemp|tb|
-|PA_4|e0temp|t0|
-|PA_5|e0heat|he0|
-|PA_6|fan1||
-|PA_7|fan0|fan|
-|PA_8|PA8||
-|PA_9|TX1||
-|PA_10|RX1||
-|PA_13|SWDIO||
-|PA_14|SWCLK||
-|PA_15|SDCD||
-|PB_0|servo0||
-|PB_1|lcden||
-|PB_10|PB10||
-|PB_10|FPC1||
-|PB_11|PB11||
-|PB_11|FPC2||
-|PC_0|PC0||
-|PC_1|PC1||
-|PC_2|PC2||
-|PC_3|PC3||
-|PC_4|probe||
-|PC_5|zmin|zstop|
-|PC_6|FPC9||
-|PC_7|PC7||
-|PC_8|SDD0||
-|PC_9|SDD1||
-|PC_10|SDD2||
-|PC_11|SDD3||
-|PC_12|SDSCK||
-|PD_0|FPC10||
-|PD_1|FPC11||
-|PD_2|SDCMD||
-|PD_10|FPC3||
-|PD_11|FPC4||
-|PD_12|FPC5||
-|PD_13|FPC6||
-|PD_14|FPC7||
-|PD_15|FPC8||
-|PE_7|lcdrs||
-|PE_8|lcdd4||
-|PE_9|btnen2||
-|PE_10|btnen1||
-|PE_11|btnenc||
-|PE_12|beep||
-|PE_13|PE13||
-|PE_14|PE14||
-|PE_15|PE15||
+|A.0|bed|hbed|
+|A.1|ymin|ystop|
+|A.2|xmin|xstop|
+|A.3|bedtemp|tb|
+|A.4|e0temp|t0|
+|A.5|e0heat|he0|
+|A.6|fan1||
+|A.7|fan0|fan|
+|A.9|TX1||
+|A.10|RX1||
+|A.13|SWDIO||
+|A.14|SWCLK||
+|A.15|SDCD||
+|B.0|servo0||
+|B.1|lcden||
+|B.10|FPC1||
+|B.11|FPC2||
+|C.4|probe||
+|C.5|zmin|zstop|
+|C.6|FPC9||
+|C.8|SDD0||
+|C.9|SDD1||
+|C.10|SDD2||
+|C.11|SDD3||
+|C.12|SDSCK||
+|D.0|FPC10||
+|D.1|FPC11||
+|D.2|SDCMD||
+|D.10|FPC3||
+|D.11|FPC4||
+|D.12|FPC5||
+|D.13|FPC6||
+|D.14|FPC7||
+|D.15|FPC8||
+|E.7|lcdrs||
+|E.8|lcdd4||
+|E.9|btnen2||
+|E.10|btnen1||
+|E.11|btnenc||
+|E.12|beep||
 
 <div class="datatable-end"></div>

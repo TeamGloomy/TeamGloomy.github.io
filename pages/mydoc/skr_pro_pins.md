@@ -3,7 +3,7 @@ title: SKR Pro v1.1 and v1.2 Pin Names in Firmware
 tags: []
 keywords: 
 last_updated: 15/01/2021
-summary: "SKR Pro v1.1 and v1.2 Pin Names"
+summary: "The pin names of the SKR Pro v1.1 and v1.2 in the firmware"
 sidebar: mydoc_sidebar
 permalink: skr_pro_pins.html
 folder: mydoc
@@ -30,92 +30,50 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0|1|2|3|4|5|
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|:-----|
-|Enable Pins|PF_2|PD_7|PC_0|PC_3|PA_3|PF_0|
-|Step Pins|PE_9|PE_11|PE_13|PE_14|PD_15|PD_13|
-|Direction Pins|PF_1|PE_8|PC_2|PA_0|PE_7|PG_9|
-|UART Pins|PC_13|PE_3|PE_1|PD_4|PD_1|PD_6|
+|Enable Pins|F.2|D.7|C.0|C.3|A.3|F.0|
+|Step Pins|E.9|E.11|E.13|E.14|D.15|D.13|
+|Direction Pins|F.1|E.8|C.2|A.0|E.7|G.9|
+|UART Pins|C.13|E.3|E.1|D.4|D.1|D.6|
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).
+Other pin numbers. Either name can be used in the firmware (config.g).  
+If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  
 
 <div class="datatable-begin"></div>
 
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
-|PA_1| servo0||
-|PA_2| probe||
-|PA_8| PA8||
-|PA_9|PA9||
-|PA_10|PA10||
-|PA_15| X-CS|PA15|
-|PB_0| e2heat|he2|
-|PB_1| e0heat|he0|
-|PB_10| xstop|x-stop|
-|PB_12| PB12||
-|PB_13| PB13||
-|PB_14| PB14||
-|PB_15| PB15||
-|PB_3| E0-CS|PB3|
-|PB_6| PB6||
-|PB_7| PB7||
-|PB_8| Y-CS|PB8|
-|PB_9| Z-CS|PB9|
-|PC_1| PC1||
-|PC_10| PC10||
-|PC_11| PC11||
-|PC_12| PC12||
-|PC_4| PC4||
-|PC_5| PC5||
-|PC_6| wifi4|PC6|
-|PC_7| wifi3|PC7|
-|PC_8| fan0|fan|
-|PC_9| PC9||
-|PD_0| PD0||
-|PD_10| PD10||
-|PD_11| PD11||
-|PD_12| bed|hbed|
-|PD_14| e1heat|he1|
-|PD_2| PD2||
-|PD_3| PD3||
-|PD_5| PD5||
-|PD_8| PD8||
-|PD_9| PD9||
-|PE_0| PE0||
-|PE_10| e1stop|e1det|
-|PE_12| ystop|y-stop|
-|PE_15| e0stop|e0det|
-|PE_2| PE2||
-|PE_4| PE4||
-|PE_5| fan1||
-|PE_6| fan2||
-|PF_10| PF10||
-|PF_11| PF11||
-|PF_12| PF12||
-|PF_13| PF13||
-|PF_14| wifi5|PF14|
-|PF_15| wifi6|PF15|
-|PF_3| e0temp|t0|
-|PF_4| e1temp|t1|
-|PF_5| e2temp|t2|
-|PF_6| bedtemp|t3|
-|PF_7| PF7||
-|PF_8| PF8||
-|PF_9| PF9||
-|PG_0| wifi1|PG0|
-|PG_1| wifi2|PG1|
-|PG_10| PG10||
-|PG_11| PG11||
-|PG_12| E2-CS|PG12|
-|PG_13| PG13||
-|PG_14| PG14||
-|PG_15| E1-CS|PG15|
-|PG_2| PG2||
-|PG_3| PG3||
-|PG_4| PG4||
-|PG_5| e2stop|e2det|
-|PG_6| PG6||
-|PG_7| PG7||
-|PG_8| zstop|z-stop|
+|A.1| servo0||
+|A.2| probe||
+|A.15| X-CS||
+|B.0| e2heat|he2|
+|B.1| e0heat|he0|
+|B.10| xstop|x-stop|
+|B.3| E0-CS||
+|B.8| Y-CS||
+|B.9| Z-CS||
+|C.6| wifi4||
+|C.7| wifi3||
+|C.8| fan0|fan|
+|D.12| bed|hbed|
+|D.14| e1heat|he1|
+|E.10| e1stop|e1det|
+|E.12| ystop|y-stop|
+|E.15| e0stop|e0det|
+|E.5| fan1||
+|E.6| fan2||
+|F.14| wifi5||
+|F.15| wifi6||
+|F.3| e0temp|t0|
+|F.4| e1temp|t1|
+|F.5| e2temp|t2|
+|F.6| bedtemp|t3|
+|G.0| wifi1||
+|G.1| wifi2||
+|G.12| E2-CS||
+|G.15| E1-CS||
+|G.5| e2stop|e2det|
+|G.8| zstop|z-stop|
 
 <div class="datatable-end"></div>

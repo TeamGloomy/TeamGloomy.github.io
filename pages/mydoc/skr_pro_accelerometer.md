@@ -2,8 +2,8 @@
 title: Connecting an accelerometer to an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
-last_updated: 22/06/2021
-summary: "Connecting an accelerometer to an SKR Pro v1.1 and v1.2"
+last_updated: 15/07/2021
+summary: "How to connect an accelerometer to an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
 permalink: skr_pro_accelerometer.html
 folder: mydoc

@@ -2,8 +2,8 @@
 title: Connecting a screen to a Fly-E3-Pro
 tags: []
 keywords: 
-last_updated: 15/01/2021
-summary: "Connecting a screen to a Fly-E3-Pro"
+last_updated: 14/07/2021
+summary: "How to connect a serial screen to a Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_screen.html
 folder: mydoc
@@ -22,7 +22,7 @@ These instructions cover serial screens. Instructions for 12864 screens can be f
 To enable a screen to function correctly, the following lines need to be added to the board.txt file.  
 
 ```
-serial.aux.rxTxPins = {A.10, A.9}
+serial.aux.rxTxPins = { A.10, A.9 }
 ```
 
 <ul id="profileTabs" class="nav nav-tabs">

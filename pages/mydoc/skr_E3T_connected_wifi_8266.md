@@ -1,11 +1,11 @@
 ---
-title: Connecting an MKS SGen L v2.0 via Wifi
+title: Connecting an SKR E3 Turbo via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 10/05/2021
-summary: "Connecting an MKS SGen L v2.0 via Wifi"
+last_updated: 15/07/2021
+summary: "How to connect an SKR E3 Turbo via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: mks_sgen_l_2_connected_wifi.html
+permalink: skr_E3T_connected_wifi_8266.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,17 +14,17 @@ datatable: true
 
 ## Overview
 
-The MKS SGen L v2.0 is an LPC1769 based board.
+The SKR E3 Turbo is an LPC1769 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin.  Put it in the root of a FAT32 formatted SD card.   
+Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
-## Wifi
+## ESP8266 WiFi
 
-Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB. 
+Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
-{% include tip.html content="If you would prefer a premade adapter to enable WiFi, TeamGloomy have created a plugin WiFi adapter board for the MKS SGen L v1.0. It can be purchased on tindie [here](https://www.tindie.com/products/pcr/reprapfirmware-wifi-adapterboard-for-mks-sgen-l/) " %}
+{% include tip.html content="If you would prefer a premade adapter to enable WiFi, TeamGloomy have created a plugin WiFi adapter board for the SKR E3 Turbo. It can be purchased on tindie [here](https://www.tindie.com/products/pcr/reprapfirmware-wifi-adapterboard-for-skr-e3-turbo/) " %}
 
 ### BOM
 
@@ -32,29 +32,29 @@ Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allo
 * 3 x 47R resistor
 * 1 x 470R resistor
 * 3 x 2200R resistor
-* jumpers or other ways of connecting to the MKS SGen L v2.0
+* jumpers or other ways of connecting to the SKR
 
-### Preparing the ESP
+### Preparing the ESP8266
 
-Follow the instructions [here](lpc_esp.html).
+Follow the instructions [here](https://github.com/gloomyandy/RepRapFirmware/wiki/ESP8266-LPC).
 
-### Connecting the ESP
+### Connecting the ESP8266
 
-The pinout for the MKS SGen L V2.0 can be found [here](https://github.com/makerbase-mks/MKS-SGEN_L-V2/blob/master/Hardware/MKS%20SGEN_L%20V2.0_002/MKS%20SGEN_L%20V2.0_002%20PIN.pdf) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+The pinout for the SKR E3 Turbo can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-E3-Turbo/blob/master/Hardware/BTT%20SKR%20E3%20Turbo-Pin.pdf) and the schematic for the Duet 2 WiFi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
 
-The table below shows the pins required on the ESP and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
+The table below shows the pins required on the ESP8266 and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
 <div class="datatable-begin"></div>
 
-| ESP Pin       | MKS SGen Pin       | Resistor Value  |
+| ESP8266 Pin       | SKR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
-| RST           | 1.31 on EXP1         | 470R            |
+| RST           | 2.8 on EXP1         | 470R            |
 | CS/GPIO15     | 0.16 on EXP1         | 2200R           |
 | MOSI/GPIO13   | 0.18 on EXP1         | 47R             |
 | MISO/GPIO12   | 0.17 on EXP1         | 47R             |
 | SCLK/GPIO14  | 0.15 on EXP1         | 47R             |
-| ESP_DATA_Ready/GPIO0   | 0.28 on EXP2         | 2200R             |
-| LPC_DATA_Ready/GPIO4   | 1.30 on EXP1         | None            |
+| ESP_DATA_Ready/GPIO0   | 0.19 on EXP1         | 2200R             |
+| LPC_DATA_Ready/GPIO4   | 0.20 on EXP1         | None            |
 | VIN(5v)   | 5v on EXP1          | None             |
 | GND   | GND on EXP1          | 2200R to RST             |
 
@@ -69,21 +69,21 @@ Follow the instructions on [Getting Started with RRF3](getting_started.html)
 You will also need a board.txt file in the sys folder. Below are the contents that should be used. 
 
 ```
-//Config for MKS SGen L v2.0
-board = mkssgenl_2.0
-//wifi pins
-8266wifi.espDataReadyPin = 0.28
-8266wifi.TfrReadyPin = 1.30
-8266wifi.espResetPin = 1.31
-heat.tempSensePins = { 0.24, 0.23, 0.25 }
+//Config for SKR E3 Turbo
+board = biquskr_e3t
+//WiFi pins
+8266wifi.espDataReadyPin = 0.19
+8266wifi.TfrReadyPin = 0.20
+8266wifi.espResetPin = 2.8
+heat.tempSensePins = { 0.25, 0.24, 0.23 }
 ```
 
 ### Updating the ESP8266 by RRF
 
-If you have a WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.    
+If you have a WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
 ```
-8266wifi.serialRxTxPins = {4.29, 4.28}
-serial.aux.rxTxPins = { 0.3, 0.2 }
+8266wifi.serialRxTxPins = { 0.3, 0.2 } 
+serial.aux.rxTxPins = { nopin, nopin }
 ```
 
 #### Smart Drivers
@@ -92,26 +92,26 @@ If using TMC22XX drivers (thats either the TMC2208, TMC2209, TMC2225 or TMC2226)
 ```
 stepper.numSmartDrivers = X
 ```
-Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the MKS SGen L board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.  
+Where X is the number of drivers fitted. The drivers must be continuous and start at unit 0. So, for the SKR board, if you have say 3 TMC2208s and 1 other driver, the 2208s must be in slots 0, 1, 2 and the remainiong driver in slot 3 or 4. You can use RRF to assign any of those slots to an axis/extruder.  
 
 #### Sensorless Homing
 
 If using sensorless homing/stall detection (supported by only the TMC2209 or TMC2226), the following line must be added to the board.txt file.
 ```
-stepper.TmcDiagPins = {1.29, 1.27, 1.25, 1.28, 1.26}
+stepper.TmcDiagPins = { 1.29, 1.28, 1.27, 1.26, 1.25 }
 ```
-Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.27 in your board.txt file.  
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.28 in your board.txt file.  
 For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 #### Driver Diag Pin
 
 The driver diag pin is used for sensorless homing and stall detection.  
-The MKS-SGen L v2.0 **does not** have a way of disabling the diag pin.
+The SKR E3 Turbo **does not** have a way of disabling the diag pin.
 If you plan on using endstops rather than sensorless homing, you need to bend or remove the diag pin.  
 
 ### Board.txt Location
 
-Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the MKS SGen L v2.0.   
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the SKR E3 Turbo.
 
 ### Final Setup
 
@@ -127,9 +127,9 @@ M552 S1
 
 {% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}
 
-The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
+The blue light on the WiFi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 
-The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the wifi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP chip.  
+The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the WiFi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP8266 chip.  
 
 ### Once up and running
 

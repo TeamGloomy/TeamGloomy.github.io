@@ -2,8 +2,8 @@
 title: Connecting an accelerometer to a GTR
 tags: []
 keywords: 
-last_updated: 22/06/2021
-summary: "Connecting an accelerometer to a GTR"
+last_updated: 14/07/2021
+summary: "How to connect an accelerometer to a GTR"
 sidebar: mydoc_sidebar
 permalink: gtr_accelerometer.html
 folder: mydoc
@@ -46,7 +46,7 @@ The accelerometer should be mounted firmly to the tool. For a bed slinger (such 
 
 Add the following to board.txt
 ```
-SPI5.pins = {H.13,I.8,I.9}
+SPI5.pins = { H.13, I.8, I.9 }
 accelerometer.spiChannel = 5
 ```
 

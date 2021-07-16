@@ -2,8 +2,8 @@
 title: Exec on MCode Guide
 tags: []
 keywords: 
-last_updated: 25/01/2021
-summary: "Exec on MCode Guide"
+last_updated: 14/07/2021
+summary: "Exec on MCode installation Guide"
 sidebar: mydoc_sidebar
 permalink: execonmcode.html
 folder: mydoc

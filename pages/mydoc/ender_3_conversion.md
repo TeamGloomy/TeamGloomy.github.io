@@ -217,7 +217,7 @@ Then type in the following
 ```
 M997 S1
 ```
-Wait for the uploading of the wifi firmware to finish. Then send the following
+Wait for the uploading of the WiFi firmware to finish. Then send the following
 ```
 M552 S0
 M587 S"your SSID" P"your password"

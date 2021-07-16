@@ -2,8 +2,8 @@
 title: Connecting a BTT-MOT-EXP to an SKR v2.0
 tags: []
 keywords: 
-last_updated: 23/05/2021
-summary: "Connecting a BTT-MOT-EXP to an SKR v2.0"
+last_updated: 15/07/2021
+summary: "How to connect a BTT-MOT-EXP to an SKR v2.0"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_btt_mot_exp.html
 folder: mydoc
@@ -31,10 +31,10 @@ stepper.numSmartDrivers = 8
 
 Please add the following lines to the board.txt.  
 ```
-stepper.enablePins = {E.3, D.6, D.1, C.7, D.13, C.4, E.13, E.12}
-stepper.stepPins = {E.2, D.5, A.15, D.15, D.11, A.7, E.7, A.6}
-stepper.directionPins = {E.1, D.4, A.8, D.14, D.10, B.2, A.4, A.5}
-stepper.TmcUartPins = {E.0, D.3, D.0, C.6, D.12, E.11, B.9, B.0}
+stepper.enablePins = { E.3, D.6, D.1, C.7, D.13, C.4, E.13, E.12 }
+stepper.stepPins = { E.2, D.5, A.15, D.15, D.11, A.7, E.7, A.6 }
+stepper.directionPins = { E.1, D.4, A.8, D.14, D.10, B.2, A.4, A.5 }
+stepper.TmcUartPins = { E.0, D.3, D.0, C.6, D.12, E.11, B.9, B.0 }
 ```
 
 ## Sensorless Homing
@@ -42,7 +42,7 @@ stepper.TmcUartPins = {E.0, D.3, D.0, C.6, D.12, E.11, B.9, B.0}
 **Supported by only the TMC2209, TMC2226 and TMC5160**
 If using sensorless homing/stall detection on the BTT-MOT-EXP with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
-stepper.TmcDiagPins = {C.1, C.3, C.0, C.2, A.0, E.10, B.1, C.5}
+stepper.TmcDiagPins = { C.1, C.3, C.0, C.2, A.0, E.10, B.1, C.5 }
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include F.2 and C.13 in your board.txt file.  

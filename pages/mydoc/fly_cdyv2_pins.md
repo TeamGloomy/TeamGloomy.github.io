@@ -2,8 +2,8 @@
 title: Fly-CDYv2 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 25/05/2021
-summary: "Fly-CDYv2 Pin Names"
+last_updated: 14/07/2021
+summary: "The pin names of the Fly-CDYv2 used in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_pins.html
 folder: mydoc
@@ -32,7 +32,8 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).
+Other pin numbers. Either name can be used in the firmware (config.g).  
+If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  
 
 <div class="datatable-begin"></div>
 
@@ -65,22 +66,19 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |E.13|tfcd||
 |A.9|TX1|btnenc|
 |A.10|RX1|lcdrs|
-|D.8|PD8|btnen2|
-|D.9|PD9|btnen1|
-|E.10|PE10||
-|E.11|PE11||
-|E.12|PE12||
-|A.4|PA4|SPI1SDCS|
-|A.5|PA5|SPI1SCK|
-|A.6|PA6|SPI1MISO|
-|A.7|PA7|SPI1MOSI|
-|E.7|PE7|SPI1CS1|
-|E.8|PE8|SPI1CS2|
-|B.3|PB3|MOTSCK|
-|B.4|PB4|MOTMISO|
-|B.5|PB5|MOTMOSI|
+|D.8|btnen2||
+|D.9|btnen1||
+|A.4|SPI1SDCS||
+|A.5|SPI1SCK||
+|A.6|SPI1MISO||
+|A.7|SPI1MOSI||
+|E.7|SPI1CS1||
+|E.8|SPI1CS2||
+|B.3|MOTSCK||
+|B.4|MOTMISO||
+|B.5|MOTMOSI||
 |D.15|Neopixel|LED|
-|B.9|PB9|Laser|
+|B.9|Laser||
 |C.3|Power_ADC|PC3|
 
 <div class="datatable-end"></div>

@@ -2,8 +2,8 @@
 title: SKR v2.0 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 15/01/2021
-summary: "SKR v2.0 Pin Names"
+last_updated: 15/07/2021
+summary: "The pin names of the SKR v2.0 in the firmware"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_pins.html
 folder: mydoc
@@ -24,67 +24,59 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0|1|2|3|4|
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
-|Enable Pins|PE_3| PD_6| PD_1| PC_7| PD_13|
-|Step Pins|PE_2| PD_5| PA_15| PD_15| PD_11|
-|Direction Pins|PE_1| PD_4| PA_8| PD_14| PD_10|
-|UART Pins|PE_0| PD_3| PD_0| PC_6| PD_12|
+|Enable Pins|E.3| D.6| D.1| C.7| D.13|
+|Step Pins|E.2| D.5| A.15| D.15| D.11|
+|Direction Pins|E.1| D.4| A.8| D.14| D.10|
+|UART Pins|E.0| D.3| D.0| C.6| D.12|
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).
+Other pin numbers. Either name can be used in the firmware (config.g).  
+If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  
 
 <div class="datatable-begin"></div>
 
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
-|PA_1|bedtemp|tb|
-|PA_2|e0temp|th0|
-|PA_3|e1temp|th1|
-|PC_1|xstop|x-stop|
-|PC_3|ystop|y-stop|
-|PC_0|zstop|z-stop|
-|PC_2|e0stop|e0det|
-|PA_0|e1stop|e1det|
-|PE_5|servo0||
-|PE_4|probe||
-|PD_7|bed|hbed|
-|PB_3|e0heat|heat0|
-|PB_4|e1heat|heat1|
-|PB_7|fan0|fan|
-|PB_6|fan1||
-|PB_5|fan2||
-|PE_9|LCDCS||
-|PB_2|LCDENCA||
-|PE_7|LCDENCB||
-|PC_5|LCDBEEP||
-|PB_0|LCDBTN||
-|PE_10|LCDD4||
-|PB_1|LCDEN||
-|PE_6|Neopixel|PE6|
-|PA_9|TX1|tft-tx|
-|PA_10|RX1|tft-rx|
-|PD_8|PD8||
-|PD_9|PD9||
-|PE_0|X-CS|PE0|
-|PD_3|Y-CS|PD3|
-|PD_0|Z-CS|PD0|
-|PC_6|E0-CS|PC6|
-|PD_12|E1-CS|PD12|
-|PA_14|MISO|PA14|
-|PE_14|MOSI|PE14|
-|PE_15|SCK|PE15|
-|PB_8|SCL1|PB8|
-|PB_9|SDA1|PB9|
-|PC_14|PC14| //RST|
-|PB_10|PB10| //IO0|
-|PB_11|PB11| //IO4|
-|PB_12|PB12| //CS|
-|PB_13|PB13| //CLK|
-|PB_14|PB14| //MISO|
-|PB_15|PB15| //MOSI|
-|PE_8|PSON|PE8|
-|PC_15|PWRDET|PC15|
-|PA_13|LED|PA13|
-|PC_13|SP|PC13|
+|A.1|bedtemp|tb|
+|A.2|e0temp|th0|
+|A.3|e1temp|th1|
+|C.1|xstop|x-stop|
+|C.3|ystop|y-stop|
+|C.0|zstop|z-stop|
+|C.2|e0stop|e0det|
+|A.0|e1stop|e1det|
+|E.5|servo0||
+|E.4|probe||
+|D.7|bed|hbed|
+|B.3|e0heat|heat0|
+|B.4|e1heat|heat1|
+|B.7|fan0|fan|
+|B.6|fan1||
+|B.5|fan2||
+|E.9|LCDCS||
+|B.2|LCDENCA||
+|E.7|LCDENCB||
+|C.5|LCDBEEP||
+|B.0|LCDBTN||
+|E.10|LCDD4||
+|B.1|LCDEN||
+|E.6|Neopixel||
+|A.9|TX1|tft-tx|
+|A.10|RX1|tft-rx|
+|E.0|X-CS||
+|D.3|Y-CS||
+|D.0|Z-CS||
+|C.6|E0-CS||
+|D.12|E1-CS||
+|A.14|MISO||
+|E.14|MOSI||
+|E.15|SCK||
+|B.8|SCL1||
+|B.9|SDA1||
+|E.8|PSON||
+|C.15|PWRDET||
+|A.13|LED||
+|C.13|SP||
 
 <div class="datatable-end"></div>

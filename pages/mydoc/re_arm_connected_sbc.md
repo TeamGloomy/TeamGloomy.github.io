@@ -2,8 +2,8 @@
 title: Connecting a Re-Arm via SBC
 tags: []
 keywords: 
-last_updated: 10/05/2021
-summary: "Connecting a Re-Arm via SBC"
+last_updated: 15/07/2021
+summary: "How to connect to a Re-Arm via an SBC"
 sidebar: mydoc_sidebar
 permalink: re_arm_connected_sbc.html
 folder: mydoc
@@ -94,7 +94,7 @@ This is an optional step if you only have a single duet3 on your network. It is 
 
 The name of the printer is its hostname on the network, you will need to connect to the SBC over SSH in order to run the Raspberry Pi configuration utility and change the hostname.
 
-{% include note.html content="you cannot currently use the gcode command M550 to set your printer hostname, as you can when using a wifi setup" %}
+{% include note.html content="you cannot currently use the gcode command M550 to set your printer hostname, as you can when using a WiFi setup" %}
 
 1. Connect via ssh
 2. At a command prompt type

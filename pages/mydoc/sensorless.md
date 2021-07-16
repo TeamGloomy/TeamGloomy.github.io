@@ -2,7 +2,7 @@
 title:  Sensorless Homing and Stall Detection
 tags: 
 keywords: 
-last_updated: 11/03/2021
+last_updated: 15/07/2021
 summary: "Sensorless Homing and Stall Detection"
 sidebar: mydoc_sidebar
 permalink: sensorless.html
@@ -15,10 +15,13 @@ Sensorless homing and stall detection is now functional for the TMC2209's and TM
 * Fly-CDY
 * Fly-CDYv2
 * Fly-E3
+* Fly-E3-Pro
+* Fysetc Spider 407 version
 * MKS SGen L v1
 * MKS SGen L v2
 * SKR 1.3
 * SKR 1.4
+* SKR 2.0
 * SKR E3 Turbo
 * SKR GTR
 * SKR Pro
@@ -35,7 +38,7 @@ To use the new TMC2209 and TMC2226 features, an addition to the board.txt file i
 `stepper.TmcDiagPins = {pin 0, pin 1, ...}`
 where "pin 0" is the DIAG pin for drive 0. By default no pins are defined and if you do not want to use stall detection for a drive set the pin to NoPin.  
 
-The correct pins in the correct order have been included in the board.txt section on each of the supported boards wiki pages for both wifi and SBC configurations.  
+The correct pins in the correct order have been included in the board.txt section on each of the supported boards wiki pages for both WiFi and SBC configurations.  
 
 ### Config.g Changes
 

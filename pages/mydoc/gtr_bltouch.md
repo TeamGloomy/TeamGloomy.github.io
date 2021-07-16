@@ -2,8 +2,8 @@
 title: Connecting a BLTouch to a GTR
 tags: []
 keywords: 
-last_updated: 22/04/2021
-summary: "Connecting a BLTouch to a GTR"
+last_updated: 14/07/2021
+summary: "How to connect a BLTouch to a GTR"
 sidebar: mydoc_sidebar
 permalink: gtr_bltouch.html
 folder: mydoc
@@ -22,9 +22,9 @@ Connect the BLTouch to the GTR as described in the table below.
 |:---|:---|:---|
 |Brown|GND||
 |Red|NPWR||
-|Yellow|PB11|Servo0|
+|Yellow|B.11|Servo0|
 |Black|GND||
-|White|PH11|Probe|
+|White|H.11|Probe|
 
 {% include image.html file="gtr_bltouch.png" alt="GTR BLTouch" caption="GTR BLTouch Connection" %}
 
@@ -35,7 +35,7 @@ Connect the BLTouch to the GTR as described in the table below.
 Your config.g should be modified as below.
 ```
 M558 P9 H6 F120 T8000 C"^probe"       ; set Z probe type to bltouch and the dive height + speeds
-M950 S0 C"servo0"                              ; Setup servo 0 as servo port on SKR
+M950 S0 C"servo0"                              ; Setup servo 0 as servo port on GTR
 ```
 
 You will also need to set up your probe offset using [G31](https://duet3d.dozuki.com/Wiki/Gcode#Section_G31_Set_or_Report_Current_Probe_status) and your [mesh probing grid](https://duet3d.dozuki.com/Wiki/Gcode#Section_M557_Set_Z_probe_point_or_define_probing_grid)

@@ -3,7 +3,7 @@ title: Connecting a BLTouch to an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
 last_updated: 22/04/2021
-summary: "Connecting a BLTouch to an SKR Pro v1.1 and v1.2"
+summary: "How to connect a BLTouch to an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
 permalink: skr_pro_bltouch.html
 folder: mydoc
@@ -23,10 +23,10 @@ Connect the BLTouch to the SKR SKR Pro v1.1 and v1.2 as described in the table b
 |BLTouch Wire Colour|SKR Pro|SKR Pro Pin Name|
 |:---|:---|:---|
 |Brown|GND|on Extension 2|
-|Red|5v||
-|Yellow|PA.1|Servo0|
+|Red|+5v||
+|Yellow|A.1|Servo0|
 |Black|GND||
-|White|PA.2|probe|
+|White|A.2|probe|
 
 {% include image.html file="skr_pro_bltouch.png" alt="SKR SKR Pro v1.1 and v1.2 BLTouch" caption="SKR SKR Pro v1.1 and v1.2 BLTouch Connection" %}
 
@@ -37,7 +37,7 @@ Connect the BLTouch to the SKR SKR Pro v1.1 and v1.2 as described in the table b
 Your config.g should be modified as below.
 ```
 M558 P9 H6 F120 T8000 C"^probe"       ; set Z probe type to bltouch and the dive height + speeds
-M950 S0 C"servo0"                              ; Setup servo 0 as servo port on SKR
+M950 S0 C"servo0"                              ; Setup servo 0 as servo port on SKR Pro
 ```
 
 You will also need to set up your probe offset using [G31](https://duet3d.dozuki.com/Wiki/Gcode#Section_G31_Set_or_Report_Current_Probe_status) and your [mesh probing grid](https://duet3d.dozuki.com/Wiki/Gcode#Section_M557_Set_Z_probe_point_or_define_probing_grid)

@@ -2,8 +2,8 @@
 title: Driver Timings
 tags: []
 keywords: 
-last_updated: 15/01/2021
-summary: "Driver Timings"
+last_updated:14/07/2021
+summary: "Driver timings required for certain drivers"
 sidebar: mydoc_sidebar
 permalink: driver_timings.html
 folder: mydoc

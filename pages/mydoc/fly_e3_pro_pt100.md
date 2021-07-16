@@ -2,8 +2,8 @@
 title: Connecting a PT100 or Type 'K' Thermocouple to a Fly-E3-Pro
 tags: []
 keywords: 
-last_updated: 04/02/2021
-summary: "Connecting a PT100 or Type 'K' Thermocouple to a Fly-E3-Pro"
+last_updated: 14/07/2021
+summary: "How to connect a PT100 or Type 'K' Thermocouple to a Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_pt100.html
 folder: mydoc
@@ -28,9 +28,9 @@ If your board has the chip shown below in red, you have 'K' type thermocouple su
 The following lines should be added to the board.txt file.
 
 ```
-SPI3.pins = {D.14 D.12 D.13}
+SPI3.pins = { D.14, D.12, D.13 }
 heat.spiTempSensorChannel = 3
-heat.spiTempSensorCSPins = {D.15 C.7}
+heat.spiTempSensorCSPins = { D.15, C.7 }
 ```
 
 ## Config.g changes

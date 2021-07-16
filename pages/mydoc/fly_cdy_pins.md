@@ -32,7 +32,8 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).
+Other pin numbers. Either name can be used in the firmware (config.g).  
+If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of P0.1, P0_1, 0.1 or 0_1.  
 
 <div class="datatable-begin"></div>
 
@@ -40,21 +41,10 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 | :------------- |:-------------|:-------------|
 |0.0|wifi2|P0.0|
 |0.1|wifi1|P0.1|
-|0.2|P0.2||
-|0.3|P0.3||
-|0.15|P0.15||
-|0.16|P0.16||
-|0.17|P0.17||
-|0.18|P0.18||
-|0.19|P0.19||
-|0.20|P0.20||
-|0.21|P0.21||
-|0.22|P0.22||
 |0.23|bedtemp|tb|
 |0.24|e2temp|t2|
 |0.25|e1temp|t1|
 |0.26|e0temp|t0|
-|0.28|P0.28||
 |1.18|fan0||
 |1.19|zstopmax|zmax|
 |1.20|e1heat||
@@ -67,12 +57,6 @@ Other pin numbers. Either name can be used in the firmware (config.g).
 |1.27|ystop|ymin|
 |1.28|xstopmax|xmax|
 |1.29|xstop|xmin|
-|1.30|P1.30||
-|1.31|P1.31||
-|2.6|P2.6||
-|2.7|P2.7||
-|2.8|P2.8||
-|P2.10|P2.10||
 |3.25|e0heat||
 |3.26|bed||
 

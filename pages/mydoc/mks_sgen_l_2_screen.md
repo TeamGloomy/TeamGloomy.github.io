@@ -2,8 +2,8 @@
 title: Connecting a screen to an MKS SGen L v2.0
 tags: []
 keywords: 
-last_updated: 15/01/2021
-summary: "Connecting a screen to an MKS SGen L v2.0"
+last_updated: 15/07/2021
+summary: "How to connect a serial screen to an MKS SGen L v2.0"
 sidebar: mydoc_sidebar
 permalink: mks_sgen_l_2_screen.html
 folder: mydoc
@@ -21,7 +21,7 @@ Only screens that use a serial connection can be connected to the MKS SGen L v2.
 To enable a screen to function correctly, the following lines need to be added to the board.txt file.  
 
 ```
-serial.aux.rxTxPins = {0.3, 0.2}
+serial.aux.rxTxPins = { 0.3, 0.2 }
 ```
 
 <ul id="profileTabs" class="nav nav-tabs">

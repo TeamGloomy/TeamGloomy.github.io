@@ -1,9 +1,9 @@
 ---
-title: Connecting a screen to an SKR v1.4
+title: Connecting a screen to an SKR v1.4 and SKR v1.4T
 tags: []
 keywords: 
-last_updated: 15/01/2021
-summary: "Connecting a screen to an SKR v1.4"
+last_updated: 15/07/2021
+summary: "How to connect a serial screen to an SKR v1.4 and SKR v1.4T"
 sidebar: mydoc_sidebar
 permalink: skr_1.4_screen.html
 folder: mydoc
@@ -21,7 +21,7 @@ Only screens that use a serial connection can be connected to the SKR v1.4
 To enable a screen to function correctly, the following lines need to be added to the board.txt file.  
 
 ```
-serial.aux.rxTxPins = {0.3, 0.2}
+serial.aux.rxTxPins = { 0.3, 0.2 }
 ```
 
 <ul id="profileTabs" class="nav nav-tabs">

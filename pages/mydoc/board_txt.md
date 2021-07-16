@@ -2,8 +2,8 @@
 title: Board.txt Configurables Applicable to LPC and STM32
 tags: []
 keywords: 
-last_updated: 20/06/2021
-summary: "Board.txt Configurables Applicable to LPC and STM32"
+last_updated: 14/07/2021
+summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt.html
 folder: mydoc

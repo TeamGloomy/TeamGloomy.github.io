@@ -1,11 +1,11 @@
 ---
-title: Connecting an SKR v2.0 via Wifi
+title: Connecting an SKR v2.0 via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 09/07/2021
-summary: "Connecting an SKR v2.0 via Wifi"
+last_updated: 15/07/2021
+summary: "How to connect to an SKR v2.0 via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: skr_2.0_connected_wifi.html
+permalink: skr_2.0_connected_wifi_8266.html
 folder: mydoc
 comments: false
 toc: false
@@ -25,11 +25,11 @@ Choose the correct corresponding firmware (DuetWiFiServer-stm32f4.bin) from [her
 
 {% include important.html content="From 3.3, the DuetWiFiServer.bin file needs to be placed in a folder called firmware. This folder should be placed in the root of the SD card."%}  
 
-## Wifi
+## ESP8266 WiFi
 
-You will need a BTT or MKS produced wifi module.  
+You will need a BTT or MKS produced ESP8266 WiFi module.  
 
-Make sure the jumpers are installed next to the wifi headers as shown below. 
+Make sure the jumpers are installed next to the WiFi headers as shown below. 
 
 {% include image.html file="skr_2.0_wifi.PNG" alt="SKR v2.0 WiFi Jumpers" caption="SKR v2.0 WiFi Jumpers" %}
 
@@ -44,14 +44,14 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 ```
 //Config for BIQU SKR v2.0
 board = biquskr_2.0
-//wifi pins
-8266wifi.espDataReadyPin = PB.10;
-8266wifi.TfrReadyPin = PB.11;
-8266wifi.espResetPin = PC.14;
-//ESP RX/TX Settings
-8266wifi.serialRxTxPins = { PD.9, PD.8 } ;
-serial.aux.rxTxPins = { PA.10, PA.9 };
-heat.tempSensePins = { PD.7, PB.3, PB.4 }
+//WiFi pins
+8266wifi.espDataReadyPin = B.10;
+8266wifi.TfrReadyPin = B.11;
+8266wifi.espResetPin = C.14;
+//ESP8266 RX/TX Settings
+8266wifi.serialRxTxPins = { D.9, D.8 } ;
+serial.aux.rxTxPins = { A.10, A.9 };
+heat.tempSensePins = { D.7, B.3, B.4 }
 ```
 
 ### Smart Drivers
@@ -81,7 +81,7 @@ Where X is the number of TMC5160 drivers fitted. The drivers must be continuous 
 **Supported by only the TMC2209, TMC2226 and TMC5160**
 If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
-stepper.TmcDiagPins = {C.1, C.3, C.0, C.2, A.0}
+stepper.TmcDiagPins = { C.1, C.3, C.0, C.2, A.0 }
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include F.2 and C.13 in your board.txt file.  
@@ -104,7 +104,7 @@ Once connected, power up the board using 12-24v and connect to the USB port on t
 ```
 M997 S1
 ```
-Wait for the uploading of the wifi firmware to finish. Then send the following
+Wait for the uploading of the WiFi firmware to finish. Then send the following
 ```
 M552 S-1
 M552 S0
@@ -116,9 +116,9 @@ M552 S1
 
 {% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}
 
-The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
+The blue light on the WiFi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 
-The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the wifi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP chip.  
+The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the WiFi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP8266 chip.  
 
 ### Once up and running
 

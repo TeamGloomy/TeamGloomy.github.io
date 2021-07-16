@@ -24,7 +24,7 @@ The latest stable version is [3.2.2_2](https://github.com/gloomyandy/RepRapFirmw
 
 The latest beta/unstable version is [3.3_2](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.3_2)
 
-## Latest Wifi Firmware Versions
+## Latest WiFi Firmware Versions
 
 ### Latest Stable
 

@@ -2,8 +2,8 @@
 title: Connecting a screen to a GTR
 tags: []
 keywords: 
-last_updated: 15/01/2021
-summary: "Connecting a screen to a GTR"
+last_updated: 15/07/2021
+summary: "How to connect a serial screen to a GTR"
 sidebar: mydoc_sidebar
 permalink: gtr_screen.html
 folder: mydoc
@@ -22,7 +22,7 @@ These instructions cover serial screens. Instructions for 12864 screens can be f
 To enable a screen to function correctly, the following lines need to be added to the board.txt file.  
 
 ```
-serial.aux.rxTxPins = {PD_9, PD_8}
+serial.aux.rxTxPins = { D.9, D.8 }
 ```
 
 <ul id="profileTabs" class="nav nav-tabs">

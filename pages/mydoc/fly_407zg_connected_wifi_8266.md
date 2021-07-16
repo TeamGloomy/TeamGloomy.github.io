@@ -1,11 +1,11 @@
 ---
-title: Connecting a Fly-407ZG via Wifi
+title: Connecting a Fly-407ZG via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 23/06/2021
-summary: "Connecting a Fly-407ZG via Wifi"
+last_updated: 14/07/2021
+summary: "How to connect to a Fly-407ZG via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: fly_407zg_connected_wifi.html
+permalink: fly_407zg_connected_wifi_8266s.html
 folder: mydoc
 comments: false
 toc: false
@@ -20,7 +20,7 @@ The Fly-407ZG is an STM32F407ZGT6 based board.
 
 Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.
 
-## Wifi
+## WiFi
 
 Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
@@ -32,13 +32,13 @@ Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allo
 * 3 x 2200R resistor
 * jumpers or other ways of connecting to the Fly-407ZG
 
-### Preparing the ESP
+### Preparing the ESP8266
 
 Follow the instructions [here](stm32_esp.html).
 
-### Connecting the ESP
+### Connecting the ESP8266
 
-The pinout for the Fly-407ZG can be found [here](https://github.com/FLYmaker/FLYF407ZG/blob/master/picture/Pin%20diagram.png) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+The pinout for the Fly-407ZG can be found [here](https://github.com/FLYmaker/FLYF407ZG/blob/master/picture/Pin%20diagram.png) and the schematic for the Duet 2 WiFI for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
 
 The table below shows the pins required on the ESP8266 and what they are connected to on the Fly-407ZG. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
@@ -46,7 +46,7 @@ There is an alternative method of connecting the ESP8266 detailed [here](/fly_40
 
 <div class="datatable-begin"></div>
 
-| ESP Pin       | Fly-407ZG Pin       | Resistor Value  |
+| ESP8266 Pin       | Fly-407ZG Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | RST           | PB2 on EXP2         | 470R            |
 | CS/GPIO15     | PF11 on EXP2         | 2200R           |
@@ -62,7 +62,7 @@ There is an alternative method of connecting the ESP8266 detailed [here](/fly_40
 
 {% include warning.html content="The cables used need to be very very short. Even 10cm ones don't work so they must be shorter than that" %}
 
-If you would rather use a pre-made wifi board, then the one produced by [flymaker](https://www.aliexpress.com/item/1005001370540066.html) is recommended.  
+If you would rather use a pre-made WiFI board, then the one produced by [flymaker](https://www.aliexpress.com/item/1005001370540066.html) is recommended.  
 
 ### Prepare the SD Card
 
@@ -84,7 +84,7 @@ heat.tempSensePins = { F.3, A.0, C.1, C.0, F.10, F.5, F.4 }
 
 ### Updating the ESP8266 by RRF
 
-If you have a WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
+If you have an ESP8266 WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
 ```
 8266wifi.serialRxTxPins = { A.10, A.9 }
 serial.aux.rxTxPins = { nopin, nopin }
@@ -104,7 +104,7 @@ The drivers must be continuous and start at unit 0 (unless TMC5160 are also used
 
 #### TMC5160 SPI Drivers
 
-The Fly-407ZG is the only STM32 board that can't be used with 5160 drivers. This is due to them sharing the SPI pins used to also gain SBC support.
+The Fly-407ZG is the only STM32 board that can't be used with 5160 drivers when using an ESP8266 WiFi adapter using the standard connection method. This is due to them sharing the SPI pins used to also gain SBC support. You need to connect the ESP8266 via the [alternative method](./fly_407zg_alternative_esp.html).  
 
 #### Sensorless Homing
 
@@ -129,9 +129,9 @@ M552 S1
 
 {% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}
 
-The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
+The blue light on the WiFi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 
-The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the wifi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP chip.
+The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the WiFi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP8266 chip.
 
 ### Once up and running
 

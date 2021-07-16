@@ -2,8 +2,8 @@
 title: Connecting a BTT-MOT-EXP to an SKR v1.3
 tags: []
 keywords: 
-last_updated: 15/01/2021
-summary: "Connecting a BTT-MOT_EXP to an SKR v1.3"
+last_updated: 15/07/2021
+summary: "How to connect a BTT-MOT_EXP to an SKR v1.3"
 sidebar: mydoc_sidebar
 permalink: skr_1.3_btt_mot_exp.html
 folder: mydoc
@@ -26,7 +26,7 @@ BigTreeTech released the [BTT-MOT-EXP](https://github.com/bigtreetech/BTT-Expans
 
 ## Connecting the boards
 
-A single 10-pin IDC cable is required between the wifi/adaptor board and the board connected to the BTT EXP-MOT V1.0.  
+A single 10-pin IDC cable is required between the WiFi/adaptor board and the board connected to the BTT EXP-MOT V1.0.  
 12/24v power should be connected to the BTT-MOT-EXP to power the drivers.  
 If using the drivers in UART mode, a jumper should be added to the pins underneath the driver as normal.  
 

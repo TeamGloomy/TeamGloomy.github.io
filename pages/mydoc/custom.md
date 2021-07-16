@@ -2,8 +2,8 @@
 title: Custom Commands and G-Code
 tags: []
 keywords: 
-last_updated: 22/04/2021
-summary: "Custom Commands and G-Code"
+last_updated: 14/07/2021
+summary: "Custom Commands and G-Code that have been added to this port"
 sidebar: mydoc_sidebar
 permalink: custom.html
 folder: mydoc

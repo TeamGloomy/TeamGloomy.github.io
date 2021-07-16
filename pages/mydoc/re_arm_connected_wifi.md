@@ -1,11 +1,11 @@
 ---
-title: Connecting a Re-Arm via Wifi
+title: Connecting a Re-Arm via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 10/05/2021
-summary: "Connecting a Re-Arm via Wifi"
+last_updated: 15/07/2021
+summary: "How to connect to a Re-Arm via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: re_arm_connected_wifi.html
+permalink: re_arm_connected_wifi_8266.html
 folder: mydoc
 comments: false
 toc: false
@@ -20,7 +20,7 @@ The Re-Arm is an LPC1768 based board.
 
 Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
-## Wifi
+## ESP8266 WiFi
 
 Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
@@ -32,19 +32,19 @@ Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allo
 * 3 x 2200R resistor
 * jumpers or other ways of connecting to the Re-Arm 
 
-### Preparing the ESP
+### Preparing the ESP8266
 
 Follow the instructions [here](lpc_esp.html).
 
-### Connecting the ESP
+### Connecting the ESP8266
 
-The pinout for the RE-Arm can be found [here](https://reprap.org/mediawiki/images/f/fa/Re_ARM_Schematic.pdf) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+The pinout for the RE-Arm can be found [here](https://reprap.org/mediawiki/images/f/fa/Re_ARM_Schematic.pdf) and the schematic for the Duet 2 WiFi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
 
-The table below shows the pins required on the ESP and what they are connected to on the RE-Arm. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
+The table below shows the pins required on the ESP8266 and what they are connected to on the RE-Arm. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
 <div class="datatable-begin"></div>
 
-| ESP Pin       | Re-Arm Pin       | Resistor Value  |
+| ESP8266 Pin       | Re-Arm Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | RST           | 1.31 on J3         | 470R            |
 | CS/GPIO15     | 0.16 on J3         | 2200R           |
@@ -67,9 +67,9 @@ Follow the instructions on [Getting Started with RRF3](getting_started.html)
 You will also need a board.txt file in the sys folder. Below are the contents that should be used. 
 
 ```
-//Config for RE-Arm
+//Config for Re-Arm
 board = rearm
-//wifi pins
+//WiFi pins
 8266wifi.espDataReadyPin = 2.11
 8266wifi.TfrReadyPin = 1.30
 8266wifi.espResetPin = 1.31
@@ -92,7 +92,7 @@ M552 S1
 
 The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 
-The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the wifi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP chip.  
+The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the WiFi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP8266 chip.  
 
 ### Once up and running
 

@@ -1,11 +1,11 @@
 ---
-title: Connecting an SKR Pro v1.1 and v1.2 via Wifi
+title: Connecting an SKR Pro v1.1 and v1.2 via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 10/05/2021
-summary: "Connecting an SKR Pro v1.1 and v1.2 via Wifi"
+last_updated: 15/07/2021
+summary: "Connecting an SKR Pro v1.1 and v1.2 via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: skr_pro_connected_wifi.html
+permalink: skr_pro_connected_wifi_8266.html
 folder: mydoc
 comments: false
 toc: false
@@ -20,7 +20,7 @@ The SKR Pro v1.1 and v1.2 are STM32F407ZGT6 based boards.
 
 Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.  
 
-## Wifi
+## ESP8266 WiFi
 
 Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
 
@@ -34,19 +34,19 @@ Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allo
 * 3 x 2200R resistor
 * jumpers or other ways of connecting to the SKR
 
-### Preparing the ESP
+### Preparing the ESP8266
 
 Follow the instructions [here](https://github.com/gloomyandy/RepRapFirmware/wiki/ESP8266-LPC).
 
-### Connecting the ESP
+### Connecting the ESP8266
 
-The pinout for the SKR (The EXP1 and EXP2 pinouts are the same for the SKR Pro v1.1 and 1.2) can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf) and the schematic for the Duet 2 Wifi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+The pinout for the SKR (The EXP1 and EXP2 pinouts are the same for the SKR Pro v1.1 and 1.2) can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf) and the schematic for the Duet 2 WiFi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
 
 The table below shows the pins required on the ESP8266 and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
 <div class="datatable-begin"></div>
 
-| ESP Pin       | SKR Pin       | Resistor Value  |
+| ESP8266 Pin       | SKR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | RST           | PF12 on EXP2         | 470R            |
 | CS/GPIO15     | PB12 on EXP2         | 2200R           |
@@ -127,7 +127,7 @@ The SKR Pro also uses a different pin for the CS for SPI so you need to modify s
 
 For example, if you had TMC5160s on X and Y, you would add the following line to your board.txt
 ```
-stepper.TmcUartPins = { A.15 B.8 E.1 D.4 D.1 D.6 F.11 G.10 NoPin NoPin NoPin }
+stepper.TmcUartPins = { A.15, B.8, E.1, D.4, D.1, D.6, F.11, G.10, NoPin, NoPin, NoPin }
 ```
 Note the added two SPI pins for the TMC5160s and then the remainder of the pins are the UART pins used by TMC22XX drivers.
 
@@ -136,7 +136,7 @@ Note the added two SPI pins for the TMC5160s and then the remainder of the pins 
 **Supported by only the TMC2209, TMC2226 and TMC5160**
 If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
-stepper.TmcDiagPins = {B.10, E.12, G.8, E.15, E.10, G.5}
+stepper.TmcDiagPins = { B.10, E.12, G.8, E.15, E.10, G.5 }
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include B.10 and E.12 in your board.txt file.  
@@ -164,9 +164,9 @@ M552 S1
 
 {% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}
 
-The blue light on the wifi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
+The blue light on the WiFi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 
-The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the wifi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP chip.  
+The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the WiFi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP8266 chip.  
 
 ### Once up and running
 

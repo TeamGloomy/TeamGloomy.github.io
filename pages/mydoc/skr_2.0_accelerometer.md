@@ -2,8 +2,8 @@
 title: Connecting an accelerometer to an SKR v2.0
 tags: []
 keywords: 
-last_updated: 12/07/2021
-summary: "Connecting an accelerometer to an SKR v2.0"
+last_updated: 15/07/2021
+summary: "How to connect an accelerometer to an SKR v2.0"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_accelerometer.html
 folder: mydoc
@@ -46,7 +46,7 @@ The accelerometer should be mounted firmly to the tool. For a bed slinger (such 
 
 Add the following to board.txt
 ```
-SPI5.pins = {C.5,B.1,B.0}
+SPI5.pins = { C.5, B.1, B.0 }
 accelerometer.spiChannel = 5
 ```
 

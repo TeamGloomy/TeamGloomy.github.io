@@ -2,10 +2,10 @@
 title:  Configuring an ESP8266 for LPC Boards
 tags: 
 keywords: 
-last_updated: 23/05/2021
-summary: "Configuring an ESP8266 for LPC Boards"
+last_updated: 14/07/2021
+summary: "How to configure an ESP8266 for use with LPC Based Boards"
 sidebar: mydoc_sidebar
-permalink: lpc_esp.html
+permalink: lpc_esp8266.html
 folder: mydoc
 toc: false
 comments: false
@@ -21,12 +21,12 @@ comments: false
 
 {% include warning.html content="An ESP-01 cannot be used with RRF." %}  
 
-The image for to flash to the ESP can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases).  
+The image for to flash to the ESP8266 can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases).  
 
 {% include note.html content="Use the latest release for stable builds and the newest pre-release for unstable builds.  <br/>
 Make sure you download DuetWifiServer-lpc-el.bin  " %} 
 
-It should be flashed using [esptool.py](https://github.com/espressif/esptool). Use the code below as an example. Change the Com port to match the ESP device and make sure you give the .bin file its complete file location if its not in the same folder as esptools.
+It should be flashed using [esptool.py](https://github.com/espressif/esptool). Use the code below as an example. Change the Com port to match the ESP8266 device and make sure you give the .bin file its complete file location if its not in the same folder as esptools.
 
 `esptool.py --port COM4 write_flash 0x00000 DuetWifiServer-lpc.bin`
 
@@ -40,7 +40,7 @@ On a side note, I have a very handy little tool installed on my main laptop that
 ### RRF based flashing
 
 The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:
-`8266wifi.serialRxTxPins = {RXPin, TXPin}`
+`8266wifi.serialRxTxPins = { RXPin, TXPin }`
 This information has been added to the connecting via WiFi page for each board.  
 
 You will also need to hook up the ESP8266 UART pins (marked RX/TX on most modules).
@@ -60,18 +60,18 @@ M552 S0
 
 <div role="tabpanel" class="tab-pane" id="updating" markdown="1">
 
-There are two methods to update the boards if a new version of the ESP firmware is released
+There are two methods to update the boards if a new version of the ESP8266 firmware is released
 
 ### Manual Updating
 
-This method follows the flashing instructions for preparation. To allow the ESP to be put in reset mode, its best to disconnect it from the LPC based board.
+This method follows the flashing instructions for preparation. To allow the ESP8266 to be put in reset mode, its best to disconnect it from the LPC based board.
 
-### DWC based Updating
+### RRF based Updating
 
 {% include warning.html content="This cannot be used in conjunction with using a screen on the SKR v1.3" %} 
 
 The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:
-`8266wifi.serialRxTxPins = {RXPin, TXPin}`
+`8266wifi.serialRxTxPins = { RXPin, TXPin }`
 This information has been added to the connecting via WiFi page for each board. 
 
 You will also need to hook up the ESP8266 UART pins (marked RX/TX on most modules).

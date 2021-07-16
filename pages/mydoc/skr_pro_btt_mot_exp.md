@@ -2,8 +2,8 @@
 title: Connecting a BTT-MOT-EXP to an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
-last_updated: 30/05/2021
-summary: "Connecting a BTT-MOT-EXP to an SKR Pro v1.1 and v1.2"
+last_updated: 15/07/2021
+summary: "How to connect a BTT-MOT-EXP to an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
 permalink: skr_pro_btt_mot_exp.html
 folder: mydoc
@@ -26,7 +26,7 @@ BigTreeTech released the [BTT-MOT-EXP](https://github.com/bigtreetech/BTT-Expans
 
 ## Connecting the boards
 
-A single 10-pin IDC cable is required between the wifi/adaptor board and the board connected to the BTT EXP-MOT V1.0.  
+A single 10-pin IDC cable is required between the WiFi/adaptor board and the board connected to the BTT EXP-MOT V1.0.  
 12/24v power should be connected to the BTT-MOT-EXP to power the drivers.  
 If using the drivers in UART mode, a jumper should be added to the pins underneath the driver as normal.  
 
@@ -42,10 +42,10 @@ stepper.numSmartDrivers = 8
 
 Please add the following lines to the board.txt.  
 ```
-stepper.enablePins = {PF_2, PD_7,  PC_0, PC_3,  PA_3, PF_0, PD_11, PG_7}
-stepper.stepPins = {PE_9, PE_11, PE_13, PE_14,  PD_15, PD_13, PG_3, PG_2}
-stepper.directionPins = {PF_1, PE_8, PC_2, PA_0,  PE_7, PG_9, PD_10, PG_6}
-stepper.TmcUartPins = {PC_13, PE_3, PE_1, PD_4, PD_1, PD_6, PF_11, PG_10}
+stepper.enablePins = { F.2, D.7, C.0, C.3, A.3, F.0, D.11, G.7 }
+stepper.stepPins = { E.9, E.11, E.13, E.14, D.15, D.13, G.3, G.2 }
+stepper.directionPins = { F.1, E.8, C.2, A.0, E.7, G.9, D.10, G.6 }
+stepper.TmcUartPins = { C.13, E.3, E.1, D.4, D.1, D.6, F.11, G.10 }
 ```
 
 ## Config.g Modification

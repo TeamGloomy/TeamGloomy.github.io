@@ -2,8 +2,8 @@
 title: Connecting a 12864 screen to a SKR-RRF-E3
 tags: []
 keywords: 
-last_updated: 10/05/2021
-summary: "Connecting a 12864 screen to a SKR-RRF-E3"
+last_updated: 15/07/2021
+summary: "How to connect a 12864 screen to a SKR-RRF-E3"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_screen_12864.html
 folder: mydoc
@@ -30,7 +30,7 @@ lcd.encoderPinB=E.7
 lcd.encoderPinSw=E.9
 lcd.lcdCSPin=B.1
 lcd.spiChannel=4
-SPI4.pins={E.10, NoPin, E.11}
+SPI4.pins={ E.10, NoPin, E.11 }
 lcd.lcdBeepPin = E.8
 ```
 

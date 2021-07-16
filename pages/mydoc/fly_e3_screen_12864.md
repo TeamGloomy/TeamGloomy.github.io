@@ -2,8 +2,8 @@
 title: Connecting a 12864 screen to a Fly-E3
 tags: []
 keywords: 
-last_updated: 10/05/2021
-summary: "Connecting a 12864 screen to a Fly-E3"
+last_updated: 14/07/2021
+summary: "How to connect a 12864 screen to a Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_screen_12864.html
 folder: mydoc
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The information here is aimed at connecting a stock ender 3 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based). This is only applicable from 3.2_7.  
+The information here is aimed at connecting a stock ender 3 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).   
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#e3stock" data-toggle="tab">Ender 3 Stock Screen</a></li>
@@ -52,7 +52,7 @@ lcd.encoderPinB=E.10
 lcd.encoderPinSw=E.11
 lcd.lcdCSPin=E.7
 lcd.spiChannel=4
-SPI4.pins={E.8, NoPin, B.1}
+SPI4.pins={ E.8, NoPin, B.1 }
 lcd.lcdBeepPin = E.12
 ```
 

@@ -2,8 +2,8 @@
 title: Adding a Camera
 tags: []
 keywords: 
-last_updated: 12/07/2021
-summary: "Adding a Camera"
+last_updated: 14/07/2021
+summary: "Adding a Camera to DWC"
 sidebar: mydoc_sidebar
 permalink: camera.html
 folder: mydoc
@@ -13,7 +13,7 @@ toc: false
 
 ## Using mjpg streamer - USB Camera only
 
-Follow [these instructions](https://snapcraft.io/install/mjpg-streamer/raspbian) to get mjpg streamer installed on a raspberry pi. If using RRF in SBC mode, then that SBC can be used. If setting up with RRF in wifi mode, a pi zero is powerful enough.  
+Follow [these instructions](https://snapcraft.io/install/mjpg-streamer/raspbian) to get mjpg streamer installed on a raspberry pi. If using RRF in SBC mode, then that SBC can be used. If setting up with RRF in WiFi mode, a pi zero is powerful enough.  
 
 Once mjpg streamer is installed, make the following changes to the  mjpg streamer config.  
 ```
@@ -34,6 +34,10 @@ Follow the installation instructions found [here](https://elinux.org/RPi-Cam-Web
 
 Set the webcam URL as http://IPAddress/html/cam_pic_new.php
 
-## Videostream - Both USB Camera's and Pi Camera's
+## Videostream - Both USB Camera's and Pi Camera's - Recommended
 
 Follow the instructions here [here](https://github.com/stuartofmt/videostream)
+
+## Security Camera
+
+Buy a security camera that supports an mjpeg stream

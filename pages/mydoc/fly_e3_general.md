@@ -2,7 +2,7 @@
 title: Fly-E3 General Information
 tags: []
 keywords: 
-last_updated: 16/03/2021
+last_updated: 14/07/2021
 summary: "General information regarding the Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_general.html
@@ -33,7 +33,7 @@ If only one Z output is being used, jumpers should be installed on the other Z o
 ### Driver Diag Pin
 
 The driver diag pin is used for sensorless homing and stall detection.  
-The Fly-E3 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers ](https://www.aliexpress.com/item/1005001877899893.html) which have a switch on the underside of them for disabling the diag pin.  
+The Fly-E3 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers](https://www.aliexpress.com/item/1005001877899893.html) which have a switch on the underside of them for disabling the diag pin.  
 If you plan on using endstops rather than sensorless homing and do not have the Fly-2209 drivers, you need to bend or remove the diag pin.  
 
 ### Input voltage

@@ -2,8 +2,8 @@
 title: Connecting a BLTouch to an MKS Sbase v1.3
 tags: []
 keywords: 
-last_updated: 22/04/2021
-summary: "Connecting a BLTouch to an MKS Sbase v1.3"
+last_updated: 15/07/2021
+summary: "How to connect a BLTouch to an MKS Sbase v1.3"
 sidebar: mydoc_sidebar
 permalink: mks_sbase_bltouch.html
 folder: mydoc
@@ -21,7 +21,7 @@ Connect the BLTouch to the MKS Sbase v1.3 as described in the table below.
 |BLTouch Wire Colour|MKS Sbase v1.3 Pin|MKS Sbase v1.3 Pin Name|
 |:---|:---|:---|
 |Brown|GND||
-|Red|NPWR||
+|Red|+5v||
 |Yellow|1.23|1.23|
 |Black|GND||
 |White|1.28|zstop|
@@ -33,7 +33,7 @@ Connect the BLTouch to the MKS Sbase v1.3 as described in the table below.
 Your config.g should be modified as below.
 ```
 M558 P9 H6 F120 T8000 C"^probe"       ; set Z probe type to bltouch and the dive height + speeds
-M950 S0 C"servo0"                              ; Setup servo 0 as servo port on SKR
+M950 S0 C"servo0"                              ; Setup servo 0 as servo port on the MKS Sbase v1.3
 ```
 
 You will also need to set up your probe offset using [G31](https://duet3d.dozuki.com/Wiki/Gcode#Section_G31_Set_or_Report_Current_Probe_status) and your [mesh probing grid](https://duet3d.dozuki.com/Wiki/Gcode#Section_M557_Set_Z_probe_point_or_define_probing_grid)

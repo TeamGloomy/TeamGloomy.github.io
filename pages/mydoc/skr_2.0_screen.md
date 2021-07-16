@@ -2,8 +2,8 @@
 title: Connecting a screen to a SKR v2.0
 tags: []
 keywords: 
-last_updated: 15/01/2021
-summary: "Connecting a screen to a SKR v2.0"
+last_updated: 15/07/2021
+summary: "How to connect a serial screen to a SKR v2.0"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_screen.html
 folder: mydoc
@@ -22,7 +22,7 @@ These instructions cover serial screens. Instructions for 12864 screens can be f
 To enable a screen to function correctly, the following lines need to be added to the board.txt file.  
 
 ```
-serial.aux.rxTxPins = {PA.10, PA.9}
+serial.aux.rxTxPins = { A.10, A.9 }
 ```
 
 <ul id="profileTabs" class="nav nav-tabs">
