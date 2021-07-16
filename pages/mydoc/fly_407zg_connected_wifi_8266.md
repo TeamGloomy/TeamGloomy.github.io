@@ -5,7 +5,7 @@ keywords:
 last_updated: 14/07/2021
 summary: "How to connect to a Fly-407ZG via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: fly_407zg_connected_wifi_8266s.html
+permalink: fly_407zg_connected_wifi_8266.html
 folder: mydoc
 comments: false
 toc: false
