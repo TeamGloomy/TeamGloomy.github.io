@@ -2,7 +2,7 @@
 title: STM32 Firmware Restrictions
 tags: []
 keywords: 
-last_updated: 12/07/2021
+last_updated: 25/07/2021
 summary: "Restrictions in the STM32 firmware compared to RepRapFirmware available on Duet3D hardware"
 sidebar: mydoc_sidebar
 permalink: stm32_differences.html
@@ -19,4 +19,4 @@ toc: false
 * To support the number of different boards, a /sys/board.txt config file is required. More information can be found [here](board_txt.html).
 * M150 does not support X0 or X1. If being used with neopixels, X2 should be used.  
 * Only supports an IP address for the board up to 192.168.1.56 in access point mode.
-* Only one Z probe is supported.
+* Only two Z probe's are supported.
