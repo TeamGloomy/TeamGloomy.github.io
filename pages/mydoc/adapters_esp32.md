@@ -14,7 +14,7 @@ toc: false
 ## Overview
 
 Teamgloomy have teamed up with Mellow/Flymaker to produce ESP32 adapters
-They can be purchased through [aliexpress](https://www.tindie.com/stores/pcr/).  
+They can be purchased through [aliexpress](https://mellow.aliexpress.com).  
 There are two adapters that support the following boards:
 
 ### Adapter 1

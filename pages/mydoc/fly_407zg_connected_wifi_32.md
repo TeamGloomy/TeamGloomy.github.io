@@ -30,7 +30,7 @@ Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [
 ## TeamGloomy/Mellow Adapters
 
 TeamGloomy and Mellow have teamed up to produce ESP32 adapters.   
-They can be purchased through [aliexpress](https://www.tindie.com/stores/pcr/).  
+They can be purchased through [aliexpress](https://mellow.aliexpress.com).  
 
 Connect the ESP32 Adapter to the board as shown below.  
 {% include image.html file="fly_407zg_esp32_connection.png" alt="Fly-407ZG ESP32" caption="Fly-407ZG ESP32 Adapter Connection" %}
