@@ -2,7 +2,7 @@
 title: Configuring Neopixels
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 23/07/2021
 summary: "Configuring Neopixels"
 sidebar: mydoc_sidebar
 permalink: neopixels.html
@@ -12,7 +12,7 @@ toc: false
 ---
 
 The maximum number of supported neopixels is 60.  
-Only RGB versions are supported, so no RGBW neopixels. 
+RGB and RGBW versions are supported. 
 An external power supply should be used when more than 8 are being used.  
 
 Ensure that you have the pin correctly defined in your board.txt file. Here is an example.  
@@ -23,6 +23,21 @@ led.neopixelPin = 1.24
 For configuring them, use this [documentation](https://duet3d.dozuki.com/Wiki/Gcode#Section_M150_Set_LED_colours) for reference. 
 
 {% include important.html content="Please be aware that this version of the firmware uses X2 rather than X1 in the M150 command. The Q command for frequency is also not supported." %}
+
+## Custom Neopixel Timings
+
+These take the form of `M150 X2 Tt0:t1:tc:tr`
+
+* t0 is the high time for a 0 bit in nano seconds
+* t1 is the high time for a 1 bit in nano seconds
+* tc is the total cycle length (on plus off time) in nano seconds
+* tr is the reset time in microseconds.
+
+So to set up a neopixel that needs a 0 time of say 300nS a 1 time of 800nS a cycle time of say 1250ns and a reset time of 250,000nS (or 250 uS) you use:  
+```
+M150 X2 T300:800:1250:250
+```  
+You can see the current settings with M150.
 
 ## Notes
 

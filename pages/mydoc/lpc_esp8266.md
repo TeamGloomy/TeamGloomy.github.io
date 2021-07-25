@@ -28,7 +28,7 @@ Make sure you download DuetWifiServer-lpc-el.bin  " %}
 
 It should be flashed using [esptool.py](https://github.com/espressif/esptool). Use the code below as an example. Change the Com port to match the ESP8266 device and make sure you give the .bin file its complete file location if its not in the same folder as esptools.
 
-`esptool.py --port COM4 write_flash 0x00000 DuetWifiServer-lpc.bin`
+`esptool.py --port COM4 write_flash 0x00000 DuetWiFiServer-esp8266-lpc.bin`
 
 You can also follow [PCR's instructions](https://rosspeter.org/flashing-the-webserver-on-my-rff-skr-adapterboard) if you don't get on with esptool.
 

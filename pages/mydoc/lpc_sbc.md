@@ -2,7 +2,7 @@
 title:  Configuring an SBC for LPC Boards
 tags: 
 keywords: 
-last_updated: 30/05/2021
+last_updated: 33/07/2021
 summary: "How to configure an SBC for use with LPC based Boards"
 sidebar: mydoc_sidebar
 permalink: lpc_sbc.html
@@ -38,7 +38,6 @@ Regardless of whether you are installing the LPC specific DSF changes for the fi
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#automatic" data-toggle="tab">Automatic Mode Stable</a></li>
-    <li><a class="noCrossRef" href="#autobeta" data-toggle="tab">Automatic Mode Unstable</a></li>
     <li><a class="noCrossRef" href="#manual" data-toggle="tab">Manual Mode</a></li>
 </ul>
   <div class="tab-content">
@@ -47,9 +46,9 @@ Regardless of whether you are installing the LPC specific DSF changes for the fi
 To use the automatic updater, send the following:
 
 ```
-wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_LPC_3_2_2.sh
-sudo chmod 755 RRF_LPC_3_2_2.sh
-./RRF_LPC_3_2_2.sh
+wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_LPC_3_3_0.sh
+sudo chmod 755 RRF_LPC_3_3_0.sh
+./RRF_LPC_3_3_0.sh
 ```
 
 This does everything from the manual section.  

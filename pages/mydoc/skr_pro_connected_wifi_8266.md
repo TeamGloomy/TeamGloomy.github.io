@@ -18,7 +18,7 @@ The SKR Pro v1.1 and v1.2 are STM32F407ZGT6 based boards.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.  
+Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.  
 
 ## ESP8266 WiFi
 
@@ -153,6 +153,17 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 ### Final Setup
 
 Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
+
+{% include callout.html content="If updating the ESP32 using RRF, type the following.  
+
+```
+M997 S1
+```<br/>
+Wait for the uploading of the WiFi firmware to finish. Then send the following<br/>
+```
+M552 S-1
+```<br/>
+Continue with the instructions below." type="info" %} 
 
 ```
 M552 S0

@@ -185,7 +185,7 @@ Format the SD card that came with the [SD Memory Card Formatter](https://www.sdc
 
 Download the files contained on our [repo](https://github.com/TeamGloomy/ender-3-fly-E3) and place them on the SD card.  
 Download the latest firmware (called firmware-stm32f4-esp8266wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Rename it firmware.bin and put it on the root of the SD card.  
-Download the latest WiFi firmware (called DuetWiFiServer-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Rename it to DuetWiFiServer.bin and put it in the sys folder on the SD card.  
+Download the latest WiFi firmware (called DuetWiFiServer-esp8266-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Rename it to DuetWiFiServer.bin and put it in the sys folder on the SD card.  
 Download the latest DWC from [here](https://github.com/Duet3D/DuetWebControl/releases). Extract the contents to a folder called "www" on the root of the SD card.  
 
 ## Firmware Flashing

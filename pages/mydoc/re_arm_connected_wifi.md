@@ -18,7 +18,7 @@ The Re-Arm is an LPC1768 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
+Choose the correct corresponding firmware (firmware-lpc-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
 ## ESP8266 WiFi
 

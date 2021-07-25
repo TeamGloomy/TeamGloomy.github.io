@@ -1,9 +1,9 @@
 ---
-title: Connecting an SKR v2.0 via an ESP8266 WiFi Adapter
+title: Connecting an SKR v2.0 via an ESP8266 or ESP32 WiFi Adapter
 tags: []
 keywords: 
 last_updated: 15/07/2021
-summary: "How to connect to an SKR v2.0 via an ESP8266 WiFi Adapter"
+summary: "How to connect to an SKR v2.0 via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_connected_wifi_8266.html
 folder: mydoc
@@ -18,16 +18,19 @@ The SKR v2.0 is an STM32F407VGT6 based board.
 
 ## Flashing the board firmware
 
-Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
+Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
 ## WiFi firmware preparation
-Choose the correct corresponding firmware (DuetWiFiServer-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases){:target="_blank"}. Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  
+Choose the correct corresponding firmware from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases){:target="_blank"}. 
+* DuetWiFiServer-esp8266-stm32f4.bin for ESP8266
+* DuetWiFiServer-esp32-stm32f4.bin for ESP32
+Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  
 
 {% include important.html content="From 3.3, the DuetWiFiServer.bin file needs to be placed in a folder called firmware. This folder should be placed in the root of the SD card."%}  
 
-## ESP8266 WiFi
+## WiFi
 
-You will need a BTT or MKS produced ESP8266 WiFi module.  
+You will need a BTT or MKS produced ESP8266 WiFi module or a Fly/Mellow ESP32 Module.   
 
 Make sure the jumpers are installed next to the WiFi headers as shown below. 
 

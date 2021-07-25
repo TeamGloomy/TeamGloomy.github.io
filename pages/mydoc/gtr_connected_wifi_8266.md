@@ -18,7 +18,7 @@ The GTR is an STM32F407ZGT6 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-stm43f4-esp8266wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
+Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
 ## ESP8266 WiFi
 
@@ -40,7 +40,7 @@ Follow the instructions [here](stm32_esp8266.html).
 
 ### Connecting the ESP8266
 
-The pinout for the GTR can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf) and the schematic for the Duet 2 WiFi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+The pinout for the GTR can be found [here](https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/blob/master/BTT%20GTR%20V1.0/manual/GTR%20V1.0(SCH).PDF) and the schematic for the Duet 2 WiFi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
 
 The table below shows the pins required on the ESP8266 and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
@@ -132,6 +132,17 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 ### Final Setup
 
 Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
+
+{% include callout.html content="If updating the ESP32 using RRF, type the following.  
+
+```
+M997 S1
+```<br/>
+Wait for the uploading of the WiFi firmware to finish. Then send the following<br/>
+```
+M552 S-1
+```<br/>
+Continue with the instructions below." type="info" %} 
 
 ```
 M552 S0

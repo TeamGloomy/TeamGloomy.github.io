@@ -36,7 +36,7 @@ The board can handle an input voltage up to 32v.
 ### Initial Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
-Follow the [ESP8266 WiFi instructions](fly_407zg_connected_wifi_8266.html) or the [SBC instructions](fly_407zg_connected_sbc.html) for what to do next.
+Follow the [ESP8266 WiFi instructions](fly_407zg_connected_wifi_8266.html), [ESP32 WiFi instructions](fly_407zg_connected_wifi_32.html) or the [SBC instructions](fly_407zg_connected_sbc.html) for what to do next.
 
 ## Issues
 
