@@ -22,8 +22,9 @@ Please see the Duet3D [release notes for 3.3](https://github.com/Duet3D/RepRapFi
 * Improve revovery from SD card errors
 * Allow setting of Neopixel timings with M150 X2 Tt0:t1:tc:tr
 * Add support for RGBW Neopixels
+* Fix board sometimes resets after WiFi firmware upload
+* New firmware filenames
 * LPC: Enabled support for object tracking names
-* STM32F4: Initial MKS Nano v3 Support
 * STM32F4: Add support for esp32 WiFi modules
 * STM32F4: Fix Fly E3 SPI5 defaults
 * STM32F4: Improve TMC5160 detection
@@ -47,6 +48,8 @@ Please see the Duet3D [release notes for 3.3](https://github.com/Duet3D/RepRapFi
 * Improve revovery from SD card errors
 * Allow setting of Neopixel timings with M150 X2 Tt0:t1:tc:tr
 * Add support for RGBW Neopixels
+* Fix board sometimes resets after WiFi firmware upload
+* New firmware filenames
 * LPC: Fix drivers that used i2c current setting not set if the build had TMC drivers enabled
 * LPC: Fix for board not booting with zero smart drivers
 * LPC: Adjust stack sizes
