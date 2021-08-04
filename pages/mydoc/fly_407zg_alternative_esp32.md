@@ -2,7 +2,7 @@
 title: Alternative connection of an ESP32 to a Fly-407ZG
 tags: []
 keywords: 
-last_updated: 22/07/2021
+last_updated: 04/08/2021
 summary: "Alternative connection of an ESP32 to a Fly-407ZG to allow SPI controlled drivers to be installed"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_alternative_esp32.html
@@ -22,7 +22,7 @@ This will involve soldering some cables to the board.
   
 ## BOM
 
-* 1 x ESP32 adapter (any of the [3 types](/adapters_esp32.html) will be suitable)
+* 1 x ESP32 adapter (information available [here](/adapters_esp32.html) will be suitable)
 * Some cable
 
 ## Connecting the Adapter

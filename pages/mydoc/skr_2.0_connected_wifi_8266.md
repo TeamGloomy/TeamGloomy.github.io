@@ -2,7 +2,7 @@
 title: Connecting an SKR v2.0 via an ESP8266 or ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 15/07/2021
+last_updated: 04/08/2021
 summary: "How to connect to an SKR v2.0 via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_connected_wifi_8266.html
@@ -30,7 +30,7 @@ Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD 
 
 ## WiFi
 
-You will need a BTT or MKS produced ESP8266 WiFi module or a Fly/Mellow ESP32 Module.   
+You will need a BTT or MKS produced ESP8266 WiFi module or a [Fly/Mellow ESP32 Module](https://www.aliexpress.com/item/1005003088425354.html).   
 
 Make sure the jumpers are installed next to the WiFi headers as shown below. 
 

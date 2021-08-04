@@ -2,7 +2,7 @@
 title: Connecting a GTR via an ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 04/08/2021
 summary: "How to connect to a GTR via an ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_wifi_32.html
@@ -30,7 +30,7 @@ Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [
 ## TeamGloomy/Mellow Adapters
 
 TeamGloomy and Mellow have teamed up to produce ESP32 adapters.   
-They can be purchased through [aliexpress](https://mellow.aliexpress.com).  
+They can be purchased through [aliexpress](https://www.aliexpress.com/item/1005003077964768.html).  
 
 Connect the ESP32 Adapter to the board as shown below.  
 {% include image.html file="gtr_esp32_connection.png" alt="GTR ESP32" caption="GTR ESP32 Adapter Connection" %}
