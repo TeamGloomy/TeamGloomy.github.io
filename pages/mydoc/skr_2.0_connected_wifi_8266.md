@@ -2,7 +2,7 @@
 title: Connecting an SKR v2.0 via an ESP8266 or ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 04/08/2021
+last_updated: 05/08/2021
 summary: "How to connect to an SKR v2.0 via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_connected_wifi_8266.html
@@ -46,7 +46,7 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 
 ```
 //Config for BIQU SKR v2.0
-board = biquskr_2.0
+board = biquskr_2
 //WiFi pins
 8266wifi.espDataReadyPin = B.10;
 8266wifi.TfrReadyPin = B.11;
