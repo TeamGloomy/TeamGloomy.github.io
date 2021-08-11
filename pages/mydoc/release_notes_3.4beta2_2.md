@@ -1,11 +1,11 @@
 ---
-title: Release notes release_notes_3.4b2_2
+title: Release notes release_notes_3.4beta2_2
 tags: [getting_started]
 keywords: release notes, announcements, what's new, new features
 last_updated: 23/07/2021
 summary: "Release notes for the unstable release of 3.4b2_2"
 sidebar: mydoc_sidebar
-permalink: release_notes_3.4beta2_1.html
+permalink: release_notes_3.4beta2_2.html
 folder: mydoc
 toc: false
 comments: false

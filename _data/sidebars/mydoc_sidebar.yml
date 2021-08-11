@@ -52,7 +52,7 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 3.4b2_2 Release Notes
+    - title: 3.4beta2_2 Release Notes
       url: /release_notes_3.4beta2_2.html
       output: web, pdf
 
