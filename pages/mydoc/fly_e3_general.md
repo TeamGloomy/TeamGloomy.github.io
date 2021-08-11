@@ -2,7 +2,7 @@
 title: Fly-E3 General Information
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 11/08/2021
 summary: "General information regarding the Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_general.html
@@ -20,7 +20,7 @@ It is also available with a PT100 chip installed on [aliexpress](https://www.ali
 
 ### Driver Jumpers
 
-The jumpers should be installed as below. "Common Interpolation" should be used for standalone drivers. "SPI mode Interpolation" is not a currently supported configuration as this port does not support SPI communication to drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226)
+The jumpers should be installed as below. "Common Interpolation" should be used for standalone drivers. "SPI mode Interpolation" is supported for TMC5160 drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226)
 
 {% include image.html file="fly_e3_jumpers.png" alt="Fly-E3 Jumpers" caption="Fly-E3 Driver Jumper Locations" %}
 
