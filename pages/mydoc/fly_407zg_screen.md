@@ -70,9 +70,9 @@ Add the following line in your start.g file to allow the screen to know when a j
 
 ```M409 K"job.file.fileName"```
 
-## Stop.g Changes
+## Stop.g & Cancel.g Changes
 
-Add the following line in your stop.g file to allow the screen to know when a job has stopped.  
+Add the following line in both your stop.g and cancel.g files to allow the screen to know when a job has stopped.  
 
 ```M118 P2 S"//action:cancel"```
 
@@ -84,9 +84,9 @@ Add the following line in your pause.g file to allow the screen to know when a j
 
 ```M118 P2 S"//action::paused"```
 
-## Cancel.g Changes
+## Resume.g Changes
 
-Add the following line in your cancel.g file to allow the screen to know when a job has been cancelled.  
+Add the following line in your resume.g file to allow the screen to know when a job has been resumed from a pause. 
 
 ```M118 P2 S"//action::prompt_begin Resuming"```
 
