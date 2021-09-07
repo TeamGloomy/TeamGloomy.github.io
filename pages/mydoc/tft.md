@@ -31,29 +31,3 @@ It needs to be renamed from config_rrf.ini to config.ini for flashing of the fir
 Add the following line to your config.g to enable the screen
 
 ```M575 P1 S2 B57600```
-
-## Start.g Changes
-
-Add the following line in your start.g file to allow the screen to know when a job has started.  
-
-```M409 K"job.file.fileName"```
-
-## Stop.g & Cancel.g Changes
-
-Add the following line in both your stop.g and cancel.g files to allow the screen to know when a job has stopped.  
-
-```M118 P2 S"//action:cancel"```
-
-```M0``` also need to be added to your stop gcode in your slicer to allow stop.g to be ran.  
-
-## Pause.g Changes
-
-Add the following line in your pause.g file to allow the screen to know when a job has been aused.  
-
-```M118 P2 S"//action::paused"```
-
-## Resume.g Changes
-
-Add the following line in your resume.g file to allow the screen to know when a job has been resumed from a pause.  
-
-```M118 P2 S"//action::prompt_begin Resuming"```
