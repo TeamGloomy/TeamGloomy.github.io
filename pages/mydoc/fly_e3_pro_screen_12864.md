@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-E3-Pro
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 05/09/2021
 summary: "How to connect a 12864 screen to a Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_screen_12864.html
@@ -17,7 +17,8 @@ datatable: true
 The information here is aimed at connecting a stock ender 3 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based). 
 
 <ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#e3stock" data-toggle="tab">Ender 3 Stock Screen</a></li>
+    <li class="active"><a class="noCrossRef" href="#e3stock" data-toggle="tab">Ender 3 Stock Screen Directly to EXP</a></li>
+    <li><a class="noCrossRef" href="#e3adapter" data-toggle="tab">Ender 3 Stock Screen using adapter board</a></li>
     <li><a class="noCrossRef" href="#reprap" data-toggle="tab">RepRapDiscount Full Graphic Smart Controller</a></li>
     <li><a class="noCrossRef" href="#fysetc" data-toggle="tab">Fysetc Mini12864 RGB Panel v2.1</a></li>
 </ul>
@@ -39,6 +40,36 @@ lcd.encoderPinSw=E.11
 lcd.lcdCSPin=E.7
 lcd.spiChannel=4
 SPI4.pins={ E.8, NoPin, B.1 }
+lcd.lcdBeepPin = E.12
+```
+
+## Config.g changes
+
+Add the following line to the end of your config.g
+
+```
+M918 P1 E4 F100000
+```
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="e3adapter" markdown="1">
+
+## Wiring
+
+The Fly-E3-Pro can have issues with artifcats being displayed on the screen after using it for a while. If this is the case, the Fly-E3-Pro ships with an adapter board and this should be added to the cabling between the screen and the board.  
+
+## Board.txt modifications
+
+The following lines should be added to the board.txt file.
+
+```
+lcd.encoderPinA=E.7
+lcd.encoderPinB=E.8
+lcd.encoderPinSw=B.1
+lcd.lcdCSPin=E.9
+lcd.spiChannel=4
+SPI4.pins={E.10, NoPin, E.11}
 lcd.lcdBeepPin = E.12
 ```
 
