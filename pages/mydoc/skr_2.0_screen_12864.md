@@ -56,7 +56,7 @@ M918 P2 C30 F1000000 E4
 
 </div>
 
-<div role="tabpanel" class="tab-pane active" id="reprap" markdown="1">
+<div role="tabpanel" class="tab-pane" id="reprap" markdown="1">
 
 ## Board.txt modifications
 
