@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to an SKR v2.0
 tags: []
 keywords: 
-last_updated: 15/07/2021
+last_updated: 08/09/2021
 summary: "How to connect a 12864 screen to an SKR v2.0"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_screen_12864.html
@@ -19,6 +19,13 @@ The information here is aimed at connecting a Fysetc Mini v1.2 12864 display but
 ## Wiring
 
 Connect EXP1 to EXP1 and EXP2 to EXP2.  
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li><a class="noCrossRef" href="#fysetc" data-toggle="tab">Fysetc Mini v1.2 12864</a></li>
+	<li><a class="noCrossRef" href="#reprap" data-toggle="tab">RepRapDiscount Full Graphic Smart Controller</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="fysetc" markdown="1">
 
 ## Board.txt modifications
 
@@ -46,6 +53,36 @@ G4 P500
 M42 P1 S1
 M918 P2 C30 F1000000 E4
 ```
+
+</div>
+
+<div role="tabpanel" class="tab-pane active" id="reprap" markdown="1">
+
+## Board.txt modifications
+
+Add the following lines to the board.txt file
+
+```
+//RepRap Discount Full Graphic Smart Controller
+lcd.encoderPinA=LCDENCA
+lcd.encoderPinB=LCDENCB
+lcd.encoderPinSw=LCDBTN
+lcd.lcdBeepPin=LCDBEEP
+lcd.lcdCSPin=LCDCS
+lcd.spiChannel=3
+SPI3.pins={LCDD4, NoPin, LCDEN}
+```
+
+## Config.g
+
+Add this line to config.g
+```
+M918 P1 E4
+```
+
+</div>
+
+</div>
 
 ## Menu Files
 
