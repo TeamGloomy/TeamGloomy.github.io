@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to an SKR v2.0
+title: Connecting a BLTouch to an BTT Octopus v1.1 F429 Version
 tags: []
 keywords: 
-last_updated: 15/07/2021
-summary: "How to connect a BLTouch to an SKR v2.0"
+last_updated: 17/08/2021
+summary: "How to connect a BLTouch to an BTT Octopus v1.1 F429 Version"
 sidebar: mydoc_sidebar
-permalink: skr_2.0_bltouch.html
+permalink: btt_octopus_1.1_f429_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,19 +14,19 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the SKR v2.0 as described in the table below.  
+Connect the BLTouch to the BTT Octopus v1.1 F429 Version as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|SKR v2.0|SKR v2.0 Pin Name|
+|BLTouch Wire Colour|BTT Octopus v1.1 F429 Version|BTT Octopus v1.1 F429 Version Pin Name|
 |:---|:---|:---|
 |Brown|GND||
 |Red|+5v||
-|Yellow|E.5|Servo0|
+|Yellow|B.6|Servo0|
 |Black|GND||
-|White|E.4|probe|
+|White|B.7|probe|
 
-{% include image.html file="skr_2.0_bltouch.png" alt="SKR v2.0 BLTouch" caption="SKR v2.0 BLTouch Connection" %}
+{% include image.html file="btt_octopus_1.1_bltouch_bltouch.png" alt="BTT Octopus v1.1 F429 Version BLTouch" caption="BTT Octopus v1.1 F429 Version BLTouch Connection" %}
 
 <div class="datatable-end"></div>
 
@@ -35,7 +35,7 @@ Connect the BLTouch to the SKR v2.0 as described in the table below.
 Your config.g should be modified as below.
 ```
 M558 P9 H6 F120 T8000 C"^probe"       ; set Z probe type to bltouch and the dive height + speeds
-M950 S0 C"servo0"                              ; Setup servo 0 as servo port on SKR v2.0
+M950 S0 C"servo0"                              ; Setup servo 0 as servo port on BTT Octopus v1.1 F429 Version
 ```
 
 You will also need to set up your probe offset using [G31](https://duet3d.dozuki.com/Wiki/Gcode#Section_G31_Set_or_Report_Current_Probe_status) and your [mesh probing grid](https://duet3d.dozuki.com/Wiki/Gcode#Section_M557_Set_Z_probe_point_or_define_probing_grid)

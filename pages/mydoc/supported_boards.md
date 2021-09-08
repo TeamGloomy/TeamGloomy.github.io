@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 20/06/2021
+last_updated: 08/09/2021
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -38,12 +38,14 @@ There are a number of boards which have configurations pre-configured. They are
 * Fly-CDYv2
 * Fly-E3
 * Fly-E3-Pro
+* Fly-Super8
 * Fysetc Spider 407 Version
 * SKR v2
 * SKR-RRF-E3 + Expansion Board
 * SKR Pro v1.1
 * SKR Pro v1.2
 * BTT GTR v1.0
+* BTT Octopus v1.1 F429 Version
 
 ## Supported Drivers
 

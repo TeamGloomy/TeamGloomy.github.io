@@ -2,7 +2,7 @@
 title: Getting Started
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 24/08/2021
 summary: "An overview of how to get started with RepRapFirmware3"
 sidebar: mydoc_sidebar
 permalink: getting_started.html
@@ -15,7 +15,7 @@ To run this on a supported LPC or STM32 based board, a number of items are requi
 
 ## Firmware
 A copy of the firmware is required and can be found [here](https://github.com/gloomyandy/RepRapFirmware/releases) (remember to rename it to just firmware.bin). This is placed on the root of the SD card and is flashed to the board on first boot of the device.  
-There are four versions of the firmware:  
+There are four versions of the firmware (the correct one is identified on each board specific page):  
 * LPC-WiFi
 * LPC-SBC
 * STM32F4-WiFi

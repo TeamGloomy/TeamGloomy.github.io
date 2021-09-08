@@ -52,10 +52,18 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 3.4beta3+1_2 Release Notes
+      url: /release_notes_3.4beta3+1_2.html
+      output: web, pdf
+    
     - title: 3.4beta2_2 Release Notes
       url: /release_notes_3.4beta2_2.html
       output: web, pdf
 
+    - title: 3.3.0_8 Release Notes
+      url: /release_notes_3.3.0_8.html
+      output: web, pdf
+    
     - title: 3.3.0_6 Release Notes
       url: /release_notes_3.3.0_6.html
       output: web, pdf
@@ -603,6 +611,38 @@ entries:
           url: /fly_e3_pro_pins.html
           output: web, pdf
 
+      - title: BTT Octopus v1.1 f429 Version
+        output: web, pdf
+        subfolderitems:
+
+        - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
+          url: /btt_octopus_1.1_f429_connected_wifi_8266.html
+          output: web, pdf
+
+        - title: Connecting via SBC
+          url: /btt_octopus_1.1_f429_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /btt_octopus_1.1_f429_screen.html
+          output: web, pdf
+
+        - title: Connecting a 12864 Screen
+          url: /btt_octopus_1.1_f429_screen_12864.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /btt_octopus_1.1_f429_bltouch.html
+          output: web, pdf
+
+        - title: Connecting an Accelerometer
+          url: /btt_octopus_1.1_f429_accelerometer.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /btt_octopus_1.1_f429_pins.html
+          output: web, pdf
+      
       - title: GTR + M5
         output: web, pdf
         subfolderitems:

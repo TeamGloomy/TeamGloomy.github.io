@@ -12,7 +12,7 @@ toc: false
 datatable: true
 ---
 
-## SKR Pro v2.0 Pinout Diagram
+## SKR v2.0 Pinout Diagram
 
 {% include image.html file="skr_2.0_pins.png" alt="SKR v2.0" caption="SKR v2.0 Pinout" %}
 
