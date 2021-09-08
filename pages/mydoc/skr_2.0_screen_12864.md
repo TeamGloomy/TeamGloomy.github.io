@@ -21,7 +21,7 @@ The information here is aimed at connecting a Fysetc Mini v1.2 12864 display but
 Connect EXP1 to EXP1 and EXP2 to EXP2.  
 
 <ul id="profileTabs" class="nav nav-tabs">
-    <li><a class="noCrossRef" href="#fysetc" data-toggle="tab">Fysetc Mini v1.2 12864</a></li>
+  <li class="active"><a class="noCrossRef" href="#fysetc" data-toggle="tab">Fysetc Mini v1.2 12864</a></li>  
 	<li><a class="noCrossRef" href="#reprap" data-toggle="tab">RepRapDiscount Full Graphic Smart Controller</a></li>
 </ul>
   <div class="tab-content">
