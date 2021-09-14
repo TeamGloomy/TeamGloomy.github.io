@@ -2,7 +2,7 @@
 title: Connecting Type 'K' Thermocouple to a GTR v1.0
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 14/09/2021
 summary: "How to connect a Type 'K' Thermocouple to a GTR v1.0"
 sidebar: mydoc_sidebar
 permalink: gtr_type-k.html
@@ -17,7 +17,7 @@ datatable: true
 GTR v1.0 boards should have support for Type 'K' thermocouples.  
 The chip shown below in red, is the MAX31855K 'K' type thermocouple support.  
 
-{% include image.html file="https://user-images.githubusercontent.com/33468777/132959121-dadc6998-be6a-4735-8a0c-d68b92aa20f8.JPG" alt="GTR MAX31855K Chip" caption="GTR 'K' Thermocouple Chip" %}
+{% include image.html file="gtr-typek.jpg" alt="GTR MAX31855K Chip" caption="GTR 'K' Thermocouple Chip" %}
 
 ## Board.txt modifications
 

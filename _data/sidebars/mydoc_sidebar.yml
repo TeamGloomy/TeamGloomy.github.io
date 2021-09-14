@@ -671,6 +671,10 @@ entries:
           url: /gtr_bltouch.html
           output: web, pdf
 
+        - title: Connecting a Type 'K' Thermocouple
+          url: /gtr_type-k.html
+          output: web, pdf
+
         - title: Connecting an Accelerometer
           url: /gtr_accelerometer.html
           output: web, pdf
