@@ -62,7 +62,7 @@ It needs to be renamed from config_rrf.ini to config.ini for flashing of the fir
 
 Add the following line to your config.g to enable the screen
 
-```M575 P1 S2 B57600```
+```M575 P1 S1 B57600```
 
 </div>
 
