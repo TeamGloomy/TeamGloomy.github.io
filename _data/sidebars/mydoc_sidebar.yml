@@ -611,6 +611,30 @@ entries:
           url: /fly_e3_pro_pins.html
           output: web, pdf
 
+        - title: Fly-Super8
+        output: web, pdf
+        subfolderitems:
+
+        - title: Fly-Super8 General Information
+          url: /fly_super8_general.html
+          output: web, pdf
+        
+        - title: Connecting via WiFi
+          url: /fly_super8_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting a Serial Screen
+          url: /fly_super8_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /fly_super8_bltouch.html
+          output: web, pdf
+
+        - title: Connecting an Accelerometer
+          url: /fly_super8_accelerometer.html
+          output: web, pdf
+
       - title: BTT Octopus v1.1 f429 Version
         output: web, pdf
         subfolderitems:

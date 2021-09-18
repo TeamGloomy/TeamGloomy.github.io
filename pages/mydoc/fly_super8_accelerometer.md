@@ -1,11 +1,11 @@
 ---
-title: Connecting an accelerometer to an SKR-RRF-E3
+title: Connecting an accelerometer to a Fly-Super8
 tags: []
 keywords: 
-last_updated: 15/09/2021
-summary: "How to connect an accelerometer to an SKR-RRF-E3"
+last_updated: 14/07/2021
+summary: "How to connect an accelerometer to a Fly-Super8"
 sidebar: mydoc_sidebar
-permalink: skr_rrf_e3_accelerometer.html
+permalink: fly_super8_accelerometer.html
 folder: mydoc
 comments: false
 toc: false
@@ -18,21 +18,19 @@ From 3.4b1, input shaping can be used to reduce ghosting. The only type of accel
 
 ### Wiring
 
-One possible method of connecting the accelerometer to the SKR-RRF-E3 is described in the table below. The image can be used to aid in identification.  
-Because the firmware is so flexible and we're using software SPI, most pins can be used for this.  
-These connections are on the EXP1 header on the board.  
+The Fly-Super8 has a dedicated accelerometer port.
 
 <div class="datatable-begin"></div>
 
-|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|Fly-E3 Pin|Fly-E3 Pin Name|
+|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|Fly-Super8 Pin|Fly-Super8 Pin Name|
 |:---|:---|:---|:---|:----|
 |Red|VIN| +5v Input| +5v| -|
 |Black|GND|Ground|GND|-|
-|Yellow|SCL|SPI SCK|B.1||
-|Green|SDA|SPI MOSI|E.11||
-|Blue|SDO|SPI MISO|B.2||
-|White|CS|Chip Select|E.10||
-|Purple|Int|Interupt|E.7||
+|Yellow|SCL|SPI SCK|D.3|-|
+|Green|SDA|SPI MOSI|D.5||
+|Blue|SDO|SPI MISO|D.4||
+|White|CS|Chip Select|D.1||
+|Purple|Int|Interupt|D.0||
 
 <div class="datatable-end"></div>
 
@@ -46,15 +44,14 @@ The accelerometer should be mounted firmly to the tool. For a bed slinger (such 
 
 Add the following to board.txt
 ```
-SPI5.pins = { B.1, B.2, E.11 }
-accelerometer.spiChannel = 5
+accelerometer.spiChannel = 3
 ```
 
 ### Config.g Changes
 
 Your config.g should be modified as below.
 ```
-M955 P0 C"E.10+E.7" I20
+M955 P0 C"D.1+d.0" I20
 ```  
 The I (orientation) parameter tells the firmware which of the 24 possible orientations the accelerometer chip is in relative to the printer axes. It is expressed as a 2-digit number.  
 The first digit specifies which machine direction the Z axis of the accelerometer chip (usually the top face of the chip) faces, as follows: 0 = +X, 1 = +Y, 2 = +Z, 4 = -X, 5 = -Y, 6 = -Z. The second digit expresses which direction the X axis of the accelerometer chip faces, using the same code. The direction of positive X is printed on the circuit board. If the board was mounted in the orientation shown in the above image, with +X of the machine being to the right, Y+ being behind and Z+ being up, the I value would be 54. This [document](https://www.dropbox.com/s/hu2w5mk57l4zqpg/Accelerometer%20Orientation.pdf?dl=0) gives information regarding the I value for the new Duet toolboard with accelerometer.  

@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to a GTR
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 14/09/2021
 summary: "How to connect an accelerometer to a GTR"
 sidebar: mydoc_sidebar
 permalink: gtr_accelerometer.html
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-From 3.3b3_2, an accelerometer can be connected to collect resonance data. Nothing can yet be done with this information but input shaping is expected to be implemented in 3.4. The only type of accelerometers that are supported are LIS3DH (but not LIS3DSH).  
+From 3.4b1, input shaping can be used to reduce ghosting. The only type of accelerometers that are supported are LIS3DH and the LIS3DSH.   
 
 ### Wiring
 
@@ -62,8 +62,8 @@ The first digit specifies which machine direction the Z axis of the acceleromete
 
 ### DWC Plugin
 
-There is a plugin to view the accelerometer information. It can be activated under Settings -> General -> Built-in Plugins.  
-It can then be found under Settings -> Machine Specific -> Accelerometer
+There is a plugin to assist in gathering data and analysing it.
+It is called input shaper plugin and can be found on the [duet forum](http://forum.duet.com)
 
 ### Usage
 
