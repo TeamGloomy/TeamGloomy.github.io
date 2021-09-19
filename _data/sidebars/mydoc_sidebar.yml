@@ -611,7 +611,7 @@ entries:
           url: /fly_e3_pro_pins.html
           output: web, pdf
 
-        - title: Fly-Super8
+      - title: Fly-Super8
         output: web, pdf
         subfolderitems:
 
