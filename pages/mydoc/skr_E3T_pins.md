@@ -14,7 +14,7 @@ datatable: true
 
 ## SKR E3 Turbo Pinout Diagram
 
-{% include image.html file="skr_E3T.png" alt="SKR E3 Turbo" caption="SKR E3 Turbo Pinout" %}
+{% include image.html file="skr_E3T.png" url="https://teamgloomy.github.io/images/skr_E3T.png" alt="SKR E3 Turbo" caption="SKR E3 Turbo Pinout" %}
 
 ## SKR E3 Turbo Driver Pins in Firmware
 

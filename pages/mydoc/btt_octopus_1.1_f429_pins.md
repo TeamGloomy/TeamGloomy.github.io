@@ -2,7 +2,7 @@
 title: BTT Octopus v1.1 F429 Version Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 17/08/2021
+last_updated: 20/09/2021
 summary: "The pin names of the BTT Octopus v1.1 F429 Version in the firmware"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_pins.html
@@ -14,9 +14,9 @@ datatable: true
 
 ## BTT Octopus v1.1 F429 Version Pinout Diagram
 
-{% include image.html file="btt_octopus_1.1_pins.png" alt="BTT Octopus v1.1 F429 Version" caption="BTT Octopus v1.1 F429 Version Pinout" %}
+{% include image.html file="btt_octopus_1.1_pins.png" url="https://teamgloomy.github.io/images/btt_octopus_1.1_pins.png" alt="BTT Octopus v1.1 F429 Version" caption="BTT Octopus v1.1 F429 Version Pinout" %}
 
-## BTT Octopus v1.1 F429 Version Pins in Firmware
+## BTT Octopus v1.1 F429 Version Driver Pins in Firmware
 
 Driver pin numbers. They are separated into driver number.
 
@@ -31,7 +31,9 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).  
+## BTT Octopus v1.1 F429 Version Other Pins in Firmware 
+
+If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.
 
 {% include warning.html content="The BTT Octopus v1.1 F429 Version Pinout is incorrect for RX and TX pins on the WiFi header. They should be A.9 and A.10" %}

@@ -14,11 +14,11 @@ datatable: true
 
 ## SKR-RRF-E3 Pinout Diagram
 
-{% include image.html file="skr_rrf_e3_pins.png" alt="SKR-RRF-E3" caption="SKR-RRF-E3 Pinout" %}
+{% include image.html file="skr_rrf_e3_pins.png" url="https://teamgloomy.github.io/images/skr_rrf_e3_pins.png" alt="SKR-RRF-E3" caption="SKR-RRF-E3 Pinout" %}
 
 ## IDEX Pinout Diagram
 
-{% include image.html file="skr_rrf_e3_idex_pins.png" alt="SKR-RRF-E3 IDEX" caption="SKR-RRF-E3 IDEX Pinout" %}
+{% include image.html file="skr_rrf_e3_idex_pins.png" url="https://teamgloomy.github.io/images/skr_rrf_e3_idex_pins.png" alt="SKR-RRF-E3 IDEX" caption="SKR-RRF-E3 IDEX Pinout" %}
 
 ## SKR-RRF-E3 + IDEX Driver Pins in Firmware
 

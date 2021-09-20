@@ -14,7 +14,7 @@ datatable: true
 
 ## Re-Arm Pinout Diagram
 
-{% include image.html file="re_arm.png" alt="Re-Arm" caption="Re-Arm Pinout" %}
+{% include image.html file="re_arm.png" url="https://teamgloomy.github.io/images/re_arm.png" alt="Re-Arm" caption="Re-Arm Pinout" %}
 
 ## Re-Arm Driver Pins in Firmware
 

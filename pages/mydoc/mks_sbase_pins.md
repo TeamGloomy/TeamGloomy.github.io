@@ -14,7 +14,7 @@ datatable: true
 
 ## MKS Sbase v1.3 Pinout Diagram
 
-{% include image.html file="mks_sbase.png" alt="MKS Sbase v1.3" caption="MKS Sbase v1.3 Pinout" %}
+{% include image.html file="mks_sbase.png" url="https://teamgloomy.github.io/images/mks_sbase.png" alt="MKS Sbase v1.3" caption="MKS Sbase v1.3 Pinout" %}
 
 ## MKS Sbase v1.3 Driver Pins in Firmware
 

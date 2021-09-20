@@ -16,11 +16,11 @@ datatable: true
 
 ## GTR Pinout Diagram
 
-{% include image.html file="gtr.png" alt="GTR" caption="GTR Pinout" %}
+{% include image.html file="gtr.png" url="https://teamgloomy.github.io/images/gtr.png" alt="GTR" caption="GTR Pinout" %}
 
 ## M5 Pinout Diagram
 
-{% include image.html file="m5.png" alt="M5" caption="M5 Pinout" %}
+{% include image.html file="m5.png" url="https://teamgloomy.github.io/images/m5.png" alt="M5" caption="M5 Pinout" %}
 
 ## GTR + M5 Driver Pins in Firmware
 

@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-CDYv2 Pinout Diagram
 
-{% include image.html file="fly_cdyv2.svg" alt="Fly-CDYv2" caption="Fly-CDYv2 Pinout" %}
+{% include image.html file="fly_cdyv2.svg" url="https://teamgloomy.github.io/images/fly_cdyv2.svg" alt="Fly-CDYv2" caption="Fly-CDYv2 Pinout" %}
 
 ## fly-CDYv2 Driver Pins in Firmware
 

@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-E3 Pinout Diagram
 
-{% include image.html file="fly_e3.svg" alt="Fly-E3" caption="Fly-E3 Pinout" %}
+{% include image.html file="fly_e3.svg" url="https://teamgloomy.github.io/images/fly_e3.svg" alt="Fly-E3" caption="Fly-E3 Pinout" %}
 
 ## Fly-E3 Drivers Pins in Firmware
 

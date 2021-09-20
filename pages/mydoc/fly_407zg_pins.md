@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-407ZG Pinout Diagram
 
-{% include image.html file="fly_407zg_pins.svg" alt="Fly-407ZG" caption="Fly-407ZG Pinout" %}
+{% include image.html file="fly_407zg_pins.svg" url"https://teamgloomy.github.io/images/fly_407zg_pins.svg" alt="Fly-407ZG" caption="Fly-407ZG Pinout" %}
 
 ## Fly-407ZG Driver Pins in Firmware
 

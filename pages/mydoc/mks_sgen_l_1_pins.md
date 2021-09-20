@@ -14,7 +14,7 @@ datatable: true
 
 ## MKS SGen L v1.0 Pinout Diagram
 
-{% include image.html file="mks_sgen_l_1.png" alt="MKS SGen L v1.0" caption="MKS SGen L v1.0 Pinout" %}
+{% include image.html file="mks_sgen_l_1.png" url="https://teamgloomy.github.io/images/mks_sgen_l_1.png" alt="MKS SGen L v1.0" caption="MKS SGen L v1.0 Pinout" %}
 
 ## MKS SGen L v1.0 Driver Pins in Firmware
 

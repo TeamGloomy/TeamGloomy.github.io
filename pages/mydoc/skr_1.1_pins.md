@@ -14,7 +14,7 @@ datatable: true
 
 ## SKR v1.1 Pinout Diagram
 
-{% include image.html file="skr_1.1.png" alt="SKR 1.1" caption="SKR 1.1 Pinout" %}
+{% include image.html file="skr_1.1.png" url="https://teamgloomy.github.io/images/skr_1.1.png" alt="SKR 1.1" caption="SKR 1.1 Pinout" %}
 
 ## SKR v1.1 Driver Pins in Firmware
 
