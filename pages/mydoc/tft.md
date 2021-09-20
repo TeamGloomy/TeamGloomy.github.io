@@ -2,7 +2,7 @@
 title: TFT Screen Configuration
 tags: []
 keywords: 
-last_updated: 11/03/2021
+last_updated: 19/09/2021
 summary: "TFT Screen Configuration"
 sidebar: mydoc_sidebar
 permalink: tft.html
@@ -30,4 +30,4 @@ It needs to be renamed from config_rrf.ini to config.ini for flashing of the fir
 
 Add the following line to your config.g to enable the screen
 
-```M575 P1 S2 B57600```
+```M575 P1 S1 B57600```

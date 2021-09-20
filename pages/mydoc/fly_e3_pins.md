@@ -2,7 +2,7 @@
 title: Fly-E3 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 20/09/2021
 summary: "The pin names of the Fly-E3 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pins.html
@@ -16,7 +16,7 @@ datatable: true
 
 {% include image.html file="fly_e3.svg" alt="Fly-E3" caption="Fly-E3 Pinout" %}
 
-## Fly-E3 Pins in Firmware
+## Fly-E3 Drivers Pins in Firmware
 
 Driver pin numbers. They are separated into driver number.
 
@@ -31,7 +31,9 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).  
+## Fly-E3 Other Pins in Firmware 
+
+If more than one pin name is availble, either name can be used in the firmware (config.g).    
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  
 
 <div class="datatable-begin"></div>

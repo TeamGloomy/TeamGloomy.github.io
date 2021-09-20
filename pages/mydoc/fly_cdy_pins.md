@@ -2,7 +2,7 @@
 title: Fly-CDY Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 19/09/2021
 summary: "Fly-CDY Pin Names"
 sidebar: mydoc_sidebar
 permalink: fly_cdy_pins.html
@@ -16,7 +16,7 @@ datatable: true
 
 {% include image.html file="fly_cdy.png" alt="Fly-CDY" caption="Fly-CDY Pinout" %}
 
-## fly-CDY Pins in Firmware
+## fly-CDY Driver Pins in Firmware
 
 Driver pin numbers. They are separated into driver number.
 
@@ -32,8 +32,10 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-Other pin numbers. Either name can be used in the firmware (config.g).  
-If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of P0.1, P0_1, 0.1 or 0_1.  
+## Fly-CDY Other Pins in Firmware 
+
+If more than one pin name is availble, either name can be used in the firmware (config.g).   
+If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of P0.1 or P0_1.  
 
 <div class="datatable-begin"></div>
 

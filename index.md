@@ -18,7 +18,7 @@ It was originally ported by [sadvi](https://github.com/sdavi), but is now mainta
 
 ### Latest Stable
 
-The latest stable version is [3.3.0_8](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.3.0_8)
+The latest stable version is [3.3.0_9](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.3.0_9)
 
 Please note that 3.3.X will be the last release for LPC boards.
 

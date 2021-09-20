@@ -60,6 +60,10 @@ entries:
       url: /release_notes_3.4beta2_2.html
       output: web, pdf
 
+    - title: 3.3.0_9 Release Notes
+      url: /release_notes_3.3.0_9.html
+      output: web, pdf
+    
     - title: 3.3.0_8 Release Notes
       url: /release_notes_3.3.0_8.html
       output: web, pdf
@@ -633,6 +637,14 @@ entries:
 
         - title: Connecting an Accelerometer
           url: /fly_super8_accelerometer.html
+          output: web, pdf
+
+        - title: Input Voltage Monitoring
+          url: /fly_super8_voltage.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /fly_super8_pins.html
           output: web, pdf
 
       - title: BTT Octopus v1.1 f429 Version
