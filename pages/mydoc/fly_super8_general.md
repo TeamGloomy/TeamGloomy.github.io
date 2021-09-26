@@ -2,7 +2,7 @@
 title: Fly-Super8 General Information
 tags: []
 keywords: 
-last_updated: 14/09/2021
+last_updated: 26/09/2021
 summary: "General information regarding the Fly-Super8"
 sidebar: mydoc_sidebar
 permalink: fly_super8_general.html
@@ -16,6 +16,13 @@ datatable: true
 
 This page covers any general information for the Fly-Super8 board.  
 It is currently available through [AliExpress](https://www.aliexpress.com/item/1005002372751834.html).  
+
+### Board Fuses
+
+The board is supplied without the fuses installed.  
+It is supplied with different fuses than the listing on AliExpress. The fuses should be installed as shown below.  
+
+{% include image.html file="fly_super8_fuses.png" alt="Fly-Super8 Fuses" caption="Fly-Super8 Fuses" %}
 
 ### Driver Jumpers
 
