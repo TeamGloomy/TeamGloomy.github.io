@@ -434,22 +434,6 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: STM32 Firmware Restrictions
-      url: /stm32_differences.html
-      output: web, pdf
-
-    - title: Configuring an ESP8266 for STM32 Boards
-      url: /stm32_esp8266.html
-      output: web, pdf
-
-    - title: Configuring an ESP32 for STM32 Boards
-      url: /stm32_esp32.html
-      output: web, pdf
-
-    - title: Configuring an SBC for STM32 Boards
-      url: /stm32_sbc.html
-      output: web, pdf
-
       subfolders:  
       - title: Fly-407ZG
         output: web, pdf
@@ -830,6 +814,22 @@ entries:
         - title: Pin Names
           url: /skr_rrf_e3_pins.html
           output: web, pdf
+        
+    - title: STM32 Firmware Restrictions
+      url: /stm32_differences.html
+      output: web, pdf
+
+    - title: Configuring an ESP8266 for STM32 Boards
+      url: /stm32_esp8266.html
+      output: web, pdf
+
+    - title: Configuring an ESP32 for STM32 Boards
+      url: /stm32_esp32.html
+      output: web, pdf
+
+    - title: Configuring an SBC for STM32 Boards
+      url: /stm32_sbc.html
+      output: web, pdf
 
   - title: Screens
     output: web, pdf
