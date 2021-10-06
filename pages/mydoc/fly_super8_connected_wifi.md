@@ -2,7 +2,7 @@
 title: Connecting a Fly-Super8 via WiFi
 tags: []
 keywords: 
-last_updated: 14/09/2021
+last_updated: 06/10/2021
 summary: "How to connect a Fly-Super8 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_super8_connected_wifi.html
@@ -42,7 +42,7 @@ board = fly_super8
 8266wifi.espResetPin = PD.10;
 8266wifi.serialRxTxPins = {PD.9,PD.8};
 serial.aux.rxTxPins = {A.10, A.9};
-heat.tempSensePins = { bed , heat0, heat1, heat2, heat3, heat4 }
+heat.tempSensePins = { adc0 , adc1, adc2, adc3, adc4, adc5 }
 ```
 
 ### Smart Drivers

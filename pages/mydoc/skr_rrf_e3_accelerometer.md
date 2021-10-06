@@ -24,7 +24,7 @@ These connections are on the EXP1 header on the board.
 
 <div class="datatable-begin"></div>
 
-|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|Fly-E3 Pin|Fly-E3 Pin Name|
+|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|SKR-RRF-E3 Pin|SKR-RRF-E3 Pin Name|
 |:---|:---|:---|:---|:----|
 |Red|VIN| +5v Input| +5v| -|
 |Black|GND|Ground|GND|-|
