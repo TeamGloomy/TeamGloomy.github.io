@@ -631,6 +631,10 @@ entries:
           url: /fly_super8_voltage.html
           output: web, pdf
 
+        - title: Connecting a BTT-MOT-EXP
+          url: /fly_super8_btt_mot_exp.html
+          output: web, pdf
+
         - title: Pin Names
           url: /fly_super8_pins.html
           output: web, pdf

@@ -2,7 +2,7 @@
 title: Fly-Super8 General Information
 tags: []
 keywords: 
-last_updated: 26/09/2021
+last_updated: 14/10/2021
 summary: "General information regarding the Fly-Super8"
 sidebar: mydoc_sidebar
 permalink: fly_super8_general.html
@@ -65,6 +65,10 @@ Set them as shown below.
 ### Maximum HV Input voltage
 
 The three HV drivers have been tested with 48v.
+
+### Thermistor Connection  
+
+Thermistors should use the ADC inputs. The thermistors should be connected between ground and the signal pin.  
 
 ### Initial Installation
 
