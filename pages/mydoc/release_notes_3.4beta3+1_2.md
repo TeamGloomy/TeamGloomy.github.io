@@ -17,7 +17,7 @@ Please see the Duet3D [release notes for 3.4 Beta 3](https://github.com/Duet3D/R
 
 ## RepRapFirmware for STM32 Release Notes for 3.4b3_1+2
 
-* Duet3D 3.3beta3+1 changes
+* Duet3D 3.4beta3+1 changes
 * Filter WiFi module debug output to remove garbage characters
 * STM32F4 update Fly Super8 pins
 * STM32F4 update Spider pins

@@ -52,12 +52,24 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 3.4beta5_1 Release Notes
+      url: /release_notes_3.4beta5_1.html
+      output: web, pdf
+
+    - title: 3.4beta4_1 Release Notes
+      url: /release_notes_3.4beta4_1.html
+      output: web, pdf
+    
     - title: 3.4beta3+1_2 Release Notes
       url: /release_notes_3.4beta3+1_2.html
       output: web, pdf
     
     - title: 3.4beta2_2 Release Notes
       url: /release_notes_3.4beta2_2.html
+      output: web, pdf
+
+    - title: 3.3.0_10 Release Notes
+      url: /release_notes_3.3.0_10.html
       output: web, pdf
 
     - title: 3.3.0_9 Release Notes
