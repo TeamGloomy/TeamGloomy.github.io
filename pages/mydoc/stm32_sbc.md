@@ -34,7 +34,7 @@ If you want to enable SSH on the DuetPi with GUI image, SSH can be enabled by pl
 
 ## Updating to the latest stable version
 
-Regardless of whether you are installing the LPC specific DSF changes for the first time or are updating to the latest stable version, the procedure is the same. We suggest using the automatic mode.
+Regardless of whether you are installing DSF for the first time or are updating to the latest stable version, the procedure is the same. We suggest using the automatic mode.
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#automatic" data-toggle="tab">Automatic Mode Stable</a></li>
