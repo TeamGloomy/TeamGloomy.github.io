@@ -2,7 +2,7 @@
 title:  Configuring an SBC for LPC Boards
 tags: 
 keywords: 
-last_updated: 33/07/2021
+last_updated: 19/10/2021
 summary: "How to configure an SBC for use with LPC based Boards"
 sidebar: mydoc_sidebar
 permalink: lpc_sbc.html
@@ -80,6 +80,43 @@ sudo apt-get install --reinstall duetcontrolserver
 </div>
 
 <div role="tabpanel" class="tab-pane" id="manual" markdown="1">
+
+#### Holding Packages
+
+When using this manual mode, it is suggested to put all the duet packages on hold. Especially as the LPC version will not get support past 3.3.X.  
+To do so, run the following:  
+
+```
+sudo apt-mark hold \
+    duetsoftwareframework \
+    duetcontrolserver \
+    duetruntime \
+    duetsd \
+    duetsoftwareframework \
+    duettools \
+    duetwebcontrol \
+    duetwebserver \
+    reprapfirmware
+```
+
+These packages should be unheld before attempting to update/upgrade them using the following:  
+
+```
+sudo apt-mark unhold \
+    duetsoftwareframework \
+    duetcontrolserver \
+    duetruntime \
+    duetsd \
+    duetsoftwareframework \
+    duettools \
+    duetwebcontrol \
+    duetwebserver \
+    reprapfirmware
+```
+
+Remember to hold them again after updating.  
+
+#### Updating
 
 As soon as your Raspberry Pi has established an internet connection, it is recommended to install the latest updates. To do so, connect via SSH (e.g. via PuTTY) to your Raspberry Pi or open a terminal and run
 
