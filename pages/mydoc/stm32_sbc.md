@@ -2,7 +2,7 @@
 title:  Configuring an SBC for STM32 Boards
 tags: 
 keywords: 
-last_updated: 17/10/2021
+last_updated: 09/11/2021
 summary: "Configuring an SBC for STM32 Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_sbc.html
@@ -74,9 +74,9 @@ sudo apt-get install --reinstall duetcontrolserver
 To use the automatic updater, send the following:
 
 ```
-wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_STM_3_4_0_Beta_5.sh
-sudo chmod 755 RRF_STM_3_4_0_Beta_5.sh
-./RRF_STM_3_4_0_Beta_5.sh
+wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_STM_3_4_0_Beta_6.sh
+sudo chmod 755 RRF_STM_3_4_0_Beta_6.sh
+./RRF_STM_3_4_0_Beta_6.sh
 ```
 
 This does everything from the manual section. 
