@@ -1,11 +1,11 @@
 ---
-title: Connecting a 12864 screen to an BTT Octopus v1.1 F429 Version
+title: Connecting a 12864 screen to a Fly-CDYv3
 tags: []
 keywords: 
 last_updated: 21/11/2021
-summary: "How to connect a 12864 screen to an BTT Octopus v1.1 F429 Version"
+summary: "How to connect a 12864 screen to a Fly-CDYv3"
 sidebar: mydoc_sidebar
-permalink: btt_octopus_1.1_f429_screen_12864.html
+permalink: fly_cdyv3_screen_12864.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,36 +14,34 @@ datatable: true
 
 ## Overview
 
-The information here is aimed at connecting a Fysetc Mini v1.2 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
+The information here is aimed at connecting a RepRap 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
 
-## Wiring
+{% include important.html content="When using a 12864 screen, remove the two jumpers that were added to update the ESP32 firmware." %}
 
-Connect EXP1 to EXP1 and EXP2 to EXP2.  
+{% include important.html content="Using a 12864 screen removes the option to update the WiFi firmware using RRF and also removes the use of the TFT header." %}
 
 ## Board.txt modifications
 
 Add the following lines to the board.txt file
 
 ```
-//Fysetc MINI 12864
-lcd.encoderPinA=B.1
-lcd.encoderPinB=B.2
-lcd.encoderPinSw=E.7
-lcd.lcdCSPin=A.5
-lcd.lcdDCPin=E.10
-lcd.spiChannel=0
-//lcd.lcdBeepPin=NoPin
+lcd.encoderPinA=D.9
+lcd.encoderPinB=D.8
+lcd.encoderPinSw=PA.9
+lcd.lcdCSPin=A.10
+lcd.spiChannel=4
+SPI4.pins={E.15, NoPin, B.2}
+lcd.lcdBeepPin = NoPin
+8266wifi.serialRxTxPins = {NoPin, NoPin}
+serial.aux.rxTxPins = {NoPin, NoPin}
 ```
 
-## Config.g
+## Config.g changes
 
-Add this line to config.g
+Add the following line to the end of your config.g
+
 ```
-M950 P1 C"E.12"
-M42 P1 S0
-G4 P500
-M42 P1 S1
-M918 P2 C30 F1000000 E4
+M918 P1 E4 F100000
 ```
 
 ## Menu Files
@@ -53,7 +51,7 @@ First, obtain the recommended menu files from [here](https://github.com/jadonmmi
 
 ### Method 1 - WiFi Mode only
 
-Extract the contents of the zip file you downloaded above and place them in a folder called "Menu" on the SD card of the GTR. 
+Extract the contents of the zip file you downloaded above and place them in a folder called "Menu" on the SD card of the Fly-407ZG. 
 
 ### Method 2
 
@@ -71,11 +69,11 @@ If the screen is showing artifacts/random characters on the screen, the followin
 
 ## Using the SD card slot on the screen
 
-It is possible to use the external SD card.  
+From 3.3RC3, it is possible to use the external SD card.  
 To do so, add the following lines to your board.txt
 
 ```
 sdCard.external.spiChannel=0
 sdCard.external.csPin=A.4
-sdCard.external.cardDetectPin=C.15
+sdCard.external.cardDetectPin=E.13
 ```
