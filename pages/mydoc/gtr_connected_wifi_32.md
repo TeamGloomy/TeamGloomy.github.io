@@ -2,7 +2,7 @@
 title: Connecting a GTR via an ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 04/08/2021
+last_updated: 29/11/2021
 summary: "How to connect to a GTR via an ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_wifi_32.html
@@ -66,10 +66,10 @@ The table below shows the pins required on the ESP32 and what they are connected
 | ESP32 Pin       | GTR Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | RST           | B.10 on EXP2         | 330R           |
-| CS/GPIO15     | B.12 on EXP2         | None           |
-| MOSI/GPIO13   | B.15 on EXP2         | None             |
-| MISO/GPIO12   | B.14 on EXP2         | None             |
-| SCLK/GPIO14  | B.13 on EXP2         | None             |
+| VSPI SS/GPIO5     | B.12 on EXP2         | None           |
+| VSPI MOSI/GPIO23   | B.15 on EXP2         | None             |
+| VSPI MISO/GPIO19   | B.14 on EXP2         | None             |
+| VSPI SCK/GPIO18  | B.13 on EXP2         | None             |
 | ESP_DATA_Ready/GPIO0   | D.10 on EXP2         | None             |
 | LPC_DATA_Ready/GPIO4   | H.10 on EXP2         | None            |
 | VIN(5v)   | 5v on EXP2          | None             |

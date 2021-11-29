@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via an ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 04/08/2021
+last_updated: 29/11/2021
 summary: "Connecting an SKR Pro v1.1 and v1.2 via an ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_wifi_32.html
@@ -33,7 +33,7 @@ TeamGloomy and Mellow have teamed up to produce ESP32 adapters.
 They can be purchased through [aliexpress](https://www.aliexpress.com/item/1005003077964768.html).  
 
 Connect the ESP32 Adapter to the board as shown below.  
-{% include image.html file="skr_pro_esp32_connection.png" alt="SKR Pro v1.1 and v1.2 ESP32" caption="SKR Pro v1.1 and v1.2 ESP32 Adapter Connection" %}
+{% include image.html file="skr_pro_esp32_connection.jpg" alt="SKR Pro v1.1 and v1.2 ESP32" caption="SKR Pro v1.1 and v1.2 ESP32 Adapter Connection" %}
 If not connecting the 4-pin serial cable, then add a small amount of solder in the area highlighted below. 
 {% include image.html file="fly_esp32_power.png" alt="Fly ESP32 Power" caption="Fly ESP32 Power Solder" %}
 
@@ -66,10 +66,10 @@ The table below shows the pins required on the ESP32 and what they are connected
 | ESP32 Pin       | SKR Pro v1.1 and v1.2 Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
 | RST           | F.12 on EXP2         | 330R           |
-| CS/GPIO15     | B.12 on EXP2         | None           |
-| MOSI/GPIO13   | B.15 on EXP2         | None             |
-| MISO/GPIO12   | B.14 on EXP2         | None             |
-| SCLK/GPIO14  | B.13 on EXP2         | None             |
+| VSPI SS/GPIO5     | B.12 on EXP2         | None           |
+| VSPI MOSI/GPIO23   | B.15 on EXP2         | None             |
+| VSPI MISO/GPIO19   | B.14 on EXP2         | None             |
+| VSPI SCK/GPIO18  | B.13 on EXP2         | None             |
 | ESP_DATA_Ready/GPIO0   | G.10 on EXP2         | None             |
 | LPC_DATA_Ready/GPIO4   | F.11 on EXP2         | None            |
 | VIN(5v)   | 5v on EXP2          | None             |
