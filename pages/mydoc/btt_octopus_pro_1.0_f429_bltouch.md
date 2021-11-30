@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to an BTT Octopus v1.1 F429 Version
+title: Connecting a BLTouch to an BTT Octopus Pro v1.0 F429 Version
 tags: []
 keywords: 
 last_updated: 30/11/2021
-summary: "How to connect a BLTouch to an BTT Octopus v1.1 F429 Version"
+summary: "How to connect a BLTouch to an BTT Octopus Pro v1.0 F429 Version"
 sidebar: mydoc_sidebar
-permalink: btt_octopus_1.1_f429_bltouch.html
+permalink: btt_octopus_pro_1.0_f429_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,11 +14,11 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the BTT Octopus v1.1 F429 Version as described in the table below.  
+Connect the BLTouch to the BTT Octopus Pro v1.0 F429 Version as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|BTT Octopus v1.1 F429 Version|BTT Octopus v1.1 F429 Version Pin Name|
+|BLTouch Wire Colour|BTT Octopus Pro v1.0 F429 Version|BTT Octopus Pro v1.0 F429 Version Pin Name|
 |:---|:---|:---|
 |Brown|GND||
 |Red|+5v||
@@ -26,7 +26,7 @@ Connect the BLTouch to the BTT Octopus v1.1 F429 Version as described in the tab
 |Black|GND||
 |White|B.7|probe|
 
-{% include image.html file="btt_octopus_1.1_bltouch.png" alt="BTT Octopus v1.1 F429 Version BLTouch" caption="BTT Octopus v1.1 F429 Version BLTouch Connection" %}
+{% include image.html file="btt_octopus_pro_1.0_bltouch.png" alt="BTT Octopus Pro v1.0 F429 Version BLTouch" caption="BTT Octopus Pro v1.0 F429 Version BLTouch Connection" %}
 
 <div class="datatable-end"></div>
 
@@ -35,7 +35,7 @@ Connect the BLTouch to the BTT Octopus v1.1 F429 Version as described in the tab
 Your config.g should be modified as below.
 ```
 M558 P9 H6 F120 T8000 C"^probe"       ; set Z probe type to bltouch and the dive height + speeds
-M950 S0 C"servo0"                              ; Setup servo 0 as servo port on BTT Octopus v1.1 F429 Version
+M950 S0 C"servo0"                              ; Setup servo 0 as servo port on BTT Octopus Pro v1.0 F429 Version
 ```
 
 You will also need to set up your probe offset using [G31](https://duet3d.dozuki.com/Wiki/Gcode#Section_G31_Set_or_Report_Current_Probe_status) and your [mesh probing grid](https://duet3d.dozuki.com/Wiki/Gcode#Section_M557_Set_Z_probe_point_or_define_probing_grid)

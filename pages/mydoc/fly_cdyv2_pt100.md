@@ -2,7 +2,7 @@
 title: Connecting a PT100 or Type 'K' Thermocouple to a Fly-CDYv2
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 30/11/2021
 summary: "How to connect a PT100 or Type 'K' Thermocouple to a Fly-CDYv2"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_pt100.html
@@ -28,7 +28,6 @@ If your board has the chip shown below in red, you have 'K' type thermocouple su
 The following lines should be added to the board.txt file.
 
 ```
-SPI3.pins = {A.5, A.6, A.7}
 heat.spiTempSensorChannel = 0
 heat.spiTempSensorCSPins = {E.7, E.8}
 ```
@@ -44,7 +43,7 @@ If you are in a country where the mains frequency is 50Hz, change the F60 to F50
 M308 S1 P"E.7" Y"rtd-max31865" F60 R430
 ```
 
-{% include warning.html content="Make sure you include the R430 as the Fly-E3 uses a different reference resistor than expected" %}
+{% include warning.html content="Make sure you include the R430 as the Fly-CDYv2 uses a different reference resistor than expected" %}
 
 ### Type 'K' Thermocouple
 

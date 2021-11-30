@@ -699,6 +699,10 @@ entries:
         output: web, pdf
         subfolderitems:
 
+        - title: BTT Octopus v1.1 f429 Version General Information
+          url: /btt_octopus_1.1_f429_general.html
+          output: web, pdf
+        
         - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
           url: /btt_octopus_1.1_f429_connected_wifi_8266.html
           output: web, pdf
@@ -725,6 +729,46 @@ entries:
 
         - title: Pin Names
           url: /btt_octopus_1.1_f429_pins.html
+          output: web, pdf
+
+      - title: BTT Octopus Pro v1.0 f429 Version
+        output: web, pdf
+        subfolderitems:
+
+        - title: BTT Octopus Pro v1.0 f429 Version General Information
+          url: /btt_octopus_pro_1.0_f429_general.html
+          output: web, pdf
+        
+        - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
+          url: /btt_octopus_pro_1.0_f429_connected_wifi_8266.html
+          output: web, pdf
+
+        - title: Connecting via SBC
+          url: /btt_octopus_pro_1.0_f429_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /btt_octopus_pro_1.0_f429_screen.html
+          output: web, pdf
+
+        - title: Connecting a 12864 Screen
+          url: /btt_octopus_pro_1.0_f429_screen_12864.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /btt_octopus_pro_1.0_f429_bltouch.html
+          output: web, pdf
+
+        - title: Connecting an Accelerometer
+          url: /btt_octopus_pro_1.0_f429_accelerometer.html
+          output: web, pdf
+
+        - title: Connecting a PT100 or PT1000
+          url: /btt_octopus_pro_1.0_f429_pt100.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /btt_octopus_pro_1.0_f429_pins.html
           output: web, pdf
       
       - title: GTR + M5
