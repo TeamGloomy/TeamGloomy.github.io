@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to LPC and STM32
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 30/11/2021
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt.html
@@ -96,6 +96,8 @@ Current preprogrammed boards
 |azteegx5mini2|Azteeg X5 Mini v2|LPC|
 |azteegx5mini3|Azteeg X5 Mini v3|LPC|
 |biqugtr_1.0|SKR GTR v1.0|STM32|
+|biqoctopus_1.1|BTT Octopus v1.1 f439 Version|STM32|
+|biqoctopuspro_1.0|BTT Octopus Pro v1.0 f439 Version|STM32|
 |biquskr_1.1|SKR v1.1|LPC|
 |biquskr_1.3|SKR v1.3|LPC|
 |biquskr_1.4|SKR v1.4|LPC|
@@ -106,7 +108,11 @@ Current preprogrammed boards
 |fly_407zg|Fly-407ZG|STM32|
 |fly_cdy|Fly-CDY|LPC|
 |fly_cdyv2|Fly-CDYv2|STM32|
+|fly_cdyv3|Fly-CDYv3|STM32|
 |fly_E3|Fly-E3|STM32|
+|fly_E3_pro|Fly-E3-Pro|STM32|
+|fly_E3_prov2|Fly-E3-Pro-V2|STM32|
+|fly_super8|Fly-Super8|STM32|
 |fysetc_spider|Fysetc Spider 407 Version|STM32|
 |generic|maps all pins as available by pin number. Not recommended for normal use||
 |mbed|For the mbed developer board|LPC|
