@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-CDYv2
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 07/12/2021
 summary: "How to connect a 12864 screen to a Fly-CDYv2"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_screen_12864.html
@@ -14,11 +14,18 @@ datatable: true
 
 ## Overview
 
-The information here is aimed at connecting a RepRap 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
-
 {% include important.html content="When using a 12864 screen, if the encoder is in a certain position (not clicked fully in to place), then the WiFi module does not start. It does not even flash the blue light on board reset. This is because the encoder pins are shared with the ESP8266 TX/RX pins and if the BTN_EN1 pin (which is the ESP8266 TX pin) is shorted to ground when you try and reset the ESP8266 then it will not boot. Normally the encoder will have neither of the pins shorted to ground. But if you happen to have it positioned between two of the indent positions then the switches will be closed and the ESP8266 will not boot." %}
 
 {% include important.html content="Using a 12864 screen removes the option to update the WiFi firmware using RRF and also removes the use of the TFT header." %}
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#reprap" data-toggle="tab">RepRapDiscount Full Graphic Smart Controller</a></li>
+    <li><a class="noCrossRef" href="#fysetc" data-toggle="tab">Fysetc Mini12864 RGB Panel v2.1</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="reprap" markdown="1">
+
+The information here is aimed at connecting a RepRap 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
 
 ## Board.txt modifications
 
@@ -43,6 +50,66 @@ Add the following line to the end of your config.g
 ```
 M918 P1 E4 F100000
 ```
+</div>
+
+<div role="tabpanel" class="tab-pane" id="fysetc" markdown="1">
+
+## Wiring
+
+The Fysetc Mini12864 RGB Panel v2.1 can be connected directly to the EXP1 and 2 headers of the Fly-CDYv2.  
+
+## Board.txt modifications
+
+Add the following lines to the board.txt file
+
+```
+lcd.encoderPinA=D.9
+lcd.encoderPinB=D.8
+lcd.encoderPinSw=A.9
+lcd.lcdCSPin=B.2
+SPI4.pins={A.5, NoPin, A.7}
+lcd.spiChannel=4
+lcd.lcdDCPin = A.10
+led.neopixelPin=E.14
+8266wifi.serialRxTxPins = {NoPin, NoPin}
+serial.aux.rxTxPins = {NoPin, NoPin}
+```
+
+## Config.g
+
+Use this macro to enable the screen.
+
+```
+; ST7567 Init for FYSETC Mini12864 Panel V2.1
+
+; Turn off backlight
+m150 X2 R0 U0 B0 S3 F0
+; Configure reset pin
+M950 P1 C"PE.15" 
+; hardware reset of LCD
+M42 P1 S0
+G4 P500
+M42 P1 S1
+; Turn display on
+M918 P2 C30 F1000000 E4
+; Fade in backlight
+while iterations < 256
+    m150 X2 R255 U255 B255 P{iterations} S1 F0
+    G4 P20
+; flash Button 3 times
+while iterations < 3
+    m150 X2 R255 U255 B255 P255 S1 F1
+    m150 X2 R0 U255 B0 P255 S2 F0
+    G4 P250
+    m150 X2 R255 U255 B255 P255 S1 F1
+    m150 X2 R0 U255 B0 P0 S2 F0
+    G4 P250
+; Display "ready" button state  
+m150 X2 R255 U255 B255 P255 S1 F1
+m150 X2 R255 U0 B0 P255 S2 F0
+```
+
+</div>
 
 ## Menu Files
 
