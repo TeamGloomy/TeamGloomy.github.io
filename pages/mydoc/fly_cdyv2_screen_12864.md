@@ -77,7 +77,13 @@ serial.aux.rxTxPins = {NoPin, NoPin}
 
 ## Config.g
 
-Use this macro to enable the screen.
+Add the following line to the end of your config.g
+
+```
+M98 P"screen.g"
+```
+
+Add a file in your sys folder called screen.g and add the following contents
 
 ```
 ; ST7567 Init for FYSETC Mini12864 Panel V2.1
