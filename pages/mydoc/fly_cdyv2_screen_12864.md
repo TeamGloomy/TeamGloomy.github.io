@@ -111,6 +111,8 @@ m150 X2 R255 U0 B0 P255 S2 F0
 
 </div>
 
+</div>
+
 ## Menu Files
 
 Menu files must be uploaded to allow the display to generate the correct information. This can be done in two ways.
