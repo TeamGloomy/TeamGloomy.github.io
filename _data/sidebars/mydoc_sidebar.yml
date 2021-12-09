@@ -675,6 +675,10 @@ entries:
           url: /fly_super8_screen.html
           output: web, pdf
 
+        - title: Connecting a 12864 Screen
+          url: /fly_super8_screen_12864.html
+          output: web, pdf
+
         - title: Connecting a BLTouch
           url: /fly_super8_bltouch.html
           output: web, pdf
