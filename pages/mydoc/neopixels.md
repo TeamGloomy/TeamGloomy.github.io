@@ -2,7 +2,7 @@
 title: Configuring Neopixels
 tags: []
 keywords: 
-last_updated: 23/07/2021
+last_updated: 09/12/2021
 summary: "Configuring Neopixels"
 sidebar: mydoc_sidebar
 permalink: neopixels.html
@@ -32,6 +32,8 @@ These take the form of `M150 X2 Tt0:t1:tc:tr`
 * t1 is the high time for a 1 bit in nano seconds
 * tc is the total cycle length (on plus off time) in nano seconds
 * tr is the reset time in microseconds.
+
+{% include tip.html content="The standard timing for WS2812B neopixels is T450:850:1250:50 from [here]{https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf}. If you're having trouble controlling your neopixels, add these timings as described above." %}
 
 So to set up a neopixel that needs a 0 time of say 300nS a 1 time of 800nS a cycle time of say 1250ns and a reset time of 250,000nS (or 250 uS) you use:  
 ```
