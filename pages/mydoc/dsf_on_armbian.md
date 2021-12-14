@@ -418,6 +418,8 @@ Reboot the SBC to apply the changes.
 
 ## Plugins
 
+### Install Apparmor
+
 DSF 3.3 and later allow the installation of third-party plugins on the SBC. To prevent regular plugins from performing malicious actions, they are confined using AppArmor security profiles.
 
 This means AppArmor support must be enabled before third-party plugins can be installed. To achieve this on armbian, perform the following:
@@ -486,3 +488,10 @@ sudo systemctl enable duetpluginservice-root
 sudo systemctl start duetpluginservice
 sudo systemctl start duetpluginservice-root
 ```
+### Install duetpimanagementplugin
+
+Once the setup of apparmor is complete, install the duetpimanagementplugin by running the following command:  
+```
+sudo apt install duetpimanagementplugin
+```
+Then go to the Machine-Specific -> Third-Party Plugins page on DWC to enable it after a manual installation
