@@ -494,4 +494,5 @@ Once the setup of apparmor is complete, install the duetpimanagementplugin by ru
 ```
 sudo apt install duetpimanagementplugin
 ```
-Then go to the Machine-Specific -> Third-Party Plugins page on DWC to enable it after a manual installation
+Then go to the Machine-Specific -> Third-Party Plugins page on DWC to enable it after a manual installation.  
+More information on the duetpimanagementplugin can be found [here](https://github.com/Duet3D/DuetSoftwareFramework/tree/v3.3-dev/src/DuetPiManagementPlugin)
