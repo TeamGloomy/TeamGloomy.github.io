@@ -2,7 +2,7 @@
 title: Installing DSF on Armbian
 tags: []
 keywords: 
-last_updated: 25/01/2021
+last_updated: 14/12/2021
 summary: "Installing DSF on Armbian"
 sidebar: mydoc_sidebar
 permalink: dsf_on_armbian.html
@@ -117,10 +117,26 @@ Let's write down it, you will need it at DSF configuration section.
 ### Increase SPI Buffer size
 
 DCS uses SPI buffer sizes of 8KiB whereas the default Armbian buffer size is limited to 4KiB.  
-In order to change it, you can adjust the boot arguments by creating a new file `/etc/modprobe.d/spidev.conf` by issuing the following command
+In order to change it, you have to add the following line in `/boot/armbianEnv.txt` :
 
 ```
-$ echo "options spidev bufsiz=8192" | sudo tee /etc/modprobe.d/spidev.conf
+extraargs=spidev.bufsiz=8192
+```
+
+To do so, type `sudo nano /boot/armbianEnv.txt` and add these two lines.  
+
+Your `armbianEnv.txt` file may look like below
+
+```
+verbosity=1
+bootlogo=false
+overlay_prefix=rockchip
+rootdev=UUID=12ebc73a-000c-45cd-8c36-d02e7f0c3c6b
+rootfstype=ext4
+overlays=spi-spidev
+param_spidev_spi_bus=1
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
+extraargs=spidev.bufsiz=8192
 ```
 
 After that, restart your SBC to apply the new buffer size.  
@@ -186,49 +202,28 @@ This information may be used at DSF configuration section below.
 
 To install or update the required package the procedure is the same as for a RaspberryPi. 
 
-### Installation steps - auto
-
-To use the automatic updater, send the following:
-
-```
-wget https://raw.githubusercontent.com/TeamGloomy/LPC-STM32-DSF-Install_Script/master/RRF_STM_3_2.sh
-chmod 755 RRF_STM_3_2.sh
-./RRF_STM_3_2.sh
-```
-
-### Installation steps - manual
+### Installation steps - Stable
 
 To obtain the required package, you will first need to add the duet sources list to APT by executing the following commands:
 
 ```
 wget -q https://pkg.duet3d.com/duet3d.gpg
-wget -q https://pkg.duet3d.com/duet3d-unstable.list
+wget -q https://pkg.duet3d.com/duet3d.list
 sudo mv duet3d.gpg /etc/apt/trusted.gpg.d/
-sudo mv duet3d-unstable.list /etc/apt/sources.list.d/duet3d-unstable.list
+sudo mv duet3d.list /etc/apt/sources.list.d/duet3d.list
 sudo chown root:root /etc/apt/trusted.gpg.d/duet3d.gpg
-sudo chown root:root /etc/apt/sources.list.d/duet3d-unstable.list
+sudo chown root:root /etc/apt/sources.list.d/duet3d.list
 ```
 
-Once it's done, update the APT source list by running:
+Once it's done, run the following:
 
+```
+sudo apt-get install apt-transport-https
+```  
+Then  
 ```
 sudo apt-get update
-```
-
-And then, install the required packages :
-
-```
-sudo apt install \
-    duetsoftwareframework=3.2.0 \
-    duetcontrolserver=3.2.0 \
-    duetruntime=3.2.0 \
-    duetsd=1.1.0 \
-    duetsoftwareframework=3.2.0 \
-    duettools=3.2.0 \
-    duetwebcontrol=3.2.0 \
-    duetwebserver=3.2.0 \
-    reprapfirmware=3.2.0-1 \
-    --allow-downgrades
+sudo apt-get install duetsoftwareframework
 ```
 
 You may have a warning as below, simply ignore it and continue
@@ -242,6 +237,71 @@ Once installed, you may also get the error below :
 
 ```
 [fatal] Could not connect to Duet (Error 2. Can not open SPI device file '/dev/spidev0.0'.)
+```
+
+It is suggested to put the duet packages on hold so you don't accidentally update to a new version of DSF. To do so, reun the following command:  
+```
+sudo apt-mark hold \
+    duetsoftwareframework \
+    duetcontrolserver \
+    duetruntime \
+    duetsd \
+    duettools \
+    duetwebcontrol \
+    duetwebserver \
+    reprapfirmware
+```
+
+Don't worry about it and continue to configuration steps.
+
+### Installation steps - Unstable
+
+To obtain the required package, you will first need to add the duet sources list to APT by executing the following commands:
+
+```
+wget -q https://pkg.duet3d.com/duet3d.gpg
+wget -q https://pkg.duet3d.com/duet3d-unstable.list
+sudo mv duet3d.gpg /etc/apt/trusted.gpg.d/
+sudo mv duet3d-unstable.list /etc/apt/sources.list.d/duet3d-unstable.list
+sudo chown root:root /etc/apt/trusted.gpg.d/duet3d.gpg
+sudo chown root:root /etc/apt/sources.list.d/duet3d-unstable.list
+```
+
+Once it's done, run the following:
+
+```
+sudo apt-get install apt-transport-https
+```  
+Then  
+```
+sudo apt-get update
+sudo apt-get install duetsoftwareframework
+```
+
+You may have a warning as below, simply ignore it and continue
+
+```
+W: Sources disagree on hashes for supposely identical version '1.1.0' of 'duetsd:arm64'.
+W: Sources disagree on hashes for supposely identical version '3.2.0-1' of 'reprapfirmware:arm64'.
+```
+
+Once installed, you may also get the error below :
+
+```
+[fatal] Could not connect to Duet (Error 2. Can not open SPI device file '/dev/spidev0.0'.)
+```
+
+It is suggested to put the duet packages on hold so you don't accidentally update to a new version of DSF. To do so, reun the following command:  
+```
+sudo apt-mark hold \
+    duetsoftwareframework \
+    duetcontrolserver \
+    duetruntime \
+    duetsd \
+    duettools \
+    duetwebcontrol \
+    duetwebserver \
+    reprapfirmware
 ```
 
 Don't worry about it and continue to configuration steps.
