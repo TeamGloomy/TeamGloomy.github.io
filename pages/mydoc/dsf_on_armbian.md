@@ -123,7 +123,7 @@ In order to change it, you have to add the following line in `/boot/armbianEnv.t
 extraargs=spidev.bufsiz=8192
 ```
 
-To do so, type `sudo nano /boot/armbianEnv.txt` and add these two lines.  
+To do so, type `sudo nano /boot/armbianEnv.txt` and add the line.  
 
 Your `armbianEnv.txt` file may look like below
 
@@ -415,3 +415,74 @@ Then write the hostname you want and validate.
 Reboot the SBC to apply the changes.
 
 {% include note.html content="The hostname must confirm to certain limitations to be valid. Valid characters for hostnames are letters from a to z, the digits from 0 to 9, the hyphen (-)."%} 
+
+## Plugins
+
+DSF 3.3 and later allow the installation of third-party plugins on the SBC. To prevent regular plugins from performing malicious actions, they are confined using AppArmor security profiles.
+
+This means AppArmor support must be enabled before third-party plugins can be installed. To achieve this on armbian, perform the following:
+
+```
+sudo apt install apparmor
+```
+Then you have to add the following lines in `/boot/armbianEnv.txt` : 
+```
+extraargs=apparmor=1
+security=apparmor
+```
+To do so, type `sudo nano /boot/armbianEnv.txt` and add these two lines.  
+
+Your `armbianEnv.txt` file may look like below
+
+```
+verbosity=1
+bootlogo=false
+overlay_prefix=rockchip
+rootdev=UUID=12ebc73a-000c-45cd-8c36-d02e7f0c3c6b
+rootfstype=ext4
+overlays=spi-spidev
+param_spidev_spi_bus=1
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
+extraargs=spidev.bufsiz=8192 apparmor=1
+security=apparmor
+```
+Then reboot using 
+```
+sudo reboot
+```  
+Once rebooted, check the status of apparmor by running the following:  
+```
+sudo aa-status
+```  
+The output should look like below:  
+```
+apparmor module is loaded.
+7 profiles are loaded.
+7 profiles are in enforce mode.
+   /usr/bin/man
+   /usr/sbin/chronyd
+   /usr/sbin/haveged
+   man_filter
+   man_groff
+   nvidia_modprobe
+   nvidia_modprobe//kmod
+0 profiles are in complain mode.
+3 processes have profiles defined.
+3 processes are in enforce mode.
+   /usr/sbin/chronyd (1317)
+   /usr/sbin/chronyd (1319)
+   /usr/sbin/haveged (572)
+0 processes are in complain mode.
+0 processes are unconfined but have a profile defined.
+```  
+Then install the duetpluginservice
+```
+sudo apt install duetpluginservice
+```  
+Once complete, run and enable the plugin services by running the following:  
+```
+sudo systemctl enable duetpluginservice
+sudo systemctl enable duetpluginservice-root
+sudo systemctl start duetpluginservice
+sudo systemctl start duetpluginservice-root
+```
