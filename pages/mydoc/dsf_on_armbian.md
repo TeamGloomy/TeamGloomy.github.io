@@ -198,21 +198,14 @@ To install or update the required package the procedure is the same as for a Ras
 To obtain the required package, you will first need to add the duet sources list to APT by executing the following commands:
 
 ```
-wget -q https://pkg.duet3d.com/duet3d.gpg
-wget -q https://pkg.duet3d.com/duet3d.list
-sudo mv duet3d.gpg /etc/apt/trusted.gpg.d/
-sudo mv duet3d.list /etc/apt/sources.list.d/duet3d.list
-sudo chown root:root /etc/apt/trusted.gpg.d/duet3d.gpg
-sudo chown root:root /etc/apt/sources.list.d/duet3d.list
+sudo wget -q https://pkg.duet3d.com/duet3d.gpg -O /etc/apt/trusted.gpg.d/duet3d.gpg
+sudo wget -q https://pkg.duet3d.com/duet3d.list -O /etc/apt/sources.list.d/duet3d.list
 ```
 
 Once it's done, run the following:
 
 ```
 sudo apt-get install apt-transport-https
-```  
-Then  
-```
 sudo apt-get update
 sudo apt-get install duetsoftwareframework
 ```
@@ -250,21 +243,14 @@ Don't worry about it and continue to configuration steps.
 To obtain the required package, you will first need to add the duet sources list to APT by executing the following commands:
 
 ```
-wget -q https://pkg.duet3d.com/duet3d.gpg
-wget -q https://pkg.duet3d.com/duet3d-unstable.list
-sudo mv duet3d.gpg /etc/apt/trusted.gpg.d/
-sudo mv duet3d-unstable.list /etc/apt/sources.list.d/duet3d-unstable.list
-sudo chown root:root /etc/apt/trusted.gpg.d/duet3d.gpg
-sudo chown root:root /etc/apt/sources.list.d/duet3d-unstable.list
+sudo wget -q https://pkg.duet3d.com/duet3d.gpg -O /etc/apt/trusted.gpg.d/duet3d.gpg
+sudo wget -q https://pkg.duet3d.com/duet3d-unstable.list -O /etc/apt/sources.list.d/duet3d-unstable.list
 ```
 
 Once it's done, run the following:
 
 ```
 sudo apt-get install apt-transport-https
-```  
-Then  
-```
 sudo apt-get update
 sudo apt-get install duetsoftwareframework
 ```
