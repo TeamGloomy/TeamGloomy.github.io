@@ -1,9 +1,9 @@
 ---
-title: Connecting an Fly-Gemini via SBC
+title: Connecting a Fly-Gemini via SBC
 tags: []
 keywords: 
-last_updated: 09/07/2021
-summary: "How to connect to an Fly-Gemini via SBC"
+last_updated: 16/12/2021
+summary: "How to connect to a Fly-Gemini via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_connected_sbc.html
 folder: mydoc
