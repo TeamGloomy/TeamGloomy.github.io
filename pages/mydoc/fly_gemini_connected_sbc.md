@@ -99,6 +99,9 @@ Place the SD Card into the Core-SD slot.
 
 ## Power Up the Board
 
+The board and bed power supply should be 12/24v.  
+The drivers power supply should be 12/24/48v. 48v should only be used with compatible 48v 5160 drivers.  
+
 Turn it all on and you should be good to go.
 
 If using Ethernet, you can either navigate to duet3.local or find the IP address of the rasberry pi using your router. If you don't have access to that, use something like [Fing](https://www.fing.com/products/fing-desktop){:target="_blank"} to scan your network.
