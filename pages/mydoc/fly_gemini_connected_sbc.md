@@ -88,12 +88,12 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 
 ## SBC Preparation
 
-Download the latest prepared image from (here)[https://drive.google.com/drive/folders/1rDFbd3Kb6sucr0bhk1zx3v4cTNT7BHw7?usp=sharing].  
+Download the latest prepared image from [here](https://drive.google.com/drive/folders/1rDFbd3Kb6sucr0bhk1zx3v4cTNT7BHw7?usp=sharing).  
 The image has DSF installed and ready to go, with the correct transfer pin configured.  
 
 ### Flash the SD Card
 
-Using (BalenaEtcher)[https://www.balena.io/etcher/], flash the downloaded image to an SD card 8Gb or larger.  
+Using [balenaEtcher](https://www.balena.io/etcher/), flash the downloaded image to an SD card 8Gb or larger.  
 
 Place the SD Card into the Core-SD slot.
 
