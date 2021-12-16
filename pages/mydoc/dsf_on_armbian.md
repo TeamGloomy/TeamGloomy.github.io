@@ -172,29 +172,20 @@ It will provide some usefull commands as :
 
 From the schematics of your SBC if available, you may find the SoC port name mapped to the GPIO header.
 
-For example, on the OrangePi 4B (RK3399 SoC), the pin #22 is mapped to port `GPIO1_D0`.
-
-Rockchip RK3399 GPIO has 5 banks, GPIO0 to GPIO4, each bank has 32pins, naming as below
-
+For Rockchip and Sunxi kernels, the GPIO number can be calculated as below:
 ```
-GPIO0_A0 ~ A7 
-GPIO0_B0 ~ B7
-GPIO0_C0 ~ C7
-GPIO0_D0 ~ D7
-   
-GPIO1_A0 ~ A7
-....
-GPIO1_D0 ~ D7
+[position of GPIO port letter in the alphabet - 1] * 8 + pin number
 ```
 
-For Rockchip kernel, the GPIO number can be calculated as below:
+The Rockchip RK3399 has 5 groups of GPIO (GPIO0~GPIO4) which correspond to a character device on Linux side (`/dev/gpiochip0` ~ `/dev/gpiochip4`)
 
+For example, on the OrangePi 4B (RK3399 SoC), the pin on connector position #22 is mapped to port `GPIO1_D0`.
 ```
-GPIO1_D0 = 1*32 + 3*8 + 0 = 56
+GPIO1_D0 => 3*8 + 0 = 24
 (A=0, B=1, C=2, D=3, E=4)
 ```
 
-It means `GPIO1_D0` is the 24th pin of bank 1 = line 24 of GPIO controller `/dev/gpiochip1`
+It means `GPIO1_D0` is the 24th pin of bank 1 => line 24 of GPIO controller `/dev/gpiochip1`
 
 This information may be used at DSF configuration section below.
 
@@ -207,21 +198,14 @@ To install or update the required package the procedure is the same as for a Ras
 To obtain the required package, you will first need to add the duet sources list to APT by executing the following commands:
 
 ```
-wget -q https://pkg.duet3d.com/duet3d.gpg
-wget -q https://pkg.duet3d.com/duet3d.list
-sudo mv duet3d.gpg /etc/apt/trusted.gpg.d/
-sudo mv duet3d.list /etc/apt/sources.list.d/duet3d.list
-sudo chown root:root /etc/apt/trusted.gpg.d/duet3d.gpg
-sudo chown root:root /etc/apt/sources.list.d/duet3d.list
+sudo wget -q https://pkg.duet3d.com/duet3d.gpg -O /etc/apt/trusted.gpg.d/duet3d.gpg
+sudo wget -q https://pkg.duet3d.com/duet3d.list -O /etc/apt/sources.list.d/duet3d.list
 ```
 
 Once it's done, run the following:
 
 ```
 sudo apt-get install apt-transport-https
-```  
-Then  
-```
 sudo apt-get update
 sudo apt-get install duetsoftwareframework
 ```
@@ -259,21 +243,14 @@ Don't worry about it and continue to configuration steps.
 To obtain the required package, you will first need to add the duet sources list to APT by executing the following commands:
 
 ```
-wget -q https://pkg.duet3d.com/duet3d.gpg
-wget -q https://pkg.duet3d.com/duet3d-unstable.list
-sudo mv duet3d.gpg /etc/apt/trusted.gpg.d/
-sudo mv duet3d-unstable.list /etc/apt/sources.list.d/duet3d-unstable.list
-sudo chown root:root /etc/apt/trusted.gpg.d/duet3d.gpg
-sudo chown root:root /etc/apt/sources.list.d/duet3d-unstable.list
+sudo wget -q https://pkg.duet3d.com/duet3d.gpg -O /etc/apt/trusted.gpg.d/duet3d.gpg
+sudo wget -q https://pkg.duet3d.com/duet3d-unstable.list -O /etc/apt/sources.list.d/duet3d-unstable.list
 ```
 
 Once it's done, run the following:
 
 ```
 sudo apt-get install apt-transport-https
-```  
-Then  
-```
 sudo apt-get update
 sudo apt-get install duetsoftwareframework
 ```
