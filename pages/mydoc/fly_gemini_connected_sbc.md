@@ -117,7 +117,7 @@ If your SBC has onboard wireless capability or if you use a 3rd party wireless a
 
 ### Finally...
 
-Once you've connected to the raspberry pi through your router, start to customise your config.g file etc or upload the outputted zip file from the [Configurator](https://teamgloomy.github.io/Configurator){:target="_blank"} to the pi using the system tab of DWC.
+Once you've connected to the raspberry pi through your router, start to customise your config.g file etc or upload the outputted zip file from the [Configurator](https://teamgloomy.github.io/Configurator){:target="_blank"} to the pi using the system tab of Duet Web Control (DWC).
 
 ### Remember to PID tune the bed and tool 
 
