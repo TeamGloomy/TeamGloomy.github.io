@@ -30,7 +30,7 @@ On the row near the EAP headers, ensure that switches 1 to 4 are in the on posit
 
 ### Additional Cable
 
-An addition cable requires adding to allow the connection between the STM32 and the SBC to function correctly.  
+An additional cable requires adding to allow the connection between the STM32 and the SBC to function correctly.  
 It should be added as shown below between the left most pin of the small 4 pin connector (TX on the silkscreen but RX on the schematics) and the middle piin on the bottom row of EXP1 (PA.8).  
 {% include image.html file="fly_gemini_cable.jpg" alt="Fly-Gemini Additional Cable" caption="Fly-Gemini Additional Cable" %}  
 
