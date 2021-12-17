@@ -44,6 +44,8 @@ Set them as shown below.
 
 {% include image.html file="fly_gemini_fan_voltage.png" alt="Fly-Gemini Fan Voltage" caption="Fly-Gemini Fan Voltage" %}
 
+{% include important.html content="Fan2's voltage is also controlled by the above jumper and is not just Vin." %}
+
 ### Maximum Input voltage
 
 #### Board/Bed Power
