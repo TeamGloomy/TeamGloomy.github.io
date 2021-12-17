@@ -22,9 +22,9 @@ Connect the BLTouch to the Fly-Gemini as described in the table below.
 |:---|:---|:---|
 |Brown|GND||
 |Red|5v||
-|Yellow|PB0|Servo0|
+|Yellow|B.0|Servo0|
 |Black|GND||
-|White|PC4|Probe|
+|White|A.1|Probe|
 
 <div class="datatable-end"></div>
 
