@@ -2,7 +2,7 @@
 title: Connecting a Fly-Gemini via SBC
 tags: []
 keywords: 
-last_updated: 16/12/2021
+last_updated: 17/12/2021
 summary: "How to connect to a Fly-Gemini via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_connected_sbc.html
@@ -14,7 +14,8 @@ datatable: true
 
 ## Overview
 
-The Fly-Gemini STM32F405VGT6 based board with an Allwinner H5 built in for SBC functionality.
+The Fly-Gemini STM32F405VGT6 based board with an Allwinner H5 built in for SBC functionality.  
+Two SD cards are required when using this board. One for the STM32 side and one for the SBC side.  
 
 ## Board Setup
 
@@ -38,6 +39,7 @@ It should be added as shown below between the left most pin of the small 4 pin c
 
 ### Firmware File
 
+{% include tip.html content="The image file we offer for setting up the SBC side of the Fly-Gemini is based on Stable releases only. Please ensure that you use a stable image on the STM side and once up a running, if switching to a beta image, you can follow the instructions [here](stm32_sbc.html#automatic-mode-unstable). ." %}
 Choose the correct corresponding firmware (firmware-stm32f4-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. Remember to rename it to firmware.bin. Put it in the root of a small FAT32 formatted SD card. This will be placed in the STM32 side of the board. 
 
 ### Board.txt

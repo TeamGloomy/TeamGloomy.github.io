@@ -1,11 +1,11 @@
 ---
-title: Connecting a BLTouch to a Fly-E3-Pro
+title: Connecting a BLTouch to a Fly-Gemini
 tags: []
 keywords: 
-last_updated: 14/07/2021
-summary: "How to connect a BLTouch to a Fly-E3-Pro"
+last_updated: 17/12/2021
+summary: "How to connect a BLTouch to a Fly-Gemini"
 sidebar: mydoc_sidebar
-permalink: fly_e3_pro_bltouch.html
+permalink: fly_gemini_bltouch.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,11 +14,11 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the Fly-E3-Pro as described in the table below.  
+Connect the BLTouch to the Fly-Gemini as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|Fly-E3-Pro Pin|Fly-E3-Pro Pin Name|
+|BLTouch Wire Colour|Fly-Gemini Pin|Fly-Gemini Pin Name|
 |:---|:---|:---|
 |Brown|GND||
 |Red|5v||
@@ -27,8 +27,6 @@ Connect the BLTouch to the Fly-E3-Pro as described in the table below.
 |White|PC4|Probe|
 
 <div class="datatable-end"></div>
-
-{% include image.html file="fly_e3_bltouch.png" alt="Fly-E3 BLTouch" caption="Fly-E3-Pro BLTouch Wiring" %}
 
 ### Config.g Changes
 

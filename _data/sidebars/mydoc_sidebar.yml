@@ -659,6 +659,30 @@ entries:
           url: /fly_e3_pro_pins.html
           output: web, pdf
 
+      - title: Fly-Gemini
+        output: web, pdf
+        subfolderitems:
+
+        - title: Fly-Gemini General Information
+          url: /fly_gemini_general.html
+          output: web, pdf
+        
+        - title: Connecting via SBC
+          url: /fly_gemini_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Serial Screen
+          url: /fly_gemini_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /fly_gemini_bltouch.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /fly_gemini_pins.html
+          output: web, pdf
+
       - title: Fly-Super8
         output: web, pdf
         subfolderitems:
