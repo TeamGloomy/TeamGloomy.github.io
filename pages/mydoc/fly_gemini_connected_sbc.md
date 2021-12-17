@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The Fly-Gemini STM32F405VGT6 based board with an Allwinner H5 built in for SBC functionality.  
+The Fly-Gemini STM32F405VGT6 based board with an Allwinner H5 built in for SBC functionality. The Fly-Gemini is only supported from RRF 3.3.0_12 and 3.6b7 onwards.   
 Two SD cards are required when using this board. One for the STM32 side and one for the SBC side.  
 
 ## Board Setup
