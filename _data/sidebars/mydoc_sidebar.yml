@@ -939,7 +939,7 @@ entries:
       url: /stm32_sbc.html
       output: web, pdf
 
-  - title: STM32 + Integrated Boards
+  - title: STM32 + Integrated SBC Boards
     output: web, pdf
     folderitems:
 
