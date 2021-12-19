@@ -9,6 +9,7 @@ permalink: armbian_wifi.html
 folder: mydoc
 comments: false
 toc: false
+datatable: true
 ---
 
 ## Supported WiFi Chipsets
@@ -103,6 +104,5 @@ Here is a list of the WiFi Chipsets supported in the TeamGloomy Build of Armbian
 |Atheros|AT9285|
 |Atheros|AT9285|
 |Atheros|AR9170|
-
 
 <div class="datatable-end"></div>
