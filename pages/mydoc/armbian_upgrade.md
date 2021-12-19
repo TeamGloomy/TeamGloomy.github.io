@@ -5,7 +5,7 @@ keywords:
 last_updated: 19/12/2021
 summary: "How to upgrade Armbian and DSF"
 sidebar: mydoc_sidebar
-permalink: armbian_wifi.html
+permalink: armbian_upgrade.html
 folder: mydoc
 comments: false
 toc: false
