@@ -76,7 +76,7 @@ In config.g, the following command should be added.
 ```
 M575 P1 S0 B57600
 ```  
-The latest version of the screen firmware can be found [here](https://github.com/FLYmaker/FLY-Screen/tree/master/reprap).  
+The latest version of the screen firmware can be found [here](https://github.com/Mellow-3D/FLY-Screen-RepRap/releases).  
 To update the screen, put the update.img onto a blank SD card. Put the SD card into the screen and power it up. The update will then be flashed automatically. Once finished, power down the screen and remove the SD card.  
 
 </div>
