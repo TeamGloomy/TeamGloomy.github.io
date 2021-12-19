@@ -25,7 +25,7 @@ When you invoke it, you must also pass through a version number for the version 
 To use it, as an example, send the following command over SSH or over a console connection.   
 
 ```
-rrf_upgrade 3.4b7
+rrf_upgrade 3.4-b7
 ```  
 The script can also be used to downgrade the version of DSF.  
 An example of installing a stable release is given below.  
