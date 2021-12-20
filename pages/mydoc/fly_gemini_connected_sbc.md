@@ -110,12 +110,12 @@ The drivers power supply should be 12/24/48v. 48v should only be used with compa
 
 Turn it all on and you should be good to go.
 
-If using Ethernet, you can either navigate to duet3.local or find the IP address of the rasberry pi using your router. If you don't have access to that, use something like [Fing](https://www.fing.com/products/fing-desktop){:target="_blank"} to scan your network.
+If using Ethernet, you can either navigate to [fly-gemini.local](http://fly-gemini.local) or find the IP address of the rasberry pi using your router. If you don't have access to that, use something like [Fing](https://www.fing.com/products/fing-desktop){:target="_blank"} to scan your network.
 
 ## SSH into the board
 
 Either via CORE UART USB connection or by using SSH via the network connection.
-The default username is `root` and the default password is `1234`. Follow the onscreen instructions and change the root password and setup a new user. I reccomend using ZSH rather than bash.  
+The default username is `root` and the default password is `1234`. Follow the onscreen instructions and change the root password and setup a new user. I recommend using ZSH rather than bash.  
 
 ### How to connect to wireless
 
