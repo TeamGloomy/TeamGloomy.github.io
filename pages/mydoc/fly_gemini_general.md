@@ -2,7 +2,7 @@
 title: Fly-Gemini General Information
 tags: []
 keywords: 
-last_updated: 17/12/2021
+last_updated: 21/12/2021
 summary: "General information regarding the Fly-Gemini"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_general.html
@@ -31,7 +31,7 @@ If you plan on using endstops rather than sensorless homing and do not have the 
 
 ### Fan Mosfets
 
-The Fly-Super8 has a unique feature in that the fan mosfets are replaceable.
+The Fly-Gemini fan mosfets are replaceable.
 Each mosfet (VS3622e) controls two of the fan outputs.
 The orientation that the fan mostfet is plugged into the board doesn't matter.
 
