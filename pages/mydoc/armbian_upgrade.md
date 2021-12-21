@@ -63,6 +63,7 @@ A list of the available arguments for the script can be found below.
 |3.4-b5|Unstable|
 |3.4-b6|Unstable|
 |3.4-b7|Unstable|
+
 <div class="datatable-end"></div>
 
 For reference, the packages available and their names can be found [here](https://pkg.duet3d.com/dists/unstable/armv7/binary-armhf/)
