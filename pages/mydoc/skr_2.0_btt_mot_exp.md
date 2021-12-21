@@ -2,7 +2,7 @@
 title: Connecting a BTT-MOT-EXP to an SKR v2.0
 tags: []
 keywords: 
-last_updated: 15/07/2021
+last_updated: 21/12/2021
 summary: "How to connect a BTT-MOT-EXP to an SKR v2.0"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_btt_mot_exp.html
@@ -34,7 +34,7 @@ Please add the following lines to the board.txt.
 stepper.enablePins = { E.3, D.6, D.1, C.7, D.13, C.4, E.13, E.12 }
 stepper.stepPins = { E.2, D.5, A.15, D.15, D.11, A.7, E.7, A.6 }
 stepper.directionPins = { E.1, D.4, A.8, D.14, D.10, B.2, A.4, A.5 }
-stepper.TmcUartPins = { E.0, D.3, D.0, C.6, D.12, E.11, B.9, B.0 }
+stepper.TmcUartPins = { E.0, D.3, D.0, C.6, D.12, E.11, E.9, B.0 }
 ```
 
 ## Sensorless Homing
