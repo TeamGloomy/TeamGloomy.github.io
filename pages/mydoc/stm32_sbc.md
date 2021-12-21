@@ -37,7 +37,7 @@ If you want to enable SSH on the DuetPi with GUI image, SSH can be enabled by pl
 
 A script has been provided to make updating the version of DSF on your SBC a lot easier. Although we don't make any changes to DSF to make it compatible with the STM32 port of RRF, there are a couple of features we have added to make your experience better. They are as follows:
 * As the STM32 port lags the official duet releases by a few days, we mark the DSF linux packages as being on hold. This allows you to continue to update the SBC without running the risk of updating DSF to a version which is incompatible with the firmware running on your board.
-* For those of you running DSF on an SBC other than a raspberry pi, we backup the transfer ready pin you've set and restore it after upgrade.
+* For those of you running DSF on an SBC other than a raspberry pi, we backup the transfer ready pin, SPI device and GPIO chip you've set and restore it after upgrade.
 * The script allows you to easily upgrade or downgrade to a specific version through the use of a version argument.
 * The script is self updating so you only need to install it once.
 
