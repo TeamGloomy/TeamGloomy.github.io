@@ -2,7 +2,7 @@
 title: Setting up Putty
 tags: []
 keywords: 
-last_updated: 22/04/2021
+last_updated: 21/12/2021
 summary: "Setting up Putty for use with RRF"
 sidebar: mydoc_sidebar
 permalink: putty.html
@@ -35,8 +35,10 @@ for both
 
 As shown below.  
 {% include image.html file="putty2.png" alt="Putty 2" caption="Putty 2" %} 
+Now click on Features (under terminal) on the left menu and add a tick to **Disable application keypad mode** as shown below.  
+{% include image.html file="putty5.png" alt="Putty 3" caption="Putty 3" %} 
 Now click on Session on the left menu.  
-{% include image.html file="putty4.png" alt="Putty 3" caption="Putty 3" %} 
+{% include image.html file="putty4.png" alt="Putty 4" caption="Putty 4" %} 
 Finally, save the settings so they don't need changing next time you open up putty.  
 Click on default settings and then click the save button.  
-{% include image.html file="putty3.png" alt="Putty 4" caption="Putty 4" %}
+{% include image.html file="putty3.png" alt="Putty 5" caption="Putty 5" %}
