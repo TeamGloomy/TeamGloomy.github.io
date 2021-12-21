@@ -43,7 +43,7 @@ A script has been provided to make updating the version of DSF on your SBC a lot
 
 To download the script onto your SBC, run the following code **only once**.  
 ```
-sudo wget https://github.com/TeamGloomy/rrf_stm32_sbc/blob/master/armbian/userpatches/overlay/rrf_upgrade.sh -O  /usr/local/bin/rrf_upgrade && chmod a+x /usr/local/bin/rrf_upgrade
+sudo wget https://github.com/TeamGloomy/rrf_stm32_sbc/blob/master/armbian/userpatches/overlay/rrf_upgrade.sh -O  /usr/local/bin/rrf_upgrade && sudo chmod a+x /usr/local/bin/rrf_upgrade
 ```  
 To use it, as an example, send the following command over SSH or over a console connection.   
 
