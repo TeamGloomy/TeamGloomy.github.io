@@ -2,7 +2,7 @@
 title: Connecting a screen to a BTT Octopus Pro v1.0 F429 Version
 tags: []
 keywords: 
-last_updated: 30/11/2021
+last_updated: 22/12/2021
 summary: "How to connect a serial screen to a BTT Octopus Pro v1.0 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.0_f429_screen.html
@@ -60,7 +60,9 @@ It needs to be renamed from config_rrf.ini to config.ini for flashing of the fir
 
 Add the following line to your config.g to enable the screen
 
-```M575 P1 S1 B57600```
+```M575 P1 S2 B57600```
+
+If the screen says `No printer connected` try with other values for the `S` parameter (possible values are `0`, `1`, `2` and `3`)
 
 </div>
 
