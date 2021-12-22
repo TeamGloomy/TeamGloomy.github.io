@@ -2,7 +2,7 @@
 title: Connecting a screen to a Fly-E3
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 22/12/2021
 summary: "How to connect a serial screen to a Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_screen.html
@@ -60,7 +60,9 @@ It needs to be renamed from config_rrf.ini to config.ini for flashing of the fir
 
 Add the following line to your config.g to enable the screen
 
-```M575 P1 S1 B57600```
+```M575 P1 S2 B57600```
+
+If the screen says `No printer connected` try with other values for the `S` parameter (possible values are `0`, `1`, `2` and `3`)
 
 </div>
 
