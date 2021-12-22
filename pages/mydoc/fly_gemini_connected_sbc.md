@@ -2,7 +2,7 @@
 title: Connecting a Fly-Gemini via SBC
 tags: []
 keywords: 
-last_updated: 21/12/2021
+last_updated: 22/12/2021
 summary: "How to connect to a Fly-Gemini via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_connected_sbc.html
@@ -94,7 +94,7 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 
 ## SBC Preparation
 
-Download the latest prepared image from [here](https://github.com/TeamGloomy/rrf_stm32_sbc/releases).  
+Download the latest prepared image from [here](https://drive.google.com/drive/folders/1rDFbd3Kb6sucr0bhk1zx3v4cTNT7BHw7?usp=sharing).  
 The image has DSF installed and ready to go, with the correct transfer pin configured.  
 
 ### Flash the SD Card
