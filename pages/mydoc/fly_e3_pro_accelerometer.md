@@ -63,7 +63,7 @@ The first digit specifies which machine direction the Z axis of the acceleromete
 ### DWC Plugin
 
 There is a plugin to assist in gathering data and analysing it.
-It is called input shaper plugin and can be found on the [duet forum](http://forum.duet.com)
+It is called input shaper plugin and can be found on the [duet forum](https://github.com/mfs12/DuetWebControl/releases)
 
 ### Usage
 

@@ -94,7 +94,7 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 
 ## SBC Preparation
 
-Download the latest prepared image from [here](https://drive.google.com/drive/folders/1rDFbd3Kb6sucr0bhk1zx3v4cTNT7BHw7?usp=sharing).  
+Download the latest prepared image from [here](https://github.com/TeamGloomy/rrf_stm32_sbc/releases).  
 The image has DSF installed and ready to go, with the correct transfer pin configured.  
 
 ### Flash the SD Card
