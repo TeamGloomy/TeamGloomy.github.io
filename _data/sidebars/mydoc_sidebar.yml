@@ -659,6 +659,38 @@ entries:
           url: /fly_e3_pro_pins.html
           output: web, pdf
 
+      - title: Fly-E3-Pro-v2
+        output: web, pdf
+        subfolderitems:
+
+        - title: Fly-E3-Pro-v2 General Information
+          url: /fly_e3_prov2_general.html
+          output: web, pdf
+        
+        - title: Connecting via WiFi
+          url: /fly_e3_prov2_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting a Serial Screen
+          url: /fly_e3_prov2_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /fly_e3_prov2_bltouch.html
+          output: web, pdf
+
+        - title: Connecting a PT100 or Type 'K' Thermocouple
+          url: /fly_e3_prov2_pt100.html
+          output: web, pdf
+
+        - title: Input Voltage Monitoring
+          url: /fly_e3_prov2_voltage.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /fly_e3_prov2_pins.html
+          output: web, pdf
+
       - title: Fly-Super8
         output: web, pdf
         subfolderitems:

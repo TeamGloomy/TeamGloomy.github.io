@@ -1,11 +1,11 @@
 ---
-title: Fly-E3-Pro General Information
+title: Fly-E3-Pro-v2 General Information
 tags: []
 keywords: 
 last_updated: 26/12/2021
-summary: "General information regarding the Fly-E3-Pro"
+summary: "General information regarding the Fly-E3-Pro-v2"
 sidebar: mydoc_sidebar
-permalink: fly_e3_pro_general.html
+permalink: fly_e3_prov2_general.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the Fly-E3-Pro board.  
+This page covers any general information for the Fly-E3-Pro-v2 board.  
 It is currently available through [AliExpress](https://www.aliexpress.com/item/1005002372751834.html).  
 
 ### Z Driver Jumpers
@@ -25,7 +25,7 @@ If only one Z output is being used, jumpers should be installed on the other Z o
 
 ### Driver Diag Pin
 
-To use sensorless homing, a jumper must be installed on the diag header.
+To use sensorless homing, a jumper must be installed on the diag header for each driver you are going to use it on.
 
 {% include image.html file="fly_e3_pro_diag.png" alt="Fly-E3-Pro Diag Jumpers" caption="Fly-E3-Pro Diag Jumper Locations" %}
 
@@ -39,6 +39,14 @@ Install a jumper on each of the locations highlighted.
 ### Maximum Input voltage
 
 The board can handle an input voltage up to 32v.
+
+### Fan Mosfets
+
+The Fly-E3-Pro-v2 has a feature in that the fan mosfets are replaceable.
+Each mosfet (VS3622e) controls two of the fan outputs.
+The orientation that the fan mostfet is plugged into the board doesn't matter.
+
+{% include image.html file="fly_e3_prov2_mosfets.png" alt="Fly-E3-Pro-v2 Fan Mosfets" caption="Fly-E3-Pro-v2 Fan Mosfets" %}
 
 ### Initial Installation
 
