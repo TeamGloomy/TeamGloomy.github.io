@@ -2,7 +2,7 @@
 title: Fly-E3-Pro-v2 General Information
 tags: []
 keywords: 
-last_updated: 26/12/2021
+last_updated: 07/01/2022
 summary: "General information regarding the Fly-E3-Pro-v2"
 sidebar: mydoc_sidebar
 permalink: fly_e3_prov2_general.html
@@ -51,7 +51,7 @@ The orientation that the fan mostfet is plugged into the board doesn't matter.
 ### Initial Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
-Follow the [WiFi instructions](fly_e3_pro_connected_wifi.html).
+Follow the [WiFi instructions](fly_e3_prov2_connected_wifi.html).
 
 ## Ender 3 Conversion
 
