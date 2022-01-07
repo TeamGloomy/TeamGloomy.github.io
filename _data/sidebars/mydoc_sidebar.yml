@@ -675,6 +675,10 @@ entries:
           url: /fly_e3_prov2_screen.html
           output: web, pdf
 
+        - title: Connecting a 12864 Screen
+          url: /fly_e3_prov2_screen_12864.html
+          output: web, pdf
+
         - title: Connecting a BLTouch
           url: /fly_e3_prov2_bltouch.html
           output: web, pdf
