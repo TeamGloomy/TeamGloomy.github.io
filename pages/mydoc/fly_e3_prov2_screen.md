@@ -5,7 +5,7 @@ keywords:
 last_updated: 26/12/2021
 summary: "How to connect a serial screen to a Fly-E3-Pro-v2"
 sidebar: mydoc_sidebar
-permalink: fly_e3_pro-v2_screen.html
+permalink: fly_e3_prov2_screen.html
 folder: mydoc
 comments: false
 toc: false

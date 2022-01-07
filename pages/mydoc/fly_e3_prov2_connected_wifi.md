@@ -2,7 +2,7 @@
 title: Connecting a Fly-E3-Pro-v2 via WiFi
 tags: []
 keywords: 
-last_updated: 26/12/2021
+last_updated: 07/01/2022
 summary: "How to connect a Fly-E3-Pro-v2 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_e3_prov2_connected_wifi.html
@@ -16,14 +16,14 @@ datatable: true
 
 The Fly-E3-Pro-v2 is an STM32F407ZGT6 based board with onboard drivers.  
 This board is unique in that it has been created as a reprapfirmware board first and foremost.  
-That means than unlike other boards, an ESP8266 has been provided on board, no adapter required.  
+That means than unlike other boards, an ESP32 has been provided on board, no adapter required.  
 
 ## Flashing the board firmware
 
 Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card. The board is supported from 3.3b1_5 onwards.    
 
 ## WiFi firmware preparation
-Choose the correct corresponding firmware (DuetWiFiServer-esp8266-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  
+Choose the correct corresponding firmware (DuetWiFiServer-esp32-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  
 
 {% include important.html content="From 3.3, the DuetWiFiServer.bin file needs to be placed in a folder called firmware. This folder should be placed in the root of the SD card."%}  
 
@@ -86,7 +86,7 @@ M552 S1
 
 The blue light on the WiFi chip shoould then flash blue and will go solid when a connection has been established. The ip address will be shown on the serial connection. It is also possible to type just M552 to get the current ip address reported back.
 
-The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the WiFi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP8266 chip.  
+The final thing to do is add the line “M552 S1” to your config file. This can be done through the web interface. This just ensures that the WiFi connection is started at start up. There is no need to add the M587 command as this is written permanently to the flash of the ESP32 chip.  
 
 ### Once up and running
 
