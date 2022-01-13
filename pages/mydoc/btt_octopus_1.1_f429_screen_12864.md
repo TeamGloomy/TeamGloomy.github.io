@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to an BTT Octopus v1.1 F429 Version
 tags: []
 keywords: 
-last_updated: 21/11/2021
+last_updated: 13/01/2022
 summary: "How to connect a 12864 screen to an BTT Octopus v1.1 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_screen_12864.html
@@ -29,10 +29,11 @@ Add the following lines to the board.txt file
 lcd.encoderPinA=B.1
 lcd.encoderPinB=B.2
 lcd.encoderPinSw=E.7
-lcd.lcdCSPin=A.5
+lcd.lcdCSPin=A.4
 lcd.lcdDCPin=E.10
 lcd.spiChannel=0
 //lcd.lcdBeepPin=NoPin
+heat.spiTempSensorCSPins = {F.8, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}
 ```
 
 ## Config.g
