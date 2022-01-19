@@ -18,8 +18,9 @@ Here are a list of known plugins for DWC
 
 <div class="datatable-begin"></div>
 
-|Plugin Name|Link|Standalone|SBC|
-| :------------- |:-------------|:-------------|:-------------|
-|BtnCmd|[Github](https://github.com/MintyTrebor/BtnCmd/releases)|{% include image.html file="tick.png"%} |{% include image.html file="tick.png"%}|
+|Plugin Name|Link|Firmware Version|Standalone|SBC|
+| :------------- |:-------------|:-------------|:-------------|:-------------|
+|BtnCmd|[Github](https://github.com/MintyTrebor/BtnCmd/releases)|3.3+|{% include image.html file="tick.png"%}|{% include image.html file="tick.png"%}|
+|DUET3D_CNC_Probe|[Github](https://github.com/raymondjstone/DUET3D_CNC_Probe/releases/tag/0.6.20)|3.3+|{% include image.html file="tick.png"%}|{% include image.html file="tick.png"%}|
 
 <div class="datatable-end"></div>
