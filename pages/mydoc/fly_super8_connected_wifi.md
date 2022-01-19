@@ -2,7 +2,7 @@
 title: Connecting a Fly-Super8 via WiFi
 tags: []
 keywords: 
-last_updated: 06/10/2021
+last_updated: 19/01/2022
 summary: "How to connect a Fly-Super8 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_super8_connected_wifi.html

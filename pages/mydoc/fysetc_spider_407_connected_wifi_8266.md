@@ -2,7 +2,7 @@
 title: Connecting an Fysetc Spider 407 Version via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 17/08/2021
+last_updated: 19/01/2022
 summary: "How to connect to an Fysetc Spider 407 Version via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: fysetc_spider_407_connected_wifi_8266.html
@@ -23,9 +23,7 @@ Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [
 ## WiFi firmware preparation
 Choose the correct corresponding firmware from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases){:target="_blank"}. 
 * DuetWiFiServer-esp8266-stm32f4.bin for ESP8266
-Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  
-
-{% include important.html content="From 3.3, the DuetWiFiServer.bin file needs to be placed in a folder called firmware. This folder should be placed in the root of the SD card."%}  
+Remember to rename it to DuetWiFiServer.bin. Put it in a folder called firmware in the SD card.  
 
 ## WiFi
 

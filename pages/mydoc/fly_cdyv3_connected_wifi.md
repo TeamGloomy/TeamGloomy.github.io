@@ -2,7 +2,7 @@
 title: Connecting to a Fly-CDYv3 via WiFi
 tags: []
 keywords: 
-last_updated: 21/11/2021
+last_updated: 19/01/2022
 summary: "How to connect a Fly-CDYv3 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv3_connected_wifi.html
