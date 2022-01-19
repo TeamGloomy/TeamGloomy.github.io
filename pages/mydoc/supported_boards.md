@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 09/11/2021
+last_updated: 19/01/2022
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -40,7 +40,9 @@ There are a number of boards which have configurations pre-configured. They are
 * Fly-E3
 * Fly-E3-Pro
 * Fly-E3-Pro-v2
-* Fly-Super8
+* Fly-Gemini
+* Fly-Super8-v1
+* Fly-Super8-v1.1
 * Fysetc Spider 407 Version
 * SKR v2
 * SKR-RRF-E3 + Expansion Board

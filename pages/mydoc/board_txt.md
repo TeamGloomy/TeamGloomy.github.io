@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to LPC and STM32
 tags: []
 keywords: 
-last_updated: 30/11/2021
+last_updated: 19/01/2022
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt.html
@@ -112,6 +112,7 @@ Current preprogrammed boards
 |fly_E3|Fly-E3|STM32|
 |fly_E3_pro|Fly-E3-Pro|STM32|
 |fly_E3_prov2|Fly-E3-Pro-V2|STM32|
+|fly_gemini|Fly-Gemini|STM32|
 |fly_super8|Fly-Super8|STM32|
 |fysetc_spider|Fysetc Spider 407 Version|STM32|
 |generic|maps all pins as available by pin number. Not recommended for normal use||

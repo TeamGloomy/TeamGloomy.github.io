@@ -52,6 +52,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 3.4beta7_2 Release Notes
+      url: /release_notes_3.4beta7_2.html
+      output: web, pdf
+    
     - title: 3.4beta6_1 Release Notes
       url: /release_notes_3.4beta6_1.html
       output: web, pdf
@@ -72,6 +76,10 @@ entries:
       url: /release_notes_3.4beta2_2.html
       output: web, pdf
 
+    - title: 3.3.0_14 Release Notes
+      url: /release_notes_3.3.0_14.html
+      output: web, pdf
+    
     - title: 3.3.0_11 Release Notes
       url: /release_notes_3.3.0_11.html
       output: web, pdf
@@ -198,6 +206,10 @@ entries:
 
     - title: Useful Macros
       url: /useful_macros.html
+      output: web, pdf
+
+    - title: DWC Plugins
+      url: /plugins.html
       output: web, pdf
 
     - title: Firmware Build Instructions

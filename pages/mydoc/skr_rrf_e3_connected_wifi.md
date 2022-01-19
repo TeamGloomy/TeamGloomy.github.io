@@ -2,7 +2,7 @@
 title: Connecting a SKR-RRF-E3 via Wifi
 tags: []
 keywords: 
-last_updated: 15/07/2021
+last_updated: 19/01/2022
 summary: "Connecting a SKR-RRF-E3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_connected_wifi.html
@@ -22,9 +22,7 @@ It is officially supported by TeamGloomy from release 3.3b1_5.
 Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
 
 ## WiFi firmware preparation
-Choose the correct corresponding firmware (DuetWiFiServer-esp8266-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Remember to rename it to DuetWiFiServer.bin. Put it in the sys folder on the SD card.  
-
-{% include important.html content="From 3.3, the DuetWiFiServer.bin file needs to be placed in a folder called firmware. This folder should be placed in the root of the SD card."%}  
+Choose the correct corresponding firmware (DuetWiFiServer-esp8266-stm32f4.bin) from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Remember to rename it to DuetWiFiServer.bin. Put it in a folder called firmware in the SD card.  
 
 ### Prepare the SD Card
 
