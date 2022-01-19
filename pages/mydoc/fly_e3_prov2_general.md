@@ -46,7 +46,7 @@ The Fly-E3-Pro-v2 has a feature in that the fan mosfets are replaceable.
 Each mosfet (VS3622e) controls two of the fan outputs.
 The orientation that the fan mostfet is plugged into the board doesn't matter.
 
-{% include image.html file="fly_e3_prov2_mosfets.png" alt="Fly-E3-Pro-v2 Fan Mosfets" caption="Fly-E3-Pro-v2 Fan Mosfets" %}
+{% include image.html file="fly_e3_prov2_mosfets.jpg" alt="Fly-E3-Pro-v2 Fan Mosfets" caption="Fly-E3-Pro-v2 Fan Mosfets" %}
 
 ### Initial Installation
 
