@@ -2,7 +2,7 @@
 title: BTT Octopus Pro v1.0 F429 Version Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 30/11/2021
+last_updated: 24/01/2022
 summary: "The pin names of the BTT Octopus Pro v1.0 F429 Version in the firmware"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.0_f429_pins.html
@@ -81,6 +81,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |C.4|X-CS||
 |D.11|Y-CS||
 |C.6|Z-CS||
+|C.5|probe1||
 |C.7|E0-CS||
 |F.2|E1-CS||
 |E.4|E2-CS||

@@ -29,4 +29,5 @@ Here are a list of known plugins for DWC. The table indicates whether the plugin
 |filament load cell|Kriechi|[Github](https://github.com/Kriechi/duet-plugin-filament-load-cell)|3.3+||X|
 |Another weighing filament holder|achrn|[Duet3d Forum](https://forum.duet3d.com/topic/25419/another-weighing-filament-holder)|3.3+||X|
 
+
 <div class="datatable-end"></div>

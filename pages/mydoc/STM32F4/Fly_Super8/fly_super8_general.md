@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fly-Super8 board.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/1005002372751834.html).  
+It is currently available through [AliExpress](https://www.aliexpress.com/item/1005003235684044.html).  
 
 ### Board Fuses
 
