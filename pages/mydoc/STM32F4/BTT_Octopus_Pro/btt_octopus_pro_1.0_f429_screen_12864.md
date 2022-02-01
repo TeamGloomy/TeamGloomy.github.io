@@ -36,7 +36,7 @@ Add the following lines to the board.txt file
 lcd.encoderPinA=B.1
 lcd.encoderPinB=B.2
 lcd.encoderPinSw=E.7
-lcd.lcdCSPin=A.4
+lcd.lcdCSPin=E.9
 lcd.lcdDCPin=E.10
 lcd.spiChannel=0
 //lcd.lcdBeepPin=NoPin
@@ -71,7 +71,7 @@ Add the following lines to the board.txt file
 lcd.encoderPinA=B.1
 lcd.encoderPinB=B.2
 lcd.encoderPinSw=E.7
-lcd.lcdCSPin=A.4
+lcd.lcdCSPin=E.9
 lcd.lcdDCPin=E.10
 lcd.spiChannel=0
 //lcd.lcdBeepPin=NoPin
@@ -100,7 +100,7 @@ M42 P1 S0
 G4 P500
 M42 P1 S1
 ; Turn display on
-M918 P2 C30 F100000 E4
+M918 P2 C30 F1000000 E4
 ; Fade in backlight
 while iterations < 256
     m150 X2 R255 U255 B255 P{iterations} S1 F0
