@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to an BTT Octopus Pro v1.0 F429 Version
 tags: []
 keywords: 
-last_updated: 21/11/2021
+last_updated: 01/02/2022
 summary: "How to connect a 12864 screen to an BTT Octopus Pro v1.0 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.0_f429_screen_12864.html
@@ -11,6 +11,13 @@ comments: false
 toc: false
 datatable: true
 ---
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#fysetc12" data-toggle="tab">Fysetc Mini12864 RGB Panel v1.2</a></li>
+    <li><a class="noCrossRef" href="#fysetc" data-toggle="tab">Fysetc Mini12864 RGB Panel v2.1</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="fysetc12" markdown="1">
 
 ## Overview
 
@@ -29,10 +36,11 @@ Add the following lines to the board.txt file
 lcd.encoderPinA=B.1
 lcd.encoderPinB=B.2
 lcd.encoderPinSw=E.7
-lcd.lcdCSPin=A.5
+lcd.lcdCSPin=A.4
 lcd.lcdDCPin=E.10
 lcd.spiChannel=0
 //lcd.lcdBeepPin=NoPin
+heat.spiTempSensorCSPins = {F.8, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}
 ```
 
 ## Config.g
@@ -43,8 +51,76 @@ M950 P1 C"E.12"
 M42 P1 S0
 G4 P500
 M42 P1 S1
-M918 P2 C30 F1000000 E4
+M918 P2 C30 F100000 E4
 ```
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="fysetc21" markdown="1">
+
+## Wiring
+
+Connect EXP1 to EXP1 and EXP2 to EXP2.  
+
+## Board.txt modifications
+
+Add the following lines to the board.txt file
+
+```
+//Fysetc MINI 12864
+lcd.encoderPinA=B.1
+lcd.encoderPinB=B.2
+lcd.encoderPinSw=E.7
+lcd.lcdCSPin=A.4
+lcd.lcdDCPin=E.10
+lcd.spiChannel=0
+//lcd.lcdBeepPin=NoPin
+heat.spiTempSensorCSPins = {F.8, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}
+led.neopixelPin=E.13
+```
+## Config.g
+
+Add the following line to the end of your config.g
+
+```
+M98 P"screen.g"
+```
+
+Add a file in your sys folder called screen.g and add the following contents
+
+```
+; ST7567 Init for FYSETC Mini12864 Panel V2.1
+
+; Turn off backlight
+m150 X2 R0 U0 B0 S3 F0
+; Configure reset pin
+M950 P1 C"PE.12" 
+; hardware reset of LCD
+M42 P1 S0
+G4 P500
+M42 P1 S1
+; Turn display on
+M918 P2 C30 F100000 E4
+; Fade in backlight
+while iterations < 256
+    m150 X2 R255 U255 B255 P{iterations} S1 F0
+    G4 P20
+; flash Button 3 times
+while iterations < 3
+    m150 X2 R255 U255 B255 P255 S1 F1
+    m150 X2 R0 U255 B0 P255 S2 F0
+    G4 P250
+    m150 X2 R255 U255 B255 P255 S1 F1
+    m150 X2 R0 U255 B0 P0 S2 F0
+    G4 P250
+; Display "ready" button state  
+m150 X2 R255 U255 B255 P255 S1 F1
+m150 X2 R255 U0 B0 P255 S2 F0
+```
+
+</div>
+
+</div>
 
 ## Menu Files
 
