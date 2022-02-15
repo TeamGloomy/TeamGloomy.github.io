@@ -22,8 +22,9 @@ A number of users reported heater outputs used for controlling a bed as failing 
 
 ## Issue 2
 
-A user reported that on boot up, if a fan mosfet was not declared within a config that the output would remain on. On further investigation, the fan outputs will remain on when either no sd card is present or when they are not defined in a config.g file. This is due to the lack of pulldown resistor on the output pin. This means that if there is an SD card issue (no board.txt is loaded, config.g not ran or failed sd card), they will default to being on with no control. This may not be less of an issue with Marlin (as the configuration is programmed onto the MCU) and Klipper (as the configuration is loaded from the SBC over USB/Serial).
+A user reported that on boot up, if a fan mosfet was not declared within a config that the output would remain on. On further investigation, the fan outputs will remain on when either no sd card is present or when they are not defined in a config.g file. This is due to the lack of pulldown resistor on the output pin. This means that if there is an SD card issue (no board.txt is loaded, config.g not ran or failed sd card), they will default to being on with no control. This may also be an issue with Marlin and Klipper.
 Also on the board available for testing here, when powered by 12v and with the 12v jumpers applied, the heater mosfets also remained on with no sd card installed or when they weren't defined in firmware. 
+Essentially, in some circumstances the fan and heater MOSFETs can turn on without being commanded by the firmware.
 
 ## Conclusion
 
