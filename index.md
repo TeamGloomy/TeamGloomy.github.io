@@ -24,7 +24,7 @@ Please note that 3.3.X will be the last release for LPC boards.
 
 ### Latest Unstable
 
-The latest unstable version is [3.4beta7_2](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.0beta7_2)
+The latest unstable version is [3.4rc1_1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.0rc1_1)
 
 This release only supports STM32F4 based boards.
 
