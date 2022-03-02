@@ -1008,7 +1008,6 @@ entries:
           url: /fly_gemini_pins.html
           output: web, pdf
 
-      subfolders:  
       - title: Fly-Gemini-V1.1
         output: web, pdf
         subfolderitems:
