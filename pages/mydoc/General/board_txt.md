@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to LPC and STM32
 tags: []
 keywords: 
-last_updated: 19/01/2022
+last_updated: 02/03/2022
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt.html
@@ -95,26 +95,27 @@ Current preprogrammed boards
 |azteegx5mini1.1|Azteeg X5 Mini v1.1|LPC|
 |azteegx5mini2|Azteeg X5 Mini v2|LPC|
 |azteegx5mini3|Azteeg X5 Mini v3|LPC|
-|biqugtr_1.0|SKR GTR v1.0|STM32|
-|biqoctopus_1.1|BTT Octopus v1.1 f439 Version|STM32|
-|biqoctopuspro_1.0|BTT Octopus Pro v1.0 f439 Version|STM32|
+|biqugtr_1.0|SKR GTR v1.0|STM32F4|
+|biqoctopus_1.1|BTT Octopus v1.1 f439 Version|STM3F4|
+|biqoctopuspro_1.0|BTT Octopus Pro v1.0 f439 Version|STM32F4|
 |biquskr_1.1|SKR v1.1|LPC|
 |biquskr_1.3|SKR v1.3|LPC|
 |biquskr_1.4|SKR v1.4|LPC|
-|biquskr_2.0|SKR v1.4|STM32|
+|biquskr_2.0|SKR v1.4|STM32F4|
 |biquskr_e3t|SKR E3 Turbo|LPC|
-|biquskr_rrf_e3_1.0|SKR RRF E3 v1.0|STM32|
-|biquskrpro_1.1|SKR Pro v1.1 and 1.2|STM32|
-|fly_407zg|Fly-407ZG|STM32|
+|biquskr_rrf_e3_1.0|SKR RRF E3 v1.0|STM32F4|
+|biquskrpro_1.1|SKR Pro v1.1 and 1.2|STM32F4|
+|fly_407zg|Fly-407ZG|STM32F4|
 |fly_cdy|Fly-CDY|LPC|
-|fly_cdyv2|Fly-CDYv2|STM32|
-|fly_cdyv3|Fly-CDYv3|STM32|
-|fly_E3|Fly-E3|STM32|
-|fly_E3_pro|Fly-E3-Pro|STM32|
-|fly_E3_prov2|Fly-E3-Pro-V2|STM32|
-|fly_gemini|Fly-Gemini|STM32|
-|fly_super8|Fly-Super8|STM32|
-|fysetc_spider|Fysetc Spider 407 Version|STM32|
+|fly_cdyv2|Fly-CDYv2|STM32F4|
+|fly_cdyv3|Fly-CDYv3|STM32F4|
+|fly_E3|Fly-E3|STM32F4|
+|fly_E3_pro|Fly-E3-Pro|STM32F4|
+|fly_E3_prov2|Fly-E3-Pro-V2|STM32F4|
+|fly_gemini|Fly-Gemini|STM32F4+SBC|
+|fly_geminiv1.1|Fly-Gemini|STM32F4+SBC|
+|fly_super8|Fly-Super8|STM32F4|
+|fysetc_spider|Fysetc Spider 407 Version|STM32F4|
 |generic|maps all pins as available by pin number. Not recommended for normal use||
 |mbed|For the mbed developer board|LPC|
 |mkssbase_1.3|MKS Sbase v1.3|LPC|

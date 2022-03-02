@@ -28,7 +28,7 @@ This version is for use on boards that are going to be used with an ESP8266 WiFi
 This version uses an SBC (Single Board Computer) such as a raspberry pi to serve up the webpage, allowing both an ethernet or WiFi connection. This acts in the same way as the new Duet 3 + SBC. Information can be found on the corresponding boards page.  
 
 ## SD Card Structure
-The SD Card structure as detailed [here](https://duet3d.dozuki.com/Wiki/Firmware_Overview#Section_SD_card_structure).  
+The SD Card structure as detailed [here](https://docs.duet3d.com/en/User_manual/RepRapFirmware/SD_card).  
 This is applicable only to WiFi versions of the firmware.  
 
 ## DuetWebControl
@@ -47,8 +47,8 @@ This can be generated using the [Configurator](https://teamgloomy.github.io/Conf
 ## Updating
 When updating to new versions of the firmware, please read the following files:  
 - [Whats new in RRF](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x) This details all of the changes made to the RepRapFirmware between each version.  
-- [Whats new in RRF - LPC/STM32 Specific](https://github.com/gloomyandy/RepRapFirmware/blob/v3.02-dev-unified/WHATS_NEW_UNIFIED.md) This details any specific changes which have been made to RepRapFirmware between each version.  
+- [Whats new in RRF - LPC/STM32 Specific - RRF3.3](https://github.com/gloomyandy/RepRapFirmware/blob/v3.3-dev/WHATS_NEW_UNIFIED.md) or [Whats new in RRF - STM32 Specific - RRF3.4](https://github.com/gloomyandy/RepRapFirmware/blob/v3.4-dev/WHATS_NEW_UNIFIED.md) This details any specific changes which have been made to RepRapFirmware between each version.  
 
 ## If new to RRF
 
-If you've not used RRF or Duet boards before, a good resource of information can be found [here](https://duet3d.dozuki.com/#Section_If_you_are_not_familiar_with_Duet_electronics_or_RepRapFirmware). 
+If you've not used RRF or Duet boards before, a good resource of information can be found [here](https://docs.duet3d.com/User_manual/Overview/Adapting). 

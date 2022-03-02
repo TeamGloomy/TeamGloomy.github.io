@@ -2,7 +2,7 @@
 title:  Configuring an SBC for STM32 Boards
 tags: 
 keywords: 
-last_updated: 10/01/2022
+last_updated: 02/03/2022
 summary: "Configuring an SBC for STM32 Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_sbc.html
@@ -48,9 +48,15 @@ sudo wget https://raw.githubusercontent.com/TeamGloomy/rrf_stm32_sbc/master/armb
 To use it, as an example, send the following command over SSH or over a console connection.   
 
 ```
+rrf_upgrade latest-stable
+```
+This will upgrade to the latest stable version. `latest-unstable` can also be used as an argument. An argument must always be added to the end of *rrf_upgrade* so it knows which version to install.    
+
+If you are wanting to upgrade/downgrade to a specific version, you can also pass the version number through to the upgrade script.
+
+```
 rrf_upgrade 3.4-b7
 ```  
-An argument must always be added to the end of *rrf_upgrade* so it knows which version to install.  
 
 A list of the available arguments for the script can be found below.  
 
@@ -81,6 +87,8 @@ A list of the available arguments for the script can be found below.
 |3.4-b5|Unstable|
 |3.4-b6|Unstable|
 |3.4-b7|Unstable|
+|3.4-rc1|Unstable|
+|3.4-rc2|Unstable|
 
 <div class="datatable-end"></div>
 

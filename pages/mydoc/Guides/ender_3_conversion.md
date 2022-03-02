@@ -192,7 +192,7 @@ Download the latest DWC from [here](https://github.com/Duet3D/DuetWebControl/rel
 
 Take the SD card you prepared and put it in the Fly-E3.  
 Turn on the printer.  
-Connect your computer to the Fly-E3. Please be aware of [ground loops](https://duet3d.dozuki.com/Wiki/USB_ground_loops). It is advised to power both the PC and Printer from the same double socket, or if possible, use a laptop.
+Connect your computer to the Fly-E3. Please be aware of [ground loops](https://docs.duet3d.com/en/User_manual/Overview/USB_ground_loops). It is advised to power both the PC and Printer from the same double socket, or if possible, use a laptop.
 
 After 10 seconds or so, the Fly-E3 should become accessible to the PC.
 

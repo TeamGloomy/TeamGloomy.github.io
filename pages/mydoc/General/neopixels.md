@@ -20,7 +20,7 @@ Ensure that you have the pin correctly defined in your board.txt file. Here is a
 led.neopixelPin = 1.24
 ```
 
-For configuring them, use this [documentation](https://duet3d.dozuki.com/Wiki/Gcode#Section_M150_Set_LED_colours) for reference. 
+For configuring them, use this [documentation](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m150-set-led-colours) for reference. 
 
 {% include important.html content="Please be aware that this version of the firmware uses X2 rather than X1 in the M150 command. The Q command for frequency is also not supported." %}
 

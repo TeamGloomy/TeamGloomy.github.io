@@ -2,7 +2,7 @@
 title: Upgrading Armbian and DSF
 tags: []
 keywords: 
-last_updated: 21/12/2021
+last_updated: 02/03/2022
 summary: "How to upgrade Armbian and DSF"
 sidebar: mydoc_sidebar
 permalink: armbian_upgrade.html
@@ -26,12 +26,14 @@ When you invoke it, you must also pass through a version number for the version 
 To use it, as an example, send the following command over SSH or over a console connection.   
 
 ```
-rrf_upgrade 3.4-b7
-```  
-The script can also be used to downgrade the version of DSF.  
-An example of installing a stable release is given below.  
+rrf_upgrade latest-stable
 ```
-rrf_upgrade 3.3.0
+This will upgrade to the latest stable version. `latest-unstable` can also be used as an argument. An argument must always be added to the end of *rrf_upgrade* so it knows which version to install.    
+
+If you are wanting to upgrade/downgrade to a specific version, you can also pass the version number through to the upgrade script.
+
+```
+rrf_upgrade 3.4-b7
 ```  
 
 A list of the available arguments for the script can be found below.  
@@ -63,6 +65,8 @@ A list of the available arguments for the script can be found below.
 |3.4-b5|Unstable|
 |3.4-b6|Unstable|
 |3.4-b7|Unstable|
+|3.4-rc1|Unstable|
+|3.4-rc2|Unstable|
 
 <div class="datatable-end"></div>
 

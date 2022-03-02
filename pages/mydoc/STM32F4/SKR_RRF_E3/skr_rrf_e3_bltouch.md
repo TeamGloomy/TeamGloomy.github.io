@@ -38,7 +38,7 @@ M558 P9 H6 F120 T8000 C"^probe"       ; set Z probe type to bltouch and the dive
 M950 S0 C"servo0"                     ; Setup servo 0 as servo port on SKR-RRF-E3
 ```
 
-You will also need to set up your probe offset using [G31](https://duet3d.dozuki.com/Wiki/Gcode#Section_G31_Set_or_Report_Current_Probe_status) and your [mesh probing grid](https://duet3d.dozuki.com/Wiki/Gcode#Section_M557_Set_Z_probe_point_or_define_probing_grid)
+You will also need to set up your probe offset using [G31](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#g31-set-or-report-current-probe-status) and your [mesh probing grid](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m557-set-z-probe-point-or-define-probing-grid)
 
 ## Files to Create
 
@@ -188,8 +188,8 @@ M280 P0 S120 ; Send PWM channel 7 the S10 (angle) command
 
 ## Links to Relevant Duet3D Documentation
 
-[Connecting a BLTouch](https://duet3d.dozuki.com/Wiki/Connecting_a_Z_probe#Section_BLTouch)  
-[Troubleshooting a BLTouch](https://duet3d.dozuki.com/Wiki/BLTouch_Troubleshooting)
+[Connecting a BLTouch](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Z_probe_connecting#bltouch)  
+[Troubleshooting a BLTouch](https://docs.duet3d.com/en/User_manual/Troubleshooting/BLTouch_troubleshooting)
 
 
 ## Marlin Fast Probe

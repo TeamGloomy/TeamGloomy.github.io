@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 The Fly-CDYv3 natively supports input voltage monitoring.  
-This allows for resume on power loss to be used. See [here](https://duet3d.dozuki.com/Wiki/Setting_up_to_resume_a_print_after_a_power_failure) for more information.  
+This allows for resume on power loss to be used. See [here](https://docs.duet3d.com/en/User_manual/Tuning/Resume) for more information.  
 On testing, running 24v, we've found that there is enough power to write the resume information to the SD card but there isn't enough power to lift the head away from the bed. Therefore, it would be beneficial to add a large capacitor across the input voltage.
 
 ### Setting up

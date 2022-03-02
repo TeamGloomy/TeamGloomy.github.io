@@ -40,7 +40,7 @@ In config.g, the following command should be added.
 ```
 M575 P1 S1 B57600
 ```
-From RepRapFirmware 3.2, it is possible to update the firmware on the PanelDue directly from the board. Please see [here](https://duet3d.dozuki.com/Wiki/PanelDue_Firmware_update#Section_Firmware_update_via_Duet) for further instructions.  
+From RepRapFirmware 3.2, it is possible to update the firmware on the PanelDue directly from the board. Please see [here](https://docs.duet3d.com/en/User_manual/RepRapFirmware/Updating_PanelDue#firmware-update-via-duet) for further instructions.  
 
 </div>
 

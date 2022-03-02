@@ -77,4 +77,4 @@ Your Z Probe trigger height will have to be measured.
 
 There is a macro [here](https://github.com/TeamGloomy/ender-3-fly-E3/blob/bltouch/macros/calibrate_bltouch.g), that can be used. If using this one, make sure your hotend and bed are up to temperature and levelled before measuring the trigger height. Once you've worked out your average, change the Z value in G31, remembering that RRF uses a positive value.
 
-If not using the macro, use the instructions found [here](https://duet3d.dozuki.com/Wiki/Test_and_calibrate_the_Z_probe#Section_Calibrate_the_Z_probe_trigger_height)
+If not using the macro, use the instructions found [here](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Z_probe_testing#calibrate-the-z-probe-trigger-height)

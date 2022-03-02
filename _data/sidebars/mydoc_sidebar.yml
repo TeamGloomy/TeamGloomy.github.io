@@ -52,6 +52,14 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 3.4rc2_1 Release Notes
+      url: /release_notes_3.4rc2_1.html
+      output: web, pdf
+    
+    - title: 3.4rc1_1 Release Notes
+      url: /release_notes_3.4rc1_1.html
+      output: web, pdf
+
     - title: 3.4beta7_2 Release Notes
       url: /release_notes_3.4beta7_2.html
       output: web, pdf
@@ -76,6 +84,10 @@ entries:
       url: /release_notes_3.4beta2_2.html
       output: web, pdf
 
+    - title: 3.3.0_16 Release Notes
+      url: /release_notes_3.3.0_16.html
+      output: web, pdf
+    
     - title: 3.3.0_14 Release Notes
       url: /release_notes_3.3.0_14.html
       output: web, pdf
@@ -1022,6 +1034,31 @@ entries:
 
         - title: Pin Names
           url: /fly_gemini_pins.html
+          output: web, pdf
+
+      subfolders:  
+      - title: Fly-Gemini-V1.1
+        output: web, pdf
+        subfolderitems:
+
+        - title: Fly-Gemini-V1.1 General Information
+          url: /fly_gemini_v1.1_general.html
+          output: web, pdf
+        
+        - title: Connecting via SBC
+          url: /fly_gemini_v1.1_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Serial Screen
+          url: /fly_gemini_v1.1_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /fly_gemini_v1.1_bltouch.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /fly_gemini_v1.1_pins.html
           output: web, pdf
   
   - title: Screens

@@ -12,7 +12,7 @@ toc: false
 datatable: true
 ---
 
-Some drivers (such as the DRV8825) require specifying the timing information as they require longer pulse timings than the configured default that can result in missed steps. Timing information for stepper drivers can be added using [M569](https://duet3d.dozuki.com/Wiki/Gcode#Section_M569_Set_motor_driver_direction_enable_polarity_and_step_pulse_timing). Timing information can usually be found in the stepper driver data sheets. 
+Some drivers (such as the DRV8825) require specifying the timing information as they require longer pulse timings than the configured default that can result in missed steps. Timing information for stepper drivers can be added using [M569](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m569-set-motor-driver-direction-enable-polarity-mode-and-step-pulse-timing). Timing information can usually be found in the stepper driver data sheets. 
 
 Timings for drivers can be found below. These are to be configured as part of the config.g file.
 

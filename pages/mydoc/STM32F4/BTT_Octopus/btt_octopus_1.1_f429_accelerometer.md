@@ -67,4 +67,4 @@ It can then be found under Settings -> Machine Specific -> Accelerometer
 
 ### Usage
 
-The accelerometer can be activated using [M956](https://duet3d.dozuki.com/Wiki/Gcode#Section_M956_Collect_accelerometer_data_and_write_to_file)
+The accelerometer can be activated using [M956](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m956-collect-accelerometer-data-and-write-to-file)

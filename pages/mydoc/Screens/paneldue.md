@@ -17,6 +17,6 @@ The PanelDue is the official screen produced by Duet3D for use with RepRapFirmwa
 
 A list of resellers can be found [here](https://www.duet3d.com/GenuineResellers).  
 
-Documentation can be found [here](https://duet3d.dozuki.com/Wiki/PanelDue).  
+Documentation can be found [here](https://docs.duet3d.com/Duet3D_hardware/Accessories/PanelDue).  
 
 It should be wired to the TFT header (or AUX header on some boards) and information can be found on the "connecting a screen" page for each board where applicable.

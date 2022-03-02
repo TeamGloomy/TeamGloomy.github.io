@@ -39,4 +39,4 @@ To use the Type 'K' Thermocouple on your hotend, use the following code in confi
 M308 S1 P"H.9" Y"thermocouple-max31855"
 ```
 
-Make sure to (re)run the PID-tuning, e.g. [M303 T0 S20](https://duet3d.dozuki.com/Wiki/Tuning_the_heater_temperature_control).
+Make sure to (re)run the PID-tuning, e.g. [M303 T0 S20](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Heaters_tuning).

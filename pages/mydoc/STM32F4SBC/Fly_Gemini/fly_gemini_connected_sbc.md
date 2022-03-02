@@ -2,7 +2,7 @@
 title: Connecting a Fly-Gemini via SBC
 tags: []
 keywords: 
-last_updated: 22/12/2021
+last_updated: 02/03/2022
 summary: "How to connect to a Fly-Gemini via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_connected_sbc.html
@@ -82,7 +82,7 @@ Where X is the number of TMC5160 drivers fitted. The drivers must be continuous 
 **Supported by only the TMC2209, TMC2226 and TMC5160**
 If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
-stepper.TmcDiagPins = {A.6, B.1, B.10}
+stepper.TmcDiagPins = {A.3, B.1, B.10}
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.6 and B.1 in your board.txt file.  
@@ -141,4 +141,4 @@ M303 T0 S220
 
 Once the tuning is complete, either copy the M307 command into the heater definitions or send M500, ensuring you have M501 at the end of your config.g.  
 If the tuning fails at the end, carry on saving the values as in most cases the outputted values still work correctly.  
-If the values still result in a heater fault, please refer to [this](https://duet3d.dozuki.com/Wiki/Tuning_the_heater_temperature_control#Section_Setting_the_model_parameters_manually){:target="_blank"} wiki page for information about how to adjust the values manually.  
+If the values still result in a heater fault, please refer to [this](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Heaters_tuning#setting-the-model-parameters-manually){:target="_blank"} wiki page for information about how to adjust the values manually.  

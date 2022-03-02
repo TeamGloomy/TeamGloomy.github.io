@@ -11,7 +11,7 @@ comments: false
 toc: false
 ---
 
-It is possible to connect the [Smart Effector](https://duet3d.dozuki.com/Wiki/Smart_effector_and_carriage_adapters_for_delta_printer) to an LPC or STM32 based board.
+It is possible to connect the [Smart Effector](https://docs.duet3d.com/en/Duet3D_hardware/Accessories/Smart_Effector) to an LPC or STM32 based board.
 
 ## Wiring
 
