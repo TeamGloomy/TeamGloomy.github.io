@@ -52,14 +52,10 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 3.4rc2_1 Release Notes
-      url: /release_notes_3.4rc2_1.html
-      output: web, pdf
-    
     - title: 3.4rc1_1 Release Notes
       url: /release_notes_3.4rc1_1.html
       output: web, pdf
-
+    
     - title: 3.4beta7_2 Release Notes
       url: /release_notes_3.4beta7_2.html
       output: web, pdf
@@ -691,34 +687,6 @@ entries:
           url: /fly_e3_prov2_general.html
           output: web, pdf
         
-        - title: Connecting via WiFi
-          url: /fly_e3_prov2_connected_wifi.html
-          output: web, pdf
-
-        - title: Connecting a Serial Screen
-          url: /fly_e3_prov2_screen.html
-          output: web, pdf
-
-        - title: Connecting a 12864 Screen
-          url: /fly_e3_prov2_screen_12864.html
-          output: web, pdf
-
-        - title: Connecting a BLTouch
-          url: /fly_e3_prov2_bltouch.html
-          output: web, pdf
-
-        - title: Connecting a PT100 or Type 'K' Thermocouple
-          url: /fly_e3_prov2_pt100.html
-          output: web, pdf
-
-        - title: Input Voltage Monitoring
-          url: /fly_e3_prov2_voltage.html
-          output: web, pdf
-
-        - title: Pin Names
-          url: /fly_e3_prov2_pins.html
-          output: web, pdf
-
       - title: Fly-Super8
         output: web, pdf
         subfolderitems:

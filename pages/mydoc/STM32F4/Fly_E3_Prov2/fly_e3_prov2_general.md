@@ -14,45 +14,20 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the Fly-E3-Pro-v2 board.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/1005002372751834.html).  
+This control board has been discontinued by Flymaker/Mellow due to a number of issues that have been identified. It is recommended to stop using this printer board and return it to seller where it was purchased from for a refund.
 
-### Z Driver Jumpers
+## Issue 1
 
-If only one Z output is being used, jumpers should be installed on the other Z output as shown below.
+A number of users reported heater outputs used for controlling a bed as failing (resulting in a "closed" mosfet and power being continually supplied to the bed) within 30 minutes of being used. Users were asked to return their boards and a modification was carried out to prevent the mosfets from failing. Unfortunately, that modification was unsuccessful and report of bed mosfets failing on modified boards were still being reported. Because of this issue, the board was withdrawn from sale and discontinued.
 
-{% include image.html file="fly_e3_pro_zdriver.png" alt="Fly-E3-Pro Z Jumpers" caption="Fly-E3-Pro Driver Z Jumper Locations" %}
+## Issue 2
 
-### Driver Diag Pin
+A user reported that on boot up, if a fan mosfet was not declared within a config that the output would remain on. On further investigation, the fan outputs will remain on when either no sd card is present or when they are not defined in a config.g file. This is due to the lack of pulldown resistor on the output pin. This means that if there is an SD card issue (no board.txt is loaded, config.g not ran or failed sd card), they will default to being on with no control. This may also be an issue with Marlin and Klipper.
+Also on the board available for testing here, when powered by 12v and with the 12v jumpers applied, the heater mosfets also remained on with no sd card installed or when they weren't defined in firmware. 
+Essentially, in some circumstances the fan and heater MOSFETs can turn on without being commanded by the firmware.
 
-To use sensorless homing, a jumper must be installed on the diag header for each driver you are going to use it on.
+## Conclusion
 
-{% include image.html file="fly_e3_pro_diag.png" alt="Fly-E3-Pro Diag Jumpers" caption="Fly-E3-Pro Diag Jumper Locations" %}
+Therefore, this board does not appear safe for long term or unattended usage. Please contact your reseller for a refund. 
 
-### 12v Input voltage Useage
-
-If using the board with 12v, some extra jumpers are required to be installed.
-Install a jumper on each of the locations highlighted.
-
-{% include image.html file="fly_e3_pro_vol.png" alt="Fly-E3-Pro 12v Jumpers" caption="Fly-E3-Pro 12v Jumper Locations" %}
-
-### Maximum Input voltage
-
-The board can handle an input voltage up to 32v.
-
-### Fan Mosfets
-
-The Fly-E3-Pro-v2 has a feature in that the fan mosfets are replaceable.
-Each mosfet (VS3622e) controls two of the fan outputs.
-The orientation that the fan mostfet is plugged into the board doesn't matter.
-
-{% include image.html file="fly_e3_prov2_mosfets.jpg" alt="Fly-E3-Pro-v2 Fan Mosfets" caption="Fly-E3-Pro-v2 Fan Mosfets" %}
-
-### Initial Installation
-
-The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
-Follow the [WiFi instructions](fly_e3_prov2_connected_wifi.html).
-
-## Ender 3 Conversion
-
-There is an [Ender 3 Conversion guide](ender_3_conversion.html) that gives a full walkthrough from start to finish.
+This issue will be fixed in the Fly-E3-Pro-V3 board when it is released (as we have been working with flymaker to get it corrected) by using a 74hc541 buffer for both the fan and heater mosfets and pulling the output to ground when not defined, which is the same implementation as on the super8, CDYv3 and duet boards.

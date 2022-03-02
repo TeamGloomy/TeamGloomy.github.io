@@ -2,7 +2,11 @@
 title: Upgrading Armbian and DSF
 tags: []
 keywords: 
+<<<<<<< HEAD:pages/mydoc/STM32F4SBC/armbian_upgrade.md
 last_updated: 02/03/2022
+=======
+last_updated: 15/02/2022
+>>>>>>> main:pages/mydoc/STM32SBC/armbian_upgrade.md
 summary: "How to upgrade Armbian and DSF"
 sidebar: mydoc_sidebar
 permalink: armbian_upgrade.html
@@ -66,7 +70,10 @@ A list of the available arguments for the script can be found below.
 |3.4-b6|Unstable|
 |3.4-b7|Unstable|
 |3.4-rc1|Unstable|
+<<<<<<< HEAD:pages/mydoc/STM32F4SBC/armbian_upgrade.md
 |3.4-rc2|Unstable|
+=======
+>>>>>>> main:pages/mydoc/STM32SBC/armbian_upgrade.md
 
 <div class="datatable-end"></div>
 

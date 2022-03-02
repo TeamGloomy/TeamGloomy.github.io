@@ -107,15 +107,14 @@ Current preprogrammed boards
 |biquskrpro_1.1|SKR Pro v1.1 and 1.2|STM32F4|
 |fly_407zg|Fly-407ZG|STM32F4|
 |fly_cdy|Fly-CDY|LPC|
-|fly_cdyv2|Fly-CDYv2|STM32F4|
-|fly_cdyv3|Fly-CDYv3|STM32F4|
-|fly_E3|Fly-E3|STM32F4|
-|fly_E3_pro|Fly-E3-Pro|STM32F4|
-|fly_E3_prov2|Fly-E3-Pro-V2|STM32F4|
-|fly_gemini|Fly-Gemini|STM32F4+SBC|
-|fly_geminiv1.1|Fly-Gemini|STM32F4+SBC|
-|fly_super8|Fly-Super8|STM32F4|
-|fysetc_spider|Fysetc Spider 407 Version|STM32F4|
+|fly_cdyv2|Fly-CDYv2|STM32|
+|fly_cdyv3|Fly-CDYv3|STM32|
+|fly_E3|Fly-E3|STM32|
+|fly_E3_pro|Fly-E3-Pro|STM32|
+|fly_gemini|Fly-Gemini|STM32|
+|fly_geminiv1.1|Fly-Gemini V1.1|STM32|
+|fly_super8|Fly-Super8|STM32|
+|fysetc_spider|Fysetc Spider 407 Version|STM32|
 |generic|maps all pins as available by pin number. Not recommended for normal use||
 |mbed|For the mbed developer board|LPC|
 |mkssbase_1.3|MKS Sbase v1.3|LPC|
