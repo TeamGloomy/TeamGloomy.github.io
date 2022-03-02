@@ -5,7 +5,7 @@ keywords: release notes, announcements, what's new, new features
 last_updated: 15/02/2022
 summary: "Release notes for the unstable release of 3.4rc1_1"
 sidebar: mydoc_sidebar
-permalink: release_notes_3.4betarc1_1.html
+permalink: release_notes_3.4rc1_1.html
 folder: mydoc
 toc: false
 comments: false
