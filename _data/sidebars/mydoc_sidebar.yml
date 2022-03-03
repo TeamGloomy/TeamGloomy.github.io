@@ -1048,6 +1048,27 @@ entries:
       url: /fly_screen.html
       output: web, pdf
 
+      subfolders:
+      - title: Fly Screen Opensource Firmware
+        output: web, pdf
+        subfolderitems:
+
+        - title: Compiling the Fly Screen Firmware
+          url: /fly_firmware_compile.html
+          output: web, pdf
+
+        - title: Editing the Fly Screen Firmware UI
+          url: /fly_firmware_ui.html
+          output: web, pdf
+
+        - title: Editing the Fly Screen Firmware Code
+          url: /fly_firmware_code.html
+          output: web, pdf
+
+        - title: Debugging the Fly Screen Firmware
+          url: /fly_firmware_debug.html
+          output: web, pdf
+
   - title: Adapters
     output: web, pdf
     folderitems:
