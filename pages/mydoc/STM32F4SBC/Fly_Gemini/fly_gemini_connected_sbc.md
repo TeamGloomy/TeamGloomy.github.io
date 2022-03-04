@@ -1,9 +1,9 @@
 ---
-title: Connecting a Fly-Gemini via SBC
+title: Connecting a Fly-Gemini-V1 via SBC
 tags: []
 keywords: 
-last_updated: 02/03/2022
-summary: "How to connect to a Fly-Gemini via SBC"
+last_updated: 04/03/2022
+summary: "How to connect to a Fly-Gemini-V1 via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_connected_sbc.html
 folder: mydoc
@@ -14,12 +14,12 @@ datatable: true
 
 ## Overview
 
-The Fly-Gemini STM32F405VGT6 based board with an Allwinner H5 built in for SBC functionality. The Fly-Gemini is only supported from RRF 3.3.0_12 and 3.4b7 onwards.   
+The Fly-Gemini-V1 STM32F405VGT6 based board with an Allwinner H5 built in for SBC functionality. The Fly-Gemini-V1 is only supported from RRF 3.3.0_12 and 3.4b7 onwards.   
 Two SD cards are required when using this board. One for the STM32 side and one for the SBC side.  
 
 ## Board Setup
 
-{% include image.html file="fly_gemini_highlighted.png" alt="Fly-Gemini Overview" caption="Fly-Gemini Overview" %}  
+{% include image.html file="fly_gemini_highlighted.png" alt="Fly-Gemini-V1 Overview" caption="Fly-Gemini-V1 Overview" %}  
 
 ### Jumper Setup
 
@@ -27,31 +27,31 @@ There are two rows of DIP switches that require setting correctly for RRF operat
 #### Row 1
 Row 1 is the row of DIP switches nearest the USB ports.  
 If you want to be able to access the STM32 chip from the "Board USB" port, then ensure that switches 1 to 6 are in the off position and 7 to 8 are in the on position.  
-{% include image.html file="fly_gemini_dip_1.png" alt="Fly-Gemini DIP Switches" caption="Fly-Gemini DIP Switches" %}  
+{% include image.html file="fly_gemini_dip_1.png" alt="Fly-Gemini-V1 DIP Switches" caption="Fly-Gemini-V1 DIP Switches" %}  
 If you want to be able to acces the STM32 chip from picocom (installed by default) ran from the SBC, then ensure that switches 1 and 2 are in the off position, 3 and 4 in the on position and 5 to 8 are in the off poition.
 #### Row 2
 On the row near the EXP headers, ensure that switches 1 to 4 are in the on position.  
-{% include image.html file="fly_gemini_dip_2.png" alt="Fly-Gemini DIP Switches" caption="Fly-Gemini DIP Switches" %}  
+{% include image.html file="fly_gemini_dip_2.png" alt="Fly-Gemini-V1 DIP Switches" caption="Fly-Gemini-V1 DIP Switches" %}  
 
 ### Additional Cable
 
 An additional cable requires adding to allow the connection between the STM32 and the SBC to function correctly.  
 It should be added as shown below between the 3rd from the right pin of the small 7 pin connector to the left of the Core-Fan header and the second pin from the left on the top row of EXP2 (PB.3).  
-{% include image.html file="fly_gemini_cable.png" alt="Fly-Gemini Additional Cable" caption="Fly-Gemini Additional Cable" %}  
+{% include image.html file="fly_gemini_cable.png" alt="Fly-Gemini-V1 Additional Cable" caption="Fly-Gemini-V1 Additional Cable" %}  
 
 ## STM32 Setup
 
 ### Firmware File
 
-{% include tip.html content="The image file we offer for setting up the SBC side of the Fly-Gemini is based on Stable releases only. Please ensure that you use a stable image on the STM32 side and once up a running, if switching to a beta image, you can follow the instructions [here](armbian_upgrade.html). ." %}
+{% include tip.html content="The image file we offer for setting up the SBC side of the Fly-Gemini-V1 is based on Stable releases only. Please ensure that you use a stable image on the STM32 side and once up a running, if switching to a beta image, you can follow the instructions [here](armbian_upgrade.html). ." %}
 Choose the correct corresponding firmware (firmware-stm32f4-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. Remember to rename it to firmware.bin. Put it in the root of a small FAT32 formatted SD card. This will be placed in the STM32 side of the board. 
 
 ### Board.txt
 
-The SD card on the Fly-Gemini also needs a board.txt file with the following contents.
+The SD card on the Fly-Gemini-V1 also needs a board.txt file with the following contents.
 
 ```
-//Config for Fly-Gemini
+//Config for Fly-Gemini-V1
 board = fly_gemini
 sbc.TfrReadyPin = B.3
 ```
@@ -90,7 +90,7 @@ For more information about setting up sensorless homing, please read [this](sens
 
 ### Board.txt Location
 
-Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Fly-Gemini.
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Fly-Gemini-V1.
 
 ## SBC Preparation
 

@@ -1,9 +1,9 @@
 ---
-title: Connecting a BLTouch to a Fly-Gemini
+title: Connecting a BLTouch to a Fly-Gemini-V1
 tags: []
 keywords: 
-last_updated: 17/12/2021
-summary: "How to connect a BLTouch to a Fly-Gemini"
+last_updated: 04/03/2022
+summary: "How to connect a BLTouch to a Fly-Gemini-V1"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_bltouch.html
 folder: mydoc
@@ -14,11 +14,11 @@ datatable: true
 
 ## Physical Connections
 
-Connect the BLTouch to the Fly-Gemini as described in the table below.  
+Connect the BLTouch to the Fly-Gemini-V1 as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|Fly-Gemini Pin|Fly-Gemini Pin Name|
+|BLTouch Wire Colour|Fly-Gemini-V1 Pin|Fly-Gemini-V1 Pin Name|
 |:---|:---|:---|
 |Brown|GND||
 |Red|5v||

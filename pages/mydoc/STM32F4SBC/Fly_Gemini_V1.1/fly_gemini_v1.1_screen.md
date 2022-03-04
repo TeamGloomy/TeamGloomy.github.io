@@ -2,7 +2,7 @@
 title: Connecting a screen to a Fly-Gemini-V1.1
 tags: []
 keywords: 
-last_updated: 03/02/2022
+last_updated: 04/03/2022
 summary: "How to connect a serial screen to a Fly-Gemini-V1.1"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_v1.1_screen.html

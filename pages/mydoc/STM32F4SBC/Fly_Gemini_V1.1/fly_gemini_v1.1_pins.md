@@ -2,7 +2,7 @@
 title: Fly-Gemini-V1.1 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 03/02/2022
+last_updated: 04/03/2022
 summary: "The pin names of the Fly-Gemini-V1.1 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_v1.1_pins.html
@@ -12,11 +12,11 @@ toc: false
 datatable: true
 ---
 
-## Fly-Gemini Pinout Diagram
+## Fly-Gemini-V1.1 Pinout Diagram
 
-{% include image.html file="fly_gemini_pins.svg" url="https://teamgloomy.github.io/images/fly_gemini_v1.1_pins.svg" alt="Fly-Gemini" caption="Fly-Gemini Pinout" %}
+{% include image.html file="fly_gemini_pins.svg" url="https://teamgloomy.github.io/images/fly_gemini_v1.1_pins.svg" alt="Fly-Gemini-V1.1" caption="Fly-Gemini-V1.1 Pinout" %}
 
-## Fly-Gemini Driver Pins in Firmware
+## Fly-Gemini-V1.1 Driver Pins in Firmware
 
 Driver pin numbers. They are separated into driver number.
 
@@ -31,7 +31,7 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-## Fly-Gemini Other Pins in Firmware 
+## Fly-Gemini-V1.1 Other Pins in Firmware 
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  

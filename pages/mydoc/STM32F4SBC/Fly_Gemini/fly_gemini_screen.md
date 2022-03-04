@@ -1,9 +1,9 @@
 ---
-title: Connecting a screen to a Fly-Gemini
+title: Connecting a screen to a Fly-Gemini-V1
 tags: []
 keywords: 
-last_updated: 22/12/2021
-summary: "How to connect a serial screen to a Fly-Gemini"
+last_updated: 04/03/2022
+summary: "How to connect a serial screen to a Fly-Gemini-V1"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_screen.html
 folder: mydoc
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-Serial screens (e.g. Fly Screens, BTT TFT, Paneldue) can be connected to a Fly-Gemini.  
+Serial screens (e.g. Fly Screens, BTT TFT, Paneldue) can be connected to a Fly-Gemini-V1.  
 
 ### Board.txt Preparation
 

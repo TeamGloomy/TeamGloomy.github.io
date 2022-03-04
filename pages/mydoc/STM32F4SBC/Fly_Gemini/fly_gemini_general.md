@@ -1,9 +1,9 @@
 ---
-title: Fly-Gemini General Information
+title: Fly-Gemini-V1 General Information
 tags: []
 keywords: 
-last_updated: 21/12/2021
-summary: "General information regarding the Fly-Gemini"
+last_updated: 04/03/2022
+summary: "General information regarding the Fly-Gemini-V1"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_general.html
 folder: mydoc
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the Fly-Gemini board.  
+This page covers any general information for the Fly-Gemini-V1 board.  
 It is currently available through [AliExpress](https://www.aliexpress.com/item/1005003536896114.html).  
 
 ### Driver Jumpers
@@ -26,23 +26,23 @@ The jumpers should be installed as below. "Common Interpolation" should be used 
 ### Driver Diag Pin
 
 The driver diag pin is used for sensorless homing and stall detection.  
-The Fly-Gemini **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers](https://www.aliexpress.com/item/1005001877899893.html) which have a switch on the underside of them for disabling the diag pin.  
+The Fly-Gemini-V1 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers](https://www.aliexpress.com/item/1005001877899893.html) which have a switch on the underside of them for disabling the diag pin.  
 If you plan on using endstops rather than sensorless homing and do not have the Fly-2209 drivers, you need to bend or remove the diag pin. 
 
 ### Fan Mosfets
 
-The Fly-Gemini fan mosfets are replaceable.
+The Fly-Gemini-V1 fan mosfets are replaceable.
 Each mosfet (VS3622e) controls two of the fan outputs.
 The orientation that the fan mostfet is plugged into the board doesn't matter.
 
-{% include image.html file="fly_gemini_fan_mosfet.png" alt="Fly-Gemini Fan Mosfet" caption="Fly-Gemini Fan Mosfet" %}
+{% include image.html file="fly_gemini_fan_mosfet.png" alt="Fly-Gemini-V1 Fan Mosfet" caption="Fly-Gemini-V1 Fan Mosfet" %}
 
 ### Fan Voltage
 
 The fan voltage can be set using jumpers to either 5v, 12v and Vin.  
 Set them as shown below.  
 
-{% include image.html file="fly_gemini_fan_voltage.png" alt="Fly-Gemini Fan Voltage" caption="Fly-Gemini Fan Voltage" %}
+{% include image.html file="fly_gemini_fan_voltage.png" alt="Fly-Gemini-V1 Fan Voltage" caption="Fly-Gemini-V1 Fan Voltage" %}
 
 {% include important.html content="Fan2's voltage is also controlled by the above jumper and is not just Vin." %}
 

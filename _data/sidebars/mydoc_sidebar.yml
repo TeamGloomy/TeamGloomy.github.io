@@ -984,11 +984,11 @@ entries:
       output: web, pdf
 
       subfolders:  
-      - title: Fly-Gemini
+      - title: Fly-Gemini-V1
         output: web, pdf
         subfolderitems:
 
-        - title: Fly-Gemini General Information
+        - title: Fly-Gemini-V1 General Information
           url: /fly_gemini_general.html
           output: web, pdf
         
