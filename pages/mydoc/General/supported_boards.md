@@ -39,6 +39,7 @@ There are a number of boards which have configurations pre-configured. They are
 * Fly-CDYv3
 * Fly-E3
 * Fly-E3-Pro
+* Fly-E3-Pro-V2 **Support for this board has been removed due to the issues described [here](/fly_e3_prov2_general.html)**
 * Fly-Gemini-V1
 * Fly-Gemini-V1.1
 * Fly-Super8-V1
