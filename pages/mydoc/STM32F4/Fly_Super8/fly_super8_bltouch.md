@@ -2,7 +2,7 @@
 title: Connecting a BLTouch to a Fly-Super8
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 05/03/2022
 summary: "How to connect a BLTouch to a Fly-Super8"
 sidebar: mydoc_sidebar
 permalink: fly_super8_bltouch.html
@@ -22,7 +22,7 @@ Connect the BLTouch to the Fly-Super8 as described in the table below.
 |:---|:---|:---|
 |Brown|GND||
 |Red|5v||
-|Yellow|C.6|Servo0|
+|Yellow|C.6|Servo|
 |Black|GND||
 |White|C.3|probe|
 
