@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to a Fly-CDYv3
 tags: []
 keywords: 
-last_updated: 21/11/2021
+last_updated: 23/03/2022
 summary: "How to connect an accelerometer to a CDYv3"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv3_accelerometer.html
@@ -33,7 +33,7 @@ These connections are on the header above EXP2.
 |Green|SDA|SPI MOSI|A.7|
 |Blue|SDO|SPI MISO|A.6|
 |White|CS|Chip Select|E.7|
-|Purple|Int|Interupt|E.8|
+|Purple|Int|Interupt|E.6|
 
 <div class="datatable-end"></div>
 
