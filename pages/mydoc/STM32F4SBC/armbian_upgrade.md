@@ -2,11 +2,7 @@
 title: Upgrading Armbian and DSF
 tags: []
 keywords: 
-<<<<<<< HEAD:pages/mydoc/STM32F4SBC/armbian_upgrade.md
 last_updated: 02/03/2022
-=======
-last_updated: 15/02/2022
->>>>>>> main:pages/mydoc/STM32SBC/armbian_upgrade.md
 summary: "How to upgrade Armbian and DSF"
 sidebar: mydoc_sidebar
 permalink: armbian_upgrade.html
