@@ -23,7 +23,13 @@ This page covers any general information for the BTT Octopus Pro v1.0 F429 Versi
 The jumpers should be installed as below. "SPI mode Interpolation" is supported for TMC5160 drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226)
 
 {% include image.html file="btt_octopus_1.1_uart.png" alt="BTT Octopus Pro v1.0 UART" caption="BTT Octopus Pro v1.0 UART Driver Jumper Locations" %}  
-{% include image.html file="btt_octopus_1.1_spi.png" alt="BTT Octopus Pro v1.0 SPI" caption="BTT Octopus Pro v1.0 SPI Driver Jumper Locations" %}  
+{% include image.html file="btt_octopus_1.1_spi.png" alt="BTT Octopus Pro v1.0 SPI" caption="BTT Octopus Pro v1.0 SPI Driver Jumper Locations" %} 
+
+### Driver Diag Pin
+
+If you want to use sensorless homing, a jumper needs adding next to each appropriate endstop as shown below.
+
+{% include image.html file="btt_octopus_pro_1.0_sensorless.png" alt="BTT Octopus Pro v1.0 Diag" caption="BTT Octopus Pro v1.0 Pro v1.0 F429 Version Sensorless Homing Jumper Locations" %}
 
 ### Driver Voltage
 

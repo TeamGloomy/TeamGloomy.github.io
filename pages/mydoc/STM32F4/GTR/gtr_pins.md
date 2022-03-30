@@ -2,7 +2,7 @@
 title: GTR + M5 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 20/10/2021
+last_updated: 29/03/2022
 summary: "The pin names of the GTR + M5 in the firmware"
 sidebar: mydoc_sidebar
 permalink: gtr_pins.html
@@ -47,16 +47,25 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
 |A.1| e1heat|heat1|
+|A.15|BTNENC||
 |A.2| bed|hbed|
 |A.3| e3temp|Temp_M1|
+|A.8|LCD_RS||
 |B.0| e2heat|heat2|
 |B.1| e0heat|heat0|
+|B.10|LCD_CD||
 |B.11|servo0||
+|B.12|LCD_SS||
+|B.13|LCD_SCK||
+|B.14|LCD_MISO||
+|B.15|LCD_MOSI||
 |B.3| SCK||
 |B.5| Z-CS||
 |B.6| MISO||
 |C.0| bedtemp|t3|
 |C.1| e0temp|t0|
+|C.10|LCD_EN||
+|C.11|BEEP||
 |C.12|E2-CS||
 |C.13| ystop|y-stop|
 |C.14|X-CS||
@@ -67,6 +76,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |C.7| wifi3||
 |C.8| fan2||
 |C.9| fan_M4||
+|D.10|BTN_EN1||
 |D.12|e5heat|heat_M3|
 |D.13|e4heat|heat_M2|
 |D.15|e3heat|heat_M1|
@@ -93,7 +103,12 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |G.10|E0-CS||
 |G.14|e0stop|e0det|
 |G.15| MOSI||
+|G.5|LCD_D7||
+|G.6|LCD_D6||
+|G.7|LCD_D5||
+|G.8|LCD_D4||
 |G.9| e1stop|e1det|
+|H.10|BTN_EN2||
 |H.11|probe||
 |H.2| KCS||
 |H.6| EI2||

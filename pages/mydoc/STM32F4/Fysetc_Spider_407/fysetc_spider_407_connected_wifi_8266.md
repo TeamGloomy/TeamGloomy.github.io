@@ -2,7 +2,7 @@
 title: Connecting an Fysetc Spider 407 Version via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 19/01/2022
+last_updated: 25/03/2022
 summary: "How to connect to an Fysetc Spider 407 Version via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: fysetc_spider_407_connected_wifi_8266.html
@@ -18,7 +18,7 @@ The Fysetc Spider 407 Version is an STM32F407VGT6 based board.
 
 ## Flashing the board firmware
 
-Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
+Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card. The maximum size supported card is 32GB.   
 
 ## WiFi firmware preparation
 Choose the correct corresponding firmware from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases){:target="_blank"}. 

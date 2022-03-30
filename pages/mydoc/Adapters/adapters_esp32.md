@@ -2,7 +2,7 @@
 title: Available ESP32 WiFi Adapters
 tags: []
 keywords: 
-last_updated: 08/09/2021
+last_updated: 25/03/2022
 summary: "A description of the different ESP32 WiFi Adapters available"
 sidebar: mydoc_sidebar
 permalink: adapters_esp32.html
@@ -30,7 +30,8 @@ They can be purchased through [aliexpress](https://www.aliexpress.com/item/10050
 ### Adapter 2
 
 - SKR2
-- Octopus v1.1 F429 Version
+- BTT Octopus v1.1 F429 Version
+- BTT Octopus Pro v1.0 F429 Version
 
 They can be purchased through [aliexpress](https://www.aliexpress.com/item/1005003088425354.html).  
 

@@ -2,7 +2,7 @@
 title: SKR-RRF-E3 + IDEX Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 20/09/2021
+last_updated: 29/03/2022
 summary: "SKR-RRF-E3 + IDEX Pin Names"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_pins.html
@@ -44,54 +44,40 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
-|PA_0|e0temp|th0|
-|PA_1|bedtemp|tb|
-|PA_10|RX1|tft-rx|
-|PA_2|e1temp|th1|
-|PA_3|PT100|th2|
-|PA_4|PA4| //RST|
-|PA_5|PA5| //EN|
-|PA_6|PA6| //IO0|
-|PA_7|PA7| //IO4|
-|PA_9|TX1|tft-tx|
-|PB_0|servo0||
-|PB_1|LCDCS||
-|PB_10|e1stop||
-|PB_11|x2stop||
-|PB_12|PB12|//CS|
-|PB_13|PB13|//CLK|
-|PB_14|PB14|//MISO|
-|PB_15|PB15|//MOSI|
-|PB_2|LCDENCB||
-|PB_3|e0heat|heat0|
-|PB_4|bed|hbed|
-|PB_5|fan0|fan|
-|PB_6|fan1||
-|PB_7|Neopixel|PB7|
-|PB_8|SDA1|PB8|
-|PB_9|SCL1|PB9|
-|PC_0|xstop|x-stop|
-|PC_1|ystop|y-stop|
-|PC_2|zstop|z-stop|
-|PC_3|e0stop|e0det|
-|PC_5|probe||
-|PD_10|PD10|//IO2|
-|PD_11|PD11|//IO0|
-|PD_12|PD12|//EN|
-|PD_13|PD13|//RST|
-|PD_8|PD8||
-|PD_9|PD9||
-|PE_0|PWRDET|PE0|
-|PE_1|PSON|PE1|
-|PE_10|LCDD4||
-|PE_11|LCDEN||
-|PE_2|LED|PE2|
-|PE_4|e1heat||
-|PE_5|fan2||
-|PE_6|fan3||
-|PE_7|LCDENCB||
-|PE_8|LCDBEEP||
-|PE_9|LCDBTN||
-|PE3|IO||
+|A.0|e0temp|th0|
+|A.1|bedtemp|tb|
+|A.10|RX1|tft-rx|
+|A.2|e1temp|th1|
+|A.3|PT100|th2|
+|A.9|TX1|tft-tx|
+|B.0|servo0||
+|B.1|LCD_D6||
+|B.10|e1stop||
+|B.11|x2stop||
+|B.2|LCD_D4||
+|B.3|e0heat|heat0|
+|B.4|bed|hbed|
+|B.5|fan0|fan|
+|B.6|fan1||
+|B.7|Neopixel||
+|B.8|SDA1||
+|B.9|SCL1||
+|C.0|xstop|x-stop|
+|C.1|ystop|y-stop|
+|C.2|zstop|z-stop|
+|C.3|e0stop|e0det|
+|C.5|probe||
+|E.0|PWRDET||
+|E.1|PSON||
+|E.10|LCD_D5||
+|E.11|LCD_D7||
+|E.2|LED||
+|E.4|e1heat||
+|E.5|fan2||
+|E.6|fan3||
+|E.7|LCD_EN||
+|E.8|BEEP||
+|E.9|BTN_ENC||
+|E.3|IO||
 
 <div class="datatable-end"></div>

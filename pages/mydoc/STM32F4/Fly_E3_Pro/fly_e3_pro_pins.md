@@ -2,7 +2,7 @@
 title: Fly-E3-Pro Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 20/09/2021
+last_updated: 30/03/2022
 summary: "The pin names of the Fly-E3-Pro in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_pins.html
@@ -52,7 +52,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |A.8|LED||
 |A.9|TX1||
 |B.0|servo0||
-|B.1|lcden||
+|B.1|LCD_D7||
 |B.10|ymin|ystop|
 |B.11|neopixel||
 |B.6|fan2||
@@ -72,12 +72,12 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |D.10|pwr| PWRDET|
 |D.11|PSON||
 |D.2|SDCMD||
-|E.10|btnen1||
-|E.11|btnenc||
-|E.12|beep||
+|E.10|LCD_EN||
+|E.11|BTN_ENC||
+|E.12|BEEP||
 |E.6|laser||
-|E.7|lcdrs||
-|E.8|lcdd4||
-|E.9|btnen2||
+|E.7|LCD_D6||
+|E.8|LCD_D5||
+|E.9|LCD_D4||
 
 <div class="datatable-end"></div>

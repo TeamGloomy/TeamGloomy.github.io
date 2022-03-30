@@ -25,6 +25,12 @@ The jumpers should be installed as below. "SPI mode Interpolation" is supported 
 {% include image.html file="btt_octopus_1.1_uart.png" alt="BTT Octopus v1.1 UART" caption="BTT Octopus v1.1 UART Driver Jumper Locations" %}  
 {% include image.html file="btt_octopus_1.1_spi.png" alt="BTT Octopus v1.1 SPI" caption="BTT Octopus v1.1 SPI Driver Jumper Locations" %}  
 
+### Driver Diag Pin
+
+If you want to use sensorless homing, a jumper needs adding next to each appropriate endstop as shown below.
+
+{% include image.html file="btt_octopus_1.1_sensorless.png" alt="BTT Octopus v1.1 Diag" caption="BTT Octopus v1.1 F429 Version Sensorless Homing Jumper Locations" %}
+
 ### Initial Installation
 
 Follow the [WiFi instructions](btt_octopus_1.1_f429_connected_wifi_8266.html) or [SBC instructions](btt_octopus_1.1_f429_connected_sbc.html)

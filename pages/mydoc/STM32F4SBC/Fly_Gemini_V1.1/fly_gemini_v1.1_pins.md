@@ -2,7 +2,7 @@
 title: Fly-Gemini-V1.1 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 04/03/2022
+last_updated: 30/03/2022
 summary: "The pin names of the Fly-Gemini-V1.1 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_v1.1_pins.html
@@ -40,18 +40,28 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
-|C.0|e0temp|t0|
-|C.2|bedtemp|tb|
+|A.0|e0heat|he0|
+|A.1|probe||
+|A.10|RX1||
+|A.13|LCD_EN||
+|A.14|BTN_EN2||
+|A.15|BTN_EN1||
+|A.2|bed|hbed|
 |A.3|xstop||
+|A.4|BTN_ENC||
+|A.8|LCD_D5||
+|A.9|TX1||
+|B.0|servo0||
 |B.1|ystop||
 |B.10|zstop||
-|B.0|servo0||
-|A.1|probe||
-|A.2|bed|hbed|
-|A.0|e0heat|he0|
+|B.12|LCD_SS||
+|B.13|LCD_SCK||
+|B.14|LCD_MISO||
+|B.15|LCD_MOSI||
+|B.3|LCD_CD||
+|C.0|e0temp|t0|
+|C.2|bedtemp|tb|
 |C.6|fan0|fan|
 |C.7|fan1||
-|A.9|TX1||
-|A.10|RX1||
 
 <div class="datatable-end"></div>

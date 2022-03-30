@@ -2,7 +2,7 @@
 title: Fly-E3 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 20/09/2021
+last_updated: 30/03/2022
 summary: "The pin names of the Fly-E3 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pins.html
@@ -54,7 +54,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |A.14|SWCLK||
 |A.15|SDCD||
 |B.0|servo0||
-|B.1|lcden||
+|B.1|LCD_D7||
 |B.10|FPC1||
 |B.11|FPC2||
 |C.4|probe||
@@ -74,11 +74,11 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |D.13|FPC6||
 |D.14|FPC7||
 |D.15|FPC8||
-|E.7|lcdrs||
-|E.8|lcdd4||
-|E.9|btnen2||
-|E.10|btnen1||
-|E.11|btnenc||
-|E.12|beep||
+|E.7|LCD_D6||
+|E.8|LCD_D5||
+|E.9|LCD_D4||
+|E.10|LCD_EN||
+|E.11|BTN_ENC||
+|E.12|BEEP||
 
 <div class="datatable-end"></div>

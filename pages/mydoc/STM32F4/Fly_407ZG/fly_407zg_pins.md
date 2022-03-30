@@ -2,7 +2,7 @@
 title: Fly-407ZG Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 20/09/2021
+last_updated: 30/03/2022
 summary: "The pin names of the Fly-407ZG used in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_pins.html
@@ -46,11 +46,18 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |A.3|dljc||
 |A.9|TX1||
 |A.10|RX1||
+|B.2|LCD_CD||
+|B.10|BEEP||
 |B.11|fan5||
+|B.13|LCD_SCK||
+|B.14|LCD_EN||
+|B.15|LCD_MOSI||
 |C.0|e2temp|t2|
 |C.1|e1temp|t1|
 |C.2|xmax|xstopmax|
 |C.3|xmin|xstop|
+|C.4|BTN_EN2||
+|C.5|BTN_EN1||
 |C.8|SDD0||
 |C.9|SDD1||
 |C.10|SDD2||
@@ -65,9 +72,15 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |E.4|e4heat|he4|
 |E.5|e3heat|he3|
 |E.6|e2heat|he2|
-|E.8|fan0|fan|
+|E.7|LCD_D7||
+|E.8|LCD)D6||
+|E.9|LCD_D5||
+|E.10|LCD_D4||
 |E.11|servo0||
+|E.12|LCD_RS||
 |E.13|fan4||
+|E.14|LCD_EN||
+|E.15|BTN_ENC||
 |F.0|zmin|zstop|
 |F.2|ymin|ystop|
 |F.3|bedtemp|tb|
@@ -76,7 +89,9 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |F.5|e4temp|t4|
 |F.6|e1heat|he1|
 |F.7|e0heat|he0|
+|F.8|fan0|fan|
 |F.9|fan1||
 |F.10|e3temp|t3|
+|F.11|LCD_SS||
 
 <div class="datatable-end"></div>

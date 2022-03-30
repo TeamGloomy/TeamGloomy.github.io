@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to an BTT Octopus v1.1 F429 Version
 tags: []
 keywords: 
-last_updated: 17/08/2021
+last_updated: 28/03/2022
 summary: "How to connect an accelerometer to an BTT Octopus v1.1 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_accelerometer.html
@@ -10,61 +10,14 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: BTT Octopus v1.1 F429 Version
+SCL: E.8
+SDA: E.7
+SDO: E.9
+CS: E.10
+int: E.12
+spiChannel: 5
+location: EXP1 header
 ---
 
-## Overview
-
-The only type of accelerometers that are supported are LIS3DH and LIS3DSH.  
-
-### Wiring
-
-One possible method of connecting the accelerometer to an BTT Octopus v1.1 F429 Version is described in the table below. The image can be used to aid in identification.  
-Because the firmware is so flexible and we're using software SPI, most pins can be used for this.  
-These connections are on the EXP1 header on the board.  
-
-<div class="datatable-begin"></div>
-
-|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|BTT Octopus v1.1 F429 Version Pin|BTT Octopus v1.1 F429 Version Pin Name|
-|:---|:---|:---|:---|:----|
-|Red|VIN| +5v Input| +5v| -|
-|Black|GND|Ground|GND|-|
-|Yellow|SCL|SPI SCK|E.8||
-|Green|SDA|SPI MOSI|E.7||
-|Blue|SDO|SPI MISO|E.9||
-|White|CS|Chip Select|E.10||
-|Purple|Int|Interupt|E.12||
-
-<div class="datatable-end"></div>
-
-{% include image.html file="lis3dh.png" alt="LIS3DH Pinout" caption="LIS3DH Pinout" %}
-
-### Mounting the LIS3DH
-
-The accelerometer should be mounted firmly to the tool. For a bed slinger (such as an ender 3), it should also be possible to mount it to the bed to take readings for the Y axis.  
-
-### Boart.txt Changes
-
-Add the following to board.txt
-```
-SPI5.pins = { E.8, E.9, E.7 }
-accelerometer.spiChannel = 5
-```
-
-### Config.g Changes
-
-Your config.g should be modified as below.
-```
-M955 P0 C"E.10+E.12" I20
-```  
-The I (orientation) parameter tells the firmware which of the 24 possible orientations the accelerometer chip is in relative to the printer axes. It is expressed as a 2-digit number.  
-The first digit specifies which machine direction the Z axis of the accelerometer chip (usually the top face of the chip) faces, as follows: 0 = +X, 1 = +Y, 2 = +Z, 4 = -X, 5 = -Y, 6 = -Z. The second digit expresses which direction the X axis of the accelerometer chip faces, using the same code. The direction of positive X is printed on the circuit board. If the board was mounted in the orientation shown in the above image, with +X of the machine being to the right, Y+ being behind and Z+ being up, the I value would be 54. This [document](https://www.dropbox.com/s/hu2w5mk57l4zqpg/Accelerometer%20Orientation.pdf?dl=0) gives information regarding the I value for the new Duet toolboard with accelerometer.  
-20 is the default orientation if no orientation has been specified.
-
-### DWC Plugin
-
-There is a plugin to view the accelerometer information. It can be activated under Settings -> General -> Built-in Plugins.  
-It can then be found under Settings -> Machine Specific -> Accelerometer
-
-### Usage
-
-The accelerometer can be activated using [M956](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m956-collect-accelerometer-data-and-write-to-file)
+{% include custom/accelerometer.html %}

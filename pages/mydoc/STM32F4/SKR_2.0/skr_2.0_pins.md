@@ -2,7 +2,7 @@
 title: SKR v2.0 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 20/09/2021
+last_updated: 29/03/2022
 summary: "The pin names of the SKR v2.0 in the firmware"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_pins.html
@@ -40,45 +40,53 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
+|A.0|e1stop|e1det|
 |A.1|bedtemp|tb|
+|A.13|LED||
+|A.14|MISO||
 |A.2|e0temp|th0|
 |A.3|e1temp|th1|
-|C.1|xstop|x-stop|
-|C.3|ystop|y-stop|
-|C.0|zstop|z-stop|
-|C.2|e0stop|e0det|
-|A.0|e1stop|e1det|
-|E.5|servo0||
-|E.4|probe||
-|D.7|bed|hbed|
-|B.3|e0heat|heat0|
-|B.4|e1heat|heat1|
-|B.7|fan0|fan|
-|B.6|fan1||
-|B.5|fan2||
-|E.9|LCDCS||
-|B.2|LCDENCA||
-|E.7|LCDENCB||
-|C.5|LCDBEEP||
-|B.0|LCDBTN||
-|E.10|LCDD4||
-|B.1|LCDEN||
-|E.6|Neopixel||
+|A.4|LCD_SS||
+|A.5|LCD_SCK||
+|A.6|LCD_MISO||
+|A.7|LCD_MOSI||
 |A.9|TX1|tft-tx|
 |A.10|RX1|tft-rx|
-|E.0|X-CS||
-|D.3|Y-CS||
-|D.0|Z-CS||
-|C.6|E0-CS||
-|D.12|E1-CS||
-|A.14|MISO||
-|E.14|MOSI||
-|E.15|SCK||
+|B.0|BTN_ENC||
+|B.1|LCD_EN||
+|B.2|BTN_EN2||
+|B.3|e0heat|heat0|
+|B.4|e1heat|heat1|
+|B.5|fan2||
+|B.6|fan1||
+|B.7|fan0|fan|
 |B.8|SCL1||
 |B.9|SDA1||
-|E.8|PSON||
-|C.15|PWRDET||
-|A.13|LED||
+|C.0|zstop|z-stop|
+|C.1|xstop|x-stop|
 |C.13|SP||
+|C.15|PWRDET||
+|C.2|e0stop|e0det|
+|C.3|ystop|y-stop|
+|C.4|LCD_CD||
+|C.5|BEEP||
+|C.6|E0-CS||
+|D.0|Z-CS||
+|D.3|Y-CS||
+|D.7|bed|hbed|
+|D.12|E1-CS||
+|E.0|X-CS||
+|E.10|LCD_D4||
+|E.11|LCD_D5||
+|E.12|LCD_D6||
+|E.13|LCD_D7||
+|E.14|MOSI||
+|E.15|SCK||
+|E.4|probe||
+|E.5|servo0||
+|E.6|Neopixel||
+|E.7|BTN_EN1||
+|E.8|PSON||
+|E.9|LCD_RS||
 
 <div class="datatable-end"></div>

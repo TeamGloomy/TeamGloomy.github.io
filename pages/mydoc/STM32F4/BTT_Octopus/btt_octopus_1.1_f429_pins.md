@@ -2,7 +2,7 @@
 title: BTT Octopus v1.1 F429 Version Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 20/09/2021
+last_updated: 29/03/2022
 summary: "The pin names of the BTT Octopus v1.1 F429 Version in the firmware"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_pins.html
@@ -46,20 +46,22 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |A.13|LED||
 |A.2|e0heat|heat0|
 |A.3|e1heat|heat1|
-|A.5|SCK||
-|A.6|MISO||
-|A.7|MOSI||
+|A.4|LCD_SS||
+|A.5|LCD_SCK||
+|A.6|LCD_MISO||
+|A.7|LCD_MOSI||
 |A.8|fan0||
 |B.0|Neopixel||
-|B.1|LCDENCB||
+|B.1|BTN_EN1||
 |B.10|e2heat|heat2|
 |B.11|e3heat|heat3|
-|B.2|LCDENCA||
+|B.2|BTN_EN2||
 |B.6|servo0||
 |B.7|probe||
 |B.8|SCL1||
 |B.9|SDA1||
 |C.0|PWRDET||
+|C.15|LCD_CD||
 |C.4|X-CS||
 |C.6|Z-CS||
 |C.7|E0-CS||
@@ -70,14 +72,17 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |D.15|fan5||
 |D.3|E4-CS||
 |E.1|E3-CS||
-|E.10|LCDCS||
+|E.10|LCD_RS||
 |E.11|PSON||
-|E.12|LCDD4||
+|E.12|LCD_D4||
+|E.13|LCD_D5||
+|E.14|LCD_D6||
+|E.15|LCD_D7||
 |E.4|E2-CS||
 |E.5|fan1||
-|E.7|LCDBTN||
-|E.8|LCDBEEP||
-|E.9|LCDEN||
+|E.7|BTN_ENC||
+|E.8|BEEP||
+|E.9|LCD_EN||
 |F.2|E1-CS||
 |F.3|bedtemp|tb|
 |F.4|e0temp|th0|

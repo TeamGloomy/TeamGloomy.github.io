@@ -2,7 +2,7 @@
 title: Connecting a Fly-Gemini-V1 via SBC
 tags: []
 keywords: 
-last_updated: 04/03/2022
+last_updated: 25/03/2022
 summary: "How to connect to a Fly-Gemini-V1 via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_connected_sbc.html
@@ -44,7 +44,7 @@ It should be added as shown below between the 3rd from the right pin of the smal
 ### Firmware File
 
 {% include tip.html content="The image file we offer for setting up the SBC side of the Fly-Gemini-V1 is based on Stable releases only. Please ensure that you use a stable image on the STM32 side and once up a running, if switching to a beta image, you can follow the instructions [here](armbian_upgrade.html). ." %}
-Choose the correct corresponding firmware (firmware-stm32f4-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. Remember to rename it to firmware.bin. Put it in the root of a small FAT32 formatted SD card. This will be placed in the STM32 side of the board. 
+Choose the correct corresponding firmware (firmware-stm32f4-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. Remember to rename it to firmware.bin. Put it in the root of a small FAT32 formatted SD card. This will be placed in the STM32 side of the board.  The maximum size supported card is 32GB.
 
 ### Board.txt
 
@@ -91,6 +91,8 @@ For more information about setting up sensorless homing, please read [this](sens
 ### Board.txt Location
 
 Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Fly-Gemini-V1.
+
+{% include tip.html content="If you have to make changes to the board.txt going forwards, then you must remove the card from the board and edit it that way. Board.txt is not accessible through DWC." %}
 
 ## SBC Preparation
 

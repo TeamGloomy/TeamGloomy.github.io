@@ -2,7 +2,7 @@
 title: Fly-Super8 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 19/09/2021
+last_updated: 30/03/2022
 summary: "The pin names of the Fly-Super8 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_super8_pins.html
@@ -40,40 +40,55 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|Pin Name 3|Pin Name 4|
 | :------------- |:-------------|:-------------|:-------------|:-------------|
-|F.4|ADC_0|out0|||
-|F.5|ADC_1|out1|||
-|F.9|ADC_2|pwm_out2|pwm2|out2|
-|F.10|ADC_3|out3|||
-|C.0|ADC_4|out4|||
-|C.1|ADC_5|out5|||
-|G.12|io0||||
-|G.11|io1||||
-|G.10|io2||||
-|G.9|io3||||
-|D.7|io4||||
-|D.6|io5||||
-|A.8|io6||||
-|F.8|in7|pwm_out1|pwm1|out1|
-|F.3|hvin||||
-|C.6|pwm_out0|pwm0|servo|out0|
-|C.3|probe||||
-|B.0|heat0||||
-|B.1|heat1||||
-|C.7|heat2||||
-|F.7|heat3||||
-|F.6|heat4||||
-|E.5|bedout|bed|||
 |A.0|fan0||||
 |A.1|fan1||||
+|A.10|RX1||||
+|A.15|fan4||||
 |A.2|fan2||||
 |A.3|fan3||||
-|A.15|fan4||||
-|B.11|fan5||||
+|A.4|LCD_SS||||
+|A.5|LCD_SCK||||
+|A.6|LCD_MISO||||
+|A.7|LCD_MOSI||||
+|A.8|io6||||
+|A.9|TX1||||
+|B.0|heat0||||
+|B.1|heat1||||
 |B.10|fan6||||
+|B.11|fan5||||
+|B.2|LCD_EN||||
+|B.6|BTN_EN2||||
+|B.7|BTN_EN1||||
+|C.0|ADC_4|out4|||
+|C.1|ADC_5|out5|||
+|C.13|LCD_D5||||
+|C.14|LCD_D4||||
+|C.3|probe||||
+|C.6|pwm_out0|pwm0|servo|out0|
+|C.7|heat2||||
 |D.12|fan7||||
 |D.14|fan8||||
 |D.15|fan9||||
-|A.9|TX1||||
-|A.10|RX1||||
+|D.6|io5||||
+|D.7|io4||||
+|E.12|BEEP||||
+|E.13|BTN_ENC||||
+|E.5|bedout|bed|||
+|F.3|hvin||||
+|F.4|ADC_0|out0|||
+|F.5|ADC_1|out1|||
+|F.6|heat4||||
+|F.7|heat3||||
+|F.8|in7|pwm_out1|pwm1|out1|
+|F.9|ADC_2|pwm_out2|pwm2|out2|
+|F.10|ADC_3|out3|||
+|G.10|io2||||
+|G.11|io1||||
+|G.12|io0||||
+|G.13|LCD_D7||||
+|G.14|LCD_D6||||
+|G.15|LCD_CD||||
+|G.8|LCD_RS||||
+|G.9|io3||||
 
 <div class="datatable-end"></div>

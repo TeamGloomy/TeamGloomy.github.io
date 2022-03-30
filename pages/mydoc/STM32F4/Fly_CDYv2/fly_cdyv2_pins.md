@@ -2,7 +2,7 @@
 title: Fly-CDYv2 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 20/09/2021
+last_updated: 30/03/2022
 summary: "The pin names of the Fly-CDYv2 used in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_pins.html
@@ -41,46 +41,46 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|
 | :------------- |:-------------|:-------------|
-|A.3|e0temp|t0|
-|C.4|e1temp|t1|
-|C.5|e2temp|t2|
-|B.1|bedtemp|tb|
-|C.7|xmin|xstop|
-|C.6|xmax|xstopmax|
-|D.11|ymin|ystop|
-|D.10|ymax|ystopmax|
-|B.10|zmin|zstop|
-|B.11|zmax|zstopmax|
-|E.6|servo0||
-|C.2|probe||
-|B.0|bed|hbed|
-|D.12|e0heat|he0|
-|D.13|e1heat|he1|
-|D.14|e2heat|he2|
 |A.0|fan0|fan|
 |A.1|fan1||
+|A.10|RX1|LCD_RS|
+|A.13|LCD_D6||
+|A.14|LCD_D7||
 |A.2|fan2||
-|A.14|lcdd7||
-|A.13|lcdd6||
-|E.15|lcdd4||
-|E.14|lcdd5||
-|B.1|lcden||
-|E.13|tfcd||
-|A.9|TX1|btnenc|
-|A.10|RX1|lcdrs|
-|D.8|btnen2||
-|D.9|btnen1||
-|A.4|SPI1SDCS||
-|A.5|SPI1SCK||
-|A.6|SPI1MISO||
-|A.7|SPI1MOSI||
-|E.7|SPI1CS1||
-|E.8|SPI1CS2||
+|A.3|e0temp|t0|
+|A.4|SPI1SDCS|LCD_SS|
+|A.5|SPI1SCK|LCD_SCK|
+|A.6|SPI1MISO|LCD_MISO|
+|A.7|SPI1MOSI|LCD_MOSI|
+|A.9|TX1|BTN_ENC|
+|B.0|bed|hbed|
+|B.1|bedtemp|tb|
+|B.10|zmin|zstop|
+|B.11|zmax|zstopmax|
+|B.2|LCD_EN||
 |B.3|MOTSCK||
 |B.4|MOTMISO||
 |B.5|MOTMOSI||
-|D.15|Neopixel|LED|
 |B.9|Laser||
+|C.2|probe||
 |C.3|Power_ADC|PC3|
+|C.4|e1temp|t1|
+|C.5|e2temp|t2|
+|C.6|xmax|xstopmax|
+|C.7|xmin|xstop|
+|D.10|ymax|ystopmax|
+|D.11|ymin|ystop|
+|D.12|e0heat|he0|
+|D.13|e1heat|he1|
+|D.14|e2heat|he2|
+|D.15|Neopixel|LED|
+|D.8|BTN_EN1||
+|D.9|BTN_EN2||
+|E.13|LCD_CD||
+|E.14|LCD_D5||
+|E.15|LCD_D4||
+|E.6|servo0||
+|E.7|SPI1CS1||
+|E.8|SPI1CS2||
 
 <div class="datatable-end"></div>

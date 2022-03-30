@@ -2,7 +2,7 @@
 title: Getting Started
 tags: []
 keywords: 
-last_updated: 24/08/2021
+last_updated: 25/03/2022
 summary: "An overview of how to get started with RepRapFirmware3"
 sidebar: mydoc_sidebar
 permalink: getting_started.html
@@ -12,6 +12,8 @@ toc: false
 ---
 
 To run this on a supported LPC or STM32 based board, a number of items are required.
+
+{% include tip.html content="There will be no further updates to LPC based boards. The last available update is 3.3.0" %}
 
 ## Firmware
 A copy of the firmware is required and can be found [here](https://github.com/gloomyandy/RepRapFirmware/releases) (remember to rename it to just firmware.bin). This is placed on the root of the SD card and is flashed to the board on first boot of the device.  
@@ -32,7 +34,7 @@ The SD Card structure as detailed [here](https://docs.duet3d.com/en/User_manual/
 This is applicable only to WiFi versions of the firmware.  
 
 ## DuetWebControl
-The standard version of DuetWebControl (DWC) is now fully compatible with this port.  
+The standard version of DuetWebControl (DWC) is fully compatible with this port.  
 It can be found [here](https://github.com/Duet3D/DuetWebControl/releases).  
 
 ## Configuration Files

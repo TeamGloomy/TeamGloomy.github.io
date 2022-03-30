@@ -2,7 +2,7 @@
 title: Firmware Building Instructions
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 25/03/2022
 summary: "Instructions to build your own version of the firmware"
 sidebar: mydoc_sidebar
 permalink: firmware_build.html
@@ -45,6 +45,21 @@ Download the following github repositories. The preferred method for doing so is
 - [RRFLibraries](https://github.com/gloomyandy/RRFLibraries/tree/v3.3-dev) - Support libraries for RRF 
 - [CoreN2G](https://github.com/gloomyandy/CoreN2G/tree/v3.3-dev) - MCU specific support for LPC/STM32F4 builds 
 - [FreeRTOS](https://github.com/gloomyandy/FreeRTOS/tree/v3.3-dev) - RTOS support package 
+- [DuetWifiSocketServer](https://github.com/gloomyandy/DuetWiFiSocketServer) - WiFi interface 
+
+Clone all of the repositories into the RRFBuild folder.  
+The resulting structure should look like this.  
+![image](https://i.ibb.co/94bTCMd/build-structure.png)
+
+## Preparation of firmware code - RRF3.4
+
+Download the following github repositories. The preferred method for doing so is by using a git client (terminal or GUI). This allows for changes made to be tracked. My client of choice (jay_s_uk) is [gitkracken](https://www.gitkraken.com/).  
+- [RRFBuild](https://github.com/gloomyandy/RRFBuild/tree/v3.4-dev) - The main project for building
+- [RepRapFirmware](https://github.com/gloomyandy/RepRapFirmware/tree/v3.4-dev) - the main RRF source code 
+- [RRFLibraries](https://github.com/gloomyandy/RRFLibraries/tree/v3.4-dev) - Support libraries for RRF 
+- [CoreN2G](https://github.com/gloomyandy/CoreN2G/tree/v3.4-dev) - MCU specific support for LPC/STM32F4 builds 
+- [CANlib](https://github.com/gloomyandy/CANlib/tree/v3.4-dev)
+- [FreeRTOS](https://github.com/gloomyandy/FreeRTOS/tree/v3.4-dev) - RTOS support package 
 - [DuetWifiSocketServer](https://github.com/gloomyandy/DuetWiFiSocketServer) - WiFi interface 
 
 Clone all of the repositories into the RRFBuild folder.  

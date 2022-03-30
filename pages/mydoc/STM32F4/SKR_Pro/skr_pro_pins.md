@@ -2,7 +2,7 @@
 title: SKR Pro v1.1 and v1.2 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 20/09/2021
+last_updated: 29/03/2022
 summary: "The pin names of the SKR Pro v1.1 and v1.2 in the firmware"
 sidebar: mydoc_sidebar
 permalink: skr_pro_pins.html
@@ -48,16 +48,23 @@ If the pins aren't in the table (due to not having a special name), then the pin
 | :------------- |:-------------|:-------------|
 |A.1| servo0||
 |A.2| probe||
+|A.8|BTNENC||
 |A.15| X-CS||
 |B.0| e2heat|he2|
 |B.1| e0heat|he0|
 |B.10| xstop|x-stop|
+|B.12|LCD_SS||
+|B.13|LCD_SCK||
+|B.14|LCD_MISO||
+|B.15|LCD_MOSI||
 |B.3| E0-CS||
 |B.8| Y-CS||
 |B.9| Z-CS||
 |C.6| wifi4||
 |C.7| wifi3||
 |C.8| fan0|fan|
+|D.10|LCD_RS||
+|D.11|LCD_EN||
 |D.12| bed|hbed|
 |D.14| e1heat|he1|
 |E.10| e1stop|e1det|
@@ -65,6 +72,9 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |E.15| e0stop|e0det|
 |E.5| fan1||
 |E.6| fan2||
+|F.11|BTN_EN2||
+|F.12|LCD_CD||
+|F.13|KILL||
 |F.14| wifi5||
 |F.15| wifi6||
 |F.3| e0temp|t0|
@@ -73,9 +83,15 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |F.6| bedtemp|t3|
 |G.0| wifi1||
 |G.1| wifi2||
+|G.10|BTN_EN1||
 |G.12| E2-CS||
 |G.15| E1-CS||
+|G.2|LCD_D4||
+|G.3|LCD_D5||
+|G.4| BEEP||
 |G.5| e2stop|e2det|
+|G.6|LCD_D6||
+|G.7|LCD_D7||
 |G.8| zstop|z-stop|
 
 <div class="datatable-end"></div>

@@ -2,7 +2,7 @@
 title: Connecting a Fly-407ZG via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 14/07/2021
+last_updated: 25/03/2022
 summary: "How to connect to a Fly-407ZG via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_wifi_8266.html
@@ -18,7 +18,7 @@ The Fly-407ZG is an STM32F407ZGT6 based board.
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.
+Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card. The maximum size supported card is 32GB.
 
 ## WiFi
 
