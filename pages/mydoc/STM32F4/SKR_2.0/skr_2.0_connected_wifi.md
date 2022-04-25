@@ -5,7 +5,7 @@ keywords:
 last_updated: 25/03/2022
 summary: "How to connect to an SKR v2.0 via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: skr_2.0_connected_wifi_8266.html
+permalink: skr_2.0_connected_wifi.html
 folder: mydoc
 comments: false
 toc: false

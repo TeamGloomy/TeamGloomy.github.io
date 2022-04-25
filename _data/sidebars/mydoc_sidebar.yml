@@ -900,7 +900,7 @@ entries:
           output: web, pdf
         
         - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
-          url: /skr_2.0_connected_wifi_8266.html
+          url: /skr_2.0_connected_wifi.html
           output: web, pdf
 
         - title: Connecting via SBC
