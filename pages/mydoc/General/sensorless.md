@@ -2,7 +2,7 @@
 title:  Sensorless Homing and Stall Detection
 tags: 
 keywords: 
-last_updated: 15/07/2021
+last_updated: 09/05/2022
 summary: "Sensorless Homing and Stall Detection"
 sidebar: mydoc_sidebar
 permalink: sensorless.html
@@ -19,6 +19,8 @@ Sensorless homing and stall detection is now functional for the TMC2209's and TM
 * Fysetc Spider 407 version
 * MKS SGen L v1
 * MKS SGen L v2
+* Octopus (F429)
+* Octopus Pro
 * SKR 1.3
 * SKR 1.4
 * SKR 2.0
