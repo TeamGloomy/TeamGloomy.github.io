@@ -1,0 +1,10 @@
+## Using the SD card slot on the screen
+
+It is possible to use the external SD card.  
+To do so, add the following lines to your board.txt
+
+```
+sdCard.external.spiChannel={{page.spiChannel}}
+sdCard.external.csPin=LCD_SS
+sdCard.external.cardDetectPin=LCD_CD
+```

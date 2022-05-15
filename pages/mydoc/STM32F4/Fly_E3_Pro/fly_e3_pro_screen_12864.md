@@ -10,6 +10,8 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: Fly-E3-Pro
+spiChannel: 4
 ---
 
 ## Overview
@@ -29,27 +31,7 @@ The information here is aimed at connecting a stock ender 3 12864 display but it
 
 The ender 3 stock display can be connected directly to the EXP header of the Fly-E3-Pro. No modifications are required.
 
-## Board.txt modifications
-
-The following lines should be added to the board.txt file.
-
-```
-lcd.encoderPinA=E.9
-lcd.encoderPinB=E.10
-lcd.encoderPinSw=E.11
-lcd.lcdCSPin=E.7
-lcd.spiChannel=4
-SPI4.pins={ E.8, NoPin, B.1 }
-lcd.lcdBeepPin = E.12
-```
-
-## Config.g changes
-
-Add the following line to the end of your config.g
-
-```
-M918 P1 E4 F100000
-```
+{% include custom/12864/ender3_1header.html %}
 
 </div>
 
@@ -64,13 +46,13 @@ The Fly-E3-Pro can have issues with artifcats being displayed on the screen afte
 The following lines should be added to the board.txt file.
 
 ```
-lcd.encoderPinA=E.7
-lcd.encoderPinB=E.8
-lcd.encoderPinSw=B.1
-lcd.lcdCSPin=E.9
+lcd.encoderPinA=LCD_D6
+lcd.encoderPinB=LCD_D5
+lcd.encoderPinSw=LCD_D7
+lcd.lcdCSPin=LCD_D4
 lcd.spiChannel=4
-SPI4.pins={E.10, NoPin, E.11}
-lcd.lcdBeepPin = E.12
+SPI4.pins={LCD_EN, NoPin, BTN_ENC}
+lcd.lcdBeepPin = BEEP
 ```
 
 ## Config.g changes
@@ -92,27 +74,7 @@ Use the image below as a guide. Thanks @Samsan
 
 {% include image.html file="reprap_fly_e3.png" alt="Reprap Discount to Fly-E3-Pro" caption="Connecting a RepRapDiscount Full Graphic Smart Controller to the Fly-E3-Pro" %}
 
-## Board.txt modifications
-
-The following lines should be added to the board.txt file.
-
-```
-lcd.encoderPinA=E.9
-lcd.encoderPinB=E.10
-lcd.encoderPinSw=E.11
-lcd.lcdCSPin=E.7
-lcd.spiChannel=4
-SPI4.pins={E.8, NoPin, B.1}
-lcd.lcdBeepPin = E.12
-```
-
-## Config.g changes
-
-Add the following line to the end of your config.g
-
-```
-M918 P1 E4 F100000
-```
+{% include custom/12864/ender3_1header.html %}
 
 </div>
 
@@ -199,25 +161,6 @@ m150 X2 R255 U0 B0 P255 S2 F0
 
 </div>
 
-## Menu Files
+{% include custom/12864/menu.html %}
 
-Menu files must be uploaded to allow the display to generate the correct information. This can be done in two ways.
-First, obtain the recommended menu files from [here](https://github.com/jadonmmiller/UltimateDuetMenuSystem/releases/)
-
-### Method 1
-
-Extract the contents of the zip file you downloaded above and place them in a folder called "menu" on the SD card of the Fly-E3. 
-
-### Method 2
-
-Activate the display using the config.g changes above.  
-A side menu called "Display" should appear in DWC. Navigate to it and upload the zip file.  
-
-### Troubleshooting
-
-If the screen is showing artifacts/random characters on the screen, the following may improve/eliminate the issue
-
-* Lower the SPI frequency by half. This is the F value in M918.  
-* Reduce the length of the cable between the screen and the board.  
-* Ensure that the cable between the screen and the board is routed away from other cables, especially motor cables.  
-* Add a ferrite ring to the cable between the screen and the board.  
+{% include custom/12864/troubleshooting.html %}

@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a SKR-RRF-E3
 tags: []
 keywords: 
-last_updated: 18/01/2022
+last_updated: 13/05/2022
 summary: "How to connect a 12864 screen to a SKR-RRF-E3"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_screen_12864.html
@@ -10,6 +10,8 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: SKR-RRF-E3
+spiChannel: 4
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">
@@ -133,25 +135,6 @@ m150 X2 R255 U0 B0 P255 S2 F0
 
 </div>
 
-## Menu Files
+{% include custom/12864/menu.html %}
 
-Menu files must be uploaded to allow the display to generate the correct information. This can be done in two ways.
-First, obtain the recommended menu files from [here](https://github.com/jadonmmiller/UltimateDuetMenuSystem/releases/)
-
-### Method 1
-
-Extract the contents of the zip file you downloaded above and place them in a folder called "menu" on the SD card of the SKR-RRF-E3. 
-
-### Method 2
-
-Activate the display using the config.g changes above.  
-A side menu called "Display" should appear in DWC. Navigate to it and upload the zip file.  
-
-### Troubleshooting
-
-If the screen is showing artifacts/random characters on the screen, the following may improve/eliminate the issue
-
-* Lower the SPI frequency by half. This is the F value in M918.  
-* Reduce the length of the cable between the screen and the board.  
-* Ensure that the cable between the screen and the board is routed away from other cables, especially motor cables.  
-* Add a ferrite ring to the cable between the screen and the board.  
+{% include custom/12864/troubleshooting.html %}
