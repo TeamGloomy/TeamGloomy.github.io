@@ -21,14 +21,19 @@ It is currently available through [AliExpress](https://www.aliexpress.com/item/1
 
 If only one Z output is being used, jumpers should be installed on the other Z output as shown below.
 
-{% include image.html file="fly_e3_pro_zdriver.png" alt="Fly-E3-Pro Z Jumpers" caption="Fly-E3-Pro Driver Z Jumper Locations" %}
+{% include image.html file="fly_e3_pro_zdriver.png" alt="Fly-E3-Pro-v3 Z Jumpers" caption="Fly-E3-Pro-v3 Driver Z Jumper Locations" %}
 
 ### Driver Diag Pin
 
 To use sensorless homing, a jumper must be installed on the diag header.
 
-{% include image.html file="fly_e3_pro_diag.png" alt="Fly-E3-Pro Diag Jumpers" caption="Fly-E3-Pro Diag Jumper Locations" %}
+{% include image.html file="fly_e3_pro_diag.png" alt="Fly-E3-Pro-v3 Diag Jumpers" caption="Fly-E3-Pro-v3 Diag Jumper Locations" %}
 
+### Power Configuration
+
+The Fly-E3-Pro-v3 has two 24v inputs and one ground. The right 24v input powers the MCU and WiFi (as well as anything else that runs from 5v) and the left 24v input powers the motors, heaters and bed. This allows a relay to be used to turn off the motors, heaters and bed using a relay without having to use a separate 5v PSU to power the MCU. A diagragm can be found below.  
+
+{% include image.html file="fly_e3_prov3_power.jpg" alt="Fly-E3-Pro-v3 Power Input" caption="Fly-E3-Pro-v3 Power Input" %}
 ### Maximum Input voltage
 
 The board can handle an input voltage up to 32v.
