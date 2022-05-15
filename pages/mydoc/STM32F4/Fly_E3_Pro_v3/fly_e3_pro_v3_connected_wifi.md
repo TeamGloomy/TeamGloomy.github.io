@@ -28,7 +28,7 @@ smartdrivers: 5
 stepperSPI: 2
 TMC: "{ A.2, B.10, C.4 }"
 example: A.2 and B.10
-board: fly_e3_pro
+board: fly_e3_prov3
 ---
 
 {% include custom/wifi.html %}
