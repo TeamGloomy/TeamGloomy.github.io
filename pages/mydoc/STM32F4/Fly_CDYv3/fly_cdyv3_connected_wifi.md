@@ -28,6 +28,7 @@ stepperSPI: 2
 TMC: "{ C.7, C.6, D.11, D.10, B.10, B.11 }"
 example: C7 and C.6
 board: fly_cdyv3
+onboardDrivers: no
 ---
 
 {% include custom/wifi.html %}

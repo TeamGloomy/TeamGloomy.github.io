@@ -28,6 +28,7 @@ stepperSPI: 0
 TMC: "{ G.6, G.9, G.10, G.11, G.12, G.13, G.14, G.15 }"
 example: G.6 and G.9
 board: biqoctopus_1.1
+onboardDrivers: no
 ---
 
 {% include custom/wifi.html %}

@@ -48,9 +48,9 @@ board = {{page.board}}
 {% if page.SerialRXTX != "" %}serial.aux.rxTxPins = {{page.SerialRXTX}}{% endif %}
 heat.tempSensePins = {{page.heat}}
 {% if page.diagnostics != "" %}leds.diagnostic = {{page.diagnostics}}{% endif %}
-{% if page.boardname == "Fly-E3-Pro" or page.boardname == "SKR-RRF-E3" %}stepper.numSmartDrivers = {{page.smartdrivers}}{% endif %}
+{% if page.boardname == "Fly-E3-Pro" or page.boardname == "SKR-RRF-E3" or page.boardname == "Fly-E3-Pro-v3" %}stepper.numSmartDrivers = {{page.smartdrivers}}{% endif %}
 ```
-{% unless page.diagnostics == "Fly-E3-Pro" or page.diagnostics == "SKR-RRF-E3" %}
+{% unless page.boardname == "Fly-E3-Pro" or page.boardname == "SKR-RRF-E3" or page.boardname == "Fly-E3-Pro-v3" %}
 ### Smart Drivers
 
 If using TMC5160 or TMC22XX drivers (where 22XX is either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file

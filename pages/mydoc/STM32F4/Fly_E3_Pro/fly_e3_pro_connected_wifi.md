@@ -29,6 +29,7 @@ stepperSPI: 2
 TMC: "{ A.2, A.1, C.5 }"
 example: A.2 and A.1
 board: fly_e3_pro
+onboardDrivers: yes
 ---
 
 {% include custom/wifi.html %}

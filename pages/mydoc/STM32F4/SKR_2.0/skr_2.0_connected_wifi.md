@@ -29,6 +29,7 @@ spiInfo: "{ E.15, A.14, E.14 }"
 TMC: "{ C.1, C.3, C.0, C.2, A.0 }"
 example: C.1 and C.3
 board: biquskr_2
+onboardDrivers: no
 ---
 
 {% include custom/wifi.html %}
