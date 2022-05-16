@@ -24,10 +24,11 @@ ESPRXTX: "{ D.9, D.8 }"
 SerialRXTX: ""
 heat: "{ A.3, A.4 }"
 diagnostics: ""
-stepperSPI: 0
+stepperSPI: 5
 TMC: "{ A.2, A.1, C.5 }"
 example: A.2 and A.1
 board: fly_e3
+onboardDrivers: no
 ---
 
 {% include custom/wifi.html %}
