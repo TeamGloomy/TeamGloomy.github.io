@@ -2,7 +2,7 @@
 title: Fly-E3 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 30/03/2022
+last_updated: 18/05/2022
 summary: "The pin names of the Fly-E3 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pins.html
@@ -38,47 +38,47 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 <div class="datatable-begin"></div>
 
-|Pin Number|Pin Name 1|Pin Name 2|
-| :------------- |:-------------|:-------------|
-|A.0|bed|hbed|
-|A.1|ymin|ystop|
-|A.2|xmin|xstop|
-|A.3|bedtemp|tb|
-|A.4|e0temp|t0|
-|A.5|e0heat|he0|
-|A.6|fan1||
-|A.7|fan0|fan|
-|A.9|TX1||
-|A.10|RX1||
-|A.13|SWDIO||
-|A.14|SWCLK||
-|A.15|SDCD||
-|B.0|servo0||
-|B.1|LCD_D7||
-|B.10|FPC1||
-|B.11|FPC2||
-|C.4|probe||
-|C.5|zmin|zstop|
-|C.6|FPC9||
-|C.8|SDD0||
-|C.9|SDD1||
-|C.10|SDD2||
-|C.11|SDD3||
-|C.12|SDSCK||
-|D.0|FPC10||
-|D.1|FPC11||
-|D.2|SDCMD||
-|D.10|FPC3||
-|D.11|FPC4||
-|D.12|FPC5||
-|D.13|FPC6||
-|D.14|FPC7||
-|D.15|FPC8||
-|E.7|LCD_D6||
-|E.8|LCD_D5||
-|E.9|LCD_D4||
-|E.10|LCD_EN||
-|E.11|BTN_ENC||
-|E.12|BEEP||
+|Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
+| :------------- |:-------------|:-------------|:-------------|
+|A.0|bed|hbed|Timer 2|
+|A.1|ymin|ystop|Timer 2|
+|A.2|xmin|xstop|Timer 2|
+|A.3|bedtemp|tb|Timer 2|
+|A.4|e0temp|t0||
+|A.5|e0heat|he0|Timer 8|
+|A.6|fan1||Timer 13|
+|A.7|fan0|fan|Timer 14|
+|A.9|TX1|||
+|A.10|RX1|||
+|A.13|SWDIO|||
+|A.14|SWCLK|||
+|A.15|SDCD||Timer 2|
+|B.0|servo0||Timer 3|
+|B.1|LCD_D7||Timer 3|
+|B.10|FPC1||Timer 2|
+|B.11|FPC2||Timer 2|
+|C.4|probe|||
+|C.5|zmin|zstop||
+|C.6|FPC9||Timer 8|
+|C.8|SDD0||Timer 8|
+|C.9|SDD1||Timer 8|
+|C.10|SDD2|||
+|C.11|SDD3|||
+|C.12|SDSCK|||
+|D.0|FPC10|||
+|D.1|FPC11|||
+|D.2|SDCMD|||
+|D.10|FPC3|||
+|D.11|FPC4|||
+|D.12|FPC5||Timer 4|
+|D.13|FPC6|||
+|D.14|FPC7||Timer 4|
+|D.15|FPC8||Timer 4|
+|E.7|LCD_D6|||
+|E.8|LCD_D5|||
+|E.9|LCD_D4|||
+|E.10|LCD_EN|||
+|E.11|BTN_ENC|||
+|E.12|BEEP|||
 
 <div class="datatable-end"></div>

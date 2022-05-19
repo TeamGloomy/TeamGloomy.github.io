@@ -2,7 +2,7 @@
 title: Fly-E3-Pro-v3 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 13/05/2022
+last_updated: 18/05/2022
 summary: "The pin names of the Fly-E3-Pro-v3 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_pins.html
@@ -38,44 +38,44 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 <div class="datatable-begin"></div>
 
-|Pin Number|Pin Name 1|Pin Name 2|
-| :------------- |:-------------|:-------------|
-|A.4|e0temp|t0|
-|A.1|e1temp|t1|
-|A.3|bedtemp|tb|
-|C.1|boardtemp|tboard|
-|A.2|xmin|xstop|
-|B.10|ymin|ystop|
-|C.4|zmin|zstop|
-|D.0|e0min|e0stop|
-|D.1|e1min|e1stop|
-|B.0|servo0||
-|C.5|probe||
-|A.0|bed|hbed|
-|A.5|e0heat|he0|
-|C.6|e1heat|he1|
-|A.7|fan0|fan|
-|A.6|fan1||
-|B.6|fan2||
-|B.7|fan3||
-|E.12|BTN_ENC||
-|E.11|BEEP||
-|E.10|LCD_D5||
-|E.6|LCD_RS||
-|E.9|LCD_D4||
-|E.8|LCD_D7||
-|A.14|LCD_EN||
-|E.7|LCD_D6||
-|A.13|LCD_CD||
-|B.4|LCD_MISO||
-|B.3|LCD_SCK||
-|B.2|LCD_SS||
-|B.5|LCD_MOSI||
-|A.9|TX1|BTN_EN2|
-|A.10|RX1|BTN_EN1|
-|B.11|neopixel||
-|D.11|PSON||
-|B.1|laser||
-|D.10|pwr|PWRDET|
+|Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
+| :------------- |:-------------|:-------------|:-------------|
+|A.4|e0temp|t0||
+|A.1|e1temp|t1|Timer 2|
+|A.3|bedtemp|tb|Timer 2|
+|C.1|boardtemp|tboard||
+|A.2|xmin|xstop|Timer 2|
+|B.10|ymin|ystop|Timer 2|
+|C.4|zmin|zstop||
+|D.0|e0min|e0stop||
+|D.1|e1min|e1stop||
+|B.0|servo0||Timer 3|
+|C.5|probe|||
+|A.0|bed|hbed|Timer 2|
+|A.5|e0heat|he0|Timer 8|
+|C.6|e1heat|he1|Timer 8|
+|A.7|fan0|fan|Timer 14|
+|A.6|fan1||Timer 13|
+|B.6|fan2||Timer 4|
+|B.7|fan3||Timer 4|
+|E.12|BTN_ENC|||
+|E.11|BEEP|||
+|E.10|LCD_D5|||
+|E.6|LCD_RS||Timer 9|
+|E.9|LCD_D4|||
+|E.8|LCD_D7|||
+|A.14|LCD_EN|||
+|E.7|LCD_D6|||
+|A.13|LCD_CD|||
+|B.4|LCD_MISO||Timer 3|
+|B.3|LCD_SCK||Timer 2|
+|B.2|LCD_SS|||
+|B.5|LCD_MOSI||Timer 3|
+|A.9|TX1|BTN_EN2||
+|A.10|RX1|BTN_EN1||
+|B.11|neopixel||Timer 2|
+|D.11|PSON|||
+|B.1|laser||Timer 3|
+|D.10|pwr|PWRDET||
 
 <div class="datatable-end"></div>

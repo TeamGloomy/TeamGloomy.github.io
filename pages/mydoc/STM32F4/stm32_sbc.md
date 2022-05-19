@@ -2,7 +2,7 @@
 title:  Configuring an SBC for STM32 Boards
 tags: 
 keywords: 
-last_updated: 02/03/2022
+last_updated: 17/05/2022
 summary: "Configuring an SBC for STM32 Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_sbc.html
@@ -89,6 +89,7 @@ A list of the available arguments for the script can be found below.
 |3.4-b7|Unstable|
 |3.4-rc1|Unstable|
 |3.4-rc2|Unstable|
+|3.4.0|Stable|
 
 <div class="datatable-end"></div>
 

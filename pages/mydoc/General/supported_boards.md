@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 04/03/2022
+last_updated: 12/05/2022
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -31,7 +31,7 @@ There are a number of boards which have configurations pre-configured. They are
 
 If your board is not on the list, use the generic profile and the pin number for each input/output in the config.g file and get in touch and we can add native support.
 
-## STM32 Boards with native support
+## STM32F4 Boards with native support
 There are a number of boards which have configurations pre-configured. They are
 
 * Fly-407ZG
@@ -40,8 +40,10 @@ There are a number of boards which have configurations pre-configured. They are
 * Fly-E3
 * Fly-E3-Pro
 * Fly-E3-Pro-V2 **Support for this board has been removed due to the issues described [here](/fly_e3_prov2_general.html)**
+* Fly-E3-Pro-v3
 * Fly-Gemini-V1
 * Fly-Gemini-V1.1
+* Fly-Gemini-V2.0
 * Fly-Super8-V1
 * Fly-Super8-V1.1
 * Fysetc Spider 407 Version
@@ -52,6 +54,13 @@ There are a number of boards which have configurations pre-configured. They are
 * BTT GTR v1.0 + M5 Expansion Board
 * BTT Octopus v1.1 F429 Version
 * BTT Octopus Pro v1.0 F429 Version
+
+## STM32H7 Boards with native support
+There are a number of boards which have configurations pre-configured. They are
+
+* Fly-Super5
+* SKR3
+* SKR3 EZ
 
 ## Supported Drivers
 
@@ -72,5 +81,5 @@ The following drivers support firmware setting of microsteps and motor current.
 
 ### SPI Drivers
 
-From 3.3 Beta 1_3, the following SPI drivers are supported on STM32 only (except the Fly-407ZG)
-- TMC5160
+The following SPI drivers are supported on STM32 only (except the Fly-407ZG)
+- TMC5160 - This includes full sensorless homing and stall detection support

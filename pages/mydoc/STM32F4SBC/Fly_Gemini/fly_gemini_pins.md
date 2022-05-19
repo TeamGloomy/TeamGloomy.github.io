@@ -2,7 +2,7 @@
 title: Fly-Gemini-V1 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 30/03/2022
+last_updated: 18/05/2022
 summary: "The pin names of the Fly-Gemini-V1 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_pins.html
@@ -38,35 +38,35 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 <div class="datatable-begin"></div>
 
-|Pin Number|Pin Name 1|Pin Name 2|
-| :------------- |:-------------|:-------------|
-|A.0|e0heat|he0|
-|A.1|probe||
-|A.10|RX1|LCD_RS|
-|A.13|LCD_EN||
-|A.14|BTN_EN2||
-|A.15|BTN_EN1||
-|A.2|bed|hbed|
-|A.3|xstop||
-|A.4|BTN_ENC||
-|A.8|LCD_D5||
-|A.9|TX1|LCD_D4|
-|B.0|servo0||
-|B.1|ystop||
-|B.10|zstop||
-|B.12|LCD_SS||
-|B.13|LCD_SCK||
-|B.14|LCD_MISO||
-|B.15|LCD_MOSI||
-|B.3|LCD_CD||
-|C.0|e0temp|t0|
-|C.10|SDD2||
-|C.11|SDD3||
-|C.12|SDSCK||
-|C.2|bedtemp|tb|
-|C.6|fan0|fan|
-|C.8|SDD0||
-|C.9|SDD1||
-|D.2|SDCMD||
+|Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
+| :------------- |:-------------|:-------------|:-------------|
+|A.0|e0heat|he0|Timer 2|
+|A.1|probe||Timer 2|
+|A.10|RX1|LCD_RS||
+|A.13|LCD_EN|||
+|A.14|BTN_EN2|||
+|A.15|BTN_EN1||Timer 2|
+|A.2|bed|hbed|Timer 2|
+|A.3|xstop||Timer 2|
+|A.4|BTN_ENC|||
+|A.8|LCD_D5|||
+|A.9|TX1|LCD_D4||
+|B.0|servo0||Timer 3|
+|B.1|ystop||Timer 3|
+|B.10|zstop||Timer 2|
+|B.12|LCD_SS|||
+|B.13|LCD_SCK|||
+|B.14|LCD_MISO||Timer 12|
+|B.15|LCD_MOSI||Timer 8|
+|B.3|LCD_CD||Timer 2|
+|C.0|e0temp|t0||
+|C.10|SDD2|||
+|C.11|SDD3|||
+|C.12|SDSCK|||
+|C.2|bedtemp|tb||
+|C.6|fan0|fan|Timer 8|
+|C.8|SDD0||Timer 8|
+|C.9|SDD1||Timer 8|
+|D.2|SDCMD|||
 
 <div class="datatable-end"></div>

@@ -52,6 +52,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 3.4.1rc1_102 Release Notes
+      url: /release_notes_3.4.1rc1_102.html
+      output: web, pdf
+    
     - title: 3.4.0_1 Release Notes
       url: /release_notes_3.4.0_1.html
       output: web, pdf
@@ -188,6 +192,10 @@ entries:
       url: /sensorless.html
       output: web, pdf
 
+    - title: MCU Comparrisons
+      url: /mcu_types.html
+      output: web, pdf
+
     - title: Adding a Camera
       url: /camera.html
       output: web, pdf
@@ -218,6 +226,10 @@ entries:
 
     - title: Configuring Putty
       url: /putty.html
+      output: web, pdf
+
+    - title: Connecting a DHT22 (STM32 Only)
+      url: /dht22.html
       output: web, pdf
 
     - title: Useful Macros
@@ -478,12 +490,16 @@ entries:
           url: /skr_E3T_pins.html
           output: web, pdf
 
-  - title: STM32 Boards
+  - title: STM32F4 Boards
     output: web, pdf
     folderitems:
 
-    - title: STM32 Firmware Restrictions
+    - title: STM32F4 Firmware Restrictions
       url: /stm32_differences.html
+      output: web, pdf
+
+    - title: STM32F4 PWM Hardware/Software
+      url: /stm32f4_pwm.html
       output: web, pdf
 
       subfolders:  
@@ -1003,19 +1019,19 @@ entries:
           url: /skr_rrf_e3_pins.html
           output: web, pdf
         
-    - title: Configuring an ESP8266 for STM32 Boards
+    - title: Configuring an ESP8266 for STM32F4 Boards
       url: /stm32_esp8266.html
       output: web, pdf
 
-    - title: Configuring an ESP32 for STM32 Boards
+    - title: Configuring an ESP32 for STM32F4 Boards
       url: /stm32_esp32.html
       output: web, pdf
 
-    - title: Configuring an SBC for STM32 Boards
+    - title: Configuring an SBC for STM32F4 Boards
       url: /stm32_sbc.html
       output: web, pdf
 
-  - title: STM32 + Integrated SBC Boards
+  - title: STM32F4 + Integrated SBC Boards
     output: web, pdf
     folderitems:
 
@@ -1074,6 +1090,79 @@ entries:
 
         - title: Pin Names
           url: /fly_gemini_v1.1_pins.html
+          output: web, pdf
+
+      - title: Fly-Gemini-V2
+        output: web, pdf
+        subfolderitems:
+
+        - title: Fly-Gemini-V2 General Information
+          url: /fly_gemini_v2_general.html
+          output: web, pdf
+        
+        - title: Connecting via SBC
+          url: /fly_gemini_v2_connected_sbc.html
+          output: web, pdf
+
+        - title: Connecting a Serial Screen
+          url: /fly_gemini_v2_screen.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /fly_gemini_v2_bltouch.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /fly_gemini_v2_pins.html
+          output: web, pdf
+  
+  - title: STM32H7 Boards
+    output: web, pdf
+    folderitems:
+
+    - title: STM32H7 Firmware Restrictions
+      url: /stm32h7_differences.html
+      output: web, pdf
+
+    - title: STM32H7 PWM Hardware/Software
+      url: /stm32h7_pwm.html
+      output: web, pdf
+
+      subfolders:  
+      - title: SKR3
+        output: web, pdf
+        subfolderitems:
+
+        - title: SKR3 General Information
+          url: /skr_3_general.html
+          output: web, pdf
+        
+        - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
+          url: /skr_3_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting to a CAN-FD expansion board
+          url: /skr_3_canfd.html
+          output: web, pdf
+
+        - title: Connecting a Screen
+          url: /skr_3_screen.html
+          output: web, pdf
+
+        - title: Connecting a 12864 Screen
+          url: /skr_3_screen_12864.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /skr_3_bltouch.html
+          output: web, pdf
+
+        - title: Connecting an Accelerometer
+          url: /skr_3_accelerometer.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /skr_3_pins.html
           output: web, pdf
   
   - title: Screens

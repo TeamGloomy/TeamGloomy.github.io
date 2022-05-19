@@ -2,7 +2,7 @@
 title: Fly-407ZG Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 30/03/2022
+last_updated: 18/05/2022
 summary: "The pin names of the Fly-407ZG used in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_pins.html
@@ -38,60 +38,60 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 <div class="datatable-begin"></div>
 
-|Pin Number|Pin Name 1|Pin Name 2|
-| :------------- |:-------------|:-------------|
-|A.0|e0temp|t0|
-|A.1|fan3||
-|A.2|fan2||
-|A.3|dljc||
-|A.9|TX1||
-|A.10|RX1||
-|B.2|LCD_CD||
-|B.10|BEEP||
-|B.11|fan5||
-|B.13|LCD_SCK||
-|B.14|LCD_EN||
-|B.15|LCD_MOSI||
-|C.0|e2temp|t2|
-|C.1|e1temp|t1|
-|C.2|xmax|xstopmax|
-|C.3|xmin|xstop|
-|C.4|BTN_EN2||
-|C.5|BTN_EN1||
-|C.8|SDD0||
-|C.9|SDD1||
-|C.10|SDD2||
-|C.11|SDD3||
-|C.12|SDSCK||
-|C.13|SDCD||
-|C.14|z3||
-|C.15|zmax|zstopmax|
-|D.2|SDCMD||
-|E.2|bed|hbed|
-|E.3|e5heat|he5|
-|E.4|e4heat|he4|
-|E.5|e3heat|he3|
-|E.6|e2heat|he2|
-|E.7|LCD_D7||
-|E.8|LCD)D6||
-|E.9|LCD_D5||
-|E.10|LCD_D4||
-|E.11|servo0||
-|E.12|LCD_RS||
-|E.13|fan4||
-|E.14|LCD_EN||
-|E.15|BTN_ENC||
-|F.0|zmin|zstop|
-|F.2|ymin|ystop|
-|F.3|bedtemp|tb|
-|F.1|ymax|ystopmax|
-|F.4|e5temp|t5|
-|F.5|e4temp|t4|
-|F.6|e1heat|he1|
-|F.7|e0heat|he0|
-|F.8|fan0|fan|
-|F.9|fan1||
-|F.10|e3temp|t3|
-|F.11|LCD_SS||
+|Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
+| :------------- |:-------------|:-------------|:-------------|
+|A.0|e0temp|t0|Timer 2|
+|A.1|fan3||Timer 2|
+|A.2|fan2||Timer 2|
+|A.3|dljc||Timer 2|
+|A.9|TX1|||
+|A.10|RX1|||
+|B.2|LCD_CD|||
+|B.10|BEEP||Timer 2|
+|B.11|fan5||Timer 2|
+|B.13|LCD_SCK|||
+|B.14|LCD_EN||Timer 12|
+|B.15|LCD_MOSI||Timer 8|
+|C.0|e2temp|t2||
+|C.1|e1temp|t1||
+|C.2|xmax|xstopmax||
+|C.3|xmin|xstop||
+|C.4|BTN_EN2|||
+|C.5|BTN_EN1|||
+|C.8|SDD0||Timer 8|
+|C.9|SDD1||Timer 8|
+|C.10|SDD2|||
+|C.11|SDD3|||
+|C.12|SDSCK|||
+|C.13|SDCD|||
+|C.14|z3|||
+|C.15|zmax|zstopmax||
+|D.2|SDCMD|||
+|E.2|bed|hbed||
+|E.3|e5heat|he5||
+|E.4|e4heat|he4||
+|E.5|e3heat|he3|Timer 9|
+|E.6|e2heat|he2|Timer 9|
+|E.7|LCD_D7|||
+|E.8|LCD)D6|||
+|E.9|LCD_D5|||
+|E.10|LCD_D4|||
+|E.11|servo0|||
+|E.12|LCD_RS|||
+|E.13|fan4|||
+|E.14|LCD_EN|||
+|E.15|BTN_ENC|||
+|F.0|zmin|zstop||
+|F.2|ymin|ystop||
+|F.3|bedtemp|tb||
+|F.1|ymax|ystopmax||
+|F.4|e5temp|t5||
+|F.5|e4temp|t4||
+|F.6|e1heat|he1|Timer 10|
+|F.7|e0heat|he0|Timer 11|
+|F.8|fan0|fan|Timer 13|
+|F.9|fan1||Timer 14|
+|F.10|e3temp|t3||
+|F.11|LCD_SS|||
 
 <div class="datatable-end"></div>

@@ -2,7 +2,7 @@
 title: SKR-RRF-E3 + IDEX Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 29/03/2022
+last_updated: 18/05/2022
 summary: "SKR-RRF-E3 + IDEX Pin Names"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_pins.html
@@ -42,42 +42,42 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 <div class="datatable-begin"></div>
 
-|Pin Number|Pin Name 1|Pin Name 2|
-| :------------- |:-------------|:-------------|
-|A.0|e0temp|th0|
-|A.1|bedtemp|tb|
-|A.10|RX1|tft-rx|
-|A.2|e1temp|th1|
-|A.3|PT100|th2|
-|A.9|TX1|tft-tx|
-|B.0|servo0||
-|B.1|LCD_D6||
-|B.10|e1stop||
-|B.11|x2stop||
-|B.2|LCD_D4||
-|B.3|e0heat|heat0|
-|B.4|bed|hbed|
-|B.5|fan0|fan|
-|B.6|fan1||
-|B.7|Neopixel||
-|B.8|SDA1||
-|B.9|SCL1||
-|C.0|xstop|x-stop|
-|C.1|ystop|y-stop|
-|C.2|zstop|z-stop|
-|C.3|e0stop|e0det|
-|C.5|probe||
-|E.0|PWRDET||
-|E.1|PSON||
-|E.10|LCD_D5||
-|E.11|LCD_D7||
-|E.2|LED||
-|E.4|e1heat||
-|E.5|fan2||
-|E.6|fan3||
-|E.7|LCD_EN||
-|E.8|BEEP||
-|E.9|BTN_ENC||
-|E.3|IO||
+|Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
+| :------------- |:-------------|:-------------|:-------------|
+|A.0|e0temp|th0|Timer 2|
+|A.1|bedtemp|tb|Timer 2|
+|A.10|RX1|tft-rx||
+|A.2|e1temp|th1|Timer 2|
+|A.3|PT100|th2|Timer 2|
+|A.9|TX1|tft-tx||
+|B.0|servo0||Timer 3|
+|B.1|LCD_D6||Timer 3|
+|B.10|e1stop||Timer 2|
+|B.11|x2stop||Timer 2|
+|B.2|LCD_D4|||
+|B.3|e0heat|heat0|Timer 2|
+|B.4|bed|hbed|Timer 3|
+|B.5|fan0|fan|Timer 3|
+|B.6|fan1||Timer 4|
+|B.7|Neopixel||Timer 4|
+|B.8|SDA1||Timer 10|
+|B.9|SCL1||Timer 11|
+|C.0|xstop|x-stop||
+|C.1|ystop|y-stop||
+|C.2|zstop|z-stop||
+|C.3|e0stop|e0det||
+|C.5|probe|||
+|E.0|PWRDET|||
+|E.1|PSON|||
+|E.10|LCD_D5|||
+|E.11|LCD_D7|||
+|E.2|LED|||
+|E.4|e1heat|||
+|E.5|fan2||Timer 9|
+|E.6|fan3||Timer 9|
+|E.7|LCD_EN|||
+|E.8|BEEP|||
+|E.9|BTN_ENC|||
+|E.3|IO|||
 
 <div class="datatable-end"></div>

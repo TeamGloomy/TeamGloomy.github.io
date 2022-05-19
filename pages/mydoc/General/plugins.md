@@ -2,7 +2,7 @@
 title: A list of known plugins
 tags: []
 keywords: 
-last_updated: 19/01/2022
+last_updated: 17/05/2022
 summary: "A list of known plugins for DWC"
 sidebar: mydoc_sidebar
 permalink: plugins.html
@@ -28,6 +28,7 @@ Here are a list of known plugins for DWC. The table indicates whether the plugin
 |ObjectCancelPlugin|Sindarius|[Github](https://github.com/Sindarius/ObjectCancelPlugin/releases)|3.3+|X|X|
 |filament load cell|Kriechi|[Github](https://github.com/Kriechi/duet-plugin-filament-load-cell)|3.3+||X|
 |Another weighing filament holder|achrn|[Duet3d Forum](https://forum.duet3d.com/topic/25419/another-weighing-filament-holder)|3.3+||X|
+|RobotViewer|joergS5|[Github](https://github.com/JoergS5/RobotViewer)|3.4.0|X|X|
 
 
 <div class="datatable-end"></div>

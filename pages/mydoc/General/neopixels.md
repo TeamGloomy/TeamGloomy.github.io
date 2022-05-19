@@ -2,14 +2,22 @@
 title: Configuring Neopixels
 tags: []
 keywords: 
-last_updated: 09/12/2021
+last_updated: 17/05/2022
 summary: "Configuring Neopixels"
 sidebar: mydoc_sidebar
 permalink: neopixels.html
 folder: mydoc
 comments: false
 toc: false
+datatable: true
 ---
+
+<ul id="profileTabs" class="nav nav-tabs">
+  <li class="active"><a class="noCrossRef" href="#neo34" data-toggle="tab">Neopixels up to RRF 3.4.0</a></li>  
+	<li><a class="noCrossRef" href="#neo341" data-toggle="tab">Neopixels from RRF 3.4.1-RC1</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="neo3.4" markdown="1">
 
 The maximum number of supported neopixels is 60.  
 RGB and RGBW versions are supported. 
@@ -48,3 +56,34 @@ It is ok to change their status at the start and end of a print.
 Don't be tempted to use daemon.g unless you are able to arrange it to take place at a layer change.  
 
 This may not work at all on any pin on the SKR-Pro as Neopixels really need a 5V control signal, which is why many boards like the GTR and SKR V1.4 have specific neopixel pins. Those pins have a level shifter that boosts the 3.3V signal to 5V. The SKR Pro does not have this. Sometimes you can make it work by providing the neopixels with a lower than 5V supply voltage, but it pretty much depends on the pixels that you have. Another option would be to use a level shifter.
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="neo341" markdown="1">
+
+The process to control neopixels from 3.4.1-RC1 has changed from using bit-banging to using Hardware DMA. This uses hardware to change the colour of the neopixels, allowing for colours to be changed whilst movement is taking place. This is supported by both the STM32F4 and STM32H7 builds.
+
+This port of RRF sets up the neopixels using a different method to the Duet3D version.
+
+Firstly, M950 should be used to set up an LED string
+
+- M950 - Enn to specify an LED string number. when used with option E:
+    - C"name" specifies the pin to use (must currently be on the main board)
+    - Qnn (optional) SPI frequency (in Hz) used for hardware Neopixel control. Default 2.4MHz range 1MHz to 4Mhz
+    - Tn (optional)  LED type: T0 = DotStar (not supported), T1 = RGB NeoPixel (default), T2 = bit-banged RGB NeoPixel, T3 = RGBW NeoPixel, T4 = bit-banged RGBW NeoPixel.
+    - Laaaa:bbbb:cccc:dddd (optional) Neopixel timing aaaa:0 time, bbbb:1 time, cccc:cycle time (all in mS), dddd:reset time (in mS).
+    - By default string 0 will be configured to use the pin specified in board.txt (if present).
+
+Next, the neopixels can be controlled using M150
+
+- M150 - Knn (optional) specifies the LED string number to use for this and subsequent M150 commands (initially set to K0). Options X and Q are no longer used (use M950 to specify these values if needed).
+
+Here is an example
+```
+M950 E0 C"E.6" T3
+M150 K0 R0 B0 U0 W255 S10 F0
+```
+
+</div>
+
+</div>

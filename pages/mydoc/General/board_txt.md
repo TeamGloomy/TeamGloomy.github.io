@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to LPC and STM32
 tags: []
 keywords: 
-last_updated: 02/03/2022
+last_updated: 17/05/2022
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt.html
@@ -27,7 +27,7 @@ For STM32 boards, pins can take the form of PC.1, PC_1, C.1, C_1 or the pin name
 |8266wifi.csPin|8266wifi.csPin = 0.16|Allow use of non standard CS pin|||
 |8266wifi.espDataReadyPin|example 8266wifi.espDataReadyPin = 0.28| used to indicate that data is available from the ESP8266|One pin from port 0 or 2 of the MCU should be used||
 |8266wifi.espResetPin|8266wifi.espResetPin = 1.31|This sets the reset pin to use when connecting an ESP8266|||
-|8266wifi.lpcTfrReadyPin (8266wifi.TfrReadyPin is also supported from 3.2_4)|8266wifi.lpcTfrReadyPin = 1.30|This sets the transfer ready pin when connecting an ESP8266|||
+|8266wifi.TfrReadyPin (8266wifi.lpcTfrReadyPin is no longer supported from 3.4.1_RC1)|8266wifi.TfrReadyPin = 1.30|This sets the transfer ready pin when connecting an ESP8266|||
 |8266wifi.serialRxTxPins|8266wifi.serialRxTxPins = {0.3, 0.2}|This sets the pin numbers to use for RX and TX when connecting an ESP8266. See table below for allowable RX and TX pins|||
 |8266wifi.spiChannel|8266wifi.spiChannel=1|This allows the SPI channel to be set that is used for WiFi. The default is 1. It can only be set to channel 1 (SPI2) or channel 2 (SPI3). From 3.3rc2_2 only|STM32 Only||
 |accelerometer.spiChannel| accelerometer.spiChannel = 4 | This sets the SPI channel to be used for the accelerometer. From 3.3b3_2 onwards |STM32 Only||
@@ -50,11 +50,12 @@ For STM32 boards, pins can take the form of PC.1, PC_1, C.1, C_1 or the pin name
 |lcd.spiChannel|lcd.spiChannel = 255|This selects which SPI channel is used to communicate with the LCD. Can be set to 255 to indicate no channel to be used|STM32 Only|STM32 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software)|
 |led.neopixelPin|led.neopixelPin = 1.24|This sets the output pin for neopixel control|||
 |leds.diagnostic|leds.diagnostic = 1.18|This would set the correct pin for controlling a diagnostic LED|||
-|lpc.board ("board" is also supported from 3.2_4)|lpc.board = fly_e3|This sets the correct board pin mapping to load. See table below for current list|||
+|board ("lpc.board" is no longer supported from 3.4.1_RC1)|board = fly_e3|This sets the correct board pin mapping to load. See table below for current list|||
 |power.VInDetectPin|powerVInDetectPin = C.3|Sets the pin to use for voltage monitoring|STM32 Only||
 |power.voltage|power.voltage = 24|Sets a voltage when no voltage monitoring is present on the board|STM32 Only||
 |sbc.csPin|sbc.csPin = 0.16|Allow use of non standard CS pin|||
-|sbc.lpcTfrReadyPin ("sbc.TfrReadyPin" is also supported from 3.2_4)|sbc.lpcTfrReadyPin = 0.28 or sbc.TfrReadyPin = 0.28|This sets the transfer ready pin when attaching an SBC|||
+|sbc.loadConfig|sbc.loadConfig = 1|Load the board.txt from the SBC if board.txt is present on an SD card in the STM32 board|STM32 Only||
+|sbc.TfrReadyPin ("sbc.lpcTfrReadyPin" is no longer supported from 3.4.1_RC1)|sbc.TfrReadyPin = 0.28 or sbc.TfrReadyPin = 0.28|This sets the transfer ready pin when attaching an SBC|||
 |sbc.spiChannel|sbc.spiChannel=1|This allows the SPI channel to be set that is used for SBC. The default is 1. It can only be set to channel 1 (SPI2) or channel 2 (SPI3). From 3.3rc2_2 only|STM32 Only||
 |sdCard.external.cardDetectPin|externalSDCard.cardDetectPin|Sets the external SD card detect pin|||
 |sdCard.external.csPin|externalSDCard.csPin|Sets the external SD card chip select pin|||
@@ -63,13 +64,16 @@ For STM32 boards, pins can take the form of PC.1, PC_1, C.1, C_1 or the pin name
 |sdCard.internal.spiFrequencyHz|sdCard.internal.spiFrequencyHz = 4000000|Sets the SPI speed for the internal SD card in Hz|||
 |serial.aux.rxTxPins|serial.aux.rxTxPins = {0.3, 0.2}|This sets the pin numbers to use for RX and TX on AUX1. Typically uses UART0. See table below for allowable RX and TX pins|||
 |serial.aux2.rxTxPins|serial.aux2.rxTxPins = {0.11, 0.10}|This sets the pin numbers to use for RX and TX on AUX2. Typically uses UART2. See table below for allowable RX and TX pins|||
-|softwareSPI.pins|softwareSPI.pins = {0.15,0.17,0.16}|Sets the software SPI pins in the order SCK, MISO, MOSI|||
+|softwareSPI.pins (no longer supported from 3.4.1_RC1)|softwareSPI.pins = {0.15,0.17,0.16}|Sets the software SPI pins in the order SCK, MISO, MOSI|||
 |SPI0.pins|SPI0.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 0 - 3.2_7 Onwards|Hardware|Hardware - Not Configurable|
 |SPI1.pins|SPI1.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 1 - 3.2_7 Onwards|Hardware|Hardware - Not Configurable|
 |SPI2.pins|SPI2.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 2 - 3.2_7 Onwards|Software|Hardware - Not Configurable|
 |SPI3.pins|SPI3.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 3 - 3.2_7 Onwards|STM32 Only|Software|
 |SPI4.pins|SPI4.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 4 - 3.2_7 Onwards|STM32 Only|Software|
 |SPI5.pins|SPI5.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 5 - 3.2_7 Onwards|STM32 Only|Software|
+|SPI6.pins|SPI6.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 6 - 3.4.1-RC1 Onwards|STM32H7 Only|Hardware|
+|SPI7.pins|SPI7.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 7 - 3.4.1-RC1 Onwards|STM32H7 Only|Hardware|
+|SPI8.pins|SPI8.pins = {0.15,0.17,0.16}|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 8 - 3.4.1-RC1 Onwards|STM32H7 Only|Hardware|
 |SSP0.pins|SSP0.pins = {0.15,0.17,1.24,0.16}|Sets the pins to be used for SSP0 in the order SCK, MISO, MOSI, CS||LPC Only|
 |stepper.digipotFactor|stepper.digipotFactor = 113.33|Sets the output current for a built in driver as a factor of 255 against max current|MKS Sbase and Smoothieboard only||
 |stepper.directionPins|stepper.directionPins = { 0.5,0.11,0.20,0.22,2.13}|Sets the driver direction pins in the order 0, 1, 2, 3 and so on|LPC supports a maximum of 7 drivers|STM32 supports a maximum of 11 drivers|
@@ -96,25 +100,29 @@ Current preprogrammed boards
 |azteegx5mini2|Azteeg X5 Mini v2|LPC|
 |azteegx5mini3|Azteeg X5 Mini v3|LPC|
 |biqugtr_1.0|SKR GTR v1.0|STM32F4|
-|biqoctopus_1.1|BTT Octopus v1.1 f439 Version|STM3F4|
+|biqoctopus_1.1|BTT Octopus v1.1 f439 Version|STM32F4|
 |biqoctopuspro_1.0|BTT Octopus Pro v1.0 f439 Version|STM32F4|
 |biquskr_1.1|SKR v1.1|LPC|
 |biquskr_1.3|SKR v1.3|LPC|
 |biquskr_1.4|SKR v1.4|LPC|
-|biquskr_2.0|SKR v1.4|STM32F4|
+|biquskr_2.0|SKR v2.0|STM32F4|
+|biquskr_3|SKR3|STM32H7|
 |biquskr_e3t|SKR E3 Turbo|LPC|
 |biquskr_rrf_e3_1.0|SKR RRF E3 v1.0|STM32F4|
 |biquskrpro_1.1|SKR Pro v1.1 and 1.2|STM32F4|
 |fly_407zg|Fly-407ZG|STM32F4|
 |fly_cdy|Fly-CDY|LPC|
-|fly_cdyv2|Fly-CDYv2|STM32|
-|fly_cdyv3|Fly-CDYv3|STM32|
-|fly_E3|Fly-E3|STM32|
-|fly_E3_pro|Fly-E3-Pro|STM32|
-|fly_gemini|Fly-Gemini|STM32|
-|fly_geminiv1.1|Fly-Gemini V1.1|STM32|
-|fly_super8|Fly-Super8|STM32|
-|fysetc_spider|Fysetc Spider 407 Version|STM32|
+|fly_cdyv2|Fly-CDYv2|STM32F4|
+|fly_cdyv3|Fly-CDYv3|STM32F4|
+|fly_E3|Fly-E3|STM32F4|
+|fly_E3_pro|Fly-E3-Pro|STM32F4|
+|fly_E3_prov3|Fly-E3-Pro-v3|STM32F4|
+|fly_gemini|Fly-Gemini|STM32F4|
+|fly_geminiv1.1|Fly-Gemini V1.1|STM32F4|
+|fly_geminiv2.0|Fly-Gemini V2.0|STM32F4|
+|fly_super5|Fly-Super8|STM32H7|
+|fly_super8|Fly-Super8|STM32F4|
+|fysetc_spider|Fysetc Spider 407 Version|STM32F4|
 |generic|maps all pins as available by pin number. Not recommended for normal use||
 |mbed|For the mbed developer board|LPC|
 |mkssbase_1.3|MKS Sbase v1.3|LPC|
@@ -140,7 +148,7 @@ There are 4 UARTS and each can use a selection of pins.
 
 <div class="datatable-end"></div>
 
-## UART Useable Pins - STM32 Based Boards
+## UART Useable Pins - STM32F4 Based Boards
 
 There are 3 UARTS and each can use a selection of pins.  
 
