@@ -22,13 +22,17 @@ There are currently no stable STM32H7 builds.
 
 ### Latest Stable STM32F4 Build
 
-The latest unstable version is [3.4.0_1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.0_1)
+The latest stable version is [3.4.0_1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.0_1)
 
 This release only supports STM32F4 based boards.
 
+### Latest Unstable STM32H7 Build
+
+The latest stable version is [3.4.1rc1_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.1rc1_102)
+
 ### Latest Unstable STM32F4 Build
 
-There are currently no unstable STM32F4 builds.
+The latest stable version is [3.4.1rc1_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.1rc1_102)
 
 ### Latest Stable LPC Build
 
