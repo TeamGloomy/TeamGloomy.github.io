@@ -38,6 +38,12 @@ The Fly-E3-Pro-v3 has two 24v inputs and one ground. The right 24v input powers 
 
 The board can handle an input voltage up to 32v.
 
+### Thermistor inputs
+
+The Fly-E3-Pro-v3 supports PT1000 on the thermistor inputs by using a 2k2 resistor rather than a 4k7.
+
+{% include important.html content="The Fly-E3-Pro-v3 uses a 2k2 resistor on the thermistor inputs rather than 4k7. Please make sure you add R2200 to each M308 in your config" %}
+
 ### Initial Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
