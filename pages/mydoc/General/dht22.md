@@ -18,7 +18,7 @@ The duet docs page for DHT22 sensors can be found [here](https://docs.duet3d.com
 
 ### What pin to choose?
 
-A DHT22 sensor requires 3 pins to be connected. +3.3v (not 5v as recommended by the Duet team), ground and a signal pin.  
+A DHT22 sensor requires 3 pins to be connected. +3.3v (not 5v), ground and a signal pin.  
 Ideally a pin that does not have a bunch of signal conditioning or level shifting stuff connected to it should be chosen, for example, on the EXP1 or EXP2 header. It must also be interrupt capable.
 
 ### How do you know what pin is interrupt capable? 
