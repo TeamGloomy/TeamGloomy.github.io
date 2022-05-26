@@ -53,6 +53,8 @@ The output voltage of each driver EN, STEP and DIR can be configured to either 3
 The Fly-CDYv3 has a unique feature in that the fan mosfets are replaceable.
 Each mosfet (AO3400) controls one of the fan outputs.
 
+{% include image.html file="fly_cdyv3_fan_mosfet.png" alt="Fly-CDYv3 Fans Mosfets" caption="Fly-CDYv3 Fans Mosfets" %}
+
 ### Fan Voltage
 
 The fan voltage can be set using jumpers to either 5v, 12v and Vin.  
