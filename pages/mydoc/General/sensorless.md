@@ -71,6 +71,8 @@ S is the stall detection threshold which should be between -127 and +127.
 {% include tip.html content="This port has a wider sensitivity range than the duet version of RRF (which is -64 to +64)." %}
 R is the action to take on detecting a stall. 0 = no action (default), 1 = just report it, 2 = pause print, 3 = pause print, execute /sys/rehome/.g, and resume print
 
+{% include tip.html content="RRF 3.4.x and above includes M201.1 - Set reduced acceleration for special move types, lowering the acceleration of your homing moves with M201.1 might increase sensorless-homing reliability. Prior versions can decrease and restore their accel values inside homex/y.g" %}
+
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#homex" data-toggle="tab">homex.g</a></li>
     <li><a class="noCrossRef" href="#homey" data-toggle="tab">homey.g</a></li>
