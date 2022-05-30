@@ -42,7 +42,7 @@ onboardDrivers: yes
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
-    <li><a class="noCrossRef" href="#manual" data-toggle="tab">Manually Editting/Creating board.txt</a></li>
+    <li><a class="noCrossRef" href="#manual" data-toggle="tab">Manually Editing/Creating board.txt</a></li>
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="generate" markdown="1">

@@ -723,6 +723,10 @@ entries:
           url: /fly_e3_pro_v3_connected_wifi.html
           output: web, pdf
 
+        - title: Sensorless Homing
+          url: /fly_e3_pro_v3_sensorless.html
+          output: web, pdf
+
         - title: Connecting a Serial Screen
           url: /fly_e3_pro_v3_screen.html
           output: web, pdf

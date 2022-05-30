@@ -37,7 +37,7 @@ G30 P1 X230 Y130 Z-99999 S2     ; Probe near front right leadscrew - comment out
 ; G30 P1 X190 Y10 Z-99999       ; Probe near front right leadscrew - uncomment this lines for 3 screws on the Z axis
 ; G30 P2 X100 Y190 Z-99999 S3   ; Probe near front centre leadscrew - uncomment this lines for 3 screws on the Z axis
 ```
-bed.g should be editted with the centre location of each Z axis screw. These locations should be the location in gcode and can be outside the maxima and minima declared in M208 (in config.g). If you have 3 Z axis screws, make sure you declare 3 points in X and Y in M671.  
+bed.g should be edited with the centre location of each Z axis screw. These locations should be the location in gcode and can be outside the maxima and minima declared in M208 (in config.g). If you have 3 Z axis screws, make sure you declare 3 points in X and Y in M671.  
 ```
 M671 X-130:400 Y150:150 S10                             ; The location of the two Z axis screws
 
