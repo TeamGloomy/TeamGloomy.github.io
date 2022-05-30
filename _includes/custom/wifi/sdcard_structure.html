@@ -1,0 +1,33 @@
+## SD Card Structure
+
+The following structure should be replicated on your SD card.  
+
+```
+sd card root/
+├─ firmware/
+│  ├─ DuetWifiServer.bin
+├─ gcodes/
+├─ macros/
+├─ sys/
+│  ├─ bed.g
+│  ├─ board.txt
+│  ├─ config.g
+│  ├─ homeall.g
+│  ├─ homex.g
+│  ├─ homey.g
+│  ├─ homez.g
+│  ├─ pause.g
+│  ├─ resume.g
+│  ├─ sleep.g
+│  ├─ stop.g
+│  ├─ tfree0.g
+│  ├─ tpost0.g
+│  ├─ tpre0.g
+├─ www/
+│  ├─ contents of DuetWebControl-SD.zip
+firmware.bin
+```
+
+In the above example, the contents of the sys folder have come from the online configurator.
+
+{% include callout.html content="The contents of DuetWebControl-SD.zip should be extracted into the www folder." type="primary" %} 

@@ -1,0 +1,54 @@
+## Sensorless Homing
+
+{% if page.boardname == "Fly-407ZG" %}
+To be able to use sensorless homing on this board, a jumper cable needs to be installed between the diag pin of the driver and an endstop input.    
+{% else %}
+**Supported by only the TMC2209, TMC2226 and TMC5160**
+If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
+```
+stepper.TmcDiagPins = {{page.TMC}}
+```
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
+For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include {{page.example}} in your board.txt file.  
+{% endif %}
+{% if page.boardname == "Fly-CDYv2" or page.boardname == "Fly-CDYv3" %}
+The driver diag pins correspond to the following endstops.  
+
+<div class="datatable-begin"></div>
+
+|Driver|Endstop|
+| :------------- |:-------------|
+|X|X-Min|
+|Y|X-Max|
+|Z|Y-Min|
+|E0|Y-Max|
+|E1|Z-Min|
+|E2|Z-Max|
+
+<div class="datatable-end"></div>
+{% endif %}
+{% if page.boardname == "Fly-Super8" %}
+The driver diag pins correspond to the following endstops.  
+
+<div class="datatable-begin"></div>
+
+|Driver|Endstop|
+| :------------- |:-------------|
+|0|IO0|
+|1|IO1|
+|2|IO2|
+|3|IO3|
+|4|IO4|
+|5|IO5|
+|6|IO6|
+|7|HV IN|
+
+<div class="datatable-end"></div>
+{% endif %}
+For more information about setting up sensorless homing, please read [this](sensorless.html){:target="_blank"}.  
+
+{% if page.boardname == "GTR" %}
+{% include warning.html content="The GTR sensorless homing jumpers don't do anything so if you don't want to use sensorless homing and use normal endstops, you will have to remove the diag pin from your drivers - [Evidence](https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/issues/12)" %}
+{% elsif page.boardname == "SKR Pro v1.1 and v1.2" %}
+{% include warning.html content="The SKR Pro v1.1 and v1.2 sensorless homing jumpers don't do anything so if you don't want to use sensorless homing and use normal endstops, you will have to remove the diag pin from your drivers - [Evidence](https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/issues/12)" %}
+{% endif %}

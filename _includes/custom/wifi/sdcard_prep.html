@@ -1,0 +1,25 @@
+## SD Card preparation
+
+Now all the required files have been gathered, the SD card structure needs to be created.
+
+### SD Card Specification
+
+When choosing an SD Card to use with RRF, we recommend one with the following features:
+
+* a branded card with a speed rating of Class 4 or higher
+* of up to 32GB capacity, formatted as below. RepRapFirmware does not support SD cards formatted in exFAT format.
+
+### Formatting
+
+{% include tip.html content="We recommend formatting you SD card with the [SD Memory Card Formatter from the SD Association](https://www.sdcard.org/downloads/formatter/). Do this regardless of whether the SD Card is brand new or has been used for something else.  " %}
+
+If you can't use the recommended formatting tool, then the following points should be taken into account:
+
+If you need to reformat the micro SDHC card:
+
+* If the capacity of the card is 4GB or lower, use FAT16 format
+* If the capacity is more than 4GB (up to 32GB) then you will have to use FAT32 format
+* All cards should be formatted with 512 byte sectors
+* For best upload speed choose the largest cluster size available, which is normally 64kb for FAT16 and 32kb for FAT32
+
+{% include warning.html content="DO NOT use Windows 'Quick Erase'. This generally does not create a clean FAT32 partition." %}
