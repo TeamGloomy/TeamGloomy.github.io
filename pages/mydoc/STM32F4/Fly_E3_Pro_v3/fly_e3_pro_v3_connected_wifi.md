@@ -63,6 +63,4 @@ onboardDrivers: yes
 
 {% include custom/wifi/sdcard_structure.html %}
 
-{% include custom/wifi/sensorless.html %}
-
 {% include custom/wifi/wrapup.html %}
