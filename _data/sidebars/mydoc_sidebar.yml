@@ -783,6 +783,10 @@ entries:
           url: /fly_super8_connected_wifi.html
           output: web, pdf
 
+        - title: Configuring Sensorless Homing
+          url: /fly_super8_sensorless.html
+          output: web, pdf
+        
         - title: Connecting a Serial Screen
           url: /fly_super8_screen.html
           output: web, pdf
@@ -991,6 +995,10 @@ entries:
           url: /skr_2.0_connected_sbc.html
           output: web, pdf
 
+        - title: Configuring Sensorless Homing
+          url: /skr_2.0_sensorless.html
+          output: web, pdf
+        
         - title: Connecting a Screen
           url: /skr_2.0_screen.html
           output: web, pdf
@@ -1027,6 +1035,10 @@ entries:
           url: /skr_rrf_e3_connected_wifi.html
           output: web, pdf
 
+        - title: Configuring Sensorless Homing
+          url: /skr_rrf_e3_sensorless.html
+          output: web, pdf
+        
         - title: Connecting a Serial Screen
           url: /skr_rrf_e3_screen.html
           output: web, pdf
