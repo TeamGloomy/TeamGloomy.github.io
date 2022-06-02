@@ -23,6 +23,41 @@ stepper.TmcDiagPins = {{page.TMC}}
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include {{page.example}} in your board.txt file. 
 
+{% if page.boardname == "Fly-CDYv2" or page.boardname == "Fly-CDYv3" %}
+The driver diag pins correspond to the following endstops.  
+
+<div class="datatable-begin"></div>
+
+|Driver|Endstop|Pin|
+| :------------- |:-------------|:-------------|
+|X|X-Min|C.7|
+|Y|X-Max|C.6|
+|Z|Y-Min|D.11|
+|E0|Y-Max|D.10|
+|E1|Z-Min|B.10|
+|E2|Z-Max|B.11|
+
+<div class="datatable-end"></div>
+{% endif %}
+{% if page.boardname == "Fly-Super8" %}
+The driver diag pins correspond to the following endstops.  
+
+<div class="datatable-begin"></div>
+
+|Driver|Endstop|Pin|
+| :------------- |:-------------|:-------------|
+|0|IO0|G.12|
+|1|IO1|G.11|
+|2|IO2|G.10|
+|3|IO3|G.9|
+|4|IO4|D.7|
+|5|IO5|D.6
+|6|IO6|A.8
+|7|HV IN|F.3|
+
+<div class="datatable-end"></div>
+{% endif %}
+
 ## Config.g Changes
 {% if page.onboardDrivers %}
 {% capture warning %}{{page.driverType}} drivers only support stall detection when using Stealthchop mode so take care to make sure that is enabled and that the stealthchop/spreadcycle threshold is not set to too low a speed.{% endcapture %}

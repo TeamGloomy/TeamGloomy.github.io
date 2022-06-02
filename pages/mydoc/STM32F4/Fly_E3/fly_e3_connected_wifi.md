@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-E3
-mcu: STM32F407ZGT6
+mcu: STM32F407VGT6
 firmware: firmware-stm32f4-wifi.bin
 wifi: 
 module: onboard
