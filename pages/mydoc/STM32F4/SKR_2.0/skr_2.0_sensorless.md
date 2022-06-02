@@ -5,7 +5,7 @@ keywords:
 last_updated: 01/06/2022
 summary: "Using and Configuring Sensorless Homing on an SKR v2.0"
 sidebar: mydoc_sidebar
-permalink: skr_2.0_connected_wifi.html
+permalink: skr_2.0_sensorless.html
 folder: mydoc
 comments: false
 toc: false
