@@ -11,13 +11,13 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-E3-Pro-v3
-SCL: E.7
-SDA: E.9
-SDO: E.10
-CS: E.8
-int: E.6
-spiChannel: 5
-location: EXP1 header
+SCL: B.3
+SDA: B.5
+SDO: B.4
+CS: B.2
+int: A.10
+spiChannel: 2
+location: EXP2 header
 ---
 
 {% include custom/accelerometer.html %}
