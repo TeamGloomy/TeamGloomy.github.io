@@ -8,7 +8,11 @@ Install them as identified in the image below.
 {% endif %}
 ## Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Connect to the board using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Change the Com port to match the {{page.boardname}} and connect. The baudrate doesn't matter.  
+{% include tip.html content="I (jay_s_uk) have a very handy little tool installed on my main laptop thats monitoring for any serial devices as they are plugged in and you get a popup with the Com port number. If you’re interested, it can be found [here](https://helmpcb.com/software/serial-port-monitor)" %}
+
+### Flashing the WiFi Firmware
+Type in the following to putty  
 
 ```
 M552 S0

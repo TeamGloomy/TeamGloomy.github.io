@@ -2,7 +2,7 @@
 title: Connecting an SKR3 via an ESP8266 or ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 02/06/2022
 summary: "How to connect to an SKR3 via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_3_connected_wifi.html
@@ -32,4 +32,36 @@ board: biquskr_3
 onboardDrivers: no
 ---
 
-{% include custom/wifi.html %}
+{% include custom/wifi/overview.html %}
+{% include custom/wifi/removeable.html %}
+
+{% include custom/wifi/board_firmware.html %}
+
+{% include custom/wifi/wifi_prep.html %}
+
+{% include custom/wifi/dwc.html %}
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
+    <li><a class="noCrossRef" href="#manual" data-toggle="tab">Manually Editing/Creating board.txt</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
+
+{% include custom/wifi/generate_config.html %}
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="manual" markdown="1">
+
+{% include custom/wifi/board_txt.html %}
+
+</div>
+
+</div>
+
+{% include custom/wifi/sdcard_prep.html %}
+
+{% include custom/wifi/sdcard_structure.html %}
+
+{% include custom/wifi/wrapup.html %}

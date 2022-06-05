@@ -915,6 +915,10 @@ entries:
           url: /gtr_connected_sbc.html
           output: web, pdf
 
+        - title: Configuring Sensorless Homing
+          url: /gtr_sensorless.html
+          output: web, pdf
+
         - title: Connecting a Screen
           url: /gtr_screen.html
           output: web, pdf
@@ -955,6 +959,10 @@ entries:
           url: /skr_pro_connected_sbc.html
           output: web, pdf
 
+        - title: Configuring Sensorless Homing
+          url: /skr_pro_sensorless.html
+          output: web, pdf
+        
         - title: Connecting a Screen
           url: /skr_pro_screen.html
           output: web, pdf
@@ -1185,6 +1193,10 @@ entries:
           url: /skr_3_canfd.html
           output: web, pdf
 
+        - title: Configuring Sensorless Homing
+          url: /skr_3_sensorless.html
+          output: web, pdf
+        
         - title: Connecting a Screen
           url: /skr_3_screen.html
           output: web, pdf
