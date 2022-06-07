@@ -1,0 +1,41 @@
+## Homemade ESP32
+
+Use an ESP32 with USB programming as it already 5v tolerant and it allows for updating via USB. They also need to be the 36 pin variety so they have GPIO0 broken out.
+
+### BOM
+
+* 1 x 36 pin ESP32
+* 1 x 330R resistor
+* jumpers or other ways of connecting to the GTR
+
+### Preparing the ESP32
+
+Follow the instructions [here](stm32_esp32.html).  
+Alternatively you can connect the RX/TX pins on the ESP32 to a set of RX/TX pins on the {{page.boardname}}. 
+{% include tip.html content="Remember, RX on the board is connected to TX on the adapter and vice versa." %}
+
+### Connecting the ESP32
+
+The pinout for the {{page.boardname}} can be found [here]({{page.schematic}}) and the schematic for the Duet 2 WiFi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf).
+
+The table below shows the pins required on the ESP32 and what they are connected to on the {{page.boardname}}. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
+
+<div class="datatable-begin"></div>
+
+| ESP32 Pin       | {{page.boardname}} Pin       | Resistor Value  |
+| :-------------: |:-------------:| :---------------:|
+| RST           | {{page.ERP}} on EXP2         | 470R            |
+| CS/GPIO15     | {{page.GPIO15}} on EXP2         | 2200R           |
+| MOSI/GPIO13   | {{page.GPIO13}} on EXP2         | 47R             |
+| MISO/GPIO12   | {{page.GPIO12}} on EXP2         | 47R             |
+| SCLK/GPIO14   | {{page.GPIO14}} on EXP2         | 47R             |
+| ESP_DATA_Ready/GPIO0   | {{page.DRP}} on EXP2         | None             |
+| LPC_DATA_Ready/GPIO4   | {{page.TRP}} on EXP2         | None            |
+| VIN(5v)   | 5v on EXP2          | None             |
+| GND   | GND on EXP2          | None             |
+
+<div class="datatable-end"></div>
+
+{% include image.html file="esp32_pinmap.png" alt="ESP32 Pinout" caption="ESP32 Pinout" %}
+
+{% include warning.html content="The cables used need to be very very short. Even 10cm ones don't work so they must be shorter than that" %}

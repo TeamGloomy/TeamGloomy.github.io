@@ -1,0 +1,41 @@
+## Homemade ESP8266 WiFi Adapter
+
+Use a nodemcu ESP8266 with USB programming as it already 5v tolerant and it allows for updating via USB.
+
+### BOM
+
+* 1 x nodemcu ESP8266 or Wemos D1 mini
+* 3 x 47R resistor
+* 1 x 470R resistor
+* 3 x 2200R resistor
+* jumpers or other ways of connecting to the GTR
+
+### Preparing the ESP8266
+
+Follow the instructions [here](stm32_esp8266.html).  
+Alternatively you can connect the RX/TX pins on the ESP8266 to a set of RX/TX pins on the {{page.boardname}}. 
+{% include tip.html content="Remember, RX on the board is connected to TX on the adapter and vice versa." %}
+
+### Connecting the ESP8266
+
+The pinout for the {{page.boardname}} can be found [here]({{page.schematic}}) and the schematic for the Duet 2 WiFi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+
+The table below shows the pins required on the ESP8266 and what they are connected to on the {{page.boardname}}. 
+
+<div class="datatable-begin"></div>
+
+| ESP8266 Pin       | {{page.boardname}} Pin       | Resistor Value  |
+| :-------------: |:-------------:| :---------------:|
+| RST           | {{page.ERP}} on EXP2         | 470R            |
+| CS/GPIO15     | {{page.GPIO15}} on EXP2         | 2200R           |
+| MOSI/GPIO13   | {{page.GPIO13}} on EXP2         | 47R             |
+| MISO/GPIO12   | {{page.GPIO12}} on EXP2         | 47R             |
+| SCLK/GPIO14   | {{page.GPIO14}} on EXP2         | 47R             |
+| ESP_DATA_Ready/GPIO0   | {{page.DRP}} on EXP1         | 2200R             |
+| LPC_DATA_Ready/GPIO4   | {{page.TRP}} on EXP1         | None            |
+| VIN(5v)   | 5v on EXP1          | None             |
+| GND   | GND on EXP1          | 2200R to RST             |
+
+<div class="datatable-end"></div>
+
+{% include warning.html content="The cables used need to be very very short. Even 10cm ones don't work so they must be shorter than that" %}
