@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to LPC and STM32
 tags: []
 keywords: 
-last_updated: 17/05/2022
+last_updated: 08/06/2022
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt.html
@@ -24,6 +24,7 @@ For STM32 boards, pins can take the form of PC.1, PC_1, C.1, C_1 or the pin name
 
 |Item Name|Example|Description|LPC Comments|STM32 Comments|
 | :------------- | :---------------|:---|:---|:---|
+|8266wifi.clockReg|8266wifi.clockReg=8195|Sets the WiFi clock speed.ESP32 only. The default is 8195 (DMA 20MHz - Typical WiFi transfer speed of 1.56Mbytes/S for F4 and 1.63Mbytes/S for H7). F4 processors seem to work ok at 8194 (DMA 27MHz - Typical WiFi transfer speed of 1.80Mbytes/S for F4 and 1.92Mbytes/S for H7) and H7 processors (but not F4) seem to work ok at 8193 (DMA 40MHz - Typical WiFi transfer speed of 2.43Mbytes/S for H7). 3.4.1 onwards and requires DuetWifiServer 1.26_09 onwards|STM32 Only||
 |8266wifi.csPin|8266wifi.csPin = 0.16|Allow use of non standard CS pin|||
 |8266wifi.espDataReadyPin|example 8266wifi.espDataReadyPin = 0.28| used to indicate that data is available from the ESP8266|One pin from port 0 or 2 of the MCU should be used||
 |8266wifi.espResetPin|8266wifi.espResetPin = 1.31|This sets the reset pin to use when connecting an ESP8266|||
@@ -40,6 +41,7 @@ For STM32 boards, pins can take the form of PC.1, PC_1, C.1, C_1 or the pin name
 |heat.spiTempSensorChannel|heat.spiTempSensorChannel = 255|this selects which SPI channel is used to communicate with the temperature sensor board. Can be set to 255 to indicate no channel to be used|LPC has three SPI interfaces (two channels 0 and 1 are hardware based - SSP0 and SSP1 and channel 2 is software| STM32 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software)|
 |heat.spiTempSensorCSPins|heat.spiTempSensorCSPins = {1.21, NoPin}|Sets the SPI temperature sensor chip select pin. Can be set to 255 to indicate no channel to be used|LPC accepts a maximum of 2 sensors|STM32 accepts a maximum of 2 sensors|
 |heat.tempSensePins|heat.tempSensePins = {0.25,0.23}|Sets the temperature sensor pins starting with the bed|LPC Accepts a maximum of 3 entries|STM32 accepts a maximum of 9 entries|
+|heat.thermistorSeriesResistor|heat.thermistorSeriesResistor = 4700|Sets the series resistor used for temperature sensors. The default is 4700. From 3.4.1 onwards|STM32 Only||
 |lcd.encoderPinA|lcd.encoderPinA = 3.25|Sets the pin for connection A of the encoder|STM32 Only||
 |lcd.encoderPinB|lcd.encoderPinB = 3.26|Sets the pin for connection B of the encoder|STM32 Only||
 |lcd.encoderPinSw|lcd.encoderPinSw = 1.30|Sets the pin to be used for the encoder click|STM32 Only||

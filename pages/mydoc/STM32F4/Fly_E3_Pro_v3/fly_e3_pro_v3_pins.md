@@ -40,42 +40,43 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
 | :------------- |:-------------|:-------------|:-------------|
-|A.4|e0temp|t0||
-|A.1|e1temp|t1|Timer 2|
-|A.3|bedtemp|tb|Timer 2|
-|C.1|boardtemp|tboard||
-|A.2|xmin|xstop|Timer 2|
-|B.10|ymin|ystop|Timer 2|
-|C.4|zmin|zstop||
-|D.0|e0min|e0stop||
-|D.1|e1min|e1stop||
-|B.0|servo0||Timer 3|
-|C.5|probe|||
 |A.0|bed|hbed|Timer 2|
+|A.1|e1temp|t1|Timer 2|
+|A.10|RX1|BTN_EN1||
+|A.13|LCD_CD|||
+|A.14|LCD_EN|||
+|A.2|xmin|xstop|Timer 2|
+|A.3|bedtemp|tb|Timer 2|
+|A.4|e0temp|t0||
 |A.5|e0heat|he0|Timer 8|
-|C.6|e1heat|he1|Timer 8|
-|A.7|fan0|fan|Timer 14|
 |A.6|fan1||Timer 13|
+|A.7|fan0|fan|Timer 14|
+|A.9|TX1|BTN_EN2||
+|B.0|servo0||Timer 3|
+|B.1|laser||Timer 3|
+|B.10|ymin|ystop|Timer 2|
+|B.11|neopixel||Timer 2|
+|B.2|LCD_SS|||
+|B.3|LCD_SCK||Timer 2|
+|B.4|LCD_MISO||Timer 3|
+|B.5|LCD_MOSI||Timer 3|
 |B.6|fan2||Timer 4|
 |B.7|fan3||Timer 4|
-|E.12|BTN_ENC|||
-|E.11|BEEP|||
-|E.10|LCD_D5|||
-|E.6|LCD_RS||Timer 9|
-|E.9|LCD_D4|||
-|E.8|LCD_D7|||
-|A.14|LCD_EN|||
-|E.7|LCD_D6|||
-|A.13|LCD_CD|||
-|B.4|LCD_MISO||Timer 3|
-|B.3|LCD_SCK||Timer 2|
-|B.2|LCD_SS|||
-|B.5|LCD_MOSI||Timer 3|
-|A.9|TX1|BTN_EN2||
-|A.10|RX1|BTN_EN1||
-|B.11|neopixel||Timer 2|
-|D.11|PSON|||
-|B.1|laser||Timer 3|
+|C.1|boardtemp|tboard||
+|C.4|zmin|zstop||
+|C.5|probe|||
+|C.6|e1heat|he1|Timer 8|
+|D.0|e0min|e0stop||
+|D.1|e1min|e1stop||
 |D.10|pwr|PWRDET||
+|D.11|PSON|||
+|E.10|LCD_D5|||
+|E.11|BEEP|||
+|E.12|BTN_ENC|||
+|E.6|LCD_RS||Timer 9|
+|E.7|LCD_D6|||
+|E.8|LCD_D7|||
+|E.9|LCD_D4|||
+
 
 <div class="datatable-end"></div>

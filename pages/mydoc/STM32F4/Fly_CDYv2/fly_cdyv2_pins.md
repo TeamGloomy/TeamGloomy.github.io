@@ -2,7 +2,7 @@
 title: Fly-CDYv2 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 08/06/2022
 summary: "The pin names of the Fly-CDYv2 used in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_pins.html
@@ -71,7 +71,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |D.10|ymax|ystopmax||
 |D.11|ymin|ystop||
 |D.12|e0heat|he0|Timer 4|
-|D.13|e1heat|he1||
+|D.13|e1heat|he1|Timer 4|
 |D.14|e2heat|he2|Timer 4|
 |D.15|Neopixel|LED|Timer 4|
 |D.8|BTN_EN1|||

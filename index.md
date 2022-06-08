@@ -1,6 +1,6 @@
 ---
 title: "Getting started with RepRapFirmware for LPC and STM32 based boards"
-last_updated: 12/05/2022
+last_updated: 08/06/2022
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: These instructions will help you to get started running RepRapFirmware on your LPC or STM32 based 3D printer board
@@ -28,11 +28,11 @@ This release only supports STM32F4 based boards.
 
 ### Latest Unstable STM32H7 Build
 
-The latest stable version is [3.4.1rc1_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.1rc1_102)
+The latest unstable version is [3.4.1_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.1_102)
 
 ### Latest Unstable STM32F4 Build
 
-The latest stable version is [3.4.1rc1_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.1rc1_102)
+The latest unstable version is [3.4.1_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.1_102)
 
 ### Latest Stable LPC Build
 
@@ -48,7 +48,7 @@ The latest stable WiFi firmware version is [1.26-08](https://github.com/gloomyan
 
 ### Latest Unstable
 
-None
+The latest unstable WiFi firmware version is [1.26-09](https://github.com/gloomyandy/DuetWiFiSocketServer/releases/tag/V1.26-09)
 
 ## Partnership
 

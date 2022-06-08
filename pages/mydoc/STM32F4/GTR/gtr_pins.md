@@ -2,7 +2,7 @@
 title: GTR + M5 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 08/06/2022
 summary: "The pin names of the GTR + M5 in the firmware"
 sidebar: mydoc_sidebar
 permalink: gtr_pins.html
@@ -78,7 +78,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |C.9| fan_M4||Timer 8|
 |D.10|BTN_EN1|||
 |D.12|e5heat|heat_M3|Timer 4|
-|D.13|e4heat|heat_M2||
+|D.13|e4heat|heat_M2|Timer 4|
 |D.15|e3heat|heat_M1|Timer 4|
 |D.3| e2stop|e2det||
 |D.4| E1-CS|||

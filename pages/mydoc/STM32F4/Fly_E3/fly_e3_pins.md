@@ -2,7 +2,7 @@
 title: Fly-E3 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 08/06/2022
 summary: "The pin names of the Fly-E3 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pins.html
@@ -71,7 +71,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |D.10|FPC3|||
 |D.11|FPC4|||
 |D.12|FPC5||Timer 4|
-|D.13|FPC6|||
+|D.13|FPC6||Timer 4|
 |D.14|FPC7||Timer 4|
 |D.15|FPC8||Timer 4|
 |E.7|LCD_D6|||
