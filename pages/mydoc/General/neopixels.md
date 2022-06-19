@@ -17,7 +17,7 @@ datatable: true
 	<li><a class="noCrossRef" href="#neo341" data-toggle="tab">Neopixels from RRF 3.4.1-RC1</a></li>
 </ul>
   <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="neo3.4" markdown="1">
+<div role="tabpanel" class="tab-pane active" id="neo34" markdown="1">
 
 The maximum number of supported neopixels is 60.  
 RGB and RGBW versions are supported. 
