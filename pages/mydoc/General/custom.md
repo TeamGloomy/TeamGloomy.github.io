@@ -18,7 +18,7 @@ There has been some additions made to [standard gcodes](https://docs.duet3d.com/
 - M150 - X2 has been added for the Neopixels. It should be used instead of X1. This is only applicable to this LPC/STM32 port. This has been removed in 3.4.1-RC1
 - M150 - Knn (optional) specifies the LED string number to use for this and subsequent M150 commands (initially set to K0). Options X and Q are no longer used (use M950 to specify these values if needed).
 - M308 - "thermocouple-max6675" has been added as an additional sensor type. This is only applicable to this LPC/STM32 port.
-- M569.8 - For setting the sense resistor and maximum current of a driver not using the standard 0.075 Ohm.
+- M569.8 - For setting the sense resistor and maximum current of a driver not using the standard 0.075 Ohm for TMC5160s or 0.11 Ohm for TMC2209s.
 - M950 - Enn to specify an LED string number. when used with option E:
     - C"name" specifies the pin to use (must currently be on the main board)
     - Qnn (optional) SPI frequency (in Hz) used for hardware Neopixel control. Default 2.4MHz range 1MHz to 4Mhz
