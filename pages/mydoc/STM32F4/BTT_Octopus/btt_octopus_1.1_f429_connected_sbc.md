@@ -2,7 +2,7 @@
 title: Connecting an BTT Octopus v1.1 F429 Version via SBC
 tags: []
 keywords: 
-last_updated: 28/03/2022
+last_updated: 13/07/2022
 summary: "How to connect to an BTT Octopus v1.1 F429 Version via SBC"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_connected_sbc.html
@@ -18,7 +18,7 @@ BCM11: B.13
 BCM9: C.2
 BCM10: C.3
 BCM8: B.12
-BCM25: D.10
+BCM25: G.7
 heat: "{ F.3, F.4, F.5, F.6, F.7 }"
 diagnostics: A.13
 stepperSPI: 0

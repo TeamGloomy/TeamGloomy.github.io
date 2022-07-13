@@ -2,7 +2,7 @@
 title: Fysetc Spider 407 Version General Information
 tags: []
 keywords: 
-last_updated: 17/08/2021
+last_updated: 15/06/2022
 summary: "General information regarding the Fysetc Spider 407 Version"
 sidebar: mydoc_sidebar
 permalink: fysetc_spider_407_general.html
@@ -15,6 +15,10 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fysetc Spider 407 Version board, which is supported from 3.4beta2.
+
+### Board.txt Name
+
+The board name in board.txt is **fysetc_spider**.
 
 ### Driver Jumpers
 

@@ -2,7 +2,7 @@
 title: SKR3 General Information
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 15/06/2022
 summary: "General information regarding the SKR3"
 sidebar: mydoc_sidebar
 permalink: skr_3_general.html
@@ -15,6 +15,10 @@ datatable: true
 ## Overview
 
 This page covers any general information for the SKR3 board. 
+
+### Board.txt Name
+
+The board name in board.txt is **biquskr_3**.
 
 ### Driver Jumpers
 

@@ -2,7 +2,7 @@
 title: Fly-Super8 General Information
 tags: []
 keywords: 
-last_updated: 14/10/2021
+last_updated: 15/06/2022
 summary: "General information regarding the Fly-Super8"
 sidebar: mydoc_sidebar
 permalink: fly_super8_general.html
@@ -15,7 +15,11 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fly-Super8 board.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/1005003235684044.html).  
+It is currently available through [AliExpress](https://www.aliexpress.com/item/1005003235684044.html). 
+
+### Board.txt Name
+
+The board name in board.txt is **fly_super8**.
 
 ### Board Fuses
 

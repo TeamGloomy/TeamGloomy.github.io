@@ -2,7 +2,7 @@
 title: Fly-Gemini-V1.1 General Information
 tags: []
 keywords: 
-last_updated: 04/03/2022
+last_updated: 15/06/2022
 summary: "General information regarding the Fly-Gemini-V1.1"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_v1.1_general.html
@@ -16,6 +16,10 @@ datatable: true
 
 This page covers any general information for the Fly-Gemini-V1.1 board.  
 It is currently available through [AliExpress](https://www.aliexpress.com/item/1005003536896114.html).  
+
+### Board.txt Name
+
+The board name in board.txt is **fly_geminiv1.1**.
 
 ### Driver Jumpers
 

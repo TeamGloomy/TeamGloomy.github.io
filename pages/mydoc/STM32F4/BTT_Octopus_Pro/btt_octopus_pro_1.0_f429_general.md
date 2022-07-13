@@ -2,7 +2,7 @@
 title: BTT Octopus Pro v1.0 F429 Version General Information
 tags: []
 keywords: 
-last_updated: 29/11/2021
+last_updated: 15/06/2022
 summary: "General information regarding the BTT Octopus Pro v1.0 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.0_f429_general.html
@@ -17,6 +17,10 @@ datatable: true
 This page covers any general information for the BTT Octopus Pro v1.0 F429 Version board, which is supported from 3.3.0_11.
 
 {% include callout.html content="There are two types of BTT Octopus Pro v1.0. One uses an STM32F446ZET6 and the other uses an STM32F429ZGT6. TeamGloomy and this port only support the STM32F429ZGT6 based boards." type="danger" %} 
+
+### Board.txt Name
+
+The board name in board.txt is **biqoctopuspro_1.0**.
 
 ### Driver Jumpers
 

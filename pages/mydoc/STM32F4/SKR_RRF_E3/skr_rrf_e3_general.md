@@ -2,7 +2,7 @@
 title: SKR-RRF-E3 General Information
 tags: []
 keywords: 
-last_updated: 16/03/2021
+last_updated: 15/06/2022
 summary: "General information regarding the SKR-RRF-E3"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_general.html
@@ -16,6 +16,10 @@ datatable: true
 
 This page covers any general information for the SKR-RRF-E3 board and its IDEX addon.  
 It is officially supported by TeamGloomy from release 3.3b1_5.  
+
+### Board.txt Name
+
+The board name in board.txt is **biquskr_rrf_e3_1.1**.
 
 ### Driver Diag Pin
 

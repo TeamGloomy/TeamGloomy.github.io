@@ -2,7 +2,7 @@
 title: Fly-E3 General Information
 tags: []
 keywords: 
-last_updated: 11/08/2021
+last_updated: 15/06/2022
 summary: "General information regarding the Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_general.html
@@ -17,6 +17,10 @@ datatable: true
 This page covers any general information for the Fly-E3 board.  
 It is currently available through [AliExpress](https://www.aliexpress.com/item/1005001999686167.html).  
 It is also available with a PT100 chip installed on [aliexpress](https://www.aliexpress.com/item/1005002096165911.html).  
+
+### Board.txt Name
+
+The board name in board.txt is **fly_e3**.
 
 ### Driver Jumpers
 

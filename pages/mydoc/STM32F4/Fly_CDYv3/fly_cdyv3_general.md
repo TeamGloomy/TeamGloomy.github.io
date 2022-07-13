@@ -2,7 +2,7 @@
 title: Fly-CDYv3 General Information
 tags: []
 keywords: 
-last_updated: 21/11/2021
+last_updated: 15/06/2022
 summary: "General information regarding the Fly-CDYv3"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv3_general.html
@@ -16,6 +16,10 @@ datatable: true
 
 This page covers any general information for the Fly-CDYv3 board.  
 It is currently available through [AliExpress](https://www.aliexpress.com/item/1005001701631493.html)
+
+### Board.txt Name
+
+The board name in board.txt is **fly_cdyv3**.
 
 ### Board Fuses
 

@@ -2,7 +2,7 @@
 title: SKR v2.0 General Information
 tags: []
 keywords: 
-last_updated: 16/03/2021
+last_updated: 15/06/2022
 summary: "General information regarding the SKR v2.0"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_general.html
@@ -18,6 +18,10 @@ This page covers any general information for the SKR v2.0 board.
 
 {% include warning.html content="There was an issue with the original boards damaging TMC drivers. Please see [here](https://docs.google.com/document/d/1IeKgfE2WIDjqH1fx5Yg7n1FOHVwhDFmDlZ-7QMlOEV0/edit?fbclid=IwAR2-b687dNy2ktrpiLEf-orZke0lbB_FhXCG9NwP7MFVzUYijo__ZRVMrks) and [here](https://docs.google.com/document/d/1swmc4HvP9vxrxV2b9LVGa_I7GLTQGogQns7CfMYCckA/edit?fbclid=IwAR2-b687dNy2ktrpiLEf-orZke0lbB_FhXCG9NwP7MFVzUYijo__ZRVMrks) for details about how to fix a board.  
 Please be aware that the reverse driver protection feature has been disabled from 3.3RC1" %}
+
+### Board.txt Name
+
+The board name in board.txt is **biquskr_2**.
 
 ### Driver Jumpers
 

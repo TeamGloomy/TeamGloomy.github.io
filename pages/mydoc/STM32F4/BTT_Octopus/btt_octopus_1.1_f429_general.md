@@ -2,7 +2,7 @@
 title: BTT Octopus v1.1 F429 Version General Information
 tags: []
 keywords: 
-last_updated: 17/08/2021
+last_updated: 15/06/2022
 summary: "General information regarding the BTT Octopus v1.1 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_general.html
@@ -17,6 +17,10 @@ datatable: true
 This page covers any general information for the BTT Octopus v1.1 F429 Version board, which is supported from 3.4beta2.
 
 {% include callout.html content="There are two types of BTT Octopus. One uses an STM32F446ZET6 and the other uses an STM32F429ZGT6. TeamGloomy and this port only support the STM32F429ZGT6 based boards. BTT provide a build with reduced features which can be found [here](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/tree/master/Firmware/RepRapFirmware/F446-OctoPus)" type="danger" %} 
+
+### Board.txt Name
+
+The board name in board.txt is **biqoctopus_1.1**.
 
 ### Driver Jumpers
 

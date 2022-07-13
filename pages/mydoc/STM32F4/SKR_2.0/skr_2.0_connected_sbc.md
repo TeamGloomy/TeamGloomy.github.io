@@ -2,7 +2,7 @@
 title: Connecting an SKR v2.0 via SBC
 tags: []
 keywords: 
-last_updated: 25/03/2022
+last_updated: 13/07/2022
 summary: "How to connect to an SKR v2.0 via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_connected_sbc.html
@@ -18,7 +18,7 @@ BCM11: B.13
 BCM9: B.14
 BCM10: B.15
 BCM8: B.12
-BCM25: B.11
+BCM25: C.14
 heat: "{ D.7, B.3, B.4 }"
 diagnostics: A.13
 stepperSPI: 3
