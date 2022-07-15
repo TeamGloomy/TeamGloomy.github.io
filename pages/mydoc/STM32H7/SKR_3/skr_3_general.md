@@ -2,7 +2,7 @@
 title: SKR3 General Information
 tags: []
 keywords: 
-last_updated: 15/06/2022
+last_updated: 15/07/2022
 summary: "General information regarding the SKR3"
 sidebar: mydoc_sidebar
 permalink: skr_3_general.html
@@ -46,4 +46,4 @@ Also make sure you define the resistor value as R1000 in your M308 command.
 
 ### Initial Installation
 
-Follow the [WiFi instructions](skr3_connected_wifi.html){:target="_blank"}.
+Follow the [WiFi instructions](skr_3_connected_wifi.html){:target="_blank"}.
