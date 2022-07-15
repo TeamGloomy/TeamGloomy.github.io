@@ -37,11 +37,11 @@ If you want to use sensorless homing, a jumper needs adding next to each appropr
 
 ### Driver Voltage
 
-If using the drivers with 12/24v, then the jumpers for each driver should be configured as below.  
+The jumpers for each driver should be configured as below if you want to power them from VIN (12/24v).  
 
 {% include image.html file="btt_octopus_pro_1.0_driver_24.png" alt="BTT Octopus Pro v1.0 12/24v Drivers" caption="BTT Octopus Pro v1.0 12/24v Driver Jumper Locations" %}  
 
-If using the drivers with 60v, then the jumpers for drivers that support up to 60v should be configured as below.  
+The jumpers for each driver should be configured as below if you want to power them from the MOT-PWR input (up to 60v).  
 
 {% include image.html file="btt_octopus_pro_1.0_driver_60.png" alt="BTT Octopus Pro v1.0 60v Drivers" caption="BTT Octopus Pro v1.0 60v Driver Jumper Locations" %}  
 
