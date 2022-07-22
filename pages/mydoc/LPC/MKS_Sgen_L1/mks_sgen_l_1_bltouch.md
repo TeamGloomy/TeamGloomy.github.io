@@ -22,7 +22,7 @@ Connect the BLTouch to the MKS SGen L v1.0 as shown below.
 |:---|:---|:---|
 |Brown|GND||
 |Red|+5v||
-|Yellow|1.25|servo0|
+|Yellow|1.23|servo0|
 |Black|GND||
 |White|1.25|zstop|
 
