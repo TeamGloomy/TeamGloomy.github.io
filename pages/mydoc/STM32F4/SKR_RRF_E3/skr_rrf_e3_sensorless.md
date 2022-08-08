@@ -1,11 +1,11 @@
 ---
-title: Connecting a SKR-RRF-E3 via Wifi
+title: Sensorless Homing on a SKR-RRF-E3
 tags: []
 keywords: 
 last_updated: 01/06/2022
-summary: "Connecting a SKR-RRF-E3 via Wifi"
+summary: "Using and Configuring Sensorless Homing on a SKR-RRF-E3"
 sidebar: mydoc_sidebar
-permalink: skr_rrf_e3_connected_wifi.html
+permalink: skr_rrf_e3_sensorless.html
 folder: mydoc
 comments: false
 toc: false
