@@ -19,7 +19,7 @@ The SKR3 can be connected to any of the CAN-FD expansion boards produced by Duet
 * Duet 3 6XD (in expansion board mode - M954)
 * Duet 3 Mini 5+ (in expansion board mode - M954)
 * Fysetc Big Dipper (in expansion board mode - M954)
-* Another STM32H& board (in expansion board mode - M954)
+* Another STM32H7 board (in expansion board mode - M954)
 * Duet 3 1XD
 * Duet 3 3HC
 * Duet 3 1HCL

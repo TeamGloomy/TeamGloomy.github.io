@@ -188,10 +188,14 @@ entries:
       url: /driver_timings.html
       output: web, pdf
 
-    - title: Board.txt Configurables
-      url: /board_txt.html
+    - title: LPC Board.txt Configurables
+      url: /board_txt_lpc.html
       output: web, pdf
 
+    - title: STM32 Board.txt Configurables
+      url: /board_txt_stm32.html
+      output: web, pdf
+    
     - title: Sensorless Homing and Stall Detection
       url: /sensorless.html
       output: web, pdf
@@ -1175,12 +1179,60 @@ entries:
     - title: STM32H7 Firmware Restrictions
       url: /stm32h7_differences.html
       output: web, pdf
-
+    
     - title: STM32H7 PWM Hardware/Software
       url: /stm32h7_pwm.html
       output: web, pdf
 
       subfolders:  
+      - title: Fly-Super8Pro
+        output: web, pdf
+        subfolderitems:
+
+        - title: Fly-Super8Pro General Information
+          url: /fly_super8pro_general.html
+          output: web, pdf
+        
+        - title: Connecting via WiFi
+          url: /fly_super8pro_connected_wifi.html
+          output: web, pdf
+
+        - title: Connecting to a CAN-FD expansion board
+          url: /fly_super8pro_canfd.html
+          output: web, pdf
+
+        - title: Configuring Sensorless Homing
+          url: /fly_super8pro_sensorless.html
+          output: web, pdf
+        
+        - title: Connecting a Serial Screen
+          url: /fly_super8pro_screen.html
+          output: web, pdf
+
+        - title: Connecting a 12864 Screen
+          url: /fly_super8pro_screen_12864.html
+          output: web, pdf
+
+        - title: Connecting a BLTouch
+          url: /fly_super8pro_bltouch.html
+          output: web, pdf
+
+        - title: Connecting an Accelerometer
+          url: /fly_super8pro_accelerometer.html
+          output: web, pdf
+
+        - title: Input Voltage Monitoring
+          url: /fly_super8pro_voltage.html
+          output: web, pdf
+
+        - title: Connecting a BTT-MOT-EXP
+          url: /fly_super8pro_btt_mot_exp.html
+          output: web, pdf
+
+        - title: Pin Names
+          url: /fly_super8pro_pins.html
+          output: web, pdf
+      
       - title: SKR3
         output: web, pdf
         subfolderitems:

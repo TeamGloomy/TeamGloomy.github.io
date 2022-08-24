@@ -2,7 +2,7 @@
 title: A list of known plugins
 tags: []
 keywords: 
-last_updated: 17/05/2022
+last_updated: 24/08/2022
 summary: "A list of known plugins for DWC"
 sidebar: mydoc_sidebar
 permalink: plugins.html
@@ -15,6 +15,8 @@ datatable: true
 # Overview
 
 Here are a list of known plugins for DWC. The table indicates whether the plugin will work in Standalone or SBC mode.  
+
+You can now also use the [Duet3d Plugin Repository](https://plugins.duet3d.com/) to find plugins.
 
 <div class="datatable-begin"></div>
 
@@ -29,6 +31,7 @@ Here are a list of known plugins for DWC. The table indicates whether the plugin
 |filament load cell|Kriechi|[Github](https://github.com/Kriechi/duet-plugin-filament-load-cell)|3.3+||X|
 |Another weighing filament holder|achrn|[Duet3d Forum](https://forum.duet3d.com/topic/25419/another-weighing-filament-holder)|3.3+||X|
 |RobotViewer|joergS5|[Github](https://github.com/JoergS5/RobotViewer)|3.4.0|X|X|
+|DWC-CAN-Manager|Sindarius|[Github](https://github.com/Sindarius/DWC-CAN-Manager/releases)|3.4+|X|X|
 
 
 <div class="datatable-end"></div>

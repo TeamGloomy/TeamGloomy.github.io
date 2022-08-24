@@ -2,7 +2,7 @@
 title: Connecting a BTT-MOT-EXP to a Fly-Super8
 tags: []
 keywords: 
-last_updated: 14/10/2021
+last_updated: 24/08/2022
 summary: "How to connect a BTT-MOT-EXP to a Fly-Super8"
 sidebar: mydoc_sidebar
 permalink: fly_super8_btt_mot_exp.html
@@ -48,7 +48,7 @@ stepper.TmcDiagPins = { G.12, G.11, G.10, G.9, D.7, D.6, A.8, F.3, C.14, B.2, E.
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include G.12 and G.11 in your board.txt file.  
-For more information about setting up sensorless homing, please read [this](sensorless.html){:target="_blank"}.  
+For more information about setting up sensorless homing, please read [this](fly_super8_sensorless.html){:target="_blank"}.  
 
 ## Config.g Modification
 

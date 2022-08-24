@@ -16,11 +16,16 @@ This page covers how to compile the firmware. These instructions are based on th
 ## Preparation of software
 
 1. Download and install [VSCode](https://code.visualstudio.com/).  
-2. Open VSCode and open the extension tab (this can be done by using the shortcut Ctrl+Shift+X) and search for windows-arm-none-eabi. Install the version by metalcode-eu.  
+2. Open VSCode and open the extension tab (this can be done by using the shortcut Ctrl+Shift+X) and search for windows-arm-none-eabi. Install the version by metalcode-eu. Close VSCode  
 3. Download and install [git](https://git-scm.com/downloads).  
-4. Then download and install [make](http://gnuwin32.sourceforge.net/packages/make.htm). Use the "complete package except sources" version. Once installed you will need to add the location of the bin folder that is installed in to your windows path environment setting. Make sure you add them to the system variables and not the user varaibles. While there also add the location of mkdir.exe, which will have been installed with git. It can be found in the usr/bin folder where git is installed. Once thats done, close VSCode and then reopen it.  
-5. Close VSCode
+4. Then download and install [make](http://gnuwin32.sourceforge.net/packages/make.htm). Use the "complete package except sources" version. Once installed you will need to add the location of the bin folder that is installed in to your windows path environment setting. Make sure you add them to the system variables and not the user varaibles. While there also add the location of mkdir.exe, which will have been installed with git. It can be found in the usr/bin folder where git is installed. 
 6. Download and install latest [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads). Tick the box at the end to install it to your PATH.  
+7. Open VSCode
+8. On the top bar, click on Terminal and then New Terminal
+9. Click on the icon shown below and then on Select Default Profile
+{% include image.html file="vscode_terminal_1.png" alt="VSCode Default Terminal 1" caption="VSCode Default Terminal 1" %}
+10. Click on Git Bash as default.
+{% include image.html file="vscode_terminal_2.png" alt="VSCode Default Terminal 2" caption="VSCode Default Terminal 2" %}
 
 ## Preparation of firmware code - RRF3.2
 
