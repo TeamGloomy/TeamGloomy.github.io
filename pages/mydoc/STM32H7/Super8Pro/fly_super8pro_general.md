@@ -77,4 +77,6 @@ Thermistors should use the ADC inputs. The thermistors should be connected betwe
 ### Initial Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
+It also doesn't have an RRF compatible bootloader installed as default.
+Follow the [Bootloader instructions](fly_super8pro_bootloader.html).
 Follow the [WiFi instructions](fly_super8pro_connected_wifi.html).

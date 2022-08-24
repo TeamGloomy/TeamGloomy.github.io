@@ -1193,6 +1193,10 @@ entries:
           url: /fly_super8pro_general.html
           output: web, pdf
         
+        - title: Flashing an RRF compatible bootloader
+          url: /fly_super8pro_connected_wifi.html
+          output: web, pdf
+        
         - title: Connecting via WiFi
           url: /fly_super8pro_connected_wifi.html
           output: web, pdf
