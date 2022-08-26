@@ -52,6 +52,10 @@ entries:
     output: web, pdf
     folderitems:
 
+    - title: 3.4.2rc2_102 Release Notes
+      url: /release_notes_3.4.2rc2_102.html
+      output: web, pdf
+    
     - title: 3.4.1_102 Release Notes
       url: /release_notes_3.4.1_102.html
       output: web, pdf
