@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to an SKR v2.0
 tags: []
 keywords: 
-last_updated: 28/03/2022
+last_updated: 26/08/2022
 summary: "How to connect an accelerometer to an SKR v2.0"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_accelerometer.html
@@ -14,8 +14,8 @@ boardname: SKR v2.0
 SCL: C.5
 SDA: B.0
 SDO: B.1
-CS: E.9
-int: E.10
+CS: E.10
+int: E.9
 spiChannel: 5
 location: EXP1 header
 ---
