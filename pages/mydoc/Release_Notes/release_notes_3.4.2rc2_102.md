@@ -1,11 +1,11 @@
 ---
-title: Release notes release_notes_3.4.2rc2_101
+title: Release notes release_notes_3.4.2rc2_101 and 3.4.2rc2_102
 tags: [getting_started]
 keywords: release notes, announcements, what's new, new features
 last_updated: 17/08/2022
-summary: "Release notes for the stable release of 3.4.2rc2_101"
+summary: "Release notes for the unstable release of 3.4.2rc2_101 and 3.4.2rc2_102"
 sidebar: mydoc_sidebar
-permalink: release_notes_3.4.2rc2_101.html
+permalink: release_notes_3.4.2rc2_102.html
 folder: mydoc
 toc: false
 comments: false
@@ -15,9 +15,13 @@ comments: false
 
 Please see the Duet3D [release notes for 3.4.2RC2](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x-RC#reprapfirmware-342rc2) to see whats new and what has been fixed
 
-## RepRapFirmware for STM32F4 and STM32H7 Release Notes for 3.4.2rc2_101
+## RepRapFirmware for STM32F4 and STM32H7 Release Notes for 3.4.2rc2_101 and 3.4.2rc2_102
 
 * Duet3d 3.4.2rc2
+* Duet3d 3.4-extruder-only-movement-fix
+* STM32F4 Fix SDIO error during firmware update
+* Added "biquskr_3_ez"
+* Added configuration options "pins.SetHigh" and "pins.SetLow"
 * Fix H7 bootloader to allow it to work with klipper
 * Stop stack being trashed during some software reset calls
 * Fix reporting of board reset reason

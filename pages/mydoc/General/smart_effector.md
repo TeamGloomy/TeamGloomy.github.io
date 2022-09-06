@@ -2,7 +2,7 @@
 title: Connecting a Smart Effector
 tags: []
 keywords: 
-last_updated: 15/01/2021
+last_updated: 06/09/2022
 summary: "Connecting a Smart Effector"
 sidebar: mydoc_sidebar
 permalink: smart_effector.html
@@ -15,7 +15,7 @@ It is possible to connect the [Smart Effector](https://docs.duet3d.com/en/Duet3D
 
 ## Wiring
 
-![image](https://d17kynu4zpq5hy.cloudfront.net/igi/duet3d/iF3XhAWQZk6IZFkH.large)  
+{% include image.html file="smarteffector_wiring_v3.0_d1.0.png" url="https://teamgloomy.github.io/images/smarteffector_wiring_v3.0_d1.0.png" alt="Smart Effector v3 Wiring" caption="Smart Effector v3 Wiring" %}  
 The Smart Effector can work off both 3.3v and 5v. The LPC and STM32 boards typically only have 5v available in an easy to use place.  
 The Z Probe Mod pin is only required to be connected if you need to adjust the sensitivity, which in normal circumstances won't be required.
 
