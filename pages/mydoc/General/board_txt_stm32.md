@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to STM32
 tags: []
 keywords: 
-last_updated: 26/08/2022
+last_updated: 06/09/2022
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt_stm32.html
@@ -86,7 +86,7 @@ For STM32 boards, pins can take the form of PC.1, PC_1, C.1, C_1 or the pin name
 
 <div class="datatable-end"></div>
 
-## lpc.board Types
+## board Types
 
 Current preprogrammed boards
 
@@ -115,23 +115,101 @@ Current preprogrammed boards
 |fly_super8|Fly-Super8|STM32F4|
 |fly_super8_pro|Fly-Super8-Pro|STM32H7|
 |fysetc_spider|Fysetc Spider 407 Version|STM32F4|
+|fysetc_spider_king407|Fysetc Spider King 407|STM32F4|
 |generic|maps all pins as available by pin number. Not recommended for normal use||
 
 <div class="datatable-end"></div>
 
-## UART Useable Pins - STM32 Based Boards
+## UART Useable Pins - STM32F4 Based Boards
 
-There are 3 UARTS and each can use a selection of pins.  
+There are 6 UARTS and each can use a selection of pins. You can mix and match pins in the same UART number e.g. D.2 and C.12.  
 
 <div class="datatable-begin"></div>
 
-|UART Number|RX Pins|TX Pins|
+|Pin Number|UART Number|RX/TX|
 | :------------- |:-------------|:-------------|
-|UART1|PA.10|PA.9|
-|UART3|PD.9|PD.8|
-|UART6|PC.7|PC.6|
+|A.9| UART1|TX|
+|D.8| UART3|TX|
+|C.6| UART6|TX|
+|G.14| UART6|TX|
+|B.6| UART1|TX|
+|A.2| UART2|TX|
+|D.5| UART2|TX|
+|B.10| UART3|TX|
+|C.10| UART3|TX|
+|A.0| UART4|TX|
+|C.10| UART4|TX|
+|C.12| UART5|TX|
+|A.10| UART1|RX|
+|D.9| UART3|RX|
+|C.7| UART6|RX|
+|A.1| UART4|RX|
+|A.3| UART2|RX|
+|B.7| UART1|RX|
+|B.11| UART3|RX|
+|C.11| UART4|RX|
+|C.11| UART3|RX|
+|D.2| UART5|RX|
+|D.6| UART2|RX|
+|G.9| UART6|RX|
 
 <div class="datatable-end"></div>
 
-{% include note.html content="From 3.3b3_2, all UART devices (1, 2, 3, 4, 5 and 6. Not just 1, 3 and 6) are available along with all the associated pins they could use."%}
+## UART Useable Pins - STM32H7 Based Boards
+
+There are 8 UARTS and each can use a selection of pins. You can mix and match pins in the same UART number e.g. D.2 and C.12.  
+
+<div class="datatable-begin"></div>
+
+|Pin Number|UART Number|RX/TX|
+| :------------- |:-------------|:-------------|
+|A.0| UART4|TX|
+|A.2| UART2|TX|
+|A.9| UART1|TX|
+|A.12| UART4|TX|
+|A.15| UART7|TX|
+|B.4| UART7|TX|
+|B.6| UART5|TX|
+|B.6| UART1|TX|
+|B.9| UART4|TX|
+|B.10| UART3|TX|
+|B.13| UART5|TX|
+|B.14| UART1|TX|
+|C.6| UART6|TX|
+|C.10| UART4|TX|
+|C.10| UART3|TX|
+|C.12| UART5|TX|
+|D.1| UART4|TX|
+|D.5| UART2|TX|
+|D.8| UART3|TX|
+|E.1| UART8|TX|
+|E.8| UART7|TX|
+|F.7| UART7|TX|
+|G.14| UART6|TX|
+|A.1| UART4|RX|
+|A.3| UART2|RX|
+|A.8| UART7|RX|
+|A.10| UART1|RX|
+|A.11| UART4|RX|
+|B.3| UART7|RX|
+|B.5| UART5|RX|
+|B.7| UART1|RX|
+|B.8| UART4|RX|
+|B.11| UART3|RX|
+|B.12| UART5|RX|
+|B.15| UART1|RX|
+|C.7| UART6|RX|
+|C.11| UART4|RX|
+|C.11| UART3|RX|
+|D.0| UART4|RX|
+|D.2| UART5|RX|
+|D.6| UART2|RX|
+|D.9| UART3|RX|
+|E.0| UART8|RX|
+|E.7| UART7|RX|
+|F.6| UART7|RX|
+|G.9| UART6|RX|
+
+<div class="datatable-end"></div>
+
   
