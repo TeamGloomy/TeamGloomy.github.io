@@ -5,7 +5,7 @@ keywords:
 last_updated: 24/08/2022
 summary: "The pin names of the Fly-Super8 in the firmware"
 sidebar: mydoc_sidebar
-permalink: fly_super8_pins.html
+permalink: fly_super8pro_pins.html
 folder: mydoc
 comments: false
 toc: false
