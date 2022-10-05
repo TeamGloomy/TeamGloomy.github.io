@@ -2,7 +2,7 @@
 title: Sensorless Homing on a SKR-RRF-E3
 tags: []
 keywords: 
-last_updated: 01/06/2022
+last_updated: 05/10/2022
 summary: "Using and Configuring Sensorless Homing on a SKR-RRF-E3"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_sensorless.html
@@ -22,3 +22,11 @@ diagPinInfo: skr_rrf_e3_general.html
 ---
 
 {% include custom/sensorless.html %}
+
+### Driver Diag Pin
+
+To use sensorless homing, a jumper must be installed on the diag header.
+
+{% include image.html file="skr_rrf_e3_diag.png" alt="SKR-RRF-E3 Diag Jumpers" caption="SKR-RRF-E3 Diag Jumper Locations" %}
+
+{% include custom/sensorless_2.html %}

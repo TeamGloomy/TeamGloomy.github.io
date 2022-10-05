@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: Fly-E3-Pro-v3
 mcu: STM32F407VGT6
-firmware: firmware-stm32f4-wifi.bin
+firmware: firmware-stm32-wifi.bin
 wifi: ESP32
 module: onboard
 schematic: https://github.com/Mellow-3D/Fly-E3-Pro/blob/main/Schematic/Schematic_E3-PRO.pdf

@@ -2,7 +2,7 @@
 title: Sensorless Homing on a Fly-E3-Pro
 tags: []
 keywords: 
-last_updated: 31/05/2022
+last_updated: 05/10/2022
 summary: "Using and Configuring Sensorless Homing on a Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_sensorless.html
@@ -22,3 +22,11 @@ diagPinInfo: fly_e3_pro_general.html
 ---
 
 {% include custom/sensorless.html %}
+
+### Driver Diag Pin
+
+To use sensorless homing, a jumper must be installed on the diag header.
+
+{% include image.html file="fly_e3_pro_diag.png" alt="Fly-E3-Pro Diag Jumpers" caption="Fly-E3-Pro Diag Jumper Locations" %}
+
+{% include custom/sensorless_2.html %}

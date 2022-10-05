@@ -2,7 +2,7 @@
 title: Connecting an BTT Octopus v1.1 F429 Version via an ESP8266 or ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 31/05/2022
+last_updated: 05/10/2022
 summary: "How to connect to an BTT Octopus v1.1 F429 Version via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_connected_wifi_8266.html
@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: BTT Octopus v1.1 F429 Version
 mcu: STM32F407VGT6
-firmware: firmware-stm32f4-wifi.bin
+firmware: firmware-stm32-wifi.bin
 wifi: both
 module: small
 schematic: https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/blob/master/Hardware/BIGTREETECH%20Octopus%20-%20PIN.pdf

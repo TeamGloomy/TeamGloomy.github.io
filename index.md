@@ -1,6 +1,6 @@
 ---
 title: "Getting started with RepRapFirmware for LPC and STM32 based boards"
-last_updated: 26/08/2022
+last_updated: 05/10/2022
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: These instructions will help you to get started running RepRapFirmware on your LPC or STM32 based 3D printer board
@@ -18,11 +18,11 @@ It was originally ported by [sadvi](https://github.com/sdavi), but is now mainta
 
 ### Latest Stable STM32F4 and STM32H7 Build
 
-The latest stable version is [3.4.1_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.1_102)
+The latest stable version is [3.4.2_101](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.2_101)
 
 ### Latest Unstable STM32F4 and STM32H7 Build
 
-The latest unstable version is [3.4.2rc2_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.2rc2_102)
+There currently isn't an unstable build available
 
 ### Latest Stable LPC Build
 
@@ -34,21 +34,21 @@ Please note that 3.3.X will be the last release for LPC boards.
 
 ### Latest Stable
 
-The latest stable WiFi firmware version is [1.26-09](https://github.com/gloomyandy/DuetWiFiSocketServer/releases/tag/v1.26-09)
+The latest stable WiFi firmware version is [1.27-01](https://github.com/gloomyandy/DuetWiFiSocketServer/releases/tag/v1.27-01)
 
 ### Latest Unstable
 
-The latest unstable WiFi firmware version is [1.27beta1-01](https://github.com/gloomyandy/DuetWiFiSocketServer/releases/tag/v1.27beta1-01)
+There currently isn't an unstable build available
 
 ## Latest H7 bootloader
 
 ### Latest Stable
 
-The latest stable bootloader version is [3.4.1_102](https://github.com/gloomyandy/IAP/releases/tag/v3.4.1_102)
+The latest stable bootloader version is [1.0.3](https://github.com/gloomyandy/IAP/releases/tag/IAP_1.0.3)
 
 ### Latest Unstable
 
-The latest unstable bootloader version is [3.4.2rc2_102](https://github.com/gloomyandy/IAP/releases/tag/IAP_1.0.3)
+There currently isn't an unstable build available
 ## Partnership
 
 TeamGloomy are working in close partnership with Flymaker/Mellow to ensure that 100% compatibility is obtained with their boards and to cover all of your 3D printer electronics requirements.  

@@ -2,7 +2,7 @@
 title: Sensorless Homing on a Fly-E3
 tags: []
 keywords: 
-last_updated: 31/05/2022
+last_updated: 05/10/2022
 summary: "Using and Configuring Sensorless Homing on a Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_sensorless.html
@@ -19,3 +19,5 @@ onboardDrivers: no
 ---
 
 {% include custom/sensorless.html %}
+
+{% include custom/sensorless_2.html %}

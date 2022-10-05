@@ -2,7 +2,7 @@
 title: Sensorless Homing on a BTT Octopus Pro v1.0 F429 Version
 tags: []
 keywords: 
-last_updated: 31/05/2022
+last_updated: 05/10/2022
 summary: "Using and Configuring Sensorless Homing on a BTT Octopus Pro v1.0 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.0_f429_sensorless.html
@@ -19,3 +19,11 @@ onboardDrivers: no
 ---
 
 {% include custom/sensorless.html %}
+
+### Driver Diag Pin
+
+If you want to use sensorless homing, a jumper needs adding next to each appropriate endstop as shown below.
+
+{% include image.html file="btt_octopus_pro_1.0_sensorless.png" alt="BTT Octopus Pro v1.0 Diag" caption="BTT Octopus Pro v1.0 Pro v1.0 F429 Version Sensorless Homing Jumper Locations" %}
+
+{% include custom/sensorless_2.html %}

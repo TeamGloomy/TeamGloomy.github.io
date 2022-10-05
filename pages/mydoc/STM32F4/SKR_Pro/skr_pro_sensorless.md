@@ -2,7 +2,7 @@
 title: Sensorless Homing on an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
-last_updated: 25/03/2022
+last_updated: 05/10/2022
 summary: "Using and Configuring Sensorless Homing on an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
 permalink: skr_pro_sensorless.html
@@ -25,3 +25,7 @@ adapterRXTX: WiFi
 ---
 
 {% include custom/sensorless.html %}
+
+{% include warning.html content="The SKR Pro v1.1 and v1.2 sensorless homing jumpers don't do anything so if you don't want to use sensorless homing and use normal endstops, you will have to remove the diag pin from your drivers - [Evidence](https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/issues/12)" %}
+
+{% include custom/sensorless_2.html %}

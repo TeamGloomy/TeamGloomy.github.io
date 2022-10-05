@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: SKR v2.0
 mcu: STM32F407VGT6
-firmware: firmware-stm32f4-wifi.bin
+firmware: firmware-stm32-wifi.bin
 wifi: both
 module: small
 schematic: https://github.com/bigtreetech/SKR-2/blob/master/Hardware/BIGTREETECH%20SKR%202-Pin.pdf

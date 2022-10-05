@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: SKR Pro v1.1 or v1.2
 mcu: STM32F407ZGT6
-firmware: firmware-stm32f4-wifi.bin
+firmware: firmware-stm32-wifi.bin
 wifi: ESP8266
 module: large
 schematic: https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf

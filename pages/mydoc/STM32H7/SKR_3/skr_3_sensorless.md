@@ -2,7 +2,7 @@
 title: Sensorless Homing on an SKR3
 tags: []
 keywords: 
-last_updated: 02/06/2022
+last_updated: 05/10/2022
 summary: "Using and Configuring Sensorless Homing on an SKR3"
 sidebar: mydoc_sidebar
 permalink: skr_3_sensorless.html
@@ -20,3 +20,11 @@ onboardDrivers: no
 ---
 
 {% include custom/sensorless.html %}
+
+### Driver Diag Pin
+
+If you want to use sensorless homing, a jumper needs adding under each driver you want to use it for as shown below.
+
+{% include image.html file="skr3_diag.png" alt="SKR3 Diag" caption="SKR3 Sensorless Homing Jumper Locations" %}
+
+{% include custom/sensorless_2.html %}

@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: BTT Octopus Pro v1.0 F429 Version
 mcu: STM32F407VGT6
-firmware: firmware-stm32f4-wifi.bin
+firmware: firmware-stm32-wifi.bin
 wifi: both
 module: small
 schematic: https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf

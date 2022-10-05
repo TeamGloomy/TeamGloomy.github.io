@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: GTR
 mcu: STM32F407ZGT6
-firmware: firmware-stm32f4-wifi.bin
+firmware: firmware-stm32-wifi.bin
 wifi: ESP8266
 module: large
 schematic: https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/blob/master/BTT%20GTR%20V1.0/manual/GTR%20V1.0(SCH).PDF

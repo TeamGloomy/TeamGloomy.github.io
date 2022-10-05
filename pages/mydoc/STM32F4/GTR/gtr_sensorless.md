@@ -1,7 +1,7 @@
 ---
 title: Sensorless Homing on a GTR
 keywords: 
-last_updated: 02/06/2022
+last_updated: 05/10/2022
 summary: "Using and Configuring Sensorless Homing on a GTR"
 sidebar: mydoc_sidebar
 permalink: gtr_sensorless.html
@@ -24,3 +24,7 @@ adapterRXTX: WiFi
 ---
 
 {% include custom/sensorless.html %}
+
+{% include warning.html content="The GTR sensorless homing jumpers don't do anything so if you don't want to use sensorless homing and use normal endstops, you will have to remove the diag pin from your drivers - [Evidence](https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/issues/12)" %}
+
+{% include custom/sensorless_2.html %}
