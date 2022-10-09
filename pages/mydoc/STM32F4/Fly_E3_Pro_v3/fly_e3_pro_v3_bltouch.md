@@ -11,10 +11,10 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-E3-Pro-v3
-image: fly_e3_bltouch.png
+image: fly_e3_pro_v3_bltouch.png
 yellowPin: B.0
 yellowName: Servo0
-whitePin: C.4
+whitePin: C.5
 whiteName: probe
 ---
 
