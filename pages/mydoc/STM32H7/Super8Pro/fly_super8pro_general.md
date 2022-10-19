@@ -2,7 +2,7 @@
 title: Fly-Super8Pro General Information
 tags: []
 keywords: 
-last_updated: 24/08/2022
+last_updated: 19/10/2022
 summary: "General information regarding the Fly-Super8Pro"
 sidebar: mydoc_sidebar
 permalink: fly_super8pro_general.html
@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fly-Super8Pro board.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/1005003235684044.html). 
+It is currently available through [AliExpress](https://www.aliexpress.com/item/1005004431621335.html). 
 
 ### Board.txt Name
 
