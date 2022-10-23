@@ -1,4 +1,4 @@
-$('#mysidebar').height($(".nav").height());
+$('#mysidebar').height($(".nav-list").height());
 
 
 $( document ).ready(function() {
@@ -25,6 +25,7 @@ $( document ).ready(function() {
 // needed for nav tabs on pages. See Formatting > Nav tabs for more details.
 // script from http://stackoverflow.com/questions/10523433/how-do-i-keep-the-current-tab-active-with-twitter-bootstrap-after-a-page-reload
 $(function() {
+    setupSidebarTreeNav();
     var json, tabsState;
     $('a[data-toggle="pill"], a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
         var href, json, parentId, tabsState;
@@ -50,5 +51,45 @@ $(function() {
         if (!json[$this.attr("id")]) {
             return $this.find("a[data-toggle=tab]:first, a[data-toggle=pill]:first").tab("show");
         }
-    });
+    });    
 });
+
+function setupSidebarTreeNav(){
+
+    //hide all non-active nav-lists:
+    $('.nav-list').not('#mysidebar').each(function (i, list) {
+      if (!$(list).parent().is('.active')) {
+        //add expanded class for the items marked as expand be default
+        if ($(list).parent().is('.tree-parent-expand')) {
+          $(list).parent().addClass('expanded');
+        } else {
+          $(list).hide();
+        }
+      }
+    });
+
+    //add active class to parents of active nav-list elems
+    $("li.active").parentsUntil('#mysidebar', '.tree-parent')
+      .addClass('expanded')
+      .children('ul.nav-list').show();
+    $("li.active").parentsUntil('#mysidebar', '.tree-parent-expand')
+      .addClass('expanded')
+      .children('ul.nav-list').show();
+
+    //add expanded class to active tree parents
+    $('.tree-parent.active').addClass('expanded');
+    $('.tree-parent-expand.active').addClass('expanded');
+
+    $('a.show-hide').click(toggleSectionChildren);
+    $('a.section-name').click(toggleSectionChildren);
+
+    function toggleSectionChildren(e) {
+      //console.log('clicked', this);
+      $(this)
+        .blur()
+        .parent().toggleClass('expanded')
+        .children('ul.nav-list').toggle(200);
+      return false;
+      // $(this).parent().children('ul.nav-list').toggle(200);
+    }
+}
