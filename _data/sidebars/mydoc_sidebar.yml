@@ -259,26 +259,25 @@ children:
     url: firmware_build.html
     output: web, pdf
 
-    children:  
-    - title: User Created Content
-      output: web, pdf
-      children:
-
-      - title: User Created Guides
-        url: user_guides.html
-        output: web, pdf
-
-      - title: User Created Configs
-        url: user_configs.html
-        output: web, pdf
-
-      - title: User Created Videos
-        url: user_videos.html
-        output: web, pdf
-
-  - title: DSF on Armbian
-    url: dsf_on_armbian.html
+  - title: User Created Content
     output: web, pdf
+    children:
+
+    - title: User Created Guides
+      url: user_guides.html
+      output: web, pdf
+
+    - title: User Created Configs
+      url: user_configs.html
+      output: web, pdf
+
+    - title: User Created Videos
+      url: user_videos.html
+      output: web, pdf
+
+    - title: DSF on Armbian
+      url: dsf_on_armbian.html
+      output: web, pdf
 
 - title: LPC Boards
   output: web, pdf
