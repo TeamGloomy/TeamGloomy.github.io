@@ -345,12 +345,12 @@ a.accordion-toggle, a.accordion-collapsed {
 .nav-list li > a.section-name:before {
     font-size: 19px;
     font-weight: bolder;
-    content: '\25be';
+    content: '\25b8';
 }
 .nav-list li.expanded > a.section-name:before {
     font-size: 19px;
     font-weight: bolder;
-    content: '\25b4';
+    content: '\25be';
 }
 
 .nav-list li.expanded > a {
@@ -878,7 +878,7 @@ span.soft {
 @media (min-width: 1000px) {
 
     ul#mysidebar {
-        width: 225px;
+        width: 265px;
     }
 }
 
