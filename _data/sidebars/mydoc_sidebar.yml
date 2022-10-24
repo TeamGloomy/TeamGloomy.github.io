@@ -8,6 +8,7 @@ children:
   output: pdf
   type: frontmatter
   children:
+
   - title:
     url: titlepage.html
     output: pdf
@@ -1102,79 +1103,78 @@ children:
   - title: Armbian Upgrade Intructions
     url: armbian_upgrade.html
     output: web, pdf
+    
+  - title: Fly-Gemini-V1
+    output: web, pdf
+    children:
 
-    children:  
-    - title: Fly-Gemini-V1
+    - title: Fly-Gemini-V1 General Information
+      url: fly_gemini_general.html
       output: web, pdf
-      children:
-
-      - title: Fly-Gemini-V1 General Information
-        url: fly_gemini_general.html
-        output: web, pdf
       
-      - title: Connecting via SBC
-        url: fly_gemini_connected_sbc.html
-        output: web, pdf
-
-      - title: Connecting a Serial Screen
-        url: fly_gemini_screen.html
-        output: web, pdf
-
-      - title: Connecting a BLTouch
-        url: fly_gemini_bltouch.html
-        output: web, pdf
-
-      - title: Pin Names
-        url: fly_gemini_pins.html
-        output: web, pdf
-
-    - title: Fly-Gemini-V1.1
+    - title: Connecting via SBC
+      url: fly_gemini_connected_sbc.html
       output: web, pdf
-      children:
 
-      - title: Fly-Gemini-V1.1 General Information
-        url: fly_gemini_v1.1_general.html
-        output: web, pdf
-      
-      - title: Connecting via SBC
-        url: fly_gemini_v1.1_connected_sbc.html
-        output: web, pdf
-
-      - title: Connecting a Serial Screen
-        url: fly_gemini_v1.1_screen.html
-        output: web, pdf
-
-      - title: Connecting a BLTouch
-        url: fly_gemini_v1.1_bltouch.html
-        output: web, pdf
-
-      - title: Pin Names
-        url: fly_gemini_v1.1_pins.html
-        output: web, pdf
-
-    - title: Fly-Gemini-V2
+    - title: Connecting a Serial Screen
+      url: fly_gemini_screen.html
       output: web, pdf
-      children:
 
-      - title: Fly-Gemini-V2 General Information
-        url: fly_gemini_v2_general.html
-        output: web, pdf
+    - title: Connecting a BLTouch
+      url: fly_gemini_bltouch.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: fly_gemini_pins.html
+      output: web, pdf
+
+  - title: Fly-Gemini-V1.1
+    output: web, pdf
+    children:
+
+    - title: Fly-Gemini-V1.1 General Information
+      url: fly_gemini_v1.1_general.html
+      output: web, pdf
       
-      - title: Connecting via SBC
-        url: fly_gemini_v2_connected_sbc.html
-        output: web, pdf
+    - title: Connecting via SBC
+      url: fly_gemini_v1.1_connected_sbc.html
+      output: web, pdf
 
-      - title: Connecting a Serial Screen
-        url: fly_gemini_v2_screen.html
-        output: web, pdf
+    - title: Connecting a Serial Screen
+      url: fly_gemini_v1.1_screen.html
+      output: web, pdf
 
-      - title: Connecting a BLTouch
-        url: fly_gemini_v2_bltouch.html
-        output: web, pdf
+    - title: Connecting a BLTouch
+      url: fly_gemini_v1.1_bltouch.html
+      output: web, pdf
 
-      - title: Pin Names
-        url: fly_gemini_v2_pins.html
-        output: web, pdf
+    - title: Pin Names
+      url: fly_gemini_v1.1_pins.html
+      output: web, pdf
+
+  - title: Fly-Gemini-V2
+    output: web, pdf
+    children:
+
+    - title: Fly-Gemini-V2 General Information
+      url: fly_gemini_v2_general.html
+      output: web, pdf
+      
+    - title: Connecting via SBC
+      url: fly_gemini_v2_connected_sbc.html
+      output: web, pdf
+
+    - title: Connecting a Serial Screen
+      url: fly_gemini_v2_screen.html
+      output: web, pdf
+
+    - title: Connecting a BLTouch
+      url: fly_gemini_v2_bltouch.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: fly_gemini_v2_pins.html
+      output: web, pdf
 
 - title: STM32H7 Boards
   output: web, pdf
