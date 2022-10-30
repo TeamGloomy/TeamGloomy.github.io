@@ -187,40 +187,24 @@ children:
   output: web, pdf
   children:
 
-  - title: Custom Commands and G-Code
-    url: custom.html
-    output: web, pdf
-
-  - title: Driver Timings
-    url: driver_timings.html
-    output: web, pdf
-
-  - title: LPC Board.txt Configurables
-    url: board_txt_lpc.html
-    output: web, pdf
-
-  - title: STM32 Board.txt Configurables
-    url: board_txt_stm32.html
-    output: web, pdf
-  
-  - title: Sensorless Homing and Stall Detection
-    url: sensorless.html
-    output: web, pdf
-
-  - title: MCU Comparrisons
-    url: mcu_types.html
-    output: web, pdf
-
   - title: Adding a Camera
     url: camera.html
     output: web, pdf
 
-  - title: Configuring Neopixels
-    url: neopixels.html
+  - title: Board.txt Configurables - LPC
+    url: board_txt_lpc.html
+    output: web, pdf
+
+  - title: Board.txt Configurables - STM32
+    url: board_txt_stm32.html
     output: web, pdf
 
   - title: Connecting a Smart Effector
     url: smart_effector.html
+    output: web, pdf
+
+  - title: Connecting a DHT22 (STM32 Only)
+    url: dht22.html
     output: web, pdf
 
   - title: Configuring a BTT Smart Filament Monitor
@@ -231,24 +215,20 @@ children:
     url: execonmcode.html
     output: web, pdf
 
-  - title: Short to Ground Errors
-    url: short_to_ground.html
-    output: web, pdf
-
-  - title: SBC Transfer Ready Pin Timeouts
-    url: sbc_transfer_timeout.html
+  - title: Configuring Neopixels
+    url: neopixels.html
     output: web, pdf
 
   - title: Configuring Putty
     url: putty.html
     output: web, pdf
 
-  - title: Connecting a DHT22 (STM32 Only)
-    url: dht22.html
+  - title: Custom Commands and G-Code
+    url: custom_commands_gcode.html
     output: web, pdf
 
-  - title: Useful Macros
-    url: useful_macros.html
+  - title: Driver Timings
+    url: driver_timings.html
     output: web, pdf
 
   - title: DWC Plugins
@@ -259,20 +239,40 @@ children:
     url: firmware_build.html
     output: web, pdf
 
+  - title: MCU Comparisons
+    url: mcu_types.html
+    output: web, pdf
+
+  - title: SBC Transfer Ready Pin Timeouts
+    url: sbc_transfer_timeout.html
+    output: web, pdf
+
+  - title: Sensorless Homing and Stall Detection
+    url: sensorless.html
+    output: web, pdf
+
+  - title: Short to Ground Errors
+    url: short_to_ground.html
+    output: web, pdf
+
   - title: Troubleshooting
     url: troubleshooting.html
+    output: web, pdf
+
+  - title: Useful Macros
+    url: useful_macros.html
     output: web, pdf
 
   - title: User Created Content
     output: web, pdf
     children:
 
-    - title: User Created Guides
-      url: user_guides.html
-      output: web, pdf
-
     - title: User Created Configs
       url: user_configs.html
+      output: web, pdf
+
+    - title: User Created Guides
+      url: user_guides.html
       output: web, pdf
 
     - title: User Created Videos

@@ -5,7 +5,7 @@ keywords:
 last_updated: 17/05/2022
 summary: "Custom Commands and G-Code that have been added to this port"
 sidebar: mydoc_sidebar
-permalink: custom.html
+permalink: custom_commands_gcode.html
 folder: mydoc
 comments: false
 toc: false
