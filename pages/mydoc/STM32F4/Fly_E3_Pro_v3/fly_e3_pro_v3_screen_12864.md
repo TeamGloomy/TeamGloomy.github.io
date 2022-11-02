@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-E3-Pro
-spiChannel: 4
+spiChannel: 2
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">
@@ -24,7 +24,7 @@ spiChannel: 4
 
 ## Wiring
 
-The ender 3 stock display can be connected directly to the EXP1 header of the Fly-E3-Pro. No modifications are required.
+The ender 3 stock display can be connected directly to the EXP1 and EXP2 header of the Fly-E3-Pro-v3. No modifications are required.
 
 {% include custom/12864/ender3_1header.html %}
 
