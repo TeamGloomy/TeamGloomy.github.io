@@ -42,3 +42,10 @@ Now click on Session on the left menu.
 Finally, save the settings so they don't need changing next time you open up putty.  
 Click on default settings and then click the save button.  
 {% include image.html file="putty3.png" alt="Putty 5" caption="Putty 5" %}
+
+# Connecting to RRF
+
+Click on the "serial" radio button highlighted below.
+{% include image.html file="putty6.png" alt="Putty 6" caption="Putty 6" %} 
+Fill in the [COM port number](https://www.google.com/search?q=how+to+find+a+com+port+number&rlz=1C1ONGR_en-GBGB982GB983&oq=how+to+find+a+com+port+number&aqs=chrome..69i57.5571j0j7&sourceid=chrome&ie=UTF-8) of your RRF board. Leave the baudrate as it is. Then click "open"
+{% include image.html file="putty7.png" alt="Putty 7" caption="Putty 7" %} 
