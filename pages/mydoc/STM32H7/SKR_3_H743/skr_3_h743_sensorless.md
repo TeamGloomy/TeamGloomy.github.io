@@ -1,16 +1,16 @@
 ---
-title: Sensorless Homing on an SKR3
+title: Sensorless Homing on an SKR3 H743
 tags: []
 keywords: 
-last_updated: 05/10/2022
-summary: "Using and Configuring Sensorless Homing on an SKR3"
+last_updated: 29/11/2022
+summary: "Using and Configuring Sensorless Homing on an SKR3 H743"
 sidebar: mydoc_sidebar
-permalink: skr_3_sensorless.html
+permalink: skr_3_h743_sensorless.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: SKR3
+boardname: SKR3 H743
 stepperSPI: 3
 spiInfo: "{ E.14, E.15, E.13 }"
 TMC: "{ C.1, C.3, C.0, C.2, A.0 }"

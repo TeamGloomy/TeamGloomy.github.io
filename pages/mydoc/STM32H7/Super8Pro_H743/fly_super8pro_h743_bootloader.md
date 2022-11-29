@@ -1,11 +1,11 @@
 ---
-title: Flashing a bootloader to the Fly-Super8Pro
+title: Flashing a bootloader to the Fly-Super8Pro H743
 tags: []
 keywords: 
-last_updated: 24/08/2022
-summary: "How to flash an RRF compatible bootloader to the Fly-Super8Pro"
+last_updated: 29/11/2022
+summary: "How to flash an RRF compatible bootloader to the Fly-Super8Pro H743"
 sidebar: mydoc_sidebar
-permalink: fly_super8pro_bootloader.html
+permalink: fly_super8pro_h743_bootloader.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The Fly-Super8Pro does not come with an RRF compatible bootloader, so this page covers how to flash one.
+The Fly-Super8Pro H743 does not come with an RRF compatible bootloader, so this page covers how to flash one.
 
 ### Prerequisits
 
@@ -43,4 +43,4 @@ The STM32CubeProg software should show USB1, as highlighted below in green. Proc
 Finally press the download button highlighted below.  
 {% include image.html file="super8pro_bootloader_4.png" alt="Super8Pro STM32CubeProg" caption="Super8Pro STM32CubeProg" %}
 
-The process is quick. Once the bootloader has been loaded to the Fly Super8Pro, unplug the board from your computer an remove the DFU jumper.
+The process is quick. Once the bootloader has been loaded to the Fly Super8Pro H743, unplug the board from your computer an remove the DFU jumper.

@@ -1,16 +1,16 @@
 ---
-title: Connecting a 12864 screen to an SKR3
+title: Connecting a 12864 screen to an SKR3EZ H743
 tags: []
 keywords: 
-last_updated: 18/05/2022
-summary: "How to connect a 12864 screen to an SKR3"
+last_updated: 29/11/2022
+summary: "How to connect a 12864 screen to an SKR3EZ H743"
 sidebar: mydoc_sidebar
-permalink: skr_3_screen_12864.html
+permalink: skr_3_ez_h743_screen_12864.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: SKR3
+boardname: SKR3EZ H743
 spiChannel: 0
 ---
 

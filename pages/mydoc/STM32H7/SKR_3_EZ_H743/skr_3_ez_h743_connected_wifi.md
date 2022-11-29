@@ -1,38 +1,39 @@
 ---
-title: Connecting a Fly-Super8Pro via WiFi
+title: Connecting an SKR3EZ H743 via an ESP8266 or ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 24/08/2022
-summary: "How to connect a Fly-Super8Pro via WiFi"
+last_updated: 29/11/2022
+summary: "How to connect to an SKR3EZ H743 via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: fly_super8pro_connected_wifi.html
+permalink: skr_3_ez_h743_connected_wifi.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: Fly-Super8Pro
+boardname: SKR3EZ H743
 mcu: STM32H743
 firmware: firmware-stm32h7-wifi.bin
-wifi: ESP32
-module: onboard
-schematic: https://github.com/Mellow-3D/Fly-Super8Pro/blob/main/Hardware/Schematic.pdf
-DRP: D.13
-TRP: D.11
-ERP: D.10
-CS: ""
+wifi: both
+module: small
+schematic: 
+DRP: B.10
+TRP: B.11
+ERP: C.14
+CS: 
 ESPRXTX: "{ D.9, D.8 }"
 SerialRXTX: "{ A.10, A.9 }"
-heat: "{ adc0, adc1, adc2, adc3, adc4, adc5 }"
-diagnostics: ""
-smartdrivers: 
-stepperSPI: 2
-TMC: "{ G.12, G.11, G.10, G.9, D.7, D.6, A.8, F.3 }"
-example: G.12 and G.11
-board: fly_super8h7
+heat: "{ A.1, A.2, A.3 }"
+diagnostics: A.13
+stepperSPI: 3
+spiInfo: "{ E.14, E.15, E.13 }"
+TMC: "{ C.1, C.3, C.0, C.2, A.0 }"
+example: C.1 and C.3
+board: biquskr_3_ez
 onboardDrivers: no
 ---
 
 {% include custom/wifi/overview.html %}
+{% include custom/wifi/removeable.html %}
 
 {% include custom/wifi/board_firmware.html %}
 

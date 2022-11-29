@@ -1,16 +1,16 @@
 ---
-title: Connecting an SKR3 via an ESP8266 or ESP32 WiFi Adapter
+title: Connecting an SKR3 H743 via an ESP8266 or ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 02/06/2022
-summary: "How to connect to an SKR3 via an ESP8266 or ESP32 WiFi Adapter"
+last_updated: 29/11/2022
+summary: "How to connect to an SKR3 H743 via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: skr_3_connected_wifi.html
+permalink: skr_3_h743_connected_wifi.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: SKR3
+boardname: SKR3 H743
 mcu: STM32H743
 firmware: firmware-stm32h7-wifi.bin
 wifi: both
