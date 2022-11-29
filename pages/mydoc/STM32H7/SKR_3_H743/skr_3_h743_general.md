@@ -20,7 +20,7 @@ This page covers any general information for the SKR3 H743 board.
 
 Currently, the only way to identify which version of the board you have is to look at the markings on the MCU. In the below image, the left MCU is an STM32H723 and the right MCU is an STM32H743.  
 
-{% include image.html file=H723vH743.png" alt="STM32H723 vs STM32H743" caption="STM32H723 vs STM32H743" %}
+{% include image.html file="H723vH743.png" alt="STM32H723 vs STM32H743" caption="STM32H723 vs STM32H743" %}
 
 ### Board.txt Name
 
