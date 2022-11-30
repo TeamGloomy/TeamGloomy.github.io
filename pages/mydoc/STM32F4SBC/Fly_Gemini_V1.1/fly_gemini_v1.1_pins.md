@@ -2,7 +2,7 @@
 title: Fly-Gemini-V1.1 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 13/09/2022
+last_updated: 30/11/2022
 summary: "The pin names of the Fly-Gemini-V1.1 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_v1.1_pins.html
@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-Gemini-V1.1 Pinout Diagram
 
-{% include image.html file="pinout_gemini_v_1.1.svg" url="https://teamgloomy.github.io/images/pinout_gemini_v_1.1.svg" alt="Fly-Gemini-V1.1" caption="Fly-Gemini-V1.1 Pinout" %}
+{% include image.html file="fly_gemini_v1.1_pins.svg" url="https://teamgloomy.github.io/images/fly_gemini_v1.1_pins.svg" alt="Fly-Gemini-V1.1" caption="Fly-Gemini-V1.1 Pinout" %}
 
 ## Fly-Gemini-V1.1 Driver Pins in Firmware
 
