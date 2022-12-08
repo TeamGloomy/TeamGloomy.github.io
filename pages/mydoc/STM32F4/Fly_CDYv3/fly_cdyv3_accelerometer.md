@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to a Fly-CDYv3
 tags: []
 keywords: 
-last_updated: 23/03/2022
+last_updated: 08/12/2022
 summary: "How to connect an accelerometer to a CDYv3"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv3_accelerometer.html
@@ -15,7 +15,7 @@ SCL: A.5
 SDA: A.7
 SDO: A.6
 CS: E.7
-int: E.6
+int: E.8
 spiChannel: 0
 location: accelerometer header
 ---
