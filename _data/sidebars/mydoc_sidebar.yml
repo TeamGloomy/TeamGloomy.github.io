@@ -739,6 +739,10 @@ children:
       url: fly_e3_pro_voltage.html
       output: web, pdf
 
+    - title: Configuring the Onboard Temperature Sensor
+      url: fly_e3_pro_onboard_temp.html
+      output: web, pdf
+
     - title: Pin Names
       url: fly_e3_pro_pins.html
       output: web, pdf
@@ -789,6 +793,10 @@ children:
 
     - title: Input Voltage Monitoring
       url: fly_e3_pro_v3_voltage.html
+      output: web, pdf
+
+    - title: Configuring the Onboard Temperature Sensor
+      url: fly_e3_v3_pro_onboard_temp.html
       output: web, pdf
 
     - title: Pin Names
