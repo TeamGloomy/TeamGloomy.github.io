@@ -18,7 +18,7 @@ It was originally ported by [sadvi](https://github.com/sdavi), but is now mainta
 
 ### Latest Stable STM32F4 and STM32H7 Build
 
-The latest unstable version is [3.4.4_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.4_102)
+The latest stable version is [3.4.4_102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.4_102)
 
 ### Latest Unstable STM32F4, STM32H7 and STM32H723 Build
 
