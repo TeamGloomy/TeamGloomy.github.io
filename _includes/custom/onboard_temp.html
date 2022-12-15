@@ -6,7 +6,7 @@ The {{page.boardname}} has a temperature sensor on the PCB, {{page.location}}, t
 
 Use the following line to activate the temperature sensor.  
 ```
-M308 S2 P"boardtemp" Y"thermistor" A"Board Temperature" T100000 B4092
+M308 S2 P"boardtemp" Y"thermistor" A"Board Temperature" T100000 B4092 {{page.resistor}}
 ```
 The sensor can be added to the temperature graph by selecting `extra` on the heater control panel in DWC.  
 {% include image.html file="board_temperature.png" url="https://teamgloomy.github.io/images/board_temperature.png" alt="Board Temperature" caption="Board Temperature" %}  
