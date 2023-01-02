@@ -11,7 +11,7 @@ board = {{page.board}}
 8266wifi.espDataReadyPin = {{page.DRP}}
 8266wifi.TfrReadyPin = {{page.TRP}}
 8266wifi.espResetPin = {{page.ERP}}
-{% if page.CS !== "" %}8266wifi.csPin = {{page.CS}}{% endif %}
+{% if page.CS != nil %}8266wifi.csPin = {{page.CS}}{% endif %}
 //{{page.wifi}} RX/TX Settings
 8266wifi.serialRxTxPins = {{page.ESPRXTX}}
 {% if page.SerialRXTX != "" %}serial.aux.rxTxPins = {{page.SerialRXTX}}{% endif %}
