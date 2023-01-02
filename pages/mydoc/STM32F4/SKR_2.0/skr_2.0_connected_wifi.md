@@ -19,7 +19,7 @@ schematic: https://github.com/bigtreetech/SKR-2/blob/master/Hardware/BIGTREETECH
 DRP: B.10
 TRP: B.11
 ERP: C.14
-CS: 
+CS:
 ESPRXTX: "{ D.9, D.8 }"
 SerialRXTX: "{ A.10, A.9 }"
 heat: "{ D.7, B.3, B.4 }"
