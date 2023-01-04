@@ -2,7 +2,7 @@
 title: Useful Macros
 tags: []
 keywords: 
-last_updated: 08/09/2021
+last_updated: 04/01/2023
 summary: "Useful Macros for RRF"
 sidebar: mydoc_sidebar
 permalink: useful_macros.html
@@ -27,19 +27,21 @@ Here are some example macros
 
 Here is a sample bed levelling file to be used with G32. Both of these files are to be placed in the sys folder.
 
-bed_screws.g should be edited with the probe locations you want to use. The probing order should match the order of the screw locations mapped in M671 and the order the Z motors are declared in M584.  
+M671 declares the centre of the attachment point for the bed or gantry being levelled. This could be a leadscrew if the gantry or bed is rigidly attached or it could be the pivot point or kinematic mounting point if movement is allowed.
+
+bed_points.g should be edited with the probe locations you want to use. The probing order should match the order of the pivot point locations mapped in M671 and the order the Z motors are declared in M584.  
 
 ```
-; call this bed_screws.g
-G30 P0 X0 Y130 Z-99999         	; Probe near front left leadscrew - comment out this line is using 3 screws on the z axis
-G30 P1 X230 Y130 Z-99999 S2     ; Probe near front right leadscrew - comment out this line is using 3 screws on the z axis
-; G30 P0 X10 Y10 Z-99999        ; Probe near front left leadscrew - uncomment this lines for 3 screws on the Z axis
-; G30 P1 X190 Y10 Z-99999       ; Probe near front right leadscrew - uncomment this lines for 3 screws on the Z axis
-; G30 P2 X100 Y190 Z-99999 S3   ; Probe near front centre leadscrew - uncomment this lines for 3 screws on the Z axis
+; call this bed_points.g
+G30 P0 X0 Y130 Z-99999         	; Probe near front left pivot point - comment out this line if using 3 pivot points on the z axis
+G30 P1 X230 Y130 Z-99999 S2     ; Probe near front right pivot point - comment out this line if using 3 pivot points on the z axis
+; G30 P0 X10 Y10 Z-99999        ; Probe near front left pivot point - uncomment this lines for 3 pivot points on the Z axis
+; G30 P1 X190 Y10 Z-99999       ; Probe near front right pivot point - uncomment this lines for 3 pivot points on the Z axis
+; G30 P2 X100 Y190 Z-99999 S3   ; Probe near front centre pivot point - uncomment this lines for 3 pivot points on the Z axis
 ```
-bed.g should be edited with the centre location of each Z axis screw. These locations should be the location in gcode and can be outside the maxima and minima declared in M208 (in config.g). If you have 3 Z axis screws, make sure you declare 3 points in X and Y in M671.  
+M671 in bed.g should be edited with the centre location of each Z axis pivot point. These locations should be the location in gcode and can be outside the maxima and minima declared in M208 (in config.g). If you have 3 Z axis pivot point, make sure you declare 3 points in X and Y in M671.  
 ```
-M671 X-130:400 Y150:150 S10                             ; The location of the two Z axis screws
+M671 X-130:400 Y150:150 S10                             ; The location of the two Z axis pivot points
 
 if !move.axes[0].homed || !move.axes[1].homed	        ; If the printer hasn't been homed, home it
 	G28 XY	; home y and x
@@ -47,13 +49,13 @@ if !move.axes[0].homed || !move.axes[1].homed	        ; If the printer hasn't be
 G28 Z			                                        ; home z
 ;
 M561							                        ; clear any bed transform
-M98 P"bed_screws.g"		                                ; perform bed tramming
+M98 P"bed_points.g"		                                ; perform bed tramming
 echo "BTC: 1 - Difference was " ^ move.calibration.initial.deviation ^ "mm"
 ;
 while move.calibration.initial.deviation >= 0.01		; perform additional tramming if previous deviation was over 0.01mm
   if iterations = 5
     abort "Too many auto tramming attempts"
-  M98 P"bed_screws.g"		; perform bed tramming
+  M98 P"bed_points.g"		; perform bed tramming
   echo "BTC: " ^ iterations + 2 ^ " - Difference was " ^ move.calibration.initial.deviation ^ "mm"
   continue
 ;
