@@ -2,7 +2,7 @@
 title: Connecting a GTR via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 02/06/2022
+last_updated: 06/01/2023
 summary: "How to connect to a GTR via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_wifi_8266.html
@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: GTR
 mcu: STM32F407ZGT6
-firmware: firmware-stm32-wifi.bin
+firmware: firmware-stm32f4-wifi.bin
 wifi: ESP8266
 module: large
 schematic: https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/blob/master/BTT%20GTR%20V1.0/manual/GTR%20V1.0(SCH).PDF

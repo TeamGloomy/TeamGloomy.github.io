@@ -1,6 +1,9 @@
 ## Overview
 
-The information here is aimed at connecting a Fysetc Mini v2.1 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
+The information here is aimed at connecting one of the following Mini 12864 Neopixel type displays.
+* [Fysetc Mini 12864 v2.1](https://wiki.fysetc.com/Mini12864_Panel/)
+* BTT Mini 12864 v1.0 and v2.0
+* [Mellow Fly Mini v1.0 12864](https://www.aliexpress.com/item/1005003579276633.html)
 
 ## Wiring
 
@@ -11,7 +14,7 @@ Connect EXP1 to EXP1 and EXP2 to EXP2.
 Add the following lines to the board.txt file
 
 ```
-//Fysetc MINI 12864
+//MINI 12864
 lcd.encoderPinA=BTN_EN1
 lcd.encoderPinB=BTN_EN2
 lcd.encoderPinSw=BTN_ENC
@@ -20,7 +23,6 @@ lcd.lcdDCPin=LCD_RS
 lcd.spiChannel={{page.spiChannel}}
 //lcd.lcdBeepPin=NoPin
 {% if page.boardname == "BTT Octopus v1.1 F429 Version" or page.boardname == "BTT Octopus Pro v1.0 F429 Version" %}heat.spiTempSensorCSPins = {F.8, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}{% endif%}
-led.neopixelPin=LCD_D5
 ```
 ## Config.g
 
@@ -33,10 +35,12 @@ M98 P"screen.g"
 Add a file in your sys folder called screen.g and add the following contents
 
 ```
-; ST7567 Init for FYSETC Mini12864 Panel V2.1
+; ST7567 Init for Mini12864 Panel
 
+; Configure Neopixel
+M950 E0 C"LCD_D5" 
 ; Turn off backlight
-m150 X2 R0 U0 B0 S3 F0
+M150 K0 X2 R0 U0 B0 S3 F0
 ; Configure reset pin
 M950 P1 C"LCD_D4" 
 ; hardware reset of LCD
@@ -51,13 +55,13 @@ while iterations < 256
     G4 P20
 ; flash Button 3 times
 while iterations < 3
-    m150 X2 R255 U255 B255 P255 S1 F1
-    m150 X2 R0 U255 B0 P255 S2 F0
+    M150 K0 X2 R255 U255 B255 P255 S1 F1
+    M150 K0 X2 R0 U255 B0 P255 S2 F0
     G4 P250
-    m150 X2 R255 U255 B255 P255 S1 F1
-    m150 X2 R0 U255 B0 P0 S2 F0
+    M150 K0 X2 R255 U255 B255 P255 S1 F1
+    M150 K0 X2 R0 U255 B0 P0 S2 F0
     G4 P250
 ; Display "ready" button state  
-m150 X2 R255 U255 B255 P255 S1 F1
-m150 X2 R255 U0 B0 P255 S2 F0
+M150 K0 X2 R255 U255 B255 P255 S1 F1
+M150 K0 X2 R255 U0 B0 P255 S2 F0
 ```

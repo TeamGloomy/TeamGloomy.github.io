@@ -1,21 +1,21 @@
 ---
-title: Sensorless Homing on a BTT Octopus Pro v1.0 F429 Version
+title: Sensorless Homing on a Troodon V2 Printer
 tags: []
 keywords: 
 last_updated: 06/01/2023
-summary: "Using and Configuring Sensorless Homing on a BTT Octopus Pro v1.0 F429 Version"
+summary: "Using and Configuring Sensorless Homing on a Troodon V2 Printer"
 sidebar: mydoc_sidebar
-permalink: btt_octopus_pro_1.0_f429_sensorless.html
+permalink: troodon_v2_sensorless.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: BTT Octopus Pro v1.0 F429 Version
+boardname: Troodon V2 Printer
 stepperSPI: 0
-TMC: "{ G.6, G.9, G.10, G.11, G.12, G.13, G.14, G.15 }"
-example: "stepper.TmcDiagPins = { G.6, G.9 }"
-example2: "stepper.TmcDiagPins = { NoPin, G.9 }"
-board: biqoctopuspro_1.0
+TMC: "{ PF.2, PC.15, PC.14, PC.13, PE.13, PF.9, PF.15 }"
+example: "stepper.TmcDiagPins = { PF.2, PC.15 }"
+example2: "stepper.TmcDiagPins = { NoPin, PC.15 }"
+board: troodon_v2
 onboardDrivers: no
 ---
 

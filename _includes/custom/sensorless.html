@@ -1,3 +1,5 @@
+{% include info.html content="Endstops can't be used with a TMC2209 or TMC2226 driver at the same time as sensorless homing/stall detection and they must be unplugged" %}
+
 ## Overview
 
 {% if page.onboardDrivers %}
@@ -22,6 +24,7 @@ stepper.TmcDiagPins = {{page.TMC}}
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include {{page.example}} in your board.txt file. 
+If you only want to enable sensorless homing/stall detection on driver 1, only include {{page.example2}}
 
 {% if page.boardname == "Fly-CDYv2" or page.boardname == "Fly-CDYv3" %}
 The driver diag pins correspond to the following endstops.  

@@ -1,7 +1,7 @@
 ---
 title: Sensorless Homing on a GTR
 keywords: 
-last_updated: 05/10/2022
+last_updated: 06/01/2023
 summary: "Using and Configuring Sensorless Homing on a GTR"
 sidebar: mydoc_sidebar
 permalink: gtr_sensorless.html
@@ -13,7 +13,8 @@ boardname: GTR
 stepperSPI: 5
 spiInfo: "{ B.3, B.6, G.15 }"
 TMC: "{ F.2, C.13, E.0, G.14, G.9, D.3, I.4, F.4, F.6, I.7, F.12 }"
-example: F.2 and C.13
+example: "stepper.TmcDiagPins = { F.2, C.13 }"
+example2: "stepper.TmcDiagPins = { NoPin, C.13 }"
 board: biqugtr_1.0
 onboardDrivers: no
 GPIO15: B.12

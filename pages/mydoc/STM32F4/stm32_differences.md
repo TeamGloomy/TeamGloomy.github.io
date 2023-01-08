@@ -15,7 +15,7 @@ toc: false
 
 * Configuration:
   * See [Driver Timings](driver_timings.html) for information about setting the correct timings.
-  * See [Custom Commands and Gcode](custom.html) for information about additional gcode and unsupported gcode. 
+  * See [Custom Commands and Gcode](custom_commands_gcode.html) for information about additional gcode and unsupported gcode. 
 * To support the number of different boards, a /sys/board.txt config file is required. More information can be found [here](board_txt.html).
 * M150 does not support X0 or X1. If being used with neopixels, X2 should be used. **This restriction has been lifted from 3.4.1-RC1**  
 * Only supports an IP address for the board up to 192.168.1.56 in access point mode.

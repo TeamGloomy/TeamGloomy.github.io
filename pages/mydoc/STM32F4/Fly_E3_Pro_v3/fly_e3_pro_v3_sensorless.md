@@ -2,7 +2,7 @@
 title: Sensorless Homing on a Fly-E3-Pro-v3
 tags: []
 keywords: 
-last_updated: 05/10/2022
+last_updated: 06/01/2023
 summary: "Using and Configuring Sensorless Homing on a Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_sensorless.html
@@ -13,7 +13,8 @@ datatable: true
 boardname: Fly-E3-Pro-v3
 stepperSPI: 2
 TMC: "{ A.2, B.10, C.4 }"
-example: A.2 and B.10
+example: "stepper.TmcDiagPins = { A.2, B.10 }"
+example2: "stepper.TmcDiagPins = { NoPin, B.10 }"
 board: fly_e3_prov3
 onboardDrivers: yes
 driverType: TMC2209

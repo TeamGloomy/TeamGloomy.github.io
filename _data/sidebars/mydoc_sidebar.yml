@@ -1379,6 +1379,62 @@ children:
       url: skr_3_ez_h743_pins.html
       output: web, pdf
 
+- title: Consumer Printers
+  output: web, pdf
+  children:
+
+  - title: Formbot Troodon V2 Printer
+    output: web, pdf
+    children:
+
+    - title: Formbot Troodon V2 Printer General Information
+      url: troodon_v2_general.html
+      output: web, pdf
+
+    - title: Connecting the Formbot Troodon V2 Printer to Wifi
+      url: troodon_v2_connected_wifi_esp32.html
+      output: web, pdf
+
+    - title: Heater Tuning
+      url: troodon_v2_heater_tuning.html
+      output: web, pdf
+
+    - title: Configuring Z Offsets
+      url: troodon_v2_zoffsets.html
+      output: web, pdf
+    
+    - title: An Improved Gantry Levelling File
+      url: troodon_v2_improved_bed.html
+      output: web, pdf
+
+    - title: Adjusting the Firmware for Native Support
+      url: troodon_v2_firmware_adjustment.html
+      output: web, pdf
+
+    - title: Configuring Sensorless Homing
+      url: troodon_v2_sensorless.html
+      output: web, pdf
+    
+    - title: Connecting a Screen
+      url: troodon_v2_screen.html
+      output: web, pdf
+
+    - title: Connecting a 12864 Screen
+      url: troodon_v2_screen_12864.html
+      output: web, pdf
+
+    - title: Connecting a BLTouch
+      url: troodon_v2_bltouch.html
+      output: web, pdf
+
+    - title: Connecting an Accelerometer
+      url: troodon_v2_accelerometer.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: troodon_v2_pins.html
+      output: web, pdf
+
 - title: Screens
   output: web, pdf
   children:

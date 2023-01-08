@@ -2,7 +2,7 @@
 title: Sensorless Homing on a Fly-Super8
 tags: []
 keywords: 
-last_updated: 05/10/2022
+last_updated: 06/01/2023
 summary: "Using and Configuring Sensorless Homing on a Fly-Super8"
 sidebar: mydoc_sidebar
 permalink: fly_super8_sensorless.html
@@ -13,7 +13,8 @@ datatable: true
 boardname: Fly-Super8
 stepperSPI: 2
 TMC: "{ G.12, G.11, G.10, G.9, D.7, D.6, A.8, F.3 }"
-example: G.12 and G.11
+example: "stepper.TmcDiagPins = { G.12, G.11 }"
+example2: "stepper.TmcDiagPins = { NoPin, G.11 }"
 board: fly_super8
 onboardDrivers: no
 ---

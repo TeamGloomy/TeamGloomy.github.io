@@ -2,7 +2,7 @@
 title: Sensorless Homing on an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
-last_updated: 05/10/2022
+last_updated: 06/01/2023
 summary: "Using and Configuring Sensorless Homing on an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
 permalink: skr_pro_sensorless.html
@@ -14,7 +14,8 @@ boardname: SKR Pro v1.1 or v1.2
 stepperSPI: 2
 spiInfo: ""
 TMC: "{ B.10, E.12, G.8, E.15, E.10, G.5 }"
-example: B.10 and E.12
+example: "stepper.TmcDiagPins = { B.10, E.12 }"
+example2: "stepper.TmcDiagPins = { NoPin, E.12 }"
 board: biquskrpro_1.1
 onboardDrivers: no
 GPIO15: B.12

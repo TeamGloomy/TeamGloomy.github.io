@@ -2,7 +2,7 @@
 title: Sensorless Homing on an SKR3 H723 Version
 tags: []
 keywords: 
-last_updated: 29/11/2022
+last_updated: 06/01/2023
 summary: "Using and Configuring Sensorless Homing on an SKR3 H723 Version"
 sidebar: mydoc_sidebar
 permalink: skr_3_h723_sensorless.html
@@ -14,7 +14,8 @@ boardname: SKR3 H723
 stepperSPI: 3
 spiInfo: "{ E.14, E.15, E.13 }"
 TMC: "{ C.1, C.3, C.0, C.2, A.0 }"
-example: C.1 and C.3
+example: "stepper.TmcDiagPins = { C.1, C.3 }"
+example2: "stepper.TmcDiagPins = { NoPin, C.3 }"
 board: biquskr_3_h723
 onboardDrivers: no
 ---

@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 25/03/2022
+last_updated: 06/01/2023
 summary: "Connecting an SKR Pro v1.1 and v1.2 via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_wifi_8266.html
@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: SKR Pro v1.1 or v1.2
 mcu: STM32F407ZGT6
-firmware: firmware-stm32-wifi.bin
+firmware: firmware-stm32f4-wifi.bin
 wifi: ESP8266
 module: large
 schematic: https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf

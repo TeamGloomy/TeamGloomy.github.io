@@ -2,7 +2,7 @@
 title: Connecting an SKR v2.0 via an ESP8266 or ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 01/06/2022
+last_updated: 06/01/2023
 summary: "How to connect to an SKR v2.0 via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_connected_wifi.html
@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: SKR v2.0
 mcu: STM32F407VGT6
-firmware: firmware-stm32-wifi.bin
+firmware: firmware-stm32f4-wifi.bin
 wifi: both
 module: small
 schematic: https://github.com/bigtreetech/SKR-2/blob/master/Hardware/BIGTREETECH%20SKR%202-Pin.pdf

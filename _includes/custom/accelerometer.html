@@ -4,6 +4,10 @@ The only type of accelerometers that are supported are LIS3DH and LIS3DSH.
 
 ### Wiring
 
+It is recommended to use a USB3 cable for the wiring between the board and the accelerometer. 
+{% include image.html file="usb3_cables.png" alt="USB3 Cross-Section" caption="USB3 Cross-Section" %}
+The colours used in the table below match the colour coding above.  
+
 One possible method of connecting the accelerometer to the {{page.boardname}} is described in the table below. The image can be used to aid in identification.
 {% if {{page.boardname}} == "SKR Pro v1.1 or v1.2" %}
 We are going to use Hardware SPI in this guide but if 5160 drivers are being used, software SPI will have to be used instead and most pins can be used for this.  
@@ -22,11 +26,11 @@ These connections are on the {{page.location}} on the board.
 |:---|:---|:---|:---|:----|
 |Red|VIN| +5v Input| +5v| -|
 |Black|GND|Ground|GND|-|
-|Yellow|SCL|SPI SCK|{{page.SCL}}||
-|Green|SDA|SPI MOSI|{{page.SDA}}||
-|Blue|SDO|SPI MISO|{{page.SDO}}||
-|White|CS|Chip Select|{{page.CS}}||
-|Purple|Int|Interupt|{{page.int}}||
+|Purple|SCL|SPI SCK|{{page.SCL}}||
+|Blue|SDA|SPI MOSI|{{page.SDA}}||
+|Yellow|SDO|SPI MISO|{{page.SDO}}||
+|Green|CS|Chip Select|{{page.CS}}||
+|Orange|Int|Interupt|{{page.int}}||
 
 <div class="datatable-end"></div>
 

@@ -2,7 +2,7 @@
 title: Connecting to a Fly-CDYv2 via WiFi
 tags: []
 keywords: 
-last_updated: 31/05/2022
+last_updated: 06/01/2023
 summary: "How to connect a Fly-CDYv2 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv2_connected_wifi.html
@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: Fly-CDYv2
 mcu: STM32F407VGT6
-firmware: firmware-stm32-wifi.bin
+firmware: firmware-stm32f4-wifi.bin
 wifi: 
 module: onboard
 schematic: https://github.com/Mellow-3D/Fly-CDYv2/blob/main/Hardware/Schematic.pdf
