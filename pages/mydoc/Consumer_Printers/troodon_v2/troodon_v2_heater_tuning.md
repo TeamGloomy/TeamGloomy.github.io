@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: troodon_v2_heater_tuning.html
 folder: mydoc
 comments: false
-toc: false
+toc: true
 datatable: true
 ---
 

@@ -8,7 +8,7 @@ sidebar: mydoc_sidebar
 permalink: troodon_v2_connected_wifi_esp32.html
 folder: mydoc
 comments: false
-toc: false
+toc: true
 datatable: true
 boardname: Troodon V2 Printer
 mcu: STM32F407VGT6

@@ -5,7 +5,7 @@ keywords:
 last_updated: 07/01/2023
 summary: "Moving the Troodon V2 Printer from board.txt defined pins to firmware defined pins"
 sidebar: mydoc_sidebar
-permalink: troodon_v2_general.html
+permalink: troodon_v2_firmware_adjustment.html
 folder: mydoc
 comments: false
 toc: false
