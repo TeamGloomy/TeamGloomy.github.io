@@ -25,6 +25,6 @@ onboardDrivers: no
 
 If you want to use sensorless homing, a jumper needs adding next to each appropriate endstop as shown below.
 
-{% include image.html file="btt_octopus_pro_1.0_sensorless.png" alt="BTT Octopus Pro v1.0 Diag" caption="BTT Octopus Pro v1.0 Pro v1.0 F429 Version Sensorless Homing Jumper Locations" %}
+{% include image.html file="octopus_x7_diag.png" alt="Troodon V2 Printer Diag" caption="Troodon V2 Printer Sensorless Homing Jumper Locations" %}
 
 {% include custom/sensorless_2.html %}
