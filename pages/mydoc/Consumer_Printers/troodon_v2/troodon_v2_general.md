@@ -22,7 +22,7 @@ It comes running this port of RRF on a custom made BTT Octopus X7 out of the box
 
 ### Board.txt Name
 
-The version of the firmware that is shipped with the printer uses the BTT Octopus Pro as the base board configuration and then overrides the stepper pins to be suitable for the Octopus X7. Going forwards, you can choose to either continue to use this configuration or, from RRF3.4.5, you can use our build in configuration for the board. We also provide updated configuration files for the printer using pin names rather than numbers. These can be found here.
+The version of the firmware that is shipped with the printer uses the BTT Octopus Pro as the base board configuration and then overrides the stepper pins to be suitable for the Octopus X7. Going forwards, you can choose to either continue to use this configuration or, **from RRF3.4.5**, you can use our built in configuration for the board. 
 
 The board name in board.txt is **troodon_v2**.
 
