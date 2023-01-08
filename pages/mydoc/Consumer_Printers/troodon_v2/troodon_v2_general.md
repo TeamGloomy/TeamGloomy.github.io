@@ -37,7 +37,7 @@ The jumpers should be installed as below. "SPI mode Interpolation" is supported 
 
 If you want to use sensorless homing, a jumper needs adding next to each appropriate endstop as shown below.
 
-{% include image.html file=octopus_x7_diag.png" alt="Troodon V2 Diag" caption="Troodon V2 Sensorless Homing Jumper Locations" %}
+{% include image.html file="octopus_x7_diag.png" alt="Troodon V2 Diag" caption="Troodon V2 Sensorless Homing Jumper Locations" %}
 
 ### Initial Installation
 
