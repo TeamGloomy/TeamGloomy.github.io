@@ -2,7 +2,7 @@
 title: Troodon V2 Printer Setting Z Offsets
 tags: []
 keywords: 
-last_updated: 07/01/2023
+last_updated: 11/01/2023
 summary: "Setting the Z Offsets for the Probe and AutoZ on a Troodon V2 Printer before printing"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_zoffsets.html
@@ -34,6 +34,8 @@ Find the macro for the calculated value and execute it.
 
 This method is based on using a macro that duet forum member OwenD wrote for calibrating the BLTouch. Create a new macro, call it "probe trigger height" and paste the following lines into it.  
 ```
+; Teamgloomy AutoZ for Troodon V2
+; Version 1.0
 var ProbeSpeedHigh = sensors.probes[0].speeds[0] ; save currently configured speed for fast probe
 var ProbeSpeedLow = sensors.probes[0].speeds[1] ; save currently configured speed for slow probe
 
@@ -145,6 +147,8 @@ Save the config.g and when prompted, restart the mainboard.
 
 This method is based on using a macro that duet forum member OwenD wrote for calibrating the BLTouch. Create a new macro, call it "autoz trigger height" and paste the following lines into it.  
 ```
+; Teamgloomy AutoZ for Troodon V2
+; Version 1.01
 var ProbeSpeedHigh = sensors.probes[1].speeds[0] ; save currently configured speed for fast probe
 var ProbeSpeedLow = sensors.probes[1].speeds[1] ; save currently configured speed for slow probe
 
@@ -195,7 +199,7 @@ echo "Current probe offset = " ^ sensors.probes[1].triggerHeight ^ "mm"
 
 while iterations < var.NumTests
 	G1 Z{sensors.probes[1].diveHeight} ; move to dive height
-	G30 S-1
+	G30 K1 S-1
 	M118 P2 S{"Test # " ^ (iterations+1) ^ " Triggered @ " ^ move.axes[2].machinePosition ^ "mm"} ; send trigger height to Paneldue console
 	M118 P3 S{"Test # " ^ (iterations+1) ^ " Triggered @ " ^ move.axes[2].machinePosition ^ "mm"} ; send trigger height to DWC console
 
@@ -223,7 +227,7 @@ set var.Average = {(var.RunningTotal - var.Highest - var.Lowest) / (var.NumTests
 M118 P2 S{"Average excluding high and low reading = " ^ var.Average} ; send average to PanelDue console
 M118 P3 S{"Average excluding high and low reading = " ^ var.Average} ; send average to DWC console
 
-;suggest new G31 values
+;suggest new G31 K1 values
 echo "suggested edit for G31 K1 in config.g if not saved to config-overide.g"
 echo "change G1 Z parameter from Z" ^ sensors.probes[1].triggerHeight 
 echo "to Z" ^ var.Average
