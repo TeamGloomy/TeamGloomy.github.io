@@ -56,6 +56,7 @@ There are a number of boards which have configurations pre-configured. They are
 * BTT GTR v1.0 + M5 Expansion Board
 * BTT Octopus v1.1 F429 Version
 * BTT Octopus Pro v1.0 F429 Version
+* BTT Octopus X7
 
 ## STM32H7 Boards with native support
 There are a number of boards which have configurations pre-configured. They are
@@ -64,6 +65,11 @@ There are a number of boards which have configurations pre-configured. They are
 * SKR3 H723
 * SKR3 H743
 * SKR3EZ H743
+
+## Consumer Printers
+There are printers that can be purchased with the STM32 port of RRF installed. They are
+
+* Formbot Troodon V2
 
 ## Supported Drivers
 

@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to STM32
 tags: []
 keywords: 
-last_updated: 06/09/2022
+last_updated: 13/02/2023
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt_stm32.html
@@ -97,6 +97,7 @@ Current preprogrammed boards
 |biqugtr_1.0|SKR GTR v1.0|STM32F4|
 |biqoctopus_1.1|BTT Octopus v1.1 f439 Version|STM32F4|
 |biqoctopuspro_1.0|BTT Octopus Pro v1.0 f439 Version|STM32F4|
+|biquoctopus_x7|BTT Octopus X7|STM32F4|
 |biquskr_2.0|SKR v2.0|STM32F4|
 |biquskr_3|SKR3|STM32H7|
 |biquskr_3_ez|SKR3 Ez|STM32H7|
@@ -117,6 +118,7 @@ Current preprogrammed boards
 |fysetc_spider|Fysetc Spider 407 Version|STM32F4|
 |fysetc_spider_king407|Fysetc Spider King 407|STM32F4|
 |generic|maps all pins as available by pin number. Not recommended for normal use||
+|troodon_v2|Board used in the Troodon V2 Printer|STM32F4|
 
 <div class="datatable-end"></div>
 

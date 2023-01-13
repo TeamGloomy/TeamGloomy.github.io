@@ -18,6 +18,8 @@ The Troodon V2 Printer is supplied with a firmware and firmware files that, rath
 
 {% include warning.html content="These changes can only be made with the release of RRF 3.4.5. onwards" %}
 
+{% include tip.html content="The Troodon V2 uses an Octopus X7 as the mainboard. This board uses an STM32F4 processor. The correct firmware file would start with firmware-stm32f4-wifi" %}
+
 ### Default board.txt file
 
 For reference, here is the default board.txt file that is supplied with the printer.  
