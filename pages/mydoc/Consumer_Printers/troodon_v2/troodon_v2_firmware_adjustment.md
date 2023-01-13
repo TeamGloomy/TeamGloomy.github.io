@@ -2,7 +2,7 @@
 title: Moving the Troodon V2 Printer from board.txt defined pins to firmware defined pins
 tags: []
 keywords: 
-last_updated: 07/01/2023
+last_updated: 13/01/2023
 summary: "Moving the Troodon V2 Printer from board.txt defined pins to firmware defined pins"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_firmware_adjustment.html
@@ -79,7 +79,7 @@ sdCard.external.cardDetectPin=D.8
 Below is the modified board.txt file which uses native firmware pin assignments
 ```
 // This board.txt file has come from the teamgloomy wiki
-// version: 1.0
+// version: 1.1
 board = troodon_v2
 
 //LED blinks to indicate Platform is spinning or other diagnostic 
@@ -94,6 +94,7 @@ heat.tempSensePins = {PA_0, PF_3}
 8266wifi.csPin = PA_15
 //ESP RX/TX Settings
 8266wifi.serialRxTxPins = { PD_6, PD_5 }
+8266wifi.spiChannel = 2
 
 // External Display settings
 serial.aux.rxTxPins = {NoPin, NoPin};
