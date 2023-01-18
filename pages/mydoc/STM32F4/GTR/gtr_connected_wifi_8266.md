@@ -2,7 +2,7 @@
 title: Connecting a GTR via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 18/01/2023
 summary: "How to connect to a GTR via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_wifi_8266.html
@@ -19,7 +19,7 @@ schematic: https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/blob/master/BTT%2
 DRP: A.15
 TRP: C.11
 ERP: B.10
-CS: ""
+CS:
 ESPRXTX: "{ C.7, C.6 }"
 SerialRXTX: "{ D.9, D.8 }"
 heat: "{ C.0, C.1, C.2, C.3, A.3, F.9, F.10, F.7, F.5 }"

@@ -2,7 +2,7 @@
 title: Connecting a Fly-Super8Pro H743 via WiFi
 tags: []
 keywords: 
-last_updated: 29/11/2022
+last_updated: 18/01/2023
 summary: "How to connect a Fly-Super8Pro H743 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_super8pro_h743_connected_wifi.html
@@ -19,7 +19,7 @@ schematic: https://github.com/Mellow-3D/Fly-Super8Pro/blob/main/Hardware/Schemat
 DRP: D.13
 TRP: D.11
 ERP: D.10
-CS: ""
+CS:
 ESPRXTX: "{ D.9, D.8 }"
 SerialRXTX: "{ A.10, A.9 }"
 heat: "{ adc0, adc1, adc2, adc3, adc4, adc5 }"

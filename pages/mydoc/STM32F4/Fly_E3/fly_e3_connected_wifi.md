@@ -2,7 +2,7 @@
 title: Connecting a Fly-E3 via WiFi
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 18/01/2023
 summary: "How to connect a Fly-E3 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_e3_connected_wifi.html
@@ -19,7 +19,7 @@ schematic: https://github.com/Mellow-3D/FLY-RRF-E3/blob/master/Hardware/Schemati
 DRP: E.13
 TRP: E.14
 ERP: E.15
-CS: ""
+CS:
 ESPRXTX: "{ D.9, D.8 }"
 SerialRXTX: ""
 heat: "{ A.3, A.4 }"

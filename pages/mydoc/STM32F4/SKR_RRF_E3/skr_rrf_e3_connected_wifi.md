@@ -2,7 +2,7 @@
 title: Connecting a SKR-RRF-E3 via Wifi
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 18/01/2023
 summary: "Connecting a SKR-RRF-E3 via Wifi"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_connected_wifi.html
@@ -19,7 +19,7 @@ schematic: https://github.com/Mellow-3D/Fly-E3-Pro/blob/main/Schematic/Schematic
 DRP: A.6
 TRP: A.7
 ERP: A.4
-CS: ""
+CS:
 ESPRXTX: "{ D.9, D.8 }"
 SerialRXTX: ""
 heat: "{ A.0, A.1, A.2, A.3 }"

@@ -2,7 +2,7 @@
 title: Fly-407ZG Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 18/01/2023
 summary: "The pin names of the Fly-407ZG used in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_pins.html
@@ -73,7 +73,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |E.5|e3heat|he3|Timer 9|
 |E.6|e2heat|he2|Timer 9|
 |E.7|LCD_D7|||
-|E.8|LCD)D6|||
+|E.8|LCD_D6|||
 |E.9|LCD_D5|||
 |E.10|LCD_D4|||
 |E.11|servo0|||

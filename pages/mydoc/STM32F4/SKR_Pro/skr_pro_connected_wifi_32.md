@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via an ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 18/01/2023
 summary: "Connecting an SKR Pro v1.1 and v1.2 via an ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_wifi_32.html
@@ -19,7 +19,7 @@ schematic: https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/m
 DRP: G.10
 TRP: F.11
 ERP: F.12
-CS: ""
+CS:
 ESPRXTX: "{ D.9, D.8 }"
 SerialRXTX: "{ A.10, A.9 }"
 heat: "{ F.6, F.3, F.4, F.5 }"

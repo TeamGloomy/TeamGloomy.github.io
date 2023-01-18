@@ -2,7 +2,7 @@
 title: Connecting to a Fly-CDYv3 via WiFi
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 18/01/2023
 summary: "How to connect a Fly-CDYv3 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv3_connected_wifi.html
@@ -19,7 +19,7 @@ schematic: https://github.com/Mellow-3D/Fly-CDYv3/blob/main/Hardware/Schematic.p
 DRP: E.10
 TRP: E.12
 ERP: E.11
-CS: ""
+CS:
 ESPRXTX: "{ D.9, D.8 }"
 SerialRXTX: ""
 heat: "{ B.1, A.3, C.4, D.14 }"
