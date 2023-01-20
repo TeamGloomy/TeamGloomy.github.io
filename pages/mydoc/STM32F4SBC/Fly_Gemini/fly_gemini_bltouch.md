@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: Fly-Gemini-V1
 image: ""
-yellowPin: B.0
+yellowPin: PB_0
 yellowName: Servo0
-whitePin: A.1
+whitePin: PA_1
 whiteName: probe
 ---
 

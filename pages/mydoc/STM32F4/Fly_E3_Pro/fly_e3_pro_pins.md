@@ -24,10 +24,10 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0 (X)|1 (Y)|2 (Z)|3 (E0)|4 (E1)|
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
-|Enable Pins|E.5|E.1|B.5|D.6|C.15|
-|Step Pins|E.3|B.9|B.3|D.4|C.13|
-|Direction Pins|E.2|B.8|D.7|D.3|C.0|
-|UART Pins|E.4|E.0|B.4|D.5|C.14|
+|Enable Pins|PE_5|PE_1|PB_5|PD_6|PC_15|
+|Step Pins|PE_3|PB_9|PB_3|PD_4|PC_13|
+|Direction Pins|PE_2|PB_8|PD_7|PD_3|PC_0|
+|UART Pins|PE_4|PE_0|PB_4|PD_5|PC_14|
 
 <div class="datatable-end"></div>
 
@@ -40,44 +40,44 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
 | :------------- |:-------------|:-------------|:-------------|
-|A.0|bed|hbed|Timer 2|
-|A.1|e1temp|t1|Timer 2|
-|A.10|RX1|||
-|A.2|xmin|xstop|Timer 2|
-|A.3|bedtemp|tb|Timer 2|
-|A.4|e0temp|t0||
-|A.5|e0heat|he0|Timer 8|
-|A.6|fan1||Timer 13|
-|A.7|fan0|fan|Timer 14|
-|A.8|LED|||
-|A.9|TX1|||
-|B.0|servo0||Timer 3|
-|B.1|LCD_D7||Timer 3|
-|B.10|ymin|ystop|Timer 2|
-|B.11|neopixel||Timer 2|
-|B.6|fan2||Timer 4|
-|B.7|fan3||Timer 4|
-|C.1|boardtemp|tboard||
-|C.10|SDD2|||
-|C.11|SDD3|||
-|C.12|SDSCK|||
-|C.3|Power_ADC|||
-|C.4|zmin|zstop||
-|C.5|probe|||
-|C.6|e1heat|he1|Timer 8|
-|C.8|SDD0||Timer 8|
-|C.9|SDD1||Timer 8|
-|D.0|e0min|e0stop||
-|D.1|e1min|e1stop||
-|D.10|pwr| PWRDET||
-|D.11|PSON|||
-|D.2|SDCMD|||
-|E.10|LCD_EN|||
-|E.11|BTN_ENC|||
-|E.12|BEEP|||
-|E.6|laser||Timer 9|
-|E.7|LCD_D6|||
-|E.8|LCD_D5|||
-|E.9|LCD_D4|||
+|PA_0|bed|hbed|Timer 2|
+|PA_1|e1temp|t1|Timer 2|
+|PA_10|RX1|||
+|PA_2|xmin|xstop|Timer 2|
+|PA_3|bedtemp|tb|Timer 2|
+|PA_4|e0temp|t0||
+|PA_5|e0heat|he0|Timer 8|
+|PA_6|fan1||Timer 13|
+|PA_7|fan0|fan|Timer 14|
+|PA_8|LED|||
+|PA_9|TX1|||
+|PB_0|servo0||Timer 3|
+|PB_1|LCD_D7||Timer 3|
+|PB_10|ymin|ystop|Timer 2|
+|PB_11|neopixel||Timer 2|
+|PB_6|fan2||Timer 4|
+|PB_7|fan3||Timer 4|
+|PC_1|boardtemp|tboard||
+|PC_10|SDD2|||
+|PC_11|SDD3|||
+|PC_12|SDSCK|||
+|PC_3|Power_ADC|||
+|PC_4|zmin|zstop||
+|PC_5|probe|||
+|PC_6|e1heat|he1|Timer 8|
+|PC_8|SDD0||Timer 8|
+|PC_9|SDD1||Timer 8|
+|PD_0|e0min|e0stop||
+|PD_1|e1min|e1stop||
+|PD_10|pwr| PWRDET||
+|PD_11|PSON|||
+|PD_2|SDCMD|||
+|PE_10|LCD_EN|||
+|PE_11|BTN_ENC|||
+|PE_12|BEEP|||
+|PE_6|laser||Timer 9|
+|PE_7|LCD_D6|||
+|PE_8|LCD_D5|||
+|PE_9|LCD_D4|||
 
 <div class="datatable-end"></div>

@@ -31,10 +31,10 @@ stepper.numSmartDrivers = 11
 
 Please add the following lines to the board.txt.  
 ```
-stepper.enablePins = { F.11, F.14, G.1, E.9, F.2, C.15, G.4, G.7, G.15, G.13, G.14}
-stepper.stepPins = { E.2, E.3, E.4, E.14, E.15, E.1, E.0, E.6, A.7, B.7, A.6 }
-stepper.directionPins = { C.5, F.13, G.0, E.8, E.11, F.0, G.3, G.6, B.6, A.4, A.5 }
-stepper.TmcUartPins = { C.4, F.12, F.15, E.7, E.10, F.1, G.2, G.5, C.13, G.8, E.13 }
+stepper.enablePins = { PF_11, PF_14, PG_1, PE_9, PF_2, PC_15, PG_4, PG_7, PG_15, PG_13, PG_14}
+stepper.stepPins = { PE_2, PE_3, PE_4, PE_14, PE_15, PE_1, PE_0, PE_6, PA_7, PB_7, PA_6 }
+stepper.directionPins = { PC_5, PF_13, PG_0, PE_8, PE_11, PF_0, PG_3, PG_6, PB_6, PA_4, PA_5 }
+stepper.TmcUartPins = { PC_4, PF_12, PF_15, PE_7, PE_10, PF_1, PG_2, PG_5, PC_13, PG_8, PE_13 }
 ```
 
 Thanks to @o_lampe for the above.
@@ -44,10 +44,10 @@ Thanks to @o_lampe for the above.
 **Supported by only the TMC2209, TMC2226 and TMC5160**
 If using sensorless homing/stall detection on the BTT-MOT-EXP with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
-stepper.TmcDiagPins = { G.12, G.11, G.10, G.9, D.7, D.6, A.8, F.3, C.14, B.2, E.12 }
+stepper.TmcDiagPins = { PG_12, PG_11, PG_10, PG_9, PD_7, PD_6, PA_8, PF_3, PC_14, PB_2, PE_12 }
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
-For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include G.12 and G.11 in your board.txt file.  
+For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include PG_12 and PG_11 in your board.txt file.  
 For more information about setting up sensorless homing, please read [this](fly_super8_sensorless.html){:target="_blank"}.  
 
 ## Config.g Modification

@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: Fly-Super8Pro H743
 stepperSPI: 2
-TMC: "{ G.12, G.11, G.10, G.9, D.7, D.6, A.8, F.3 }"
-example: "stepper.TmcDiagPins = { G.12, G.11 }"
-example2: "stepper.TmcDiagPins = { NoPin, G.11 }"
+TMC: "{ PG_12, PG_11, PG_10, PG_9, PD_7, PD_6, PA_8, PF_3 }"
+example: "stepper.TmcDiagPins = { PG_12, PG_11 }"
+example2: "stepper.TmcDiagPins = { NoPin, PG_11 }"
 board: fly_super8h7
 onboardDrivers: no
 ---

@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-Gemini-V1.1
-RXTX: "{ A.10, A.9 }"
+RXTX: "{ PA_10, PA_9 }"
 12864url: ""
 screenType: serial
 ---

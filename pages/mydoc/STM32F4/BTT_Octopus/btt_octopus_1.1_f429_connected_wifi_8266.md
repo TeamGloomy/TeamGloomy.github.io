@@ -2,7 +2,7 @@
 title: Connecting an BTT Octopus v1.1 F429 Version via an ESP8266 or ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 18/01/2023
 summary: "How to connect to an BTT Octopus v1.1 F429 Version via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_connected_wifi_8266.html
@@ -16,17 +16,17 @@ firmware: firmware-stm32f4-wifi.bin
 wifi: both
 module: small
 schematic: https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/blob/master/Hardware/BIGTREETECH%20Octopus%20-%20PIN.pdf
-DRP: D.7
-TRP: D.10
-ERP: G.7
-CS: B.12
-ESPRXTX: "{ D.9, D.8 }"
-SerialRXTX: "{ A.10, A.9 }"
-heat: "{ F.3, F.4, F.5, F.6, F.7 }"
-diagnostics: A.13
+DRP: PD_7
+TRP: PD_10
+ERP: PG_7
+CS: PB_12
+ESPRXTX: "{ PD_9, PD_8 }"
+SerialRXTX: "{ PA_10, PA_9 }"
+heat: "{ PF_3, PF_4, PF_5, PF_6, PF_7 }"
+diagnostics: PA_13
 stepperSPI: 0
-TMC: "{ G.6, G.9, G.10, G.11, G.12, G.13, G.14, G.15 }"
-example: G.6 and G.9
+TMC: "{ PG_6, PG_9, PG_10, PG_11, PG_12, PG_13, PG_14, PG_15 }"
+example: PG_6 and PG_9
 board: biqoctopus_1.1
 onboardDrivers: no
 ---

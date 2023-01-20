@@ -75,19 +75,19 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 ```
 //Config for Fly-407ZG
 board = fly_f407zg
-8266wifi.espDataReadyPin = E.15
-8266wifi.TfrReadyPin = B.10
-8266wifi.espResetPin = B.2
-8266wifi.csPin = F.11
-heat.tempSensePins = { F.3, A.0, C.1, C.0, F.10, F.5, F.4 }
+8266wifi.espDataReadyPin = PE_15
+8266wifi.TfrReadyPin = PB_10
+8266wifi.espResetPin = PB_2
+8266wifi.csPin = PF_11
+heat.tempSensePins = { PF_3, PA_0, PC_1, PC_0, PF_10, PF_5, PF_4 }
 ```
 
 ### Updating the ESP8266 by RRF
 
 If you have an ESP8266 WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
 ```
-8266wifi.serialRxTxPins = { A.10, A.9 }
-serial.aux.rxTxPins = { nopin, nopin }
+8266wifi.serialRxTxPins = { PA_10, PA_9 }
+serial.aux.rxTxPins = { NoPin, NoPin }
 ```
 
 ### Smart Drivers

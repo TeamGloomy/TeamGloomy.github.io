@@ -2,7 +2,7 @@
 title: Sensorless Homing on a Troodon V2 Printer
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 18/01/2023
 summary: "Using and Configuring Sensorless Homing on a Troodon V2 Printer"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_sensorless.html
@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: Troodon V2 Printer
 stepperSPI: 0
-TMC: "{ PF.2, PC.15, PC.14, PC.13, PE.13, PF.9, PF.15 }"
-example: "stepper.TmcDiagPins = { PF.2, PC.15 }"
-example2: "stepper.TmcDiagPins = { NoPin, PC.15 }"
+TMC: "{ PF_2, PC_15, PC_14, PC_13, PE_13, PF_9, PF_15 }"
+example: "stepper.TmcDiagPins = { PF_2, PC_15 }"
+example2: "stepper.TmcDiagPins = { NoPin, PC_15 }"
 board: troodon_v2
 onboardDrivers: no
 ---

@@ -14,17 +14,17 @@ boardname: GTR
 mcu: STM32F407VGT6
 firmware: firmware-stm32f4-sbc.bin
 schematic: https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/blob/master/BTT%20GTR%20V1.0/manual/GTR%20V1.0%20PIn.PDF
-BCM11: B.13
-BCM9: B.14
-BCM10: B.15
-BCM8: B.12
-BCM25: B.10
-heat: "{ C.0, C.1, C.2, C.3, A.3, F.9, F.10, F.7, F.5 }"
+BCM11: PB_13
+BCM9: PB_14
+BCM10: PB_15
+BCM8: PB_12
+BCM25: PB_10
+heat: "{ PC_0, PC_1, PC_2, PC_3, PA_3, PF_9, PF_10, PF_7, PF_5 }"
 diagnostics: 
 stepperSPI: 5
-spiInfo: "{ B.3, B.6, G.15 }"
-TMC: "{ F.2, C.13, E.0, G.14, G.9, D.3, I.4, F.4, F.6, I.7, F.12 }"
-example: F.2 and C.13
+spiInfo: "{ PB_3, PB_6, PG_15 }"
+TMC: "{ PF_2, PC_13, PE_0, PG_14, PG_9, PD_3, PI_4, PF_4, PF_6, PI_7, PF_12 }"
+example: PF_2 and PC_13
 board: biqugtr_1.0
 ---
 

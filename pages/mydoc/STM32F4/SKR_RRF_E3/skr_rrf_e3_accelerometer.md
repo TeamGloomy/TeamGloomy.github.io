@@ -11,11 +11,11 @@ comments: false
 toc: false
 datatable: true
 boardname: SKR-RRF-E3
-SCL: B.1
-SDA: E.11
-SDO: B.2
-CS: E.10
-int: E.7
+SCL: PB_1
+SDA: PE_11
+SDO: PB_2
+CS: PE_10
+int: PE_7
 spiChannel: 5
 location: EXP1 header
 ---

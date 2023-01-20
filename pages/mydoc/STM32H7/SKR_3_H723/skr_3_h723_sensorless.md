@@ -12,10 +12,10 @@ toc: false
 datatable: true
 boardname: SKR3 H723
 stepperSPI: 3
-spiInfo: "{ E.14, E.15, E.13 }"
-TMC: "{ C.1, C.3, C.0, C.2, A.0 }"
-example: "stepper.TmcDiagPins = { C.1, C.3 }"
-example2: "stepper.TmcDiagPins = { NoPin, C.3 }"
+spiInfo: "{ PE_14, PE_15, PE_13 }"
+TMC: "{ PC_1, PC_3, PC_0, PC_2, PA_0 }"
+example: "stepper.TmcDiagPins = { PC_1, PC_3 }"
+example2: "stepper.TmcDiagPins = { NoPin, PC_3 }"
 board: biquskr_3_h723
 onboardDrivers: no
 ---

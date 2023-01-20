@@ -21,15 +21,15 @@ The information here is aimed at connecting a Fysetc Mini v2.1 12864 display but
 Add the following lines to the board.txt file
 
 ```
-leds.diagnostic = A.0
-led.neopixelPin=F.13
-lcd.lcdCSPin=H.13
-lcd.spiChannel=3
-lcd.lcdDCPin=I.10
-lcd.encoderPinA=I.8
-lcd.encoderPinB=H.8
-lcd.encoderPinSw=H.7
-SPI3.pins={ I.9, B.11, H.11 }
+leds.diagnostic = PA_0
+lePD_neopixelPin=PF_13
+lcPD_lcdCSPin=PH_13
+lcPD_spiChannel=3
+lcPD_lcdDCPin=PI_10
+lcPD_encoderPinA=PI_8
+lcPD_encoderPinB=PH_8
+lcPD_encoderPinSw=PH_7
+SPI3.pins={ PI_9, PB_11, PH_11 }
 ```
 
 ## Config.g
@@ -42,7 +42,7 @@ Use this macro to enable the screen.
 ; Turn off backlight
 m150 X2 R0 U0 B0 S3 F0
 ; Configure reset pin
-M950 P1 C"I.4" 
+M950 P1 C"PI_4" 
 ; hardware reset of LCD
 M42 P1 S0
 G4 P500

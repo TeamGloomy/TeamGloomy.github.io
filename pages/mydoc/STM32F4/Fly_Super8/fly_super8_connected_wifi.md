@@ -16,18 +16,18 @@ firmware: firmware-stm32f4-wifi.bin
 wifi: ESP32
 module: onboard
 schematic: https://github.com/Mellow-3D/Fly-Super8/blob/main/Hardware/Schematic.pdf
-DRP: D.13
-TRP: D.11
-ERP: D.10
+DRP: PD_13
+TRP: PD_11
+ERP: PD_10
 CS:
-ESPRXTX: "{ D.9, D.8 }"
-SerialRXTX: "{ A.10, A.9 }"
+ESPRXTX: "{ PD_9, PD_8 }"
+SerialRXTX: "{ PA_10, PA_9 }"
 heat: "{ adc0, adc1, adc2, adc3, adc4, adc5 }"
 diagnostics: ""
 smartdrivers: 
 stepperSPI: 2
-TMC: "{ G.12, G.11, G.10, G.9, D.7, D.6, A.8, F.3 }"
-example: G.12 and G.11
+TMC: "{ PG_12, PG_11, PG_10, PG_9, PD_7, PD_6, PA_8, PF_3 }"
+example: PG_12 and PG_11
 board: fly_super8
 onboardDrivers: no
 ---

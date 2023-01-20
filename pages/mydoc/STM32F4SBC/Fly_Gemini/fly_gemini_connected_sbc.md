@@ -17,7 +17,7 @@ image: fly_gemini_highlighted.png
 image1: fly_gemini_dip_1.png
 image2: fly_gemini_dip_2.png
 board: fly_gemini
-sbcTfrReadyPin: B.3
+sbcTfrReadyPin: PB_3
 ---
 
 {% include custom/integrated_sbc.html %}

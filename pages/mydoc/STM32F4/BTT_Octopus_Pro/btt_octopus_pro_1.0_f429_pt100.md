@@ -38,7 +38,7 @@ The following lines should be added to the board.txt file.
 
 ```
 heat.spiTempSensorChannel = 0
-heat.spiTempSensorCSPins = {F.8}
+heat.spiTempSensorCSPins = {PF_8}
 ```
 
 ## Config.g changes
@@ -49,7 +49,7 @@ To use the PT100 on your hotend, use the following code in config.g
 If you are in a country where the mains frequency is 50Hz, change the F60 to F50 (if you don't know, look [here](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf))
 
 ```
-M308 S1 P"F.8" Y"rtd-max31865" F60 R430
+M308 S1 P"PF_8" Y"rtd-max31865" F60 R430
 ```
 
 {% include warning.html content="Make sure you include the R430 as the BTT Octopus Pro v1.0 F429 Version uses a different reference resistor than expected" %}
@@ -60,7 +60,7 @@ To use the PT1000 on your hotend, use the following code in config.g
 If you are in a country where the mains frequency is 50Hz, change the F60 to F50 (if you don't know, look [here](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf))
 
 ```
-M308 S1 P"F.8" Y"rtd-max31865" F60 R4300
+M308 S1 P"PF_8" Y"rtd-max31865" F60 R4300
 ```
 
 {% include warning.html content="Make sure you include the R4300 as the BTT Octopus Pro v1.0 F429 Version uses a different reference resistor than expected" %}

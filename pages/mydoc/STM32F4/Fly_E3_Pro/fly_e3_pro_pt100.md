@@ -28,9 +28,9 @@ If your board has the chip shown below in red, you have 'K' type thermocouple su
 The following lines should be added to the board.txt file.
 
 ```
-SPI3.pins = { D.14, D.12, D.13 }
+SPI3.pins = { PD_14, PD_12, PD_13 }
 heat.spiTempSensorChannel = 3
-heat.spiTempSensorCSPins = { D.15, C.7 }
+heat.spiTempSensorCSPins = { PD_15, PC_7 }
 ```
 
 ## Config.g changes

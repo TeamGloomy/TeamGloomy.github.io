@@ -30,10 +30,10 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0|1|2|3|4|5|
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|:-----|
-|Enable Pins|F.2|D.7|C.0|C.3|A.3|F.0|
-|Step Pins|E.9|E.11|E.13|E.14|D.15|D.13|
-|Direction Pins|F.1|E.8|C.2|A.0|E.7|G.9|
-|UART Pins|C.13|E.3|E.1|D.4|D.1|D.6|
+|Enable Pins|PF_2|PD_7|PC_0|PC_3|PA_3|PF_0|
+|Step Pins|PE_9|PE_11|PE_13|PE_14|PD_15|PD_13|
+|Direction Pins|PF_1|PE_8|PC_2|PA_0|PE_7|PG_9|
+|UART Pins|PC_13|PE_3|PE_1|PD_4|PD_1|PD_6|
 
 <div class="datatable-end"></div>
 
@@ -46,52 +46,52 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
 | :------------- |:-------------|:-------------|:-------------|
-|A.1| servo0||Timer 2|
-|A.2| probe||Timer 2|
-|A.8|BTNENC|||
-|A.15| X-CS||Timer 2|
-|B.0| e2heat|he2|Timer 3|
-|B.1| e0heat|he0|Timer 3|
-|B.10| xstop|x-stop|Timer 2|
-|B.12|LCD_SS||Timer 2|
-|B.13|LCD_SCK|||
-|B.14|LCD_MISO||Timer 12|
-|B.15|LCD_MOSI||Timer 8|
-|B.3| E0-CS||Timer 2|
-|B.8| Y-CS||Timer 10|
-|B.9| Z-CS||Timer 11|
-|C.6| wifi4||Timer 8|
-|C.7| wifi3||Timer 3|
-|C.8| fan0|fan|Timer 8|
-|D.10|LCD_RS|||
-|D.11|LCD_EN|||
-|D.12| bed|hbed|Timer 4|
-|D.14| e1heat|he1|Timer 4|
-|E.10| e1stop|e1det||
-|E.12| ystop|y-stop||
-|E.15| e0stop|e0det||
-|E.5| fan1||Timer 9|
-|E.6| fan2||Timer 9|
-|F.11|BTN_EN2|||
-|F.12|LCD_CD|||
-|F.13|KILL|||
-|F.14| wifi5|||
-|F.15| wifi6|||
-|F.3| e0temp|t0||
-|F.4| e1temp|t1||
-|F.5| e2temp|t2||
-|F.6| bedtemp|t3|Timer 10|
-|G.0| wifi1|||
-|G.1| wifi2|||
-|G.10|BTN_EN1|||
-|G.12| E2-CS|||
-|G.15| E1-CS|||
-|G.2|LCD_D4|||
-|G.3|LCD_D5|||
-|G.4| BEEP|||
-|G.5| e2stop|e2det||
-|G.6|LCD_D6|||
-|G.7|LCD_D7|||
-|G.8| zstop|z-stop||
+|PA_1| servo0||Timer 2|
+|PA_2| probe||Timer 2|
+|PA_8|BTNENC|||
+|PA_15| X-CS||Timer 2|
+|PB_0| e2heat|he2|Timer 3|
+|PB_1| e0heat|he0|Timer 3|
+|PB_10| xstop|x-stop|Timer 2|
+|PB_12|LCD_SS||Timer 2|
+|PB_13|LCD_SCK|||
+|PB_14|LCD_MISO||Timer 12|
+|PB_15|LCD_MOSI||Timer 8|
+|PB_3| E0-CS||Timer 2|
+|PB_8| Y-CS||Timer 10|
+|PB_9| Z-CS||Timer 11|
+|PC_6| wifi4||Timer 8|
+|PC_7| wifi3||Timer 3|
+|PC_8| fan0|fan|Timer 8|
+|PD_10|LCD_RS|||
+|PD_11|LCD_EN|||
+|PD_12| bed|hbed|Timer 4|
+|PD_14| e1heat|he1|Timer 4|
+|PE_10| e1stop|e1det||
+|PE_12| ystop|y-stop||
+|PE_15| e0stop|e0det||
+|PE_5| fan1||Timer 9|
+|PE_6| fan2||Timer 9|
+|PF_11|BTN_EN2|||
+|PF_12|LCD_CD|||
+|PF_13|KILL|||
+|PF_14| wifi5|||
+|PF_15| wifi6|||
+|PF_3| e0temp|t0||
+|PF_4| e1temp|t1||
+|PF_5| e2temp|t2||
+|PF_6| bedtemp|t3|Timer 10|
+|PG_0| wifi1|||
+|PG_1| wifi2|||
+|PG_10|BTN_EN1|||
+|PG_12| E2-CS|||
+|PG_15| E1-CS|||
+|PG_2|LCD_D4|||
+|PG_3|LCD_D5|||
+|PG_4| BEEP|||
+|PG_5| e2stop|e2det||
+|PG_6|LCD_D6|||
+|PG_7|LCD_D7|||
+|PG_8| zstop|z-stop||
 
 <div class="datatable-end"></div>

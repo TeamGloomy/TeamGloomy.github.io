@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-Super8
-RXTX: "{ A.10, A.9 }"
+RXTX: "{ PA_10, PA_9 }"
 12864url: "/fly_super8_screen_12864.html"
 screenType: both
 ---

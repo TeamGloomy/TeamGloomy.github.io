@@ -24,11 +24,11 @@ The chip shown below in red, is the MAX31855K 'K' type thermocouple support.
 The following lines should be added to the board.txt file.
 
 ```
-heat.tempSensePins = {C.0, C.1, C.2, C.3}  //regular thermistor pins
-//heat.tempSensePins = {A.3, F.9, F.10, F.7, F.5}  //M5 expansion thermistor pins
-SPI4.pins = {I.1, I.2, NoPin} //MAX31855K SPI connections SCK, MISO, MOSI
+heat.tempSensePins = {PC_0, PC_1, PC_2, PC_3}  //regular thermistor pins
+//heat.tempSensePins = {PA_3, PF_9, PF_10, PF_7, PF_5}  //M5 expansion thermistor pins
+SPI4.pins = {PI_1, PI_2, NoPin} //MAX31855K SPI connections SCK, MISO, MOSI
 heat.spiTempSensorChannel = 4 //Channel 4 should be free, otherwise try other software SPI
-heat.spiTempSensorCSPins = {H.9} //MAX31855K Chip Select
+heat.spiTempSensorCSPins = {PH_9} //MAX31855K Chip Select
 ```
 
 ## Config.g changes
@@ -36,7 +36,7 @@ heat.spiTempSensorCSPins = {H.9} //MAX31855K Chip Select
 To use the Type 'K' Thermocouple on your hotend, use the following code in config.g
 
 ```
-M308 S1 P"H.9" Y"thermocouple-max31855"
+M308 S1 P"PH_9" Y"thermocouple-max31855"
 ```
 
 Make sure to (re)run the PID-tuning, e.g. [M303 T0 S20](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Heaters_tuning).

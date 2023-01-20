@@ -2,7 +2,7 @@
 title: Connecting a Troodon V2 Printer to WiFi 
 tags: []
 keywords: 
-last_updated: 05/10/2022
+last_updated: 18/01/2023
 summary: "How to connect to a Troodon V2 Printer to WiFi"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_connected_wifi_esp32.html
@@ -25,8 +25,8 @@ SerialRXTX: "{ PA_10, PA_9 }"
 heat: "{ PA_0, PF_3 }"
 diagnostics: PC_7
 stepperSPI: 0
-TMC: "{ PF.2, PC.15, PC.14, PC.13, PE.13, PF.9, PF.15 }"
-example: "stepper.TmcDiagPins = { PF.2, PC.15 }"
+TMC: "{ PF_2, PC_15, PC_14, PC_13, PE_13, PF_9, PF_15 }"
+example: "stepper.TmcDiagPins = { PF_2, PC_15 }"
 board: troodon_v2
 onboardDrivers: no
 ---

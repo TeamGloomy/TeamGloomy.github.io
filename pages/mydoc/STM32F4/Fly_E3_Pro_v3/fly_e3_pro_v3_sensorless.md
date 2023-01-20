@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: Fly-E3-Pro-v3
 stepperSPI: 2
-TMC: "{ A.2, B.10, C.4 }"
-example: "stepper.TmcDiagPins = { A.2, B.10 }"
-example2: "stepper.TmcDiagPins = { NoPin, B.10 }"
+TMC: "{ PA_2, PB_10, PC_4 }"
+example: "stepper.TmcDiagPins = { PA_2, PB_10 }"
+example2: "stepper.TmcDiagPins = { NoPin, PB_10 }"
 board: fly_e3_prov3
 onboardDrivers: yes
 driverType: TMC2209

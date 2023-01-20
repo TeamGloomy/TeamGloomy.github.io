@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: SKR-RRF-E3
 image: skr_rrf_e3_bltouch.PNG
-yellowPin: B.0
+yellowPin: PB_0
 yellowName: Servo0
-whitePin: C.5
+whitePin: PC_5
 whiteName: probe
 ---
 

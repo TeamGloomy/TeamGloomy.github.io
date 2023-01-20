@@ -34,13 +34,13 @@ The ender 3 stock display can be connected directly to the EXP header of the SKR
 The following lines should be added to the board.txt file.
 
 ```
-lcd.encoderPinA=B.2
-lcd.encoderPinB=E.7
-lcd.encoderPinSw=E.9
-lcd.lcdCSPin=B.1
+lcd.encoderPinA=PB_2
+lcd.encoderPinB=PE_7
+lcd.encoderPinSw=PE_9
+lcd.lcdCSPin=PB_1
 lcd.spiChannel=4
-SPI4.pins={ E.10, NoPin, E.11 }
-lcd.lcdBeepPin = E.8
+SPI4.pins={ PE_10, NoPin, PE_11 }
+lcd.lcdBeepPin = PE_8
 ```
 
 ## Config.g changes
@@ -65,13 +65,13 @@ Use the table below as a guide.
 |5V|EXP1 Pin 1 - 5V|EXP1 Pin 1 - VCC|
 |GND|EXP1 Pin 2 - GND|EXP1 Pin 2 - GND|
 |LCD Reset|TFT Pin 3 - TX1 (PA_9)|EXP1 Pin 6 - LCD RST|
-|lcd.encoderPinA=E.10|EXP1 Pin 5 - PE10|EXP2 Pin 8 - BTN EN1|
-|lcd.encoderPinB=E.11|EXP1 Pin 3 - PE11|EXP2 Pin 6 - BTN EN2|
-|lcd.encoderPinSw=E.9|EXP1 Pin 9 - PE9|EXP1 Pin 9 - BTN_ENC|
-|lcd.lcdCSPin=B.1|EXP1 Pin 4 - PB1|EXP1 Pin 8 - LCD CS|
-|SPI4.pins={ B.2, NoPin, E.7 }|EXP1 Pin 6 - PB2, EXP1 Pin 8 - PE7|EXP2 Pin 8 - SCK , EXP2 Pin 5 - MOSI|
-|lcd.lcdDCPin = E.8|EXP1 Pin 10 - PE8|EXP1 Pin 7  - LCD A0|
-|led.neopixelPin=B.7|Neopixel Pin 2 - PB7|EXP1 Pin 5 - RED|
+|lcd.encoderPinA=PE_10|EXP1 Pin 5 - PE10|EXP2 Pin 8 - BTN EN1|
+|lcd.encoderPinB=PE_11|EXP1 Pin 3 - PE11|EXP2 Pin 6 - BTN EN2|
+|lcd.encoderPinSw=PE_9|EXP1 Pin 9 - PE9|EXP1 Pin 9 - BTN_ENC|
+|lcd.lcdCSPin=PB_1|EXP1 Pin 4 - PB1|EXP1 Pin 8 - LCD CS|
+|SPI4.pins={ PB_2, NoPin, PE_7 }|EXP1 Pin 6 - PB2, EXP1 Pin 8 - PE7|EXP2 Pin 8 - SCK , EXP2 Pin 5 - MOSI|
+|lcd.lcdDCPin = PE_8|EXP1 Pin 10 - PE8|EXP1 Pin 7  - LCD A0|
+|led.neopixelPin=PB_7|Neopixel Pin 2 - PB7|EXP1 Pin 5 - RED|
 |Mainboard Reset|EXP1 Pin 7 - RST|EXP2 Pin 3 - RST (optional)|
 
 <div class="datatable-end"></div>
@@ -81,14 +81,14 @@ Use the table below as a guide.
 Add the following lines to the board.txt file
 
 ```
-lcd.encoderPinA=E.10
-lcd.encoderPinB=E.11
-lcd.encoderPinSw=E.9
-lcd.lcdCSPin=B.1
+lcd.encoderPinA=PE_10
+lcd.encoderPinB=PE_11
+lcd.encoderPinSw=PE_9
+lcd.lcdCSPin=PB_1
 lcd.spiChannel=4
-SPI4.pins={ B.2, NoPin, E.7 }
-lcd.lcdDCPin = E.8
-led.neopixelPin=B.7
+SPI4.pins={ PB_2, NoPin, PE_7 }
+lcd.lcdDCPin = PE_8
+led.neopixelPin=PB_7
 ```
 
 ## Config.g

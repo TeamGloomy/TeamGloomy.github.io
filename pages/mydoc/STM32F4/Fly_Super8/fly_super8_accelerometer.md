@@ -11,11 +11,11 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-Super8
-SCL: D.3
-SDA: D.5
-SDO: D.4
-CS: D.1
-int: D.0
+SCL: PD_3
+SDA: PD_5
+SDO: PD_4
+CS: PD_1
+int: PD_0
 spiChannel: 3
 location: Accelerometer header
 ---

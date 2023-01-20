@@ -11,11 +11,11 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-407ZG
-SCL: E.8
-SDA: E.7
-SDO: E.10
-CS: E.9
-int: E.14
+SCL: PE_8
+SDA: PE_7
+SDO: PE_10
+CS: PE_9
+int: PE_14
 spiChannel: 5
 location: EXP1 header
 ---

@@ -73,13 +73,13 @@ The following changes should be made to the board.txt file
 
 ```
 //ESP8266 Settings
-8266wifi.espDataReadyPin = E.15;
-8266wifi.TfrReadyPin = B.10;
-8266wifi.espResetPin = E.14;
-8266wifi.csPin = E.12;
-SPI2.pins = {B.3,B.4,B.5}
+8266wifi.espDataReadyPin = PE_15;
+8266wifi.TfrReadyPin = PB_10;
+8266wifi.espResetPin = PE_14;
+8266wifi.csPin = PE_12;
+SPI2.pins = {PB_3,PB_4,PB_5}
 8266wifi.spiChannel = 2
-8266wifi.serialRxTxPins = { G.9, G.14 } ;
+8266wifi.serialRxTxPins = { PG_9, PG_14 } ;
 ```
 
 </div>
@@ -121,14 +121,14 @@ The following changes should be made to the board.txt file
 
 ```
 //ESP8266 Settings
-SPI2.pins={ B.3, B.4, B.5 }
-8266wifi.espDataReadyPin = B.7
-8266wifi.lpcTfrReadyPin = B.6
-8266wifi.espResetPin = A.4
-8266wifi.csPin = G.15
+SPI2.pins={ PB_3, PB_4, PB_5 }
+8266wifi.espDataReadyPin = PB_7
+8266wifi.lpcTfrReadyPin = PB_6
+8266wifi.espResetPin = PA_4
+8266wifi.csPin = PG_15
 8266wifi.spiChannel=2
-serial.aux.rxTxPins = { A.10, A.9 }
-8266wifi.serialRxTxPins = { G.9, G.14 }
+serial.aux.rxTxPins = { PA_10, PA_9 }
+8266wifi.serialRxTxPins = { PG_9, PG_14 }
 ```
 
 </div>

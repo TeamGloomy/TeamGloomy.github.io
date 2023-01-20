@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: SKR3EZ H743
 image: skr3_bltouch.png
-yellowPin: E.5
+yellowPin: PE_5
 yellowName: Servo0
-whitePin: E.4
+whitePin: PE_4
 whiteName: probe
 ---
 

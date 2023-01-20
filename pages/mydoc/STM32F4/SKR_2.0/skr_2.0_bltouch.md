@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: SKR v2.0
 image: skr_2.0_bltouch.png
-yellowPin: E.5
+yellowPin: PE_5
 yellowName: Servo0
-whitePin: E.4
+whitePin: PE_4
 whiteName: probe
 ---
 

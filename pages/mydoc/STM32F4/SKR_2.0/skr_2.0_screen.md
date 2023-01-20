@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: SKR v2.0
-RXTX: "{ A.10, A.9 }"
+RXTX: "{ PA_10, PA_9 }"
 12864url: "/skr_2.0_screen_12864.html"
 screenType: both
 ---

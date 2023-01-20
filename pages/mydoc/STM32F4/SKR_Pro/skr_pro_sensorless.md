@@ -13,15 +13,15 @@ datatable: true
 boardname: SKR Pro v1.1 or v1.2
 stepperSPI: 2
 spiInfo: ""
-TMC: "{ B.10, E.12, G.8, E.15, E.10, G.5 }"
-example: "stepper.TmcDiagPins = { B.10, E.12 }"
-example2: "stepper.TmcDiagPins = { NoPin, E.12 }"
+TMC: "{ PB_10, PE_12, PG_8, PE_15, PE_10, PG_5 }"
+example: "stepper.TmcDiagPins = { PB_10, PE_12 }"
+example2: "stepper.TmcDiagPins = { NoPin, PE_12 }"
 board: biquskrpro_1.1
 onboardDrivers: no
-GPIO15: B.12
-GPIO13: B.15
-GPIO12: B.14
-GPIO14: B.13
+GPIO15: PB_12
+GPIO13: PB_15
+GPIO12: PB_14
+GPIO14: PB_13
 adapterRXTX: WiFi
 ---
 

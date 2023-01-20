@@ -11,11 +11,11 @@ comments: false
 toc: false
 datatable: true
 boardname: BTT Octopus v1.1 F429 Version
-SCL: H.13
-SDA: I.9
-SDO: I.8
-CS: H.8
-int: H.7
+SCL: PH_13
+SDA: PI_9
+SDO: PI_8
+CS: PH_8
+int: PH_7
 spiChannel: 5
 location:  Extension header 0, 1 and 2
 ---

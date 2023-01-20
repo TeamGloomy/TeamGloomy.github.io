@@ -266,7 +266,7 @@ A macro to enable the fysetc mini v2.1 and fade up the display/set Button colour
 ; Turn off backlight
 m150 X2 R0 U0 B0 S3 F0
 ; Configure reset pin
-M950 P1 C"PI.4" 						; Modify this pin to suit installation (or comment out for Duet boards)
+M950 P1 C"PI_4" 						; Modify this pin to suit installation (or comment out for Duet boards)
 ; hardware reset of LCD
 M42 P1 S0
 G4 P500

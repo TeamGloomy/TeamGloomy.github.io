@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: SKR-RRF-E3
-RXTX: "{ A.10, A.9 }"
+RXTX: "{ PA_10, PA_9 }"
 12864url: "/skr_rrf_e3_screen_12864.html"
 screenType: both
 ---

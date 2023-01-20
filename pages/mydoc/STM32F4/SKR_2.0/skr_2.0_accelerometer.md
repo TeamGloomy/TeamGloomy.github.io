@@ -11,11 +11,11 @@ comments: false
 toc: false
 datatable: true
 boardname: SKR v2.0
-SCL: C.5
-SDA: B.0
-SDO: B.1
-CS: E.10
-int: E.9
+SCL: PC_5
+SDA: PB_0
+SDO: PB_1
+CS: PE_10
+int: PE_9
 spiChannel: 5
 location: EXP1 header
 ---

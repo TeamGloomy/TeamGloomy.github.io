@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: GTR
 image: gtr_bltouch.png
-yellowPin: B.11
+yellowPin: PB_11
 yellowName: Servo0
-whitePin: H.11
+whitePin: PH_11
 whiteName: probe
 ---
 

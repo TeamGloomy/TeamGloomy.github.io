@@ -2,7 +2,7 @@
 title: Connecting a screen to a Troodon V2 Printer
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 18/01/2023
 summary: "How to connect a serial screen to a Troodon V2 Printer"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_screen.html
@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Troodon V2 Printer
-RXTX: "{ D.9, D.8 }"
+RXTX: "{ PD_9, PD_8 }"
 12864url: "/troodon_v2_screen_12864.html"
 screenType: both
 ---

@@ -11,11 +11,11 @@ comments: false
 toc: false
 datatable: true
 boardname: SKR Pro v1.1 or v1.2
-SCL: C.10
-SDA: C.12
-SDO: C.11
-CS: A.15
-int: B.7
+SCL: PC_10
+SDA: PC_12
+SDO: PC_11
+CS: PA_15
+int: PB_7
 spiChannel: 2
 location: SPI and I2C header
 ---

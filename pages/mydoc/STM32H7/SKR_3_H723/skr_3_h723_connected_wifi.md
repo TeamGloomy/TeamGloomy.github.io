@@ -16,18 +16,18 @@ firmware: firmware-stm32h723-wifi.bin
 wifi: both
 module: small
 schematic: 
-DRP: B.10
-TRP: B.11
-ERP: C.14
+DRP: PB_10
+TRP: PB_11
+ERP: PC_14
 CS: 
-ESPRXTX: "{ D.9, D.8 }"
-SerialRXTX: "{ A.10, A.9 }"
-heat: "{ A.1, A.2, A.3 }"
-diagnostics: A.13
+ESPRXTX: "{ PD_9, PD_8 }"
+SerialRXTX: "{ PA_10, PA_9 }"
+heat: "{ PA_1, PA_2, PA_3 }"
+diagnostics: PA_13
 stepperSPI: 3
-spiInfo: "{ E.14, E.15, E.13 }"
-TMC: "{ C.1, C.3, C.0, C.2, A.0 }"
-example: C.1 and C.3
+spiInfo: "{ PE_14, PE_15, PE_13 }"
+TMC: "{ PC_1, PC_3, PC_0, PC_2, PA_0 }"
+example: PC_1 and PC_3
 board: biquskr_3_h723
 onboardDrivers: no
 ---

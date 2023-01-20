@@ -24,10 +24,10 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0|1|2|3|4|5|6|7|8|
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|:-----|:--|:--|:--|
-|Enable Pins|E.1|G.12|D.7|D.4|D.0|G.8|G.5|G.2|D.9|
-|Step Pins|B.9|B.8|A.8|C.7|C.6|D.15|D.14|D.13|D.12|
-|Direction Pins|E.0|G.11|D.6|D.3|A.15|G.7|G.4|D.11|D.8|
-|UART Pins|G.13|G.10|D.5|D.1|A.14|G.6|G.3|D.10|B.12|
+|Enable Pins|PE_1|PG_12|PD_7|PD_4|PD_0|PG_8|PG_5|PG_2|PD_9|
+|Step Pins|PB_9|PB_8|PA_8|PC_7|PC_6|PD_15|PD_14|PD_13|PD_12|
+|Direction Pins|PE_0|PG_11|PD_6|PD_3|PA_15|PG_7|PG_4|PD_11|PD_8|
+|UART Pins|PG_13|PG_10|PD_5|PD_1|PA_14|PG_6|PG_3|PD_10|PB_12|
 
 <div class="datatable-end"></div>
 
@@ -40,58 +40,58 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
 | :------------- |:-------------|:-------------|:-------------|
-|A.0|e0temp|t0|Timer 2|
-|A.1|fan3||Timer 2|
-|A.2|fan2||Timer 2|
-|A.3|dljc||Timer 2|
-|A.9|TX1|||
-|A.10|RX1|||
-|B.2|LCD_CD|||
-|B.10|BEEP||Timer 2|
-|B.11|fan5||Timer 2|
-|B.13|LCD_SCK|||
-|B.14|LCD_EN||Timer 12|
-|B.15|LCD_MOSI||Timer 8|
-|C.0|e2temp|t2||
-|C.1|e1temp|t1||
-|C.2|xmax|xstopmax||
-|C.3|xmin|xstop||
-|C.4|BTN_EN2|||
-|C.5|BTN_EN1|||
-|C.8|SDD0||Timer 8|
-|C.9|SDD1||Timer 8|
-|C.10|SDD2|||
-|C.11|SDD3|||
-|C.12|SDSCK|||
-|C.13|SDCD|||
-|C.14|z3|||
-|C.15|zmax|zstopmax||
-|D.2|SDCMD|||
-|E.2|bed|hbed||
-|E.3|e5heat|he5||
-|E.4|e4heat|he4||
-|E.5|e3heat|he3|Timer 9|
-|E.6|e2heat|he2|Timer 9|
-|E.7|LCD_D7|||
-|E.8|LCD_D6|||
-|E.9|LCD_D5|||
-|E.10|LCD_D4|||
-|E.11|servo0|||
-|E.12|LCD_RS|||
-|E.13|fan4|||
-|E.14|LCD_EN|||
-|E.15|BTN_ENC|||
-|F.0|zmin|zstop||
-|F.2|ymin|ystop||
-|F.3|bedtemp|tb||
-|F.1|ymax|ystopmax||
-|F.4|e5temp|t5||
-|F.5|e4temp|t4||
-|F.6|e1heat|he1|Timer 10|
-|F.7|e0heat|he0|Timer 11|
-|F.8|fan0|fan|Timer 13|
-|F.9|fan1||Timer 14|
-|F.10|e3temp|t3||
-|F.11|LCD_SS|||
+|PA_0|e0temp|t0|Timer 2|
+|PA_1|fan3||Timer 2|
+|PA_2|fan2||Timer 2|
+|PA_3|dljc||Timer 2|
+|PA_9|TX1|||
+|PA_10|RX1|||
+|PB_2|LCD_CD|||
+|PB_10|BEEP||Timer 2|
+|PB_11|fan5||Timer 2|
+|PB_13|LCD_SCK|||
+|PB_14|LCD_EN||Timer 12|
+|PB_15|LCD_MOSI||Timer 8|
+|PC_0|e2temp|t2||
+|PC_1|e1temp|t1||
+|PC_2|xmax|xstopmax||
+|PC_3|xmin|xstop||
+|PC_4|BTN_EN2|||
+|PC_5|BTN_EN1|||
+|PC_8|SDD0||Timer 8|
+|PC_9|SDD1||Timer 8|
+|PC_10|SDD2|||
+|PC_11|SDD3|||
+|PC_12|SDSCK|||
+|PC_13|SDCD|||
+|PC_14|z3|||
+|PC_15|zmax|zstopmax||
+|PD_2|SDCMD|||
+|PE_2|bed|hbed||
+|PE_3|e5heat|he5||
+|PE_4|e4heat|he4||
+|PE_5|e3heat|he3|Timer 9|
+|PE_6|e2heat|he2|Timer 9|
+|PE_7|LCD_D7|||
+|PE_8|LCD_D6|||
+|PE_9|LCD_D5|||
+|PE_10|LCD_D4|||
+|PE_11|servo0|||
+|PE_12|LCD_RS|||
+|PE_13|fan4|||
+|PE_14|LCD_EN|||
+|PE_15|BTN_ENC|||
+|PF_0|zmin|zstop||
+|PF_2|ymin|ystop||
+|PF_3|bedtemp|tb||
+|PF_1|ymax|ystopmax||
+|PF_4|e5temp|t5||
+|PF_5|e4temp|t4||
+|PF_6|e1heat|he1|Timer 10|
+|PF_7|e0heat|he0|Timer 11|
+|PF_8|fan0|fan|Timer 13|
+|PF_9|fan1||Timer 14|
+|PF_10|e3temp|t3||
+|PF_11|LCD_SS|||
 
 <div class="datatable-end"></div>

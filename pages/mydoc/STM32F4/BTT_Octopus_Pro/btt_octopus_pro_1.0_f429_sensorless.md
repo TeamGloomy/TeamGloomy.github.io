@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: BTT Octopus Pro v1.0 F429 Version
 stepperSPI: 0
-TMC: "{ G.6, G.9, G.10, G.11, G.12, G.13, G.14, G.15 }"
-example: "stepper.TmcDiagPins = { G.6, G.9 }"
-example2: "stepper.TmcDiagPins = { NoPin, G.9 }"
+TMC: "{ PG_6, PG_9, PG_10, PG_11, PG_12, PG_13, PG_14, PG_15 }"
+example: "stepper.TmcDiagPins = { PG_6, PG_9 }"
+example2: "stepper.TmcDiagPins = { NoPin, PG_9 }"
 board: biqoctopuspro_1.0
 onboardDrivers: no
 ---

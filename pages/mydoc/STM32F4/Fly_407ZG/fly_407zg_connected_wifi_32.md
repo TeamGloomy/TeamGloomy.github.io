@@ -65,13 +65,13 @@ The table below shows the pins required on the ESP32 and what they are connected
 
 | ESP32 Pin       | Fly-407ZG Pin       | Resistor Value  |
 | :-------------: |:-------------:| :---------------:|
-| RST           | B.2 on EXP2         | 330R           |
-| VSPI SS/GPIO5     | F.11 on EXP2         | None           |
-| VSPI MOSI/GPIO23   | B.15 on EXP2         | None             |
-| VSPI MISO/GPIO19   | B.14 on EXP2         | None             |
-| VAPI SCK/GPIO18  | B.13 on EXP2         | None             |
-| ESP_DATA_Ready/GPIO0   | C.5 on EXP2         | None             |
-| LPC_DATA_Ready/GPIO4   | C.4 on EXP2         | None            |
+| RST           | PB_2 on EXP2         | 330R           |
+| VSPI SS/GPIO5     | PF_11 on EXP2         | None           |
+| VSPI MOSI/GPIO23   | PB_15 on EXP2         | None             |
+| VSPI MISO/GPIO19   | PB_14 on EXP2         | None             |
+| VAPI SCK/GPIO18  | PB_13 on EXP2         | None             |
+| ESP_DATA_Ready/GPIO0   | PC_5 on EXP2         | None             |
+| LPC_DATA_Ready/GPIO4   | PC_4 on EXP2         | None            |
 | VIN(5v)   | 5v on EXP2          | None             |
 | GND   | GND on EXP2          | None             |
 
@@ -96,19 +96,19 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 ```
 //Config for Fly-407ZG
 board = fly_f407zg
-8266wifi.espDataReadyPin = C.5
-8266wifi.TfrReadyPin = C.4
-8266wifi.espResetPin = B.2
-8266wifi.csPin = F.11
-heat.tempSensePins = { F.3, A.0, C.1, C.0, F.10, F.5, F.4 }
+8266wifi.espDataReadyPin = PC_5
+8266wifi.TfrReadyPin = PC_4
+8266wifi.espResetPin = PB_2
+8266wifi.csPin = PF_11
+heat.tempSensePins = { PF_3, PA_0, PC_1, PC_0, PF_10, PF_5, PF_4 }
 ```
 
 ### Updating the ESP32 by RRF
 
 If you have an ESP32 WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
 ```
-8266wifi.serialRxTxPins = { A.10, A.9 }
-serial.aux.rxTxPins = { nopin, nopin }
+8266wifi.serialRxTxPins = { PA_10, PA_9 }
+serial.aux.rxTxPins = { NoPin, NoPin }
 ```
 
 ### Smart Drivers

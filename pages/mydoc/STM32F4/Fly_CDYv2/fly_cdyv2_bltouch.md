@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: Fly-CDYv2
 image: ""
-yellowPin: E.6
+yellowPin: PE_6
 yellowName: Servo0
-whitePin: C.2
+whitePin: PC_2
 whiteName: probe
 ---
 

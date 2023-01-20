@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: Fly-Super8Pro H743
 image: ""
-yellowPin: C.6
+yellowPin: PC_6
 yellowName: Servo
-whitePin: C.3
+whitePin: PC_3
 whiteName: probe
 ---
 

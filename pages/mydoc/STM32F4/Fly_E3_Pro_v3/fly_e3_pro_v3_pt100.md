@@ -28,9 +28,9 @@ If your board has the chip shown below in red, you have 'K' type thermocouple su
 The following lines should be added to the board.txt file.
 
 ```
-SPI3.pins = { D.14, D.12, D.13 }
+SPI3.pins = { PD_14, PD_12, PD_13 }
 heat.spiTempSensorChannel = 3
-heat.spiTempSensorCSPins = { D.15, C.7 }
+heat.spiTempSensorCSPins = { PD_15, PC_7 }
 ```
 
 ## Config.g changes
@@ -51,7 +51,7 @@ To use the PT100 on your hotend, use the following code in config.g
 If you are in a country where the mains frequency is 50Hz, change the F60 to F50 (if you don't know, look [here](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf))
 
 ```
-M308 S1 P"PD15" Y"rtd-max31865" F60 R430 W3
+M308 S1 P"PD_15" Y"rtd-max31865" F60 R430 W3
 ```
 
 {% include warning.html content="Make sure you include the R430 as the Fly-E3-Pro-v3 uses a different reference resistor than expected" %}
@@ -61,5 +61,5 @@ M308 S1 P"PD15" Y"rtd-max31865" F60 R430 W3
 To use the Type 'K' Thermocouple on your hotend, use the following code in config.g
 
 ```
-M308 S1 P"C7" Y"thermocouple-max31855"
+M308 S1 P"PC_7" Y"thermocouple-max31855"
 ```

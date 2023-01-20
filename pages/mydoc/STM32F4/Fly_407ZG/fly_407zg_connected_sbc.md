@@ -14,13 +14,13 @@ boardname: Fly-407ZG
 mcu: STM32F407VGT6
 firmware: firmware-stm32f4-sbc.bin
 schematic: https://github.com/Mellow-3D/FLYF407ZG/blob/master/picture/Schematic.pdf
-BCM11: B.13
-BCM9: B.14
-BCM10: B.15
-BCM8: F.11
-BCM25: B.2
-heat: "{ F.3, A.0, C.1, C.0, F.10, F.5, F.4 }"
-diagnostics: A.13
+BCM11: PB_13
+BCM9: PB_14
+BCM10: PB_15
+BCM8: PF_11
+BCM25: PB_2
+heat: "{ PF_3, PA_0, PC_1, PC_0, PF_10, PF_5, PF_4 }"
+diagnostics: PA_13
 stepperSPI: 0
 TMC: 
 example: 

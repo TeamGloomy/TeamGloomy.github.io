@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: GTR
-RXTX: "{ D.9, D.8 }"
+RXTX: "{ PD_9, PD_8 }"
 12864url: "/gtr_screen_12864.html"
 screenType: both
 ---

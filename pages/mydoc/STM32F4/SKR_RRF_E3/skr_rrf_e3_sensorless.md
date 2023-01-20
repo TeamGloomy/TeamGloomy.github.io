@@ -13,9 +13,9 @@ datatable: true
 boardname: SKR-RRF-E3
 smartdrivers: 4
 stepperSPI: 2
-TMC: "{ C.0, C.1, C.2, C.3, B.11, B.10 }"
-example: "stepper.TmcDiagPins = { C.0, C.1 }"
-example2: "stepper.TmcDiagPins = { NoPin, C.1 }"
+TMC: "{ PC_0, PC_1, PC_2, PC_3, PB_11, PB_10 }"
+example: "stepper.TmcDiagPins = { PC_0, PC_1 }"
+example2: "stepper.TmcDiagPins = { NoPin, PC_1 }"
 board: biquskr_rrf_e3_1.1
 onboardDrivers: yes
 driverType: TMC2209

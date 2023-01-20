@@ -30,10 +30,10 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0|1|2|3|4|5|6|7|8|9|10|
 | :---|:----|:----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Enable Pins|F.1|E.4|B.9|G.13|D.7|D.2|F.8|G.2|F.14|E.8|I.0|
-|Step Pins|C.15|E.3|B.8|G.12|D.6|D.1|F.3|D.14|E.12|G.0|H.12|
-|Direction Pins|F.0|E.2|B.7|G.11|D.5|D.0|G.3|D.11|E.10|G.1|H.15|
-|UART Pins|C.14|E.1|B.5|G.10|D.4|C.12|G.4|E.15|E.7|F.15|H.14|
+|Enable Pins|PF_1|PE_4|PB_9|PG_13|PD_7|PD_2|PF_8|PG_2|PF_14|PE_8|PI_0|
+|Step Pins|PC_15|PE_3|PB_8|PG_12|PD_6|PD_1|PF_3|PD_14|PE_12|PG_0|PH_12|
+|Direction Pins|PF_0|PE_2|PB_7|PG_11|PD_5|PD_0|PG_3|PD_11|PE_10|PG_1|PH_15|
+|UART Pins|PC_14|PE_1|PB_5|PG_10|PD_4|PC_12|PG_4|PE_15|PE_7|PF_15|PH_14|
 
 <div class="datatable-end"></div>
 
@@ -46,78 +46,78 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
 | :------------- |:-------------|:-------------|:-------------|
-|A.1| e1heat|heat1|Timer 2
-|A.15|BTNENC||Timer 2|
-|A.2| bed|hbed|Timer 2|
-|A.3| e3temp|Temp_M1|Timer 2|
-|A.8|LCD_RS|||
-|B.0| e2heat|heat2|Timer 3|
-|B.1| e0heat|heat0|Timer 3|
-|B.10|LCD_CD||Timer 2|
-|B.11|servo0||Timer 2|
-|B.12|LCD_SS|||
-|B.13|LCD_SCK|||
-|B.14|LCD_MISO||Timer 12|
-|B.15|LCD_MOSI||Timer 8|
-|B.3| SCK||Timer 2|
-|B.5| Z-CS||Timer 3|
-|B.6| MISO||Timer 4|
-|C.0| bedtemp|t3||
-|C.1| e0temp|t0||
-|C.10|LCD_EN|||
-|C.11|BEEP|||
-|C.12|E2-CS|||
-|C.13| ystop|y-stop||
-|C.14|X-CS|||
-|C.2| e1temp|t1||
-|C.3| e2temp|t2||
-|C.5| wifi5|||
-|C.6| wifi4||Timer 8|
-|C.7| wifi3||Timer 3|
-|C.8| fan2||Timer 8|
-|C.9| fan_M4||Timer 8|
-|D.10|BTN_EN1|||
-|D.12|e5heat|heat_M3|Timer 4|
-|D.13|e4heat|heat_M2|Timer 4|
-|D.15|e3heat|heat_M1|Timer 4|
-|D.3| e2stop|e2det||
-|D.4| E1-CS|||
-|E.0| zstop|z-stop||
-|E.1| Y-CS|||
-|E.11|fan_M3|||
-|E.13|e6heat|heat_M4||
-|E.14| fan_M5|||
-|E.5| fan0||Timer 9|
-|E.6| fan1||Timer 9|
-|E.9| fan_M2|||
-|F.10|e5temp|Temp_M3||
-|F.11|wifi1|||
-|F.12|e7stop|M5_Stop||
-|F.13|Neopixel|||
-|F.2| xstop|x-stop||
-|F.4| e4stop|M2_Stop||
-|F.5| e7temp|Temp_M5||
-|F.6| e5stop|M3_Stop|Timer 10|
-|F.7| e6temp|Temp_M4|Timer 11|
-|F.9| e4temp|Temp_M2|Timer 14|
-|G.10|E0-CS|||
-|G.14|e0stop|e0det||
-|G.15| MOSI|||
-|G.5|LCD_D7|||
-|G.6|LCD_D6|||
-|G.7|LCD_D5|||
-|G.8|LCD_D4|||
-|G.9| e1stop|e1det||
-|H.10|BTN_EN2|||
-|H.11|probe|||
-|H.2| KCS|||
-|H.6| EI2||Timer 12|
-|I.1| KSCK|||
-|I.11|EI1|||
-|I.2| KMOSI|||
-|I.4| e3stop|M1_Stop||
-|I.5| fan_M1||Timer 8|
-|I.6| e7heat|heat_M5|Timer 8|
-|I.7| e6stop|M4_Stop||
+|PA_1| e1heat|heat1|Timer 2
+|PA_15|BTNENC||Timer 2|
+|PA_2| bed|hbed|Timer 2|
+|PA_3| e3temp|Temp_M1|Timer 2|
+|PA_8|LCD_RS|||
+|PB_0| e2heat|heat2|Timer 3|
+|PB_1| e0heat|heat0|Timer 3|
+|PB_10|LCD_CD||Timer 2|
+|PB_11|servo0||Timer 2|
+|PB_12|LCD_SS|||
+|PB_13|LCD_SCK|||
+|PB_14|LCD_MISO||Timer 12|
+|PB_15|LCD_MOSI||Timer 8|
+|PB_3| SCK||Timer 2|
+|PB_5| Z-CS||Timer 3|
+|PB_6| MISO||Timer 4|
+|PC_0| bedtemp|t3||
+|PC_1| e0temp|t0||
+|PC_10|LCD_EN|||
+|PC_11|BEEP|||
+|PC_12|E2-CS|||
+|PC_13| ystop|y-stop||
+|PC_14|X-CS|||
+|PC_2| e1temp|t1||
+|PC_3| e2temp|t2||
+|PC_5| wifi5|||
+|PC_6| wifi4||Timer 8|
+|PC_7| wifi3||Timer 3|
+|PC_8| fan2||Timer 8|
+|PC_9| fan_M4||Timer 8|
+|PD_10|BTN_EN1|||
+|PD_12|e5heat|heat_M3|Timer 4|
+|PD_13|e4heat|heat_M2|Timer 4|
+|PD_15|e3heat|heat_M1|Timer 4|
+|PD_3| e2stop|e2det||
+|PD_4| E1-CS|||
+|PE_0| zstop|z-stop||
+|PE_1| Y-CS|||
+|PE_11|fan_M3|||
+|PE_13|e6heat|heat_M4||
+|PE_14| fan_M5|||
+|PE_5| fan0||Timer 9|
+|PE_6| fan1||Timer 9|
+|PE_9| fan_M2|||
+|PF_10|e5temp|Temp_M3||
+|PF_11|wifi1|||
+|PF_12|e7stop|M5_Stop||
+|PF_13|Neopixel|||
+|PF_2| xstop|x-stop||
+|PF_4| e4stop|M2_Stop||
+|PF_5| e7temp|Temp_M5||
+|PF_6| e5stop|M3_Stop|Timer 10|
+|PF_7| e6temp|Temp_M4|Timer 11|
+|PF_9| e4temp|Temp_M2|Timer 14|
+|PG_10|E0-CS|||
+|PG_14|e0stop|e0det||
+|PG_15| MOSI|||
+|PG_5|LCD_D7|||
+|PG_6|LCD_D6|||
+|PG_7|LCD_D5|||
+|PG_8|LCD_D4|||
+|PG_9| e1stop|e1det||
+|PH_10|BTN_EN2|||
+|PH_11|probe|||
+|PH_2| KCS|||
+|PH_6| EI2||Timer 12|
+|PI_1| KSCK|||
+|PI_11|EI1|||
+|PI_2| KMOSI|||
+|PI_4| e3stop|M1_Stop||
+|PI_5| fan_M1||Timer 8|
+|PI_6| e7heat|heat_M5|Timer 8|
+|PI_7| e6stop|M4_Stop||
 
 <div class="datatable-end"></div>

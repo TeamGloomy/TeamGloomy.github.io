@@ -16,25 +16,25 @@ firmware: firmware-stm32f4-wifi.bin
 wifi: ESP32
 module: large
 schematic: https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf
-DRP: G.10
-TRP: F.11
-ERP: F.12
+DRP: PG_10
+TRP: PF_11
+ERP: PF_12
 CS:
-ESPRXTX: "{ D.9, D.8 }"
-SerialRXTX: "{ A.10, A.9 }"
-heat: "{ F.6, F.3, F.4, F.5 }"
+ESPRXTX: "{ PD_9, PD_8 }"
+SerialRXTX: "{ PA_10, PA_9 }"
+heat: "{ PF_6, PF_3, PF_4, PF_5 }"
 diagnostics: ""
 smartdrivers: 5
 stepperSPI: 2
 spiInfo: ""
-TMC: "{ B.10, E.12, G.8, E.15, E.10, G.5 }"
-example: B.10 and E.12
+TMC: "{ PB_10, PE_12, PG_8, PE_15, PE_10, PG_5 }"
+example: PB_10 and PE_12
 board: biquskrpro_1.1
 onboardDrivers: no
-GPIO15: B.12
-GPIO13: B.15
-GPIO12: B.14
-GPIO14: B.13
+GPIO15: PB_12
+GPIO13: PB_15
+GPIO12: PB_14
+GPIO14: PB_13
 adapterRXTX: WiFi
 image: skr_pro_esp32_connection.jpg
 ---

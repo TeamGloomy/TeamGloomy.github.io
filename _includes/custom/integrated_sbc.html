@@ -32,7 +32,7 @@ On the row near the EXP headers, ensure that switches 1 to 4 are in the on posit
 ### Additional Cable
 
 An additional cable requires adding to allow the connection between the STM32 and the SBC to function correctly.  
-It should be added as shown below between the 3rd from the right pin of the small 7 pin connector to the left of the Core-Fan header and the second pin from the left on the top row of EXP2 (PB.3).  
+It should be added as shown below between the 3rd from the right pin of the small 7 pin connector to the left of the Core-Fan header and the second pin from the left on the top row of EXP2 (PPB_3).  
 {% include image.html file="fly_gemini_cable.png" alt="Fly-Gemini-V1 Additional Cable" caption="Fly-Gemini-V1 Additional Cable" %}  {% endif %}
 
 ## STM32 Setup
@@ -78,10 +78,10 @@ Where X is the number of TMC5160 drivers fitted. The drivers must be continuous 
 **Supported by only the TMC2209, TMC2226 and TMC5160**
 If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
-stepper.TmcDiagPins = {A.3, B.1, B.10}
+stepper.TmcDiagPins = {PA_3, PB_1, PB_10}
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
-For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include A.6 and B.1 in your board.txt file.  
+For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include PA_6 and PB_1 in your board.txt file.  
 For more information about setting up sensorless homing, please read [this](sensorless.html){:target="_blank"}.  
 
 ### Board.txt Location

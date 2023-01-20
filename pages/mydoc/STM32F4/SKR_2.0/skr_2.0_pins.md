@@ -24,10 +24,10 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0|1|2|3|4|
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
-|Enable Pins|E.3| D.6| D.1| C.7| D.13|
-|Step Pins|E.2| D.5| A.15| D.15| D.11|
-|Direction Pins|E.1| D.4| A.8| D.14| D.10|
-|UART Pins|E.0| D.3| D.0| C.6| D.12|
+|Enable Pins|PE_3| PD_6| PD_1| PC_7| PD_13|
+|Step Pins|PE_2| PD_5| PA_15| PD_15| PD_11|
+|Direction Pins|PE_1| PD_4| PA_8| PD_14| PD_10|
+|UART Pins|PE_0| PD_3| PD_0| PC_6| PD_12|
 
 <div class="datatable-end"></div>
 
@@ -40,53 +40,53 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
 | :------------- |:-------------|:-------------|:-------------|
-|A.0|e1stop|e1det|Timer 2|
-|A.1|bedtemp|tb|Timer 2|
-|A.13|LED|||
-|A.14|MISO|||
-|A.2|e0temp|th0|Timer 2|
-|A.3|e1temp|th1|Timer 2|
-|A.4|LCD_SS|||
-|A.5|LCD_SCK||Timer 8|
-|A.6|LCD_MISO||Timer 13|
-|A.7|LCD_MOSI||Timer 14|
-|A.9|TX1|tft-tx||
-|A.10|RX1|tft-rx||
-|B.0|BTN_ENC||Timer 3|
-|B.1|LCD_EN||Timer 3|
-|B.2|BTN_EN2|||
-|B.3|e0heat|heat0|Timer 2|
-|B.4|e1heat|heat1|Timer 3|
-|B.5|fan2||Timer 3|
-|B.6|fan1||Timer 4|
-|B.7|fan0|fan|Timer 4|
-|B.8|SCL1||Timer 10|
-|B.9|SDA1||Timer 11|
-|C.0|zstop|z-stop||
-|C.1|xstop|x-stop||
-|C.13|SP|||
-|C.15|PWRDET|||
-|C.2|e0stop|e0det||
-|C.3|ystop|y-stop||
-|C.4|LCD_CD|||
-|C.5|BEEP|||
-|C.6|E0-CS||Timer 8|
-|D.0|Z-CS|||
-|D.3|Y-CS|||
-|D.7|bed|hbed||
-|D.12|E1-CS||Timer 4|
-|E.0|X-CS|||
-|E.10|LCD_D4|||
-|E.11|LCD_D5|||
-|E.12|LCD_D6|||
-|E.13|LCD_D7|||
-|E.14|MOSI|||
-|E.15|SCK|||
-|E.4|probe|||
-|E.5|servo0||Timer 9|
-|E.6|Neopixel||Timer 9|
-|E.7|BTN_EN1|||
-|E.8|PSON|||
-|E.9|LCD_RS|||
+|PA_0|e1stop|e1det|Timer 2|
+|PA_1|bedtemp|tb|Timer 2|
+|PA_13|LED|||
+|PA_14|MISO|||
+|PA_2|e0temp|th0|Timer 2|
+|PA_3|e1temp|th1|Timer 2|
+|PA_4|LCD_SS|||
+|PA_5|LCD_SCK||Timer 8|
+|PA_6|LCD_MISO||Timer 13|
+|PA_7|LCD_MOSI||Timer 14|
+|PA_9|TX1|tft-tx||
+|PA_10|RX1|tft-rx||
+|PB_0|BTN_ENC||Timer 3|
+|PB_1|LCD_EN||Timer 3|
+|PB_2|BTN_EN2|||
+|PB_3|e0heat|heat0|Timer 2|
+|PB_4|e1heat|heat1|Timer 3|
+|PB_5|fan2||Timer 3|
+|PB_6|fan1||Timer 4|
+|PB_7|fan0|fan|Timer 4|
+|PB_8|SCL1||Timer 10|
+|PB_9|SDA1||Timer 11|
+|PC_0|zstop|z-stop||
+|PC_1|xstop|x-stop||
+|PC_13|SP|||
+|PC_15|PWRDET|||
+|PC_2|e0stop|e0det||
+|PC_3|ystop|y-stop||
+|PC_4|LCD_CD|||
+|PC_5|BEEP|||
+|PC_6|E0-CS||Timer 8|
+|PD_0|Z-CS|||
+|PD_3|Y-CS|||
+|PD_7|bed|hbed||
+|PD_12|E1-CS||Timer 4|
+|PE_0|X-CS|||
+|PE_10|LCD_D4|||
+|PE_11|LCD_D5|||
+|PE_12|LCD_D6|||
+|PE_13|LCD_D7|||
+|PE_14|MOSI|||
+|PE_15|SCK|||
+|PE_4|probe|||
+|PE_5|servo0||Timer 9|
+|PE_6|Neopixel||Timer 9|
+|PE_7|BTN_EN1|||
+|PE_8|PSON|||
+|PE_9|LCD_RS|||
 
 <div class="datatable-end"></div>

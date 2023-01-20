@@ -41,14 +41,14 @@ You will also need a board.txt file in the sys folder. Below are the contents th
 ```
 //Config for BIQU SKR v2.0
 board = fysetc_spider
-leds.diagnostic = D.3
-8266wifi.espDataReadyPin = D.0
-8266wifi.TfrReadyPin = D.1
-8266wifi.espResetPin = A.8
-8266wifi.csPin = C.9
+leds.diagnostic = PD_3
+8266wifi.espDataReadyPin = PD_0
+8266wifi.TfrReadyPin = PD_1
+8266wifi.espResetPin = PA_8
+8266wifi.csPin = PC_9
 8266wifi.spiChannel = 2
-serial.aux.rxTxPins = {A.10, A.9};
-8266wifi.serialRxTxPins = {C.7, C.6};
+serial.aux.rxTxPins = {PA_10, PA_9};
+8266wifi.serialRxTxPins = {PC_7, PC_6};
 ```
 
 ### Smart Drivers
@@ -77,10 +77,10 @@ Where X is the number of TMC5160 drivers fitted. The drivers must be continuous 
 **Supported by only the TMC2209, TMC2226 and TMC5160**
 If using sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
 ```
-stepper.TmcDiagPins = { G.6, G.9, G.10, G.11, G.12, G.13, G.14, G.15 }
+stepper.TmcDiagPins = { PG_6, PG_9, PG_10, PG_11, PG_12, PG_13, PG_14, PG_15 }
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
-For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include G.6 and G.9 in your board.txt file.  
+For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include PG_6 and PG_9 in your board.txt file.  
 For more information about setting up sensorless homing, please read [this](sensorless.html){:target="_blank"}.  
 
 ### Driver Diag Pin

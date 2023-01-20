@@ -14,17 +14,17 @@ boardname: SKR Pro v1.1 and v1.2
 mcu: STM32F407VGT6
 firmware: firmware-stm32f4-sbc.bin
 schematic: https://github.com/bigtreetech/BIGTREETECH-SKR-PRO-V1.1/blob/master/manual/SKR-PRO-V1.1-Pin.pdf
-BCM11: B.13
-BCM9: B.14
-BCM10: B.15
-BCM8: B.12
-BCM25: F.12
-heat: "{ F.6, F.3, F.4, F.5 }"
+BCM11: PB_13
+BCM9: PB_14
+BCM10: PB_15
+BCM8: PB_12
+BCM25: PF_12
+heat: "{ PF_6, PF_3, PF_4, PF_5 }"
 diagnostics: 
 stepperSPI: 2
-spiInfo: "{ E.15, A.14, E.14 }"
-TMC: "{ B.10, E.12, G.8, E.15, E.10, G.5 }"
-example: B.10 and E.12
+spiInfo: "{ PE_15, PA_14, PE_14 }"
+TMC: "{ PB_10, PE_12, PG_8, PE_15, PE_10, PG_5 }"
+example: PB_10 and PE_12
 board: biquskrpro_1.1
 ---
 

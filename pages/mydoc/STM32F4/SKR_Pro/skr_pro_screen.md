@@ -22,7 +22,7 @@ These instructions cover serial screens. Instructions for 12864 screens can be f
 To enable a screen to function correctly, the following lines need to be added to the board.txt file.  
 
 ```
-serial.aux.rxTxPins = { A.10, A.9 }
+serial.aux.rxTxPins = { PA_10, PA_9 }
 ```
 
 <ul id="profileTabs" class="nav nav-tabs">

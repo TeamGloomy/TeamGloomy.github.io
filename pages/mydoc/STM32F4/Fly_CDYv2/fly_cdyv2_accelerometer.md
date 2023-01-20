@@ -11,11 +11,11 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-CDYv2
-SCL: A.13
-SDA: A.14
-SDO: E.15
-CS: E.14
-int: B.2
+SCL: PA_13
+SDA: PA_14
+SDO: PE_15
+CS: PE_14
+int: PB_2
 spiChannel: 5
 location: EXP1 header
 ---

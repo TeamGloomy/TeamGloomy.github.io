@@ -92,16 +92,16 @@ Use the image below as a guide. Thanks @Denise_Wink
 
 |Pin Number|E3 Pro Pin Location|TFT Pin Location|
 | :------------- |:-------------|:-------------|
-|lcd.encoderPinA=E.9|EXP1 Pin 5|EXP2 Pin 8 EN1|
-|lcd.encoderPinB=E.10|EXP1 Pin 3|EXP2 Pin 6 EN2|
-|lcd.encoderPinSw=E.11|EXP1 Pin 2|EXP1 Pin 9 ENC|
-|lcd.lcdCSPin=E.7|EXP1 Pin 7|EXP1 Pin 8 LCD_CS|
-|SPI4.pins={E.8, NoPin, B.1}|EXP1 Pin 6, , EXP1 Pin 8|EXP2 Pin 9 SCK, , EXP2 Pin 5 MOSI|
-|lcd.lcdDCPin =E.12|EXP1 Pin 1|EXP1 Pin 7 LCD_A0|
-|led.neopixelPin=B.11|Neopixel Pin B.11|EXP1 Pin 5 RED|
+|lcd.encoderPinA=PE_9|EXP1 Pin 5|EXP2 Pin 8 EN1|
+|lcd.encoderPinB=PE_10|EXP1 Pin 3|EXP2 Pin 6 EN2|
+|lcd.encoderPinSw=PE_11|EXP1 Pin 2|EXP1 Pin 9 ENC|
+|lcd.lcdCSPin=PE_7|EXP1 Pin 7|EXP1 Pin 8 LCD_CS|
+|SPI4.pins={PE_8, NoPin, PB_1}|EXP1 Pin 6, , EXP1 Pin 8|EXP2 Pin 9 SCK, , EXP2 Pin 5 MOSI|
+|lcd.lcdDCPin =PE_12|EXP1 Pin 1|EXP1 Pin 7 LCD_A0|
+|led.neopixelPin=PB_11|Neopixel Pin PB_11|EXP1 Pin 5 RED|
 |Ground|EXP1 Pin GND (9)|EXP1 Pin 2 GND|
 |+5v|EXP1 Pin 5V (10)|EXP1 Pin 1 VCC +5V|
-|LCD Reset|SWCLK on STLink Pin A.14|EXP1 Pin 6 LCD RST|
+|LCD Reset|SWCLK on STLink Pin PA_14|EXP1 Pin 6 LCD RST|
 
 <div class="datatable-end"></div>
 
@@ -110,14 +110,14 @@ Use the image below as a guide. Thanks @Denise_Wink
 The following lines should be added to the board.txt file.
 
 ```
-lcd.encoderPinA=E.9
-lcd.encoderPinB=E.10
-lcd.encoderPinSw=E.11
-lcd.lcdCSPin=E.7
-SPI4.pins={E.8, NoPin, B.1}
+lcd.encoderPinA=PE_9
+lcd.encoderPinB=PE_10
+lcd.encoderPinSw=PE_11
+lcd.lcdCSPin=PE_7
+SPI4.pins={PE_8, NoPin, PB_1}
 lcd.spiChannel=4
-lcd.lcdDCPin = E.12
-led.neopixelPin=B.11
+lcd.lcdDCPin = PE_12
+led.neopixelPin=PB_11
 ```
 
 ## Config.g changes
@@ -134,7 +134,7 @@ Add a file in your sys folder called screen.g and add the following contents
 ; Turn off backlight
 m150 X2 R0 U0 B0 S3 F0
 ; Configure reset pin
-M950 P1 C"PA.14"
+M950 P1 C"PA_14"
 ; hardware reset of LCD
 M42 P1 S0
 G4 P500

@@ -16,18 +16,18 @@ firmware: firmware-stm32f4-wifi.bin
 wifi: 
 module: onboard
 schematic: https://github.com/Mellow-3D/Fly-E3-Pro/blob/main/Schematic/Schematic_E3-PRO.pdf
-DRP: A.6
-TRP: A.7
-ERP: A.4
+DRP: PA_6
+TRP: PA_7
+ERP: PA_4
 CS:
-ESPRXTX: "{ D.9, D.8 }"
+ESPRXTX: "{ PD_9, PD_8 }"
 SerialRXTX: ""
-heat: "{ A.0, A.1, A.2, A.3 }"
+heat: "{ PA_0, PA_1, PA_2, PA_3 }"
 diagnostics: ""
 smartdrivers: 4
 stepperSPI: 2
-TMC: "{ C.0, C.1, C.2, C.3, B.11, B.10 }"
-example: C.0 and C.1
+TMC: "{ PC_0, PC_1, PC_2, PC_3, PB_11, PB_10 }"
+example: PC_0 and PC_1
 board: biquskr_rrf_e3_1.1
 onboardDrivers: yes
 ---

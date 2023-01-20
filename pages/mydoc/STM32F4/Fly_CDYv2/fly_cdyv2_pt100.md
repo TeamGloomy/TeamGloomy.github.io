@@ -29,7 +29,7 @@ The following lines should be added to the board.txt file.
 
 ```
 heat.spiTempSensorChannel = 0
-heat.spiTempSensorCSPins = {E.7, E.8}
+heat.spiTempSensorCSPins = {PE_7, PE_8}
 ```
 
 ## Config.g changes
@@ -40,7 +40,7 @@ To use the PT100 on your hotend, use the following code in config.g
 If you are in a country where the mains frequency is 50Hz, change the F60 to F50 (if you don't know, look [here](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf))
 
 ```
-M308 S1 P"E.7" Y"rtd-max31865" F60 R430
+M308 S1 P"PE_7" Y"rtd-max31865" F60 R430
 ```
 
 {% include warning.html content="Make sure you include the R430 as the Fly-CDYv2 uses a different reference resistor than expected" %}
@@ -50,5 +50,5 @@ M308 S1 P"E.7" Y"rtd-max31865" F60 R430
 To use the Type 'K' Thermocouple on your hotend, use the following code in config.g
 
 ```
-M308 S1 P"E.8" Y"thermocouple-max31855"
+M308 S1 P"PE_8" Y"thermocouple-max31855"
 ```

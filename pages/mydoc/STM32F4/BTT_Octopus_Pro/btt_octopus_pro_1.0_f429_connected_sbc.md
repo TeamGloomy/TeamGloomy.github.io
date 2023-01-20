@@ -2,7 +2,7 @@
 title: Connecting an BTT Octopus Pro v1.0 F429 Version via SBC
 tags: []
 keywords: 
-last_updated: 13/07/2022
+last_updated: 18/01/2023
 summary: "How to connect to an BTT Octopus Pro v1.0 F429 Version via SBC"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.0_f429_connected_sbc.html
@@ -14,16 +14,16 @@ boardname: BTT Octopus Pro v1.0 F429 Version
 mcu: STM32F407VGT6
 firmware: firmware-stm32f4-sbc.bin
 schematic: https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf
-BCM11: B.13
-BCM9: C.2
-BCM10: C.3
-BCM8: B.12
-BCM25: G.7
-heat: "{ F.3, F.4, F.5, F.6, F.7 }"
-diagnostics: A.13
+BCM11: PB_13
+BCM9: PC_2
+BCM10: PC_3
+BCM8: PB_12
+BCM25: PG_7
+heat: "{ PF_3, PF_4, PF_5, PF_6, PF_7 }"
+diagnostics: PA_13
 stepperSPI: 0
-TMC: "{ G.6, G.9, G.10, G.11, G.12, G.13, G.14, G.15 }"
-example: G.6 and G.9
+TMC: "{ PG_6, PG_9, PG_10, PG_11, PG_12, PG_13, PG_14, PG_15 }"
+example: PG_6 and PG_9
 board: biqoctopuspro_1.0
 ---
 

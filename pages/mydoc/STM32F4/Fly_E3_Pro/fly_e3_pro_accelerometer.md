@@ -11,11 +11,11 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-E3-Pro
-SCL: E.7
-SDA: E.9
-SDO: E.10
-CS: E.8
-int: B.1
+SCL: PE_7
+SDA: PE_9
+SDO: PE_10
+CS: PE_8
+int: PB_1
 spiChannel: 5
 location: EXP1 header
 ---

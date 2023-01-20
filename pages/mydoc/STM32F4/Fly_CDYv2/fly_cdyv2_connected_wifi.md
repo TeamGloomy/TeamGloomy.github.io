@@ -16,17 +16,17 @@ firmware: firmware-stm32f4-wifi.bin
 wifi: 
 module: onboard
 schematic: https://github.com/Mellow-3D/Fly-CDYv2/blob/main/Hardware/Schematic.pdf
-DRP: E.10
-TRP: E.12
-ERP: E.11
+DRP: PE_10
+TRP: PE_12
+ERP: PE_11
 CS:
-ESPRXTX: "{ D.9, D.8 }"
+ESPRXTX: "{ PD_9, PD_8 }"
 SerialRXTX: ""
-heat: "{ B.1, A.3, C.4, D.14 }"
+heat: "{ PB_1, PA_3, PC_4, PD_14 }"
 diagnostics: ""
 stepperSPI: 2
-TMC: "{ C.7, C.6, D.11, D.10, B.10, B.11 }"
-example: C7 and C.6
+TMC: "{ PC_7, PC_6, PD_11, PD_10, PB_10, PB_11 }"
+example: PC_7 and PC_6
 board: fly_cdyv2
 onboardDrivers: no
 ---

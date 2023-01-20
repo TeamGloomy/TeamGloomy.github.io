@@ -16,18 +16,18 @@ firmware: firmware-stm32f4-wifi.bin
 wifi: both
 module: small
 schematic: https://github.com/bigtreetech/SKR-2/blob/master/Hardware/BIGTREETECH%20SKR%202-Pin.pdf
-DRP: B.10
-TRP: B.11
-ERP: C.14
+DRP: PB_10
+TRP: PB_11
+ERP: PC_14
 CS:
-ESPRXTX: "{ D.9, D.8 }"
-SerialRXTX: "{ A.10, A.9 }"
-heat: "{ D.7, B.3, B.4 }"
-diagnostics: A.13
+ESPRXTX: "{ PD_9, PD_8 }"
+SerialRXTX: "{ PA_10, PA_9 }"
+heat: "{ PD_7, PB_3, PB_4 }"
+diagnostics: PA_13
 stepperSPI: 3
-spiInfo: "{ E.15, A.14, E.14 }"
-TMC: "{ C.1, C.3, C.0, C.2, A.0 }"
-example: C.1 and C.3
+spiInfo: "{ PE_15, PA_14, PE_14 }"
+TMC: "{ PC_1, PC_3, PC_0, PC_2, PA_0 }"
+example: PC_1 and PC_3
 board: biquskr_2
 onboardDrivers: no
 ---

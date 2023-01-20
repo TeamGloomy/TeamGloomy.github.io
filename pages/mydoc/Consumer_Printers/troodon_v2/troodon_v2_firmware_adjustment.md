@@ -2,7 +2,7 @@
 title: Moving the Troodon V2 Printer from board.txt defined pins to firmware defined pins
 tags: []
 keywords: 
-last_updated: 13/01/2023
+last_updated: 18/01/2023
 summary: "Moving the Troodon V2 Printer from board.txt defined pins to firmware defined pins"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_firmware_adjustment.html
@@ -119,7 +119,7 @@ led.neopixelPin = LCDD5
 
 Switching to native firmware support also allows you adjust the pin assignments used in config.g from using a pin number to using an alias. For example
 ```
-M574 X1 S1 P"PF2"   
+M574 X1 S1 P"PF_2"   
 ```
 would become
 ```

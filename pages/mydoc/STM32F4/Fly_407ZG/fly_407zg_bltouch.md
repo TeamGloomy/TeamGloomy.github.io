@@ -12,9 +12,9 @@ toc: false
 datatable: true
 boardname: Fly-407ZG
 image: ""
-yellowPin: E.11
+yellowPin: PE_11
 yellowName: Servo0
-whitePin: C.14
+whitePin: PC_14
 whiteName: Z3
 ---
 

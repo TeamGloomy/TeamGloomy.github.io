@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: BTT Octopus Pro v1.0 F429 Version
-RXTX: "{ A.10, A.9 }"
+RXTX: "{ PA_10, PA_9 }"
 12864url: "/btt_octopus_pro_1.0_f429_screen_12864.html"
 screenType: both
 ---

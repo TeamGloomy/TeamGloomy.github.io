@@ -11,11 +11,11 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-CDYv3
-SCL: A.5
-SDA: A.7
-SDO: A.6
-CS: E.7
-int: E.8
+SCL: PA_5
+SDA: PA_7
+SDO: PA_6
+CS: PE_7
+int: PE_8
 spiChannel: 0
 location: accelerometer header
 ---
