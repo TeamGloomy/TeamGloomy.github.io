@@ -38,7 +38,7 @@ onboardDrivers: yes
 
 {% include custom/wifi/wifi_prep.html %}
 
-{% include custom/wifi/dwPC_html %}
+{% include custom/wifi/dwc.html %}
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
