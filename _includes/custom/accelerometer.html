@@ -43,7 +43,7 @@ The accelerometer should be mounted firmly to the tool. For a bed slinger (such 
 ### Boart.txt Changes
 
 Add the following to board.txt
-{% if {{page.spiChannel}} == 0 or {{page.spiChannel}} == 2 or {{page.spiChannel}} == 3 %}
+{% if {{page.spiChannel}} == 0 or {{page.spiChannel}} == 1 or {{page.spiChannel}} == 2 or {{page.spiChannel}} == 3 %}
 ```
 accelerometer.spiChannel = {{page.spiChannel}}
 ```
