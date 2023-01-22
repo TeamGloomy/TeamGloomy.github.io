@@ -1,18 +1,18 @@
 ---
-title: Connecting a 12864 screen to a Fly-E3-Pro-v3
+title: Connecting a 12864 screen to a Fly-E3
 tags: []
 keywords: 
 last_updated: 22/01/2023
-summary: "How to connect a 12864 screen to a Fly-E3-Pro-v3"
+summary: "How to connect a 12864 screen to a Fly-E3"
 sidebar: mydoc_sidebar
-permalink: fly_e3_pro_v3_screen_12864.html
+permalink: fly_e3_screen_12864.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: Fly-E3-Pro-V3
+boardname: Fly-E3-v2
 enderSpiChannel: 4
-spiChannel: 2
+spiChannel: 0
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">
@@ -25,7 +25,7 @@ spiChannel: 2
 
 ## Wiring
 
-The ender 3 stock display can be connected directly to the EXP1 header of the Fly-E3-Pro-v3. No modifications are required.
+The ender 3 stock display can be connected directly to the EXP1 header of the Fly-E3-v2. No modifications are required.
 
 {% include custom/12864/ender3_1header.html %}
 

@@ -703,6 +703,46 @@ children:
       url: fly_e3_pins.html
       output: web, pdf
 
+  - title: Fly-E3-v2
+    output: web, pdf
+    children:
+
+    - title: Fly-E3-v2 General Information
+      url: fly_e3_v2_general.html
+      output: web, pdf
+    
+    - title: Connecting via WiFi
+      url: fly_e3_v2_connected_wifi.html
+      output: web, pdf
+
+    - title: Configuring Sensorless Homing
+      url: fly_e3_v2_sensorless.html
+      output: web, pdf
+    
+    - title: Connecting a Serial Screen
+      url: fly_e3_v2_screen.html
+      output: web, pdf
+
+    - title: Connecting a 12864 Screen
+      url: fly_e3_v2_screen_12864.html
+      output: web, pdf
+
+    - title: Connecting a BLTouch
+      url: fly_e3_v2_bltouch.html
+      output: web, pdf
+
+    - title: Connecting an Accelerometer
+      url: fly_e3_v2_accelerometer.html
+      output: web, pdf
+
+    - title: Connecting a PT100 or Type 'K' Thermocouple
+      url: fly_e3_v2_pt100.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: fly_e3_v2_pins.html
+      output: web, pdf
+  
   - title: Fly-E3-Pro
     output: web, pdf
     children:
