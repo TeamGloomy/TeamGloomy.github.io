@@ -12,8 +12,8 @@ toc: false
 datatable: true
 boardname: Fly-E3-v2
 stepperSPI: 2
-TMC:
-example: "stepper.TmcDiagPins = { PE_7, PE_8, PE_9 }"
+TMC: "{ PE_7, PE_8, PE_9 }"
+example: "stepper.TmcDiagPins = { PE_7, PE_8 }"
 example2: "stepper.TmcDiagPins = { NoPin, PE_8 }"
 board: fly_e3_v2
 onboardDrivers: no
