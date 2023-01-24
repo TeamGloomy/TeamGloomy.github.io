@@ -2,7 +2,7 @@
 title: Fly-E3-v2 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 22/01/2023
+last_updated: 24/01/2023
 summary: "The pin names of the Fly-E3-v2 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_v2_pins.html
@@ -11,6 +11,8 @@ comments: false
 toc: false
 datatable: true
 ---
+
+{% include warning.html content="The silkscreen on the back of the board is incorrect for the Y driver slot and EXP2" %}
 
 ## Fly-E3-v2 Pinout Diagram
 
@@ -22,12 +24,12 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-begin"></div>
 
-|Pin Type|0 (X)|1 (Y)|2 (Z)|3 (E0)|
+|Pin Type|0 (X)|1 (Y)|2 (Z)|3 (E0)|4 (E1)|
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
-|Step Pins||PE_5| PE_4| PE_1| PE_2| PE_0|
-|Direction Pins||PC_0| PC_13| PB_7| PD_5| PD_1 |
-|Enable Pins||PC_1| PC_14| PE_3| PD_6 |PD_3|
-|UART Pins||PC_15| PB_6| PD_7| PD_4| PD_0|
+|Step Pins|PE_5| PE_4| PE_1| PE_2| PE_0|
+|Direction Pins|PC_0| PC_13| PB_7| PD_5| PD_1 |
+|Enable Pins|PC_1| PC_14| PE_3| PD_6 |PD_3|
+|UART Pins|PC_15| PB_6| PD_7| PD_4| PD_0|
 
 <div class="datatable-end"></div>
 
@@ -40,6 +42,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 
 |Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
 | :------------- |:-------------|:-------------|:-------------|
+|PC_4|e0temp|t0||
 |PC_5|e1temp|t1||
 |PB_1|bedtemp|tb|Timer 3|
 |PE_7|xmin|xstop||
