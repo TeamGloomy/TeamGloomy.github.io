@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to a GTR
 tags: []
 keywords: 
-last_updated: 28/03/2022
+last_updated: 24/01/2023
 summary: "How to connect an accelerometer to a GTR"
 sidebar: mydoc_sidebar
 permalink: gtr_accelerometer.html
@@ -10,7 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: BTT Octopus v1.1 F429 Version
+boardname: GTR
 SCL: PH_13
 SDA: PI_9
 SDO: PI_8
