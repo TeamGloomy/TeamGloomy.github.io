@@ -1,11 +1,11 @@
 ---
-title: Fly-Super8Pro H743 General Information
+title: Fly-Super8Pro H723 General Information
 tags: []
 keywords: 
 last_updated: 25/01/2023
-summary: "General information regarding the Fly-Super8Pro H743"
+summary: "General information regarding the Fly-Super8Pro H723"
 sidebar: mydoc_sidebar
-permalink: fly_super8pro_h743_general.html
+permalink: fly_super8pro_h723_general.html
 folder: mydoc
 comments: false
 toc: false
@@ -14,13 +14,13 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the Fly-Super8Pro H743 board.  
+This page covers any general information for the Fly-Super8Pro H723 board.  
 It is currently available through [AliExpress](https://www.aliexpress.com/item/1005004431621335.html).  
-The Fly-Super8Pro H743 board is based on hardware revision v1.2 of the Fly-Super8. Details of each Fly-Super8 hardware revision can be found [here](fly_super8_hardware_revisions.html)
+The Fly-Super8Pro H723 board is based on hardware revision v1.3 of the Fly-Super8. Details of each Fly-Super8 hardware revision can be found [here](fly_super8_hardware_revisions.html)
 
 ### Board.txt Name
 
-The board name in board.txt is **fly_super8h7**.
+The board name in board.txt is **fly_super8_pro_h723**.
 
 ### Board Fuses
 
@@ -49,7 +49,7 @@ The output voltage of each driver EN, STEP and DIR can be configured to either 3
 
 ### Fan Mosfets
 
-The Fly-Super8Pro H743 has a unique feature in that the fan mosfets are replaceable.
+The Fly-Super8Pro H723 has a unique feature in that the fan mosfets are replaceable.
 Each mosfet (VS3622e) controls two of the fan outputs.
 The orientation that the fan mostfet is plugged into the board doesn't matter.
 
@@ -80,6 +80,4 @@ Thermistors should use the ADC inputs. The thermistors should be connected betwe
 ### Initial Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
-It also doesn't have an RRF compatible bootloader installed as default.
-Follow the [Bootloader instructions](fly_super8pro_h743_bootloader.html).
-Follow the [WiFi instructions](fly_super8pro_h743_connected_wifi.html).
+Follow the [WiFi instructions](fly_super8pro_h723_connected_wifi.html).

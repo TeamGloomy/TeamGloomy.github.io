@@ -39,6 +39,12 @@ If you plan on using endstops rather than sensorless homing and do not have the 
 
 The board can handle an input voltage up to 32v.
 
+### Fan Mosfets
+
+The Fly-E3-v2 has a unique feature in that the fan mosfets are replaceable.
+Each mosfet (VS3622e) controls two of the fan outputs.
+The orientation that the fan mostfet is plugged into the board doesn't matter.
+
 ### Initial Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.

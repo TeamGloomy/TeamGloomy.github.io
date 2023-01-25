@@ -2,7 +2,7 @@
 title: Fly-Super8 General Information
 tags: []
 keywords: 
-last_updated: 15/06/2022
+last_updated: 25/01/2023
 summary: "General information regarding the Fly-Super8"
 sidebar: mydoc_sidebar
 permalink: fly_super8_general.html
@@ -51,6 +51,8 @@ The output voltage of each driver EN, STEP and DIR can be configured to either 3
 The Fly-Super8 has a unique feature in that the fan mosfets are replaceable.
 Each mosfet (VS3622e) controls two of the fan outputs.
 The orientation that the fan mostfet is plugged into the board doesn't matter.
+
+{% include image.html file="fly_super8_mosfets.png" alt="Fly-Super8 Fan Mosfets" caption="Fly-Super8 Fan Mosfets" %}
 
 ### Fan Voltage
 

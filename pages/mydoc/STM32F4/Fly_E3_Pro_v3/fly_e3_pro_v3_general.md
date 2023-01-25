@@ -2,7 +2,7 @@
 title: Fly-E3-Pro-v3 General Information
 tags: []
 keywords: 
-last_updated: 15/06/2022
+last_updated: 25/01/2023
 summary: "General information regarding the Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_general.html
@@ -47,6 +47,14 @@ The board can handle an input voltage up to 32v.
 The Fly-E3-Pro-v3 supports PT1000 on the thermistor inputs by using a 2k2 resistor rather than a 4k7.
 
 {% include important.html content="The Fly-E3-Pro-v3 uses a 2k2 resistor on the thermistor inputs rather than 4k7. Please make sure you add R2200 to each M308 in your config" %}
+
+### Fan Mosfets
+
+The Fly-E3-Pro-v3 has a unique feature in that the fan mosfets are replaceable.
+Each mosfet (VS3622e) controls two of the fan outputs.
+The orientation that the fan mostfet is plugged into the board doesn't matter.
+
+{% include image.html file="fly_e3_pro_v3_mosfets.png" alt="Fly-E3-Pro-v3 Fan Mosfets" caption="Fly-E3-Pro-v3 Fan Mosfets" %}
 
 ### Initial Installation
 
