@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to STM32
 tags: []
 keywords: 
-last_updated: 13/02/2023
+last_updated: 28/01/2023
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt_stm32.html
@@ -16,7 +16,7 @@ Below is a list of items that can be configured using the /sys/board.txt file.
 
 Anything entered in the board.txt file takes precidence over what is set in the firmware.
 
-For STM32 boards, pins can take the form of PC.1, PC_1, C.1, C_1 or the pin name.  
+For STM32 boards, pins can take the form of PA0, PA.0, PA_0, A0, A.0 or A_0 or the pin name.  
 
 <div class="datatable-begin"></div>
 
@@ -99,22 +99,25 @@ Current preprogrammed boards
 |biqoctopuspro_1.0|BTT Octopus Pro v1.0 f439 Version|STM32F4|
 |biquoctopus_x7|BTT Octopus X7|STM32F4|
 |biquskr_2.0|SKR v2.0|STM32F4|
-|biquskr_3|SKR3|STM32H7|
-|biquskr_3_ez|SKR3 Ez|STM32H7|
+|biquskr_3|SKR3|STM32H743|
+|biquskr_3_h723|SKR3|STM32H723|
+|biquskr_3_ez|SKR3 Ez|STM32H743|
 |biquskr_rrf_e3_1.0|SKR RRF E3 v1.0|STM32F4|
 |biquskrpro_1.1|SKR Pro v1.1 and 1.2|STM32F4|
 |fly_407zg|Fly-407ZG|STM32F4|
 |fly_cdyv2|Fly-CDYv2|STM32F4|
 |fly_cdyv3|Fly-CDYv3|STM32F4|
 |fly_E3|Fly-E3|STM32F4|
+|fly_E3_v2|Fly-E3-v2|STM32F4|
 |fly_E3_pro|Fly-E3-Pro|STM32F4|
 |fly_E3_prov3|Fly-E3-Pro-v3|STM32F4|
 |fly_gemini|Fly-Gemini|STM32F4|
 |fly_geminiv1.1|Fly-Gemini V1.1|STM32F4|
 |fly_geminiv2.0|Fly-Gemini V2.0|STM32F4|
-|fly_super5|Fly-Super8|STM32H7|
+|fly_super5|Fly-Super8|STM32H743|
 |fly_super8|Fly-Super8|STM32F4|
-|fly_super8_pro|Fly-Super8-Pro|STM32H7|
+|fly_super8h7|Fly-Super8-Pro|STM32H743|
+|fly_super8_pro_h723|Fly-Super8-Pro|STM32H723|
 |fysetc_spider|Fysetc Spider 407 Version|STM32F4|
 |fysetc_spider_king407|Fysetc Spider King 407|STM32F4|
 |generic|maps all pins as available by pin number. Not recommended for normal use||

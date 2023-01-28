@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 29/11/2022
+last_updated: 28/01/2023
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -12,6 +12,9 @@ toc: false
 ---
 
 ## LPC Boards with native support
+
+{% include tip.html content="There will be no further updates to LPC based boards. The last available update is 3.3.0" %}
+
 There are a number of boards which have configurations pre-configured. They are
 
 * Azsmz Mini
@@ -38,6 +41,7 @@ There are a number of boards which have configurations pre-configured. They are
 * Fly-CDYv2
 * Fly-CDYv3
 * Fly-E3
+* Fly-E3-v2
 * Fly-E3-Pro
 * Fly-E3-Pro-V2 **Support for this board has been removed due to the issues described [here](/fly_e3_prov2_general.html)**
 * Fly-E3-Pro-v3
@@ -62,9 +66,10 @@ There are a number of boards which have configurations pre-configured. They are
 There are a number of boards which have configurations pre-configured. They are
 
 * Fly-Super8Pro H743
+* Fly-Super8Pro H723
 * SKR3 H723
 * SKR3 H743
-* SKR3EZ H743
+* SKR3 EZ H743
 
 ## Consumer Printers
 There are printers that can be purchased with the STM32 port of RRF installed. They are

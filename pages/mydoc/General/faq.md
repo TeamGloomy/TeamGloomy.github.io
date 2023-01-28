@@ -2,9 +2,8 @@
 title: FAQ
 permalink: faq.html
 sidebar: mydoc_sidebar
-tags: [special_layouts]
 keywords: frequently asked questions, FAQ, question and answer, collapsible sections, expand, collapse
-last_updated: 15/05/2021
+last_updated: 28/01/2023
 summary: "You can use an accordion-layout that takes advantage of Bootstrap styling. This is useful for an FAQ page."
 toc: false
 folder: mydoc

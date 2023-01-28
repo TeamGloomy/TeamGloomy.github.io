@@ -1,6 +1,6 @@
 ---
 title: "Getting started with RepRapFirmware for LPC and STM32 based boards"
-last_updated: 13/01/2023
+last_updated: 28/01/2023
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: These instructions will help you to get started running RepRapFirmware on your LPC or STM32 based 3D printer board
@@ -12,7 +12,7 @@ comments: false
 
 Welcome to the RepRapFirmware on LPC and STM32 boards.  
 This software is a port of the open source RepRapFirmware produced by [Duet3D](http://www.duet3d.com) for their Duet range of boards.  
-It was originally ported by [sadvi](https://github.com/sdavi), but is now maintained by TeamGloomy.
+The LPC port was originally created by [sadvi](https://github.com/sdavi). Support for LPC boards was dropped after RRF 3.3.0_16.  
 
 ## Latest Firmware Versions
 
