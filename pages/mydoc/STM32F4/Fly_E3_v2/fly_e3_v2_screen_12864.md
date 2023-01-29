@@ -5,7 +5,7 @@ keywords:
 last_updated: 22/01/2023
 summary: "How to connect a 12864 screen to a Fly-E3"
 sidebar: mydoc_sidebar
-permalink: fly_e3_screen_12864.html
+permalink: fly_e3_v2_screen_12864.html
 folder: mydoc
 comments: false
 toc: false
