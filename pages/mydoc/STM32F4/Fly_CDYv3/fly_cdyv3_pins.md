@@ -2,7 +2,7 @@
 title: Fly-CDYv3 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 08/06/2022
+last_updated: 30/01/2023
 summary: "The pin names of the Fly-CDYv3 used in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv3_pins.html
@@ -55,7 +55,7 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PA_9|TX1|btnenc||
 |PB_0|bed|hbed|Timer 3|
 |PB_1|bedtemp|tb|Timer 3|
-|PB_1|lcden||Timer 3|
+|PB_2|lcden||Timer 3|
 |PB_10|zmin|zstop|Timer 2|
 |PB_11|zmax|zstopmax|Timer 2|
 |PB_3|MOTSCK||Timer 2|
