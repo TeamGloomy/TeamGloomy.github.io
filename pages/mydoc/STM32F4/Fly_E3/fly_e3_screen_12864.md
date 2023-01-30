@@ -12,6 +12,7 @@ toc: false
 datatable: true
 boardname: Fly-E3
 spiChannel: 4
+enderSpiChannel: 4
 ---
 
 ## Overview
