@@ -2,7 +2,7 @@
 title: Configuring Neopixels
 tags: []
 keywords: 
-last_updated: 17/05/2022
+last_updated: 01/02/2023
 summary: "Configuring Neopixels"
 sidebar: mydoc_sidebar
 permalink: neopixels.html
@@ -13,11 +13,11 @@ datatable: true
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">
-  <li class="active"><a class="noCrossRef" href="#neo34" data-toggle="tab">Neopixels up to RRF 3.4.0</a></li>  
-	<li><a class="noCrossRef" href="#neo341" data-toggle="tab">Neopixels from RRF 3.4.1-RC1</a></li>
+  <li class="active"><a class="noCrossRef" href="#neo341" data-toggle="tab">Neopixels from RRF 3.4.1-RC1</a></li>
+  <li><a class="noCrossRef" href="#neo34" data-toggle="tab">Neopixels up to RRF 3.4.0</a></li>  
 </ul>
   <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="neo34" markdown="1">
+<div role="tabpanel" class="tab-pane" id="neo34" markdown="1">
 
 The maximum number of supported neopixels is 60.  
 RGB and RGBW versions are supported. 
@@ -59,7 +59,7 @@ This may not work at all on any pin on the SKR-Pro as Neopixels really need a 5V
 
 </div>
 
-<div role="tabpanel" class="tab-pane" id="neo341" markdown="1">
+<div role="tabpanel" class="tab-pane active" id="neo341" markdown="1">
 
 The process to control neopixels from 3.4.1-RC1 has changed from using bit-banging to using Hardware DMA. This uses hardware to change the colour of the neopixels, allowing for colours to be changed whilst movement is taking place. This is supported by both the STM32F4 and STM32H7 builds.
 

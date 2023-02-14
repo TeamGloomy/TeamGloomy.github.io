@@ -51,6 +51,14 @@ children:
   output: web, pdf
   children:
 
+  - title: 3.5beta2+_103 Release Notes
+    url: release_notes_3.5beta2_103.html
+    output: web, pdf
+  
+  - title: 3.4.5+_103 Release Notes
+    url: release_notes_3.4.5_103.html
+    output: web, pdf
+  
   - title: 3.4.5_102 Release Notes
     url: release_notes_3.4.5_102.html
     output: web, pdf
@@ -591,6 +599,10 @@ children:
       url: fly_cdyv2_connected_wifi.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: fly_cdyv2_spi2canfd.html
+      output: web, pdf
+    
     - title: Configuring Sensorless Homing
       url: fly_cdyv2_sensorless.html
       output: web, pdf
@@ -635,6 +647,10 @@ children:
       url: fly_cdyv3_connected_wifi.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: fly_cdyv3_spi2canfd.html
+      output: web, pdf
+    
     - title: Configuring Sensorless Homing
       url: fly_cdyv3_sensorless.html
       output: web, pdf
@@ -673,6 +689,10 @@ children:
     
     - title: Connecting via WiFi
       url: fly_e3_connected_wifi.html
+      output: web, pdf
+
+    - title: CAN-FD can't be added
+      url: fly_e3_spi2canfd.html
       output: web, pdf
 
     - title: Configuring Sensorless Homing
@@ -715,6 +735,10 @@ children:
       url: fly_e3_v2_connected_wifi.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: fly_e3_v2_spi2canfd.html
+      output: web, pdf
+    
     - title: Configuring Sensorless Homing
       url: fly_e3_v2_sensorless.html
       output: web, pdf
@@ -753,6 +777,10 @@ children:
     
     - title: Connecting via WiFi
       url: fly_e3_pro_connected_wifi.html
+      output: web, pdf
+
+    - title: CAN-FD can't be added
+      url: fly_e3_pro_spi2canfd.html
       output: web, pdf
 
     - title: Configuring Sensorless Homing
@@ -811,6 +839,10 @@ children:
       url: fly_e3_pro_v3_connected_wifi.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: fly_e3_pro_v3_spi2canfd.html
+      output: web, pdf
+    
     - title: Configuring Sensorless Homing
       url: fly_e3_pro_v3_sensorless.html
       output: web, pdf
@@ -863,6 +895,10 @@ children:
       url: fly_super8_connected_wifi.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: fly_super8_spi2canfd.html
+      output: web, pdf
+    
     - title: Configuring Sensorless Homing
       url: fly_super8_sensorless.html
       output: web, pdf
@@ -907,6 +943,10 @@ children:
       url: btt_octopus_1.1_f429_connected_wifi_8266.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: btt_octopus_1.1_f429_spi2canfd.html
+      output: web, pdf
+    
     - title: Connecting via SBC
       url: btt_octopus_1.1_f429_connected_sbc.html
       output: web, pdf
@@ -947,6 +987,10 @@ children:
       url: btt_octopus_pro_1.0_f429_connected_wifi_8266.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: btt_octopus_pro_1.0_f429_spi2canfd.html
+      output: web, pdf
+    
     - title: Connecting via SBC
       url: btt_octopus_pro_1.0_f429_connected_sbc.html
       output: web, pdf
@@ -1039,6 +1083,10 @@ children:
       url: skr_pro_connected_sbc.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: skr_pro_spi2canfd.html
+      output: web, pdf
+    
     - title: Configuring Sensorless Homing
       url: skr_pro_sensorless.html
       output: web, pdf
@@ -1083,6 +1131,10 @@ children:
       url: skr_2.0_connected_sbc.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: skr_2.0_spi2canfd.html
+      output: web, pdf
+    
     - title: Configuring Sensorless Homing
       url: skr_2.0_sensorless.html
       output: web, pdf
@@ -1123,6 +1175,10 @@ children:
       url: skr_rrf_e3_connected_wifi.html
       output: web, pdf
 
+    - title: CAN-FD can't be added
+      url: skr_rrf_e3_spi2canfd.html
+      output: web, pdf
+    
     - title: Configuring Sensorless Homing
       url: skr_rrf_e3_sensorless.html
       output: web, pdf
@@ -1230,7 +1286,7 @@ children:
     - title: Connecting via SBC
       url: fly_gemini_v2_connected_sbc.html
       output: web, pdf
-
+    
     - title: Connecting a Serial Screen
       url: fly_gemini_v2_screen.html
       output: web, pdf
@@ -1491,6 +1547,10 @@ children:
       url: troodon_v2_connected_wifi_esp32.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: troodon_v2_spi2canfd.html
+      output: web, pdf
+    
     - title: Heater Tuning
       url: troodon_v2_heater_tuning.html
       output: web, pdf

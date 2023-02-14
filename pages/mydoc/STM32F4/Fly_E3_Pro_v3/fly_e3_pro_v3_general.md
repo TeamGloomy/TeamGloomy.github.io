@@ -2,7 +2,7 @@
 title: Fly-E3-Pro-v3 General Information
 tags: []
 keywords: 
-last_updated: 25/01/2023
+last_updated: 11/02/2023
 summary: "General information regarding the Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_general.html
@@ -38,6 +38,8 @@ To use sensorless homing, a jumper must be installed on the diag header.
 The Fly-E3-Pro-v3 has two 24v inputs and one ground. The right 24v input powers the MCU and WiFi (as well as anything else that runs from 5v) and the left 24v input powers the motors, heaters and bed. This allows a relay to be used to turn off the motors, heaters and bed using a relay without having to use a separate 5v PSU to power the MCU. A diagragm can be found below.  
 
 {% include image.html file="fly_e3_prov3_power.jpg" alt="Fly-E3-Pro-v3 Power Input" caption="Fly-E3-Pro-v3 Power Input" %}
+
+{% include tip.html content="Even if you don't use a relay, you still need to provide power to both inputs. And don't forget to install the fuse. %}
 ### Maximum Input voltage
 
 The board can handle an input voltage up to 32v.
