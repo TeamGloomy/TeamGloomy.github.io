@@ -575,7 +575,7 @@ children:
       url: fly_407zg_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_407zg_bltouch.html
       output: web, pdf
 
@@ -615,7 +615,7 @@ children:
       url: fly_cdyv2_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_cdyv2_bltouch.html
       output: web, pdf
 
@@ -663,7 +663,7 @@ children:
       url: fly_cdyv3_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_cdyv3_bltouch.html
       output: web, pdf
 
@@ -707,7 +707,7 @@ children:
       url: fly_e3_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_e3_bltouch.html
       output: web, pdf
 
@@ -751,7 +751,7 @@ children:
       url: fly_e3_v2_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_e3_v2_bltouch.html
       output: web, pdf
 
@@ -795,7 +795,7 @@ children:
       url: fly_e3_pro_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_e3_pro_bltouch.html
       output: web, pdf
 
@@ -855,7 +855,7 @@ children:
       url: fly_e3_pro_v3_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_e3_pro_v3_bltouch.html
       output: web, pdf
 
@@ -911,7 +911,7 @@ children:
       url: fly_super8_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_super8_bltouch.html
       output: web, pdf
 
@@ -963,7 +963,7 @@ children:
       url: btt_octopus_1.1_f429_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: btt_octopus_1.1_f429_bltouch.html
       output: web, pdf
 
@@ -1007,7 +1007,7 @@ children:
       url: btt_octopus_pro_1.0_f429_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: btt_octopus_pro_1.0_f429_bltouch.html
       output: web, pdf
 
@@ -1051,7 +1051,7 @@ children:
       url: gtr_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: gtr_bltouch.html
       output: web, pdf
 
@@ -1099,7 +1099,7 @@ children:
       url: skr_pro_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_pro_bltouch.html
       output: web, pdf
 
@@ -1147,7 +1147,7 @@ children:
       url: skr_2.0_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_2.0_bltouch.html
       output: web, pdf
 
@@ -1191,7 +1191,7 @@ children:
       url: skr_rrf_e3_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_rrf_e3_bltouch.html
       output: web, pdf
 
@@ -1243,7 +1243,7 @@ children:
       url: fly_gemini_screen.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_gemini_bltouch.html
       output: web, pdf
 
@@ -1267,7 +1267,7 @@ children:
       url: fly_gemini_v1.1_screen.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_gemini_v1.1_bltouch.html
       output: web, pdf
 
@@ -1291,7 +1291,7 @@ children:
       url: fly_gemini_v2_screen.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_gemini_v2_bltouch.html
       output: web, pdf
 
@@ -1339,7 +1339,7 @@ children:
       url: fly_super8pro_h723_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_super8pro_h723_bltouch.html
       output: web, pdf
 
@@ -1391,7 +1391,7 @@ children:
       url: fly_super8pro_h743_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_super8pro_h743_bltouch.html
       output: web, pdf
 
@@ -1439,7 +1439,7 @@ children:
       url: skr_3_h743_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_3_h743_bltouch.html
       output: web, pdf
 
@@ -1479,7 +1479,7 @@ children:
       url: skr_3_h723_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_3_h723_bltouch.html
       output: web, pdf
 
@@ -1519,7 +1519,7 @@ children:
       url: skr_3_ez_h743_screen_12864.html
       output: web, pdf
 
-    - title: Connecting a BLTouch
+    - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_3_ez_h743_bltouch.html
       output: web, pdf
 

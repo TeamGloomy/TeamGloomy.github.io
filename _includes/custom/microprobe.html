@@ -1,12 +1,18 @@
-## Physical Connections
+## Overview
 
-Connect the BLTouch to the {{page.boardname}} as described in the table below.  
+This page covers the connection and configuration of the [BTT MicroProbe](https://biqu.equipment/collections/expansion-board/products/microprobe-v1-0-for-b1-printers-h2-extruders-ender-3) to a {{page.boardname}}.  
+
+{% include warning.html content="BTT advertise this probe as being a drop in replacement for the BLTouch. It is a drop in wiring replacement but your config needs to be different! Please edit your files as detailed below." %}
+
+### Physical Connections
+
+Connect the BTT MicroProbe to the {{page.boardname}} as described in the table below.  
 
 <div class="datatable-begin"></div>
 
-|BLTouch Wire Colour|{{page.boardname}}|{{page.boardname}} Pin Name|
+|BTT MicroProbe Wire Colour|{{page.boardname}}|{{page.boardname}} Pin Name|
 |:---|:---|:---|
-|Brown|GND||
+|Black (Brown on image)|GND||
 |Red|+5v||
 |Yellow|{{page.yellowPin}}|{{page.yellowName}}|
 |Black|GND||
@@ -16,7 +22,7 @@ Connect the BLTouch to the {{page.boardname}} as described in the table below.
 {{ page.image }}
 {% endcapture %}
 {% capture captiontext %}
-{{ page.boardname }} BLTouch Connection
+{{ page.boardname }} MicroProbe Connection
 {% endcapture %}
 {% if page.image != "" %}
 {% include image.html file=imagefile alt="" caption=captiontext %}
@@ -28,8 +34,8 @@ Connect the BLTouch to the {{page.boardname}} as described in the table below.
 
 Your config.g should be modified as below.
 ```
-M558 P9 H6 F250:30 T8000 C"^{{page.whiteName}}"       ; set Z probe type to bltouch and the dive height + speeds
-M950 S0 C"{{page.yellowName}}"                              ; Setup {{page.yellowName}} as servo port on {{page.boardname}}
+M558 P9 H6 F250:30 T8000 C"^{{page.whiteName}}"       ; set Z probe type to microprobe and the dive height + speeds
+M950 P0 C"{{page.yellowName}}"                              ; Setup {{page.yellowName}} as on/off port on {{page.boardname}}
 ```
 
 You will also need to set up your probe offset using [G31](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#g31-set-or-report-current-probe-status) and your [mesh probing grid](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m557-set-z-probe-point-or-define-probing-grid)
@@ -37,8 +43,6 @@ You will also need to set up your probe offset using [G31](https://docs.duet3d.c
 ## Files to Create
 
 Create the following files. 
-
-{% include tip.html content="If you select the BLTouch while setting up your config.g files using the Configurator, these files should be created for you. We still advise checking them tho ensure the content is correct." %}
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#deploy" data-toggle="tab">deployprobe.g</a></li>
@@ -53,7 +57,8 @@ deployprobe.g
 ```
 In it, paste the following code
 ```
-M280 P0 S10
+M42 P0 S1
+G5 P500
 ```
 
 </div>
@@ -66,7 +71,8 @@ retractprobe.g
 ```
 In it, paste the following code
 ```
-M280 P0 S90
+M42 P0 S0
+G5 P500
 ```
 
 </div>
@@ -74,8 +80,6 @@ M280 P0 S90
 </div>
 
 ## Files to Modify
-
-{% include tip.html content="If you select the BLTouch while setting up your config.g files using the Configurator, these files should be modified for you. We still advise checking them tho ensure the content is correct." %}
 
 If you you want to use your probe as your z endstop, you need to modify your homeall.g/homedelta.g and homez.g
 
@@ -115,29 +119,14 @@ M98 P"homez.g"
 
 ## Testing Macros
 
-It is suggested that you create a number of macros to allow testing of your BLTouch. These should each be created in the macros folder.  
+It is suggested that you create a number of macros to allow testing of your BTT MicroProbe. These should each be created in the macros folder.  
 
 <ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#alarm" data-toggle="tab">alarm release + pin</a></li>
-    <li><a class="noCrossRef" href="#pinup" data-toggle="tab">pin up</a></li>
+    <li class="active"><a class="noCrossRef" href="#pinup" data-toggle="tab">pin up</a></li>
     <li><a class="noCrossRef" href="#pindown" data-toggle="tab">pin down</a></li>
-    <li><a class="noCrossRef" href="#selftest" data-toggle="tab">self-test</a></li>
 </ul>
   <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="alarm" markdown="1">
-
-Create a file in your macros folder called
-```
-alarm release + pin
-```
-In it, paste the following code
-```
-M280 P0 S160 ; Alarm Release and Push-Pin UP
-```
-
-</div>
-
-<div role="tabpanel" class="tab-pane" id="pinup" markdown="1">
+<div role="tabpanel" class="tab-pane active" id="pinup" markdown="1">
 
 Create a file in your macros folder called
 ```
@@ -145,7 +134,8 @@ pin up
 ```
 In it, paste the following code
 ```
-M280 P0 S90 ; Send PWM channel 0 the s90 (angle) command
+M42 P0 S0 ; Turn off pin so it unretracts
+G5 P500 
 ```
 
 </div>
@@ -158,31 +148,10 @@ pin down
 ```
 In it, paste the following code
 ```
-M280 P0 S10 ; Send PWM channel 0 the S10 (angle) command
+M42 P0 S0 ; Turn on pin so it deploys
+G5 P500 
 ```
 
 </div>
 
-<div role="tabpanel" class="tab-pane" id="selftest" markdown="1">
-
-Create a file in your macros folder called
-```
-self-test
-```
-In it, paste the following code
-```
-M280 P0 S120 ; Send PWM channel 7 the S10 (angle) command
-```
 </div>
-
-</div>
-
-## Links to Relevant Duet3D Documentation
-
-[Connecting a BLTouch](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Z_probe_connecting#bltouch)  
-[Troubleshooting a BLTouch](https://docs.duet3d.com/en/User_manual/Troubleshooting/BLTouch_troubleshooting)
-
-
-## Marlin Fast Probe
-
-There is a guide to replicating Marlins Fast Probe feature [here](https://forum.duet3d.com/topic/14544/guide-to-marlin-s-fast-bltouch-probing-feature-on-duet).

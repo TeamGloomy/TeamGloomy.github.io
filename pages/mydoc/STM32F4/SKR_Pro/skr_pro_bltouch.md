@@ -1,9 +1,9 @@
 ---
-title: Connecting a BLTouch to an SKR Pro v1.1 and v1.2
+title: Connecting a BLTouch or BTT MicroProbe to an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
-last_updated: 28/03/2022
-summary: "How to connect a BLTouch to an SKR Pro v1.1 and v1.2"
+last_updated: 15/02/2023
+summary: "How to connect a BLTouch or BTT MicroProbe to an SKR Pro v1.1 and v1.2"
 sidebar: mydoc_sidebar
 permalink: skr_pro_bltouch.html
 folder: mydoc
@@ -18,4 +18,21 @@ whitePin: PA_2
 whiteName: probe
 ---
 
+<ul id="profileTabs" class="nav nav-tabs">
+  <li class="active"><a class="noCrossRef" href="#bltouch" data-toggle="tab">BLTouch</a></li>  
+	<li><a class="noCrossRef" href="#micro" data-toggle="tab">BTT MicroProbe</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="bltouch" markdown="1">
+
 {% include custom/bltouch.html %}
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="micro" markdown="1">
+
+{% include custom/microprobe.html %}
+
+</div>
+
+</div>

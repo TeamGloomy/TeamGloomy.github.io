@@ -1,9 +1,9 @@
 ---
-title: Connecting a BLTouch to a Fly-Gemini-V1
+title: Connecting a BLTouch or BTT MicroProbe to a Fly-Gemini-V1
 tags: []
 keywords: 
-last_updated: 28/03/2022
-summary: "How to connect a BLTouch to a Fly-Gemini-V1"
+last_updated: 15/02/2023
+summary: "How to connect a BLTouch or BTT MicroProbe to a Fly-Gemini-V1"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_bltouch.html
 folder: mydoc
@@ -18,4 +18,21 @@ whitePin: PA_1
 whiteName: probe
 ---
 
+<ul id="profileTabs" class="nav nav-tabs">
+  <li class="active"><a class="noCrossRef" href="#bltouch" data-toggle="tab">BLTouch</a></li>  
+	<li><a class="noCrossRef" href="#micro" data-toggle="tab">BTT MicroProbe</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="bltouch" markdown="1">
+
 {% include custom/bltouch.html %}
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="micro" markdown="1">
+
+{% include custom/microprobe.html %}
+
+</div>
+
+</div>
