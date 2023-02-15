@@ -20,7 +20,7 @@ whiteName: probe
 
 <ul id="profileTabs" class="nav nav-tabs">
   <li class="active"><a class="noCrossRef" href="#bltouch" data-toggle="tab">BLTouch</a></li>  
-	<li><a class="noCrossRef" href="#micro" data-toggle="tab">BTT MicroProbe</a></li>
+  <li><a class="noCrossRef" href="#micro" data-toggle="tab">BTT MicroProbe</a></li>
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bltouch" markdown="1">
