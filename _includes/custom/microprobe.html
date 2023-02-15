@@ -2,7 +2,7 @@
 
 This page covers the connection and configuration of the [BTT MicroProbe](https://biqu.equipment/collections/expansion-board/products/microprobe-v1-0-for-b1-printers-h2-extruders-ender-3) to a {{page.boardname}}.  
 
-{% include warning.html content="BTT advertise this probe as being a drop in replacement for the BLTouch. It is a drop in wiring replacement but your config needs to be different! Please edit your files as detailed below." %}
+{% include warning.html content="BTT advertise this probe as being a drop in replacement for the BLTouch. It is a drop in wiring replacement but your config needs to be different! Please edit your files to remove M280 and replace with M42 as detailed below." %}
 
 ### Physical Connections
 
@@ -44,12 +44,7 @@ You will also need to set up your probe offset using [G31](https://docs.duet3d.c
 
 Create the following files. 
 
-<ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#deploy" data-toggle="tab">deployprobe.g</a></li>
-    <li><a class="noCrossRef" href="#retract" data-toggle="tab">retractprobe.g</a></li>
-</ul>
-  <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="deploy" markdown="1">
+### deployptobe.g
 
 Create a file in your sys folder called
 ```
@@ -60,10 +55,7 @@ In it, paste the following code
 M42 P0 S1
 G5 P500
 ```
-
-</div>
-
-<div role="tabpanel" class="tab-pane" id="retract" markdown="1">
+### retractprobe.g
 
 Create a file in your sys folder called
 ```
@@ -75,20 +67,11 @@ M42 P0 S0
 G5 P500
 ```
 
-</div>
-
-</div>
-
 ## Files to Modify
 
 If you you want to use your probe as your z endstop, you need to modify your homeall.g/homedelta.g and homez.g
 
-<ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#homez" data-toggle="tab">homez.g</a></li>
-    <li><a class="noCrossRef" href="#homeall" data-toggle="tab">homeall.g</a></li>
-</ul>
-  <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="homez" markdown="1">
+### homez.g
 
 For homez.g, you will have need to have something similar to this. Please modify the co-ordinates required for the centre of your bed accordingly.
 ```
@@ -104,29 +87,18 @@ G1 X0 Y0 F10000 		 										; Move to the center of the bed. Adjust to the co-o
 G30					 											; Probe a single point
 ```
 
-</div>
-
-<div role="tabpanel" class="tab-pane" id="homeall" markdown="1">
+### homeall.g 
 
 The homeall.g should have something similar to the above or should call the homez.g file using
 ```
 M98 P"homez.g"
 ```
 
-</div>
-
-</div>
-
 ## Testing Macros
 
 It is suggested that you create a number of macros to allow testing of your BTT MicroProbe. These should each be created in the macros folder.  
 
-<ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#pinup" data-toggle="tab">pin up</a></li>
-    <li><a class="noCrossRef" href="#pindown" data-toggle="tab">pin down</a></li>
-</ul>
-  <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="pinup" markdown="1">
+### pin up
 
 Create a file in your macros folder called
 ```
@@ -138,9 +110,7 @@ M42 P0 S0 ; Turn off pin so it unretracts
 G5 P500 
 ```
 
-</div>
-
-<div role="tabpanel" class="tab-pane" id="pindown" markdown="1">
+### pin down
 
 Create a file in your macros folder called
 ```
@@ -151,7 +121,3 @@ In it, paste the following code
 M42 P0 S0 ; Turn on pin so it deploys
 G5 P500 
 ```
-
-</div>
-
-</div>
