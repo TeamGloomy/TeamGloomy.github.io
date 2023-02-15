@@ -2,7 +2,7 @@
 title: Fly-E3-Pro-v3 General Information
 tags: []
 keywords: 
-last_updated: 11/02/2023
+last_updated: 15/02/2023
 summary: "General information regarding the Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_general.html
@@ -39,7 +39,12 @@ The Fly-E3-Pro-v3 has two 24v inputs and one ground. The right 24v input powers 
 
 {% include image.html file="fly_e3_prov3_power.jpg" alt="Fly-E3-Pro-v3 Power Input" caption="Fly-E3-Pro-v3 Power Input" %}
 
-{% include tip.html content="Even if you don't use a relay, you still need to provide power to both inputs. And don't forget to install the fuse." %}
+{% include tip.html content="Even if you don't use a relay, you still need to provide power to both inputs." %}
+
+### Fuse
+
+Make sure you install the fuse as shown below.  
+{% include image.html file="fly_e3_pro_v3_fuse.jpg" alt="Fly-E3-Pro-v3 Fuse" caption="Fly-E3-Pro-v3 Fuse" %}  
 ### Maximum Input voltage
 
 The board can handle an input voltage up to 32v.
