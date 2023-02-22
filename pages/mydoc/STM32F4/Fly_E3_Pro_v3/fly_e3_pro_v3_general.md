@@ -44,7 +44,7 @@ The Fly-E3-Pro-v3 has two 24v inputs and one ground. The right 24v input powers 
 ### Fuse
 
 Make sure you install the fuse as shown below.  
-{% include image.html file="fly_e3_pro_v3_fuse.jpg" alt="Fly-E3-Pro-v3 Fuse" caption="Fly-E3-Pro-v3 Fuse" %}  
+{% include image.html file="fly_e3_pro_v3_fuse.png" alt="Fly-E3-Pro-v3 Fuse" caption="Fly-E3-Pro-v3 Fuse" %}  
 ### Maximum Input voltage
 
 The board can handle an input voltage up to 32v.
