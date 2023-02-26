@@ -41,7 +41,7 @@ Replace the electronics bay cover.
 All of the linear rails supplied with the printer are not lubricated and therefore require lubrication.  
 Fill a syringe with the grease provided with the Troodon V2.  
 Use a 16G blunt tipped needle for the MGN9 Rails and an 18G blunt tipped needle for the MGN12 Rail.  
-Please see this video https://www.youtube.com/watch?v=GWzz6fQiWmw for further instruction.
+Please see this [video](https://www.youtube.com/watch?v=GWzz6fQiWmw) for further instruction.
 
 ### Frame Assembly
 
