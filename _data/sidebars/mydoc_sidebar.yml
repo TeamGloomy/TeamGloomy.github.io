@@ -1542,6 +1542,10 @@ children:
     - title: Formbot Troodon V2 Printer General Information
       url: troodon_v2_general.html
       output: web, pdf
+    
+    - title: Formbot Troodon V2 Printer Assembly Instructions
+      url: troodon_v2_assembly.html
+      output: web, pdf
 
     - title: Connecting the Formbot Troodon V2 Printer to Wifi
       url: troodon_v2_connected_wifi_esp32.html
