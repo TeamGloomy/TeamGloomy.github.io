@@ -5,7 +5,7 @@ keywords:
 last_updated: 08/02/2023
 summary: "How to add CAN-FD to a Troodon V2 Printer and connect a CAN-FD Toolboard"
 sidebar: mydoc_sidebar
-permalink: btt_octopus_1.1_f429_spi2canfd.html
+permalink: troodon_v2_spi2canfd.html
 folder: mydoc
 comments: false
 toc: false
