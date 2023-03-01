@@ -3,7 +3,7 @@ title: Connecting a Troodon V2 Printer to WiFi
 tags: []
 keywords: 
 last_updated: 18/01/2023
-summary: "How to connect to a Troodon V2 Printer to WiFi"
+summary: "How to connect a Troodon V2 Printer to WiFi"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_connected_wifi_esp32.html
 folder: mydoc
