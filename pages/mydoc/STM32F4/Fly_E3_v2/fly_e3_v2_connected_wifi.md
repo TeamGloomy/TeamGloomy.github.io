@@ -13,7 +13,7 @@ datatable: true
 boardname: Fly-E3-v2
 mcu: STM32F407VGT6
 firmware: firmware-stm32f4-wifi.bin
-wifi: 
+wifi: ESP32
 module: onboard
 schematic: https://github.com/Mellow-3D/fly-e3-v2/blob/main/Hardware/Schematic_fly-e3-v2.pdf
 DRP: PE_10
