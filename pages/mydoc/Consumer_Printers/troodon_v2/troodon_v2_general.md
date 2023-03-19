@@ -41,7 +41,7 @@ If you want to use sensorless homing, a jumper needs adding next to each appropr
 
 ### Initial Installation
 
-To get your Troodon V2 Printer connected to your WiFi, please follow the [WiFi instructions](troodon_v2_connected_wifi_8266.html).  
+To get your Troodon V2 Printer connected to your WiFi, please follow the [WiFi instructions](troodon_v2_connected_wifi_esp32.html).  
 To find out how to tune the heaters of your Troodon V2 Printer, follow the [Heater Tuning Instructions](troodon_v2_heater_tuning.html).  
 To find out how to setup your Z Offsets correctly for the probe and AutoZ, follow the [Instructions Here](troodon_v2_zoffsets.html).  
 To improve your bed.g gantry levelling so it automatically iterates until the gantry is level, follow the [Improved Levelling Instructions](troodon_v2_improved_bed.html).  
