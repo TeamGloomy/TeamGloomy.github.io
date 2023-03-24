@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via an ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 18/01/2023
+last_updated: 24/03/2023
 summary: "Connecting an SKR Pro v1.1 and v1.2 via an ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_wifi_32.html
@@ -37,6 +37,7 @@ GPIO12: PB_14
 GPIO14: PB_13
 adapterRXTX: WiFi
 image: skr_pro_esp32_connection.jpg
+EXP: EXP2
 ---
 
 {% include custom/wifi/overview.html %}

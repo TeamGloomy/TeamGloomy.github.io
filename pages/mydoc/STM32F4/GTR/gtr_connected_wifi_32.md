@@ -2,7 +2,7 @@
 title: Connecting a GTR via an ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 18/01/2023
+last_updated: 24/03/2023
 summary: "How to connect to a GTR via an ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_wifi_32.html
@@ -37,7 +37,7 @@ GPIO12: PB_14
 GPIO14: PB_13
 adapterRXTX: WiFi
 image: gtr_esp32_connection.png
-
+EXP: EXP2
 ---
 
 {% include custom/wifi/overview.html %}
