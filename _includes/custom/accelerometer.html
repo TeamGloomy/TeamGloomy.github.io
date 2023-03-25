@@ -16,9 +16,9 @@ Because the firmware is so flexible and we're using software SPI, most pins can 
 {% endif %}
 These connections are on the {{page.location}} on the board.
 
-Keep in mind that many modules (especially the purple ones from ebay or aliexpress) don't have a voltage regulator, so connect them to 3.3 V and check the voltage before plugging it in.
+Keep in mind some modules (E.g. the purple ones from ebay or aliexpress) don't have a voltage regulator, connect them to 3.3 V and check the voltage before plugging it in.
 {% if {{page.boardname}} == "SKR Pro v1.1 or v1.2" %}
-Keep in mind that the SKR Pro v1.2 has some wrong voltage labels in the layout! See also [here](skr_pro_pins.html#known-errors){:target="_blank"}.
+Keep in mind the SKR Pro v1.2 has some wrong voltage labels in the layout! See also [here](skr_pro_pins.html#known-errors){:target="_blank"}.
 {% endif %}
 
 {% if {{page.boardname}} == "Fly-CDYv3" %}
