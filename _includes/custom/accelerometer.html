@@ -14,7 +14,12 @@ We are going to use Hardware SPI in this guide but if 5160 drivers are being use
 {% elsif {{page.boardname}} == "!Fly-CDYv3" {{page.boardname}} == "!Fly-Super8" %}
 Because the firmware is so flexible and we're using software SPI, most pins can be used for this.  
 {% endif %}
-These connections are on the {{page.location}} on the board.  
+These connections are on the {{page.location}} on the board.
+
+Keep in mind that many modules (especially the purple ones from ebay or aliexpress) don't have a voltage regulator, so connect them to 3.3 V and check the voltage before plugging it in.
+{% if {{page.boardname}} == "SKR Pro v1.1 or v1.2" %}
+Keep in mind that the SKR Pro v1.2 has some wrong voltage labels in the layout! See also [here](skr_pro_pins.html#known-errors){:target="_blank"}.
+{% endif %}
 
 {% if {{page.boardname}} == "Fly-CDYv3" %}
 {% include image.html file="fly_cdyv3_accelerometer.png" alt="Fly-CDYv3 Accelerometer" caption="Fly-CDYv3 Accelerometer" %}
@@ -24,13 +29,13 @@ These connections are on the {{page.location}} on the board.
 
 |Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|{{page.boardname}} Pin|
 |:---|:---|:---|:---|
-|Red|VIN| +5v Input| +5v|
+|Red|VIN / VCC|Supply Voltage| 3.3V / 5V|
 |Black|GND|Ground|GND|
 |Purple|SCL|SPI SCK|{{page.SCL}}|
 |Blue|SDA|SPI MOSI|{{page.SDA}}|
 |Yellow|SDO|SPI MISO|{{page.SDO}}|
 |Green|CS|Chip Select|{{page.CS}}|
-|Orange|Int|Interupt|{{page.int}}|
+|Orange|INT / INT1|Interupt|{{page.int}}|
 
 <div class="datatable-end"></div>
 
