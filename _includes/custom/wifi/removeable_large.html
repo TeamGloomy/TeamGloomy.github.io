@@ -1,12 +1,12 @@
 ## Purchasing the WiFi Adapter
 
+If you are just purchasing an adapter now, TeamGloomy **Strongly** recommends an ESP32 adapter as the WiFi performance has been greatly increased.
+
 {% if page.wifi == "ESP8266" %}
 You will need to purchase an adapter that plugs into the EXP1 and EXP2 headers. They can be purchased from a number of suppliers. They are:
 * PCR (part of TeamGloomy) on [Tindie](https://www.tindie.com/stores/pcr/)
 * Mellow (who works in close collaboration with TeamGloomy) on [Aliexpress](https://www.aliexpress.com/item/1005002957521849.html)
 * BTT also make an adapter but TeamGloomy do not recommend it as it does not have a serial connection readily available, removing the ability to update the WiFi firmware from within RRF.  
-
-If you are just purchasing an adapter now, TeamGloomy **Strongly** recommends an ESP32 adapter as the WiFi performance has been greatly increased.
 
 ## Connecting the WiFi Adapter
 
@@ -17,7 +17,7 @@ Connect the 4 pin serial header on the WiFi adapter to the {{page.adapterRXTX}} 
 You will need to purchase an adapter that plugs into the {{page.EXP}} header. They can be purchased from Mellow.
 * Mellow (who works in close collaboration with TeamGloomy) on [Aliexpress](https://www.aliexpress.com/item/1005003077964768.html)
 
-Connect the ESP32 Adapter to the board as shown below.  
+Connect the ESP32 Adapter to the board as shown below. (Antenna has also to be connected)
 {% capture imagefile %}
 {{ page.image }}
 {% endcapture %}
@@ -25,6 +25,6 @@ Connect the ESP32 Adapter to the board as shown below.
 {{ page.boardname }} ESP32 Adapter Connection
 {% endcapture %}
 {% include image.html file=imagefile alt="" caption=captiontext %}
-If not connecting the 4-pin serial cable, then add a small amount of solder in the area highlighted below. 
+If you don't want to be able to update the WiFi adapter via the {{ page.boardname }} it's not needed to connect the 4-pin serial cable. Then add a small amount of solder in the area highlighted below to get power from {{page.EXP}}. 
 {% include image.html file="fly_esp32_power.png" alt="Fly ESP32 Power" caption="Fly ESP32 Power Solder" %}
 {% endif %}
