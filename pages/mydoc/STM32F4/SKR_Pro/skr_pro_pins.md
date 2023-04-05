@@ -22,6 +22,11 @@ datatable: true
 
 {% include image.html file="skr_pro_1.2.png" url="https://teamgloomy.github.io/images/skr_pro_1.2.png" alt="SKR Pro v1.2" caption="SKR Pro v1.2 Pinout" %}
 
+### Known Errors
+* On the UART connector 3.3V is actually 5V
+* On th I2C connector 3.3V is actually 5V
+
+
 ## SKR Pro v1.1 and v1.2 Driver Pins in Firmware
 
 Driver pin numbers. They are separated into driver number.

@@ -19,6 +19,11 @@ heat.tempSensePins = {{page.heat}}
 {% if page.diagnostics != "" %}leds.diagnostic = {{page.diagnostics}}{% endif %}
 {% if page.boardname == "Fly-E3-Pro" or page.boardname == "SKR-RRF-E3" or page.boardname == "Fly-E3-Pro-v3" %}stepper.numSmartDrivers = {{page.smartdrivers}}{% endif %}
 ```
+
+{% if page.mcu == "STM32F407ZGT6" or page.mcu == "STM32F407VGT6"%}
+If the WiFi adapter is not working correctly e.g. error: "Failed to attach interrupt to pin G.10" after restarting the module (M552 S-1; M552 S0) check that the interrupt is not already used e.g. with "e1stop". See also [here](dht22.html#how-do-you-know-what-pin-is-interrupt-capable){:target="_blank"}.
+{% endif %}
+
 {% unless page.boardname == "Fly-E3-Pro" or page.boardname == "SKR-RRF-E3" or page.boardname == "Fly-E3-Pro-v3" %}
 ### Smart Drivers
 
