@@ -2,7 +2,7 @@
 title:  Sensorless Homing and Stall Detection
 tags: 
 keywords: 
-last_updated: 09/05/2022
+last_updated: 12/04/2023
 summary: "Sensorless Homing and Stall Detection"
 sidebar: mydoc_sidebar
 permalink: sensorless.html
@@ -225,10 +225,6 @@ M915 P1 S20 H200 R1		    ; on both X and Y
 </div>
 
 </div>
-
-### Example files links  
-- [cartesian](https://drive.google.com/drive/folders/1WnLpNlcJDQvxbuI_45OOlouHLRHWYFNu){:target="_blank"}
-- [corexy](https://drive.google.com/file/d/13wBrTU-znwl0BmK4Yl2o9nwEww_Cc6zg/view?usp=sharing){:target="_blank"}
 
 ## Troubleshooting
 
