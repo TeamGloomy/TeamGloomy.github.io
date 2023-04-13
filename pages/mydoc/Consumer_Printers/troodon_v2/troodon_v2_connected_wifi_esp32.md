@@ -2,7 +2,7 @@
 title: Connecting a Troodon V2 Printer to WiFi 
 tags: []
 keywords: 
-last_updated: 18/01/2023
+last_updated: 13/04/2023
 summary: "How to connect a Troodon V2 Printer to WiFi"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_connected_wifi_esp32.html
@@ -87,7 +87,7 @@ Change the Com port to match the Troodon V2 and connect. The baudrate doesn't ma
 If you're carrying this out after the Formbot Method didn't wory correctly for you, send the following gcode throught putty
 ```
 M552 S0
-M558 S"*"
+M588 S"*"
 ```
 Then send the following gcode
 ```
