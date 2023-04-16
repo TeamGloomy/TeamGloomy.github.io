@@ -39,6 +39,15 @@ If you want to use sensorless homing, a jumper needs adding next to each appropr
 
 {% include image.html file="octopus_x7_diag.png" alt="Troodon V2 Diag" caption="Troodon V2 Sensorless Homing Jumper Locations" %}
 
+## Maximum Hotend Wattage
+
+After carrying out some research into the maximum heater cartridge wattage that can be installed on a stock Troodon V2, it has been concluded that the limit is 50 watts.  
+There are two reasons why this is the case and they are as follows:
+* There is a 40 pin cable between the mainboard and the breakout board. This uses LDZY A2544 connectors which are rated to 3A (which equates to 72 watts at 24v).  
+* The traces on the breakout board and toolhead PCB have been designed for a maximum of 2.5A (which equates to 60 watts at 24v).  
+Armed with this information, I spoke to Formbot who's engineer advised that 50 watts is the limit. This means you can't use hotends such as a rapido without heavy modification of the stock setup.  
+This can however be remidied by installing a toolboard. Currently, only the Duet3D 1LC is supported.  
+
 ### Initial Installation
 
 To get your Troodon V2 Printer connected to your WiFi, please follow the [WiFi instructions](troodon_v2_connected_wifi_esp32.html).  
