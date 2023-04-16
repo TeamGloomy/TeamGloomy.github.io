@@ -1559,7 +1559,7 @@ children:
         url: troodon_v2_assembly.html
         output: web, pdf
 
-      - title: Aufbauanleitung in Deutsch
+      - title: Montageanleitung (Deutsch)
         url: troodon_v2_assembly_de.html
         output: web, pdf
 

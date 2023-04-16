@@ -1,5 +1,5 @@
 ---
-title: Troodon V2 Drucker Montageanleitung in Deutsch
+title: Troodon V2 Drucker Montageanleitung (Deutsch)
 tags: []
 keywords: 
 last_updated: 22/02/2023
