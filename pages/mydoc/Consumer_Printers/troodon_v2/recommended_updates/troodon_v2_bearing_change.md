@@ -29,21 +29,21 @@ You will need to purchase the following for this modification.
 {% include warning.html content="Please ensure that power has been removed from the printer, otherwise you risk damaging yourself and/or the printer"%}  
 
 Remove the 2 x M3x8 Screws securing the PCB cover in place and put both the cover and the screws to one side.  
-{% include image.html file="troodon_v2_bearing_1.png" alt="Bearing 1" caption="Bearing Replacement 1" %}
+{% include image.html file="troodon_v2_bearing_1.jpg" alt="Bearing 1" caption="Bearing Replacement 1" %}
 Remove the 2 x M3x12 Screws and 2 x M3x30 Screws securing the fan cover in place. There is no need to unplug the fans but it may make sense to remove the screws just in case they drop out.  
-{% include image.html file="troodon_v2_bearing_2.png" alt="Bearing 2" caption="Bearing Replacement 2" %}
+{% include image.html file="troodon_v2_bearing_2.jpg" alt="Bearing 2" caption="Bearing Replacement 2" %}
 Remove the M3x20 securing the latch in place. Remove the latch and place to one side.  
-{% include image.html file="troodon_v2_bearing_3.png" alt="Bearing 3" caption="Bearing Replacement 3" %}
+{% include image.html file="troodon_v2_bearing_3.jpg" alt="Bearing 3" caption="Bearing Replacement 3" %}
 Remove the M3x30 securing the guider in place. Remove the guider and place to one side.  
-{% include image.html file="troodon_v2_bearing_4.png" alt="Bearing 4" caption="Bearing Replacement 4" %}
+{% include image.html file="troodon_v2_bearing_4.jpg" alt="Bearing 4" caption="Bearing Replacement 4" %}
 Remove the 2 x M3x30 securing the main body in place. Remove the main body and the drive gear. The MR85 from the motor plate may come away with the drive shaft (which is fine).  
-{% include image.html file="troodon_v2_bearing_5.png" alt="Bearing 5" caption="Bearing Replacement 5" %}
+{% include image.html file="troodon_v2_bearing_5.jpg" alt="Bearing 5" caption="Bearing Replacement 5" %}
 ## Bearing Replacement
 
 Remove and discard the MR85 from the motor plate. Install the new MR85-ZZ replacement bearing.  
-{% include image.html file="troodon_v2_bearing_6.png" alt="Bearing 6" caption="Bearing Replacement 6" %}
+{% include image.html file="troodon_v2_bearing_6.jpg" alt="Bearing 6" caption="Bearing Replacement 6" %}
 Remove and discard the MR85 from the main body. To do so, turn the main body over and gently tap the bearing from behind. Install the new MR85-ZZ replacement bearing.  
-{% include image.html file="troodon_v2_bearing_7.png" alt="Bearing 7" caption="Bearing Replacement 7" %}
+{% include image.html file="troodon_v2_bearing_7.jpg" alt="Bearing 7" caption="Bearing Replacement 7" %}
 
 ## Check the Grubscrew 
 
