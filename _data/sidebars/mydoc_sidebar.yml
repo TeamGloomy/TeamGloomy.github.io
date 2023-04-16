@@ -1591,6 +1591,10 @@ children:
         url: troodon_v2_bearing_change.html
         output: web, pdf
 
+      - title: Stealthburner Without Changing the Extruder
+        url: troodon_v2_stealthburner_no_cw2.html
+        output: web, pdf
+
     - title: Configuring Sensorless Homing
       url: troodon_v2_sensorless.html
       output: web, pdf
