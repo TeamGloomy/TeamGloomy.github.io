@@ -2,7 +2,7 @@
 title: Connecting a Troodon V2 Printer to WiFi 
 tags: []
 keywords: 
-last_updated: 13/04/2023
+last_updated: 16/04/2023
 summary: "How to connect a Troodon V2 Printer to WiFi"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_connected_wifi_esp32.html
@@ -98,3 +98,13 @@ M552 S1
 {% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}
 The IP address will be shown on the serial connection. It is also possible to type just `M552` to get the current IP address reported back.
 Use this IP address on your web browser to navigate to Duet Web Control (DWC) and move onto [heater tuning](troodon_v2_heater_tuning.html).
+
+## WiFi Issues
+
+There have been a number of reports of SPI timeouts etc when trying to connect the printer to a WiFi connection.  
+This can be solved by running the following command from putty.  
+```
+M552 S0
+M997 S1
+```
+Wait for the WiFi module update to finishe and then enter your WiFi details using one of the methods above.  

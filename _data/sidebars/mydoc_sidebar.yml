@@ -51,6 +51,14 @@ children:
   output: web, pdf
   children:
 
+  - title: 3.5beta2+_106 Release Notes
+    url: release_notes_3.5beta2_106.html
+    output: web, pdf
+  
+  - title: 3.4.5+_104 Release Notes
+    url: release_notes_3.4.5_104.html
+    output: web, pdf
+  
   - title: 3.5beta2+_103 Release Notes
     url: release_notes_3.5beta2_103.html
     output: web, pdf
@@ -1543,18 +1551,22 @@ children:
       url: troodon_v2_general.html
       output: web, pdf
     
-    - title: Formbot Troodon V2 Printer Assembly Instructions
-      url: troodon_v2_assembly.html
+    - title: Assembly Instructions
       output: web, pdf
+      children:
+    
+      - title: Assembly Instructions
+        url: troodon_v2_assembly.html
+        output: web, pdf
+
+      - title: Aufbauanleitung in Deutsch
+        url: troodon_v2_assembly_de.html
+        output: web, pdf
 
     - title: Connecting the Formbot Troodon V2 Printer to Wifi
       url: troodon_v2_connected_wifi_esp32.html
       output: web, pdf
 
-    - title: Adding CAN-FD
-      url: troodon_v2_spi2canfd.html
-      output: web, pdf
-    
     - title: Heater Tuning
       url: troodon_v2_heater_tuning.html
       output: web, pdf
@@ -1570,6 +1582,14 @@ children:
     - title: Adjusting the Firmware for Native Support
       url: troodon_v2_firmware_adjustment.html
       output: web, pdf
+
+    - title: Recommended Upgrades
+      output: web, pdf
+      children:
+
+      - title: Extruder Bearing Change
+        url: troodon_v2_bearing_change.html
+        output: web, pdf
 
     - title: Configuring Sensorless Homing
       url: troodon_v2_sensorless.html
