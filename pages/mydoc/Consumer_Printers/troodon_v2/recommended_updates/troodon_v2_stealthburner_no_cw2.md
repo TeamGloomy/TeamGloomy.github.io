@@ -40,7 +40,7 @@ Remove the 2 x M3x12 Screws and 2 x M3x30 Screws securing the fan cover in place
 {% include image.html file="troodon_v2_bearing_2.jpg" alt="SB 1" caption="Stealthburner Only Installation 1" %}
 Remove the 2 x M3x16 Screws that secure the two halves of the part cooling housing together as these are required later on.
 Disconnect the hotend heater and thermistor from the toolhead PCB.  
-Remove the 2 x M3x40 Screws securing the printhead to the carriage and remove the printhead.
+Remove the 2 x M3x40 Screws securing the printhead to the carriage and remove the printhead.  
 Remove the V6 from the printhead by removing the 2 x M3x20 Screws. Keep the screws as they will be needed during assembly.  
 
 Follow the [Stealthburner Manual](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Manual/Assembly_Manual_SB.pdf) from page 35 to page 56 and then again from page 65 to page 66. Remeber to plug the hotend, thermistor and 2 fans back in.
