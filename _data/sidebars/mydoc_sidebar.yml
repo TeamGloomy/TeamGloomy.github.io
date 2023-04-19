@@ -1595,6 +1595,10 @@ children:
         url: troodon_v2_stealthburner_no_cw2.html
         output: web, pdf
 
+      - title: Stealthburner With Clockwork2
+        url: troodon_v2_stealthburner_with_cw2.html
+        output: web, pdf
+
     - title: Configuring Sensorless Homing
       url: troodon_v2_sensorless.html
       output: web, pdf
