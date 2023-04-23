@@ -14,40 +14,4 @@ datatable: true
 
 ## Overview
 
-The part cooling capability of an afterburner isn't great. It is however simple to swap from an afterburner to a stealthburner without swapping the extruder.  
-Please note there are no free pins to run the neopixels.  
-
-{% include warning.html content="Please ensure that power has been removed from the printer, otherwise you risk damaging yourself and/or the printer"%}    
-
-### Printed Parts Required
-
-Here is a list of the printed parts required.  
-* [Stealthburner main body](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/STLs/Stealthburner/%5Ba%5D_stealthburner_main_body.stl)
-* [Stealthburner printhead v6 front](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/STLs/Stealthburner/Printheads/revo_six_and_v6/stealthburner_printhead_v6_r6_front.stl)
-* [Stealthburner printhead v6 rear](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/STLs/Stealthburner/Printheads/revo_six_and_v6/stealthburner_printhead_v6_r6_rear_cw2.stl)
-
-### Purchased Parts Required
-
-Here is a list of purchased parts required. 
-* 2 x M3x4x5 voron spec heat set inserts.  
-* 2 x M3x50 Socket Head Cap Screws
-* 1 x 5015 24v fan. Recommended brands are Delta (BFB0524HH), Mechatronics (B5015E24B) and GDSTime (GDB5015) in that order.  
-* 2 x M3x6 Flat Head Countersunk Screw
-
-## Installation
-
-Remove the 2 x M3x8 Screws securing the PCB cover in place and put both the cover and the screws to one side.  
-{% include image.html file="troodon_v2_bearing_1.jpg" alt="SB 1" caption="Stealthburner Only Installation 1" %}  
-Remove the 2 x M3x12 Screws and 2 x M3x30 Screws securing the fan cover in place. Disconnect the fans, making note of which fan goes where.  
-{% include image.html file="troodon_v2_bearing_2.jpg" alt="SB 2" caption="Stealthburner Only Installation 2" %}  
-Remove the 2 x M3x16 Screws that secure the two halves of the part cooling housing together as these are required later on.
-{% include image.html file="troodon_v2_fan_screws.jpg" alt="SB 3" caption="Stealthburner Only Installation 3" %}  
-Remove and keep the 40mm hotend cooling fan for installation in the Stealthburner.  
-Disconnect the hotend heater and thermistor from the toolhead PCB.  
-Remove the 2 x M3x40 Screws securing the printhead to the carriage and remove the printhead. 
-{% include image.html file="troodon_v2_fan_screws_2.jpg" alt="SB 4" caption="Stealthburner Only Installation 4" %}   
-Remove the V6 from the printhead by removing the 2 x M3x20 Screws. Keep the screws as they will be needed during assembly.  
-{% include image.html file="troodon_v2_fan_screws_3.jpg" alt="SB 5" caption="Stealthburner Only Installation 5" %}   
-
-Follow the [Stealthburner Manual](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Manual/Assembly_Manual_SB.pdf) from page 35 to page 56 and then again from page 65 to page 66. Remeber to plug the hotend, thermistor and 2 fans back in.
-Install the PCB Cover using 2 x M3x8 Screws.  
+This upgrade can't be done without changing the X-carriage as well as the nozzle sits lower with a stealthburner compared to an afterburner and unfortunately the position of the probe can't be lowered. 
