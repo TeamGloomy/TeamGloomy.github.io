@@ -1319,6 +1319,50 @@ children:
     url: stm32h7_pwm.html
     output: web, pdf
 
+  - title: Fly-Super5Pro H723
+    output: web, pdf
+    children:
+
+    - title: Fly-Super5Pro H723 General Information
+      url: fly_super5pro_h723_general.html
+      output: web, pdf
+    
+    - title: Connecting via WiFi
+      url: fly_super5pro_h723_connected_wifi.html
+      output: web, pdf
+
+    - title: Connecting to a CAN-FD expansion board
+      url: fly_super5pro_h723_canfd.html
+      output: web, pdf
+
+    - title: Configuring Sensorless Homing
+      url: fly_super5pro_h723_sensorless.html
+      output: web, pdf
+    
+    - title: Connecting a Serial Screen
+      url: fly_super5pro_h723_screen.html
+      output: web, pdf
+
+    - title: Connecting a 12864 Screen
+      url: fly_super5pro_h723_screen_12864.html
+      output: web, pdf
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: fly_super5pro_h723_bltouch.html
+      output: web, pdf
+
+    - title: Connecting an Accelerometer
+      url: fly_super5pro_h723_accelerometer.html
+      output: web, pdf
+
+    - title: Input Voltage Monitoring
+      url: fly_super5pro_h723_voltage.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: fly_super5pro_h723_pins.html
+      output: web, pdf
+
   - title: Fly-Super8Pro H723
     output: web, pdf
     children:

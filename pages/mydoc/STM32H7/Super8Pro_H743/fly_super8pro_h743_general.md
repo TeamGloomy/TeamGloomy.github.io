@@ -2,7 +2,7 @@
 title: Fly-Super8Pro H743 General Information
 tags: []
 keywords: 
-last_updated: 25/01/2023
+last_updated: 29/04/2023
 summary: "General information regarding the Fly-Super8Pro H743"
 sidebar: mydoc_sidebar
 permalink: fly_super8pro_h743_general.html
@@ -71,7 +71,7 @@ Set them as shown below.
 
 ### Maximum HV Input voltage
 
-The three HV drivers have been tested with 48v.
+The driver sockets have been tested with 48v.
 
 ### Thermistor Connection  
 
