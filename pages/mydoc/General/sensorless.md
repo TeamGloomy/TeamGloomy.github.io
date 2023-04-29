@@ -2,7 +2,7 @@
 title:  Sensorless Homing and Stall Detection
 tags: 
 keywords: 
-last_updated: 12/04/2023
+last_updated: 29/04/2023
 summary: "Sensorless Homing and Stall Detection"
 sidebar: mydoc_sidebar
 permalink: sensorless.html
@@ -20,8 +20,13 @@ Sensorless homing and stall detection is functional for the TMC2209's and TMC222
 * Fly-Gemini-v1
 * Fly-Gemini-v1.1
 * Fly-Gemini-v2
+* Fly-Super5Pro
 * Fly-Super8
+* Fly-Super8Pro H723
+* Fly-Super8Pro H743
 * Fysetc Spider 407 version
+* Fysetc Spider King F407 Version
+* Fysetc Spider King F743 Version
 * MKS SGen L v1
 * MKS SGen L v2
 * Octopus (F429)
