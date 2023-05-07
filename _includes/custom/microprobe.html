@@ -53,7 +53,7 @@ deployprobe.g
 In it, paste the following code
 ```
 M42 P0 S1
-G5 P500
+G4 P500
 ```
 ### retractprobe.g
 
@@ -64,7 +64,7 @@ retractprobe.g
 In it, paste the following code
 ```
 M42 P0 S0
-G5 P500
+G4 P500
 ```
 
 ## Files to Modify
@@ -118,6 +118,6 @@ pin down
 ```
 In it, paste the following code
 ```
-M42 P0 S0 ; Turn on pin so it deploys
+M42 P0 S1 ; Turn on pin so it deploys
 G4 P500 
 ```
