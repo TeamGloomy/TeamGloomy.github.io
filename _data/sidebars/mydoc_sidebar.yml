@@ -1612,7 +1612,7 @@ children:
       output: web, pdf
 
     - title: Connecting a PT100 Temperature Sensor
-      url: fly_rrf_363_pt100.html
+      url: fly_rrf_36_pt100.html
       output: web, pdf
 
     - title: Pin Names
