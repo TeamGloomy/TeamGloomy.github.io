@@ -1591,7 +1591,7 @@ children:
   output: web, pdf
   children:
 
-  - title: Fly-RRF-36
+  - title: Fly-RRF-36 Toolboard
     output: web, pdf
     children:
 
