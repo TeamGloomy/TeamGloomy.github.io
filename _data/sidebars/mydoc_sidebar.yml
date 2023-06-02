@@ -54,6 +54,10 @@ children:
   - title: 3.5beta2+_106 Release Notes
     url: release_notes_3.5beta2_106.html
     output: web, pdf
+
+  - title: 3.4.5+_107 Release Notes
+    url: release_notes_3.4.5_107.html
+    output: web, pdf
   
   - title: 3.4.5+_104 Release Notes
     url: release_notes_3.4.5_104.html
@@ -1581,6 +1585,38 @@ children:
 
     - title: Pin Names
       url: skr_3_ez_h743_pins.html
+      output: web, pdf
+
+- title: CAN-FD Toolboards
+  output: web, pdf
+  children:
+
+  - title: Fly-RRF-36
+    output: web, pdf
+    children:
+
+    - title: Fly-RRF-36 General Information
+      url: fly_rrf_36_general.html
+      output: web, pdf
+
+    - title: Connection via CAN-FD
+      url: fly_rrf_36_can_connection.html
+      output: web, pdf
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: fly_rrf_36_bltouch.html
+      output: web, pdf
+
+    - title: Accelerometer Configuration
+      url: fly_rrf_36_accelerometer.html
+      output: web, pdf
+
+    - title: Connecting a PT100 Temperature Sensor
+      url: fly_rrf_363_pt100.html
+      output: web, pdf
+
+     - title: Pin Names
+      url: fly_rrf_36_pins.html
       output: web, pdf
 
 - title: Consumer Printers
