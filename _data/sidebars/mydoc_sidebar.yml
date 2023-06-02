@@ -1615,7 +1615,7 @@ children:
       url: fly_rrf_363_pt100.html
       output: web, pdf
 
-     - title: Pin Names
+    - title: Pin Names
       url: fly_rrf_36_pins.html
       output: web, pdf
 
