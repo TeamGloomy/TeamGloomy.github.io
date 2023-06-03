@@ -31,7 +31,7 @@ The Fly-RRF-36 is the first RP2040 based toolboard compatible with both Duet 3 b
 | Stepper driver features| Up to 1.6A peak current, microstep interpolation from any setting to x256, stall detection, stealthChop2 |
 | High current outputs | 1 x 10A, VIN voltage only |
 | Thermistor/PT1000 inputs | 1 x input, optimised for 100k thermistors and PT1000 sensors, 1 x onboard NTC3950 |
-| PT100 | Can be purchased with a PT100 onboard with support for 2-wire, 3-wire and 4-wire PT100 temperature sensors |
+| PT100 | Can be purchased with a PT100 amplifier onboard with support for 2-wire, 3-wire and 4-wire PT100 temperature sensors |
 | Medium current outputs | 2 x 2-pin fan outputs, voltage selectable between VIN, 12V and 5V. 1A max per output |
 | Inputs/Outputs | 3 x on-board I/O connectors for endstop, switches, filament monitor, Z probe. 1 x servo output. |
 | Accelerometer | Integrated LIS3DH accelerometer |
@@ -54,7 +54,7 @@ See the pinout for the correct position.
 
 ### io1.in Diode
 
-If using io1.in with 3.3v (i.e. just a simple endstop), installed a jumper on the diode BP indicated on the pinout, otherwise don't install one.  
+If using io1.in with a simple switch, install a jumper to bypass the diode (marked diobe BP on the pinout). Don't install the jumper if using any electronic probes such as an inductive or optical sensor.   
 
 ### CAN Termination
 
