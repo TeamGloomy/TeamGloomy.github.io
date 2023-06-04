@@ -1587,6 +1587,46 @@ children:
       url: skr_3_ez_h743_pins.html
       output: web, pdf
 
+  - title: SKR3EZ H723
+    output: web, pdf
+    children:
+
+    - title: SKR3EZ H723 General Information
+      url: skr_3_ez_h723_general.html
+      output: web, pdf
+    
+    - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
+      url: skr_3_ez_h723_connected_wifi.html
+      output: web, pdf
+
+    - title: Connecting to a CAN-FD expansion board
+      url: skr_3_ez_h723_canfd.html
+      output: web, pdf
+
+    - title: Configuring Sensorless Homing
+      url: skr_3_ez_h723_sensorless.html
+      output: web, pdf
+    
+    - title: Connecting a Screen
+      url: skr_3_ez_h723_screen.html
+      output: web, pdf
+
+    - title: Connecting a 12864 Screen
+      url: skr_3_ez_h723_screen_12864.html
+      output: web, pdf
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: skr_3_ez_h723_bltouch.html
+      output: web, pdf
+
+    - title: Connecting an Accelerometer
+      url: skr_3_ez_h723_accelerometer.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: skr_3_ez_h723_pins.html
+      output: web, pdf
+
 - title: CAN-FD Toolboards
   output: web, pdf
   children:

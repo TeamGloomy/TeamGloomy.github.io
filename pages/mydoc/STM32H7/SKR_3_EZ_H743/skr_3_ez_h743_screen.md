@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: SKR3EZ H743
 RXTX: "{ PA_10, PA_9 }"
-12864url: "/skr3_screen_12864.html"
+12864url: "/skr_3_ez_h743_screen_12864.html"
 screenType: both
 ---
 

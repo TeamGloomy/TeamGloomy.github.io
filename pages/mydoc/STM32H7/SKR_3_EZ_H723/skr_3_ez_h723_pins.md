@@ -1,22 +1,22 @@
 ---
-title: SKR3EZ H743 Pin Names in Firmware
+title: SKR3EZ H723 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 29/11/2022
-summary: "The pin names of the SKR3EZ H743 in the firmware"
+last_updated: 04/06/2023
+summary: "The pin names of the SKR3EZ H723 in the firmware"
 sidebar: mydoc_sidebar
-permalink: skr_3_ez_h743_pins.html
+permalink: skr_3_ez_h723_pins.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
 ---
 
-## SKR3EZ H743 Pinout Diagram
+## SKR3EZ H723 Pinout Diagram
 
-{% include image.html file="skr3_ez_pins.png" url="https://teamgloomy.github.io/images/skr3_ez_pins.png" alt="SKR3EZ" caption="SKR3EZ H743 Pinout" %}
+{% include image.html file="skr3_ez_pins.png" url="https://teamgloomy.github.io/images/skr3_ez_pins.png" alt="SKR3EZ" caption="SKR3EZ H723 Pinout" %}
 
-## SKR3EZ H743 Driver Pins in Firmware
+## SKR3EZ H723 Driver Pins in Firmware
 
 Driver pin numbers. They are separated into driver number.
 
@@ -31,7 +31,7 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-## SKR3EZ H743 Other Pins in Firmware 
+## SKR3EZ H723 Other Pins in Firmware 
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  
