@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to an SKR3EZ H743
 tags: []
 keywords: 
-last_updated: 29/11/2022
+last_updated: 04/06/2023
 summary: "How to connect a 12864 screen to an SKR3EZ H743"
 sidebar: mydoc_sidebar
 permalink: skr_3_ez_h743_screen_12864.html
@@ -12,6 +12,9 @@ toc: false
 datatable: true
 boardname: SKR3EZ H743
 spiChannel: 0
+reprapCustomSPI: true
+reprapSPIChannel : 5
+reprapSPIPins: "{PE_9, NoPin, PB_1}"
 ---
 
 ## Wiring

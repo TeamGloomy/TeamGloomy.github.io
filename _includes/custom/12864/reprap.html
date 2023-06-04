@@ -11,9 +11,10 @@ lcd.encoderPinA=BTN_EN2
 lcd.encoderPinB=BTN_EN1
 lcd.encoderPinSw=BTN_ENC
 lcd.lcdCSPin=LCD_RS
-lcd.spiChannel={{page.spiChannel}}
+lcd.spiChannel={{page.reprapSPIChannel}} 
 {% if page.boardname == "BTT Octopus v1.1 F429 Version" or page.boardname == "BTT Octopus Pro v1.0 F429 Version" %}heat.spiTempSensorCSPins = {F.8, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}{% endif%}
 {% if page.boardname == "Fly-CDYv2"%}8266wifi.serialRxTxPins = {NoPin, NoPin}
+{% if page.reprapCustomSPI == true %}SPI{{page.reprapSPIChannel}}.pins = {{page.reprapSPIPins}} 
 serial.aux.rxTxPins = {NoPin, NoPin}{% endif%}
 ```
 

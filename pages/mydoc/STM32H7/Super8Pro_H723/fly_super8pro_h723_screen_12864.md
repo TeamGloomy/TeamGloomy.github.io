@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-Super8Pro H723
 tags: []
 keywords: 
-last_updated: 25/01/2023
+last_updated: 04/06/2023
 summary: "How to connect a 12864 screen to a Fly-Super8Pro H723"
 sidebar: mydoc_sidebar
 permalink: fly_super8pro_h723_screen_12864.html
@@ -12,6 +12,9 @@ toc: false
 datatable: true
 boardname: Fly-Super8Pro H723
 spiChannel: 0
+reprapCustomSPI: true
+reprapSPIChannel : 5
+reprapSPIPins: "{PC_14, NoPin, PB_2}"
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">

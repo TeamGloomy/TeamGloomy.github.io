@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-E3-Pro-v3
 tags: []
 keywords: 
-last_updated: 22/01/2023
+last_updated: 04/06/2023
 summary: "How to connect a 12864 screen to a Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_screen_12864.html
@@ -13,6 +13,9 @@ datatable: true
 boardname: Fly-E3-Pro-V3
 enderSpiChannel: 4
 spiChannel: 2
+reprapCustomSPI: true
+reprapSPIChannel : 5
+reprapSPIPins: "{PE_9, NoPin, PA_14}"
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">

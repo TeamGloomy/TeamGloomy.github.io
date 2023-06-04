@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-CDYv3
 tags: []
 keywords: 
-last_updated: 27/04/2023
+last_updated: 04/06/2023
 summary: "How to connect a 12864 screen to a Fly-CDYv3"
 sidebar: mydoc_sidebar
 permalink: fly_cdyv3_screen_12864.html
@@ -12,6 +12,7 @@ toc: false
 datatable: true
 boardname: Fly-CDYv3
 spiChannel: 0
+reprapSPIChannel : 3
 ---
 
 ## Overview
@@ -35,7 +36,7 @@ spiChannel: 0
 
 <div role="tabpanel" class="tab-pane" id="fysetc" markdown="1">
 
-{% include custom/12864/fysetc_mini_21.html %}
+{% include custom/12864/fysetc_mini_21.html %} 
 
 </div>
 

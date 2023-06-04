@@ -148,3 +148,22 @@ M280 P0 S120 ; Send PWM channel 7 the S10 (angle) command
 ## Marlin Fast Probe
 
 There is a guide to replicating Marlins Fast Probe feature [here](https://forum.duet3d.com/topic/14544/guide-to-marlin-s-fast-bltouch-probing-feature-on-duet).
+
+## Troubleshooting
+
+### M280 works but the probe doesn't deploy using G30
+
+Test that the probe deploys and retracts using `M401` and `M402` respectively.  
+If they don't work then you either have the deployprobe.g and retractprobe.g in the wrong place (they need to be in **sys**) or the contents of those files are incorrect, in which case re-read this page.  
+
+### M280 doesn't work
+
+Either the wiring for the BLTouch is incorrect or the M950 servo definition is incorrect in config.g.  
+
+### The probe doesn't self test on Startup
+
+The wiring for the BLTouch is incorrect and should be checked.  
+
+### The probe doesn't trigger
+
+Either the wiring for the BLTouch is incorrect (swap the black and white cables) or the M558 definition is incorrect in config.g.  

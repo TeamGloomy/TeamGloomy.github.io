@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to an BTT Octopus v1.1 F429 Version
 tags: []
 keywords: 
-last_updated: 30/03/2022
+last_updated: 04/06/2023
 summary: "How to connect a 12864 screen to an BTT Octopus v1.1 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_screen_12864.html
@@ -12,6 +12,9 @@ toc: false
 datatable: true
 boardname: BTT Octopus v1.1 F429 Version
 spiChannel: 0
+reprapCustomSPI: true
+reprapSPIChannel : 5
+reprapSPIPins: "{PE_12, NoPin, PE_9}"
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">
