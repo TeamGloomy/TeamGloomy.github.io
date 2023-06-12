@@ -12,8 +12,8 @@ toc: false
 datatable: true
 boardname: Fly-E3-v2
 SCL: PA_5
-SDA: PA_6
-SDO: PA_7
+SDA: PA_7
+SDO: PA_6
 CS: PA_4
 int: PE_13
 spiChannel: 0
