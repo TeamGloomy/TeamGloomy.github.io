@@ -7283,7 +7283,7 @@ button.close {
 }
 
 .affix {
-    position: fixed
+    position: static
 }
 
 @-ms-viewport {
