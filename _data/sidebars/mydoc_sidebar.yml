@@ -295,7 +295,7 @@ children:
     url: troubleshooting.html
     output: web, pdf
 
-  - title: Useful Standalone Setups
+  - title: Updating Standalone Setups
     url: updating_standalone.html
     output: web, pdf
   
