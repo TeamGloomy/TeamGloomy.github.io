@@ -2,7 +2,7 @@
 title: Fly-Super8 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 12/04/2023
 summary: "The pin names of the Fly-Super8 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_super8_pins.html
@@ -90,5 +90,23 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PG_15|LCD_CD|||||
 |PG_8|LCD_RS|||||
 |PG_9|io3|||||
+
+<div class="datatable-end"></div>
+
+## Configured SPI connections
+
+The below SPI channels are preconfigured in the firmware.  
+Where NoPin is present, then that pin is not configured by default.  
+
+<div class="datatable-begin"></div>
+
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
+| :------------- |:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware|
+|1|PB_13|PB_14|PB_15|Hardware|
+|2|PB_3|PB_4|PB_5|Hardware|
+|3|PD_3|PD_4|PD_5|Software|
+|4|NoPin|NoPin|NoPin|Software|
+|5|NoPin|NoPin|NoPin|Software|
 
 <div class="datatable-end"></div>

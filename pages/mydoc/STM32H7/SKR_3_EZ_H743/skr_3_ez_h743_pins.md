@@ -2,7 +2,7 @@
 title: SKR3EZ H743 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 29/11/2022
+last_updated: 12/06/2023
 summary: "The pin names of the SKR3EZ H743 in the firmware"
 sidebar: mydoc_sidebar
 permalink: skr_3_ez_h743_pins.html
@@ -75,5 +75,26 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PE_7|BTN_EN1|||
 |PE_8|LCD_RS|||
 |PE_9|LCD_D4|||
+
+<div class="datatable-end"></div>
+
+## Configured SPI connections
+
+The below SPI channels are preconfigured in the firmware.  
+Where NoPin is present, then that pin is not configured by default.  
+
+<div class="datatable-begin"></div>
+
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
+| :------------- |:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware|
+|1|PB_13|PB_14|PB_15|Hardware|
+|2|NoPin|NoPin|NoPin|Hardware|
+|3|NoPin|NoPin|NoPin|Software|
+|4|NoPin|NoPin|NoPin|Software|
+|5|NoPin|NoPin|NoPin|Software|
+|6|NoPin|NoPin|NoPin|Hardware|
+|7|NoPin|NoPin|NoPin|Hardware|
+|8|NoPin|NoPin|NoPin|Hardware|
 
 <div class="datatable-end"></div>

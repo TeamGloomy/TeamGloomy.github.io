@@ -2,7 +2,7 @@
 title: Adding CAN-FD to an SKR Pro v1.1 and v1.2
 tags: []
 keywords: 
-last_updated: 08/02/2023
+last_updated: 12/06/2023
 summary: "How to add CAN-FD to an SKR Pro v1.1 and v1.2 and connect a CAN-FD Toolboard"
 sidebar: mydoc_sidebar
 permalink: skr_pro_spi2canfd.html
@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: SKR Pro v1.1 and v1.2
 spiModule: driver
-moduleURL: 
+moduleURL: https://www.aliexpress.com/item/1005005389481192.html
 moduleType: driver
 spiJumpers: skr_pro_spi_jumpers.png
 driverSPICSPin: PD_6

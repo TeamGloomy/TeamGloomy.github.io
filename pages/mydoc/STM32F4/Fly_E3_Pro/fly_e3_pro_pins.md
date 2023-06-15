@@ -2,7 +2,7 @@
 title: Fly-E3-Pro Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 12/06/2023
 summary: "The pin names of the Fly-E3-Pro in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_pins.html
@@ -79,5 +79,23 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PE_7|LCD_D6|||
 |PE_8|LCD_D5|||
 |PE_9|LCD_D4|||
+
+<div class="datatable-end"></div>
+
+## Configured SPI connections
+
+The below SPI channels are preconfigured in the firmware.  
+Where NoPin is present, then that pin is not configured by default.  
+
+<div class="datatable-begin"></div>
+
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
+| :------------- |:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware|
+|1|PB_13|PB_14|PB_15|Hardware|
+|2|NoPin|NoPin|NoPin|Hardware|
+|3|PC_2|PC_0|PC_1|Software|
+|4|PE_8|NoPin|PB_1|Software|
+|5|PD_6|PD_4|PD_5|Software|
 
 <div class="datatable-end"></div>

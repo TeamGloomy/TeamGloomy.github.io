@@ -13,10 +13,28 @@ datatable: true
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">
-  <li class="active"><a class="noCrossRef" href="#neo341" data-toggle="tab">Neopixels from RRF 3.4.1-RC1</a></li>
+  <li class="active"><a class="noCrossRef" href="#neo35" data-toggle="tab">Neopixels from RRF 3.5.0-beta.4</a></li>
+  <li><a class="noCrossRef" href="#neo341" data-toggle="tab">Neopixels from RRF 3.4.1-RC1</a></li>  
   <li><a class="noCrossRef" href="#neo34" data-toggle="tab">Neopixels up to RRF 3.4.0</a></li>  
 </ul>
   <div class="tab-content">
+
+<div role="tabpanel" class="tab-pane" id="neo35" markdown="1">
+
+The Neopixels should be configured in config.g using M950 as detailed [here](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m950-create-heater-fan-spindle-or-gpioservo-pin).  
+For example, using the default toolboard address of 124 with RGBW Neopixels   
+```
+M950 C"neopixel" E0 T2
+```
+
+[M150](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m150-set-led-colours) can then be used to set the colours and brightness.  
+For example, the below example will set 3 RGBw neopixels to white.  
+```
+M150 E0 R0 B0 U0 W255 S3 F0
+```
+
+</div>
+
 <div role="tabpanel" class="tab-pane" id="neo34" markdown="1">
 
 The maximum number of supported neopixels is 60.  
@@ -59,7 +77,7 @@ This may not work at all on any pin on the SKR-Pro as Neopixels really need a 5V
 
 </div>
 
-<div role="tabpanel" class="tab-pane active" id="neo341" markdown="1">
+<div role="tabpanel" class="tab-pane" id="neo341" markdown="1">
 
 The process to control neopixels from 3.4.1-RC1 has changed from using bit-banging to using Hardware DMA. This uses hardware to change the colour of the neopixels, allowing for colours to be changed whilst movement is taking place. This is supported by both the STM32F4 and STM32H7 builds.
 

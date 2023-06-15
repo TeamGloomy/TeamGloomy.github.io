@@ -2,7 +2,7 @@
 title: GTR + M5 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 08/06/2022
+last_updated: 12/06/2023
 summary: "The pin names of the GTR + M5 in the firmware"
 sidebar: mydoc_sidebar
 permalink: gtr_pins.html
@@ -119,5 +119,23 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PI_5| fan_M1||Timer 8|
 |PI_6| e7heat|heat_M5|Timer 8|
 |PI_7| e6stop|M4_Stop||
+
+<div class="datatable-end"></div>
+
+## Configured SPI connections
+
+The below SPI channels are preconfigured in the firmware.  
+Where NoPin is present, then that pin is not configured by default.  
+
+<div class="datatable-begin"></div>
+
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
+| :------------- |:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware|
+|1|PB_13|PB_14|PB_15|Hardware|
+|2|NoPin|NoPin|NoPin|Hardware|
+|3|NoPin|NoPin|NoPin|Software|
+|4|NoPin|NoPin|NoPin|Software|
+|5|NoPin|NoPin|NoPin|Software|
 
 <div class="datatable-end"></div>

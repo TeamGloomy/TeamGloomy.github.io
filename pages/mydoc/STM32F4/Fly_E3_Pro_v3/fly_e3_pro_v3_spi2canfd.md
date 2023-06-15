@@ -2,7 +2,7 @@
 title: Adding CAN-FD to a Fly-E3-Pro-v3
 tags: []
 keywords: 
-last_updated: 08/02/2023
+last_updated: 12/06/2023
 summary: "How to add CAN-FD to a Fly-E3-Pro-v3 and connect a CAN-FD Toolboard"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_spi2canfd.html
@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: Fly-E3-Pro-v3
 spiModule: EXP1/EXP2
-moduleURL: 
+moduleURL: https://www.aliexpress.com/item/1005005389481192.html
 moduleType: EXP
 spiJumpers: fly_e3_jumpers.png
 driverSPICSPin: PE_9

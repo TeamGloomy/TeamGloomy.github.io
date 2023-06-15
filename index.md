@@ -18,11 +18,11 @@ The LPC port was originally created by [sadvi](https://github.com/sdavi). Suppor
 
 ### Latest Stable STM32F4 and STM32H7 Build
 
-The latest stable version is [3.4.5+_104](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.5%2B_104)
+The latest stable version is [3.4.5+_107](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.4.5%2B_107)
 
 ### Latest Unstable STM32F4, STM32H7 and STM32H723 Build
 
-The latest unstable version is [3.5beta2+_106](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5beta2%2B_106)
+The latest unstable version is [3.5.0-beta.4_101](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5.0-beta.4_101)
 
 ### Latest Stable LPC Build
 
@@ -38,7 +38,7 @@ The latest stable WiFi firmware version is [1.27-02](https://github.com/gloomyan
 
 ### Latest Unstable
 
-The latest unstable WiFi firmware version is [2.1b3](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5beta2%2B_103)
+The latest unstable WiFi firmware version is [2.1b4](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5.0-beta.4_101)
 
 ## Latest H7 bootloader
 

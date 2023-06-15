@@ -2,7 +2,7 @@
 title: Fly-407ZG Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/01/2023
+last_updated: 12/06/2023
 summary: "The pin names of the Fly-407ZG used in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_407zg_pins.html
@@ -93,5 +93,23 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PF_9|fan1||Timer 14|
 |PF_10|e3temp|t3||
 |PF_11|LCD_SS|||
+
+<div class="datatable-end"></div>
+
+## Configured SPI connections
+
+The below SPI channels are preconfigured in the firmware.  
+Where NoPin is present, then that pin is not configured by default.  
+
+<div class="datatable-begin"></div>
+
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
+| :------------- |:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware|
+|1|PB_13|PB_14|PB_15|Hardware|
+|2|NoPin|NoPin|NoPin|Hardware|
+|3|PE_10|NoPin|PE_14|Software|
+|4|NoPin|NoPin|NoPin|Software|
+|5|NoPin|NoPin|NoPin|Software|
 
 <div class="datatable-end"></div>

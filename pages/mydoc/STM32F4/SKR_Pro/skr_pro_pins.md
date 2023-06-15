@@ -2,7 +2,7 @@
 title: SKR Pro v1.1 and v1.2 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 12/06/2023
 summary: "The pin names of the SKR Pro v1.1 and v1.2 in the firmware"
 sidebar: mydoc_sidebar
 permalink: skr_pro_pins.html
@@ -98,5 +98,23 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PG_6|LCD_D6|||
 |PG_7|LCD_D7|||
 |PG_8| zstop|z-stop||
+
+<div class="datatable-end"></div>
+
+## Configured SPI connections
+
+The below SPI channels are preconfigured in the firmware.  
+Where NoPin is present, then that pin is not configured by default.  
+
+<div class="datatable-begin"></div>
+
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
+| :------------- |:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware|
+|1|PB_13|PB_14|PB_15|Hardware|
+|2|PC_10|PC_11|PC_12|Hardware|
+|3|NoPin|NoPin|NoPin|Software|
+|4|NoPin|NoPin|NoPin|Software|
+|5|NoPin|NoPin|NoPin|Software|
 
 <div class="datatable-end"></div>

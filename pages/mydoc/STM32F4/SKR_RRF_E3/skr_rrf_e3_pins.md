@@ -2,7 +2,7 @@
 title: SKR-RRF-E3 + IDEX Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 18/05/2022
+last_updated: 12/06/2023
 summary: "SKR-RRF-E3 + IDEX Pin Names"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_pins.html
@@ -79,5 +79,23 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PE_8|BEEP|||
 |PE_9|BTN_ENC|||
 |PE_3|IO|||
+
+<div class="datatable-end"></div>
+
+## Configured SPI connections
+
+The below SPI channels are preconfigured in the firmware.  
+Where NoPin is present, then that pin is not configured by default.  
+
+<div class="datatable-begin"></div>
+
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
+| :------------- |:-------------|:-------------|:-------------|:-------------|
+|0|NoPin|NoPin|NoPin|Hardware|
+|1|PB_13|PB_14|PB_15|Hardware|
+|2|NoPin|NoPin|NoPin|Hardware|
+|3|NoPin|NoPin|NoPin|Software|
+|4|NoPin|NoPin|NoPin|Software|
+|5|NoPin|NoPin|NoPin|Software|
 
 <div class="datatable-end"></div>

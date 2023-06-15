@@ -2,7 +2,7 @@
 title: Adding CAN-FD to an SKR v2.0
 tags: []
 keywords: 
-last_updated: 08/02/2023
+last_updated: 12/06/2023
 summary: "How to add CAN-FD to an SKR v2.0 and connect a CAN-FD Toolboard"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_spi2canfd.html
@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: SKR v2.0
 spiModule: EXP1/EXP2
-moduleURL: 
+moduleURL: https://www.aliexpress.com/item/1005005389481192.html
 moduleType: EXP
 spiJumpers: skr_2.0_SPI.PNG
 driverSPICSPin: PD_12

@@ -51,6 +51,10 @@ children:
   output: web, pdf
   children:
 
+  - title: 3.5.0-beta.4_101 Release Notes
+    url: release_notes_3.5.0-beta.4_101.html
+    output: web, pdf
+  
   - title: 3.5beta2+_106 Release Notes
     url: release_notes_3.5beta2_106.html
     output: web, pdf
@@ -291,6 +295,10 @@ children:
     url: troubleshooting.html
     output: web, pdf
 
+  - title: Useful Standalone Setups
+    url: updating_standalone.html
+    output: web, pdf
+  
   - title: Useful Macros
     url: useful_macros.html
     output: web, pdf
@@ -1653,6 +1661,10 @@ children:
 
     - title: Connecting a PT100 Temperature Sensor
       url: fly_rrf_36_pt100.html
+      output: web, pdf
+
+    - title: Connecting Neopixels
+      url: fly_rrf_36_neopixels.html
       output: web, pdf
 
     - title: Pin Names
