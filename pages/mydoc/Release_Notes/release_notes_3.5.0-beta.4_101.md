@@ -2,7 +2,7 @@
 title: Release notes release_notes_3.5.0-beta.4_101
 tags: [getting_started]
 keywords: release notes, announcements, what's new, new features
-last_updated: 16/04/2023
+last_updated: 15/06/2023
 summary: "Release notes for the unstable release of 3.5.0-beta.4_101"
 sidebar: mydoc_sidebar
 permalink: release_notes_3.5.0-beta.4_101.html

@@ -2,7 +2,7 @@
 title: Configuring Neopixels
 tags: []
 keywords: 
-last_updated: 01/02/2023
+last_updated: 15/06/2023
 summary: "Configuring Neopixels"
 sidebar: mydoc_sidebar
 permalink: neopixels.html
@@ -19,7 +19,7 @@ datatable: true
 </ul>
   <div class="tab-content">
 
-<div role="tabpanel" class="tab-pane" id="neo35" markdown="1">
+<div role="tabpanel" class="tab-pane active" id="neo35" markdown="1">
 
 The Neopixels should be configured in config.g using M950 as detailed [here](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m950-create-heater-fan-spindle-or-gpioservo-pin).  
 For example, using the default toolboard address of 124 with RGBW Neopixels   
