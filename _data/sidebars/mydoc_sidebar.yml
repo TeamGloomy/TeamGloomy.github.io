@@ -1663,6 +1663,10 @@ children:
       url: fly_rrf_36_pt100.html
       output: web, pdf
 
+    - title: Configuring the Onboard Temperature Sensor
+      url: fly_rrf_36_onboard_temp.html
+      output: web, pdf
+
     - title: Connecting Neopixels
       url: fly_rrf_36_neopixels.html
       output: web, pdf

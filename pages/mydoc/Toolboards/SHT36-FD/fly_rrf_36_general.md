@@ -2,7 +2,7 @@
 title: Fly-RRF-36 General Information
 tags: []
 keywords: 
-last_updated: 16/06/2023
+last_updated: 24/06/2023
 summary: "General information regarding the Fly-RRF-36 Toolboard"
 sidebar: mydoc_sidebar
 permalink: fly_rrf_36_general.html
@@ -59,7 +59,13 @@ If using io1.in with a simple switch, install a jumper to bypass the diode (mark
 ### CAN Termination
 
 If using a single toolboard, make sure the CAN jumper is installed, as indicated on the pinout.  
-If using multiple toolboards, only the last toolboard should have a CAN jumper installed.  
+If using multiple toolboards, only the last toolboard should have a CAN jumper installed.
+
+### PT1000 Support
+
+The hotend temperature sensor input support PT1000. When using one, make sure the PT1000 jumper is installed. Make sure it is removed when using a standard thermistor.  
+
+Also make sure you define the resistor value as R1000 in your M308 command.
 
 ### Initial Firmware Installation
 
