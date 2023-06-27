@@ -1223,11 +1223,11 @@ children:
       url: skr_rrf_e3_pins.html
       output: web, pdf
       
-  - title: Configuring an ESP8266 for STM32F4 Boards
+  - title: Configuring an ESP8266 WiFi Module for STM32F4 Boards
     url: stm32_esp8266.html
     output: web, pdf
 
-  - title: Configuring an ESP32 for STM32F4 Boards
+  - title: Configuring an ESP32 WiFi Module for STM32F4 Boards
     url: stm32_esp32.html
     output: web, pdf
 

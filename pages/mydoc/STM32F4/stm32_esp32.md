@@ -1,9 +1,9 @@
 ---
-title:  Configuring an ESP32 for STM32 Boards
+title:  Configuring an ESP32 WiFi Module for STM32 Boards
 tags: 
 keywords: 
-last_updated: 02/05/2021
-summary: "How to configure an ESP32 for use with STM32 Based Boards"
+last_updated: 27/06/2023
+summary: "How to configure an ESP32 WiFi Module for use with STM32 Based Boards"
 sidebar: mydoc_sidebar
 permalink: stm32_esp32.html
 folder: mydoc
@@ -17,6 +17,10 @@ comments: false
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="preparing" markdown="1">
+
+## Overview
+
+These instructions are aimed at users who's mainboard does not contain an onboard WiFi Module and an extra module has had to be connected to the EXP1/EXP2 ports.  
 
 ## Initial Configuration
 
