@@ -11,7 +11,7 @@ comments: false
 toc: false
 ---
 
-Here you may find some instructions on how to troubleshoot the most common problems when setting up that port of RepRapFirmware for LPC and STM32.
+Here you may find some instructions on how to troubleshoot the most common problems when setting up this port of RepRapFirmware for LPC and STM32.
 
 ## Board flashing issues
 

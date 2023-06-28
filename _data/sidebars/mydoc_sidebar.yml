@@ -227,11 +227,7 @@ children:
     url: camera.html
     output: web, pdf
 
-  - title: Board.txt Configurables - LPC
-    url: board_txt_lpc.html
-    output: web, pdf
-
-  - title: Board.txt Configurables - STM32
+  - title: Board.txt Configurables
     url: board_txt_stm32.html
     output: web, pdf
 
@@ -239,7 +235,11 @@ children:
     url: smart_effector.html
     output: web, pdf
 
-  - title: Connecting a DHT22 (STM32 Only)
+  - title: Connecting a BME280
+    url: bme280.html
+    output: web, pdf
+  
+  - title: Connecting a DHT22
     url: dht22.html
     output: web, pdf
 
@@ -275,6 +275,10 @@ children:
     url: firmware_build.html
     output: web, pdf
 
+  - title: How to Know What Pin is Interrupt Capable
+    url: interrupt_pins.html
+    output: web, pdf
+
   - title: MCU Comparisons
     url: mcu_types.html
     output: web, pdf
@@ -291,6 +295,10 @@ children:
     url: short_to_ground.html
     output: web, pdf
 
+  - title: Obtaining Information for Troubleshooting
+    url: troubleshooting_information.html
+    output: web, pdf
+  
   - title: Troubleshooting
     url: troubleshooting.html
     output: web, pdf
@@ -337,6 +345,10 @@ children:
 
   - title: Configuring an SBC for LPC Boards
     url: lpc_sbc.html
+    output: web, pdf
+
+  - title: Board.txt Configurables - LPC
+    url: board_txt_lpc.html
     output: web, pdf
 
   - title: Fly-CDY

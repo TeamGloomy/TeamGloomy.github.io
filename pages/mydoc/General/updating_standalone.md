@@ -64,7 +64,7 @@ It is recommended to carry out updating of the firmwares in the following order.
 * STM32 FIRMWARE - When updating the firmware, you can decide to either install the [latest stable](https://github.com/gloomyandy/RepRapFirmware/releases/latest) firmware or install the [latest unstable](https://github.com/gloomyandy/RepRapFirmware/releases) version. Download the correct firmware file using the board type you noted down above.  
 * Duet FIRMWARE - For all toolboards and expansion boards, the firmware can be found [here](https://github.com/Duet3D/RepRapFirmware/releases) and you **MUST** ensure that the version number matches the version of the firmware that you have chosen to install.  
 * DWC - When downloading [DWC](https://github.com/Duet3D/DuetWebControl/releases), you **MUST** ensure that the version number matches the version of the firmware that you have chosen to install.  
-* WiFi FIRMWARE - For versions 1.27-02 and below, it can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Version 2.1b3 and above can be found [here](https://github.com/gloomyandy/RepRapFirmware/releases).  
+* WiFi FIRMWARE - For versions 1.27-02 and below, it can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Version 2.1b3 and above can be found [here](https://github.com/gloomyandy/RepRapFirmware/releases). If you are running a separate WiFi module and you have not connected the RX and TX connections, you will need to update the WiFi module using esptools. Please see [here for ESP8266](./stm32_esp8266.html) and [here for ESP32](./stm32_esp32.html).  
 
 #### Installing
 

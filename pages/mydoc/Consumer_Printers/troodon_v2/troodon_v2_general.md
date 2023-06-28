@@ -2,7 +2,7 @@
 title: Troodon V2 Printer General Information
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 28/06/2023
 summary: "General information regarding the Troodon V2 Printer"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_general.html
@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 The Troodon V2 Printer is a 95% assembled 3D printer, produced by [Formbot](https://www.formbot3d.com/products/troodon-20-pre-assembled-fully-enclosed-corexy-3d-printer) and is based on the design of the Voron V2.4r2.  
-It has a print size of 350x350x350mm. All panels etc are provided for it to be fully enclosed.  
+It has a print size of 350x350x320mm. All panels etc are provided for it to be fully enclosed.  
 The hotend has a PT1000 fitted to allow higher temperature printing. It has a hardened nozzle and extruder gears to support printing of abrasive filament.
 It has some upgrades fitted, such as nozzle wiping brush, aluminium parts rather than plastic and supports the stealthburner as a drop in replacement.
 It comes running this port of RRF on a custom made BTT Octopus X7 out of the box.
@@ -47,6 +47,17 @@ There are two reasons why this is the case and they are as follows:
 * The traces on the breakout board and toolhead PCB have been designed for a maximum of 2.5A (which equates to 60 watts at 24v).  
 Armed with this information, I spoke to Formbot who's engineer advised that 50 watts is the limit. This means you can't use hotends such as a rapido without heavy modification of the stock setup.  
 This can however be remidied by installing a toolboard. Currently, only the Duet3D 1LC is supported.  
+
+## Configurations Files
+
+### Stock
+
+A backup of the stock configuration files can be found [here](https://github.com/TeamGloomy/Troodon-V2/tree/stock).  
+
+### Improved Config
+
+TeamGloomy offer an "improved" version of the configuration files, which can be found [here](https://github.com/TeamGloomy/Troodon-V2/tree/improved).  
+They contain a number of improved, including flippering the X and Y axis so they are in the correct orientation. Please read the changelog at the above link to find out about all the changes that have been implemented.  
 
 ### Initial Installation
 

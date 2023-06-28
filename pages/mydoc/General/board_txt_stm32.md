@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to STM32
 tags: []
 keywords: 
-last_updated: 28/01/2023
+last_updated: 28/06/2023
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt_stm32.html
@@ -11,6 +11,8 @@ comments: false
 toc: false
 datatable: true
 ---
+
+{% include important.html content="This page is only applicable to STM32 based boards. For LPC applicable board.txt entries, please go to [this page](board_txt_lpc.html)." %}
 
 Below is a list of items that can be configured using the /sys/board.txt file.
 
