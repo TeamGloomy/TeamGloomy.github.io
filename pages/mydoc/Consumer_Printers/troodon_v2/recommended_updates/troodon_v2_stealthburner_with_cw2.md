@@ -2,7 +2,7 @@
 title: Stealthburner with Clockwork2
 tags: []
 keywords: 
-last_updated: 18/04/2023
+last_updated: 29/06/2023
 summary: "Installing a Stealthburner with a Clockwork2"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_stealthburner_with_cw2.html
@@ -17,7 +17,7 @@ datatable: true
 The part cooling capability of an afterburner isn't great. It is however simple to swap from an afterburner to a stealthburner without swapping the extruder.  
 Please note there are no free pins to run the neopixels.  
 
-{% include warning.html content="Formbot will be releasing a Stealthburner Kit specifically for the Troodon V2 soon. This kit will include all hardware and printed parts "%}  
+{% include warning.html content="Formbot now sell a [Stealthburner Kit](https://www.formbot3d.com/collections/troodon-20) specifically for the Troodon V2 which includes everything required."%}  
 
 {% include warning.html content="Please ensure that power has been removed from the printer, otherwise you risk damaging yourself and/or the printer"%}  
 

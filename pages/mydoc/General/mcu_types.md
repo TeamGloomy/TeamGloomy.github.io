@@ -2,7 +2,7 @@
 title: MCU Types overview
 tags: []
 keywords: 
-last_updated: 30/10/2022
+last_updated: 29/06/2023
 summary: "An overview of the different MCU's supported"
 sidebar: mydoc_sidebar
 permalink: mcu_types.html
@@ -16,7 +16,7 @@ datatable: true
 
 |Processor Family|LPC|STM32F4|STM32H7|
 | :------------- |:-------------|:-------------|:-------------|
-|Tested Processors|LPC 1768 and LPC 1769|STM32F405, STM32F407, STM32F429|STM32H743|
+|Tested Processors|LPC 1768 and LPC 1769|STM32F405, STM32F407, STM32F429|STM32H723, STM32H743|
 |Processor Speed|LPC 1768 = 100MHz, LPC 1769 = 120MHz|168Mhz or 180MHz|480MHz|
 |Flash requirements|512kb|1024kb|1024kb+|
 |Networking|WiFi, Ethernet (supported up to 3.1.1-14) or via attached SBC|WiFi or via attached SBC|WiFi (or via attached SBC coming soon)|

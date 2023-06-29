@@ -2,7 +2,7 @@
 title: Extruder Bearing Change
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 29/06/2023
 summary: "Changing the bearings in the Clockwork1 extruder"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_bearing_change.html
@@ -11,6 +11,8 @@ comments: false
 toc: false
 datatable: true
 ---
+
+{% include important.html content="The Troodon V2 is now being shipped with better bearings so this change is no longer required. The new StealthBurner upgrade kits also come with the new bearings." %}
 
 ## Overview
 

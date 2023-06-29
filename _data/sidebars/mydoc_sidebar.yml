@@ -1715,6 +1715,10 @@ children:
       url: troodon_v2_connected_wifi_esp32.html
       output: web, pdf
 
+    - title: Adding CAN-FD
+      url: troodon_v2_spi2canfd.html
+      output: web, pdf
+
     - title: Heater Tuning
       url: troodon_v2_heater_tuning.html
       output: web, pdf

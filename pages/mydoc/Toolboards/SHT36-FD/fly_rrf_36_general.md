@@ -2,7 +2,7 @@
 title: Fly-RRF-36 General Information
 tags: []
 keywords: 
-last_updated: 24/06/2023
+last_updated: 29/06/2023
 summary: "General information regarding the Fly-RRF-36 Toolboard"
 sidebar: mydoc_sidebar
 permalink: fly_rrf_36_general.html
@@ -69,5 +69,11 @@ Also make sure you define the resistor value as R1000 in your M308 command.
 
 ### Initial Firmware Installation
 
-The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an rpi drive. To install the firmware, drag and drop the .uf2 file onto the rpi drive. Once uploaded, remove the toolboard from the computer.  
+The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an rpi drive.  
+Download the file called `Duet3Firmware_FLY36RRF.uf2` from [here](https://github.com/gloomyandy/RepRapFirmware/releases) remembering that it is only supported from 3.5.0-beta.4 onwards.  
+To install the firmware, drag and drop the .uf2 file onto the rpi drive. Once uploaded, remove the toolboard from the computer.  
 Follow the [CAN Connection instructions](fly_rrf_36_can_connection.html) to continue.  
+
+### Updating the Toolboard Firmware
+
+Using DWC, upload the latest firmware file to the system tab. DWC will ask you want to install the new firmware file. Select Yes. The updating time (around a minute or two) is longer on RP2040 based toolboards so be patient.  

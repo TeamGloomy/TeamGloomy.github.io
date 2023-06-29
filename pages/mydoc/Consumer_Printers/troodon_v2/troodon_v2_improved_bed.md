@@ -1,7 +1,7 @@
 ---
 title: Troodon V2 Printer Improved Bed Levelling File
 keywords: 
-last_updated: 11/01/2023
+last_updated: 29/06/2023
 summary: "Improving the G32 bed levelling file supplied with the Troodon V2 Printer"
 sidebar: mydoc_sidebar
 permalink: troodon_v2_improved_bed.html
@@ -34,6 +34,8 @@ G30 P1 X9 Y330 Z-99999 S4 ; probe near a leadscrew and calibrate 4 motors
 ```
 
 ### Improved bed.g file
+
+{% include important.html content="This has been included as part of the ["improved"](https://github.com/TeamGloomy/Troodon-V2) TeamGloomy config files" %}
 
 Copy the code below and replace the contents of the bed.g file.  
 ```
