@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-{% include important.html content="This has been included as part of the ["improved"](https://github.com/TeamGloomy/Troodon-V2) TeamGloomy config files" %}
+{% include important.html content="This has been included as part of the [improved](https://github.com/TeamGloomy/Troodon-V2) TeamGloomy config files" %}
 
 The Troodon V2 Printer is supplied with a firmware and firmware files that, rather than having the supplied mainboard natively configured, use a different firmware profile and override the pins configured using board.txt. There is nothing wrong with the approach Formbot have taken and the firmware can be updated without issue. However, in the future, changes may be made to the firmware profile its using that may cause issues. TeamGloomy therefore recommend making some changes to your board.txt to prevent any issues going forwards.
 

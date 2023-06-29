@@ -35,7 +35,7 @@ G30 P1 X9 Y330 Z-99999 S4 ; probe near a leadscrew and calibrate 4 motors
 
 ### Improved bed.g file
 
-{% include important.html content="This has been included as part of the ["improved"](https://github.com/TeamGloomy/Troodon-V2) TeamGloomy config files" %}
+{% include important.html content="This has been included as part of the [improved](https://github.com/TeamGloomy/Troodon-V2) TeamGloomy config files" %}
 
 Copy the code below and replace the contents of the bed.g file.  
 ```
