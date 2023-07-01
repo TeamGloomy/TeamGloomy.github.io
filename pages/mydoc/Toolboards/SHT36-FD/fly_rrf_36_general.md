@@ -76,4 +76,4 @@ Follow the [CAN Connection instructions](fly_rrf_36_can_connection.html) to cont
 
 ### Updating the Toolboard Firmware
 
-Using DWC, upload the latest firmware file to the system tab. DWC will ask you want to install the new firmware file. Select Yes. The updating time (around a minute or two) is longer on RP2040 based toolboards so be patient.  
+Using DWC, upload the latest firmware file to the system tab. Once uploaded, send `M997 B124` and it will update (This assumes your board is the default CAN address 124, change the address in the command if necessary). The updating time (around a minute or two) is longer on RP2040 based toolboards so be patient.  
