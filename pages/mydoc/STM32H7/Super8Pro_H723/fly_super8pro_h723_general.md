@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fly-Super8Pro H723 board.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/1005004431621335.html).  
+It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DDiWwl3).  
 The Fly-Super8Pro H723 board is based on hardware revision v1.3 of the Fly-Super8. Details of each Fly-Super8 hardware revision can be found [here](fly_super8_hardware_revisions.html)
 
 ### Board.txt Name
@@ -38,7 +38,7 @@ The jumpers should be installed as below. "Common Interpolation" should be used 
 ### Driver Diag Pin
 
 The driver diag pin is used for sensorless homing and stall detection.  
-The Fly-Super8Pro H743 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers](https://www.aliexpress.com/item/1005001877899893.html) which have a switch on the underside of them for disabling the diag pin.  
+The Fly-Super8Pro H743 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers](https://s.click.aliexpress.com/e/_DnBFVNR) which have a switch on the underside of them for disabling the diag pin.  
 If you plan on using endstops rather than sensorless homing and do not have the Fly-2209 drivers, you need to bend or remove the diag pin.  
 
 ### Driver Signal Voltage

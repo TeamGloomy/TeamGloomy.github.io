@@ -16,6 +16,8 @@ datatable: true
 
 This page covers any general information for the SKR3EZ H743 board. 
 
+The SKR3EZ can be purchased from [AliExpress](https://s.click.aliexpress.com/e/_DkY3Otb)
+
 ### Board.txt Name
 
 The board name in board.txt is **biquskr_3_ez**.

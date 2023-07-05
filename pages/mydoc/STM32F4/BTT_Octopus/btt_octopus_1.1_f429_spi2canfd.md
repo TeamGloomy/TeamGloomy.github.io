@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: BTT Octopus v1.1 F429 Version
 spiModule: driver or EXP1/EXP2
-moduleURL: https://www.aliexpress.com/item/1005005389481192.html
+moduleURL: https://s.click.aliexpress.com/e/_DFbqZsz
 moduleType: both
 spiJumpers: btt_octopus_1.1_spi.png
 driverSPICSPin: PD_3

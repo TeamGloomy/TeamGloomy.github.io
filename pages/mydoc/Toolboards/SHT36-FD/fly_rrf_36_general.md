@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fly-RRF-36 toolboard.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/1005005710321309.html).  
+It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DDCIc4t).  
 This toolboard is only supported from firmware version 3.5 beta 4 and above.  
 The Fly-RRF-36 is the first RP2040 based toolboard compatible with both Duet 3 boards and STM32H723, STM32H743 and STM32F4 boards with spican modules.  
 

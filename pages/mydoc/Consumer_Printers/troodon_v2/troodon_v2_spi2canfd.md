@@ -27,7 +27,7 @@ From 3.5b2, it is now possible to use one or two toolboards with STM32F4 using t
 
 You must also be running the correct board.txt as detailed [here](troodon_v2_firmware_adjustment.html)
 
-For the Troodon V2 Printer we recommend the driver module, which can be purchased from Aliexpress.  
+For the Troodon V2 Printer we recommend the driver module, which can be purchased from [Aliexpress](https://s.click.aliexpress.com/e/_DEb8k6V).  
 
 ### Connecting the driver module
 

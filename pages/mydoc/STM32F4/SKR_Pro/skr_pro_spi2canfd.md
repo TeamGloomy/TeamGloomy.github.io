@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: SKR Pro v1.1 and v1.2
 spiModule: driver
-moduleURL: https://www.aliexpress.com/item/1005005389481192.html
+moduleURL: https://s.click.aliexpress.com/e/_De3n8p7
 moduleType: driver
 spiJumpers: skr_pro_spi_jumpers.png
 driverSPICSPin: PD_6

@@ -27,7 +27,7 @@ Remember to rename it to DuetWiFiServer.bin. Put it in a folder called firmware 
 
 ## WiFi
 
-You will need a [Fysetc ESP8266 WiFi module](https://www.aliexpress.com/item/1005003145645569.html).  
+You will need a [Fysetc ESP8266 WiFi module](https://s.click.aliexpress.com/e/_DFRBYaN).  
 Another module can be used but custom cabling may be required.   
 
 ### Prepare the SD Card

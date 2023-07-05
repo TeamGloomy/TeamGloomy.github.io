@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fly-CDY board.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/1005001701631493.html)
+It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DkhTu5T)
 
 ### Driver Jumpers
 

@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: Fly-CDYv2
 spiModule: driver or EXP1/EXP2
-moduleURL: https://www.aliexpress.com/item/1005005389481192.html
+moduleURL: https://s.click.aliexpress.com/e/_Dk3ND1B
 moduleType: both
 spiJumpers: fly_e3_jumpers.png
 driverSPICSPin: PE_9

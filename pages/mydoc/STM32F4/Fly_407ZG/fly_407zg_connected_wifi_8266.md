@@ -62,7 +62,7 @@ There is an alternative method of connecting the ESP8266 detailed [here](/fly_40
 
 {% include warning.html content="The cables used need to be very very short. Even 10cm ones don't work so they must be shorter than that" %}
 
-If you would rather use a pre-made WiFI board, then the one produced by [flymaker](https://www.aliexpress.com/item/1005001370540066.html) is recommended.  
+If you would rather use a pre-made WiFI board, then the one produced by [flymaker](https://s.click.aliexpress.com/e/_De5A1Yz) is recommended.  
 
 ### Prepare the SD Card
 

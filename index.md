@@ -1,6 +1,6 @@
 ---
 title: "Getting started with RepRapFirmware for LPC and STM32 based boards"
-last_updated: 16/04/2023
+last_updated: 05/07/2023
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: These instructions will help you to get started running RepRapFirmware on your LPC or STM32 based 3D printer board
@@ -52,3 +52,7 @@ There currently isn't an unstable build available
 ## Partnership
 
 TeamGloomy are working in close partnership with Flymaker/Mellow to ensure that 100% compatibility is obtained with their boards and to cover all of your 3D printer electronics requirements.  
+
+## Aliexpress
+
+All links used on the site are affiliate links where possible. If you purchase via a link it will give a tiny percent of commission to the teamgloomy. This will not hurt your wallet and at the same time help us to maintain this project.

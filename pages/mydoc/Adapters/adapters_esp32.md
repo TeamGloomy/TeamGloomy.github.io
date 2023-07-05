@@ -23,7 +23,7 @@ There are two adapters that support the following boards:
 - Fly-407ZG
 - Fly-CDYv2
 
-They can be purchased through [aliexpress](https://www.aliexpress.com/item/1005003077964768.html).  
+They can be purchased through [aliexpress](https://s.click.aliexpress.com/e/_Dn2O3it).  
 
 {% include image.html file="esp32_fly_adapter.png" alt="Fly ESP32 Adapter" caption="Fly ESP32 Adapter Schematic" %}
 
@@ -33,6 +33,6 @@ They can be purchased through [aliexpress](https://www.aliexpress.com/item/10050
 - BTT Octopus v1.1 F429 Version
 - BTT Octopus Pro v1.0 F429 Version
 
-They can be purchased through [aliexpress](https://www.aliexpress.com/item/1005003088425354.html).  
+They can be purchased through [aliexpress](https://s.click.aliexpress.com/e/_DegW3Oh).  
 
 {% include image.html file="esp32_fly_skr2_adapter.png" alt="Fly ESP32 SKR2 Adapter" caption="Fly ESP32 SKR2 Adapter Schematic" %}

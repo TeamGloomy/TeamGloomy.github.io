@@ -36,7 +36,7 @@ Here is a list of the printed parts required.
 
 ### Purchased Parts Required
 
-It is suggested that you purchase a hardware kit for the Stealthburner, such as [this one](https://www.aliexpress.com/item/1005003759688905.html).  
+It is suggested that you purchase a hardware kit for the Stealthburner, such as [this one](https://s.click.aliexpress.com/e/_DFkq2fr).  
 
 ## Installation
 

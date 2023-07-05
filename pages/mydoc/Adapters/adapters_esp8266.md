@@ -69,7 +69,7 @@ Fly produce a single ESP8266 WiFi module that has a pinout that is compatible wi
 
 {% include note.html content="It should be noted that they do not have a USB port. They should be updated using DWC or a USB Serial TTL adapter" %}
 
-They can be purchased from [AliExpress](https://www.aliexpress.com/item/1005001370540066.html)
+They can be purchased from [AliExpress](https://s.click.aliexpress.com/e/_DB4zjPF)
 
 There are now two versions of this board. The blue one is the original version and had 2 sets of EXP1 and EXP 1 headers. The new version has a black PCB and passes 8 pins (10 pins including 5v and Gnd) through. This allows use of a 12864 display on an STM32 based board. Below is the pinout.  
 
@@ -92,7 +92,7 @@ BigTreeTech (BTT) produce a single ESP8266 WiFi module that has a pinout that is
 
 {% include note.html content="It should be noted that they do not support updating through RRF without carrying out the mod below." %}
 
-They can be purchased from [AliExpress](https://www.aliexpress.com/item/4001315145042.html)
+They can be purchased from [AliExpress](https://s.click.aliexpress.com/e/_DlztXpf)
 
 ## Modification to allow updating through RRF
 

@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 Fly produce two screens which are suitable for RepRapFirmware. There is a 4.3" version and a 7" version.  
-They are currently available through [AliExpress](https://www.aliexpress.com/item/1005001464874331.html)
+They are currently available through [AliExpress](https://s.click.aliexpress.com/e/_DFFjDVR)
 
 ### Config.g
 

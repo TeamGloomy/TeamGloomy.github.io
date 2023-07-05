@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: SKR v2.0
 spiModule: EXP1/EXP2
-moduleURL: https://www.aliexpress.com/item/1005005389481192.html
+moduleURL: https://s.click.aliexpress.com/e/_De3n8p7
 moduleType: EXP
 spiJumpers: skr_2.0_SPI.PNG
 driverSPICSPin: PD_12

@@ -17,6 +17,8 @@ datatable: true
 This page covers any general information for the SKR-RRF-E3 board and its IDEX addon.  
 It is officially supported by TeamGloomy from release 3.3b1_5.  
 
+The SKR-RRF-E3 can be purchased from [AliExpress](https://s.click.aliexpress.com/e/_DmY2r2D)
+
 ### Board.txt Name
 
 The board name in board.txt is **biquskr_rrf_e3_1.1**.

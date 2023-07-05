@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fly-407ZG board.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/4000609195834.html)
+It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DCwIy0h)
 
 ### Board.txt Name
 

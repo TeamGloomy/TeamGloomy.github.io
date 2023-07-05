@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fysetc Spider King 407 board.  
-It is currently available through [AliExpress](https://www.aliexpress.com/item/1005004635283874.html). 
+It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DElhit3). 
 
 ### Board.txt Name
 
