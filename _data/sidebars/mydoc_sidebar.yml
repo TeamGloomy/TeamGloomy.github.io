@@ -707,6 +707,10 @@ children:
       url: fly_cdyv3_voltage.html
       output: web, pdf
 
+    - title: Reflashing the Bootloader
+      url: fly_cdyv3_bootloader.html
+      output: web, pdf
+
     - title: Pin Names
       url: fly_cdyv3_pins.html
       output: web, pdf
