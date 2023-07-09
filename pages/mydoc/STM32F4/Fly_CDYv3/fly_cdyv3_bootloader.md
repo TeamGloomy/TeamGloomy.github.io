@@ -10,7 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardName: Fly-CDYv3
+boardname: Fly-CDYv3
 bootloaderURL: https://github.com/TeamGloomy/Board-Bootloaders/blob/master/STM32F4/Fly-CDYv3-Bootloader.bin
 ---
 
