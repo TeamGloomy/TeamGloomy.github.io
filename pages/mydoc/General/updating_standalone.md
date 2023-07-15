@@ -89,7 +89,7 @@ after the board type. It will be one of the following:
 
 From DWC 3.5b3, a new panel has been added to the machine specific page that
 collects all the above information in one place, as shown below (You will still
-need to identify your ESP model as described in the previous section).  {%
+need to identify your ESP model as described in the next section).  {%
 include image.html file="dwc_settings_machine_specific_3.5.png" alt="All
 Version Information" caption="All Version Information" %}
 
@@ -100,7 +100,7 @@ If the WiFi firmware you are running is version 1.27-02 or below and it has a
 `32` in the version number, you are using an ESP32. If the version number does
 not include a `32`, you are using an ESP8266.  
 
-#### Identifying Your ESP Model on Newer Wifi Firmware Releases
+#### Identifying Your ESP Model on Newer Wifi Firmware Releases (2.1beta3 onwards)
 
 If the WiFi firmware you are running is 2.1beta3 or greater, the type of ESP is
 no longer included in the version number and further work is required to
