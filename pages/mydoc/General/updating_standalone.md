@@ -18,20 +18,35 @@ and how to update to the latest version when running Standalone Mode.
 
 If running with an SBC, [this page](./stm32_sbc.html) should be followed.  
 
+### Before you update
+
+Refer to the
+[changelog](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x) to
+see if there are _Breaking Changes_ or _Upgrade Notes_ between the version you
+update from and the version you update to (there are no upgrade notes between
+RRF 3.4.0 and RRF 3.4.6 so far; there _are_ breaking changes between RRF 3.4
+and RRF 3.5). Usually breaking changes are backwards-incompatible changes to
+GCode commands; update notes may also point out behavioral changes.
+
+**Note**: It is considered good practice to have a backup of your SD cards
+`/sys` and `/macros` folders before modifying your configuration for a pending
+update.
+
 ### Components to update
 
 There are three main components that you need to consider when updating:
 
  1. The board firmware itself (RepRapFirmware), for the control board and
     possibly toolboards.
- 2. The web UI (DuetWebControl)
- 3. The WiFi server (DuetWifiServer)
+ 2. The WiFi server (DuetWifiServer)
+ 3. The web UI (DuetWebControl)
 
 The firmware version and the web UI version usually need to match. So you
 cannot update one without the other, or risk running into intractable issues
 like broken plugins or broken display on DWC.
 
-The DuetWifiServer is more lenient in working across multiple versions.
+DuetWifiServer has its own versioning scheme and is more lenient in working
+across multiple versions.
 
 We still recommend you update all components on a new stable release.
 
@@ -42,6 +57,7 @@ more detail below:
  2. Identify the current wifi version
  3. Update board firmware
  4. Update wifi version
+ 5. Update Duet Web control
 
 
 ### Identifying Your Firmware Versions in DuetWebControl 3.4.x and Earlier
@@ -69,6 +85,15 @@ after the board type. It will be one of the following:
 |stm32h7-wifi|
 <div class="datatable-end"></div>
 
+### Identifying Versions in DuetWebControl 3.5b3 and Later
+
+From DWC 3.5b3, a new panel has been added to the machine specific page that
+collects all the above information in one place, as shown below (You will still
+need to identify your ESP model as described in the previous section).  {%
+include image.html file="dwc_settings_machine_specific_3.5.png" alt="All
+Version Information" caption="All Version Information" %}
+
+
 #### Identifying Your ESP Model on Older Wifi Firmware Releases
 
 If the WiFi firmware you are running is version 1.27-02 or below and it has a
@@ -85,13 +110,12 @@ reported on the 5th from last line of the M122 output. If the value is around
 40000, then you are using an ESP8266. If the value is greater than 100000, then
 you are using an ESP32.  
 
-### Identifying Versions in DuetWebControl 3.5b3 and Later
+## Update methods
 
-From DWC 3.5b3, a new panel has been added to the machine specific page that
-collects all the above information in one place, as shown below (You will still
-need to identify your ESP model as described in the previous section).  {%
-include image.html file="dwc_settings_machine_specific_3.5.png" alt="All
-Version Information" caption="All Version Information" %}
+There are two update methods: Using the ReleaseMgr plugin which helps
+streamline the experience, or manually updating which does not require
+installing a plugin and works on stock installs (You can also update manually
+after installing the ReleaseMgr plugin if the need exists for some reason).
 
 ### Method 1 - Using ReleaseMgr
 
@@ -110,8 +134,11 @@ Follow the instructions [here](https://github.com/MintyTrebor/ReleaseMgr/wiki/Na
 ### Method 2 - Manually updating
 
 It is recommended to carry out updating of the firmwares in the following
-order. Any toolboards or expansion boards first, then the mainboard firmware,
-then the WiFi firmware and finally DWC.  
+order:
+ *  Any toolboards or expansion boards first
+ * then the mainboard firmware,
+ * then the WiFi firmware 
+ * and finally DWC.  
 
  * STM32 FIRMWARE - When updating the firmware, you can decide to either install the [latest stable](https://github.com/gloomyandy/RepRapFirmware/releases/latest) firmware or install the [latest unstable](https://github.com/gloomyandy/RepRapFirmware/releases) version. Download the correct firmware file using the board type you noted down above.  
 * Duet FIRMWARE - For all toolboards and expansion boards, the firmware can be found [here](https://github.com/Duet3D/RepRapFirmware/releases) and you **MUST** ensure that the version number matches the version of the firmware that you have chosen to install.  
@@ -131,3 +158,17 @@ if you want to install the update where you should click "yes".
   * then the mainboard firmware
   * then the WiFi firmware 
   * and finally DWC.
+
+### Rolling back a release
+
+Its really simple to roll back a release in standalone mode. In that case, you
+run the same procedure as above, just with the previous versions of the
+firmware(s) and DWC. If you had to adjust configurations or macros for a new
+version, those changes also need to be undone (see the note about having
+backups at the beginning of this page).
+
+### Starting from scratch
+
+See [https://teamgloomy.github.io/getting_started.html#firmware](Getting
+Started) in case you need to install RRF from scratch. Since RRF usually does
+updates from a running system, this should only be necessary in rare cases.
