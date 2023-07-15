@@ -20,6 +20,8 @@ If running with an SBC, [this page](./stm32_sbc.html) should be followed.
 
 ### Before you update
 
+#### Check for changes to configuration and behavior
+ 
 Refer to the
 [changelog](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x) to
 see if there are _Breaking Changes_ or _Upgrade Notes_ between the version you
@@ -31,6 +33,22 @@ GCode commands; update notes may also point out behavioral changes.
 **Note**: It is considered good practice to have a backup of your SD cards
 `/sys` and `/macros` folders before modifying your configuration for a pending
 update.
+
+
+#### Prepare for troubleshooting
+
+In case a step in updating goes awry, you may not be able to connect via WiFi
+and/or use the DWC UI. In that case, you can fall back to a serial connection.
+Its good practice to have a USB connection available and accessible for fast
+and easy debugging and fixes via the terminal.
+
+Alternately and additionally, make sure you have easy access to the SD card so
+you can modify the configuration macros on a computer if the need arises.
+
+In addition to preparing the printer for troubleshooting, prepare yourself (-:
+Its best to be well rested and well fed. Consider joining the
+[Forum](https://forum.duet3d.com) and/or [Discord
+server](https://discord.gg/uS97Qs7) in case you need a hand.
 
 ### Components to update
 
@@ -109,6 +127,24 @@ identify the ESP type installed in your system. In the console tab of DWC, send
 reported on the 5th from last line of the M122 output. If the value is around
 40000, then you are using an ESP8266. If the value is greater than 100000, then
 you are using an ESP32.  
+
+**Note**: If you update an ESP32 WiFi module from 1.x to 2.x, the ESP WiFi
+module _will lose_ its WiFi config. You will then need to either connect via
+USB Serial to re-configure the WiFi config, or copy a
+[runonce.g](https://docs.duet3d.com/en/User_manual/Tuning/Macros#runonceg)
+macro to the `/sys` folder containing the GCode sequences for programming your
+WiFi connection details again. Here is an example runonce.g for this purpose;
+edit your connection details before using it.
+
+```
+; runonce.g to reprogram your wifi chip.
+; Runs once, then deletes itself.
+M552 S0                               ; disable network
+G4 P1000                              ; wait a second
+M587 S"WiFi_SSID" P"WiFi_Password" ; configure WiFi
+G4 P1000                              ; wait a second
+M552 S1                               ; enable network
+```
 
 ## Update methods
 
