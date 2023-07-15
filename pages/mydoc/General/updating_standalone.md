@@ -128,7 +128,7 @@ reported on the 5th from last line of the M122 output. If the value is around
 40000, then you are using an ESP8266. If the value is greater than 100000, then
 you are using an ESP32.  
 
-**Note**: If you update an ESP32 WiFi module from 1.27 to 2.x, the ESP WiFi
+**Note**: If you update an ESP32 WiFi module from 1.x to 2.x, the ESP WiFi
 module _will lose_ its WiFi config. You will then need to either connect via
 USB Serial to re-configure the WiFi config, or copy a
 [runonce.g](https://docs.duet3d.com/en/User_manual/Tuning/Macros#runonceg)
