@@ -799,6 +799,10 @@ children:
       url: fly_e3_v2_pt100.html
       output: web, pdf
 
+    - title: Reflashing the Bootloader
+      url: fly_e3_v2_bootloader.html
+      output: web, pdf
+
     - title: Pin Names
       url: fly_e3_v2_pins.html
       output: web, pdf

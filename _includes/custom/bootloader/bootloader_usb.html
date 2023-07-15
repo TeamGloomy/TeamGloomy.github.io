@@ -1,0 +1,39 @@
+{% capture bootloader_img1 %}{{page.bootloader_img1 }}{% endcapture %}
+{% capture bootloader_cap1 %}{{page.bootloader_cap1 }}{% endcapture %}
+{% capture bootloader_url1 %} .\images\{{ page.bootloader_img1 }} {% endcapture %}
+
+## Overview
+
+This page covers how to reflash the bootloader on a {{page.boardname}}.  
+
+### Software
+
+These instructions cover flashing with Windows using the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) software. It is possible to use other software, such as DFU-Utils on linux, but they aren't covered here. You will have to register to be able to download the software.  
+
+### Connection via DFU
+
+{% if {{page.bootloader_buttons}} == true %}
+While holding down the {{page.bootloader_button_name}}, plug in the USB cable into the board and PC.
+{% endif %}
+
+{% 
+include image.html 
+file=bootloader_img1
+url=bootloader_url1
+alt=bootloader_cap1
+caption=bootloader_cap1
+%}
+
+### Process
+
+Launch the STM32CubeProgrammer Software.  
+Download the bootloader from [here]({{page.bootloaderURL}}).  
+Select the correct connection method, in this instance its "USB". You may need to click the refesh button to find it. Then click connect.  
+{% include image.html file="stm32_cube_stlink_1.png" url="https://teamgloomy.github.io/images/stm32_cube_usb_1.png" alt="STM32CubeProgrammer1" caption="Connect via USB" %}  
+Then click on the "+" icon and find/open the bootloader file you downloaded earlier.  
+{% include image.html file="stm32_cube_stlink_2.png" url="https://teamgloomy.github.io/images/stm32_cube_stlink_2.png" alt="STM32CubeProgrammer2" caption="Open File" %}  
+Click the "Download" button.  
+{% include image.html file="stm32_cube_stlink_3.png" url="https://teamgloomy.github.io/images/stm32_cube_stlink_3.png" alt="STM32CubeProgrammer3" caption="Download Bootloader to the board" %}  
+A "File Download Complete" popup will appear once complete.  
+{% include image.html file="stm32_cube_stlink_4.png" url="https://teamgloomy.github.io/images/stm32_cube_stlink_4.png" alt="STM32CubeProgrammer4" caption="Download Complete" %}  
+Disconnect the board and continue flashing the firmware as normal.  
