@@ -2,7 +2,7 @@
 title: Fly-RRF-36 General Information
 tags: []
 keywords: 
-last_updated: 29/06/2023
+last_updated: 16/07/2023
 summary: "General information regarding the Fly-RRF-36 Toolboard"
 sidebar: mydoc_sidebar
 permalink: fly_rrf_36_general.html
@@ -17,7 +17,7 @@ datatable: true
 This page covers any general information for the Fly-RRF-36 toolboard.  
 It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DDCIc4t).  
 This toolboard is only supported from firmware version 3.5 beta 4 and above.  
-The Fly-RRF-36 is the first RP2040 based toolboard compatible with both Duet 3 boards and STM32H723, STM32H743 and STM32F4 boards with spican modules.  
+The Fly-RRF-36 is the first RP2040 based toolboard compatible with both Duet 3 boards and STM32H723, STM32H743 and STM32F4 boards with spican modules running 3.5 beta 4 and above.  
 
 ### Hardware Overview
 
@@ -50,7 +50,8 @@ The orientation that the fan mostfet is plugged into the board doesn't matter.
 ### Fan Voltage
 
 The fan voltage can be set using jumpers to either 5v, 12v and Vin.  
-See the pinout for the correct position.  
+
+{% include image.html file="fly_rrf_36_fan_voltage.png" alt="Fly-RRF-36 Fan Voltage Jumpers" caption="Fly-RRF-36 Fan Voltage Jumpers" %}  
 
 ### io1.in Diode
 

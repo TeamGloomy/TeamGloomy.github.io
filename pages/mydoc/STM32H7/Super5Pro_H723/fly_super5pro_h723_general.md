@@ -23,7 +23,15 @@ The board name in board.txt is **fly_super5_h723**.
 
 ### Board Fuses
 
-The board is supplied without the fuses installed. The fuse should be installed before powering on.  
+The board is supplied without the fuses installed. The fuse should be installed before powering on.
+
+{% include image.html file="fly_super5pro_fuses.png" alt="Fly-Super5Pro Fuses" caption="Fly-Super5Pro Fuses" %}
+
+### Board Power
+
+The fans, heaters and voltage monitoring are supplied by power connected to Power In Bed, so even if you don't use Bed_Out, you must connect input power to Power In Bed for the board to be functional.  
+
+{% include image.html file="fly_super5pro_power.png" alt="Fly-Super5Pro Power Input Connections" caption="Fly-Super5Pro Power Input Connections" %}
 
 ### Driver Jumpers
 
@@ -34,14 +42,8 @@ The jumpers should be installed as below. "Common Interpolation" should be used 
 ### Driver Diag Pin
 
 The driver diag pin is used for sensorless homing and stall detection.  
-The Fly-Super5Pro H743 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers](https://s.click.aliexpress.com/e/_DnBFVNR) which have a switch on the underside of them for disabling the diag pin.  
+The Fly-Super5Pro H723 **does not** have a way of disabling the diag pin as it is designed to be used with [Fly-2209 drivers](https://s.click.aliexpress.com/e/_DnBFVNR) which have a switch on the underside of them for disabling the diag pin.  
 If you plan on using endstops rather than sensorless homing and do not have the Fly-2209 drivers, you need to bend or remove the diag pin.  
-
-### Driver Signal Voltage
-
-The output voltage of each driver EN, STEP and DIR can be configured to either 3.3v, 5v or 12v. The default is 5v.  
-
-{% include image.html file="fly_super8_driver_voltage.png" alt="Fly-Super8 Signal Voltage" caption="Fly-Super8Pro Driver Signal Voltage" %}
 
 ### Fan Mosfets
 
@@ -49,18 +51,20 @@ The Fly-Super5Pro H723 has a unique feature in that the fan mosfets are replacea
 Each mosfet (VS3622e) controls two of the fan outputs.
 The orientation that the fan mostfet is plugged into the board doesn't matter.
 
-{% include image.html file="fly_super8_mosfets.png" alt="Fly-Super8 Fan Mosfets" caption="Fly-Super8 Fan Mosfets" %}
+{% include image.html file="fly_super8_mosfets.png" alt="Fly-Super8 Fan Mosfets" caption="Fly-Super5Pro Fan Mosfets" %}
 
 ### Fan Voltage
 
 The fan voltage can be set using jumpers to either 5v, 12v and Vin.  
 Set them as shown below.  
 
-{% include image.html file="fly_super8_fan_voltage.png" alt="Fly-Super8 Fan Voltage" caption="Fly-Super8 Fan Voltage" %}
+{% include image.html file="fly_super5pro_fan_voltage.png" alt="Fly-Super5Pro Fan Voltage" caption="Fly-Super5Pro Fan Voltage" %}
 
-### IO Output Voltage
+### Endstop Output Voltage
 
-The IO output voltage can be set to either 5v or 12v. The default is 0v until a jumper is added.  
+The Endstop output voltage can be set to either 5v or 12v. The default is 0v until a jumper is added.
+
+ {% include image.html file="fly_super5pro_limit_voltage.png" alt="Fly-Super5Pro Endstop Voltage" caption="Fly-Super5Pro Endstop Voltage" %}
 
 ### Maximum HV Input voltage
 
@@ -68,7 +72,9 @@ The driver sockets have been tested with 48v.
 
 ### Thermistor Connection  
 
-Thermistors should use the ADC inputs. The thermistors should be connected between ground and the signal pin.  
+Thermistors should use the ADC inputs. The thermistors should be connected between ground and the signal pin. 
+
+{% include image.html file="fly_super5pro_thermistors.png" alt="Fly-Super5Pro Thermistor Connection" caption="Fly-Super5Pro Thermistor Connection" %}
 
 ### Initial Installation
 

@@ -2,7 +2,7 @@
 title: Connecting Neopixels to a Fly-RRF-36
 tags: []
 keywords: 
-last_updated: 12/06/2023
+last_updated: 16/07/2023
 summary: "How to connect Neopixels to a Fly-RRF-36"
 sidebar: mydoc_sidebar
 permalink: fly_rrf_36_neopixels.html
@@ -15,6 +15,12 @@ datatable: true
 ## Overview
 
 The Fly-RRF-36 has support for connecting Neopixels using the header called "rgbled" (GPIO26).  
+
+### Wiring
+
+Neopixels can be wired to the Fly-RRF-36 as shown below.
+
+{% include image.html file="fly_rrf_36_neopixels.png" alt="Fly-RRF-36 Neopixel Wiring" caption="Fly-RRF-36 Neopixel Wiring" %}
 
 ### Configuration
 

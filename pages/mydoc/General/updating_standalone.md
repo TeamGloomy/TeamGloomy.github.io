@@ -9,6 +9,7 @@ permalink: updating_standalone.html
 folder: mydoc
 comments: false
 toc: false
+datatable: true
 ---
 
 ## Overview
@@ -77,30 +78,33 @@ more detail below:
  4. Update wifi version
  5. Update Duet Web control
 
-
 ### Identifying Your Firmware Versions in DuetWebControl 3.4.x and Earlier
 
 Using DWC (Duet Web Control - the web interface), on the sidebar, click on
-"General" under settings.  {% include image.html file="dwc_sidebar.png"
-alt="DWC Sidebar" caption="DWC Sidebar" %} 
+"General" under settings.  
+{% include image.html file="dwc_sidebar.png" alt="DWC Sidebar" caption="DWC Sidebar" %} 
 
-This page displays the current version of DWC installed.  {% include image.html
-file="dwc_settings_general.png" alt="DWC Version" caption="DWC Version" %}  
+This page displays the current version of DWC installed.  
+{% include image.html file="dwc_settings_general.png" alt="DWC Version" caption="DWC Version" %}  
 
 Using DWC, on the sidebar, click on "Machine Specific" under settings.  
 
 This page displays the board name and board type, the current release number of
-the firmware installed and the release version of the WiFi firmware installed.
-{% include image.html file="dwc_settings_machine_specific.png" alt="Firmware
-Version" caption="Firmware Version" %}  Make a note of the name in brackets
+the firmware installed and the release version of the WiFi firmware installed.  
+
+{% include image.html file="dwc_settings_machine_specific.png" alt="Firmware Version" caption="Firmware Version" %}   
+
+Make a note of the name in brackets
 after the board type. It will be one of the following:
 
 <div class="datatable-begin"></div>
+
 |Board Type|
 | :------------- |
 |stm32f4-wifi|
 |stm32h723-wifi|
 |stm32h7-wifi|
+
 <div class="datatable-end"></div>
 
 ### Identifying Versions in DuetWebControl 3.5b3 and Later

@@ -2,7 +2,7 @@
 title: Connecting a BLTouch or BTT MicroProbe to a Fly-Super5Pro H723
 tags: []
 keywords: 
-last_updated: 29/04/2023
+last_updated: 16/07/2023
 summary: "How to connect a BLTouch or BTT MicroProbe to a Fly-Super5Pro H723"
 sidebar: mydoc_sidebar
 permalink: fly_super5pro_h723_bltouch.html
@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-Super5Pro H723
-image: ""
+image: fly_super5pro_bltouch.png"
 yellowPin: PE_6
 yellowName: Servo0
 whitePin: PC_2

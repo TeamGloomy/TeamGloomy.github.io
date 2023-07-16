@@ -2,7 +2,7 @@
 title: Fly-Super5Pro H723 CAN-FD Information
 tags: []
 keywords: 
-last_updated: 29/04/2023
+last_updated: 16/07/2023
 summary: "How to connect the Fly-Super5Pro H723 to a CAN-FD Expansion board"
 sidebar: mydoc_sidebar
 permalink: fly_super5pro_h723_canfd.html
@@ -31,8 +31,8 @@ The Fly-Super5Pro H723 can be connected to any of the CAN-FD expansion boards pr
 ### How to connect the board
 
 CAN-FD only requires 2 wires to be connected between each board, CAN-H and CAN-L.  
-We recommend using stranded twisted wire pairs, such as those found in ethernet patch cables.
+We recommend using stranded twisted wire pairs, such as those found in ethernet patch cables. If using a board such as the Fly-RRF-36 that comes supplied with a cable, we suggest twisting the CAN wires together.  
 
-Using the Duet 3 1LC toolboard as example (and the image below), the red wire on the CAN-FD cable is the CAN-H wire and the black is the CAN-L wire. They should be connected to the two pins nearest to the WiFi module on the Fly-Super5Pro H723. CAN-H is connected to CAN-H and CAN-L is connected to CAN-L.  
+Using the Fly-RRF-36 as example (and the image below), the yellow wire on the CAN-FD cable is the CAN-H wire and the white is the CAN-L wire. They should be connected to the two pins nearest to the WiFi module on the Fly-Super5Pro H723. CAN-H is connected to CAN-H and CAN-L is connected to CAN-L.  
 
-{% include image.html file="toolboard_canfd.png" url="https://teamgloomy.github.io/images/toolboard_canfd.png" alt="Toolboard CAN-FD wiring" caption="Toolboard CAN-FD wiring" %}
+{% include image.html file="fly_super5pro_can.png" url="https://teamgloomy.github.io/images/fly_super5pro_can.png" alt="Toolboard CAN-FD wiring" caption="Toolboard CAN-FD wiring" %}

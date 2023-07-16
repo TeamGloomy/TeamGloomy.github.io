@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-RRF-36
-image: ""
+image: "fly_rrf_36_bltouch.png"
 yellowPin: GPIO24
 yellowName: io0.out
 whitePin: GPIO22

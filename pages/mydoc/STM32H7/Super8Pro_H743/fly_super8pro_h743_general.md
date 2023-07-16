@@ -2,7 +2,7 @@
 title: Fly-Super8Pro H743 General Information
 tags: []
 keywords: 
-last_updated: 29/04/2023
+last_updated: 16/07/2023
 summary: "General information regarding the Fly-Super8Pro H743"
 sidebar: mydoc_sidebar
 permalink: fly_super8pro_h743_general.html
@@ -28,6 +28,12 @@ The board is supplied without the fuses installed.
 It is supplied with different fuses than the listing on AliExpress. The fuses should be installed as shown below.  
 
 {% include image.html file="fly_super8_fuses.png" alt="Fly-Super8 Fuses" caption="Fly-Super8 Fuses" %}
+
+### Board Power
+
+The Fly-Super8 has 4 lots of power inputs. The first one powers drivers 0 to 2, the second one powers drivers 3 to 7, the third one powers the boards, heaters and fans and the last one powers the bed.  
+
+{% include image.html file="fly_super8_power.png" alt="Fly-Super8 Power Connections" caption="Fly-Super8 Power Connections" %}
 
 ### Driver Jumpers
 
@@ -76,6 +82,10 @@ The driver sockets have been tested with 48v.
 ### Thermistor Connection  
 
 Thermistors should use the ADC inputs. The thermistors should be connected between ground and the signal pin.  
+
+{% include image.html file="fly_super8_hotend_thermistors.png" alt="Fly-Super8 Hotend Thermistors" caption="Fly-Super8 Hotend Thermistors" %}
+
+{% include image.html file="fly_super8_bed_thermistor.png" alt="Fly-Super8 Bed Thermistors" caption="Fly-Super8 Bed Thermistors" %}
 
 ### Initial Installation
 
