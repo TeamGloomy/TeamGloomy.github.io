@@ -2,7 +2,7 @@
 title: Connecting a Fly-Super5Pro H723 via WiFi
 tags: []
 keywords: 
-last_updated: 29/04/2023
+last_updated: 26/07/2023
 summary: "How to connect a Fly-Super5Pro H723 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_super5pro_h723_connected_wifi.html
@@ -25,7 +25,7 @@ SerialRXTX: "{ PA_10, PA_9 }"
 heat: "{ adc0, adc1, adc2 }"
 diagnostics: ""
 smartdrivers: 
-stepperSPI: 2
+stepperSPI: 0
 TMC: "{ PB_7, PC_7, PC_6, PC_13, PC_14, PC_15 }"
 example: PB_7 and PC_7
 board: fly_super5_h723
