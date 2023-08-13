@@ -16,7 +16,7 @@ datatable: true
 
 ## Fly-E3-v2 Pinout Diagram
 
-{% include image.html file="fly_e3_v2.svg" url="https://teamgloomy.github.io/images/fly_e3_v2.svg" alt="Fly-E3-v2" caption="Fly-E3-v2 Pinout" %}
+{% include image.html file="fly_e3_v2.svg" url="<https://teamgloomy.github.io/images/fly_e3_v2.svg>" alt="Fly-E3-v2" caption="Fly-E3-v2 Pinout" %}
 
 ## Fly-E3-v2 Drivers Pins in Firmware
 
@@ -33,9 +33,9 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-## Fly-E3-v2 Other Pins in Firmware 
+## Fly-E3-v2 Other Pins in Firmware
 
-If more than one pin name is availble, either name can be used in the firmware (config.g).    
+If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, PA_0 or A_0.  
 
 <div class="datatable-begin"></div>

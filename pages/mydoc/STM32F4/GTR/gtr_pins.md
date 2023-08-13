@@ -16,11 +16,11 @@ datatable: true
 
 ## GTR Pinout Diagram
 
-{% include image.html file="gtr.png" url="https://teamgloomy.github.io/images/gtr.png" alt="GTR" caption="GTR Pinout" %}
+{% include image.html file="gtr.png" url="<https://teamgloomy.github.io/images/gtr.png>" alt="GTR" caption="GTR Pinout" %}
 
 ## M5 Pinout Diagram
 
-{% include image.html file="m5.png" url="https://teamgloomy.github.io/images/m5.png" alt="M5" caption="M5 Pinout" %}
+{% include image.html file="m5.png" url="<https://teamgloomy.github.io/images/m5.png>" alt="M5" caption="M5 Pinout" %}
 
 ## GTR + M5 Driver Pins in Firmware
 
@@ -37,7 +37,7 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-## GTR + M5 Other Pins in Firmware 
+## GTR + M5 Other Pins in Firmware
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  

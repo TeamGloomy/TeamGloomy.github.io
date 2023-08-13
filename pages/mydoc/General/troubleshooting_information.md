@@ -23,7 +23,7 @@ The "Console" tab within DWC should be used to obtain the outputs from `M122` an
 
 This is a typical `M122` output.  
 
-```
+```text
 === Diagnostics ===
 RepRapFirmware for STM32F4 based Boards (troodon_v2) version 3.5.0-beta.4_101 (2023-06-10 19:03:47) running on STM32F4 (standalone mode)
 Board ID: X10J3-0427A-D6MUJ-6Q1FD-G62SS-70000
@@ -114,7 +114,8 @@ Socket states: 0 0 0 0 0 0 0 0
 ```
 
 And this is a typical `M122 P200` output.  
-```
+
+```text
 === Diagnostics ===
 RepRapFirmware for STM32F4 based Boards (troodon_v2) version 3.5.0-beta.4_101 running on STM32F4 at 168Mhz
 Bootloader: Unknown

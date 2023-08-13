@@ -19,6 +19,7 @@ Diese verbesserte Anleitung dient als Ersatz für die von Formbot bereitgestellt
 ### Werkzeuge
 
 Im Paket sind die meisten benötigten Werkzeuge enthalten, allerdings sollten die Folgenden ebenfalls bereitgelegt werden.
+
 * Schere
 * 5.5mm Schraubenschlüssel / anpassbarer Schraubenschlüssel / Zange
 * Spritze mit stumpfer Nadel für das Fetten der Gleitlager (benötigte Nadelgrößen: 16G, 18G)
@@ -26,7 +27,8 @@ Im Paket sind die meisten benötigten Werkzeuge enthalten, allerdings sollten di
 * Verschiedene Schraubendreher (Kreuz, Schlitz) für die Elektronik
 
 Die folgenden druckbaren Werkzeuge können beim Aufbau helfen
-* [MGN9 Kunststoffschiene](https://github.com/VoronDesign/Voron-Tap/blob/main/STLs/MGN9_Assembly_Tool.stl)  
+
+* [MGN9 Kunststoffschiene](https://github.com/VoronDesign/Voron-Tap/blob/main/STLs/MGN9_Assembly_Tool.stl)
 
 ### Voraussetzungen
 
@@ -112,7 +114,7 @@ Bring auf der inneren Seite der Platte Schaumstoff mit 1mm Dicke an.
 Bring das VHB Klebeband am Luftfilter an.
 {% include image.html file="troodon_v2_assembly_25.png" alt="VHB Klebeband anbringen" caption="VHB Klebeband anbringen" %}
 Installiere den aktivierten Kohlefilter in den Luftfilter.
-{% include image.html file="troodon_v2_assembly_26.png" alt="Filter installieren" caption="Filter installieren" %} 
+{% include image.html file="troodon_v2_assembly_26.png" alt="Filter installieren" caption="Filter installieren" %}  
 Bring den Luftfilter auf der Rückseite der schwarzen Acrylplatte an.
 {% include image.html file="troodon_v2_assembly_27.png" alt="Filter anbringen" caption="Filter anbringen" %}
 {% include tip.html content="Befestige die Schrauben zuerst, während du den Bereich mit dem VHB Band von der Platte weghälst. Drücke erst dann den Filter an die Rückseite an. Das hilft bei der Positionierung." %}
@@ -133,7 +135,7 @@ Wickle die drei Kabel in dem beigelegten Kabelschlauch ein.
 {% include image.html file="troodon_v2_assembly_35.png" alt="Kabelschlauch anbringen" caption="Kabelschlauch anbringen" %}
 Sichere den Kabelschlauch mithilfe der drei Kabelbinder ab.
 {% include image.html file="troodon_v2_assembly_35.png" alt="Kabelschlauch absichern" caption="Kabelschlauch absichern" %}
-Bringe die Schraubenhalterung für den PTFE Schlauch an. 
+Bringe die Schraubenhalterung für den PTFE Schlauch an.  
 {% include image.html file="troodon_v2_assembly_36.png" alt="PTFE Halterung anbringen" caption="PTFE Halterung anbringen" %}
 Bewege den Druckkopf in die Ecke vorne links, senke ihn bis zum Druckbett ab und schließe den PTFE Schlauch an (Hinweis: Belasse genug PTFE Schlauch innerhalb der Druckerkammer, da der Extruder während des Drucks nach oben gezogen werden kann).
 {% include image.html file="troodon_v2_assembly_37.png" alt="PTFE Schlauch einführen" caption="PTFE Schlauch einführen" %}
@@ -174,4 +176,4 @@ Stecke den Schaft in die AutoZ Sonde.
 {% include image.html file="troodon_v2_assembly_51.png" alt="AutoZ Schaft" caption="AutoZ Schaft" %}
 Drehe die vier Standfüße, um den Drucker zu nivelieren und sichere die Füße mit den Muttern wie gezeigt ab.
 {% include image.html file="troodon_v2_assembly_52.png" alt="Stellfüße" caption="Stellfüße" %}
-Nimm die Flex-Platte vom Heizbett und entferne die Schutzfolie von der glatten Seite der Druckplatte.  
+Nimm die Flex-Platte vom Heizbett und entferne die Schutzfolie von der glatten Seite der Druckplatte.

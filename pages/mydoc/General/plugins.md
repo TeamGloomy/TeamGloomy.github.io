@@ -12,7 +12,7 @@ toc: false
 datatable: true
 ---
 
-# Overview
+## Overview
 
 Here are a list of known plugins for DWC. The table indicates whether the plugin will work in Standalone or SBC mode.  
 
@@ -32,6 +32,5 @@ You can now also use the [Duet3d Plugin Repository](https://plugins.duet3d.com/)
 |Another weighing filament holder|achrn|[Duet3d Forum](https://forum.duet3d.com/topic/25419/another-weighing-filament-holder)|3.3+||X|
 |RobotViewer|joergS5|[Github](https://github.com/JoergS5/RobotViewer)|3.4.0|X|X|
 |DWC-CAN-Manager|Sindarius|[Github](https://github.com/Sindarius/DWC-CAN-Manager/releases)|3.4+|X|X|
-
 
 <div class="datatable-end"></div>

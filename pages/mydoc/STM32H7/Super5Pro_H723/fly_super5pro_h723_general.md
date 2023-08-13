@@ -72,7 +72,7 @@ The driver sockets have been tested with 48v.
 
 ### Thermistor Connection  
 
-Thermistors should use the ADC inputs. The thermistors should be connected between ground and the signal pin. 
+Thermistors should use the ADC inputs. The thermistors should be connected between ground and the signal pin.  
 
 {% include image.html file="fly_super5pro_thermistors.png" alt="Fly-Super5Pro Thermistor Connection" caption="Fly-Super5Pro Thermistor Connection" %}
 

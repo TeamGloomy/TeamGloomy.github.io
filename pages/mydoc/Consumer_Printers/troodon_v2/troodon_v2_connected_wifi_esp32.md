@@ -40,7 +40,8 @@ The Troodon V2 Printer comes with RRF already preinstalled to the stock board as
 ### Formbot Method
 
 The printer gets supplied with a file called "Configure Wifi.gcode" that has the following contents.
-```
+
+```text
 M552 S0
 G4 P10000
 M587 S"FORMBOT" P"zxcv5678" ; S is your Wifi name, P is your Wifi password
@@ -53,8 +54,10 @@ M500
 ; you'll see the IP address under "About" menu after one minutes.
 ; input the IP address on your browser, then it'll show web console.
 ```
+
 We suggest that you make adjustments to the contents of this file to match the following
-```
+
+```text
 M552 S0
 G4 S1
 M587 S"FORMBOT" P"zxcv5678" ; S is your Wifi name, P is your Wifi password
@@ -62,13 +65,15 @@ M552 S1
 G4 S20
 M552
 ```
+
 The adjustments have done the following.
+
 * Removed the `M500` as nothing is being saved
 * Changed `G4 P10000` to `G4 S1` which reduces the time to wait from 10 seconds to 1 second before moving on to the next command
 * Added a 20 second wait to allow the WiFi to connect before querying what the printers IP address is.
 
 Edit the M587 command to match your WiFi settings.  
-{% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}   
+{% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}  
 Save the file and copy it onto a FAT32 formatted SD card.  
 Turn on the printer and insert the SD card into the SD Socket on the 12864 display.  
 Using the screen, launch the file as you would a print job and wait 30 seconds.  
@@ -80,21 +85,25 @@ If the IP address still isn't displayed, move on to the standard method for conn
 
 Follow the instructions [here](putty.html) to set it up for RRF.
 {% include warning.html content="**DO NOT IGNORE THE RECOMMENDATION TO NOT USE PRONTERFACE** it will convert all text to upper case. If you really must, please do the following. <br/>  If you wanted to use “PassWord”, you would write P”P’a’s’sW’o’r’d” with the ‘ indicating the following letter should be lower case. Explanation [here](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m587-add-wifi-host-network-to-remembered-list-or-list-remembered-networks). **USE PUTTY!**" %}
-Power up the Troodon V2 and connect to the USB port on the printer from your PC or laptop. 
+Power up the Troodon V2 and connect to the USB port on the printer from your PC or laptop.  
 Change the Com port to match the Troodon V2 and connect. The baudrate doesn't matter.  
 {% include tip.html content="I (jay_s_uk) have a very handy little tool installed on my main laptop thats monitoring for any serial devices as they are plugged in and you get a popup with the Com port number. If you’re interested, it can be found [here](https://helmpcb.com/software/serial-port-monitor)" %}
 
 If you're carrying this out after the Formbot Method didn't wory correctly for you, send the following gcode throught putty
-```
+
+```text
 M552 S0
 M588 S"*"
 ```
+
 Then send the following gcode
-```
+
+```text
 M552 S0
 M587 S"your SSID" P"your password"
 M552 S1
 ```
+
 {% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}
 The IP address will be shown on the serial connection. It is also possible to type just `M552` to get the current IP address reported back.
 Use this IP address on your web browser to navigate to Duet Web Control (DWC) and move onto [heater tuning](troodon_v2_heater_tuning.html).
@@ -103,8 +112,10 @@ Use this IP address on your web browser to navigate to Duet Web Control (DWC) an
 
 There have been a number of reports of SPI timeouts etc when trying to connect the printer to a WiFi connection.  
 This can be solved by running the following command from putty.  
-```
+
+```text
 M552 S0
 M997 S1
 ```
-Wait for the WiFi module update to finishe and then enter your WiFi details using one of the methods above.  
+
+Wait for the WiFi module update to finishe and then enter your WiFi details using one of the methods above.

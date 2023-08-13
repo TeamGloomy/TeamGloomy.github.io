@@ -22,7 +22,7 @@ If running with an SBC, [this page](./stm32_sbc.html) should be followed.
 ### Before you update
 
 #### Check for changes to configuration and behavior
- 
+
 Refer to the
 [changelog](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x) to
 see if there are _Breaking Changes_ or _Upgrade Notes_ between the version you
@@ -34,7 +34,6 @@ GCode commands; update notes may also point out behavioral changes.
 **Note**: It is considered good practice to have a backup of your SD cards
 `/sys` and `/macros` folders before modifying your configuration for a pending
 update.
-
 
 #### Prepare for troubleshooting
 
@@ -82,7 +81,7 @@ more detail below:
 
 Using DWC (Duet Web Control - the web interface), on the sidebar, click on
 "General" under settings.  
-{% include image.html file="dwc_sidebar.png" alt="DWC Sidebar" caption="DWC Sidebar" %} 
+{% include image.html file="dwc_sidebar.png" alt="DWC Sidebar" caption="DWC Sidebar" %}  
 
 This page displays the current version of DWC installed.  
 {% include image.html file="dwc_settings_general.png" alt="DWC Version" caption="DWC Version" %}  
@@ -92,20 +91,16 @@ Using DWC, on the sidebar, click on "Machine Specific" under settings.
 This page displays the board name and board type, the current release number of
 the firmware installed and the release version of the WiFi firmware installed.  
 
-{% include image.html file="dwc_settings_machine_specific.png" alt="Firmware Version" caption="Firmware Version" %}   
+{% include image.html file="dwc_settings_machine_specific.png" alt="Firmware Version" caption="Firmware Version" %}  
 
 Make a note of the name in brackets
 after the board type. It will be one of the following:
-
-<div class="datatable-begin"></div>
 
 |Board Type|
 | :------------- |
 |stm32f4-wifi|
 |stm32h723-wifi|
 |stm32h7-wifi|
-
-<div class="datatable-end"></div>
 
 ### Identifying Versions in DuetWebControl 3.5b3 and Later
 
@@ -114,7 +109,6 @@ collects all the above information in one place, as shown below (You will still
 need to identify your ESP model as described in the next section).  {%
 include image.html file="dwc_settings_machine_specific_3.5.png" alt="All
 Version Information" caption="All Version Information" %}
-
 
 #### Identifying Your ESP Model on Older Wifi Firmware Releases
 
@@ -140,7 +134,7 @@ macro to the `/sys` folder containing the GCode sequences for programming your
 WiFi connection details again. Here is an example runonce.g for this purpose;
 edit your connection details before using it.
 
-```
+```text
 ; runonce.g to reprogram your wifi chip.
 ; Runs once, then deletes itself.
 M552 S0                               ; disable network
@@ -161,11 +155,11 @@ after installing the ReleaseMgr plugin if the need exists for some reason).
 
 #### Installation of the ReleaseMgr plugin
 
- * Download ReleaseMgr from [here](https://plugins.duet3d.com/plugins/ReleaseMgr.html) 
-   * ensure you've downloaded the correct version of the plugin for the version of DWC you are running.  
- * Upload the zip file to DWC via the Settings => Plugins => External Plugins screen.
- * Confirm the installation, and follow the steps on-screen.
- * Start ReleaseMgr Plugin and it will appear in the left hand menu.  
+* Download ReleaseMgr from [here](https://plugins.duet3d.com/plugins/ReleaseMgr.html)  
+  * ensure you've downloaded the correct version of the plugin for the version of DWC you are running.  
+* Upload the zip file to DWC via the Settings => Plugins => External Plugins screen.
+* Confirm the installation, and follow the steps on-screen.
+* Start ReleaseMgr Plugin and it will appear in the left hand menu.  
 
 #### Usage
 
@@ -175,12 +169,13 @@ Follow the instructions [here](https://github.com/MintyTrebor/ReleaseMgr/wiki/Na
 
 It is recommended to carry out updating of the firmwares in the following
 order:
- *  Any toolboards or expansion boards first
- * then the mainboard firmware,
- * then the WiFi firmware 
- * and finally DWC.  
 
- * STM32 FIRMWARE - When updating the firmware, you can decide to either install the [latest stable](https://github.com/gloomyandy/RepRapFirmware/releases/latest) firmware or install the [latest unstable](https://github.com/gloomyandy/RepRapFirmware/releases) version. Download the correct firmware file using the board type you noted down above.  
+* Any toolboards or expansion boards first
+* then the mainboard firmware,
+* then the WiFi firmware
+* and finally DWC.  
+
+* STM32 FIRMWARE - When updating the firmware, you can decide to either install the [latest stable](https://github.com/gloomyandy/RepRapFirmware/releases/latest) firmware or install the [latest unstable](https://github.com/gloomyandy/RepRapFirmware/releases) version. Download the correct firmware file using the board type you noted down above.  
 * Duet FIRMWARE - For all toolboards and expansion boards, the firmware can be found [here](https://github.com/Duet3D/RepRapFirmware/releases) and you **MUST** ensure that the version number matches the version of the firmware that you have chosen to install.  
 * DWC - When downloading [DWC](https://github.com/Duet3D/DuetWebControl/releases), you **MUST** ensure that the version number matches the version of the firmware that you have chosen to install.  
 * WiFi FIRMWARE - For versions 1.27-02 and below, it can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases). Version 2.1b3 and above can be found [here](https://github.com/gloomyandy/RepRapFirmware/releases). If you are running a separate WiFi module and you have not connected the RX and TX connections, you will need to update the WiFi module using esptools. Please see [here for ESP8266](./stm32_esp8266.html) and [here for ESP32](./stm32_esp32.html).  
@@ -193,10 +188,10 @@ button, select the file and then the open button. Once uploaded, DWC will ask
 if you want to install the update where you should click "yes".  
 
 * Do not unzip and zip files before hand, DWC will handle this.  
-* Install the updates in the following order: 
+* Install the updates in the following order:
   * Any toolboards or expansion boards first
   * then the mainboard firmware
-  * then the WiFi firmware 
+  * then the WiFi firmware
   * and finally DWC.
 
 ### Rolling back a release

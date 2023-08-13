@@ -36,25 +36,29 @@ If you want to enable SSH on the DuetPi with GUI image, SSH can be enabled by pl
 ## Updating DSF
 
 A script has been provided to make updating the version of DSF on your SBC a lot easier. Although we don't make any changes to DSF to make it compatible with the STM32 port of RRF, there are a couple of features we have added to make your experience better. They are as follows:
+
 * As the STM32 port lags the official duet releases by a few days, we mark the DSF linux packages as being on hold. This allows you to continue to update the SBC without running the risk of updating DSF to a version which is incompatible with the firmware running on your board.
 * For those of you running DSF on an SBC other than a raspberry pi, we backup the transfer ready pin, SPI device and GPIO chip you've set and restore it after upgrade.
 * The script allows you to easily upgrade or downgrade to a specific version through the use of a version argument.
 * The script is self updating so you only need to install it once.
 
 To download the script onto your SBC, run the following code **only once**.  
-```
+
+```text
 sudo wget https://raw.githubusercontent.com/TeamGloomy/rrf_stm32_sbc/master/armbian/userpatches/overlay/rrf_upgrade.sh -O  /usr/local/bin/rrf_upgrade && sudo chmod a+x /usr/local/bin/rrf_upgrade
 ```  
-To use it, as an example, send the following command over SSH or over a console connection.   
 
-```
+To use it, as an example, send the following command over SSH or over a console connection.  
+
+```text
 rrf_upgrade latest-stable
 ```
-This will upgrade to the latest stable version. `latest-unstable` can also be used as an argument. An argument must always be added to the end of *rrf_upgrade* so it knows which version to install.    
+
+This will upgrade to the latest stable version. `latest-unstable` can also be used as an argument. An argument must always be added to the end of *rrf_upgrade* so it knows which version to install.  
 
 If you are wanting to upgrade/downgrade to a specific version, you can also pass the version number through to the upgrade script.
 
-```
+```text
 rrf_upgrade 3.4-b7
 ```  
 

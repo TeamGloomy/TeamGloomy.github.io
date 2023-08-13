@@ -21,7 +21,7 @@ A brief description of how to edit the UI for the Fly Screen Firmware.
 ### UI File Location
 
 The UI file can be found in UI/gcode.ftu. Double clicking the file in the IDE will open it up.  
-{% include image.html file="fly_screen_firmware_4.png" alt="Flythings UI" caption="Flythings UI" %} 
+{% include image.html file="fly_screen_firmware_4.png" alt="Flythings UI" caption="Flythings UI" %}  
 
 ### Editing an item
 

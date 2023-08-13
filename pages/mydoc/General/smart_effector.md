@@ -15,7 +15,7 @@ It is possible to connect the [Smart Effector](https://docs.duet3d.com/en/Duet3D
 
 ## Wiring
 
-{% include image.html file="smarteffector_wiring_v3.0_d1.0.png" url="https://teamgloomy.github.io/images/smarteffector_wiring_v3.0_d1.0.png" alt="Smart Effector v3 Wiring" caption="Smart Effector v3 Wiring" %}  
+{% include image.html file="smarteffector_wiring_v3.0_d1.0.png" url="<https://teamgloomy.github.io/images/smarteffector_wiring_v3.0_d1.0.png>" alt="Smart Effector v3 Wiring" caption="Smart Effector v3 Wiring" %}  
 The Smart Effector can work off both 3.3v and 5v. The LPC and STM32 boards typically only have 5v available in an easy to use place.  
 The Z Probe Mod pin is only required to be connected if you need to adjust the sensitivity, which in normal circumstances won't be required.
 
@@ -28,7 +28,8 @@ The rest of the wiring is as per the documentation.
 ## Config.g Changes
 
 Using the SKR 1.4 as an example, change the config.g accordingly.  
-```
+
+```text
 M558 P8 H2 F1000 T12000 R0.2 S0.02 A5 C"servo0"
 G31 X0 Y0 Z-0.1
 ```

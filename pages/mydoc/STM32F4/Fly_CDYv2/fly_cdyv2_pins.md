@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-CDYv2 Pinout Diagram
 
-{% include image.html file="fly_cdyv2.svg" url="https://teamgloomy.github.io/images/fly_cdyv2.svg" alt="Fly-CDYv2" caption="Fly-CDYv2 Pinout" %}
+{% include image.html file="fly_cdyv2.svg" url="<https://teamgloomy.github.io/images/fly_cdyv2.svg>" alt="Fly-CDYv2" caption="Fly-CDYv2 Pinout" %}
 
 ## fly-CDYv2 Driver Pins in Firmware
 
@@ -29,10 +29,9 @@ Driver pin numbers. They are separated into driver number.
 |Direction Pins|PC_0|PC_13|PB_7|PD_6|PD_3|PA_15|
 |UART Pins|PC_15|PA_8|PB_6|PD_5|PD_1|PE_9|
 
-
 <div class="datatable-end"></div>
 
-## Fly-CDYv2 Other Pins in Firmware 
+## Fly-CDYv2 Other Pins in Firmware
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  

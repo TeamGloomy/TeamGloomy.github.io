@@ -17,7 +17,7 @@ enderSpiChannel: 4
 
 ## Overview
 
-The information here is aimed at connecting a stock ender 3 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).   
+The information here is aimed at connecting a stock ender 3 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#e3stock" data-toggle="tab">Ender 3 Stock Screen</a></li>
@@ -26,7 +26,7 @@ The information here is aimed at connecting a stock ender 3 12864 display but it
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="e3stock" markdown="1">
 
-## Wiring
+## Stock Ender 3 Display Wiring
 
 The ender 3 stock display can be connected directly to the EXP header of the Fly-E3. No modifications are required.
 
@@ -36,7 +36,7 @@ The ender 3 stock display can be connected directly to the EXP header of the Fly
 
 <div role="tabpanel" class="tab-pane" id="reprap" markdown="1">
 
-## Wiring
+## RepRapDiscount Display Wiring
 
 The RepRapDiscount Full Graphic Smart Controller can be connected directly to the EXP header of the Fly-E3 using custom wiring.  
 Use the image below as a guide. Thanks @Samsan

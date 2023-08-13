@@ -19,26 +19,34 @@ If you have been unable to do so, please follow the instructions [here](troodon_
 
 ### Bed Tuning
 
-#### Stock Config Tweak
+#### Stock Bed Config Tweak
 
 Before tuning the bed, we recommend editing one of the lines in the config provided with the printer (**This is not applicable to the "improved" TeamGloomy config files**). Using DWC, click on "System" on the left hand sidebar. Then, on the central section of the web interface, click on config.g to bring up the editor. Scroll down to line 72, which should be the following  
-```
+
+```text
 M950 H0 C"PD12" T0
 ```
+
 Edit it so it reads the following  
-```
+
+```text
 M950 H0 C"PD12" T0 Q10
 ```
-Note that we have added `Q10`. This changes the PWM frequency to be more suitable for the SSR (Solid State Relay) used to control the bed. Click save at the top right of the editing box and when prompted, click restart mainboard. 
-#### Tuning 
+
+Note that we have added `Q10`. This changes the PWM frequency to be more suitable for the SSR (Solid State Relay) used to control the bed. Click save at the top right of the editing box and when prompted, click restart mainboard.  
+
+#### Tuning
 
 It is recommended to tune the heated bed for PID control. To do so, enter the following command in the "Send Gcode" text input box at the top of DWC.
-```
+
+```text
 M303 H0 S110
 ```
-This process may take a while before it completes. 
+
+This process may take a while before it completes.  
 Once completed, enter the following command in the "Send Gcode" text input box at the top of DWC.  
-```
+
+```text
 M500
 ```
 
@@ -47,23 +55,30 @@ M500
 First, home the Troodon V2 Printer by clicking on "Dashboard" on the left hand sidebar of DWC and then clicking the Home All button.  
 {% include image.html file="homeall.png" alt="Home All Button" caption="Home All Button" %}
 Then enter the following command in the "Send Gcode" text input box at the top of DWC.  
-```
+
+```text
 G1 X175 Y175 Z5 F6000
 ```
+
 This will move the print head to roughly the centre of the bed ready to tune the hotend. Enter the following command in the "Send Gcode" text input box at the top of DWC. If you are going to be printing at a temperature higher than 300 degrees C, adjust the S value in the corresponding command to suit.  
-```
+
+```text
 M303 T0 S300
 ```
+
 This process may take a while before it completes.  
 Once completed, enter the following command in the "Send Gcode" text input box at the top of DWC.  
-```
+
+```text
 M500
 ```
 
-#### Stock Config Tweak
+#### Stock Hotend Config Tweak
 
 It is also advised to add the following line to the end of config.g on its own line.  
-```
+
+```text
 T0
 ```
-This will activate the tool from printer boot up and is a sensible addition as the Troodon V2 only has one tool.  
+
+This will activate the tool from printer boot up and is a sensible addition as the Troodon V2 only has one tool.

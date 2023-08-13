@@ -29,12 +29,12 @@ Choose the correct corresponding firmware (firmware-stm32f4-wifi-XXX.bin) from [
 
 ## TeamGloomy/Mellow Adapters
 
-TeamGloomy and Mellow have teamed up to produce ESP32 adapters.   
+TeamGloomy and Mellow have teamed up to produce ESP32 adapters.  
 They can be purchased through [aliexpress](https://s.click.aliexpress.com/e/_DcGli4t).  
 
 Connect the ESP32 Adapter to the board as shown below.  
 {% include image.html file="fly_407zg_esp32_connection.png" alt="Fly-407ZG ESP32" caption="Fly-407ZG ESP32 Adapter Connection" %}
-If not connecting the 4-pin serial cable, then add a small amount of solder in the area highlighted below. 
+If not connecting the 4-pin serial cable, then add a small amount of solder in the area highlighted below.  
 {% include image.html file="fly_esp32_power.png" alt="Fly ESP32 Power" caption="Fly ESP32 Power Solder" %}
 
 </div>
@@ -57,7 +57,7 @@ Follow the instructions [here](stm32_esp32.html).
 
 ### Connecting the ESP32
 
-The pinout for the Fly-407ZG can be found [here](https://github.com/FLYmaker/FLYF407ZG/blob/master/picture/Pin%20diagram.png) and the schematic for the Duet 2 WiFI for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+The pinout for the Fly-407ZG can be found [here](https://github.com/FLYmaker/FLYF407ZG/blob/master/picture/Pin%20diagram.png) and the schematic for the Duet 2 WiFI for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf).  
 
 The table below shows the pins required on the ESP32 and what they are connected to on the Fly-407ZG. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
@@ -93,7 +93,7 @@ Follow the instructions on [Getting Started with RRF3](getting_started.html)
 
 You will also need a board.txt file in the sys folder. Below are the contents that should be used.
 
-```
+```text
 //Config for Fly-407ZG
 board = fly_f407zg
 8266wifi.espDataReadyPin = PC_5
@@ -106,7 +106,8 @@ heat.tempSensePins = { PF_3, PA_0, PC_1, PC_0, PF_10, PF_5, PF_4 }
 ### Updating the ESP32 by RRF
 
 If you have an ESP32 WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
-```
+
+```text
 8266wifi.serialRxTxPins = { PA_10, PA_9 }
 serial.aux.rxTxPins = { NoPin, NoPin }
 ```
@@ -114,9 +115,11 @@ serial.aux.rxTxPins = { NoPin, NoPin }
 ### Smart Drivers
 
 If using TMC5160 or TMC22XX drivers (where 22XX is either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
-```
+
+```text
 stepper.numSmartDrivers = X
 ```
+
 Where X is the number of drivers fitted in total.
 
 #### TMC22XX UART Drivers
@@ -130,11 +133,11 @@ The Fly-407ZG is the only STM32 board that can't be used with 5160 drivers when 
 #### Sensorless Homing
 
 To be able to use sensorless homing on this board, a jumper cable needs to be installed between the diag pin of the driver and an endstop input.  
-For more information about setting up sensorless homing, please read [this](sensorless.html).   
+For more information about setting up sensorless homing, please read [this](sensorless.html).  
 
 ### Board.txt Location
 
-Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Fly-407ZG.   
+Place the *board.txt* file in a directory called "sys" on the SD card and install the SD card in the Fly-407ZG.  
 
 ### Final Setup
 
@@ -142,16 +145,17 @@ Once connected, power up the board using 12-24v and connect to the USB port on t
 
 {% include callout.html content="If updating the ESP32 using RRF, type the following.  
 
-```
+```text
 M997 S1
 ```<br/>
 Wait for the uploading of the WiFi firmware to finish. Then send the following<br/>
-```
+
+```text
 M552 S-1
 ```<br/>
 Continue with the instructions below." type="info" %} 
 
-```
+```text
 M552 S0
 M587 S"your SSID" P"your password"
 M552 S1
@@ -170,12 +174,14 @@ The final thing to do is add the line “M552 S1” to your config file. This ca
 You will need to PID tune your tools and your bed. Please be aware that bed tuning may take up to an hour and tool tuning normally takes around 15 minutes. If it takes longer, that is also fine as up to 30 cycles may be ran.  
 
 To tune the bed, run the following command, changing the temperature (the S value) if a different tuning temperature is required.  
-```
+
+```text
 M303 H0 S60
 ```  
 
 To tune each tool, run the following command, changing the temperature (the S value) if a different tuning temperature is required. This proceedure will activate the part cooling fans during the final phase of the tuning process so their effect is taken into account. If your printer has more than one tool, make sure each one of them is tuned.  
-```
+
+```text
 M303 T0 S220
 ```
 

@@ -51,7 +51,8 @@ Your wiring will need to be modified at the breakout board. I don't have a print
 ### Board.txt changes
 
 The following two lines should be added to board.txt and assume the last driver slot is used. If another driver slot is used the appropriate CS pin must be chosen.  
-```
+
+```text
 //CAN-FD Interface
 can.csPin = PC_4
 can.spiChannel = 0

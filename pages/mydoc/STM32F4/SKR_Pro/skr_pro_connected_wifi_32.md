@@ -91,4 +91,4 @@ EXP: EXP2
 
 {% include custom/wifi/sdcard_structure.html %}
 
-{% include custom/wifi/wrapup.html %} 
+{% include custom/wifi/wrapup.html %}

@@ -25,7 +25,7 @@ The board name in board.txt is **fysetc_spider**.
 The jumpers should be installed as below. "SPI mode Interpolation" is supported for TMC5160 drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226). Standalone is for older drivers such as the A4988.  
 
 {% include image.html file="fysetc_spider_407_uart.png" alt="Fysetc Spider 407 Version UART" caption="Fysetc Spider 407 Version UART Driver Jumper Locations" %}  
-{% include image.html file="fysetc_spider_407_spi.png" alt="Fysetc Spider 407 Version SPI" caption="Fysetc Spider 407 Version SPI Driver Jumper Locations" %} 
+{% include image.html file="fysetc_spider_407_spi.png" alt="Fysetc Spider 407 Version SPI" caption="Fysetc Spider 407 Version SPI Driver Jumper Locations" %}  
 {% include image.html file="fysetc_spider_407_standalone.png" alt="Fysetc Spider 407 Version Standalone" caption="Fysetc Spider 407 Version Standalone Driver Jumper Locations" %}  
 
 ### Z Driver Jumpers

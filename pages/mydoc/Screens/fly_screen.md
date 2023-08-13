@@ -21,7 +21,7 @@ They are currently available through [AliExpress](https://s.click.aliexpress.com
 
 The following line should be added to your config.g
 
-```
+```text
 M575 P1 S0 B57600
 ```  
 
@@ -38,7 +38,7 @@ The hardware information for the 4.3" screen can be found [here](https://github.
 
 If you have purchased the Marlin version it is easy to convert it to a Duet version, just follow the update instructions below.
 
-### Updating
+### Updating a 4.3 inch screen
 
 To update the firmware on your screen, download the update.img file from [here](https://github.com/FLYmaker/FLY-Screen-RepRap/releases).  
 Put the file into the root of a FAT32 formatted card and install it in the screen. You should then be prompted to install the update.  
@@ -54,7 +54,7 @@ The hardware information for the 7" screen can be found [here](https://github.co
 
 If you have purchased the Marlin version it is easy to convert it to a Duet version, just follow the update instructions below.
 
-### Updating
+### Updating a 7 inch screen
 
 To update the firmware on your screen, download the update.img file from [here](https://github.com/FLYmaker/FLY-Screen-RepRap/releases).  
 Put the file into the root of a FAT32 formatted card and install it in the screen. You should then be prompted to install the update.  

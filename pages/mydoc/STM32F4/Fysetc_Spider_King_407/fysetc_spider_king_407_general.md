@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fysetc Spider King 407 board.  
-It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DElhit3). 
+It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DElhit3).  
 
 ### Board.txt Name
 
@@ -50,7 +50,7 @@ Set them as shown below.
 ### IO Output Voltage
 
 The IO output voltage can be set to either 3.3v or 24v for IO0, IO1 or IO2 and 3.3v or 5v for IO3, IO4 and IO5.
-You need to cut some traces and solder some pads on the underside of the board as shown below.    
+You need to cut some traces and solder some pads on the underside of the board as shown below.  
 {% include image.html file="fysetc_spider_king_407_endstops.jpg" alt="Fysetc Spider King 407 Endstop Voltage" caption="Fysetc Spider King 407 Endstop Voltage" %}
 
 ### Maximum HV Input voltage

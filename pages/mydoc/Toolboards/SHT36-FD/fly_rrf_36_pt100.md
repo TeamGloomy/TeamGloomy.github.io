@@ -24,13 +24,13 @@ If your board has the chip shown below in red, you have PT100 support.
 ### 2-wire PT100
 
 To use a 2-wire PT100, some pads need to be soldered to set the MAX31865 chip into the correct mode. Add solder as shown in the image below.  
-{% include image.html file="fly_rrf_36_max_2.png" alt="Fly-RRF-36 2-wire mode" caption="Fly-RRF-36 2-wire mode" %}   
+{% include image.html file="fly_rrf_36_max_2.png" alt="Fly-RRF-36 2-wire mode" caption="Fly-RRF-36 2-wire mode" %}  
 Connect the 2-wire PT100 to pins 2 and 3 as indicated on the pinout.  
 
 ### 3-wire PT100
 
 To use a 3-wire PT100, some pads need to be soldered to set the MAX31865 chip into the correct mode. Add solder as shown in the image below.  
-{% include image.html file="fly_rrf_36_max_3.png" alt="Fly-RRF-36 3-wire mode" caption="Fly-RRF-36 3-wire mode" %}   
+{% include image.html file="fly_rrf_36_max_3.png" alt="Fly-RRF-36 3-wire mode" caption="Fly-RRF-36 3-wire mode" %}  
 Connect the 2 wires of the same colour to pins 1 and 2 the wire of a different colour to pin 3 as indicated on the pinout.
 
 ### 4-wire PT100
@@ -46,9 +46,10 @@ If using a 4 wire PT100, no further changes are required to the hardware. Connec
 To use the PT100 on your hotend, use the following code in config.g
 If you are in a country where the mains frequency is 50Hz, change the F60 to F50 (if you don't know, look [here](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf))
 
-```
+```text
 M308 S1 P"124.max31865cs" Y"rtd-max31865" F60 R430 W#
 ```
+
 {% include warning.html content="The # in W# is the number of wires your PT100 has, which is either 2, 3 or 4 and should be changed accordingly." %}
 
 {% include warning.html content="Make sure you include the R430 as the Fly-RRF-36 uses a different reference resistor than expected" %}

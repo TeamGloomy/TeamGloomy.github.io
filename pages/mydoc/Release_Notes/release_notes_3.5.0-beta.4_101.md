@@ -16,6 +16,7 @@ comments: false
 Please see the Duet3D [release notes for 3.5b2](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x-Beta#reprapfirmware-350-beta4) to see whats new and what has been fixed
 
 ## RepRapFirmware for STM32F4 and STM32H7 Release Notes for 3.5.0-beta.4_101 from 3.5beta2+_106
+
 * Add code to display extended WiFi info from 2.1beta4
 * Add Expansion board to build
 * Improve timeout handling - possibly fix DMA neopixel bug

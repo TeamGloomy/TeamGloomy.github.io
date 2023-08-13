@@ -36,7 +36,7 @@ reprapSPIChannel : 3
 
 <div role="tabpanel" class="tab-pane" id="fysetc" markdown="1">
 
-{% include custom/12864/fysetc_mini_21.html %} 
+{% include custom/12864/fysetc_mini_21.html %}  
 
 </div>
 

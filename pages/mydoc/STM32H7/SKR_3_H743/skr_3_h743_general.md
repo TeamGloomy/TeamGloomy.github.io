@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the SKR3 H743 board. 
+This page covers any general information for the SKR3 H743 board.  
 
 The SKR3 can be purchased from [AliExpress](https://s.click.aliexpress.com/e/_DCUWwWd)
 
@@ -30,7 +30,7 @@ The board name in board.txt is **biquskr_3**.
 
 ### Driver Jumpers
 
-The jumpers should be installed as below. "Normal" should be used for standalone drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226). 
+The jumpers should be installed as below. "Normal" should be used for standalone drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226).  
 
 {% include image.html file="skr_2.0_normal.PNG" alt="SKR3 Normal" caption="SKR3 Normal Driver Jumper Locations" %}
 

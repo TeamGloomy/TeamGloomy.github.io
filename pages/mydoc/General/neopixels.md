@@ -22,14 +22,16 @@ datatable: true
 <div role="tabpanel" class="tab-pane active" id="neo35" markdown="1">
 
 The Neopixels should be configured in config.g using M950 as detailed [here](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m950-create-heater-fan-spindle-or-gpioservo-pin).  
-For example, using the default toolboard address of 124 with RGBW Neopixels   
-```
+For example, using the default toolboard address of 124 with RGBW Neopixels  
+
+```text
 M950 C"neopixel" E0 T2
 ```
 
 [M150](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m150-set-led-colours) can then be used to set the colours and brightness.  
 For example, the below example will set 3 RGBw neopixels to white.  
-```
+
+```text
 M150 E0 R0 B0 U0 W255 S3 F0
 ```
 
@@ -38,15 +40,16 @@ M150 E0 R0 B0 U0 W255 S3 F0
 <div role="tabpanel" class="tab-pane" id="neo34" markdown="1">
 
 The maximum number of supported neopixels is 60.  
-RGB and RGBW versions are supported. 
+RGB and RGBW versions are supported.  
 An external power supply should be used when more than 8 are being used.  
 
 Ensure that you have the pin correctly defined in your board.txt file. Here is an example.  
-```
+
+```text
 led.neopixelPin = 1.24
 ```
 
-For configuring them, use this [documentation](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m150-set-led-colours) for reference. 
+For configuring them, use this [documentation](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m150-set-led-colours) for reference.  
 
 {% include important.html content="Please be aware that this version of the firmware uses X2 rather than X1 in the M150 command. The Q command for frequency is also not supported." %}
 
@@ -59,12 +62,14 @@ These take the form of `M150 X2 Tt0:t1:tc:tr`
 * tc is the total cycle length (on plus off time) in nano seconds
 * tr is the reset time in microseconds.
 
-{% include tip.html content="The standard timing for WS2812B neopixels is T450:850:1250:50 from [here]{https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf}. If you're having trouble controlling your neopixels, add these timings as described above." %}
+{% include tip.html content="The standard timing for WS2812B neopixels is T450:850:1250:50 from [here]{<https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf}>. If you're having trouble controlling your neopixels, add these timings as described above." %}
 
 So to set up a neopixel that needs a 0 time of say 300nS a 1 time of 800nS a cycle time of say 1250ns and a reset time of 250,000nS (or 250 uS) you use:  
-```
+
+```text
 M150 X2 T300:800:1250:250
 ```  
+
 You can see the current settings with M150.
 
 ## Notes
@@ -85,19 +90,20 @@ This port of RRF sets up the neopixels using a different method to the Duet3D ve
 
 Firstly, M950 should be used to set up an LED string
 
-- M950 - Enn to specify an LED string number. when used with option E:
-    - C"name" specifies the pin to use (must currently be on the main board)
-    - Qnn (optional) SPI frequency (in Hz) used for hardware Neopixel control. Default 2.4MHz range 1MHz to 4Mhz
-    - Tn (optional)  LED type: T0 = DotStar (not supported), T1 = RGB NeoPixel (default), T2 = bit-banged RGB NeoPixel, T3 = RGBW NeoPixel, T4 = bit-banged RGBW NeoPixel.
-    - Laaaa:bbbb:cccc:dddd (optional) Neopixel timing aaaa:0 time, bbbb:1 time, cccc:cycle time (all in mS), dddd:reset time (in mS).
-    - By default string 0 will be configured to use the pin specified in board.txt (if present).
+* M950 - Enn to specify an LED string number. when used with option E:
+  * C"name" specifies the pin to use (must currently be on the main board)
+  * Qnn (optional) SPI frequency (in Hz) used for hardware Neopixel control. Default 2.4MHz range 1MHz to 4Mhz
+  * Tn (optional)  LED type: T0 = DotStar (not supported), T1 = RGB NeoPixel (default), T2 = bit-banged RGB NeoPixel, T3 = RGBW NeoPixel, T4 = bit-banged RGBW NeoPixel.
+  * Laaaa:bbbb:cccc:dddd (optional) Neopixel timing aaaa:0 time, bbbb:1 time, cccc:cycle time (all in mS), dddd:reset time (in mS).
+  * By default string 0 will be configured to use the pin specified in board.txt (if present).
 
 Next, the neopixels can be controlled using M150
 
-- M150 - Knn (optional) specifies the LED string number to use for this and subsequent M150 commands (initially set to K0). Options X and Q are no longer used (use M950 to specify these values if needed).
+* M150 - Knn (optional) specifies the LED string number to use for this and subsequent M150 commands (initially set to K0). Options X and Q are no longer used (use M950 to specify these values if needed).
 
 Here is an example
-```
+
+```text
 M950 E0 C"E.6" T3
 M150 K0 R0 B0 U0 W255 S10 F0
 ```

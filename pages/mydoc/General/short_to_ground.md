@@ -11,9 +11,10 @@ comments: false
 toc: false
 ---
 
-The short to ground error can be triggered by a number of things not just a simple connection to ground. In particular a bad connection to one of the coil windings can also trigger this error. It is worth searching the duet forum for "short-to-ground" to see various reports. 
+The short to ground error can be triggered by a number of things not just a simple connection to ground. In particular a bad connection to one of the coil windings can also trigger this error. It is worth searching the duet forum for "short-to-ground" to see various reports.  
 
 Things to be looking at very closely...
+
 1. Check your M122 output to make sure that you are not getting a large number of read/write errors or timeouts with the UART connection to the driver.
 2. If you have not done so already, replace the wiring between the motor and the board.
 3. Consider swapping/replacing the motor.

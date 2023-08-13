@@ -25,4 +25,4 @@ Please see the Duet3D [release notes for 3.3 RC 2](https://github.com/Duet3D/Rep
 * STM32F4: Fixed incorrect LCDCS pin for BTT SKR V2
 * STM32F4: Allow configuration of WiFi/SBC SPI channels
 * STM32F4: New build stats
-* STM32F4: Adjust GPIO timing and SPI pullups 
+* STM32F4: Adjust GPIO timing and SPI pullups

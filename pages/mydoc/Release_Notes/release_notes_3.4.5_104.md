@@ -17,5 +17,5 @@ Please see the Duet3D [release notes for 3.4.5](https://github.com/Duet3D/RepRap
 
 ## RepRapFirmware for STM32F4 and STM32H7 Release Notes for 3.4.5+_104 from 3.4.5+_103
 
-*  Fixed crash when using laser mode
-*  Fixed H723 based boards not showing input voltage correctly
+* Fixed crash when using laser mode
+* Fixed H723 based boards not showing input voltage correctly

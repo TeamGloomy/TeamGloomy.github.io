@@ -17,5 +17,5 @@ Please see the Duet3D [release notes for 3.4.4](https://github.com/Duet3D/RepRap
 
 ## RepRapFirmware for STM32F4 and STM32H7 Release Notes for 3.4.4_103 from 3.4.4_102
 
-*  Add support for STM32H723 and updated SKR3
-*  Fix occasional WiFi disconnect with large uploads
+* Add support for STM32H723 and updated SKR3
+* Fix occasional WiFi disconnect with large uploads

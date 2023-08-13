@@ -26,7 +26,7 @@ Connect the screen as shown below.
 
 Add the following lines to the board.txt file
 
-```
+```text
 //Fysetc MINI 12864
 lcd.encoderPinA=PG_11
 lcd.encoderPinB=PC_4
@@ -41,7 +41,8 @@ SPI3.pins={ PG_14, PC_1, PF_7 } //Set to GPIO pins to use as SCK, MISO, MOSI
 ## Config.g
 
 Add this line to config.g
-```
+
+```text
 M950 P1 C"PC_5"
 M42 P1 S0
 G4 P500

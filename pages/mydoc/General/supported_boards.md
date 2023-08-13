@@ -35,6 +35,7 @@ There are a number of boards which have configurations pre-configured. They are
 If your board is not on the list, use the generic profile and the pin number for each input/output in the config.g file and get in touch and we can add native support.
 
 ## STM32F4 Boards with native support
+
 There are a number of boards which have configurations pre-configured. They are
 
 * Fly-407ZG
@@ -64,6 +65,7 @@ There are a number of boards which have configurations pre-configured. They are
 * BTT Octopus X7
 
 ## STM32H7 Boards with native support
+
 There are a number of boards which have configurations pre-configured. They are
 
 * Fly-Super5Pro H723
@@ -76,6 +78,7 @@ There are a number of boards which have configurations pre-configured. They are
 * SKR3 EZ H743
 
 ## Consumer Printers
+
 There are printers that can be purchased with the STM32 port of RRF installed. They are
 
 * Formbot Troodon V2
@@ -91,13 +94,15 @@ Standalone means that the current must be set using the potentiometer and the mi
 ### UART Drivers
 
 The following drivers support firmware setting of microsteps and motor current.  
-- TMC2208
-- TMC2209 - This includes full sensorless homing and stall detection support
-- TMC2225
-- TMC2226 - This includes full sensorless homing and stall detection support
-- Boards with built in drivers, such as MKS Sbase v1.3 and the original smoothieboard.
+
+* TMC2208
+* TMC2209 - This includes full sensorless homing and stall detection support
+* TMC2225
+* TMC2226 - This includes full sensorless homing and stall detection support
+* Boards with built in drivers, such as MKS Sbase v1.3 and the original smoothieboard.
 
 ### SPI Drivers
 
 The following SPI drivers are supported on STM32 only (except the Fly-407ZG)
-- TMC5160 - This includes full sensorless homing and stall detection support
+
+* TMC5160 - This includes full sensorless homing and stall detection support

@@ -14,4 +14,4 @@ datatable: true
 
 ## Overview
 
-This upgrade can't be done without changing the X-carriage as well as the nozzle sits lower with a stealthburner compared to an afterburner and unfortunately the position of the probe can't be lowered. 
+This upgrade can't be done without changing the X-carriage as well as the nozzle sits lower with a stealthburner compared to an afterburner and unfortunately the position of the probe can't be lowered.

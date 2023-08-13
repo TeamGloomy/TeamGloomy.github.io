@@ -14,17 +14,19 @@ datatable: true
 
 ## Overview
 
-These instructions enhance the instructions provided by Formbot with the Troodon V2 Printer and are designed to be a replacement. 
+These instructions enhance the instructions provided by Formbot with the Troodon V2 Printer and are designed to be a replacement.  
 
 ### Tools
 
 Most of the tools that are required to assemble the printer have been provided, however, the following tools will be required.
+
 * Scissors
 * 5.5mm Spanner/Adjustable Spanner/Pliers/5.5mm Socket
 * Syringe with blunt tipped needle (size 16G and 18G needles required).
 * Loctite
 
 The following printable tools could assist with the assembly process
+
 * [MGN9 assembly tool](https://github.com/VoronDesign/Voron-Tap/blob/main/STLs/MGN9_Assembly_Tool.stl)  
 
 ### Pre-requisits
@@ -105,8 +107,8 @@ Attach 1mm foam tape onto the inner side of the black back panel as shown.
 {% include image.html file="troodon_v2_assembly_24.png" alt="Attach Foam" caption="Attach Foam" %}
 Attach VHB tape to the air filter as shown.  
 {% include image.html file="troodon_v2_assembly_25.png" alt="Attach VHB Tape" caption="Attach VHB Tape" %}
-Install the activated carbon filter into the air filter. 
-{% include image.html file="troodon_v2_assembly_26.png" alt="Install Filter" caption="Install Filter" %} 
+Install the activated carbon filter into the air filter.  
+{% include image.html file="troodon_v2_assembly_26.png" alt="Install Filter" caption="Install Filter" %}  
 Attach the air filter to the outside of the black back panel.  
 {% include image.html file="troodon_v2_assembly_27.png" alt="Attach Filter" caption="Attach Filter" %}
 {% include tip.html content="Install the screws first, holding the area with the VHB tape away from the panel, then press the VHB to the back panel. This will help in positioning the air filter." %}
@@ -136,7 +138,7 @@ Install an M5 T-nut in the positions shown below.
 Install the filament spool holder as shown below.  
 {% include image.html file="troodon_v2_assembly_39.png" alt="Install Filament Holder" caption="Install Filament Holder" %}
 Remove the protective film from both sides of the door panels.  
-Install the hinges and metal brackets to the door panels as shown below. The supplied spanner works for the M5 locknuts but a 5.5mm Spanner/Adjustable Spanner/Pliers/5.5mm Socket will be required for the M3 locknuts. Ensure the hinges are square to the panels when tightening the screws.   
+Install the hinges and metal brackets to the door panels as shown below. The supplied spanner works for the M5 locknuts but a 5.5mm Spanner/Adjustable Spanner/Pliers/5.5mm Socket will be required for the M3 locknuts. Ensure the hinges are square to the panels when tightening the screws.  
 {% include image.html file="troodon_v2_assembly_40.png" alt="Install Door Furniture" caption="Install Door Furniture" %}
 Install 8pcs M5 T-nuts in the positions shown below.  
 {% include image.html file="troodon_v2_assembly_41.png" alt="Install T-Nuts" caption="Install T-Nuts" %}
@@ -168,4 +170,4 @@ Install the shaft into autoZ probe.
 {% include image.html file="troodon_v2_assembly_51.png" alt="Install AutoZ Shaft" caption="Install AutoZ Shaft" %}
 Rotate four foot pads to level the machine and lock the foot pads by the nuts as shown below.  
 {% include image.html file="troodon_v2_assembly_52.png" alt="Level Feet" caption="Level Feet" %}
-Remove the flexible build platform and remove the protective film from the smooth side.  
+Remove the flexible build platform and remove the protective film from the smooth side.

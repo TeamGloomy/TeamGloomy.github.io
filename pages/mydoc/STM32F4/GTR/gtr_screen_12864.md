@@ -14,13 +14,13 @@ datatable: true
 
 ## Overview
 
-The information here is aimed at connecting a Fysetc Mini v2.1 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).   
+The information here is aimed at connecting a Fysetc Mini v2.1 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).  
 
 ## Board.txt modifications
 
 Add the following lines to the board.txt file
 
-```
+```text
 leds.diagnostic = PA_0
 lePD_neopixelPin=PF_13
 lcPD_lcdCSPin=PH_13
@@ -36,7 +36,7 @@ SPI3.pins={ PI_9, PB_11, PH_11 }
 
 Use this macro to enable the screen.
 
-```
+```text
 ; ST7567 Init for FYSETC Mini12864 Panel V2.1
 
 ; Turn off backlight

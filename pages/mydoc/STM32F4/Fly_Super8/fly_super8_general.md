@@ -15,7 +15,7 @@ datatable: true
 ## Overview
 
 This page covers any general information for the Fly-Super8 board.  
-It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DFg3ED3). 
+It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DFg3ED3).  
 
 ### Board.txt Name
 
@@ -69,7 +69,7 @@ Set them as shown below.
 
 ### IO Output Voltage
 
-The IO output voltage can be set to either 3.3v, 5v or 12v. The default is 5v. 
+The IO output voltage can be set to either 3.3v, 5v or 12v. The default is 5v.  
 Set them as shown below.  
 
 {% include image.html file="fly_super8_io_voltage.png" alt="Fly-Super8 IO Voltage" caption="Fly-Super8 IO Voltage" %}

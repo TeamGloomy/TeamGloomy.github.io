@@ -27,7 +27,7 @@ If your board has the chip shown below in red, you have 'K' type thermocouple su
 
 The following lines should be added to the board.txt file.
 
-```
+```text
 SPI3.pins = { PD_14, PD_12, PD_13 }
 heat.spiTempSensorChannel = 3
 heat.spiTempSensorCSPins = { PD_15, PC_7 }
@@ -40,7 +40,7 @@ heat.spiTempSensorCSPins = { PD_15, PC_7 }
 To use the PT100 on your hotend, use the following code in config.g
 If you are in a country where the mains frequency is 50Hz, change the F60 to F50 (if you don't know, look [here](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf))
 
-```
+```text
 M308 S1 P"PD15" Y"rtd-max31865" F60 R430
 ```
 
@@ -50,6 +50,6 @@ M308 S1 P"PD15" Y"rtd-max31865" F60 R430
 
 To use the Type 'K' Thermocouple on your hotend, use the following code in config.g
 
-```
+```text
 M308 S1 P"C7" Y"thermocouple-max31855"
 ```

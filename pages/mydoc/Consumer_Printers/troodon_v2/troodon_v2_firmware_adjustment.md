@@ -29,7 +29,8 @@ The default board.txt file can be found [here](https://github.com/TeamGloomy/Tro
 ### Modified board.txt file
 
 Below is the modified board.txt file which uses native firmware pin assignments
-```
+
+```text
 // This board.txt file has come from the teamgloomy wiki
 // version: 1.1
 board = troodon_v2
@@ -68,12 +69,16 @@ led.neopixelPin = LCDD5
 ## Config.g Changes
 
 Switching to native firmware support also allows you adjust the pin assignments used in config.g from using a pin number to using an alias. For example
-```
+
+```text
 M574 X1 S1 P"PF_2"   
 ```
+
 would become
-```
+
+```text
 M574 X1 S1 P"xstop"   
 ```
+
 This is not a critical change, it just makes config.g easier to read.  
 To find the alias names for each pin, look [here](troodon_v2_pins.html)

@@ -55,7 +55,7 @@ The fan voltage can be set using jumpers to either 5v, 12v and Vin.
 
 ### io1.in Diode
 
-If using io1.in with a simple switch, install a jumper to bypass the diode (marked diobe BP on the pinout). Don't install the jumper if using any electronic probes such as an inductive or optical sensor.   
+If using io1.in with a simple switch, install a jumper to bypass the diode (marked diobe BP on the pinout). Don't install the jumper if using any electronic probes such as an inductive or optical sensor.  
 
 ### CAN Termination
 

@@ -12,22 +12,23 @@ toc: false
 datatable: true 
 ---
 
-# Overview
+## Overview
 
 The below describes an alternative method of connecting an ESP8266 to the Fly-407ZG.
 There are two different methods. One frees up the EXP2 header only and the other frees up both the EXP1 and EXP2 headers.  
 This alternative modification provides 3 advantages.
+
     * SPI controlled drivers (TMC5160) can be used
     * EXP2 (method 1) or both EXP1 and EXP2 (method 2) are freed up for other uses
     * Both RRF updating of the ESP8266 and serial displays can be used at the same time  
 This will involve soldering some cables to the board.  
   
-## BOM
+### BOM
 
 * 1 x ESP8266 adapter (any of the [3 types](/adapters_esp8266.html) will be suitable)
 * Some cable
 
-## Connecting the Adapter
+### Connecting the Adapter
 
 This example uses the Fly WiFi Adapter but the instructions are applicable to all 3 types.  
 
@@ -38,9 +39,9 @@ This example uses the Fly WiFi Adapter but the instructions are applicable to al
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="method1" markdown="1">
 
-## Method 1
+### Method 1
 
-### Cables to solder to the Fly-407ZG
+#### Method 1 Cables to solder to the Fly-407ZG
 
 7 cables are to be soldered to the board. 5 of these are on the onboard ESP pads and the other 2 are on the EXP1 connectors.  
 
@@ -52,7 +53,7 @@ Connect the 2 cables to the Fly-407ZG as shown below
 
 {% include image.html file="fly_407zg_method1_2.png" alt="Fly-407ZG" caption="Fly-407ZG 2 cables" %}
 
-### Cables to solder to the Adapter
+#### Method 1 Cables to solder to the Adapter
 
 The 7 cables soldered to the Fly-407ZG then need to be attached to the adapter.  
 2 of the 5 cables should be attached as shown below. The RX cable from the Fly-407ZG should be connected to the TX pad on the adapter and the TX cable from the Fly-407ZG should be connected to the RX pad on the adapter.  
@@ -63,15 +64,15 @@ The remainder of the cables are to be connected to the adapter as shown below.
 
 {% include image.html file="fly_407zg_method1_4.png" alt="Fly-407ZG" caption="Adapter cables 2" %}
 
-### Other Connections
+#### Method 1 Other Connections
 
 Connect a cable between EXP1 on the Fly-407ZG and the adapter.  
 
-### Board.txt Changes
+#### Method 1 Board.txt Changes
 
 The following changes should be made to the board.txt file
 
-```
+```text
 //ESP8266 Settings
 8266wifi.espDataReadyPin = PE_15;
 8266wifi.TfrReadyPin = PB_10;
@@ -86,9 +87,9 @@ SPI2.pins = {PB_3,PB_4,PB_5}
 
 <div role="tabpanel" class="tab-pane" id="method2" markdown="1">
 
-## Method 2
+### Method 2
 
-### Cables to solder to the Fly-407ZG
+#### Method 2 Cables to solder to the Fly-407ZG
 
 11 cables are to be soldered to the board. 6 of these are on the onboard ESP pads, 3 to the eeprom and MAX6675 connections and 2 to EXP1.  
 
@@ -104,7 +105,7 @@ Connect the 2 cables to the Fly-407ZG as shown below
 
 {% include image.html file="fly_407zg_method2_3.png" alt="Fly-407ZG" caption="Fly-407ZG 2 cables" %}
 
-### Cables to solder to the Adapter
+#### Method 2 Cables to solder to the Adapter
 
 The 11 cables soldered to the Fly-407ZG then need to be attached to the adapter.  
 2 of the 11 cables should be attached as shown below. The RX cable from the Fly-407ZG should be connected to the TX pad on the adapter and the TX cable from the Fly-407ZG should be connected to the RX pad on the adapter.  
@@ -115,11 +116,11 @@ The remainder of the cables are to be connected to the adapter as shown below.
 
 {% include image.html file="fly_407zg_method2_4.png" alt="Fly-407ZG" caption="Adapter cables remainder" %}
 
-### Board.txt Changes
+#### Method 2 Board.txt Changes
 
 The following changes should be made to the board.txt file
 
-```
+```text
 //ESP8266 Settings
 SPI2.pins={ PB_3, PB_4, PB_5 }
 8266wifi.espDataReadyPin = PB_7

@@ -15,7 +15,7 @@ toc: false
 
 * Configuration:
   * See [Driver Timings](driver_timings.html) for information about setting the correct timings.
-  * See [Custom Commands and Gcode](custom.html) for information about additional gcode and unsupported gcode. 
-* To support the number of different boards, a /sys/board.txt config file is required. More information can be found [here](board_txt.html). 
+  * See [Custom Commands and Gcode](custom.html) for information about additional gcode and unsupported gcode.  
+* To support the number of different boards, a /sys/board.txt config file is required. More information can be found [here](board_txt.html).  
 * Only supports an IP address for the board up to 192.168.1.56 in access point mode.
 * The MCU temperature reading cannot be adjusted see [here](https://discord.com/channels/711873626080804914/746105511421804644/922959711752581140)

@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the SKR v2.0 board. 
+This page covers any general information for the SKR v2.0 board.  
 
 {% include warning.html content="There was an issue with the original boards damaging TMC drivers. Please see [here](https://docs.google.com/document/d/1IeKgfE2WIDjqH1fx5Yg7n1FOHVwhDFmDlZ-7QMlOEV0/edit?fbclid=IwAR2-b687dNy2ktrpiLEf-orZke0lbB_FhXCG9NwP7MFVzUYijo__ZRVMrks) and [here](https://docs.google.com/document/d/1swmc4HvP9vxrxV2b9LVGa_I7GLTQGogQns7CfMYCckA/edit?fbclid=IwAR2-b687dNy2ktrpiLEf-orZke0lbB_FhXCG9NwP7MFVzUYijo__ZRVMrks) for details about how to fix a board.  
 Please be aware that the reverse driver protection feature has been disabled from 3.3RC1" %}
@@ -25,7 +25,7 @@ The board name in board.txt is **biquskr_2**.
 
 ### Driver Jumpers
 
-The jumpers should be installed as below. "Normal" should be used for standalone drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226). 
+The jumpers should be installed as below. "Normal" should be used for standalone drivers. "UART mode Interpolation" should be used when using smart drivers (i.e. TMC2208, TMC2209, TMC2225 and TMC2226).  
 
 {% include image.html file="skr_2.0_normal.PNG" alt="SKR v2.0 Normal" caption="SKR v2.0 Normal Driver Jumper Locations" %}
 

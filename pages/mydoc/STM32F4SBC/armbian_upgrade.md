@@ -14,8 +14,9 @@ datatable: true
 
 ## Upgrading Armbian
 
-To upgrade the underlying OS, use the following command over SSH or over a console connection.   
-```
+To upgrade the underlying OS, use the following command over SSH or over a console connection.  
+
+```text
 sudo apt update && sudo apt upgrade -y
 ```
 
@@ -23,16 +24,17 @@ sudo apt update && sudo apt upgrade -y
 
 There is an upgrade script built into the TeamGloomy release of Armbian.  
 When you invoke it, you must also pass through a version number for the version of DSF you wish to install.
-To use it, as an example, send the following command over SSH or over a console connection.   
+To use it, as an example, send the following command over SSH or over a console connection.  
 
-```
+```text
 rrf_upgrade latest-stable
 ```
-This will upgrade to the latest stable version. `latest-unstable` can also be used as an argument. An argument must always be added to the end of *rrf_upgrade* so it knows which version to install.    
+
+This will upgrade to the latest stable version. `latest-unstable` can also be used as an argument. An argument must always be added to the end of *rrf_upgrade* so it knows which version to install.  
 
 If you are wanting to upgrade/downgrade to a specific version, you can also pass the version number through to the upgrade script.
 
-```
+```text
 rrf_upgrade 3.4-b7
 ```  
 

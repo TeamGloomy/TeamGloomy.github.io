@@ -28,7 +28,7 @@ It is possible to debug the firmware changes you've made using a screen attached
 4. Right click on the project folder and select Launch Flythings Application
 {% include image.html file="fly_screen_firmware_10.png" alt="Launch Flythings Application" caption="Launch Flythings Application" %}  
 5. Tick the box on the next window and click ok.
-{% include image.html file="fly_screen_firmware_11.png" alt="Launch Flythings Application" caption="Launch Flythings Application" %} 
+{% include image.html file="fly_screen_firmware_11.png" alt="Launch Flythings Application" caption="Launch Flythings Application" %}  
 6. View the log messages by clicking Flythings -> Show Log Perspective
 7. You can get items to log to the LogCat. Below is an example.
 {% include image.html file="fly_screen_firmware_13.png" alt="Log code" caption="Log code" %}  

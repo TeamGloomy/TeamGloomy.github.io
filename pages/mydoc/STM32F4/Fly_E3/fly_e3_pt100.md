@@ -22,7 +22,7 @@ Some Fly-E3 boards have support for PT100 and type 'K' thermocouples. If your bo
 
 The following lines should be added to the board.txt file.
 
-```
+```text
 SPI3.pins = { PC_2, PC_0, PC_1 }
 heat.spiTempSensorChannel = 3
 heat.spiTempSensorCSPins = { PC_3, PC_7 }
@@ -35,7 +35,7 @@ heat.spiTempSensorCSPins = { PC_3, PC_7 }
 To use the PT100 on your hotend, use the following code in config.g
 If you are in a country where the mains frequency is 50Hz, change the F60 to F50 (if you don't know, look [here](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf))
 
-```
+```text
 M308 S1 P"PC_3" Y"rtd-max31865" F60 R430
 ```
 
@@ -45,6 +45,6 @@ M308 S1 P"PC_3" Y"rtd-max31865" F60 R430
 
 To use the Type 'K' Thermocouple on your hotend, use the following code in config.g
 
-```
+```text
 M308 S1 P"PC_7" Y"thermocouple-max6675"
 ```

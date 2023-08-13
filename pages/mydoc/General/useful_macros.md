@@ -31,7 +31,7 @@ M671 declares the centre of the attachment point for the bed or gantry being lev
 
 bed_points.g should be edited with the probe locations you want to use. The probing order should match the order of the pivot point locations mapped in M671 and the order the Z motors are declared in M584.  
 
-```
+```text
 ; call this bed_points.g
 G30 P0 X0 Y130 Z-99999         	; Probe near front left pivot point - comment out this line if using 3 pivot points on the z axis
 G30 P1 X230 Y130 Z-99999 S2     ; Probe near front right pivot point - comment out this line if using 3 pivot points on the z axis
@@ -39,8 +39,10 @@ G30 P1 X230 Y130 Z-99999 S2     ; Probe near front right pivot point - comment o
 ; G30 P1 X190 Y10 Z-99999       ; Probe near front right pivot point - uncomment this lines for 3 pivot points on the Z axis
 ; G30 P2 X100 Y190 Z-99999 S3   ; Probe near front centre pivot point - uncomment this lines for 3 pivot points on the Z axis
 ```
+
 M671 in bed.g should be edited with the centre location of each Z axis pivot point. These locations should be the location in gcode and can be outside the maxima and minima declared in M208 (in config.g). If you have 3 Z axis pivot point, make sure you declare 3 points in X and Y in M671.  
-```
+
+```text
 M671 X-130:400 Y150:150 S10                             ; The location of the two Z axis pivot points
 
 if !move.axes[0].homed || !move.axes[1].homed	        ; If the printer hasn't been homed, home it
@@ -72,7 +74,7 @@ This macro is for levelling a bed that is secured to the printer using 4 screws.
 The location of the screws should be updated in M671 as required as well as the probe locations. The probe locations should be as close to the screw locations as possible. The order of the probe points should match the order of the screw locations declared in M671.  
 The P0.5 in M671 is the thread pitch for M3 screws. If your bed is secured by larger screws, also adjust this value to suit.  
 
-```
+```text
 M671 x15:250:15:250 y25:25:260:260 P0.5                             ; The location of the four bed securing screws
 
 ; M558 P0												; Uncomment this if you don't have a Z Probe
@@ -97,7 +99,7 @@ This is an example of stop.g.
 Essentially the only thing in my slicer end code is M0 to call stop.g
 Some of the popups aren't necessary, but provide feedback.
 
-```
+```text
 ; stop.g
 ; called when M0 (Stop) is run (e.g. when a print from SD card is cancelled)
 ; 
@@ -149,7 +151,7 @@ G90 ; absolute positioning
 
 A macro to calibrate a BLTouch
 
-```
+```text
 ;Calibrate BL Touch
 ; Reprap firmware version 3.3b2 or later required!
  
@@ -260,7 +262,7 @@ M500 P31 ; optionally save result to config-overide.g
 
 A macro to enable the fysetc mini v2.1 and fade up the display/set Button colours
 
-```
+```text
 ; ST7567 Init for FYSETC Mini12864 Panel V2.1
 
 ; Turn off backlight

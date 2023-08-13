@@ -17,8 +17,8 @@ Please see the Duet3D [release notes for 3.4.5](https://github.com/Duet3D/RepRap
 
 ## RepRapFirmware for STM32F4 and STM32H7 Release Notes for 3.4.5+_104 from 3.4.5+_103
 
-*  Added support for fly_openpnp_tool board
-*  Added support for Fysetc H723 module
-*  Added optional SPI CS delay when switching between 5160 drivers
-*  Fixed Fly Super 5 pin
-*  Added BTT biquskr_3_ez_h723
+* Added support for fly_openpnp_tool board
+* Added support for Fysetc H723 module
+* Added optional SPI CS delay when switching between 5160 drivers
+* Fixed Fly Super 5 pin
+* Added BTT biquskr_3_ez_h723

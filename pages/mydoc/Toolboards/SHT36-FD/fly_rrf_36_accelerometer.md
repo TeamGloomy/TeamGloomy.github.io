@@ -29,7 +29,8 @@ Below is the orientation of accelerometer fitted to the Fly-RRF-36.
 See [M955](https://docs.duet3d.com/User_manual/Reference/Gcodes/M955) for how to setup and configure the accelerometer, including its orientation in relation to the printer XYZ axis.
 
 An example command would be  
-```
+
+```text
 M955 P124.0 I10
 ```
 

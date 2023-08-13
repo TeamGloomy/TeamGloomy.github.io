@@ -33,7 +33,7 @@ The ender 3 stock display can be connected directly to the EXP header of the SKR
 
 The following lines should be added to the board.txt file.
 
-```
+```text
 lcd.encoderPinA=PB_2
 lcd.encoderPinB=PE_7
 lcd.encoderPinSw=PE_9
@@ -47,9 +47,10 @@ lcd.lcdBeepPin = PE_8
 
 Add the following line to the end of your config.g
 
-```
+```text
 M918 P1 E4 F100000
 ```
+
 </div>
 
 <div role="tabpanel" class="tab-pane" id="fysetc21" markdown="1">
@@ -80,7 +81,7 @@ Use the table below as a guide.
 
 Add the following lines to the board.txt file
 
-```
+```text
 lcd.encoderPinA=PE_10
 lcd.encoderPinB=PE_11
 lcd.encoderPinSw=PE_9
@@ -95,13 +96,13 @@ led.neopixelPin=PB_7
 
 Add the following line to the end of your config.g
 
-```
+```text
 M98 P"screen.g"
 ```
 
 Add a file in your sys folder called screen.g and add the following contents
 
-```
+```text
 ; ST7567 Init for FYSETC Mini12864 Panel V2.1
 
 ; Turn off backlight

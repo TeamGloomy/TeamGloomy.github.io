@@ -29,7 +29,7 @@ These instructions are aimed at users who's mainboard does not contain an onboar
 The image to flash to the ESP32 can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases).  
 
 {% include note.html content="Use the latest release for stable builds and the newest pre-release for unstable builds.  <br/>
-Make sure you download DuetWiFiServer-esp32-stm32f4.bin  " %} 
+Make sure you download DuetWiFiServer-esp32-stm32f4.bin  " %}  
 
 It should be flashed using [esptool.py](https://github.com/espressif/esptool). Use the code below as an example. Change the Com port to match the ESP32 device and make sure you give the .bin file its complete file location if its not in the same folder as esptools.
 
@@ -39,7 +39,7 @@ On a side note, I have a very handy little tool installed on my main laptop that
 
 ### RRF based flashing
 
-{% include warning.html content="This cannot be used in conjunction with using a screen on the Fly-407ZG unless using the alternative wifi method" %} 
+{% include warning.html content="This cannot be used in conjunction with using a screen on the Fly-407ZG unless using the alternative wifi method" %}  
 
 The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:
 `8266wifi.serialRxTxPins = {RXPin, TXPin}`
@@ -52,7 +52,8 @@ Download the latest stable DuetWiFiServer-esp32-stm32f4.bin (or the latest unsta
 {% include important.html content="From 3.3, the DuetWiFiServer.bin file needs to be placed in a folder called firmware. This folder should be placed in the root of the SD card."%}  
 
 Then send the following commands  
-```
+
+```text
 M552 S0
 M997 S1
 M552 S0
@@ -72,9 +73,9 @@ This method follows the flashing instructions for preparation. To allow the ESP3
 
 ### DWC based Updating
 
-{% include warning.html content="This cannot be used in conjunction with using a screen on the Fly-407ZG unless using the alternative wifi method" %} 
+{% include warning.html content="This cannot be used in conjunction with using a screen on the Fly-407ZG unless using the alternative wifi method" %}  
 
-The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:
+The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined), this takes the form:
 `8266wifi.serialRxTxPins = {RXPin, TXPin}`
 This information has been added to the connecting via WiFi page for each board.  
 

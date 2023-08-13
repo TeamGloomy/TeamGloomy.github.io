@@ -16,7 +16,7 @@ toc: false
 This guide will walk you through converting a stock Ender 3 to RRF using a Fly-E3 board.  
 Chris's Basement have also made a [video](https://www.youtube.com/watch?v=NynXQwTTFx0) that you can follow in conjunction with this guide.  
 
-{% include note.html content="Although written around the original Ender 3, this guide is also applicable for the Ender 3 Pro and the Ender 3 V2"%} 
+{% include note.html content="Although written around the original Ender 3, this guide is also applicable for the Ender 3 Pro and the Ender 3 V2"%}  
 
 {% include image.html file="ender_1.jpg" alt="ender_1" caption="Ender 1" %}
 
@@ -66,9 +66,9 @@ Carefully pull the fan cable out. You can use pliers to assist you if required.
 ### Step 5
 
 Remove the motor cables from the board. You will find that these are held in place using hot glue. Use a small flat bladed screw driver to break the seal on the glue before removing the connector.  
-All the cables can easily be identified so don't worry about having to mark them up. 
+All the cables can easily be identified so don't worry about having to mark them up.  
 
-{% include image.html file="ender_5.jpg" alt="ender_5" caption="Ender 5" %} 
+{% include image.html file="ender_5.jpg" alt="ender_5" caption="Ender 5" %}  
 
 ### Step 6
 
@@ -77,7 +77,7 @@ Also remove the ribbon cable for the screen. This should just pull out.
 
 {% include image.html file="ender_6.jpg" alt="ender_6" caption="Ender 6" %}
 
-### Step 7 
+### Step 7
 
 Using a small flat bladed screwdriver, undo all the screws in the green connectors and pull out the cables. Again, don't worry about identification of them.  
 
@@ -124,24 +124,24 @@ Install the drivers into the Fly-E3. You will have been supplied with two heatsi
 ### Step 13
 
 {% include callout.html content="This step falls into the category of advised (but really advised!).  
-Creality have, in their infinite wisdom, tinned the ends of the power cables and bed cables using solder (shown below). This is a bad idea as it can lead to cables that can break more easily and if the connection becomes hot, the solder can soften, reducing the force on the contact from the terminal, eventually resulting in shorts and fire. [Here](https://cdn.thomasnet.com/ccp/00142951/263810.pdf) is a document for more detail about the issue." type="info" %}   
+Creality have, in their infinite wisdom, tinned the ends of the power cables and bed cables using solder (shown below). This is a bad idea as it can lead to cables that can break more easily and if the connection becomes hot, the solder can soften, reducing the force on the contact from the terminal, eventually resulting in shorts and fire. [Here](https://cdn.thomasnet.com/ccp/00142951/263810.pdf) is a document for more detail about the issue." type="info" %}  
 
 {% include image.html file="ender_12.jpg" alt="ender_12" caption="Ender 12" %}
 
-{% include callout.html content="Therefore, on the power and bed cables, the first 20mm of cable needs to be removed to get rid of the solder, and the end crimped with a ferrule. Sets can be purchased on [Amazon](https://www.amazon.co.uk/Wire-Ferrules/s?k=Wire+Ferrules) with a range of sizes. I prefer the ferrules without the plastic ends but its personal preference." type="info" %}   
+{% include callout.html content="Therefore, on the power and bed cables, the first 20mm of cable needs to be removed to get rid of the solder, and the end crimped with a ferrule. Sets can be purchased on [Amazon](https://www.amazon.co.uk/Wire-Ferrules/s?k=Wire+Ferrules) with a range of sizes. I prefer the ferrules without the plastic ends but its personal preference." type="info" %}  
 
 {% include image.html file="ender_13.jpg" alt="ender_13" caption="Ender 13" %}
 
-{% include callout.html content="As well as installing ferrules to the power and bed cables, you should also consider installing them on the hotend cables. Luckily, these don't come tinned so its just a case of crimping a ferrule on the end." type="info" %}     
+{% include callout.html content="As well as installing ferrules to the power and bed cables, you should also consider installing them on the hotend cables. Luckily, these don't come tinned so its just a case of crimping a ferrule on the end." type="info" %}  
 
 {% include image.html file="ender_14.jpg" alt="ender_14" caption="Ender 14" %}
 
 ### Step 14
 
-{% include callout.html content="This step falls into the category of advised. 
+{% include callout.html content="This step falls into the category of advised.  
 On a stock Ender 3, the hotend cooling fan is wired to be permanently running when power to the system is applied. If you are happy with the arrangement, then you can skip this step. If you prefer that your hotend fan is only on when the hotend is on, then you'll need to crimp a new connector on the end. As with the ferrules, sets can be purchased on [Amazon](https://www.amazon.co.uk/s?k=jst+kit&ref=nb_sb_noss_2).  
 
-Crimp the connectors on to the thin red and black cables (the only free cables left that we didn't add ferrules to) and insert them into the housing as shown below." type="info" %}   
+Crimp the connectors on to the thin red and black cables (the only free cables left that we didn't add ferrules to) and insert them into the housing as shown below." type="info" %}  
 
 {% include image.html file="ender_15.jpg" alt="ender_15" caption="Ender 15" %}
 
@@ -214,15 +214,18 @@ On opening the software, a screen will ask you which serial connection to connec
 Type M115 to confirm that RRF has been installed.  
 Then type in the following
 
-```
+```text
 M997 S1
 ```
+
 Wait for the uploading of the WiFi firmware to finish. Then send the following
-```
+
+```text
 M552 S0
 M587 S"your SSID" P"your password"
 M552 S1
 ```
+
 When the connection has been established, the IP address of the Fly-E3 will be displayed. Make a note of this and disconnect your PC/Laptop.  
 
 ## Final Steps
@@ -243,16 +246,20 @@ Now try homing the printer. The axis should move in the correct direction for th
 
 Now you should tune the bed and the hotend.  
 For the bed, run the following command.  
-```
+
+```text
 M303 H0 S60
-```  
+```
+
 That will tune the bed to 60 degrees. Please take into account that it may take up to an hour to run.  
 Once its completed, type M500.  If you get a warning that M501 isn't in your config.g, add it to the end.
 
 Then tune the hotend. Jog the nozzle so it is near to the print surface then run the following command.  
-```
+
+```text
 M303 T0 S220
 ```  
+
 That will tune the hot end to 220 degrees. The part cooling fan will be turned on automatically half way through the process.  
 Once its completed, type M500.  
 

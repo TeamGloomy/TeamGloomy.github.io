@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The Fly-RRF-36 Toolboard can be connected to any of the mainboards produced by Duet3D, an STM32H723, STM32H743 or an STM32F4 with an spican module.   
+The Fly-RRF-36 Toolboard can be connected to any of the mainboards produced by Duet3D, an STM32H723, STM32H743 or an STM32F4 with an spican module.  
 
 ### How to connect the board
 
@@ -31,10 +31,12 @@ All boards in the system must have different CAN addresses. Fly-RRF36 Toolboards
 
 Power up the printer. The 3.3v, 12v and Power LEDs on the toolboard should illuminate. The "working" LED near the RP2040 MCU will blink rapidly for a few seconds until a connection is established. The LED will then blink roughly once every second.  
 You can then check that the toolboard is communicating correctly by sending the following command:  
-```
+
+```text
 M115 B124
 ```
-The firmware version running on the toolboard will then be reported. 
+
+The firmware version running on the toolboard will then be reported.  
 
 #### Set the CAN address
 
@@ -45,7 +47,9 @@ The firmware version running on the toolboard will then be reported.
 * You can now power up the next Toolboard and commission it in the same way, choosing a different CAN address for it.
 
 #### Startup Time
+
 It is recommended to add the following to config.g, before any commands that reference any CAN bus connected expansion boards
-```
+
+```text
 G4 S2 ; wait for expansion boards to start
 ```

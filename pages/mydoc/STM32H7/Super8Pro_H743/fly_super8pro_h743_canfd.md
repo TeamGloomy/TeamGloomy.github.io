@@ -15,6 +15,7 @@ datatable: true
 ## Overview
 
 The Fly-Super8Pro H743 can be connected to any of the CAN-FD expansion boards produced by Duet3D (or cloned by Fysetc) as well as another STM32H743 or STM32H723 board running in expansion board mode. This includes, but is not limited to:
+
 * Duet 3 6HC (in expansion board mode - M954)
 * Duet 3 6XD (in expansion board mode - M954)
 * Duet 3 Mini 5+ (in expansion board mode - M954)
@@ -35,4 +36,4 @@ We recommend using stranded twisted wire pairs, such as those found in ethernet 
 
 Using the Fly-RRF-36 as example (and the image below), the yellow wire on the CAN-FD cable is the CAN-H wire and the white is the CAN-L wire. They should be connected to the two pins nearest to the WiFi module on the Fly-Super8Pro H723. CAN-H is connected to CAN-H and CAN-L is connected to CAN-L.  
 
-{% include image.html file="fly_super8pro_can.png" url="https://teamgloomy.github.io/images/fly_super8pro_can.png" alt="Toolboard CAN-FD wiring" caption="Toolboard CAN-FD wiring" %}
+{% include image.html file="fly_super8pro_can.png" url="<https://teamgloomy.github.io/images/fly_super8pro_can.png>" alt="Toolboard CAN-FD wiring" caption="Toolboard CAN-FD wiring" %}

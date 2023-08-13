@@ -11,7 +11,8 @@ comments: false
 toc: false
 ---
 
-### How do you know what pin is interrupt capable? 
+### How do you know what pin is interrupt capable?
+
 Well, any STM32 pin is interrupt capable **but** you can only have one pin with the same number as an interrupt pin.  
 For example, on the Fly-E3-Pro, pin PB_12 is used as the chip select pin for the WiFi. That means that no other pin that ends in .12 can be used for something that requires the pin to be interrupt capable.  
 You can see all the pins that are currently assigned as an interrupt using M122 P200.  
@@ -22,7 +23,7 @@ You can see all the pins that are currently assigned as an interrupt using M122 
 
 Below is an example config.g code
 
-```
+```text
 M308 S10 P"PB_5" Y"dht22" A"Chbr Temp[C]"
 M308 S11 P"S10.1" Y"dhthumidity" A"Chbr Hum[%]"
 ```

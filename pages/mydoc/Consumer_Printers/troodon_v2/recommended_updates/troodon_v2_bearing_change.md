@@ -40,6 +40,7 @@ Remove the M3x30 securing the guider in place. Remove the guider and place to on
 {% include image.html file="troodon_v2_bearing_4.jpg" alt="Bearing 4" caption="Bearing Replacement 4" %}
 Remove the 2 x M3x30 securing the main body in place. Remove the main body and the drive gear. The MR85 from the motor plate may come away with the drive shaft (which is fine).  
 {% include image.html file="troodon_v2_bearing_5.jpg" alt="Bearing 5" caption="Bearing Replacement 5" %}
+
 ## Bearing Replacement
 
 Remove and discard the MR85 from the motor plate. Install the new MR85-ZZ replacement bearing.  
@@ -47,7 +48,7 @@ Remove and discard the MR85 from the motor plate. Install the new MR85-ZZ replac
 Remove and discard the MR85 from the main body. To do so, turn the main body over and gently tap the bearing from behind. Install the new MR85-ZZ replacement bearing.  
 {% include image.html file="troodon_v2_bearing_7.jpg" alt="Bearing 7" caption="Bearing Replacement 7" %}
 
-## Check the Grubscrew 
+## Check the Grubscrew
 
 There have been a number of reports of the drive gear being loose on the drive shaft and now is a perfect time to secure it in place.  
 Remove the grubscrew securing the drive gear in place.  
@@ -57,4 +58,4 @@ Install the grubscrew and secure the drive gear in the position shown below. Be 
 
 ## Assembly
 
-Assemble in the reverse order from above. The Voron v2.4r2 [assembly manual](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf) (from page 160 onwards) can be referenced if required.  
+Assemble in the reverse order from above. The Voron v2.4r2 [assembly manual](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/Manual/Assembly_Manual_2.4r2.pdf) (from page 160 onwards) can be referenced if required.

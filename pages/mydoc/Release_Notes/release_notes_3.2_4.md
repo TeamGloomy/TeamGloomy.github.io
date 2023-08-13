@@ -18,9 +18,9 @@ Please see the Duet3D [release notes for 3.2](https://github.com/Duet3D/RepRapFi
 ## RepRapFirmware for LPC and STM32 Release Notes for 3.2_4
 
 - Added aliases for config names that contain "lpc"
-    - "board" = "lpc.board"
-    - "8266wifi.TfrReadyPin" = "8266wifi.lpcTfrReadyPin"
-    - "sbc.TfrReadyPin" = "sbc.lpcTfrReadyPin"
+  - "board" = "lpc.board"
+  - "8266wifi.TfrReadyPin" = "8266wifi.lpcTfrReadyPin"
+  - "sbc.TfrReadyPin" = "sbc.lpcTfrReadyPin"
 - M122 P200 reports all available pin names
 - Names defined with mixed case now work correctly
 - Add support for MAX6675

@@ -42,13 +42,14 @@ The latest unstable WiFi firmware version is [2.1b4](https://github.com/gloomyan
 
 ## Latest H7 bootloader
 
-### Latest Stable
+### Latest Stable H7 Bootloader
 
 The latest stable bootloader version is [1.0.3](https://github.com/gloomyandy/IAP/releases/tag/IAP_1.0.3)
 
-### Latest Unstable
+### Latest Unstable H7 Bootloader
 
 There currently isn't an unstable build available
+
 ## Partnership
 
 TeamGloomy are working in close partnership with Flymaker/Mellow to ensure that 100% compatibility is obtained with their boards and to cover all of your 3D printer electronics requirements.  

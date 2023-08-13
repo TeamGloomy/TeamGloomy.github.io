@@ -12,6 +12,7 @@ comments: false
 ---
 
 Sensorless homing and stall detection is functional for the TMC2209's and TMC2226's. This is supported on the following boards.
+
 * Fly-CDY
 * Fly-CDYv2
 * Fly-E3
@@ -44,7 +45,7 @@ Sensorless homing and stall detection is functional for the TMC2209's and TMC222
 * SKR RRF E3
 
 Getting stall detection working can be tricky and sensorless homing will almost certainly require some tuning.  
- 
+
 As always the Duet help pages provide a lot of information that may also be of [help](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Sensors_stall_detection){:target="_blank"}.
 
 ### board.txt Changes
@@ -62,7 +63,7 @@ The correct pins in the correct order have been included in the board.txt sectio
 
 The only modification required in config.g is to add the following to each M569 command where sensorless homing is to be used.
 `D3 V40`
-D3 sets the driver into stealthchop mode. V40 sets the speed at which the driver switches over to spreadcycle. 
+D3 sets the driver into stealthchop mode. V40 sets the speed at which the driver switches over to spreadcycle.  
 
 ### Homing file changes
 
@@ -71,13 +72,13 @@ This is where the main setup of sensorless homing takes place.
 Before using the examples below to config the sensorless homing, it is suggested to test each axis with the following homing code. Ensure that you comment out your current homing code using ;  
 The code would go in the homex.g or homey.g (adjusting any X moves to Y)
 
-```
+```text
 M915 P0 S-127 H10 R1 ; Set very sensitive stall detect
 M574 X1 S3 ; configure endstop for stall detection
 G1 X200 H1 ; Should stall pretty much immediately
 ```
 
-Once you have confirmed that your motors are stalling, adapt the example cartesian homing files below. Copies are also included at the below google drive links. Examples of corexy sensorless homing files can also be found below.    
+Once you have confirmed that your motors are stalling, adapt the example cartesian homing files below. Copies are also included at the below google drive links. Examples of corexy sensorless homing files can also be found below.  
 
 The S, H and R values will probably need tweaking for your system.  
 H is typically 200 for 1.8 degree motors and 400 for 0.9 degree motors.
@@ -95,7 +96,7 @@ R is the action to take on detecting a stall. 0 = no action (default), 1 = just 
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="homex" markdown="1">
 
-```
+```text
 ; homex.g
 ; called to home the X axis
 ;
@@ -135,7 +136,7 @@ M915 P0 S20 H200 R1		  ; Report any stalls
 
 <div role="tabpanel" class="tab-pane" id="homey" markdown="1">
 
-```
+```text
 ; homey.g
 ; called to home the X axis
 ;
@@ -175,7 +176,7 @@ M915 P1 S20 H200 R1		  ; Report any stalls
 
 <div role="tabpanel" class="tab-pane" id="homeall" markdown="1">
 
-```
+```text
 ; homeall.g
 ; called to home all axes
 ;

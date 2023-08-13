@@ -33,7 +33,8 @@ Find the macro for the calculated value and execute it.
 ### Adjusting the Z Probe Offset the Improved Way
 
 This method is based on using a macro that duet forum member OwenD wrote for calibrating the BLTouch. Create a new macro, call it "probe trigger height" and paste the following lines into it.  
-```
+
+```text
 ; Teamgloomy AutoZ for Troodon V2
 ; Version 1.0
 var ProbeSpeedHigh = sensors.probes[0].speeds[0] ; save currently configured speed for fast probe
@@ -53,7 +54,7 @@ var Highest=0
 
 ; If the printer hasn't been homed, home it
 if !move.axes[0].homed || !move.axes[1].homed || !move.axes[2].homed
-  G28
+	G28
 else
 	G1 Z{sensors.probes[0].diveHeight} F360 ; if axes homed move to dive height
 
@@ -106,7 +107,7 @@ while iterations < var.NumTests
 	set var.RunningTotal={var.RunningTotal + move.axes[2].machinePosition} ; set new running total
 	;M118 P3 S{"running total = " ^ var.RunningTotal} ; send running total to DWC console
 	G4 S0.5
-set var.Average = {(var.RunningTotal - var.Highest - var.Lowest) / (var.NumTests - 2)} 	; calculate the average after discarding th ehigh & low reading
+set var.Average = {(var.RunningTotal - var.Highest - var.Lowest) / (var.NumTests - 2)}  ; calculate the average after discarding th ehigh & low reading
 
 ;M118 P3 S{"running total = " ^ var.RunningTotal} ; send running total to DWC console
 ;M118 P3 S{"low reading = " ^ var.Lowest} ; send low reading to DWC console
@@ -127,6 +128,7 @@ G1 Z{sensors.probes[0].diveHeight} F360 ; move head back to dive height
 M291 P{"Trigger height set to : " ^ sensors.probes[0].triggerHeight  ^ " OK to save to config-overide.g, cancel to use until next restart"} R"Finished" S3
 M500 P31 ; optionally save result to config-overide.g
 ```
+
 There is no need to edit any lines from this macro, just run it. It will ask you to jog the nozzle towards the bed until it touches (using paper like the Troodon Method) and when ready, it will probe the bed 10 times and take an average reading. Clicking ok will save the value to config-override.g (which is the same as the Troodon Method) or you can edit the value in config.g (check the "Console" tab in DWC for the value to change).  
 
 ### Adjusting the AutoZ Offset Troodon V2 Method
@@ -146,7 +148,8 @@ Save the config.g and when prompted, restart the mainboard.
 {% include warning.html content="The below macro may look the same as the macro used for the Z Offset, it has been changed to suit the AutoZ endstop position and its Probe number in the firmware. Please make sure you use the contents from below." %}
 
 This method is based on using a macro that duet forum member OwenD wrote for calibrating the BLTouch. Create a new macro, call it "autoz trigger height" and paste the following lines into it.  
-```
+
+```text
 ; Teamgloomy AutoZ for Troodon V2
 ; Version 1.01
 var ProbeSpeedHigh = sensors.probes[1].speeds[0] ; save currently configured speed for fast probe
@@ -240,4 +243,5 @@ G1 Z{sensors.probes[1].diveHeight} F360 ; move head back to dive height
 M291 P{"Trigger height set to : " ^ sensors.probes[1].triggerHeight  ^ " OK to save to config-overide.g, cancel to use until next restart"} R"Finished" S3
 M500 P31 ; optionally save result to config-overide.g
 ```
+
 There is no need to edit any lines from this macro, just run it. It will ask you to jog the nozzle towards the bed until it touches (using paper like the Troodon Method) and when ready, it will probe the AutoZ 10 times and take an average reading. Clicking ok will save the value to config-override.g (which is different to the Troodon Method which requires editing config.g) or you can edit the value in config.g (check the "Console" tab in DWC for the value to change).  

@@ -28,7 +28,7 @@ The information here is aimed at connecting a stock ender 3 12864 display but it
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="e3stock" markdown="1">
 
-## Wiring
+## Ender 3 Stock Display Wiring
 
 The ender 3 stock display can be connected directly to the EXP header of the Fly-E3-Pro. No modifications are required.
 
@@ -38,7 +38,7 @@ The ender 3 stock display can be connected directly to the EXP header of the Fly
 
 <div role="tabpanel" class="tab-pane" id="e3adapter" markdown="1">
 
-## Wiring
+## Ender 3 Stock Display Wiring With Adapter
 
 The Fly-E3-Pro can have issues with artifcats being displayed on the screen after using it for a while. If this is the case, the Fly-E3-Pro ships with an adapter board and this should be added to the cabling between the screen and the board.  
 
@@ -46,7 +46,7 @@ The Fly-E3-Pro can have issues with artifcats being displayed on the screen afte
 
 The following lines should be added to the board.txt file.
 
-```
+```text
 lcd.encoderPinA=LCD_D6
 lcd.encoderPinB=LCD_D5
 lcd.encoderPinSw=LCD_D7
@@ -60,7 +60,7 @@ lcd.lcdBeepPin = BEEP
 
 Add the following line to the end of your config.g
 
-```
+```text
 M918 P1 E4 F100000
 ```
 
@@ -68,7 +68,7 @@ M918 P1 E4 F100000
 
 <div role="tabpanel" class="tab-pane" id="reprap" markdown="1">
 
-## Wiring
+## RepRapDiscount Display Wiring
 
 The RepRapDiscount Full Graphic Smart Controller can be connected directly to the EXP header of the Fly-E3-Pro using custom wiring.  
 Use the image below as a guide. Thanks @Samsan
@@ -81,7 +81,7 @@ Use the image below as a guide. Thanks @Samsan
 
 <div role="tabpanel" class="tab-pane" id="fysetc" markdown="1">
 
-## Wiring
+## Fysetc v2.1 Wiring
 
 The Fysetc Mini12864 RGB Panel v2.1 can be connected directly to the EXP header of the Fly-E3-Pro using custom wiring.  
 Use the image below as a guide. Thanks @Denise_Wink
@@ -105,11 +105,11 @@ Use the image below as a guide. Thanks @Denise_Wink
 
 <div class="datatable-end"></div>
 
-## Board.txt modifications
+## ST7567 Board.txt modifications
 
 The following lines should be added to the board.txt file.
 
-```
+```text
 lcd.encoderPinA=PE_9
 lcd.encoderPinB=PE_10
 lcd.encoderPinSw=PE_11
@@ -120,16 +120,17 @@ lcd.lcdDCPin = PE_12
 led.neopixelPin=PB_11
 ```
 
-## Config.g changes
+## ST7567 Config.g changes
 
 Add the following line to the end of your config.g
 
-```
+```text
 M98 P"screen.g"
 ```
 
 Add a file in your sys folder called screen.g and add the following contents
-```
+
+```text
 ; ST7567 Init for FYSETC Mini12864 Panel V2.1
 ; Turn off backlight
 m150 X2 R0 U0 B0 S3 F0

@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-E3-Pro-v3 Pinout Diagram
 
-{% include image.html file="fly_e3_prov3_pins.svg" url="https://teamgloomy.github.io/images/fly_e3_prov3_pins.svg" alt="Fly-E3-Pro-v3" caption="Fly-E3-Pro-v3 Pinout" %}
+{% include image.html file="fly_e3_prov3_pins.svg" url="<https://teamgloomy.github.io/images/fly_e3_prov3_pins.svg>" alt="Fly-E3-Pro-v3" caption="Fly-E3-Pro-v3 Pinout" %}
 
 ## Fly-E3-Pro-v3 Driver Pins in Firmware
 
@@ -31,7 +31,7 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-## Fly-E3-Pro-v3 Other Pins in Firmware 
+## Fly-E3-Pro-v3 Other Pins in Firmware
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  
@@ -77,7 +77,6 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PE_7|LCD_D6|||
 |PE_8|LCD_D7|||
 |PE_9|LCD_D4|||
-
 
 <div class="datatable-end"></div>
 

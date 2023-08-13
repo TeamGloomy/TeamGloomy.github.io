@@ -10,13 +10,14 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: BTT Octopus v1.1 F429 Version
 ---
 
 ## Overview
 
-This page covers any general information for the BTT Octopus v1.1 F429 Version board, which is supported from 3.4beta2.
+This page covers any general information for the {{boardname}} board, which is supported from 3.4beta2.
 
-{% include callout.html content="There are two types of BTT Octopus. One uses an STM32F446ZET6 and the other uses an STM32F429ZGT6. TeamGloomy and this port only support the STM32F429ZGT6 based boards. BTT provide a build with reduced features which can be found [here](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/tree/master/Firmware/RepRapFirmware/F446-OctoPus)" type="danger" %} 
+{% include callout.html content="There are two types of BTT Octopus. One uses an STM32F446ZET6 and the other uses an STM32F429ZGT6. TeamGloomy and this port only support the STM32F429ZGT6 based boards. BTT provide a build with reduced features which can be found [here](https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/tree/master/Firmware/RepRapFirmware/F446-OctoPus)" type="danger" %}  
 
 ### Board.txt Name
 

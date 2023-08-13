@@ -23,7 +23,7 @@ The chip shown below in red, is the MAX31855K 'K' type thermocouple support.
 
 The following lines should be added to the board.txt file.
 
-```
+```text
 heat.tempSensePins = {PC_0, PC_1, PC_2, PC_3}  //regular thermistor pins
 //heat.tempSensePins = {PA_3, PF_9, PF_10, PF_7, PF_5}  //M5 expansion thermistor pins
 SPI4.pins = {PI_1, PI_2, NoPin} //MAX31855K SPI connections SCK, MISO, MOSI
@@ -35,7 +35,7 @@ heat.spiTempSensorCSPins = {PH_9} //MAX31855K Chip Select
 
 To use the Type 'K' Thermocouple on your hotend, use the following code in config.g
 
-```
+```text
 M308 S1 P"PH_9" Y"thermocouple-max31855"
 ```
 

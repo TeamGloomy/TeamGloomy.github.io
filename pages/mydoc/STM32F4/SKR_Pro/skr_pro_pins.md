@@ -16,16 +16,16 @@ datatable: true
 
 ## SKR Pro v1.1 Pinout Diagram
 
-{% include image.html file="skr_pro_1.1.png" url="https://teamgloomy.github.io/images/skr_pro_1.1.png" alt="SKR Pro v1.1" caption="SKR Pro v1.1 Pinout" %}
+{% include image.html file="skr_pro_1.1.png" url="<https://teamgloomy.github.io/images/skr_pro_1.1.png>" alt="SKR Pro v1.1" caption="SKR Pro v1.1 Pinout" %}
 
 ## SKR Pro v1.2 Pinout Diagram
 
-{% include image.html file="skr_pro_1.2.png" url="https://teamgloomy.github.io/images/skr_pro_1.2.png" alt="SKR Pro v1.2" caption="SKR Pro v1.2 Pinout" %}
+{% include image.html file="skr_pro_1.2.png" url="<https://teamgloomy.github.io/images/skr_pro_1.2.png>" alt="SKR Pro v1.2" caption="SKR Pro v1.2 Pinout" %}
 
 ### Known Errors
+
 * On the UART connector 3.3V is actually 5V
 * On th I2C connector 3.3V is actually 5V
-
 
 ## SKR Pro v1.1 and v1.2 Driver Pins in Firmware
 
@@ -42,7 +42,7 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-## SKR Pro v1.1 and v1.2 Other Pins in Firmware 
+## SKR Pro v1.1 and v1.2 Other Pins in Firmware
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  

@@ -14,13 +14,13 @@ datatable: true
 
 ## Fly-RRF-36 Pinout Diagram
 
-{% include image.html file="fly_rrf_36_pins.svg" url="https://teamgloomy.github.io/images/fly_rrf_36_pins.svg" alt="Fly-RRF-36" caption="Fly-RRF-36 Pinout" %}
+{% include image.html file="fly_rrf_36_pins.svg" url="<https://teamgloomy.github.io/images/fly_rrf_36_pins.svg>" alt="Fly-RRF-36" caption="Fly-RRF-36 Pinout" %}
 
 ## Fly-RRF-36 Driver Pins in Firmware
 
 The driver pin numbers are configured within the firmware and can't be changed.
 
-## Fly-RRF-36 Other Pins in Firmware 
+## Fly-RRF-36 Other Pins in Firmware
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 

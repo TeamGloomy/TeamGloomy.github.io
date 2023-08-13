@@ -22,7 +22,7 @@ It comes running this port of RRF on a custom made BTT Octopus X7 out of the box
 
 ### Board.txt Name
 
-The version of the firmware that is shipped with the printer uses the BTT Octopus Pro as the base board configuration and then overrides the stepper pins to be suitable for the Octopus X7. Going forwards, you can choose to either continue to use this configuration or, **from RRF3.4.5**, you can use our built in configuration for the board. 
+The version of the firmware that is shipped with the printer uses the BTT Octopus Pro as the base board configuration and then overrides the stepper pins to be suitable for the Octopus X7. Going forwards, you can choose to either continue to use this configuration or, **from RRF3.4.5**, you can use our built in configuration for the board.  
 
 The board name in board.txt is **troodon_v2**.
 
@@ -43,6 +43,7 @@ If you want to use sensorless homing, a jumper needs adding next to each appropr
 
 After carrying out some research into the maximum heater cartridge wattage that can be installed on a stock Troodon V2, it has been concluded that the limit is 50 watts.  
 There are two reasons why this is the case and they are as follows:
+
 * There is a 40 pin cable between the mainboard and the breakout board. This uses LDZY A2544 connectors which are rated to 3A (which equates to 72 watts at 24v).  
 * The traces on the breakout board and toolhead PCB have been designed for a maximum of 2.5A (which equates to 60 watts at 24v).  
 Armed with this information, I spoke to Formbot who's engineer advised that 50 watts is the limit. This means you can't use hotends such as a rapido without heavy modification of the stock setup.  

@@ -15,7 +15,7 @@ toc: false
 
 This guide will walk you through installing a BLTouch to an Ender 3 that has already been converted to a Fly-E3 STM32 board.  
 
-{% include note.html content="Although written around the original Ender 3, this guide is also applicable for the Ender 3 Pro and the Ender 3 V2"%} 
+{% include note.html content="Although written around the original Ender 3, this guide is also applicable for the Ender 3 Pro and the Ender 3 V2"%}
 
 ### Hardware Requirements
 
@@ -23,7 +23,7 @@ This guide will walk you through installing a BLTouch to an Ender 3 that has alr
 2 x M3 Screws
 2 x M3 Nuts
 1m minimum of 5 wire ribbon cable , such as [this](https://www.amazon.co.uk/Aussel-10Wire-20Feet-Rainbow-Connectors/dp/B077XFH9Z3/ref=sr_1_8?crid=3C40IX0Q135JT&dchild=1&keywords=5+core+ribbon+cable&qid=1612702004&refinements=p_76%3A419158031&rnid=419157031&rps=1&sprefix=5+core+ribbon%2Caps%2C161&sr=8-8). It is also possible to buy the BLTouch with an extension kit.
-1 x [Dupont Connector Kit](https://www.amazon.co.uk/QLOUNI-620PCS-2-54mm-Dupont-Conector-Jst-Sm-1-2-3-4-5-6-Pin/dp/B0774HCRY1/ref=sr_1_3?dchild=1&keywords=dupont+connectors&pd_rd_r=2ea400e9-b5d0-4ed9-91fd-aac83e4662c6&pd_rd_w=1EPGw&pd_rd_wg=any3t&pf_rd_p=cd9132d2-f159-4363-880a-030b3e94826d&pf_rd_r=G5X4PJG1WHK9P1PNZAB3&qid=1612702420&sr=8-3) or if you don't have a [suitable crimper](https://www.amazon.co.uk/JZK-Crimper-Crimping-connectors-Assorted/dp/B07PCQ5VMV/ref=sr_1_36?crid=3P0CIA1W7OBBN&dchild=1&keywords=dupont+connectors+kit&qid=1612702545&sprefix=ribbon+cable%2Caps%2C186&sr=8-36). This is required if making your own cable. 
+1 x [Dupont Connector Kit](https://www.amazon.co.uk/QLOUNI-620PCS-2-54mm-Dupont-Conector-Jst-Sm-1-2-3-4-5-6-Pin/dp/B0774HCRY1/ref=sr_1_3?dchild=1&keywords=dupont+connectors&pd_rd_r=2ea400e9-b5d0-4ed9-91fd-aac83e4662c6&pd_rd_w=1EPGw&pd_rd_wg=any3t&pf_rd_p=cd9132d2-f159-4363-880a-030b3e94826d&pf_rd_r=G5X4PJG1WHK9P1PNZAB3&qid=1612702420&sr=8-3) or if you don't have a [suitable crimper](https://www.amazon.co.uk/JZK-Crimper-Crimping-connectors-Assorted/dp/B07PCQ5VMV/ref=sr_1_36?crid=3P0CIA1W7OBBN&dchild=1&keywords=dupont+connectors+kit&qid=1612702545&sprefix=ribbon+cable%2Caps%2C186&sr=8-36). This is required if making your own cable.
 
 ### Mounting the BLTouch
 

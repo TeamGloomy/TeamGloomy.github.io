@@ -26,11 +26,11 @@ The application is Windows only and can be downloaded from [here](https://develo
 
 ### Preparation of sources
 
-Download the following github repository. 
+Download the following github repository.  
 
 {% include tip.html content="The preferred method for doing so is by using a git client (terminal or GUI). This allows for changes made to be tracked. My client of choice (jay_s_uk) is [gitkracken](https://www.gitkraken.com/)." %}
 
-* (Fly-Screen-Reprap)[https://github.com/Mellow-3D/FLY-Screen-RepRap] - This contains both the 4.3" and 7" source
+* [Fly-Screen-Reprap](https://github.com/Mellow-3D/FLY-Screen-RepRap) - This contains both the 4.3" and 7" source
 
 ### Importing the files
 
@@ -39,7 +39,7 @@ Download the following github repository.
 3. On the window that opens, using the browse button, navigate to the folder where you downloaded the source to and click ok.
 4. Click Launch.
 5. Click on File -> Import.
-6. On the window that opens, expand Flythings and click on Flythings, highlighted below. Click Next.   
+6. On the window that opens, expand Flythings and click on Flythings, highlighted below. Click Next.  
 {% include image.html file="fly_screen_firmware_1.png" alt="Flythings Firmware Import" caption="Flythings Firmware Import" %}  
 7. On the window that opens, using the browse button, navigate to the folder where you downloaded the source to and click ok.
 8. Click on Select All and then Finish
@@ -49,7 +49,7 @@ Download the following github repository.
 1. In the Flythings IDE, on the project explorer window, click on the folder of the firmware you want to compile.
 {% include image.html file="fly_screen_firmware_2.png" alt="Flythings Firmware Selection" caption="Flythings Firmware Selection" %}  
 2. Click on the blue icon highlighted below.
-{% include image.html file="fly_screen_firmware_3.png" alt="Flythings Firmware Compiling" caption="Flythings Firmware Compiling" %} 
+{% include image.html file="fly_screen_firmware_3.png" alt="Flythings Firmware Compiling" caption="Flythings Firmware Compiling" %}  
 3. Select a folder where you want the firmware to be output to. Click ok.
 4. The compiling process is now complete.
 

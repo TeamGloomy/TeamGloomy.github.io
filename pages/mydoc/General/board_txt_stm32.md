@@ -218,5 +218,3 @@ There are 8 UARTS and each can use a selection of pins. You can mix and match pi
 |PG_9| UART6|RX|
 
 <div class="datatable-end"></div>
-
-  

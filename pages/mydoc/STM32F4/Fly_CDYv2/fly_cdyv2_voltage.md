@@ -13,4 +13,4 @@ datatable: true
 boardname: Fly-CDYv2
 ---
 
-{% include custom/voltage.html %} 
+{% include custom/voltage.html %}

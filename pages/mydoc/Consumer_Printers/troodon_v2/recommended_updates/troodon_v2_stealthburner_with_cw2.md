@@ -24,6 +24,7 @@ Please note there are no free pins to run the neopixels.
 ### Printed Parts Required
 
 Here is a list of the printed parts required.  
+
 * [Stealthburner main body](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/STLs/Stealthburner/%5Ba%5D_stealthburner_main_body.stl)
 * [Stealthburner printhead v6 front](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/STLs/Stealthburner/Printheads/revo_six_and_v6/stealthburner_printhead_v6_r6_front.stl)
 * [Stealthburner printhead v6 rear](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/STLs/Stealthburner/Printheads/revo_six_and_v6/stealthburner_printhead_v6_r6_rear_cw2.stl)
@@ -48,10 +49,10 @@ Remove the 2 x M3x12 Screws and 2 x M3x30 Screws securing the fan cover in place
 {% include image.html file="troodon_v2_bearing_2.jpg" alt="SB 2" caption="Stealthburner Installation 2" %}  
 Remove and keep the 40mm hotend cooling fan (if not part of purchased parts) for installation in the Stealthburner.  
 Disconnect everything else from the toolhead PCB. Disconnect the toolhead PCB from the cable chain and put to one side for reinstallation.  
-Remove the 2 x M3x40 Screws securing the printhead to the carriage and remove the printhead. 
-{% include image.html file="troodon_v2_fan_screws_2.jpg" alt="SB 3" caption="Stealthburner Installation 3" %}   
+Remove the 2 x M3x40 Screws securing the printhead to the carriage and remove the printhead.  
+{% include image.html file="troodon_v2_fan_screws_2.jpg" alt="SB 3" caption="Stealthburner Installation 3" %}  
 Remove the V6 from the printhead by removing the 2 x M3x20 Screws. Keep the screws as they will be needed during assembly.  
-{% include image.html file="troodon_v2_fan_screws_3.jpg" alt="SB 4" caption="Stealthburner Installation 4" %}   
+{% include image.html file="troodon_v2_fan_screws_3.jpg" alt="SB 4" caption="Stealthburner Installation 4" %}  
 Remove the screws securing the cable chain to the rear of the motor. Also remove the cable tie securing the cable chain in place.  
 
 Lift the cable chain out of the way and remove the 2 M3x20 screws securing the extruder in place. Lift the motor up to remove it.  
@@ -75,4 +76,4 @@ Slacken the belt tighteners so 1 thread is showing in preparation for assembly.
 ## Assembly
 
 Follow the [Stealthburner Manual](https://github.com/VoronDesign/Voron-Stealthburner/blob/main/Manual/Assembly_Manual_SB.pdf) for assembly instructions.  
-Tighten the belts as detailed [here](https://docs.vorondesign.com/tuning/secondary_printer_tuning.html#belt-tension)  
+Tighten the belts as detailed [here](https://docs.vorondesign.com/tuning/secondary_printer_tuning.html#belt-tension)

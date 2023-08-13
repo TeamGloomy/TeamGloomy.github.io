@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the SKR3EZ H723 board. 
+This page covers any general information for the SKR3EZ H723 board.  
 
 The SKR3EZ can be purchased from [AliExpress](https://s.click.aliexpress.com/e/_DkY3Otb)
 
