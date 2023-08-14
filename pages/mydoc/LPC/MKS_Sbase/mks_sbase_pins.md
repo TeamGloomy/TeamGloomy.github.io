@@ -30,7 +30,7 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-## MKS Sbase v1.3 Other Pins in Firmware 
+## MKS Sbase v1.3 Other Pins in Firmware
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of P0.1 or P0_1.  

@@ -14,7 +14,7 @@ datatable: true
 
 ## SKR3EZ H743 Pinout Diagram
 
-{% include image.html file="skr3_ez_pins.png" url="<https://teamgloomy.github.io/images/skr3_ez_pins.png>" alt="SKR3EZ" caption="SKR3EZ H743 Pinout" %}
+{% include image.html file="skr3_ez_pins.png" url="https://teamgloomy.github.io/images/skr3_ez_pins.png" alt="SKR3EZ" caption="SKR3EZ H743 Pinout" %}
 
 ## SKR3EZ H743 Driver Pins in Firmware
 

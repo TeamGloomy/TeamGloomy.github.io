@@ -14,7 +14,7 @@ datatable: true
 
 ## Guide
 
-The shutdown example is available on the github page (https://github.com/wilriker/execonmcode)  
+The shutdown example is available on the [github page](https://github.com/wilriker/execonmcode)  
 
 In order to make it run as a service on rasbian:  
 

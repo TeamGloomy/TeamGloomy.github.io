@@ -15,7 +15,7 @@ boardname: BTT Octopus Pro v1.0 F429 Version
 
 ## {{boardname}} Pinout Diagram
 
-{% include image.html file="btt_octopus_pro_1.0_pins.png" url="<https://teamgloomy.github.io/images/btt_octopus_pro_1.0_pins.png>" alt="BTT Octopus Pro v1.0 F429 Version" caption="BTT Octopus Pro v1.0 F429 Version Pinout" %}
+{% include image.html file="btt_octopus_pro_1.0_pins.png" url="https://teamgloomy.github.io/images/btt_octopus_pro_1.0_pins.png" alt="BTT Octopus Pro v1.0 F429 Version" caption="BTT Octopus Pro v1.0 F429 Version Pinout" %}
 
 ## {{boardname}} Driver Pins in Firmware
 

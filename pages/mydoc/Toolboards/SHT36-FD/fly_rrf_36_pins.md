@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-RRF-36 Pinout Diagram
 
-{% include image.html file="fly_rrf_36_pins.svg" url="<https://teamgloomy.github.io/images/fly_rrf_36_pins.svg>" alt="Fly-RRF-36" caption="Fly-RRF-36 Pinout" %}
+{% include image.html file="fly_rrf_36_pins.svg" url="https://teamgloomy.github.io/images/fly_rrf_36_pins.svg" alt="Fly-RRF-36" caption="Fly-RRF-36 Pinout" %}
 
 ## Fly-RRF-36 Driver Pins in Firmware
 

@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-Super8 Pinout Diagram
 
-{% include image.html file="fly_super8_pins.svg" url="<https://teamgloomy.github.io/images/fly_super8_pins.svg>" alt="Fly-Super8" caption="Fly-Super8 Pinout" %}
+{% include image.html file="fly_super8_pins.svg" url="https://teamgloomy.github.io/images/fly_super8_pins.svg" alt="Fly-Super8" caption="Fly-Super8 Pinout" %}
 
 ## Fly-Super8 Driver Pins in Firmware
 

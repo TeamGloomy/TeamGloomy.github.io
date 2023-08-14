@@ -14,7 +14,7 @@ datatable: true
 
 ## Troodon V2 Stock Board Pinout
 
-{% include image.html file="octopus_x7_pins.png" url="<https://teamgloomy.github.io/images/octopus_x7_pins.png>" alt="Troodon V2 Pinout" caption="Troodon V2 Pinout" %}
+{% include image.html file="octopus_x7_pins.png" url="https://teamgloomy.github.io/images/octopus_x7_pins.png" alt="Troodon V2 Pinout" caption="Troodon V2 Pinout" %}
 
 ## Troodon V2 Stock Board Driver Pins in Firmware
 

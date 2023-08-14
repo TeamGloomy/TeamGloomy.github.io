@@ -20,7 +20,7 @@ Only screens that use a serial connection can be connected to the MKS Sbase v1.3
 
 To enable a screen to function correctly, the following lines need to be added to the board.txt file.  
 
-```
+```text
 serial.aux.rxTxPins = { 0.3, 0.2 }
 ```
 
@@ -36,10 +36,12 @@ serial.aux.rxTxPins = { 0.3, 0.2 }
 
 Use pins +5V, GND, TX and RX on the AUX-1 header. These should be connected to +5V, GND, TX and RX on the PanelDue, making sure that TX and RX are swapped.
 
-In config.g, the following command should be added.   
-```
+In config.g, the following command should be added.  
+
+```text
 M575 P1 S1 B57600
 ```
+
 From RepRapFirmware 3.2, it is possible to update the firmware on the PanelDue directly from the board. Please see [here](https://docs.duet3d.com/en/User_manual/RepRapFirmware/Updating_PanelDue#firmware-update-via-duet) for further instructions.  
 
 </div>
@@ -76,10 +78,12 @@ The cable that is supplied may be equipped with the correct connection for a due
 
 Use pins +5V, GND, TX and RX  on the AUX-1 header. These should be connected to +5V, GND, TX and RX on the Fly Screen, making sure that TX and RX are swapped.
 
-In config.g, the following command should be added.   
-```
+In config.g, the following command should be added.  
+
+```text
 M575 P1 S0 B57600
 ```  
+
 The latest version of the screen firmware can be found [here](https://github.com/Mellow-3D/FLY-Screen-RepRap/releases).  
 To update the screen, put the update.img onto a blank SD card. Put the SD card into the screen and power it up. The update will then be flashed automatically. Once finished, power down the screen and remove the SD card.  
 

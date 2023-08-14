@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-Super5Pro H723 Pinout Diagram
 
-{% include image.html file="fly_super5pro_pins.svg" url="<https://teamgloomy.github.io/images/fly_super5pro_pins.svg>" alt="Fly-Super5Pro H723" caption="Fly-Super5Pro H723 Pinout" %}
+{% include image.html file="fly_super5pro_pins.svg" url="https://teamgloomy.github.io/images/fly_super5pro_pins.svg" alt="Fly-Super5Pro H723" caption="Fly-Super5Pro H723 Pinout" %}
 
 ## Fly-Super5Pro H723 Driver Pins in Firmware
 

@@ -16,11 +16,11 @@ datatable: true
 
 ## SKR Pro v1.1 Pinout Diagram
 
-{% include image.html file="skr_pro_1.1.png" url="<https://teamgloomy.github.io/images/skr_pro_1.1.png>" alt="SKR Pro v1.1" caption="SKR Pro v1.1 Pinout" %}
+{% include image.html file="skr_pro_1.1.png" url="https://teamgloomy.github.io/images/skr_pro_1.1.png" alt="SKR Pro v1.1" caption="SKR Pro v1.1 Pinout" %}
 
 ## SKR Pro v1.2 Pinout Diagram
 
-{% include image.html file="skr_pro_1.2.png" url="<https://teamgloomy.github.io/images/skr_pro_1.2.png>" alt="SKR Pro v1.2" caption="SKR Pro v1.2 Pinout" %}
+{% include image.html file="skr_pro_1.2.png" url="https://teamgloomy.github.io/images/skr_pro_1.2.png" alt="SKR Pro v1.2" caption="SKR Pro v1.2 Pinout" %}
 
 ### Known Errors
 

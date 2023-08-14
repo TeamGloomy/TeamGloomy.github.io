@@ -14,6 +14,7 @@ toc: false
 ## Differences to [Duet3D's RepRapFirmware](https://github.com/Duet3D/RepRapFirmware)
 
 The CPUs targeted in this port only have 64K RAM which is less than those that run dc42s RepRapFirmware. Further, there is also some differences between the CPUs, and the following outlines the main differences in this port:  
+
 * A maximum of 6 files can be open at a time.
 * The maximum gcode line length is 256 characters.
 * Reduced write buffers for SDCard to save memory.
@@ -29,7 +30,7 @@ The CPUs targeted in this port only have 64K RAM which is less than those that r
   * Maximum number of probe points of 121; and
   * Delta maximum calibration points of 16
 * To support the number of different boards, a /sys/board.txt config file is required. More information can be found [here](board_txt.html).
-* M150 does not support X0 or X1. If being used with neopixels, X2 should be used. 
+* M150 does not support X0 or X1. If being used with neopixels, X2 should be used.  
 * There is no support for "mcu-temp" as a sensor type in M308 as the LPC1768/69 MCU does not have a built in temperature sensor.
 * TMC5160 drivers will not get supported on LPC based boards
 * Only supports an IP address for the board up to 192.168.1.56 in access point mode.

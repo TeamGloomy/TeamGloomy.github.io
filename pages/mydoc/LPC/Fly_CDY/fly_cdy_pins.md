@@ -29,10 +29,9 @@ Driver pin numbers. They are separated into driver number.
 |Direction Pins|1.1|1.9|1.15|4.29|2.11|0.11|
 |UART Pins|1.4|1.10|1.16|4.28|2.12|0.10|
 
-
 <div class="datatable-end"></div>
 
-## Fly-CDY Other Pins in Firmware 
+## Fly-CDY Other Pins in Firmware
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).   
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of P0.1 or P0_1.  

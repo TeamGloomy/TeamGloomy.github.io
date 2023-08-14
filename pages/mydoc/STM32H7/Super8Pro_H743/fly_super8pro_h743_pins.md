@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-Super8Pro H743 Pinout Diagram
 
-{% include image.html file="fly_super8_pins.svg" url="<https://teamgloomy.github.io/images/fly_super8_pins.svg>" alt="Fly-Super8Pro H743" caption="Fly-Super8Pro H743 Pinout" %}
+{% include image.html file="fly_super8_pins.svg" url="https://teamgloomy.github.io/images/fly_super8_pins.svg" alt="Fly-Super8Pro H743" caption="Fly-Super8Pro H743 Pinout" %}
 
 ## Fly-Super8Pro H743 Driver Pins in Firmware
 

@@ -14,7 +14,7 @@ datatable: true
 
 ## Fly-Gemini-V2 Pinout Diagram
 
-{% include image.html file="fly_gemini_v2_pins.svg" url="<https://teamgloomy.github.io/images/fly_gemini_v2_pins.svg>" alt="Fly-Gemini-V2" caption="Fly-Gemini-V2 Pinout" %}
+{% include image.html file="fly_gemini_v2_pins.svg" url="https://teamgloomy.github.io/images/fly_gemini_v2_pins.svg" alt="Fly-Gemini-V2" caption="Fly-Gemini-V2 Pinout" %}
 
 ## Fly-Gemini-V2 Driver Pins in Firmware
 

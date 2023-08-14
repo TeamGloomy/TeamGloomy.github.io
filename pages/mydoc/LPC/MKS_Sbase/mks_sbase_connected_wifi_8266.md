@@ -14,11 +14,11 @@ datatable: true
 
 ## Overview
 
-The MKS Sbase v1.3 is an LPC1768 based board. 
+The MKS Sbase v1.3 is an LPC1768 based board.  
 
 ## Firmware File
 
-Choose the correct corresponding firmware (firmware-lpc-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.   
+Choose the correct corresponding firmware (firmware-lpc-wifi-XXX.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card.  
 
 ## ESP8266 WiFi
 
@@ -28,7 +28,7 @@ I’ve used a nodemcu ESP8266 with USB programming as it already 5v tolerant and
 
 ### Background
 
-The main problem is that MOSI0 is not available at a pin header other than the LCD headers and there it is only available via a level shifter. 
+The main problem is that MOSI0 is not available at a pin header other than the LCD headers and there it is only available via a level shifter.  
 Unfortunately that level shifter is one way and so MOSI0 can only be used as an output, but in the case of the ESP8266 WiFi module on the LPC, it is an SPI slave device, not a master and so this pin needs to be used as an input, which means it is not going to work. 
 All of the other MOSI0 lines can be found on J7 but unfortunately not 0.18.
 MOSI0 can be routed either to pin 0.18 or to pin 1.24. 1.24 is the X-min endstop pin so is externally accessible. However it has a small filter (couple of resistors and a capacitor) hooked up to it and these prevent the high speed SPI signal from being read by the MCU.
@@ -56,7 +56,7 @@ Follow the instructions [here](lpc_esp8266.html).
 
 ### Connecting the ESP8266
 
-The pinout for the MKS Sbase v1.3 can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/blob/master/BTT%20SKR%20V1.4/Hardware/BTT%20SKR%20V1.4PIN.pdf) and the schematic for the Duet 2 WiFi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf). 
+The pinout for the MKS Sbase v1.3 can be found [here](https://github.com/bigtreetech/BIGTREETECH-SKR-V1.3/blob/master/BTT%20SKR%20V1.4/Hardware/BTT%20SKR%20V1.4PIN.pdf) and the schematic for the Duet 2 WiFi for reference can be found [here](https://github.com/T3P3/Duet/blob/master/Duet2/Duet2v1.04/DuetWifiv1.04a_Schematic.pdf).  
 
 The table below shows the pins required on the ESP8266 and what they are connected to on the SKR. Please ensure that your cables are no longer than 30cm although they should ideally be as short as possible.  
 
@@ -86,7 +86,7 @@ Follow the instructions on [Getting Started with RRF3](getting_started.html)
 
 You will also need a board.txt file in the sys folder. Below are the contents that should be used.
 
-```
+```text
 //Config for MKS Sbase v1.3
 board = mkssbase_1.3
 //WiFi pins
@@ -100,7 +100,8 @@ heat.tempSensePins = { 0.23, 0.24, 0.25 }
 ### Updating the ESP8266 by RRF
 
 If you have an ESP8266 WiFi adapter that supports updating via RRF, you need to add the following information to the board.txt file.  
-```
+
+```text
 8266wifi.serialRxTxPins = { 0.3, 0.2 }
 serial.aux.rxTxPins = { nopin, nopin }
 ```
@@ -111,16 +112,19 @@ Once connected, power up the board using 12-24v and connect to the USB port on t
 
 {% include callout.html content="If updating the ESP32 using RRF, type the following.  
 
-```
+```text
 M997 S1
-```<br/>
-Wait for the uploading of the WiFi firmware to finish. Then send the following<br/>
-```
-M552 S-1
-```<br/>
-Continue with the instructions below." type="info" %} 
+```  
 
+Wait for the uploading of the WiFi firmware to finish. Then send the following  
+
+```text
+M552 S-1
 ```
+
+Continue with the instructions below." type="info" %}  
+
+```text
 M552 S0
 M587 S"your SSID" P"your password"
 M552 S1
@@ -139,12 +143,14 @@ The final thing to do is add the line “M552 S1” to your config file. This ca
 You will need to PID tune your tools and your bed. Please be aware that bed tuning may take up to an hour and tool tuning normally takes around 15 minutes. If it takes longer, that is also fine as up to 30 cycles may be ran.  
 
 To tune the bed, run the following command, changing the temperature (the S value) if a different tuning temperature is required.  
-```
+
+```text
 M303 H0 S60
 ```  
 
 To tune each tool, run the following command, changing the temperature (the S value) if a different tuning temperature is required. This proceedure will activate the part cooling fans during the final phase of the tuning process so their effect is taken into account. If your printer has more than one tool, make sure each one of them is tuned.  
-```
+
+```text
 M303 T0 S220
 ```
 

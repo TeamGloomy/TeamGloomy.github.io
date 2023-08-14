@@ -45,7 +45,8 @@ Rather then installing the jumper for UART mode as described above, install it a
 {% include image.html file="fly_cdy_fix.jpg" alt="Fly-CDY Fix" caption="Fly-CDY E1 Jumper Fix Method 1" %}
 
 Then include the following line in the board.txt file.  
-```
+
+```text
 stepper.TmcUartPins = { 1.4, 1.10, 1.16, 4.28, 0.21, 0.10, NoPin }
 ```  
 
@@ -71,7 +72,7 @@ Connect the USB TTL to the Fly-CDY.
 
 Download and install [Flash Magic](https://www.flashmagictool.com/download.html&d=10.90/FlashMagic.exe).  
 Download and install the updated bootloader from [here](https://github.com/FLYmaker/FLY-CDY/blob/master/Bootloader/CDY_bootloader.hex).
-Launch flash magic. 
+Launch flash magic.  
 
 {% include image.html file="flash_magic.png" alt="Flash Magic" caption="Flash Magic Settings" %}
 

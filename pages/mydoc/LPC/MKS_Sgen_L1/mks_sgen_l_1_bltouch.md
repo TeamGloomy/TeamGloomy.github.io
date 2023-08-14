@@ -33,7 +33,8 @@ Connect the BLTouch to the MKS SGen L v1.0 as shown below.
 ### Config.g Changes
 
 Your config.g should be modified as below.
-```
+
+```text
 M558 P9 H6 F120 T8000 C"^zstop"       ; set Z probe type to bltouch and the dive height + speeds
 M950 S0 C"servo0"                              ; Setup servo 0 as servo port on an MKS SGen L v1.0
 ```
@@ -42,7 +43,7 @@ You will also need to set up your probe offset using [G31](https://docs.duet3d.c
 
 ## Files to Create
 
-Create the following files. 
+Create the following files.  
 
 {% include tip.html content="If you select the BLTouch while setting up your config.g files using the Configurator, these files should be created for you. We still advise checking them tho ensure the content is correct." %}
 
@@ -54,11 +55,14 @@ Create the following files.
 <div role="tabpanel" class="tab-pane active" id="deploy" markdown="1">
 
 Create a file in your sys folder called
-```
+
+```text
 deployprobe.g
 ```
+
 In it, paste the following code
-```
+
+```text
 M280 P0 S10
 ```
 
@@ -67,11 +71,14 @@ M280 P0 S10
 <div role="tabpanel" class="tab-pane" id="retract" markdown="1">
 
 Create a file in your sys folder called
-```
+
+```text
 retractprobe.g
 ```
+
 In it, paste the following code
-```
+
+```text
 M280 P0 S90
 ```
 
@@ -93,7 +100,8 @@ If you you want to use your probe as your z endstop, you need to modify your hom
 <div role="tabpanel" class="tab-pane active" id="homez" markdown="1">
 
 For homez.g, you will have need to have something similar to this. Please modify the co-ordinates required for the centre of your bed accordingly.
-```
+
+```text
 ; ################# Home Z Preparation ################
 
 G91 															; Relative mode
@@ -114,7 +122,8 @@ G30					 											; Probe a single point
 <div role="tabpanel" class="tab-pane" id="homeall" markdown="1">
 
 The homeall.g should have something similar to the above or should call the homez.g file using
-```
+
+```text
 M98 P"homez.g"
 ```
 
@@ -124,7 +133,7 @@ M98 P"homez.g"
 
 ## Testing Macros
 
-It is suggested that you create a number of macros to allow testing of your BLTouch. These should each be created in the macros folder.   
+It is suggested that you create a number of macros to allow testing of your BLTouch. These should each be created in the macros folder.  
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#alarm" data-toggle="tab">alarm release + pin</a></li>
@@ -136,11 +145,14 @@ It is suggested that you create a number of macros to allow testing of your BLTo
 <div role="tabpanel" class="tab-pane active" id="alarm" markdown="1">
 
 Create a file in your macros folder called
-```
+
+```text
 alarm release + pin
 ```
+
 In it, paste the following code
-```
+
+```text
 M280 P0 S160 ; Alarm Release and Push-Pin UP
 ```
 
@@ -149,11 +161,14 @@ M280 P0 S160 ; Alarm Release and Push-Pin UP
 <div role="tabpanel" class="tab-pane" id="pinup" markdown="1">
 
 Create a file in your macros folder called
-```
+
+```text
 pin up
 ```
+
 In it, paste the following code
-```
+
+```text
 M280 P0 S90 ; Send PWM channel 0 the s90 (angle) command
 ```
 
@@ -162,11 +177,14 @@ M280 P0 S90 ; Send PWM channel 0 the s90 (angle) command
 <div role="tabpanel" class="tab-pane" id="pindown" markdown="1">
 
 Create a file in your macros folder called
-```
+
+```text
 pin down
 ```
+
 In it, paste the following code
-```
+
+```text
 M280 P0 S10 ; Send PWM channel 0 the S10 (angle) command
 ```
 
@@ -175,13 +193,17 @@ M280 P0 S10 ; Send PWM channel 0 the S10 (angle) command
 <div role="tabpanel" class="tab-pane" id="selftest" markdown="1">
 
 Create a file in your macros folder called
-```
+
+```text
 self-test
 ```
+
 In it, paste the following code
-```
+
+```text
 M280 P0 S120 ; Send PWM channel 7 the S10 (angle) command
 ```
+
 </div>
 
 </div>
