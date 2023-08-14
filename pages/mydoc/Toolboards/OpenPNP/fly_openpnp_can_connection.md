@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The Fly-OpenPNP Toolboard can be connected to any of the mainboards produced by Duet3D, an STM32H723, STM32H743 or an STM32F4 with an spican module.   
+The Fly-OpenPNP Toolboard can be connected to any of the mainboards produced by Duet3D, an STM32H723, STM32H743 or an STM32F4 with an spican module.  
 
 ### How to connect the board
 
@@ -24,21 +24,25 @@ Connect the power cables to your 12/24v PSU.
 The Yellow cable is CAN-H and the White cable is CAN-L. The Yellow cable should be connected to the CAN-H connection on the mainboard or spican module and the white cable connected to the CAN-L connection on the mainboard or spican module.  
 
 ### Downloading the board firmware
-Choose the firmware (firmware-stm32h723-wifi.bin) from [here]https://github.com/gloomyandy/RepRapFirmware/releases. You can choose to download either the latest release (marked latest and classed by us as stable) or the latest pre-release if available (marked pre-release and classed by us as unstable), but it must match the version installed on your mainboard.  
+
+Choose the firmware (firmware-stm32h723-wifi.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases). You can choose to download either the latest release (marked latest and classed by us as stable) or the latest pre-release if available (marked pre-release and classed by us as unstable), but it must match the version installed on your mainboard.  
 Once downloaded, rename it firmware.bin  
 
 ### Creating board.txt
 
 Create a board.txt file with the following contents.  
-```
+
+```text
 board = fly_openpnp_tool
 stepper.numSmartDrivers = 3
 ```
 
 ### Creating Config.g
-Create a config.g file with the following contents.  
-```
 
+Create a config.g file with the following contents.  
+
+```text
+```
 
 ### Firmware Installation
 
@@ -48,10 +52,12 @@ All boards in the system must have different CAN addresses. Fly-RRF36 Toolboards
 
 Power up the printer. The 3.3v, 12v and Power LEDs on the toolboard should illuminate. The "working" LED near the RP2040 MCU will blink rapidly for a few seconds until a connection is established. The LED will then blink roughly once every second.  
 You can then check that the toolboard is communicating correctly by sending the following command:  
-```
+
+```text
 M115 B124
 ```
-The firmware version running on the toolboard will then be reported. 
+
+The firmware version running on the toolboard will then be reported.  
 
 #### Set the CAN address
 
@@ -62,7 +68,9 @@ The firmware version running on the toolboard will then be reported.
 * You can now power up the next Toolboard and commission it in the same way, choosing a different CAN address for it.
 
 #### Startup Time
+
 It is recommended to add the following to config.g, before any commands that reference any CAN bus connected expansion boards
-```
+
+```text
 G4 S2 ; wait for expansion boards to start
 ```
