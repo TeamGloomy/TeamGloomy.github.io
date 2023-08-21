@@ -1219,3 +1219,55 @@ h4.panel-title {
 .affix {
     position: static
 }
+
+
+/**
+ * Codeblock
+ */
+pre.highlight {
+    padding: 8px 12px;
+    position: relative
+}
+
+pre.highlight>code {
+    border: 0;
+    overflow-x: auto;
+    padding-right: 0;
+    padding-left: 0
+}
+
+pre.highlight.highlight {
+    border-left: 15px solid #35383c;
+    color: #c1c2c3;
+    overflow: auto;
+    white-space: pre;
+    word-wrap: normal
+}
+
+pre.highlight.highlight,pre.highlight.highlight code {
+    background-color: #222;
+    font-size: 15px
+}
+
+/* copy code to clipboard */
+pre.highlight:hover>button {
+    opacity: 1
+}
+
+pre.highlight>button {
+    background: #d9d9d9;
+    color: #000000;
+    opacity: 0;
+    position: absolute;
+    right: 1.2rem;
+    top: 0.4rem;
+    transition: all .2s ease-out;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hover {
+    border-color: #fff;
+    color: #000000;
+    opacity: 1
+}
