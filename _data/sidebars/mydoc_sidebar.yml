@@ -51,6 +51,10 @@ children:
   output: web, pdf
   children:
 
+  - title: 3.4.6_101 Release Notes
+    url: release_notes_3.4.6_101.html
+    output: web, pdf
+  
   - title: 3.5.0-beta.4_101 Release Notes
     url: release_notes_3.5.0-beta.4_101.html
     output: web, pdf
