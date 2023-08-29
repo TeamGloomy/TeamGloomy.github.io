@@ -43,7 +43,6 @@ can.spiChannel = {{page.driverSPIChannel}}
 
 Don't forget to reduce the number of smart drivers if you are replacing a driver with the drive SPI to CAN-FD module.  
 {% include tip.html content="If you are installing the driver SPI to CAN-FD module before a driver, you will have to unassign the driver UART pin from that slot in board.txt. To do so, take the stepper.TmcUartPins from M122 P200, add it to board.txt and replace the corresponding UART pin with NoPin" %}  
-{% endif %}
 
 If you are running the DFD module at the same time as 5160 drivers, it is recommended to slow down the SPI connection. To do so, add the following line to your board.txt.  
 
