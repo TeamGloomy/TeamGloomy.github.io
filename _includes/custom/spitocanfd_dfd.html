@@ -1,0 +1,57 @@
+
+### Connecting the driver module (DFD)
+
+You need either a spare driver slot or you replace an extruder driver with a toolboard. The driver slot should ideally be the last one on the board and have a working voltage of 24v.  
+The driver slot you are going to use should be put in SPI mode. This is done using jumpers as shown below.  
+
+{% capture imagefile %}
+{{ page.spiJumpers }}
+{% endcapture %}
+{% capture captiontext %}
+{{ page.boardname }} SPI Jumpers
+{% endcapture %}
+{% if page.image != "" %}
+{% include image.html file=imagefile alt="" caption=captiontext %}
+{% endif %}
+
+Install the driver module. Ensure the module is installed so the hole thats in the same position as the diag pin is closest to the driver socket.  
+Also make sure you install the jumper as shown below.  
+{% include image.html file="spi_canfd_driver_module.png" alt="Driver SPI to CAN-FD Module" caption="Driver SPI to CAN-FD Module" %}  
+
+### Wiring for the driver module
+
+CAN-FD only requires 2 wires to be connected between each board, CAN-H and CAN-L.  
+We recommend using stranded twisted wire pairs, such as those found in ethernet patch cables.  
+
+Using the image below, the H connection is the CAN-H connection and should be connected to CAN-H on the toolboard. L is the CAN-L connection and should be connected to CAN-L.  
+{% if page.dfdType == "Right" %}
+{% include image.html file="spi_canfd_driver_module_connections.png" alt="Driver SPI to CAN-FD Module Connections" caption="Driver SPI to CAN-FD Module Connections" %}  
+{% endif %}
+{% if page.dfdType == "Left" %}
+{% include image.html file="spi_canfd_driver_module_connections_other.png" alt="Driver SPI to CAN-FD Module Connections" caption="Driver SPI to CAN-FD Module Connections" %}  
+{% endif %}
+
+### Board.txt changes
+
+The following two lines should be added to board.txt and assume the last driver slot is used. If another driver slot is used the appropriate CS pin must be chosen.  
+
+```text
+//CAN-FD Interface
+can.csPin = {{page.driverSPICSPin}}
+can.spiChannel = {{page.driverSPIChannel}}
+```
+
+Don't forget to reduce the number of smart drivers if you are replacing a driver with the drive SPI to CAN-FD module.  
+{% include tip.html content="If you are installing the driver SPI to CAN-FD module before a driver, you will have to unassign the driver UART pin from that slot in board.txt. To do so, take the stepper.TmcUartPins from M122 P200, add it to board.txt and replace the corresponding UART pin with NoPin" %}  
+{% endif %}
+
+If you are running the DFD module at the same time as 5160 drivers, it is recommended to slow down the SPI connection. To do so, add the following line to your board.txt.  
+
+```text
+can.spiFrequencyHz = 10000000
+```
+
+### Config.g Changes
+
+If successful, the toolboard should show in the object model.  
+See this [page](https://docs.duet3d.com/en/User_manual/Machine_configuration/CAN_connection#setting-can-addresses) for more information about CAN addresses etc.
