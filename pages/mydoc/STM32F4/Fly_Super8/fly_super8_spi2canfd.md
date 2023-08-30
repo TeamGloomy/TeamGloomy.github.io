@@ -2,7 +2,7 @@
 title: Adding CAN-FD to a Fly-Super8
 tags: []
 keywords: 
-last_updated: 12/06/2023
+last_updated: 30/08/2023
 summary: "How to add CAN-FD to a Fly-Super8 and connect a CAN-FD Toolboard"
 sidebar: mydoc_sidebar
 permalink: fly_super8_spi2canfd.html
@@ -19,6 +19,11 @@ driverSPICSPin: PG_5
 driverSPIChannel: 2
 expSPICSPin: PA_4
 expSPIChannel: 0
+dfdType: "Left"
 ---
 
-{% include custom/spitocanfd.html %}
+{% include custom/spitocanfd_overview.html %}
+
+{% include custom/spitocanfd_dfd.html %}
+
+{% include custom/spitocanfd_efd.html %}
