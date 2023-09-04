@@ -2,7 +2,7 @@
 title: Connecting a Fly-RRF-36 via CAN-FD
 tags: []
 keywords: 
-last_updated: 18/01/2023
+last_updated: 04/09/2023
 summary: "How to connect a Fly-RRF-36 via CAN-FD"
 sidebar: mydoc_sidebar
 permalink: fly_rrf_36_can_connection.html
@@ -42,7 +42,7 @@ The firmware version running on the toolboard will then be reported.
 
 * Send command M115 B# to verify that the main board can communicate with the Toolboard, where # is the original CAN address (normally 124)
 * Send command M952 B# A## where ## is the new address you want to use. We suggest you use addresses starting at 20 for Toolboards. So for the first Toolboard, if your new CAN board was at address 124, send M952 B124 A20.
-* Power the system down and up again, or send M999 B121. This will cause the Toolboard to restart with the new address.
+* Power the system down and up again, or send M999 B124. This will cause the Toolboard to restart with the new address.
 * Send command M115 B20 (or whatever address you chose) to verify that you can communicate with the Toolboard at its new address
 * You can now power up the next Toolboard and commission it in the same way, choosing a different CAN address for it.
 
