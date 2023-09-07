@@ -204,6 +204,5 @@ backups at the beginning of this page).
 
 ### Starting from scratch
 
-See [https://teamgloomy.github.io/getting_started.html#firmware](Getting
-Started) in case you need to install RRF from scratch. Since RRF usually does
+See [Getting Started](https://teamgloomy.github.io/getting_started.html#firmware) in case you need to install RRF from scratch. Since RRF usually does
 updates from a running system, this should only be necessary in rare cases.
