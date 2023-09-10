@@ -2,7 +2,7 @@
 title: Connecting a GTR via an ESP8266 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 18/01/2023
+last_updated: 10/09/2023
 summary: "How to connect to a GTR via an ESP8266 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: gtr_connected_wifi_8266.html
@@ -36,6 +36,7 @@ GPIO13: PB_15
 GPIO12: PB_14
 GPIO14: PB_13
 adapterRXTX: WiFi
+sensorless: "gtr_sensorless.html"
 ---
 
 {% include custom/wifi/overview.html %}
@@ -47,19 +48,28 @@ adapterRXTX: WiFi
 {% include custom/wifi/dwc.html %}
 
 <ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#purchased" data-toggle="tab">Using a Purchased WiFi Adapter</a></li>
-    <li><a class="noCrossRef" href="#homemade" data-toggle="tab">Using a Homemade WiFi Adapter</a></li>
+    <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
+    <li><a class="noCrossRef" href="#manualpre35" data-toggle="tab">Manually Editing/Creating board.txt Pre 3.5RC1</a></li>
+    <li><a class="noCrossRef" href="#manualpost35" data-toggle="tab">Manually Editing/Creating board.txt Post 3.5RC1</a></li>
 </ul>
   <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="purchased" markdown="1">
+<div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
 
-{% include custom/wifi/removeable_large.html %}
+{% include custom/wifi/generate_config.html %}
 
 </div>
 
-<div role="tabpanel" class="tab-pane" id="homemade" markdown="1">
+<div role="tabpanel" class="tab-pane" id="manualpre35" markdown="1">
 
-{% include custom/wifi/homemade_ESP8266.html %}
+{% include custom/wifi/board_txt.html %}
+{% include custom/wifi/drivers_pre35.html %}
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="manualpost35" markdown="1">
+
+{% include custom/wifi/board_txt.html %}
+{% include custom/wifi/drivers_post35.html %}
 
 </div>
 

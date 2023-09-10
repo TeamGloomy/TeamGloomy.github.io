@@ -1,0 +1,53 @@
+## Overview
+
+The {{page.boardname}} {{page.mcu}} based board with an {{page.SBCchip}} built in for SBC functionality.   
+Two SD cards are required when using this board. One for the STM32 side and one for the SBC side.  
+
+## Board Setup
+{% capture imagefile %}
+{{ page.image }}
+{% endcapture %}
+{% capture captiontext %}
+{{ page.boardname }} Overview
+{% endcapture %}
+{% include image.html file=imagefile alt="" caption=captiontext %}  
+
+### Jumper Setup
+
+There are two rows of DIP switches that require setting correctly for RRF operation.  
+#### Row 1
+Row 1 is the row of DIP switches nearest the USB ports.  
+If you want to be able to access the STM32 chip from the "Board USB" port, then ensure that switches 1 to 6 are in the off position and 7 to 8 are in the on position.  
+{% capture imagefile1 %}{{ page.image1 }}{% endcapture %}
+{% capture captiontext1 %}{{ page.boardname }} DIP Switches{% endcapture %}
+{% include image.html file=imagefile1 alt="" caption=captiontext1 %}  
+If you want to be able to acces the STM32 chip from picocom (installed by default) ran from the SBC, then ensure that switches 1 and 2 are in the off position, 3 and 4 in the on position and 5 to 8 are in the off poition.
+#### Row 2
+On the row near the EXP headers, ensure that switches 1 to 4 are in the on position.  
+{% capture imagefile2 %}{{ page.image2 }}{% endcapture %}
+{% capture captiontext2 %}{{ page.boardname }} DIP Switches{% endcapture %}
+{% include image.html file=imagefile2 alt="" caption=captiontext2 %}    
+
+{% if {{page.boardname}} == "Fly-Gemini-V1" %}
+### Additional Cable
+
+An additional cable requires adding to allow the connection between the STM32 and the SBC to function correctly.  
+It should be added as shown below between the 3rd from the right pin of the small 7 pin connector to the left of the Core-Fan header and the second pin from the left on the top row of EXP2 (PPB_3).  
+{% include image.html file="fly_gemini_cable.png" alt="Fly-Gemini-V1 Additional Cable" caption="Fly-Gemini-V1 Additional Cable" %}  {% endif %}
+
+## STM32 Setup
+
+### Firmware File
+{% capture tip %} The image file we offer for setting up the SBC side of the {{ page.boardname }} is based on Stable releases only. Please ensure that you use a stable image on the STM32 side and once up a running, if switching to a beta image, you can follow the instructions [here](armbian_upgrade.html).{% endcapture %}
+{% include tip.html content=tip %}
+Choose the correct corresponding firmware (firmware-stm32f4-sbc.bin) from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. Remember to rename it to firmware.bin. Put it in the root of a small FAT32 formatted SD card. This will be placed in the STM32 side of the board.  The maximum size supported card is 32GB.
+
+### Board.txt
+
+The SD card on the {{page.boardname}} also needs a board.txt file with the following contents.
+
+```
+//Config for {{page.boardname}}
+board = {{page.board}}
+sbc.TfrReadyPin = {{page.sbcTfrReadyPin}}
+```

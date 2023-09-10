@@ -2,7 +2,7 @@
 title: Connecting an SKR v2.0 via SBC
 tags: []
 keywords: 
-last_updated: 13/07/2022
+last_updated: 10/09/2023
 summary: "How to connect to an SKR v2.0 via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_2.0_connected_sbc.html
@@ -26,6 +26,28 @@ spiInfo: "{ PE_15, PA_14, PE_14 }"
 TMC: "{ PC_1, PC_3, PC_0, PC_2, PA_0 }"
 example: PC_1 and PC_3
 board: biquskr_2
+sensorless: "skr_2.0_sensorless.html"
 ---
 
-{% include custom/sbc.html %}
+{% include custom/sbc1.html %}
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="manualpost35" href="#generate" data-toggle="tab">Drivers Post 3.5RC1</a></li>
+    <li><a class="noCrossRef" href="#manualpre35" data-toggle="tab">Drivers Pre 3.5RC1</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
+
+{% include custom/wifi/drivers_post35.html %}
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="manualpre35" markdown="1">
+
+{% include custom/wifi/drivers_pre35.html %}
+
+</div>
+
+</div>
+
+{% include custom/sbc2.html %}

@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via an ESP32 WiFi Adapter
 tags: []
 keywords: 
-last_updated: 24/03/2023
+last_updated: 10/09/2023
 summary: "Connecting an SKR Pro v1.1 and v1.2 via an ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_wifi_32.html
@@ -38,6 +38,7 @@ GPIO14: PB_13
 adapterRXTX: WiFi
 image: skr_pro_esp32_connection.jpg
 EXP: EXP2
+sensorless: "skr_pro_sensorless.html"
 ---
 
 {% include custom/wifi/overview.html %}
@@ -69,7 +70,8 @@ EXP: EXP2
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
-    <li><a class="noCrossRef" href="#manual" data-toggle="tab">Manually Editing/Creating board.txt</a></li>
+    <li><a class="noCrossRef" href="#manualpre35" data-toggle="tab">Manually Editing/Creating board.txt Pre 3.5RC1</a></li>
+    <li><a class="noCrossRef" href="#manualpost35" data-toggle="tab">Manually Editing/Creating board.txt Post 3.5RC1</a></li>
 </ul>
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
@@ -78,10 +80,19 @@ EXP: EXP2
 
 </div>
 
-<div role="tabpanel" class="tab-pane" id="manual" markdown="1">
+<div role="tabpanel" class="tab-pane" id="manualpre35" markdown="1">
 
 {% include custom/wifi/board_txt.html %}
 {% include custom/SKR_Pro_UART.html %}
+{% include custom/wifi/drivers_pre35.html %}
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="manualpost35" markdown="1">
+
+{% include custom/wifi/board_txt.html %}
+{% include custom/SKR_Pro_UART.html %}
+{% include custom/wifi/drivers_post35.html %}
 
 </div>
 

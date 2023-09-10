@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 29/04/2023
+last_updated: 10/09/2023
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -49,6 +49,7 @@ There are a number of boards which have configurations pre-configured. They are
 * Fly-Gemini-V1
 * Fly-Gemini-V1.1
 * Fly-Gemini-V2.0
+* Fly-Gemini-V3.0 
 * Fly-Super8-V1
 * Fly-Super8-V1.1
 * Fly-Super8-V1.2
@@ -105,4 +106,5 @@ The following drivers support firmware setting of microsteps and motor current.
 
 The following SPI drivers are supported on STM32 only (except the Fly-407ZG)
 
+* TMC2240 - Support is included from 3.5RC1
 * TMC5160 - This includes full sensorless homing and stall detection support

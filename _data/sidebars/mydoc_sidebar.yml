@@ -51,6 +51,10 @@ children:
   output: web, pdf
   children:
 
+  - title: 3.5.0-rc.1+102 Release Notes
+    url: release_notes_3.5.0-rc.1+102.html
+    output: web, pdf
+  
   - title: 3.4.6_101 Release Notes
     url: release_notes_3.4.6_101.html
     output: web, pdf
@@ -1283,6 +1287,10 @@ children:
       url: fly_gemini_connected_sbc.html
       output: web, pdf
 
+    - title: Configuring Sensorless Homing
+      url: fly_gemini_sensorless.html
+      output: web, pdf
+
     - title: Connecting a Serial Screen
       url: fly_gemini_screen.html
       output: web, pdf
@@ -1307,6 +1315,10 @@ children:
       url: fly_gemini_v1.1_connected_sbc.html
       output: web, pdf
 
+    - title: Configuring Sensorless Homing
+      url: fly_gemini_v1.1_sensorless.html
+      output: web, pdf
+    
     - title: Connecting a Serial Screen
       url: fly_gemini_v1.1_screen.html
       output: web, pdf
@@ -1329,6 +1341,10 @@ children:
       
     - title: Connecting via SBC
       url: fly_gemini_v2_connected_sbc.html
+      output: web, pdf
+    
+    - title: Configuring Sensorless Homing
+      url: fly_gemini_v2_sensorless.html
       output: web, pdf
     
     - title: Connecting a Serial Screen

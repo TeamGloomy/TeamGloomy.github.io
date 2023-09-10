@@ -2,7 +2,7 @@
 title: Connecting an SKR Pro v1.1 and v1.2 via SBC
 tags: []
 keywords: 
-last_updated: 28/03/2022
+last_updated: 10/09/2023
 summary: "How to connect to an SKR Pro v1.1 and v1.2 via SBC"
 sidebar: mydoc_sidebar
 permalink: skr_pro_connected_sbc.html
@@ -26,6 +26,28 @@ spiInfo: "{ PE_15, PA_14, PE_14 }"
 TMC: "{ PB_10, PE_12, PG_8, PE_15, PE_10, PG_5 }"
 example: PB_10 and PE_12
 board: biquskrpro_1.1
+sensorless: "skr_pro_sensorless.html"
 ---
 
-{% include custom/sbc.html %}
+{% include custom/sbc1.html %}
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="manualpost35" href="#generate" data-toggle="tab">Drivers Post 3.5RC1</a></li>
+    <li><a class="noCrossRef" href="#manualpre35" data-toggle="tab">Drivers Pre 3.5RC1</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
+
+{% include custom/wifi/drivers_post35.html %}
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="manualpre35" markdown="1">
+
+{% include custom/wifi/drivers_pre35.html %}
+
+</div>
+
+</div>
+
+{% include custom/sbc2.html %}

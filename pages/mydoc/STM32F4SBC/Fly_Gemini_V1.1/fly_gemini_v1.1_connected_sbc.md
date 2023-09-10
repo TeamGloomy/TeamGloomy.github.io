@@ -2,7 +2,7 @@
 title: Connecting a Fly-Gemini-V1.1 via SBC
 tags: []
 keywords: 
-last_updated: 14/02/2023
+last_updated: 10/09/2023
 summary: "How to connect to a Fly-Gemini-V1.1 via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_v1.1_connected_sbc.html
@@ -21,4 +21,25 @@ sbcTfrReadyPin: PC_9
 driverSPI: 2
 ---
 
-{% include custom/integrated_sbc.html %}
+{% include custom/integrated_sbc1.html %}
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="manualpost35" href="#generate" data-toggle="tab">Drivers Post 3.5RC1</a></li>
+    <li><a class="noCrossRef" href="#manualpre35" data-toggle="tab">Drivers Pre 3.5RC1</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
+
+{% include custom/wifi/drivers_post35.html %}
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="manualpre35" markdown="1">
+
+{% include custom/wifi/drivers_pre35.html %}
+
+</div>
+
+</div>
+
+{% include custom/integrated_sbc2.html %}

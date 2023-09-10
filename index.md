@@ -22,7 +22,7 @@ The latest stable version is [3.4.6_101](https://github.com/gloomyandy/RepRapFir
 
 ### Latest Unstable STM32F4, STM32H7 and STM32H723 Build
 
-The latest unstable version is [3.5.0-beta.4_101](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5.0-beta.4_101)
+The latest unstable version is [3.5.0-rc.1+102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5.0-rc.1%2B102)
 
 ### Latest Stable LPC Build
 
