@@ -2,7 +2,7 @@
 title: Fly-RRF-36 General Information
 tags: []
 keywords: 
-last_updated: 04/09/2023
+last_updated: 11/10/2023
 summary: "General information regarding the Fly-RRF-36 Toolboard"
 sidebar: mydoc_sidebar
 permalink: fly_rrf_36_general.html
@@ -55,7 +55,7 @@ The fan voltage can be set using jumpers to either 5v, 12v and Vin.
 
 ### io1.in Diode
 
-If using io1.in with a simple switch, install a jumper to bypass the diode (marked diobe BP on the pinout). Don't install the jumper if using any electronic probes such as an inductive or optical sensor.  
+If using io1.in with a simple switch, install a jumper to bypass the diode (marked diode BP on the pinout). Don't install the jumper if using any electronic probes such as an inductive or optical sensor.  
 
 ### CAN Termination
 
