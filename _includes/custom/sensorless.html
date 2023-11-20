@@ -17,7 +17,7 @@ As always the Duet wiki pages provide a lot of information that may also be of [
 {% if page.onboardDrivers %}
 To use the sensorless homing, an addition to the board.txt file is required (to specify the pins used for the DIAG signals from the drivers). A jumper is also required to be added for each driver to enable the diag pin. Further information can be found [here]({{page.diagPinInfo}}) 
 {% else %}
-To use sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160.
+To use sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160. The pin numbers below start at Driver 0 (typically the X driver)
 {% endif %}
 ```
 stepper.TmcDiagPins = {{page.TMC}}
