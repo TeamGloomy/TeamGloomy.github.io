@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to STM32
 tags: []
 keywords: 
-last_updated: 28/06/2023
+last_updated: 27/11/2023
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt_stm32.html
@@ -55,7 +55,7 @@ For STM32 boards, pins can take the form of PA0, PA.0, PA_0, A0, A.0 or A_0 or t
 |leds.diagnosticOn|leds.diagnosticOn = 1|This sets polarity of diag LED and is a boolean value|3.4.2-RC2 Onwards|
 |pins.SetHigh|pins.SetHigh = { PA_3, PA_4, PA_1 }|This would set all the named pins as a high output on boot. It accepts up to 16 values|3.4.2-RC2 Onwards|
 |pins.SetLow|pins.SetLow = { PA_3, PA_4, PA_1 }|This would set all the named pins as a low output on boot. Can be used for making sure that CS pins are in a safe state. It accepts up to 16 values|3.4.2-RC2 Onwards|
-|power.VInDetectPin|powerVInDetectPin = PC_3|Sets the pin to use for voltage monitoring||
+|power.VInDetectPin|power.VInDetectPin = PC_3|Sets the pin to use for voltage monitoring||
 |power.voltage|power.voltage = 24|Sets a voltage when no voltage monitoring is present on the board||
 |sbc.csPin|sbc.csPin = PE_12|Allow use of non standard CS pin||
 |sbc.loadConfig|sbc.loadConfig = 1|Load the board.txt from the SBC if board.txt is present on an SD card in the STM32 board||
