@@ -1,28 +1,32 @@
 ---
-title: Updating the firmware in Standalone Mode
+title: Updating the firmware in WiFi Mode on a Fly-CDYv2
 tags: []
 keywords: 
 last_updated: 15/07/2023
-summary: "Updating your printer"
+summary: "Updating your Fly-CDYv2 in WiFi Mode"
 sidebar: mydoc_sidebar
-permalink: updating_standalone.html
+permalink: fly_cdyv2_updating_wifi.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
+SBCAvailable: false
+boardname: Fly-CDYv2
 ---
 
 ## Overview
 
-This page details how to check what firmware version you are currently running and how to update to the latest version when running Standalone Mode.
+This page details how to check what firmware version you are currently running on your {{page.boardname}} and how to update to the latest version when running in WiFi Mode.
 
+{% if page.SBCAvailable %}
 If running with an SBC, [this page](./stm32_sbc.html) should be followed.  
+{% endif %}
 
 ### Before you update
 
 #### Check for changes to configuration and behavior
 
-Refer to the [changelog](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x) to see if there are _Breaking Changes_ or _Upgrade Notes_ between the version you update from and the version you update to (there are no upgrade notes between RRF 3.4.0 and RRF 3.4.6 so far; there _are_ breaking changes between RRF 3.4 and RRF 3.5). Usually breaking changes are backwards-incompatible changes to GCode commands; update notes may also point out behavioral changes.
+Refer to the [changelog](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x) to see if there are _Breaking Changes_ or _Upgrade Notes_ between the version you update from and the version you update to (there are no breaking changes between RRF 3.4.0 and RRF 3.4.6 so far; there _are_ breaking changes between RRF 3.4 and RRF 3.5). Usually breaking changes are backwards-incompatible changes to GCode commands; update notes may also point out behavioral changes.
 
 {% include note.html content="It is considered good practice to have a backup of your SD cards `/sys` and `/macros` folders before modifying your configuration for a pending update." %}
 
