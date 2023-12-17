@@ -32,11 +32,23 @@ Connect the BTT MicroProbe to the {{page.boardname}} as described in the table b
 
 ### Config.g Changes
 
-Your config.g should be modified as below.
+#### V1 Microprobe
+
+If using a V1 Microprobe, your config.g should be modified as below.
 ```
 M558 P9 H6 F250:30 T8000 C"^124.{{page.whiteName}}"       ; set Z probe type to microprobe and the dive height + speeds
 M950 P0 C"124.{{page.yellowName}}"                              ; Setup {{page.yellowName}} as on/off port on {{page.boardname}}
 ```
+
+### V2 Microprobe
+
+If using a V2 Microprobe, your config.g should be modified as below.
+```
+M558 P9 H6 F250:30 T8000 C"^!124.{{page.whiteName}}"       ; set Z probe type to microprobe and the dive height + speeds
+M950 P0 C"124.{{page.yellowName}}"                              ; Setup {{page.yellowName}} as on/off port on {{page.boardname}}
+```
+
+#### Probe Offsets
 
 You will also need to set up your probe offset using [G31](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#g31-set-or-report-current-probe-status) and your [mesh probing grid](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m557-set-z-probe-point-or-define-probing-grid)
 
