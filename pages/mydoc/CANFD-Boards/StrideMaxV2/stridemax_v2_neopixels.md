@@ -1,9 +1,9 @@
 ---
-title: Connecting Neopixels to a StrideMax V2
+title: Connecting Neopixels to a StrideMax Dual V2.0
 tags: []
 keywords: 
-last_updated: 16/12/2023
-summary: "How to connect Neopixels to a StrideMax V2"
+last_updated: 27/12/2023
+summary: "How to connect Neopixels to a StrideMax Dual V2.0"
 sidebar: mydoc_sidebar
 permalink: stridemax_v2_neopixels.html
 folder: mydoc
@@ -14,15 +14,15 @@ datatable: true
 
 ## Overview
 
-The StrideMax V2 has support for connecting Neopixels using the header called "rgbled" (GPIO26).  
+The StrideMax Dual V2.0 has support for connecting Neopixels using the header called "rgbled" (GPIO26).  
 
 ### Wiring
 
-Neopixels can be wired to the StrideMax V2 as shown on the pinout.  
+Neopixels can be wired to the StrideMax Dual V2.0 as shown on the pinout.  
 
 ### Configuration
 
-{% include important.html content="The changes shown below that are to be made to config.g assume that the StrideMax V2 uses the default CAN address of 124. If you have changed the default CAN address, make sure you change the 124 to the correct address." %}
+{% include important.html content="The changes shown below that are to be made to config.g assume that the StrideMax Dual V2.0 uses the default CAN address of 124. If you have changed the default CAN address, make sure you change the 124 to the correct address." %}
 
 The Neopixels should be configured in config.g using M950 as detailed [here](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m950-create-heater-fan-spindle-or-gpioservo-pin).  
 For example, using the default toolboard address of 124 with RGBW Neopixels  

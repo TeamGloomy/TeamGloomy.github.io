@@ -1,9 +1,9 @@
 ---
-title: StrideMax V2 Pin Names in Firmware
+title: StrideMax Dual V2.0 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 16/12/2023
-summary: "The pin names of the StrideMax V2 in the firmware"
+last_updated: 27/12/2023
+summary: "The pin names of the StrideMax Dual V2.0 in the firmware"
 sidebar: mydoc_sidebar
 permalink: stridemax_v2_pins.html
 folder: mydoc
@@ -12,15 +12,15 @@ toc: false
 datatable: true
 ---
 
-## StrideMax V2 Pinout Diagram
+## StrideMax Dual V2.0 Pinout Diagram
 
-{% include image.html file="stridemax_v2_pins.svg" url="https://teamgloomy.github.io/images/stridemax_v2_pins.svg" alt="Fly-RRF-36" caption="Fly-RRF-36 Pinout" %}
+{% include image.html file="stridemax_v2_pins.svg" url="https://teamgloomy.github.io/images/stridemax_v2_pins.svg" alt="StrideMax Dual V2.0" caption="StrideMax Dual V2.0 Pinout" %}
 
-## StrideMax V2 Driver Pins in Firmware
+## StrideMax Dual V2.0 Driver Pins in Firmware
 
 The driver pin numbers are configured within the firmware and can't be changed.
 
-## StrideMax V2 Other Pins in Firmware
+## StrideMax Dual V2.0 Other Pins in Firmware
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 

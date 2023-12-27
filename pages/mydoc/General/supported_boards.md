@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 10/09/2023
+last_updated: 27/12/2023
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -49,7 +49,7 @@ There are a number of boards which have configurations pre-configured. They are
 * Fly-Gemini-V1
 * Fly-Gemini-V1.1
 * Fly-Gemini-V2.0
-* Fly-Gemini-V3.0 
+* Fly-Gemini-V3.0
 * Fly-Super8-V1
 * Fly-Super8-V1.1
 * Fly-Super8-V1.2
@@ -77,6 +77,15 @@ There are a number of boards which have configurations pre-configured. They are
 * SKR3 H743
 * SKR3 EZ H723
 * SKR3 EZ H743
+* BTT Kraken H723
+* BTT Octopus Pro v1.1 H723
+
+## CAN-FD Expansion Boards
+
+There is now a growing list of CAN-FD expansion boards that are compatible with all Duet 3, STM32F4 (using an SPI2CAN module) and STM32H7 based boards. They are
+
+* Fly-RRF36
+* Fysetc StrideMax Dual V2.0
 
 ## Consumer Printers
 

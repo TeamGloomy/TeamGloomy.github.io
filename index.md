@@ -1,6 +1,6 @@
 ---
 title: "Getting started with RepRapFirmware for LPC and STM32 based boards"
-last_updated: 23/08/2023
+last_updated: 27/12/2023
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: These instructions will help you to get started running RepRapFirmware on your LPC or STM32 based 3D printer board
@@ -22,7 +22,7 @@ The latest stable version is [3.4.6_101](https://github.com/gloomyandy/RepRapFir
 
 ### Latest Unstable STM32F4, STM32H7 and STM32H723 Build
 
-The latest unstable version is [3.5.0-rc.1+102](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5.0-rc.1%2B102)
+The latest unstable version is [3.5.0-rc.2+101](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5.0-rc.2%2B101)
 
 ### Latest Stable LPC Build
 
@@ -38,7 +38,7 @@ The latest stable WiFi firmware version is [1.27-02](https://github.com/gloomyan
 
 ### Latest Unstable
 
-The latest unstable WiFi firmware version is [2.1b4](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5.0-beta.4_101)
+The latest unstable WiFi firmware version is [2.1b6](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5.0-rc.2%2B101)
 
 ## Latest H7 bootloader
 

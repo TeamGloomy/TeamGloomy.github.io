@@ -2,7 +2,7 @@
 title: Fly-Super5Pro H723 General Information
 tags: []
 keywords: 
-last_updated: 29/04/2023
+last_updated: 27/12/2023
 summary: "General information regarding the Fly-Super5Pro H723"
 sidebar: mydoc_sidebar
 permalink: fly_super5pro_h723_general.html
@@ -69,6 +69,12 @@ The Endstop output voltage can be set to either 5v or 12v. The default is 0v unt
 ### Maximum HV Input voltage
 
 The driver sockets have been tested with 48v.
+
+### Thermistor inputs
+
+The Fly-Super5Pro H723 supports PT1000 on the thermistor inputs by using a 2k2 resistor rather than a 4k7.
+
+{% include important.html content="The Fly-Super5Pro H723 uses a 2k2 resistor on the thermistor inputs rather than 4k7. Please make sure you add R2200 to each M308 in your config" %}
 
 ### Thermistor Connection  
 

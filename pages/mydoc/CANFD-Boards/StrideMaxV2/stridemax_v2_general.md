@@ -1,9 +1,9 @@
 ---
-title: StrideMax V2 General Information
+title: StrideMax Dual V2.0 General Information
 tags: []
 keywords: 
 last_updated: 16/12/2023
-summary: "General information regarding the StrideMax V2 Toolboard"
+summary: "General information regarding the StrideMax Dual V2.0 Toolboard"
 sidebar: mydoc_sidebar
 permalink: stridemax_v2_general.html
 folder: mydoc
@@ -14,10 +14,10 @@ datatable: true
 
 ## Overview
 
-This page covers any general information for the StrideMax V2.  
-It is currently available through [AliExpress]().  
-This toolboard is only supported from firmware version 3.5 beta RC2 and above.  
-The StrideMax V2 is compatible with both Duet 3 boards and STM32H723, STM32H743 and STM32F4 boards with spican modules running 3.5 beta 4 and above.  
+This page covers any general information for the StrideMax Dual V2.0.  
+It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DBxk949).  
+This toolboard is only supported from firmware version 3.5.0-rc.2 and above.  
+The StrideMax Dual V2.0 is compatible with all Duet 3 boards and STM32H723, STM32H743 and STM32F4 boards with spican modules running 3.5 beta 4 and above.  
 
 ### Hardware Overview
 
@@ -51,9 +51,9 @@ If using multiple toolboards, only the last toolboard should have a CAN jumper i
 ### Initial Firmware Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an rpi drive.  
-{% include important.html content="StrideMax V2 is only supported from release 3.5.0-RC2." %}
-Download the file called `Duet3Firmware_stridemax.uf2` from [here](https://github.com/gloomyandy/RepRapFirmware/releases).  
-To install the firmware, drag and drop the .uf2 file onto the rpi drive. Once uploaded, remove the toolboard from the computer.  
+{% include important.html content="StrideMax Dual V2.0 is only supported from release 3.5.0-RC2." %}
+Download the file called `Duet3Firmware_STRIDEMAXV2_0.uf2` from [here](https://github.com/gloomyandy/RepRapFirmware/releases).  
+To install the firmware, whilst holding the BOOTSEL button, plug the StrideMax Dual V2.0 into your PC and drag and drop the .uf2 file onto the rpi drive that appears. Once uploaded, remove the toolboard from the computer.  
 Follow the [CAN Connection instructions](stridemax_v2_can_connection.html) to continue.  
 
 ### Updating the Toolboard Firmware

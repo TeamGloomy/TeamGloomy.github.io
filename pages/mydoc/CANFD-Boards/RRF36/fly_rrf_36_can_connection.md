@@ -2,7 +2,7 @@
 title: Connecting a Fly-RRF-36 via CAN-FD
 tags: []
 keywords: 
-last_updated: 04/09/2023
+last_updated: 27/12/2023
 summary: "How to connect a Fly-RRF-36 via CAN-FD"
 sidebar: mydoc_sidebar
 permalink: fly_rrf_36_can_connection.html
@@ -25,7 +25,11 @@ The Yellow cable is CAN-H and the White cable is CAN-L. The Yellow cable should 
 
 ### Commissioning
 
-All boards in the system must have different CAN addresses. Fly-RRF36 Toolboards are by default set to a CAN address of 124. Therefore, if you have more than one new Toolboard, only one of them must be powered up and connected to the CAN bus. So disconnect power to all but one of them (you can leave the CAN bus connected if it's easier).
+All boards in the system must have different CAN addresses. Fly-RRF36 Toolboards are by default set to a CAN address of 124. Therefore, if you have more than one new Toolboard, only one of them must be powered up and connected to the CAN bus at a time until you have changed the default CAN address. So disconnect power to all but one of them (you can leave the CAN bus connected if it's easier).
+
+If the Fly-RRF-36 is the last board on the CANbus then it requires the 120ohm resistor enabling. To do so, install a jumper in the position shown below.
+
+{% include image.html file="fly_rrf_36_can_resistor.png" url="https://teamgloomy.github.io/images/fly_rrf_36_can_resistor.png" alt="Fly-RRF-36 CAN Termination Resistor" caption="Fly-RRF-36 CAN Termination Resistor" %}
 
 #### Checking the toolboard connection is functional
 

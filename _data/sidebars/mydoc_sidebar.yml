@@ -51,6 +51,10 @@ children:
   output: web, pdf
   children:
 
+  - title: 3.5.0-rc.2+101 Release Notes
+    url: release_notes_3.5.0-rc.2+101.html
+    output: web, pdf
+
   - title: 3.5.0-rc.1+102 Release Notes
     url: release_notes_3.5.0-rc.1+102.html
     output: web, pdf
@@ -1713,6 +1717,30 @@ children:
 
     - title: Pin Names
       url: fly_rrf_36_pins.html
+      output: web, pdf
+
+  - title: StrideMax Dual V2.0
+    output: web, pdf
+    children:
+
+    - title: StrideMax Dual V2.0 General Information
+      url: stridemax_v2_general.html
+      output: web, pdf
+
+    - title: Connection via CAN-FD
+      url: stridemax_v2_can_connection.html
+      output: web, pdf
+
+    - title: Configuring the Onboard Temperature Sensor
+      url: stridemax_v2_onboard_temp.html
+      output: web, pdf
+
+    - title: Connecting Neopixels
+      url: stridemax_v2_neopixels.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: stridemax_v2_pins.html
       output: web, pdf
 
 - title: Consumer Printers

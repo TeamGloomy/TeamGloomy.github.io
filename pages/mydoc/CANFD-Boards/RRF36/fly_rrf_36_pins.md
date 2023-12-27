@@ -2,7 +2,7 @@
 title: Fly-RRF-36 Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 21/05/2023
+last_updated: 27/12/2023
 summary: "The pin names of the Fly-RRF-36 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_rrf_36_pins.html
@@ -31,6 +31,8 @@ If more than one pin name is availble, either name can be used in the firmware (
 |GPIO0|out1||
 |GPIO16|io2.in||
 |GPIO17|max31865cs|rtdcs|
+|GPIO18|i2c.sda||
+|GPIO19|i2c.sdl||
 |GPIO20|io1.in||
 |GPIO21|out2||
 |GPIO22|io0.in||
