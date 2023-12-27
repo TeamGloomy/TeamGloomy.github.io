@@ -39,9 +39,7 @@ The StrideMax Dual V2.0 is compatible with all Duet 3 boards and STM32H723, STM3
 
 ### Fan Voltage
 
-The fan voltage can be set using jumpers to either 5v or 12v.  
-
-{% include image.html file="fly_rrf_36_fan_voltage.png" alt="Fly-RRF-36 Fan Voltage Jumpers" caption="Fly-RRF-36 Fan Voltage Jumpers" %}  
+The fan voltage can be set using jumpers to either 5v or 12v. See the [Fan instructions](stridemax_v2_fans.html) for more information.
 
 ### CAN Termination
 
