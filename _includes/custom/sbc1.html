@@ -58,4 +58,6 @@ sbc.TfrReadyPin = {{page.BCM25}}
 {% if page.boardname == "Fly-407ZG" %}sbc.csPin = {{page.BCM8}}    {% endif %}
 heat.tempSensePins = {{page.heat}}
 {% if page.diagnostics != "" %}leds.diagnostic = {{page.diagnostics}}{% endif %}
+{% if page.canWrite != nil %}can.writePin = {{page.canWrite}}{% endif %}
+{% if page.canRead != nil %}can.readPin = {{page.canRead}}{% endif %}
 ```

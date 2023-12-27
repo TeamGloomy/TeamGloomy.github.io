@@ -2,7 +2,7 @@
 title: BTT Octopus Pro v1.0 F429 Version General Information
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 27/11/2023
 summary: "General information regarding the BTT Octopus Pro v1.0 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.0_f429_general.html
@@ -65,4 +65,4 @@ To set them VCC, set the jumpers as below.
 
 ### Initial Installation
 
-Follow the [WiFi instructions](btt_octopus_1.1_f429_connected_wifi_8266.html) or [SBC instructions](btt_octopus_1.1_f429_connected_sbc.html)
+Follow the [WiFi instructions](btt_octopus_pro_1.0_f429_connected_wifi_8266.html) or [SBC instructions](btt_octopus_pro_1.0_f429_connected_sbc.html)

@@ -1679,6 +1679,50 @@ children:
       url: skr_3_ez_h723_pins.html
       output: web, pdf
 
+  - title: BTT Kraken
+    output: web, pdf
+    children:
+
+    - title: BTT Kraken General Information
+      url: btt_kraken_h723_general.html
+      output: web, pdf
+    
+    - title: Connecting via an ESP32 WiFi Adapter
+      url: btt_kraken_h723_connected_wifi_32.html
+      output: web, pdf
+
+    - title: Connecting via an SBC
+      url: btt_kraken_h723_connected_sbc.html
+      output: web, pdf
+
+    - title: Connecting to a CAN-FD expansion board
+      url: btt_kraken_h723_canfd.html
+      output: web, pdf
+
+    - title: Configuring Sensorless Homing
+      url: btt_kraken_h723_sensorless.html
+      output: web, pdf
+    
+    - title: Connecting a Screen
+      url: btt_kraken_h723_screen.html
+      output: web, pdf
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: btt_kraken_h723_bltouch.html
+      output: web, pdf
+
+    - title: Connecting an Accelerometer
+      url: btt_kraken_h723_accelerometer.html
+      output: web, pdf
+
+    - title: Connecting a PT100 or PT1000
+      url: btt_kraken_h723_pt100.html
+      output: web, pdf
+
+    - title: Pin Names
+      url: btt_kraken_h723_pins.html
+      output: web, pdf
+
 - title: CAN-FD Toolboards
   output: web, pdf
   children:

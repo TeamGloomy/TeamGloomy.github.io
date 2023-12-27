@@ -4,20 +4,23 @@ If you are using a set of config files provided by someone else or have no need 
 
 Below are the contents that should be used. 
 
-```
+```text
 //Config for {{page.boardname}}
 board = {{page.board}}
 //WiFi pins
 8266wifi.espDataReadyPin = {{page.DRP}}
 8266wifi.TfrReadyPin = {{page.TRP}}
 8266wifi.espResetPin = {{page.ERP}}
+{% if page.wifiSPI != nil %}8266wifi.spiChannel = {{page.wifiSPI}}{% endif %}
 {% if page.CS != nil %}8266wifi.csPin = {{page.CS}}{% endif %}
 //{{page.wifi}} RX/TX Settings
 8266wifi.serialRxTxPins = {{page.ESPRXTX}}
 {% if page.SerialRXTX != "" %}serial.aux.rxTxPins = {{page.SerialRXTX}}{% endif %}
 heat.tempSensePins = {{page.heat}}
 {% if page.diagnostics != "" %}leds.diagnostic = {{page.diagnostics}}{% endif %}
-{% if page.boardname == "Fly-E3-Pro" or page.boardname == "SKR-RRF-E3" or page.boardname == "Fly-E3-Pro-v3" %}stepper.numSmartDrivers = {{page.smartdrivers}}{% endif %}
+{% if page.boardname == "Fly-E3-Pro" or page.boardname == "SKR-RRF-E3" or page.boardname == "Fly-E3-Pro-v3" or page.boardname == "BTT Kraken" %}stepper.numSmartDrivers = {{page.smartdrivers}}{% endif %}
+{% if page.canWrite != nil %}can.writePin = {{page.canWrite}}{% endif %}
+{% if page.canRead != nil %}can.readPin = {{page.canRead}}{% endif %}
 ```
 
 {% if page.mcu == "STM32F407ZGT6" or page.mcu == "STM32F407VGT6"%}

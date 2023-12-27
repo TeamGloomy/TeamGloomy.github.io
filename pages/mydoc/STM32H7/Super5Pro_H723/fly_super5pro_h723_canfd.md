@@ -40,4 +40,4 @@ Using the Fly-RRF-36 as example (and the image below), the yellow wire on the CA
 
 Please ensure that you have the two jumpers installed as shown below if you are using this board as a mainboard or if it is the last expansion board on the CANbus.  
 
-{% include image.html file="fly_super5pro_can_resistor.png" url="<https://teamgloomy.github.io/images/fly_super5pro_can_resistor.png>" alt="Toolboard CAN-FD 120ohm Resistors" caption="Toolboard CAN-FD 120ohm Resistors" %}
+{% include image.html file="fly_super5pro_can_resistor.png" url="<https://teamgloomy.github.io/images/fly_super5pro_can_resistor.png>" alt="Fly-Super5Pro H723 CAN-FD 120ohm Resistors" caption="Fly-Super5Pro H723 CAN-FD 120ohm Resistors" %}
