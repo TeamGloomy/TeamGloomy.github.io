@@ -1731,6 +1731,10 @@ children:
       url: stridemax_v2_can_connection.html
       output: web, pdf
 
+    - title: Connecting fans
+      url: stridemax_v2_fans.html
+      output: web, pdf
+
     - title: Configuring the Onboard Temperature Sensor
       url: stridemax_v2_onboard_temp.html
       output: web, pdf
