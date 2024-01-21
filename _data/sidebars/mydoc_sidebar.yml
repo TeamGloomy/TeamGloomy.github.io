@@ -1555,6 +1555,10 @@ children:
       url: skr_3_h743_accelerometer.html
       output: web, pdf
 
+    - title: Connecting a BTT-MOT-EXP
+      url: skr_3_h743_btt_mot_exp.html
+      output: web, pdf
+
     - title: Pin Names
       url: skr_3_h743_pins.html
       output: web, pdf
@@ -1593,6 +1597,10 @@ children:
 
     - title: Connecting an Accelerometer
       url: skr_3_h723_accelerometer.html
+      output: web, pdf
+
+    - title: Connecting a BTT-MOT-EXP
+      url: skr_3_h723_btt_mot_exp.html
       output: web, pdf
 
     - title: Pin Names
@@ -1635,6 +1643,10 @@ children:
       url: skr_3_ez_h743_accelerometer.html
       output: web, pdf
 
+    - title: Connecting a BTT-MOT-EXP
+      url: skr_3_ez_h743_btt_mot_exp.html
+      output: web, pdf
+
     - title: Pin Names
       url: skr_3_ez_h743_pins.html
       output: web, pdf
@@ -1673,6 +1685,10 @@ children:
 
     - title: Connecting an Accelerometer
       url: skr_3_ez_h723_accelerometer.html
+      output: web, pdf
+
+    - title: Connecting a BTT-MOT-EXP
+      url: skr_3_ez_h723_btt_mot_exp.html
       output: web, pdf
 
     - title: Pin Names
