@@ -16,11 +16,11 @@ These instructions cover flashing with Windows using the [STM32CubeProgrammer](h
 While holding down the {{page.bootloader_button_name}}, plug in the USB cable into the board and PC.
 {% endif %}
 
-{% if {{page.bootloader_jumpers}} == true && {{page.bootloader_jumpers}} == 1 %}
+{% if {{page.bootloader_jumpers}} == true and {{page.bootloader_jumpers}} == 1 %}
 Install the jumper as shown in the image below, before plugging in the USB cable into the board and PC.
 {% endif %}
 
-{% if {{page.bootloader_jumpers}} == true && {{page.bootloader_jumpers}} != 1 %}
+{% if {{page.bootloader_jumpers}} == true and {{page.bootloader_jumpers}} != 1 %}
 Install the jumpers as shown in the image below, before plugging in the USB cable into the board and PC.
 {% endif %}
 
