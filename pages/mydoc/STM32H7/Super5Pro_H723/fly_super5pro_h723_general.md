@@ -64,7 +64,7 @@ Set them as shown below.
 
 The Endstop output voltage can be set to either 5v or 12v. The default is 0v until a jumper is added.
 
- {% include image.html file="fly_super5pro_limit_voltage.png" alt="Fly-Super5Pro Endstop Voltage" caption="Fly-Super5Pro Endstop Voltage" %}
+{% include image.html file="fly_super5pro_limit_voltage.png" alt="Fly-Super5Pro Endstop Voltage" caption="Fly-Super5Pro Endstop Voltage" %}
 
 ### Maximum HV Input voltage
 
