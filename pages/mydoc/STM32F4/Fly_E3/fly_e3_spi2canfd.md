@@ -2,7 +2,7 @@
 title: CAN-FD can't be added to the Fly-E3
 tags: []
 keywords: 
-last_updated: 12/06/2023
+last_updated: 24/02/2024
 summary: "CAN-FD can't be added to the Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_spi2canfd.html
@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-E3
-spiModule: driver or EXP1/EXP2
+spiModule: both
 moduleURL: https://s.click.aliexpress.com/e/_De3n8p7
 moduleType: both
 spiJumpers: fly_e3_jumpers.png

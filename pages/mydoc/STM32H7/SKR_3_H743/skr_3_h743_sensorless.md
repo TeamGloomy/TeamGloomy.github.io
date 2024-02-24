@@ -2,7 +2,7 @@
 title: Sensorless Homing on an SKR3 H743
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 24/02/2024
 summary: "Using and Configuring Sensorless Homing on an SKR3 H743"
 sidebar: mydoc_sidebar
 permalink: skr_3_h743_sensorless.html
@@ -17,7 +17,7 @@ TMC: "{ PC_1, PC_3, PC_0, PC_2, PA_0 }"
 example: "stepper.TmcDiagPins = { PC_1, PC_3 }"
 example2: "stepper.TmcDiagPins = { NoPin, PC_3 }"
 board: biquskr_3
-onboardDrivers: no
+onboardDrivers: "no"
 ---
 
 {% include custom/sensorless.html %}

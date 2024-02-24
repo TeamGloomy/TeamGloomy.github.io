@@ -2,7 +2,7 @@
 title: Adding CAN-FD to a BTT Octopus v1.1 F429 Version
 tags: []
 keywords: 
-last_updated: 30/08/2023
+last_updated: 24/02/2024
 summary: "How to add CAN-FD to a BTT Octopus v1.1 F429 Version and connect a CAN-FD Toolboard"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_1.1_f429_spi2canfd.html
@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: BTT Octopus v1.1 F429 Version
-spiModule: driver or EXP1/EXP2
+spiModule: both
 moduleURL: https://s.click.aliexpress.com/e/_DFbqZsz
 moduleType: both
 spiJumpers: btt_octopus_1.1_spi.png

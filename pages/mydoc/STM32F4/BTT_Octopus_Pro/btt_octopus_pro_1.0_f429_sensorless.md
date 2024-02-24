@@ -2,7 +2,7 @@
 title: Sensorless Homing on a BTT Octopus Pro v1.0 F429 Version
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 24/02/2024
 summary: "Using and Configuring Sensorless Homing on a BTT Octopus Pro v1.0 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.0_f429_sensorless.html
@@ -16,7 +16,7 @@ TMC: "{ PG_6, PG_9, PG_10, PG_11, PG_12, PG_13, PG_14, PG_15 }"
 example: "stepper.TmcDiagPins = { PG_6, PG_9 }"
 example2: "stepper.TmcDiagPins = { NoPin, PG_9 }"
 board: biqoctopuspro_1.0
-onboardDrivers: no
+onboardDrivers: "no"
 ---
 
 {% include custom/sensorless.html %}
