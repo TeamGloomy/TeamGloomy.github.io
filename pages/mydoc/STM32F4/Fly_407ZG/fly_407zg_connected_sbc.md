@@ -27,4 +27,4 @@ example:
 board: fly_f407zg
 ---
 
-{% include custom/sbc.html %}
+{% include custom/3.4/sbc.html %}

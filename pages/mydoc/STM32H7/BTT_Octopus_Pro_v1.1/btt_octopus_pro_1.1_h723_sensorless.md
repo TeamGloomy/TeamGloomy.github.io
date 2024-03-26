@@ -19,7 +19,7 @@ board: biquoctopuspro_V1.1_h723
 onboardDrivers: no
 ---
 
-{% include custom/sensorless.html %}
+{% include custom/3.4/sensorless.html %}
 
 ### Driver Diag Pin
 
@@ -27,4 +27,4 @@ If you want to use sensorless homing, using TMC2209 or TMC2226, a jumper needs a
 
 {% include image.html file="btt_octopus_pro_1.0_sensorless.png" alt="BTT Octopus Pro v1.1 Diag" caption="BTT Octopus Pro v1.0 Pro v1.1 Sensorless Homing Jumper Locations" %}
 
-{% include custom/sensorless_2.html %}
+{% include custom/3.4/sensorless_2.html %}

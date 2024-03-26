@@ -21,6 +21,6 @@ expSPICSPin: PA_4
 expSPIChannel: 0
 ---
 
-{% include custom/spitocanfd_overview.html %}
+{% include custom/3.4/spitocanfd_overview.html %}
 
-{% include custom/spitocanfd_efd.html %}
+{% include custom/3.4/spitocanfd_efd.html %}

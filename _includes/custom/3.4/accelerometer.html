@@ -1,0 +1,80 @@
+## Overview
+
+The only type of accelerometers that are supported are LIS3DH and LIS3DSH.  
+
+### Wiring
+
+It is recommended to use a USB3 cable for the wiring between the board and the accelerometer. 
+{% include image.html file="usb3_cables.png" alt="USB3 Cross-Section" caption="USB3 Cross-Section" %}
+The colours used in the table below match the colour coding above.  
+
+One possible method of connecting the accelerometer to the {{page.boardname}} is described in the table below. The image can be used to aid in identification.
+{% if {{page.boardname}} == "SKR Pro v1.1 or v1.2" %}
+We are going to use Hardware SPI in this guide but if 5160 drivers are being used, software SPI will have to be used instead and most pins can be used for this.  
+{% elsif {{page.boardname}} == "!Fly-CDYv3" {{page.boardname}} == "!Fly-Super8" %}
+Because the firmware is so flexible and we're using software SPI, most pins can be used for this.  
+{% endif %}
+These connections are on the {{page.location}} on the board.
+
+Keep in mind some modules (E.g. the purple ones from ebay or aliexpress) don't have a voltage regulator, connect them to 3.3 V and check the voltage before plugging it in.
+{% if {{page.boardname}} == "SKR Pro v1.1 or v1.2" %}
+Keep in mind the SKR Pro v1.2 has some wrong voltage labels in the layout! See also [here](skr_pro_pins.html#known-errors){:target="_blank"}.
+{% endif %}
+
+{% if {{page.boardname}} == "Fly-CDYv3" %}
+{% include image.html file="fly_cdyv3_accelerometer.png" alt="Fly-CDYv3 Accelerometer" caption="Fly-CDYv3 Accelerometer" %}
+{% endif %}
+
+<div class="datatable-begin"></div>
+
+|Accelerometer Image Wire Colour|Accelerometer Pin Name|Accelerometer Pin Type|{{page.boardname}} Pin|
+|:---|:---|:---|:---|
+|Red|VIN / VCC|Supply Voltage| 3.3V / 5V|
+|Black|GND|Ground|GND|
+|Purple|SCL|SPI SCK|{{page.SCL}}|
+|Blue|SDA|SPI MOSI|{{page.SDA}}|
+|Yellow|SDO|SPI MISO|{{page.SDO}}|
+|Green|CS|Chip Select|{{page.CS}}|
+|Orange|INT / INT1|Interupt|{{page.int}}|
+
+<div class="datatable-end"></div>
+
+{% include image.html file="lis3dh.png" alt="LIS3DH Pinout" caption="LIS3DH Pinout" %}
+
+### Mounting the LIS3DH
+
+The accelerometer should be mounted firmly to the tool. For a bed slinger (such as an ender 3), it should also be possible to mount it to the bed to take readings for the Y axis.  
+
+### Boart.txt Changes
+
+Add the following to board.txt
+{% if {{page.spiChannel}} == 0 or {{page.spiChannel}} == 1 or {{page.spiChannel}} == 2 or {{page.spiChannel}} == 3 %}
+```
+accelerometer.spiChannel = {{page.spiChannel}}
+```
+{% else %}
+```
+SPI{{page.spiChannel}}.pins = { {{page.SCL}}, {{page.SDO}}, {{page.SDA}} }
+accelerometer.spiChannel = {{page.spiChannel}}
+```
+{% endif %}
+
+
+### Config.g Changes
+
+Your config.g should be modified as below.
+```
+M955 P0 C"{{page.CS}}+{{page.int}}" I20
+```  
+The I (orientation) parameter tells the firmware which of the 24 possible orientations the accelerometer chip is in relative to the printer axes. It is expressed as a 2-digit number.  
+The first digit specifies which machine direction the Z axis of the accelerometer chip (usually the top face of the chip) faces, as follows: 0 = +X, 1 = +Y, 2 = +Z, 4 = -X, 5 = -Y, 6 = -Z. The second digit expresses which direction the X axis of the accelerometer chip faces, using the same code. The direction of positive X is printed on the circuit board. If the board was mounted in the orientation shown in the above image, with +X of the machine being to the right, Y+ being behind and Z+ being up, the I value would be 54. This [document](https://www.dropbox.com/s/hu2w5mk57l4zqpg/Accelerometer%20Orientation.pdf?dl=0) gives information regarding the I value for the new Duet toolboard with accelerometer.  
+20 is the default orientation if no orientation has been specified.
+
+### DWC Plugin
+
+There is an input shaper plugin to capture and analyse the data.
+It can be found [here](https://plugins.duet3d.com/plugins/InputShapingPlugin.html)
+
+### Usage
+
+The accelerometer can be activated using [M956](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m956-collect-accelerometer-data-and-write-to-file)

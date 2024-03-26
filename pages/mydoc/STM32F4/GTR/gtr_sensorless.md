@@ -24,8 +24,8 @@ GPIO14: PB_13
 adapterRXTX: WiFi
 ---
 
-{% include custom/sensorless.html %}
+{% include custom/3.4/sensorless.html %}
 
 {% include warning.html content="The GTR sensorless homing jumpers don't do anything so if you don't want to use sensorless homing and use normal endstops, you will have to remove the diag pin from your drivers - [Evidence](https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/issues/12)" %}
 
-{% include custom/sensorless_2.html %}
+{% include custom/3.4/sensorless_2.html %}

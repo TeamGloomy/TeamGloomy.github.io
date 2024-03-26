@@ -22,7 +22,7 @@ driverType: TMC2209
 diagPinInfo: fly_e3_pro_general.html
 ---
 
-{% include custom/sensorless.html %}
+{% include custom/3.4/sensorless.html %}
 
 ### Driver Diag Pin
 
@@ -30,4 +30,4 @@ To use sensorless homing, a jumper must be installed on the diag header.
 
 {% include image.html file="fly_e3_pro_diag.png" alt="Fly-E3-Pro Diag Jumpers" caption="Fly-E3-Pro Diag Jumper Locations" %}
 
-{% include custom/sensorless_2.html %}
+{% include custom/3.4/sensorless_2.html %}

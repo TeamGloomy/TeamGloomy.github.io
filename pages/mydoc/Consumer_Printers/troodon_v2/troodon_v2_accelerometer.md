@@ -24,4 +24,4 @@ location: EXP2 header
 
 {% include warning.html content="If you haven't followed the instructions to change board.txt so the board is using the natively supported pin assigmed as detailed [here](troodon_v2_firmware_adjustment.html) then please use accelerometer.spiChannel = 5 instead" %}
 
-{% include custom/accelerometer.html %}
+{% include custom/3.4/accelerometer.html %}

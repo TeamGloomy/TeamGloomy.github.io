@@ -21,4 +21,4 @@ expSPICSPin: PA_4
 expSPIChannel: 0
 ---
 
-{% include custom/spitocanfd.html %}
+{% include custom/3.4/spitocanfd.html %}

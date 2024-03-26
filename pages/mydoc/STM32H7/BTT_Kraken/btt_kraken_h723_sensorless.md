@@ -20,4 +20,4 @@ onboardDrivers: yes
 driverType: 2160
 ---
 
-{% include custom/sensorless_5160.html %}
+{% include custom/3.4/sensorless_5160.html %}

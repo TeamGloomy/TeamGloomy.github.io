@@ -20,4 +20,4 @@ spiChannel: 0
 location: accelerometer header
 ---
 
-{% include custom/accelerometer.html %}
+{% include custom/3.4/accelerometer.html %}

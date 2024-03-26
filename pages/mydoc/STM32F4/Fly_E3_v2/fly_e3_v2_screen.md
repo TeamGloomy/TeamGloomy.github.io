@@ -18,4 +18,4 @@ screenType: both
 
 {% include tip.html content="PA_10 and PA_9 are shared with the EXP1 header and can only be assigned to 1 thing at a time." %}
 
-{% include custom/screens.html %}
+{% include custom/3.4/screens.html %}

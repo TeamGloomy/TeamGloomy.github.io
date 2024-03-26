@@ -50,6 +50,6 @@ M42 P1 S1
 M918 P2 C30 F1000000 E4
 ```
 
-{% include custom/12864/menu.html %}
+{% include custom/3.4/12864/menu.html %}
 
-{% include custom/12864/troubleshooting.html %}
+{% include custom/3.4/12864/troubleshooting.html %}

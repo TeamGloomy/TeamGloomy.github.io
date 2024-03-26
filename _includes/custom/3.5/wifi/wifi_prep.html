@@ -1,0 +1,10 @@
+## WiFi firmware preparation
+Choose the correct corresponding firmware from [here](https://github.com/gloomyandy/RepRapFirmware/releases){:target="_blank"}. 
+{% if page.wifi == "both" %}
+* WiFiModule_esp8266.bin for ESP8266
+* WiFiModule_esp32.bin for ESP32
+{% elsif page.wifi == "ESP32" %}
+* WiFiModule_esp32.bin
+{% else %}
+* WiFiModule_esp8266.bin
+{% endif %}

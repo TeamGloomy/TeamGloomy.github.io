@@ -14,4 +14,4 @@ boardname: Fly-CDYv3
 bootloaderURL: https://github.com/TeamGloomy/Board-Bootloaders/blob/master/STM32F4/Fly-CDYv3-Bootloader.bin
 ---
 
-{% include custom/bootloader/bootloader_stlink.html %}
+{% include custom/3.4/bootloader/bootloader_stlink.html %}

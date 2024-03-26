@@ -20,4 +20,4 @@ screenType: both
 
 The serial connections can be found on the EXP2 Header.  
 
-{% include custom/screens.html %}
+{% include custom/3.4/screens.html %}

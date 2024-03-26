@@ -16,4 +16,4 @@ RXTX: "{ PD_9, PD_8 }"
 screenType: both
 ---
 
-{% include custom/screens.html %}
+{% include custom/3.4/screens.html %}

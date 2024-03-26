@@ -30,7 +30,7 @@ canWrite: PD_1
 canRead: PD_0
 ---
 
-{% include custom/sbc1.html %}
+{% include custom/3.4/sbc1.html %}
 
 ### Drivers
 
@@ -45,4 +45,4 @@ stepper.spiChannel = {{stepperSPI}}
 
 Follow the instructions as found [here]({{sensorless}})
 
-{% include custom/sbc2.html %}
+{% include custom/3.4/sbc2.html %}

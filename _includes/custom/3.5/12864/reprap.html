@@ -1,0 +1,28 @@
+## Overview
+
+The information here is aimed at connecting a RepRap 12864 display but it can also be applied to other 12864 displays (as long as they are ST7567 or ST7920 based).
+
+## Board.txt modifications
+
+Add the following lines to the board.txt file.  
+If you do not have a board.txt file in sys (the same location as config.g), create one using DWC.  
+
+```
+lcd.encoderPinA=BTN_EN2
+lcd.encoderPinB=BTN_EN1
+lcd.encoderPinSw=BTN_ENC
+lcd.lcdCSPin=LCD_RS
+lcd.spiChannel={{page.reprapSPIChannel}} 
+{% if page.reprapCustomSPI == true %}SPI{{page.reprapSPIChannel}}.pins = {{page.reprapSPIPins}}{% endif%}
+{% if page.boardname == "BTT Octopus v1.1 F429 Version" or page.boardname == "BTT Octopus Pro v1.0 F429 Version" %}heat.spiTempSensorCSPins = {F.8, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin, NoPin}{% endif%}
+{% if page.boardname == "Fly-CDYv2"%}8266wifi.serialRxTxPins = {NoPin, NoPin}
+serial.aux.rxTxPins = {NoPin, NoPin}{% endif%}
+```
+
+## Config.g changes
+
+Add the following line to the end of your config.g
+
+```
+M918 P1 E4 F100000
+```

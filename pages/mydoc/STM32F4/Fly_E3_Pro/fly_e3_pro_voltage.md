@@ -13,4 +13,4 @@ datatable: true
 boardname: Fly-E3-Pro
 ---
 
-{% include custom/voltage.html %}  
+{% include custom/3.4/voltage.html %}  

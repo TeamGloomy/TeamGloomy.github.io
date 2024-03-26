@@ -32,13 +32,13 @@ board: biquskr_rrf_e3_1.1
 onboardDrivers: yes
 ---
 
-{% include custom/wifi/overview.html %}
+{% include custom/3.4/wifi/overview.html %}
 
-{% include custom/wifi/board_firmware.html %}
+{% include custom/3.4/wifi/board_firmware.html %}
 
-{% include custom/wifi/wifi_prep.html %}
+{% include custom/3.4/wifi/wifi_prep.html %}
 
-{% include custom/wifi/dwc.html %}
+{% include custom/3.4/wifi/dwc.html %}
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
@@ -47,20 +47,20 @@ onboardDrivers: yes
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
 
-{% include custom/wifi/generate_config.html %}
+{% include custom/3.4/wifi/generate_config.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="manual" markdown="1">
 
-{% include custom/wifi/board_txt.html %}
+{% include custom/3.4/wifi/board_txt.html %}
 
 </div>
 
 </div>
 
-{% include custom/wifi/sdcard_prep.html %}
+{% include custom/3.4/wifi/sdcard_prep.html %}
 
-{% include custom/wifi/sdcard_structure.html %}
+{% include custom/3.4/wifi/sdcard_structure.html %}
 
-{% include custom/wifi/wrapup.html %}
+{% include custom/3.4/wifi/wrapup.html %}

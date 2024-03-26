@@ -1,0 +1,29 @@
+
+### Connecting the EXP1/EXP2 module (EFD)
+
+The type of module shouldn't be shared with a 12864 display.  
+Connect the EXP1 header on the module to EXP1 on the board. Connect the EXP2 header to EXP2 on the board.  
+
+### Wiring for the driver module
+
+CAN-FD only requires 2 wires to be connected between each board, CAN-H and CAN-L.  
+We recommend using stranded twisted wire pairs, such as those found in ethernet patch cables.
+
+Using the image below, the CAN-H connection should be connected to CAN-H on the toolboard. The CAN-L connection should be connected to CAN-L. A jumper should be added to the pins highlighted by the red box.  
+{% include image.html file="spi_canfd_exp_module_connections.png" alt="EXP1/EXP2 SPI to CAN-FD Module Connections" caption="EXP1/EXP2 SPI to CAN-FD Module Connections" %}  
+
+### Board.txt changes
+
+The following two lines should be added to board.txt.  
+If you do not have a board.txt file in sys (the same location as config.g), create one using DWC.  
+
+```
+//CAN-FD Interface
+can.csPin = {{page.expSPICSPin}}
+can.spiChannel = {{page.expSPIChannel}}
+```
+
+### Config.g Changes
+
+If successful, the toolboard should show in the object model.  
+See this [page](https://docs.duet3d.com/en/User_manual/Machine_configuration/CAN_connection#setting-can-addresses) for more information about CAN addresses etc.

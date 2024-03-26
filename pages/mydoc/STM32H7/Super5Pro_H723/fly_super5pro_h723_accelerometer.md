@@ -20,4 +20,4 @@ spiChannel: 2
 location: EXP2 Header
 ---
 
-{% include custom/accelerometer.html %}
+{% include custom/3.4/accelerometer.html %}

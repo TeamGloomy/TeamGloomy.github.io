@@ -13,4 +13,4 @@ datatable: true
 boardname: Fly-Super5Pro H723
 ---
 
-{% include custom/voltage.html %}
+{% include custom/3.4/voltage.html %}

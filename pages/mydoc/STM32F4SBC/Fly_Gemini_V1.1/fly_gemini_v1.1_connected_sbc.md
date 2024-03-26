@@ -21,7 +21,7 @@ sbcTfrReadyPin: PC_9
 driverSPI: 2
 ---
 
-{% include custom/integrated_sbc1.html %}
+{% include custom/3.4/integrated_sbc1.html %}
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="manualpost35" href="#generate" data-toggle="tab">Drivers Post 3.5RC1</a></li>
@@ -30,16 +30,16 @@ driverSPI: 2
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
 
-{% include custom/wifi/drivers_post35.html %}
+{% include custom/3.4/wifi/drivers_post35.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="manualpre35" markdown="1">
 
-{% include custom/wifi/drivers_pre35.html %}
+{% include custom/3.4/wifi/drivers_pre35.html %}
 
 </div>
 
 </div>
 
-{% include custom/integrated_sbc2.html %}
+{% include custom/3.4/integrated_sbc2.html %}

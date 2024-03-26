@@ -1,0 +1,9 @@
+## Overview
+
+The {{page.boardname}} is an {{page.mcu}} based board.
+
+There have been a number of changes in the way RRF builds for STM32F4, STM32H723 and STM32H743 boards are being produced from 3.5-RC4 and onwards.  
+The main changes are:-
+* A build per board rather than all boards being contained in one build
+* WiFi and SBC mode in one build. If there is an SD card present its in WiFi mode, if there isn't one installed its in SBC mode. This matches the way the Duet3D boards operate.  
+* A board.txt setting to denote the WiFi module type installed.

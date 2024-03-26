@@ -14,8 +14,8 @@ boardname: Fly-407ZG
 spiChannel: 3
 ---
 
-{% include custom/12864/reprap.html %}
+{% include custom/3.4/12864/reprap.html %}
 
-{% include custom/12864/menu.html %}
+{% include custom/3.4/12864/menu.html %}
 
-{% include custom/12864/troubleshooting.html %}
+{% include custom/3.4/12864/troubleshooting.html %}

@@ -51,185 +51,201 @@ children:
   output: web, pdf
   children:
 
-  - title: 3.5.0-rc.2+101 Release Notes
-    url: release_notes_3.5.0-rc.2+101.html
+  - title: Reprapfirmware 3.5
     output: web, pdf
+    children:
 
-  - title: 3.5.0-rc.1+102 Release Notes
-    url: release_notes_3.5.0-rc.1+102.html
-    output: web, pdf
-  
-  - title: 3.4.6_101 Release Notes
-    url: release_notes_3.4.6_101.html
-    output: web, pdf
-  
-  - title: 3.5.0-beta.4_101 Release Notes
-    url: release_notes_3.5.0-beta.4_101.html
-    output: web, pdf
-  
-  - title: 3.5beta2+_106 Release Notes
-    url: release_notes_3.5beta2_106.html
-    output: web, pdf
+    - title: 3.5.0-rc.2+101 Release Notes
+      url: release_notes_3.5.0-rc.2+101.html
+      output: web, pdf
 
-  - title: 3.4.5+_107 Release Notes
-    url: release_notes_3.4.5_107.html
-    output: web, pdf
-  
-  - title: 3.4.5+_104 Release Notes
-    url: release_notes_3.4.5_104.html
-    output: web, pdf
-  
-  - title: 3.5beta2+_103 Release Notes
-    url: release_notes_3.5beta2_103.html
-    output: web, pdf
-  
-  - title: 3.4.5+_103 Release Notes
-    url: release_notes_3.4.5_103.html
-    output: web, pdf
-  
-  - title: 3.4.5_102 Release Notes
-    url: release_notes_3.4.5_102.html
-    output: web, pdf
-  
-  - title: 3.4.4_103 Release Notes
-    url: release_notes_3.4.4_103.html
-    output: web, pdf
-  
-  - title: 3.4.4_102 Release Notes
-    url: release_notes_3.4.4_102.html
-    output: web, pdf
-  
-  - title: 3.4.2_101 Release Notes
-    url: release_notes_3.4.2_101.html
-    output: web, pdf
-  
-  - title: 3.4.2rc2_102 Release Notes
-    url: release_notes_3.4.2rc2_102.html
-    output: web, pdf
-  
-  - title: 3.4.1_102 Release Notes
-    url: release_notes_3.4.1_102.html
-    output: web, pdf
-  
-  - title: 3.4.1rc1_102 Release Notes
-    url: release_notes_3.4.1rc1_102.html
-    output: web, pdf
-  
-  - title: 3.4.0_1 Release Notes
-    url: release_notes_3.4.0_1.html
-    output: web, pdf
-  
-  - title: 3.4rc2_1 Release Notes
-    url: release_notes_3.4rc2_1.html
-    output: web, pdf
-  
-  - title: 3.4rc1_1 Release Notes
-    url: release_notes_3.4rc1_1.html
-    output: web, pdf
-  
-  - title: 3.4beta7_2 Release Notes
-    url: release_notes_3.4beta7_2.html
-    output: web, pdf
-  
-  - title: 3.4beta6_1 Release Notes
-    url: release_notes_3.4beta6_1.html
-    output: web, pdf
-  
-  - title: 3.4beta5_1 Release Notes
-    url: release_notes_3.4beta5_1.html
-    output: web, pdf
+    - title: 3.5.0-rc.1+102 Release Notes
+      url: release_notes_3.5.0-rc.1+102.html
+      output: web, pdf
 
-  - title: 3.4beta4_1 Release Notes
-    url: release_notes_3.4beta4_1.html
-    output: web, pdf
-  
-  - title: 3.4beta3+1_2 Release Notes
-    url: release_notes_3.4beta3+1_2.html
-    output: web, pdf
-  
-  - title: 3.4beta2_2 Release Notes
-    url: release_notes_3.4beta2_2.html
-    output: web, pdf
+    - title: 3.5.0-beta.4_101 Release Notes
+      url: release_notes_3.5.0-beta.4_101.html
+      output: web, pdf
 
-  - title: 3.3.0_16 Release Notes
-    url: release_notes_3.3.0_16.html
-    output: web, pdf
-  
-  - title: 3.3.0_14 Release Notes
-    url: release_notes_3.3.0_14.html
-    output: web, pdf
-  
-  - title: 3.3.0_11 Release Notes
-    url: release_notes_3.3.0_11.html
-    output: web, pdf
-  
-  - title: 3.3.0_10 Release Notes
-    url: release_notes_3.3.0_10.html
-    output: web, pdf
+    - title: 3.5beta2+_106 Release Notes
+      url: release_notes_3.5beta2_106.html
+      output: web, pdf
 
-  - title: 3.3.0_9 Release Notes
-    url: release_notes_3.3.0_9.html
-    output: web, pdf
-  
-  - title: 3.3.0_8 Release Notes
-    url: release_notes_3.3.0_8.html
-    output: web, pdf
-  
-  - title: 3.3.0_6 Release Notes
-    url: release_notes_3.3.0_6.html
-    output: web, pdf
+    - title: 3.5beta2+_103 Release Notes
+      url: release_notes_3.5beta2_103.html
+      output: web, pdf
 
-  - title: 3.3.0_5 Release Notes
-    url: release_notes_3.3.0_5.html
+  - title: Reprapfirmware 3.4
     output: web, pdf
+    children:
   
-  - title: 3.3_2 Release Notes
-    url: release_notes_3.3_2.html
-    output: web, pdf
+    - title: 3.4.6_101 Release Notes
+      url: release_notes_3.4.6_101.html
+      output: web, pdf
   
-  - title: 3.3RC3_2 Release Notes
-    url: release_notes_3.3rc3_2.html
-    output: web, pdf
+    - title: 3.4.5+_107 Release Notes
+      url: release_notes_3.4.5_107.html
+      output: web, pdf
   
-  - title: 3.3RC2+1_1 Release Notes
-    url: release_notes_3.3rc2+1_1.html
-    output: web, pdf
+    - title: 3.4.5+_104 Release Notes
+      url: release_notes_3.4.5_104.html
+      output: web, pdf
+    
+    - title: 3.4.5+_103 Release Notes
+      url: release_notes_3.4.5_103.html
+      output: web, pdf
   
-  - title: 3.3beta3_2 Release Notes
-    url: release_notes_3.3beta3_2.html
-    output: web, pdf
+    - title: 3.4.5_102 Release Notes
+      url: release_notes_3.4.5_102.html
+      output: web, pdf
   
-  - title: 3.3beta1_6 Release Notes
-    url: release_notes_3.3beta1_6.html
-    output: web, pdf
+    - title: 3.4.4_103 Release Notes
+      url: release_notes_3.4.4_103.html
+      output: web, pdf
+  
+    - title: 3.4.4_102 Release Notes
+      url: release_notes_3.4.4_102.html
+      output: web, pdf
+  
+    - title: 3.4.2_101 Release Notes
+      url: release_notes_3.4.2_101.html
+      output: web, pdf
+  
+    - title: 3.4.2rc2_102 Release Notes
+      url: release_notes_3.4.2rc2_102.html
+      output: web, pdf
+  
+    - title: 3.4.1_102 Release Notes
+      url: release_notes_3.4.1_102.html
+      output: web, pdf
+  
+    - title: 3.4.1rc1_102 Release Notes
+      url: release_notes_3.4.1rc1_102.html
+      output: web, pdf
+  
+    - title: 3.4.0_1 Release Notes
+      url: release_notes_3.4.0_1.html
+      output: web, pdf
+  
+    - title: 3.4rc2_1 Release Notes
+      url: release_notes_3.4rc2_1.html
+      output: web, pdf
+  
+    - title: 3.4rc1_1 Release Notes
+      url: release_notes_3.4rc1_1.html
+      output: web, pdf
+  
+    - title: 3.4beta7_2 Release Notes
+      url: release_notes_3.4beta7_2.html
+      output: web, pdf
+  
+    - title: 3.4beta6_1 Release Notes
+      url: release_notes_3.4beta6_1.html
+      output: web, pdf
+  
+    - title: 3.4beta5_1 Release Notes
+      url: release_notes_3.4beta5_1.html
+      output: web, pdf
 
-  - title: 3.3beta1_5 Release Notes
-    url: release_notes_3.3beta1_5.html
-    output: web, pdf
+    - title: 3.4beta4_1 Release Notes
+      url: release_notes_3.4beta4_1.html
+      output: web, pdf
+  
+    - title: 3.4beta3+1_2 Release Notes
+      url: release_notes_3.4beta3+1_2.html
+      output: web, pdf
+  
+    - title: 3.4beta2_2 Release Notes
+      url: release_notes_3.4beta2_2.html
+      output: web, pdf
 
-  - title: 3.3beta1_3 Release Notes
-    url: release_notes_3.3beta1_3.html
+  - title: Reprapfirmware 3.3
     output: web, pdf
-  
-  - title: 3.2.2_2 Release Notes
-    url: release_notes_3.2.2_2.html
-    output: web, pdf
-  
-  - title: 3.2_7 Release Notes
-    url: release_notes_3.2_7.html
-    output: web, pdf
-  
-  - title: 3.2_4 Release Notes
-    url: release_notes_3.2_4.html
-    output: web, pdf
-  
-  - title: 3.2_1 Release Notes
-    url: release_notes_3.2_1.html
-    output: web, pdf
+    children:
 
-  - title: 3.2 RC2 Release notes
-    url: release_notes_3.2_RC2.html
+    - title: 3.3.0_16 Release Notes
+      url: release_notes_3.3.0_16.html
+      output: web, pdf
+  
+    - title: 3.3.0_14 Release Notes
+      url: release_notes_3.3.0_14.html
+      output: web, pdf
+  
+    - title: 3.3.0_11 Release Notes
+      url: release_notes_3.3.0_11.html
+      output: web, pdf
+  
+    - title: 3.3.0_10 Release Notes
+      url: release_notes_3.3.0_10.html
+      output: web, pdf
+
+    - title: 3.3.0_9 Release Notes
+      url: release_notes_3.3.0_9.html
+      output: web, pdf
+  
+    - title: 3.3.0_8 Release Notes
+      url: release_notes_3.3.0_8.html
+      output: web, pdf
+  
+    - title: 3.3.0_6 Release Notes
+      url: release_notes_3.3.0_6.html
+      output: web, pdf
+
+    - title: 3.3.0_5 Release Notes
+      url: release_notes_3.3.0_5.html
+      output: web, pdf
+  
+    - title: 3.3_2 Release Notes
+      url: release_notes_3.3_2.html
+      output: web, pdf
+  
+    - title: 3.3RC3_2 Release Notes
+      url: release_notes_3.3rc3_2.html
+      output: web, pdf
+  
+    - title: 3.3RC2+1_1 Release Notes
+      url: release_notes_3.3rc2+1_1.html
+      output: web, pdf
+  
+    - title: 3.3beta3_2 Release Notes
+      url: release_notes_3.3beta3_2.html
+      output: web, pdf
+  
+    - title: 3.3beta1_6 Release Notes
+      url: release_notes_3.3beta1_6.html
+      output: web, pdf
+
+    - title: 3.3beta1_5 Release Notes
+      url: release_notes_3.3beta1_5.html
+      output: web, pdf
+
+    - title: 3.3beta1_3 Release Notes
+      url: release_notes_3.3beta1_3.html
+      output: web, pdf
+  
+  - title: Reprapfirmware 3.2
     output: web, pdf
+    children:
+  
+    - title: 3.2.2_2 Release Notes
+      url: release_notes_3.2.2_2.html
+      output: web, pdf
+  
+    - title: 3.2_7 Release Notes
+      url: release_notes_3.2_7.html
+      output: web, pdf
+  
+    - title: 3.2_4 Release Notes
+      url: release_notes_3.2_4.html
+      output: web, pdf
+  
+    - title: 3.2_1 Release Notes
+      url: release_notes_3.2_1.html
+      output: web, pdf
+
+    - title: 3.2 RC2 Release notes
+      url: release_notes_3.2_RC2.html
+      output: web, pdf
 
 - title: General
   output: web, pdf
@@ -880,56 +896,120 @@ children:
       output: web, pdf
     
   - title: Fly-E3-Pro-v3
-    output: web, pdf
+    output: web
     children:
 
-    - title: Fly-E3-Pro-v3 General Information
-      url: fly_e3_pro_v3_general.html
-      output: web, pdf
+    - title: RRF 3.5.0-RC4 and above
+      output: web
+      children:
+
+      - title: Fly-E3-Pro-v3 General Information
+        url: fly_e3_pro_v3_general_3_5.html
+        output: web
+
+      - title: Upgrading from an earlier RRF version
+        url: fly_e3_pro_v3_upgrading_3_5.html
+        output: web
     
-    - title: Connecting via WiFi
-      url: fly_e3_pro_v3_connected_wifi.html
-      output: web, pdf
+      - title: Connecting via WiFi
+        url: fly_e3_pro_v3_connected_wifi_3_5.html
+        output: web
 
-    - title: Adding CAN-FD
-      url: fly_e3_pro_v3_spi2canfd.html
-      output: web, pdf
+      - title: Adding CAN-FD
+        url: fly_e3_pro_v3_spi2canfd_3_5.html
+        output: web
     
-    - title: Configuring Sensorless Homing
-      url: fly_e3_pro_v3_sensorless.html
-      output: web, pdf
+      - title: Configuring Sensorless Homing
+        url: fly_e3_pro_v3_sensorless_3_5.html
+        output: web
 
-    - title: Connecting a Serial Screen
-      url: fly_e3_pro_v3_screen.html
-      output: web, pdf
+      - title: Connecting a Serial Screen
+        url: fly_e3_pro_v3_screen_3_5.html
+        output: web
 
-    - title: Connecting a 12864 Screen
-      url: fly_e3_pro_v3_screen_12864.html
-      output: web, pdf
+      - title: Connecting a 12864 Screen
+        url: fly_e3_pro_v3_screen_12864_3_5.html
+        output: web
 
-    - title: Connecting a BLTouch or BTT MicroProbe
-      url: fly_e3_pro_v3_bltouch.html
-      output: web, pdf
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_e3_pro_v3_bltouch_3_5.html
+        output: web
 
-    - title: Connecting an Accelerometer
-      url: fly_e3_pro_v3_accelerometer.html
-      output: web, pdf
+      - title: Connecting an Accelerometer
+        url: fly_e3_pro_v3_accelerometer_3_5.html
+        output: web
 
-    - title: Connecting a PT100 or Type 'K' Thermocouple
-      url: fly_e3_pro_v3_pt100.html
-      output: web, pdf
+      - title: Connecting a PT100 or Type 'K' Thermocouple
+        url: fly_e3_pro_v3_pt100_3_5.html
+        output: web
 
-    - title: Input Voltage Monitoring
-      url: fly_e3_pro_v3_voltage.html
-      output: web, pdf
+      - title: Input Voltage Monitoring
+        url: fly_e3_pro_v3_voltage_3_5.html
+        output: web
 
-    - title: Configuring the Onboard Temperature Sensor
-      url: fly_e3_pro_v3_onboard_temp.html
-      output: web, pdf
+      - title: Configuring the Onboard Temperature Sensor
+        url: fly_e3_pro_v3_onboard_temp_3_5.html
+        output: web
 
-    - title: Pin Names
-      url: fly_e3_pro_v3_pins.html
+      - title: rrfboot.txt
+        url: fly_e3_pro_v3_rrfboot_3_5.html
+        output: web
+
+      - title: Pin Names
+        url: fly_e3_pro_v3_pins_3_5.html
+        output: web
+
+    - title: RRF 3.4.6 and below
       output: web, pdf
+      children:
+
+      - title: Fly-E3-Pro-v3 General Information
+        url: fly_e3_pro_v3_general.html
+        output: web, pdf
+    
+      - title: Connecting via WiFi
+        url: fly_e3_pro_v3_connected_wifi.html
+        output: web, pdf
+
+      - title: Adding CAN-FD
+        url: fly_e3_pro_v3_spi2canfd.html
+        output: web, pdf
+    
+      - title: Configuring Sensorless Homing
+        url: fly_e3_pro_v3_sensorless.html
+        output: web, pdf
+
+      - title: Connecting a Serial Screen
+        url: fly_e3_pro_v3_screen.html
+        output: web, pdf
+
+      - title: Connecting a 12864 Screen
+        url: fly_e3_pro_v3_screen_12864.html
+        output: web, pdf
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_e3_pro_v3_bltouch.html
+        output: web, pdf
+
+      - title: Connecting an Accelerometer
+        url: fly_e3_pro_v3_accelerometer.html
+        output: web, pdf
+
+      - title: Connecting a PT100 or Type 'K' Thermocouple
+        url: fly_e3_pro_v3_pt100.html
+        output: web, pdf
+
+      - title: Input Voltage Monitoring
+        url: fly_e3_pro_v3_voltage.html
+        output: web, pdf
+
+      - title: Configuring the Onboard Temperature Sensor
+        url: fly_e3_pro_v3_onboard_temp.html
+        output: web, pdf
+
+      - title: Pin Names
+        url: fly_e3_pro_v3_pins.html
+        output: web, pdf
   
   - title: Fly-Super8
     output: web, pdf

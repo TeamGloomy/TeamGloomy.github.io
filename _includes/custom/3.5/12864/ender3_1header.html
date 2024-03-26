@@ -1,0 +1,21 @@
+## Board.txt modifications
+
+The following lines should be added to the board.txt file.
+If you do not have a board.txt file in sys (the same location as config.g), create one using DWC.  
+
+```
+lcd.encoderPinA=LCD_D4
+lcd.encoderPinB=LCD_EN
+lcd.encoderPinSw=BTN_ENC
+lcd.lcdCSPin=LCD_D6
+lcd.spiChannel={{page.enderSpiChannel}}
+lcd.lcdBeepPin = BEEP
+```
+
+## Config.g changes
+
+Add the following line to the end of your config.g
+
+```
+M918 P1 E4 F1000000
+```

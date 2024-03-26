@@ -24,6 +24,6 @@ dfdType: "Left"
 
 {% include important.html content="Adding CAN-FD will only work when you are using an ESP32 based WiFi module" %}
 
-{% include custom/spitocanfd_overview.html %}
+{% include custom/3.4/spitocanfd_overview.html %}
 
-{% include custom/spitocanfd_dfd.html %}
+{% include custom/3.4/spitocanfd_dfd.html %}

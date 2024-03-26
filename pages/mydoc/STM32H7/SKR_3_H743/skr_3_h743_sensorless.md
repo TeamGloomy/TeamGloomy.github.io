@@ -20,7 +20,7 @@ board: biquskr_3
 onboardDrivers: no
 ---
 
-{% include custom/sensorless.html %}
+{% include custom/3.4/sensorless.html %}
 
 ### Driver Diag Pin
 
@@ -28,4 +28,4 @@ If you want to use sensorless homing, a jumper needs adding under each driver yo
 
 {% include image.html file="skr3_diag.png" alt="SKR3 Diag" caption="SKR3 Sensorless Homing Jumper Locations" %}
 
-{% include custom/sensorless_2.html %}
+{% include custom/3.4/sensorless_2.html %}

@@ -20,4 +20,4 @@ spiChannel: 5
 location:  Extension header 0, 1 and 2
 ---
 
-{% include custom/accelerometer.html %}
+{% include custom/3.4/accelerometer.html %}

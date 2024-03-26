@@ -1,0 +1,169 @@
+## Physical Connections
+
+Connect the BLTouch to the {{page.boardname}} as described in the table below.  
+
+<div class="datatable-begin"></div>
+
+|BLTouch Wire Colour|{{page.boardname}}|{{page.boardname}} Pin Name|
+|:---|:---|:---|
+|Brown|GND||
+|Red|+5v||
+|Yellow|{{page.yellowPin}}|{{page.yellowName}}|
+|Black|GND||
+|White|{{page.whitePin}}|{{page.whiteName}}|
+
+{% capture imagefile %}
+{{ page.image }}
+{% endcapture %}
+{% capture captiontext %}
+{{ page.boardname }} BLTouch Connection
+{% endcapture %}
+{% if page.image != "" %}
+{% include image.html file=imagefile alt="" caption=captiontext %}
+{% endif %}
+
+<div class="datatable-end"></div>
+
+### Config.g Changes
+
+Your config.g should be modified as below.
+```
+M558 P9 H6 F250:30 T8000 C"^{{page.whiteName}}"       ; set Z probe type to bltouch and the dive height + speeds
+M950 S0 C"{{page.yellowName}}"                              ; Setup {{page.yellowName}} as servo port on {{page.boardname}}
+```
+
+You will also need to set up your probe offset using [G31](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#g31-set-or-report-current-probe-status) and your [mesh probing grid](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m557-set-z-probe-point-or-define-probing-grid)
+
+## Files to Create
+
+Create the following files. 
+
+{% include tip.html content="If you select the BLTouch while setting up your config.g files using the Configurator, these files should be created for you. We still advise checking them tho ensure the content is correct." %}
+
+### deployprobe.g
+
+Create a file in your sys folder called
+```
+deployprobe.g
+```
+In it, paste the following code
+```
+M280 P0 S10
+```
+
+### retractprobe.g
+
+Create a file in your sys folder called
+```
+retractprobe.g
+```
+In it, paste the following code
+```
+M280 P0 S90
+```
+
+## Files to Modify
+
+{% include tip.html content="If you select the BLTouch while setting up your config.g files using the Configurator, these files should be modified for you. We still advise checking them tho ensure the content is correct." %}
+
+If you you want to use your probe as your z endstop, you need to modify your homeall.g/homedelta.g and homez.g
+
+### homez.g
+
+For homez.g, you will have need to have something similar to this. Please modify the co-ordinates required for the centre of your bed accordingly.
+```
+; ################# Home Z Preparation ################
+
+G91 															; Relative mode
+G1 H2 Z5 F5000													; Lower the bed
+G90																; Back to absolute positioning
+G1 X0 Y0 F10000 		 										; Move to the center of the bed. Adjust to the co-ordinates required for the centre of your bed
+
+; ################# Home Z Preparation ################
+
+G30					 											; Probe a single point
+```
+
+### homeall.g
+
+The homeall.g should have something similar to the above or should call the homez.g file using
+```
+M98 P"homez.g"
+```
+
+## Testing Macros
+
+It is suggested that you create a number of macros to allow testing of your BLTouch. These should each be created in the macros folder.  
+
+### alarm release + pin
+
+Create a file in your macros folder called
+```
+alarm release + pin
+```
+In it, paste the following code
+```
+M280 P0 S160 ; Alarm Release and Push-Pin UP
+```
+
+### pin up
+
+Create a file in your macros folder called
+```
+pin up
+```
+In it, paste the following code
+```
+M280 P0 S90 ; Send PWM channel 0 the s90 (angle) command
+```
+
+### pin down
+
+Create a file in your macros folder called
+```
+pin down
+```
+In it, paste the following code
+```
+M280 P0 S10 ; Send PWM channel 0 the S10 (angle) command
+```
+
+### selftest
+
+Create a file in your macros folder called
+```
+self-test
+```
+In it, paste the following code
+```
+M280 P0 S120 ; Send PWM channel 7 the S10 (angle) command
+```
+
+## Links to Relevant Duet3D Documentation
+
+[Connecting a BLTouch](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Z_probe_connecting#bltouch)  
+[Troubleshooting a BLTouch](https://docs.duet3d.com/en/User_manual/Troubleshooting/BLTouch_troubleshooting)
+
+
+## Marlin Fast Probe
+
+There is a guide to replicating Marlins Fast Probe feature [here](https://forum.duet3d.com/topic/14544/guide-to-marlin-s-fast-bltouch-probing-feature-on-duet).
+
+## Troubleshooting
+
+### M280 works but the probe doesn't deploy using G30
+
+Test that the probe deploys and retracts using `M401` and `M402` respectively.  
+If they don't work then you either have the deployprobe.g and retractprobe.g in the wrong place (they need to be in **sys**) or the contents of those files are incorrect, in which case re-read this page.  
+
+### M280 doesn't work
+
+Either the wiring for the BLTouch is incorrect or the M950 servo definition is incorrect in config.g.  
+
+### The probe doesn't self test on Startup
+
+The wiring for the BLTouch is incorrect and should be checked.  
+
+### The probe doesn't trigger
+
+Either the wiring for the BLTouch is incorrect (swap the black and white cables) or the M558 definition is incorrect in config.g.  

@@ -19,4 +19,4 @@ bootloader_cap1: "Fly-E3-v2 DFU Bootloader Button"
 
 ---
 
-{% include custom/bootloader/bootloader_usb.html %}
+{% include custom/3.4/bootloader/bootloader_usb.html %}

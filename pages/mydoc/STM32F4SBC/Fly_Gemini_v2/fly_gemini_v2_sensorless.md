@@ -21,4 +21,4 @@ onboardDrivers: no
 diagPinInfo: fly_gemini_v2_general.html
 ---
 
-{% include custom/sensorless.html %}
+{% include custom/3.4/sensorless.html %}

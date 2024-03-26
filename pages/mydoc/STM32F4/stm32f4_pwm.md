@@ -12,6 +12,6 @@ comments: false
 datatable: true
 ---
 
-{% include custom/pwm.html %}
+{% include custom/3.4/pwm.html %}
 
-{% include custom/pwm_f4.html %}
+{% include custom/3.4/pwm_f4.html %}

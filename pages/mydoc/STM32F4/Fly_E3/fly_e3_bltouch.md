@@ -25,13 +25,13 @@ whiteName: probe
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bltouch" markdown="1">
 
-{% include custom/bltouch.html %}
+{% include custom/3.4/bltouch.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="micro" markdown="1">
 
-{% include custom/microprobe.html %}
+{% include custom/3.4/microprobe.html %}
 
 </div>
 

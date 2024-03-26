@@ -19,6 +19,6 @@ board: fly_super5_h723
 onboardDrivers: no
 ---
 
-{% include custom/sensorless.html %}
+{% include custom/3.4/sensorless.html %}
 
-{% include custom/sensorless_2.html %}
+{% include custom/3.4/sensorless_2.html %}

@@ -21,6 +21,6 @@ onboardDrivers: no
 
 {% include important.html content="The Fly-E3-v2 only supports sensorless homing and stall detect on Driver0, Driver1 and Driver2" %}
 
-{% include custom/sensorless.html %}
+{% include custom/3.4/sensorless.html %}
 
-{% include custom/sensorless_2.html %}
+{% include custom/3.4/sensorless_2.html %}

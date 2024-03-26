@@ -13,4 +13,4 @@ datatable: true
 boardname: Fly-Super8
 ---
 
-{% include custom/voltage.html %}  
+{% include custom/3.4/voltage.html %}  

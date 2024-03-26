@@ -1,0 +1,12 @@
+## WiFi firmware preparation
+Choose the correct corresponding firmware from [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases){:target="_blank"}. 
+{% if page.wifi == "both" %}
+* DuetWiFiServer-X.XX-XX.bin for ESP8266
+* DuetWiFiServer-32-X.XX-XX.bin for ESP32
+{% elsif page.wifi == "ESP32" %}
+* DuetWiFiServer-X.XX-XX.bin
+{% else %}
+* DuetWiFiServer-32-X.XX-XX.bin
+{% endif %}
+
+Once downloaded, rename it DuetWifiServer.bin

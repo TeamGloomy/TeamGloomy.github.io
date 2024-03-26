@@ -27,13 +27,13 @@ whiteName: io0.in
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bltouch" markdown="1">
 
-{% include custom/bltouch_can.html %}
+{% include custom/3.4/bltouch_can.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="micro" markdown="1">
 
-{% include custom/microprobe_can.html %}
+{% include custom/3.4/microprobe_can.html %}
 
 </div>
 

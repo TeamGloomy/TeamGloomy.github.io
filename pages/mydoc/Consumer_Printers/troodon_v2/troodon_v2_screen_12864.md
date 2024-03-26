@@ -14,10 +14,10 @@ boardname: Troodon V2 Printer
 spiChannel: 1
 ---
 
-{% include custom/12864/fysetc_mini_21.html %}
+{% include custom/3.4/12864/fysetc_mini_21.html %}
 
-{% include custom/12864/menu.html %}
+{% include custom/3.4/12864/menu.html %}
 
-{% include custom/12864/troubleshooting.html %}
+{% include custom/3.4/12864/troubleshooting.html %}
 
-{% include custom/12864/sdcard.html %}
+{% include custom/3.4/12864/sdcard.html %}

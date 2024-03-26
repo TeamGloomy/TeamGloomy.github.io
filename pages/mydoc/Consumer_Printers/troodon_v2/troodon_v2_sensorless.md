@@ -19,7 +19,7 @@ board: troodon_v2
 onboardDrivers: no
 ---
 
-{% include custom/sensorless.html %}
+{% include custom/3.4/sensorless.html %}
 
 ### Driver Diag Pin
 
@@ -27,4 +27,4 @@ If you want to use sensorless homing, a jumper needs adding next to each appropr
 
 {% include image.html file="octopus_x7_diag.png" alt="Troodon V2 Printer Diag" caption="Troodon V2 Printer Sensorless Homing Jumper Locations" %}
 
-{% include custom/sensorless_2.html %}
+{% include custom/3.4/sensorless_2.html %}

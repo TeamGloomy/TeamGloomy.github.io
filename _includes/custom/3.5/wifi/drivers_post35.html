@@ -1,0 +1,60 @@
+### Drivers
+
+Although the original method of having the firmware detect the drivers is still supported, as we have now added TMC2240 support, there is now a new method.  
+The following line should be added (obviously with the array entries matching your drivers and their locations):
+
+```text
+stepper.numSmartDrivers = X
+stepper.DriverType = {Tmc2208, Tmc2240, tmc2209, tmc5160, stepdir}
+```
+
+For the number of smart drivers, if you have the following installed (tmc2209, none, tm5160, stepdir, tmc2209) then numSmartDrivers needs to be set to 5 not to 3. Basically it means how many entries there are in the driver types array. Entries after that number get set to stepdir. 
+
+The DriverType array allows for any driver to be used in any slot so there is no order requirement like the previous detection method. The array must also include an entry for each driver slot up to the last one thats populated.  
+The following list of entries are valid:
+
+```text
+none
+stepdir
+tmc2208
+tmc2209
+tmc2660
+tmc5160
+tmc2240
+```
+
+If using TMC2240 or TMC5160 drivers, you also need to add the correct spi channel:
+
+{% if page.stepperSPI == 0 or page.stepperSPI == 2 %}
+```text
+stepper.spiChannel = {{page.stepperSPI}}
+```
+{% else %}
+```text
+stepper.spiChannel = {{page.stepperSPI}}
+SPI{{page.stepperSPI}}.pins = {{page.spiInfo}}
+```
+{% endif %}
+
+### TMC2240 Driver Temperature
+
+TMC2240 drivers support reporting their own temperature, rather than just hot and very hot like the other TMC drivers.
+To utilise this, add the following line to your config.g
+
+```text
+M308 S11 Y"drivers"
+```
+
+This will return the highest temperature reading from any of the drivers, 2240s will return the actual temperature, other drivers will return 0, 100 or 150 (as before). 
+
+If you want to know the temperature of a particular driver you need to add the following line (as well as the above):
+
+```text
+M308 S12 Y"drivertemp" p"S11.X"
+```
+
+Where x is the driver number that matches the driver number used by M569
+
+### Sensorless Homing
+
+Follow the instructions as found [here]({{page.sensorless}})

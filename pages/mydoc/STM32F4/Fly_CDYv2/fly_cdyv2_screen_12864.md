@@ -28,20 +28,20 @@ reprapSPIChannel : 3
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="reprap" markdown="1">
 
-{% include custom/12864/reprap.html %}
+{% include custom/3.4/12864/reprap.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="fysetc" markdown="1">
 
-{% include custom/12864/fysetc_mini_21.html %}
+{% include custom/3.4/12864/fysetc_mini_21.html %}
 
 </div>
 
 </div>
 
-{% include custom/12864/menu.html %}
+{% include custom/3.4/12864/menu.html %}
 
-{% include custom/12864/troubleshooting.html %}
+{% include custom/3.4/12864/troubleshooting.html %}
 
-{% include custom/12864/sdcard.html %}
+{% include custom/3.4/12864/sdcard.html %}

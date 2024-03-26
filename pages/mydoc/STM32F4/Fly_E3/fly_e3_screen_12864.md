@@ -30,7 +30,7 @@ The information here is aimed at connecting a stock ender 3 12864 display but it
 
 The ender 3 stock display can be connected directly to the EXP header of the Fly-E3. No modifications are required.
 
-{% include custom/12864/ender3_1header.html %}
+{% include custom/3.4/12864/ender3_1header.html %}
 
 </div>
 
@@ -43,12 +43,12 @@ Use the image below as a guide. Thanks @Samsan
 
 {% include image.html file="reprap_fly_e3.png" alt="Reprap Discount to Fly-E3" caption="Connecting a RepRapDiscount Full Graphic Smart Controller to the Fly-E3" %}
 
-{% include custom/12864/ender3_1header.html %}
+{% include custom/3.4/12864/ender3_1header.html %}
 
 </div>
 
 </div>
 
-{% include custom/12864/menu.html %}
+{% include custom/3.4/12864/menu.html %}
 
-{% include custom/12864/troubleshooting.html %}
+{% include custom/3.4/12864/troubleshooting.html %}

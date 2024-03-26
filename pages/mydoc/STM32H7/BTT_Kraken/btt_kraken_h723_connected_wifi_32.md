@@ -37,15 +37,15 @@ canWrite: PD_1
 canRead: PD_0
 ---
 
-{% include custom/wifi/overview.html %}
+{% include custom/3.4/wifi/overview.html %}
 
-{% include custom/wifi/board_firmware.html %}
+{% include custom/3.4/wifi/board_firmware.html %}
 
-{% include custom/wifi/wifi_prep.html %}
+{% include custom/3.4/wifi/wifi_prep.html %}
 
-{% include custom/wifi/dwc.html %}
+{% include custom/3.4/wifi/dwc.html %}
 
-{% include custom/wifi/removeable_large.html %}
+{% include custom/3.4/wifi/removeable_large.html %}
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
@@ -55,28 +55,28 @@ canRead: PD_0
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
 
-{% include custom/wifi/generate_config.html %}
+{% include custom/3.4/wifi/generate_config.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="manualpre35" markdown="1">
 
-{% include custom/wifi/board_txt.html %}
-{% include custom/wifi/drivers_pre35.html %}
+{% include custom/3.4/wifi/board_txt.html %}
+{% include custom/3.4/wifi/drivers_pre35.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="manualpost35" markdown="1">
 
-{% include custom/wifi/board_txt.html %}
-{% include custom/wifi/drivers_post35.html %}
+{% include custom/3.4/wifi/board_txt.html %}
+{% include custom/3.4/wifi/drivers_post35.html %}
 
 </div>
 
 </div>
 
-{% include custom/wifi/sdcard_prep.html %}
+{% include custom/3.4/wifi/sdcard_prep.html %}
 
-{% include custom/wifi/sdcard_structure.html %}
+{% include custom/3.4/wifi/sdcard_structure.html %}
 
-{% include custom/wifi/wrapup.html %}
+{% include custom/3.4/wifi/wrapup.html %}

@@ -20,4 +20,4 @@ spiChannel: 2
 location: SPI and I2C header
 ---
 
-{% include custom/accelerometer.html %}
+{% include custom/3.4/accelerometer.html %}

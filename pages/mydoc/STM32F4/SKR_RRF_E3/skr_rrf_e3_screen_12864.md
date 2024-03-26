@@ -136,6 +136,6 @@ m150 X2 R255 U0 B0 P255 S2 F0
 
 </div>
 
-{% include custom/12864/menu.html %}
+{% include custom/3.4/12864/menu.html %}
 
-{% include custom/12864/troubleshooting.html %}
+{% include custom/3.4/12864/troubleshooting.html %}
