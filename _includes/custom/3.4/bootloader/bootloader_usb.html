@@ -16,6 +16,14 @@ These instructions cover flashing with Windows using the [STM32CubeProgrammer](h
 While holding down the {{page.bootloader_button_name}}, plug in the USB cable into the board and PC.
 {% endif %}
 
+{% if {{page.bootloader_jumpers}} == true and {{page.bootloader_jumpers}} == 1 %}
+Install the jumper as shown in the image below, before plugging in the USB cable into the board and PC.
+{% endif %}
+
+{% if {{page.bootloader_jumpers}} == true and {{page.bootloader_jumpers}} != 1 %}
+Install the jumpers as shown in the image below, before plugging in the USB cable into the board and PC.
+{% endif %}
+
 {% 
 include image.html 
 file=bootloader_img1
@@ -36,4 +44,11 @@ Click the "Download" button.
 {% include image.html file="stm32_cube_stlink_3.png" url="https://teamgloomy.github.io/images/stm32_cube_stlink_3.png" alt="STM32CubeProgrammer3" caption="Download Bootloader to the board" %}  
 A "File Download Complete" popup will appear once complete.  
 {% include image.html file="stm32_cube_stlink_4.png" url="https://teamgloomy.github.io/images/stm32_cube_stlink_4.png" alt="STM32CubeProgrammer4" caption="Download Complete" %}  
+
+{% if {{page.bootloader_buttons}} == true %}
 Disconnect the board and continue flashing the firmware as normal.  
+{% endif %}
+
+{% if {{page.bootloader_jumpers}} == true %}
+Disconnect the board and remove the jumpers before continueing to flash the firmware as normal.
+{% endif %}

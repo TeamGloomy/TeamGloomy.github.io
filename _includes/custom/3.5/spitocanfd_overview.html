@@ -2,4 +2,12 @@
 
 From 3.5b2, it is now possible to use one or two toolboards with an STM32F4 based board using the CAN-FD protocol. To do so, you must purchase a separate SPI to CAN-FD module. TeamGloomy have worked with Flymaker/Mellow to produce 2 designs of module to suit the board you are using.  
 
-For the {{page.boardname}} we recommend the {{page.spiModule}} module, which can be purchased from [Aliexpress]({{page.moduleURL}}).  
+{% if page.spiModule == "driver" %}
+For the {{page.boardname}} you can only use the DFD module (which plugs into a driver socket), which can be purchased from [Aliexpress]({{page.moduleURL}}).  
+{% endif %}
+{% if page.spiModule == "EXP1/EXP2" %}
+For the {{page.boardname}} you can only use the EFD module (which plugs into EXP1/EXP2), which can be purchased from [Aliexpress]({{page.moduleURL}}).  
+{% endif %}
+{% if page.spiModule == "both" %}
+For the {{page.boardname}} you can only use both the DFD module (which plugs into a driver socket) and the EFD module (which plugs into EXP1/EXP2), botg of which can be purchased from [Aliexpress]({{page.moduleURL}}).  
+{% endif %}

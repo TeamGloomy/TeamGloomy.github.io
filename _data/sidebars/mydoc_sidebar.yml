@@ -1495,6 +1495,10 @@ children:
       url: fly_super5pro_h723_voltage.html
       output: web, pdf
 
+    - title: Reflashing the Bootloader
+      url: fly_super5pro_h723_bootloader.html
+      output: web, pdf
+
     - title: Pin Names
       url: fly_super5pro_h723_pins.html
       output: web, pdf

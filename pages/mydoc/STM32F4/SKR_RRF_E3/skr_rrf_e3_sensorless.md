@@ -2,7 +2,7 @@
 title: Sensorless Homing on a SKR-RRF-E3
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 24/02/2024
 summary: "Using and Configuring Sensorless Homing on a SKR-RRF-E3"
 sidebar: mydoc_sidebar
 permalink: skr_rrf_e3_sensorless.html
@@ -17,7 +17,7 @@ TMC: "{ PC_0, PC_1, PC_2, PC_3, PB_11, PB_10 }"
 example: "stepper.TmcDiagPins = { PC_0, PC_1 }"
 example2: "stepper.TmcDiagPins = { NoPin, PC_1 }"
 board: biquskr_rrf_e3_1.1
-onboardDrivers: yes
+onboardDrivers: "yes"
 driverType: TMC2209
 diagPinInfo: skr_rrf_e3_general.html
 ---

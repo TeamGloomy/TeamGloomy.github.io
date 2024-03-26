@@ -2,7 +2,7 @@
 title: Adding CAN-FD to a Fly-Gemini-V1
 tags: []
 keywords: 
-last_updated: 08/02/2023
+last_updated: 24/02/2024
 summary: "How to add CAN-FD to a Fly-Gemini-V1 and connect a CAN-FD Toolboard"
 sidebar: mydoc_sidebar
 permalink: fly_gemini_spi2canfd.html
@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: Fly-Gemini-V1
 spiModule: driver
-moduleURL: 
+moduleURL: https://s.click.aliexpress.com/e/_De3n8p7
 moduleType: driver
 spiJumpers: fly_e3_jumpers.png
 driverSPICSPin: PB_7

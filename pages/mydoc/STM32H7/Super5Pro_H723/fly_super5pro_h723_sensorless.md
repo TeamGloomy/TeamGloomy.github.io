@@ -2,7 +2,7 @@
 title: Sensorless Homing on a Fly-Super5Pro H723
 tags: []
 keywords: 
-last_updated: 29/04/2023
+last_updated: 24/02/2024
 summary: "Using and Configuring Sensorless Homing on a Fly-Super5Pro H723"
 sidebar: mydoc_sidebar
 permalink: fly_super5pro_h723_sensorless.html
@@ -16,7 +16,7 @@ TMC: "{ PB_7, PC_7, PC_6, PC_13, PC_14, PC_15 }"
 example: "stepper.TmcDiagPins = { PB_7, PC_7 }"
 example2: "stepper.TmcDiagPins = { NoPin, PC_7 }"
 board: fly_super5_h723
-onboardDrivers: no
+onboardDrivers: "no"
 ---
 
 {% include custom/3.4/sensorless.html %}
