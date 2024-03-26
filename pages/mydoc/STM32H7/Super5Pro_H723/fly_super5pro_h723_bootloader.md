@@ -21,4 +21,4 @@ bootloader_jumper_qty: 2
 
 ---
 
-{% include custom/bootloader/bootloader_usb.html %}
+{% include custom/3.4/bootloader/bootloader_usb.html %}
