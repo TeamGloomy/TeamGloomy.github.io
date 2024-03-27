@@ -10,6 +10,8 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+firmware: "firmware_e3pro3_f4.bin"
+wifiFirmware: "WiFiModule_esp32.bin"
 ---
 
 ## Overview

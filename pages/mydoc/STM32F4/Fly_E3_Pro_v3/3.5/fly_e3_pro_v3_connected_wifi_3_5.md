@@ -12,7 +12,7 @@ toc: false
 datatable: true
 boardname: Fly-E3-Pro-v3
 mcu: STM32F407VGT6
-firmware: firmware-fly_e3_pro_v3_f4-XXXX.bin
+firmware: firmware_e3pro3_f4.bin
 wifi: ESP32
 module: onboard
 rrfbootOverrides: false

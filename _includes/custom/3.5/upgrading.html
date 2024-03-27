@@ -8,17 +8,19 @@ The main changes are:-
 
 ### Upgrading
 
+The latest firmware files can be found [here]({{site.latestFirmware}}){:target="_blank"}
+
 With all the changes described above, here are some tips to upgrade the firmware from an earlier version.
 
-1. After uploading the new firmware bin file DWC will not ask you to install it. You need to use M997 P"<firmware file>" to trigger the install.  
+1. After uploading the new firmware bin file DWC will not ask you to install it. You need to use M997 P"{{page.firmware}}" to trigger the install.  
 2. On "some boards" the type of WiFi interface in use will not be known, you need to add wifi.moduleType= (esp32, esp32eth or esp8266) to board.txt to have DWC trigger when a firmware is installed.
 3. There is a bug in the current version of RRF that will prevent mainboards operating in CAN expansion mode from being upgraded over CAN. The simple solution is to remove the SD card and copy the new firmware to firmware.bin. This bug is only present if upgrading from a version of RRF lower than 3.5.0-RC4.  
 4. It is possible that on some SBC installations after installing the new firmware, the firmware may not run in SBC mode (and so DSF/DWC will not connect correctly). To resolve this put the SD card from the RRF board in a PC and add sbc.sbcMode=1 to the board.txt.
-5. If for some reason you wish to install the older 1.x version of the WiFi module firmware you will need to upload the firmware file to the board and then run M997 S1 p<name of the uploaded file>.
+5. If for some reason you wish to install the older 1.x version of the WiFi module firmware you will need to upload the firmware file to the board and then run M997 S1 P"{{page.wifiFirmware}}".
 
 ### Removing some Board.txt entries
 
-Once you are back up and running, as lot of the board.txt entries are now preset within the board specific images, it may be possible to reduce what is present in your specific board.txt.  
-Compare the list below with whats in your board.txt and where each line is the same, you can remove it from your board.txt. This may even result in an empty board.txt file (which is fine).  
+Once you are back up and running, as a lot of the board.txt entries are now preset within the board specific images, it may be possible to reduce what is present in your specific board.txt.  
+Compare the list below with whats in your board.txt and where each line is the same, you can remove it from your board.txt. This may even result in an empty board.txt file (which is fine). We suggest taking a backup of your board.txt file before you remove anything, especially if you wish to downgrade to an earlier version in the future.  
 
 {% include custom/3.5/rrfboot/rrfboot_fly_e3_pro_v3.html %}
