@@ -30,26 +30,26 @@ reprapSPIPins: "{PE_9, NoPin, PA_14}"
 
 The ender 3 stock display can be connected directly to the EXP1 header of the Fly-E3-Pro-v3. No modifications are required.
 
-{% include custom/3.4/12864/ender3_1header.html %}
+{% include custom/3.5/12864/ender3_1header.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="reprap" markdown="1">
 
-{% include custom/3.4/12864/reprap.html %}
+{% include custom/3.5/12864/reprap.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="fysetc" markdown="1">
 
-{% include custom/3.4/12864/fysetc_mini_21.html %}
+{% include custom/3.5/12864/fysetc_mini_21.html %}
 
 </div>
 
 </div>
 
-{% include custom/3.4/12864/menu.html %}
+{% include custom/3.5/12864/menu.html %}
 
-{% include custom/3.4/12864/troubleshooting.html %}
+{% include custom/3.5/12864/troubleshooting.html %}
 
-{% include custom/3.4/12864/sdcard.html %}
+{% include custom/3.5/12864/sdcard.html %}

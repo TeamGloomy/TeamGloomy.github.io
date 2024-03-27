@@ -2,7 +2,7 @@
 title: Connecting a 12864 screen to a Fly-E3-Pro-v3 in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 04/06/2023
+last_updated: 27/03/2024
 summary: "How to connect a 12864 screen to a Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_screen_12864_3_5.html

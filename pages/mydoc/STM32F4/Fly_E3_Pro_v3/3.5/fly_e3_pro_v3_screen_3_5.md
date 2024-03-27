@@ -2,7 +2,7 @@
 title: Connecting a screen to a Fly-E3-Pro-v3 in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 07/05/2022
+last_updated: 27/03/2024
 summary: "How to connect a serial screen to a Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_screen_3_5.html
@@ -13,7 +13,7 @@ datatable: true
 boardname: Fly-E3-Pro-v3
 RX: "PA_10"
 TX: "PA_9"
-12864url: "/fly_e3_pro_v3_screen_12864.html"
+12864url: "/fly_e3_pro_v3_screen_12864_3_5.html"
 screenType: both
 header: "screen"
 ---

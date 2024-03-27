@@ -2,7 +2,7 @@
 title: Connecting a PT100 or Type 'K' Thermocouple to a Fly-E3-Pro-v3 in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 15/06/2022
+last_updated: 27/03/2024
 summary: "How to connect a PT100 or Type 'K' Thermocouple to a Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_pt100_3_5.html

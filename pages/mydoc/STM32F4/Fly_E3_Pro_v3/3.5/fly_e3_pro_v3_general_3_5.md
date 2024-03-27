@@ -2,7 +2,7 @@
 title: Fly-E3-Pro-v3 General Information with RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 15/02/2023
+last_updated: 27/03/2024
 summary: "General information regarding the Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_general_3_5.html

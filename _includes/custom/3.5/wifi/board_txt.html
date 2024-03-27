@@ -4,10 +4,14 @@ If you are using a set of config files provided by someone else or have no need 
 From 3.5-RC4, there is no longer a requirement to include a board.txt file, assuming you don't need anything above and the settings included in the image.  
 The preset configurables are listed below for reference.  
 
-{% include custom/3.5/rrfboot/rrfboot_fly_e3_pro_v3.html %}
+{% include {{page.rrfboot}} %}
 
 {% if page.rrfbootOverrides == false %}
-Unless you are overriding some of the above settings, or adding additional features, such as an accelerometer or 12864 display, a board.txt file is not required.
-{% endif %}
+Unless you are overriding some of the above settings, or adding additional features, such as an accelerometer or 12864 display, a board.txt file is not required.  
+
+### Sensorless Homing
+
+Follow the instructions as found [here]({{page.sensorless}})
 
 You can now continue getting the SD card in the correct format.
+{% endif %}

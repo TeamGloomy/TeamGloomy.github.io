@@ -2,7 +2,7 @@
 title: Fly-E3-Pro-v3 Pin Names in Firmware in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 12/06/2023
+last_updated: 27/03/2024
 summary: "The pin names of the Fly-E3-Pro-v3 in the firmware"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_pins_3_5.html
@@ -87,13 +87,13 @@ Where NoPin is present, then that pin is not configured by default.
 
 <div class="datatable-begin"></div>
 
-|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
-| :------------- |:-------------|:-------------|:-------------|:-------------|
-|0|PA_5|PA_6|PA_7|Hardware|
-|1|PB_13|PB_14|PB_15|Hardware|
-|2|PB_3|PB_4|PB_5|Hardware|
-|3|PC_2|PC_0|PC_1|Software|
-|4|PE_10|NoPin|PE_8|Software|
-|5|NoPin|NoPin|NoPin|Software|
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software | Use |
+| :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
+|0|NoPin|NoPin|NoPin|Hardware||
+|1|PB_13|PB_14|PB_15|Hardware|WiFi Module|
+|2|PB_3|PB_4|PB_5|Hardware|EXP2|
+|3|PD_14|PD_12|PD_13|Software|MAX31855 and MAX31865|
+|4|PE_10|NoPin|PE_8|Software|Single wire Ender displays|
+|5|PE_9|NoPin|PA_14|Software|Reprapdiscount Display|
 
 <div class="datatable-end"></div>

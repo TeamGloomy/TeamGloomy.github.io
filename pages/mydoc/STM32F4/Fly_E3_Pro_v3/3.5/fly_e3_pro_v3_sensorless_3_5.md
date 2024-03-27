@@ -2,7 +2,7 @@
 title: Sensorless Homing on a Fly-E3-Pro-v3 in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 06/01/2023
+last_updated: 27/03/2024
 summary: "Using and Configuring Sensorless Homing on a Fly-E3-Pro-v3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_sensorless_3_5.html

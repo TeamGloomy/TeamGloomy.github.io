@@ -2,7 +2,7 @@
 title: Adding CAN-FD to a Fly-E3-Pro-v3 in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 30/08/2023
+last_updated: 27/03/2024
 summary: "How to add CAN-FD to a Fly-E3-Pro-v3 and connect a CAN-FD Toolboard"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_v3_spi2canfd_3_5.html
