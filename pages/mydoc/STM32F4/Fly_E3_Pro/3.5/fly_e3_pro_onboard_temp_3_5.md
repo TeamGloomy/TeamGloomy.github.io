@@ -15,4 +15,4 @@ location: "near the X and Y stepper motor drivers"
 resistor:
 ---
 
-{% include custom/3.4/onboard_temp.html %}
+{% include custom/3.5/onboard_temp.html %}

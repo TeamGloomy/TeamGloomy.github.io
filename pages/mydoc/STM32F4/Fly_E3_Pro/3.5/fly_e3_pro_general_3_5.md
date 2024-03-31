@@ -17,10 +17,6 @@ datatable: true
 This page covers any general information for the Fly-E3-Pro board.  
 It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DCEqwdT).  
 
-### Board.txt Name
-
-The board name in board.txt is **fly_e3_pro**.
-
 ### Z Driver Jumpers
 
 If only one Z output is being used, jumpers should be installed on the other Z output as shown below.
@@ -47,7 +43,7 @@ The board can handle an input voltage up to 32v.
 ### Initial Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
-Follow the [WiFi instructions](fly_e3_pro_connected_wifi.html).
+Follow the [WiFi instructions](fly_e3_pro_connected_wifi_3_5.html).
 
 ## Ender 3 Conversion
 
