@@ -49,7 +49,7 @@ The accelerometer should be mounted firmly to the tool. For a bed slinger (such 
 
 Add the following to board.txt.  
 If you don't have a board.txt file, it can be added in the sys folder (same folder that config.g goes in) using DWC.  
-{% if {{page.spiChannel}} == 0 or {{page.spiChannel}} == 1 or {{page.spiChannel}} == 2 or {{page.spiChannel}} == 3 %}
+{% if {{page.spiChannel}} == 0 or {{page.spiChannel}} == 1 or {{page.spiChannel}} == 2 or {{page.spiChannel}} == 3 or {{page.showSPI}} == false %}
 ```
 accelerometer.spiChannel = {{page.spiChannel}}
 ```
