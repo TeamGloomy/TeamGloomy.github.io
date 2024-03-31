@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to a Fly-E3 in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 27/03/2024
+last_updated: 31/03/2024
 summary: "How to connect an accelerometer to a Fly-E3"
 sidebar: mydoc_sidebar
 permalink: fly_e3_accelerometer_3_5.html
@@ -16,7 +16,7 @@ SDA: PE_9
 SDO: PE_10
 CS: PE_8
 int: PB_1
-spiChannel: 5
+spiChannel: 4
 location: EXP1 header
 ---
 

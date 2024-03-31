@@ -2,7 +2,7 @@
 title: Connecting a Fly-E3 via WiFi in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 27/03/2024
+last_updated: 31/03/2024
 summary: "How to connect a Fly-E3 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_e3_connected_wifi_3_5.html
@@ -21,6 +21,7 @@ stepperSPI: 5
 onboardDrivers: no
 rrfboot: custom/3.5/rrfboot/rrfboot_fly_e3.html
 sensorless: "fly_e3_sensorless_3_5.html"
+page.spiInfo: "{PD_6, PD_4, PD_5}"
 ---
 
 {% include custom/3.5/wifi/overview.html %}
