@@ -28,4 +28,6 @@ With all the changes described above, here are some tips to upgrade the firmware
 Once you are back up and running, as we now load the board.txt file from the SBC, you will need to populate the board.txt file on the SBC via DWC. Create a board.txt file in the system folder (the same location as config.g).    
 Compare the list below with whats in your board.txt and where each line is the same, you can remove it from your board.txt. This may even result in an empty board.txt file (which is fine). We suggest taking a backup of your board.txt file before you remove anything, especially if you wish to downgrade to an earlier version in the future.  
 
-{% include {{page.rrfboot}} %}
+{% if page.rrfboot %}
+  {% include {{ page.rrfboot }} %}
+{% endif %}

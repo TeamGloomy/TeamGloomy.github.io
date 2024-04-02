@@ -16,7 +16,7 @@ firmware: firmware_e3pro_f4.bin
 wifi: ESP8266
 module: onboard
 schematic: https://github.com/Mellow-3D/Fly-E3-Pro/blob/main/Schematic/Schematic_E3-PRO.pdf
-rrfboot: custom/3.5/rrfboot/rrfboot_fly_e3_pro.html
+rrfboot: "custom/3.5/rrfboot/rrfboot_fly_e3_pro.html"
 sensorless: "fly_e3_pro_sensorless_3_5.html"
 ---
 
