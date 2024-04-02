@@ -1,5 +1,5 @@
 ---
-title: Connecting an accelerometer to an BTT Octopus v1.1 F429 Version
+title: Connecting an accelerometer to an BTT Octopus v1.1 F429 Version in RRF 3.5.0 Onwards
 tags: []
 keywords: 
 last_updated: 02/04/2024

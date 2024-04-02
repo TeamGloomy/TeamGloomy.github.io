@@ -1,5 +1,5 @@
 ---
-title: Upgrading a BTT Octopus v1.1 F429 Version in SBC Mode to 3.5.0 from earlier versions
+title: Upgrading a BTT Octopus v1.1 F429 Version in SBC Mode to 3.5.0 from earlier versions in RRF 3.5.0 Onwards
 tags: []
 keywords: 
 last_updated: 31/03/2024

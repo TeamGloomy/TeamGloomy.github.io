@@ -1,5 +1,5 @@
 ---
-title: Connecting an BTT Octopus v1.1 F429 Version via SBC
+title: Connecting an BTT Octopus v1.1 F429 Version via SBC in RRF 3.5.0 Onwards
 tags: []
 keywords: 
 last_updated: 02/04/2024

@@ -1,21 +1,21 @@
 ---
-title: BTT Octopus v1.1 F429 Version Pin Names in Firmware in RRF 3.5.0 Onwards
+title: BTT Octopus Pro v1.0 F429 Version Pin Names in Firmware
 tags: []
 keywords: 
-last_updated: 02/04/2024
-summary: "The pin names of the BTT Octopus v1.1 F429 Version in the firmware"
+last_updated: 12/06/2023
+summary: "The pin names of the BTT Octopus Pro v1.0 F429 Version in the firmware"
 sidebar: mydoc_sidebar
-permalink: btt_octopus_1.1_f429_pins_3_5.html
+permalink: btt_octopus_pro_1.0_f429_pins.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: BTT Octopus v1.1 F429 Version
+boardname: BTT Octopus Pro v1.0 F429 Version
 ---
 
 ## {{boardname}} Pinout Diagram
 
-{% include image.html file="btt_octopus_1.1_pins.png" url="https://teamgloomy.github.io/images/btt_octopus_1.1_pins.png" alt="BTT Octopus v1.1 F429 Version" caption="BTT Octopus v1.1 F429 Version Pinout" %}
+{% include image.html file="btt_octopus_pro_1.0_pins.png" url="https://teamgloomy.github.io/images/btt_octopus_pro_1.0_pins.png" alt="BTT Octopus Pro v1.0 F429 Version" caption="BTT Octopus Pro v1.0 F429 Version Pinout" %}
 
 ## {{boardname}} Driver Pins in Firmware
 
@@ -37,13 +37,12 @@ Driver pin numbers. They are separated into driver number.
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.
 
-{% include warning.html content="The BTT Octopus v1.1 F429 Version Pinout is incorrect for RX and TX pins on the WiFi header. They should be D.9 and D.8" %}
-
 <div class="datatable-begin"></div>
 
 |Pin Number|Pin Name 1|Pin Name 2|PWM Hardware Timer|
 | :------------- |:-------------|:-------------|:-------------|
 |PA_1|bed|hbed|Timer 2|
+|PA_10|RX1|tft-rx||
 |PA_13|LED|||
 |PA_2|e0heat|heat0|Timer 2|
 |PA_3|e1heat|heat1|Timer 2|
@@ -51,7 +50,8 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PA_5|LCD_SCK||Timer 8|
 |PA_6|LCD_MISO||Timer 13|
 |PA_7|LCD_MOSI||Timer 14|
-|PA_8|fan0|||
+|PA_8|fan0|fan||
+|PA_9|TX1|tft-tx||
 |PB_0|Neopixel||Timer 3|
 |PB_1|BTN_EN1||Timer 3|
 |PB_10|e2heat|heat2|Timer 2|
@@ -64,14 +64,15 @@ If the pins aren't in the table (due to not having a special name), then the pin
 |PC_0|PWRDET|||
 |PC_15|LCD_CD|||
 |PC_4|X-CS|||
+|PC_5|probe1|||
 |PC_6|Z-CS||Timer 8|
 |PC_7|E0-CS||Timer 3|
+|PD_3|E4-CS|||
 |PD_11|Y-CS|||
 |PD_12|fan2||Timer 4|
 |PD_13|fan3||Timer 4|
 |PD_14|fan4||Timer 4|
 |PD_15|fan5||Timer 4|
-|PD_3|E4-CS|||
 |PE_1|E3-CS|||
 |PE_10|LCD_RS|||
 |PE_11|PSON|||

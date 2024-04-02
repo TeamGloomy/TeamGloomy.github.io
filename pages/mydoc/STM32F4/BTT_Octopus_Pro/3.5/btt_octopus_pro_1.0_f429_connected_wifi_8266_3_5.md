@@ -1,26 +1,26 @@
 ---
-title: Connecting an BTT Octopus v1.1 F429 Version via an ESP8266 or ESP32 WiFi Adapter in RRF 3.5.0 Onwards
+title: Connecting an BTT Octopus Pro v1.0 F429 Version via an ESP8266 or ESP32 WiFi Adapter in RRF 3.5.0 Onwards
 tags: []
 keywords: 
 last_updated: 02/04/2024
-summary: "How to connect to an BTT Octopus v1.1 F429 Version via an ESP8266 or ESP32 WiFi Adapter"
+summary: "How to connect to an BTT Octopus Pro v1.0 F429 Version via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: btt_octopus_1.1_f429_connected_wifi_8266_3_5.html
+permalink: btt_octopus_pro_1.0_f429_connected_wifi_8266_3_5.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: BTT Octopus v1.1 F429 Version
+boardname: BTT Octopus Pro v1.0 F429 Version
 mcu: STM32F407VGT6
-firmware: firmware_octopus1_1_f4.bin
+firmware: firmware_octopuspro1_0_f4.bin
 wifi: both
 module: small
-schematic: https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/blob/master/Hardware/BIGTREETECH%20Octopus%20-%20PIN.pdf
+schematic: https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-Pro/blob/master/Hardware/BIGTREETECH%20Octopus%20Pro_SCH.pdf
 stepperSPI: 0
 onboardDrivers: no
 rrfbootOverrides: true
-rrfboot: custom/3.5/rrfboot/rrfboot_btt_octopus_1.1_f429.html
-sensorless: "btt_octopus_1.1_f429_sensorless_3_5.html"
+rrfboot: custom/3.5/rrfboot/rrfboot_btt_octopus_pro_1.0_f429.html
+sensorless: "btt_octopus_pro_1.0_f429_sensorless_3_5.html"
 ---
 
 {% include custom/3.5/wifi/overview.html %}

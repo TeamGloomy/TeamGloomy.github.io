@@ -1,16 +1,16 @@
 ---
-title: Connecting a 12864 screen to an BTT Octopus v1.1 F429 Version in RRF 3.5.0 Onwards
+title: Connecting a 12864 screen to an BTT Octopus Pro v1.0 F429 Version in RRF 3.5.0 Onwards
 tags: []
 keywords: 
 last_updated: 02/04/2024
-summary: "How to connect a 12864 screen to an BTT Octopus v1.1 F429 Version"
+summary: "How to connect a 12864 screen to an BTT Octopus Pro v1.0 F429 Version"
 sidebar: mydoc_sidebar
-permalink: btt_octopus_1.1_f429_screen_12864_3_5.html
+permalink: btt_octopus_pro_1.0_f429_screen_12864_3_5.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: BTT Octopus v1.1 F429 Version
+boardname: BTT Octopus Pro v1.0 F429 Version
 spiChannel: 0
 reprapCustomSPI: true
 reprapSPIChannel : 5
