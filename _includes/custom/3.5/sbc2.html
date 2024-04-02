@@ -1,0 +1,56 @@
+### Booting
+
+Turn it all on and, assuming you have followed the steps correctly, the board will boot correctly.  
+
+You can either navigate to duet3.local or find the IP address of the rasberry pi using your router. If you don't have access to that, use something like [Fing](https://www.fing.com/products/fing-desktop){:target="_blank"} to scan your network.
+
+{% include important.html content="DWC with load with an error of DCS not started if the board is not connected to the pi. If the board is connected and you still receive that error then there is an issue with your wiring." %}
+
+### Errors
+
+Please report any disconnects on either the forum or discord.
+
+### Editing board.txt
+
+{% include custom/3.5/drivers_post35.html %}
+
+### Uploading your config
+
+Once you've connected to the raspberry pi through your router, start to customise your config.g file etc or upload the outputted zip file from the [Configurator](https://teamgloomy.github.io/Configurator){:target="_blank"} to the pi using the system tab of DWC.
+
+### Changing the SBC hostname
+
+This is an optional step if you only have a single duet3 on your network. It is required if you have more than one SBC configured RRF setup (as each setup on a network needs a unique host name) or you just want to change the name from the default "duet3".
+
+The name of the printer is its hostname on the network, you will need to connect to the SBC over SSH in order to run the Raspberry Pi configuration utility and change the hostname. 
+
+{% include note.html content="you cannot currently use the gcode command M550 to set your printer hostname, as you can when using a WiFi setup" %}
+
+1. Connect via ssh
+2. At a command prompt type
+```
+sudo raspi-config
+```
+3. Select “System Options” -> Hostname-> “OK”-> and set the new printername/hostname.
+
+4. Select “Finish” and reboot.
+
+{% include note.html content="The hostname must confirm to certain limitations to be valid. Valid characters for hostnames are letters from a to z, the digits from 0 to 9, the hyphen (-)." %}  
+
+### Once up and running
+
+You will need to PID tune your tools and your bed. Please be aware that bed tuning may take up to an hour and tool tuning normally takes around 15 minutes. If it takes longer, that is also fine as up to 30 cycles may be ran.  
+
+To tune the bed, run the following command, changing the temperature (the S value) if a different tuning temperature is required.  
+```
+M303 H0 S60
+```  
+
+To tune each tool, run the following command, changing the temperature (the S value) if a different tuning temperature is required. This proceedure will activate the part cooling fans during the final phase of the tuning process so their effect is taken into account. If your printer has more than one tool, make sure each one of them is tuned.  
+```
+M303 T0 S220
+```
+
+Once the tuning is complete, either copy the M307 command into the heater definitions or send M500, ensuring you have M501 at the end of your config.g.  
+If the tuning fails at the end, carry on saving the values as in most cases the outputted values still work correctly.  
+If the values still result in a heater fault, please refer to [this](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Heaters_tuning#setting-the-model-parameters-manually){:target="_blank"} wiki page for information about how to adjust the values manually.  

@@ -19,732 +19,732 @@ children:
     type: frontmatter
 
 - title: Overview
-  output: web, pdf
+  output: web
   children:
 
   - title: Homepage
     url: index.html
-    output: web, pdf
+    output: web
     type: homepage
 
   - title: Getting Started
     url: getting_started.html
-    output: web, pdf
+    output: web
 
   - title: Supported Boards and Drivers
     url: supported_boards.html
-    output: web, pdf
+    output: web
 
   - title: Getting Support
     url: support.html
-    output: web, pdf
+    output: web
 
   - title: FAQ
     url: faq.html
-    output: web, pdf
+    output: web
 
   - title: TeamGloomy
     url: TeamGloomy.html
-    output: web, pdf
+    output: web
 
 - title: Release Notes
-  output: web, pdf
+  output: web
   children:
 
   - title: Reprapfirmware 3.5
-    output: web, pdf
+    output: web
     children:
 
     - title: 3.5.0-rc.2+101 Release Notes
       url: release_notes_3.5.0-rc.2+101.html
-      output: web, pdf
+      output: web
 
     - title: 3.5.0-rc.1+102 Release Notes
       url: release_notes_3.5.0-rc.1+102.html
-      output: web, pdf
+      output: web
 
     - title: 3.5.0-beta.4_101 Release Notes
       url: release_notes_3.5.0-beta.4_101.html
-      output: web, pdf
+      output: web
 
     - title: 3.5beta2+_106 Release Notes
       url: release_notes_3.5beta2_106.html
-      output: web, pdf
+      output: web
 
     - title: 3.5beta2+_103 Release Notes
       url: release_notes_3.5beta2_103.html
-      output: web, pdf
+      output: web
 
   - title: Reprapfirmware 3.4
-    output: web, pdf
+    output: web
     children:
   
     - title: 3.4.6_101 Release Notes
       url: release_notes_3.4.6_101.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.5+_107 Release Notes
       url: release_notes_3.4.5_107.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.5+_104 Release Notes
       url: release_notes_3.4.5_104.html
-      output: web, pdf
+      output: web
     
     - title: 3.4.5+_103 Release Notes
       url: release_notes_3.4.5_103.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.5_102 Release Notes
       url: release_notes_3.4.5_102.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.4_103 Release Notes
       url: release_notes_3.4.4_103.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.4_102 Release Notes
       url: release_notes_3.4.4_102.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.2_101 Release Notes
       url: release_notes_3.4.2_101.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.2rc2_102 Release Notes
       url: release_notes_3.4.2rc2_102.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.1_102 Release Notes
       url: release_notes_3.4.1_102.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.1rc1_102 Release Notes
       url: release_notes_3.4.1rc1_102.html
-      output: web, pdf
+      output: web
   
     - title: 3.4.0_1 Release Notes
       url: release_notes_3.4.0_1.html
-      output: web, pdf
+      output: web
   
     - title: 3.4rc2_1 Release Notes
       url: release_notes_3.4rc2_1.html
-      output: web, pdf
+      output: web
   
     - title: 3.4rc1_1 Release Notes
       url: release_notes_3.4rc1_1.html
-      output: web, pdf
+      output: web
   
     - title: 3.4beta7_2 Release Notes
       url: release_notes_3.4beta7_2.html
-      output: web, pdf
+      output: web
   
     - title: 3.4beta6_1 Release Notes
       url: release_notes_3.4beta6_1.html
-      output: web, pdf
+      output: web
   
     - title: 3.4beta5_1 Release Notes
       url: release_notes_3.4beta5_1.html
-      output: web, pdf
+      output: web
 
     - title: 3.4beta4_1 Release Notes
       url: release_notes_3.4beta4_1.html
-      output: web, pdf
+      output: web
   
     - title: 3.4beta3+1_2 Release Notes
       url: release_notes_3.4beta3+1_2.html
-      output: web, pdf
+      output: web
   
     - title: 3.4beta2_2 Release Notes
       url: release_notes_3.4beta2_2.html
-      output: web, pdf
+      output: web
 
   - title: Reprapfirmware 3.3
-    output: web, pdf
+    output: web
     children:
 
     - title: 3.3.0_16 Release Notes
       url: release_notes_3.3.0_16.html
-      output: web, pdf
+      output: web
   
     - title: 3.3.0_14 Release Notes
       url: release_notes_3.3.0_14.html
-      output: web, pdf
+      output: web
   
     - title: 3.3.0_11 Release Notes
       url: release_notes_3.3.0_11.html
-      output: web, pdf
+      output: web
   
     - title: 3.3.0_10 Release Notes
       url: release_notes_3.3.0_10.html
-      output: web, pdf
+      output: web
 
     - title: 3.3.0_9 Release Notes
       url: release_notes_3.3.0_9.html
-      output: web, pdf
+      output: web
   
     - title: 3.3.0_8 Release Notes
       url: release_notes_3.3.0_8.html
-      output: web, pdf
+      output: web
   
     - title: 3.3.0_6 Release Notes
       url: release_notes_3.3.0_6.html
-      output: web, pdf
+      output: web
 
     - title: 3.3.0_5 Release Notes
       url: release_notes_3.3.0_5.html
-      output: web, pdf
+      output: web
   
     - title: 3.3_2 Release Notes
       url: release_notes_3.3_2.html
-      output: web, pdf
+      output: web
   
     - title: 3.3RC3_2 Release Notes
       url: release_notes_3.3rc3_2.html
-      output: web, pdf
+      output: web
   
     - title: 3.3RC2+1_1 Release Notes
       url: release_notes_3.3rc2+1_1.html
-      output: web, pdf
+      output: web
   
     - title: 3.3beta3_2 Release Notes
       url: release_notes_3.3beta3_2.html
-      output: web, pdf
+      output: web
   
     - title: 3.3beta1_6 Release Notes
       url: release_notes_3.3beta1_6.html
-      output: web, pdf
+      output: web
 
     - title: 3.3beta1_5 Release Notes
       url: release_notes_3.3beta1_5.html
-      output: web, pdf
+      output: web
 
     - title: 3.3beta1_3 Release Notes
       url: release_notes_3.3beta1_3.html
-      output: web, pdf
+      output: web
   
   - title: Reprapfirmware 3.2
-    output: web, pdf
+    output: web
     children:
   
     - title: 3.2.2_2 Release Notes
       url: release_notes_3.2.2_2.html
-      output: web, pdf
+      output: web
   
     - title: 3.2_7 Release Notes
       url: release_notes_3.2_7.html
-      output: web, pdf
+      output: web
   
     - title: 3.2_4 Release Notes
       url: release_notes_3.2_4.html
-      output: web, pdf
+      output: web
   
     - title: 3.2_1 Release Notes
       url: release_notes_3.2_1.html
-      output: web, pdf
+      output: web
 
     - title: 3.2 RC2 Release notes
       url: release_notes_3.2_RC2.html
-      output: web, pdf
+      output: web
 
 - title: General
-  output: web, pdf
+  output: web
   children:
 
   - title: Adding a Camera
     url: camera.html
-    output: web, pdf
+    output: web
 
   - title: Board.txt Configurables
     url: board_txt_stm32.html
-    output: web, pdf
+    output: web
 
   - title: Connecting a Smart Effector
     url: smart_effector.html
-    output: web, pdf
+    output: web
 
   - title: Connecting a BME280
     url: bme280.html
-    output: web, pdf
+    output: web
   
   - title: Connecting a DHT22
     url: dht22.html
-    output: web, pdf
+    output: web
 
   - title: Configuring a BTT Smart Filament Monitor
     url: btt_smart_filament.html
-    output: web, pdf
+    output: web
 
   - title: Configuring ExeconMcode
     url: execonmcode.html
-    output: web, pdf
+    output: web
 
   - title: Configuring Neopixels
     url: neopixels.html
-    output: web, pdf
+    output: web
 
   - title: Configuring Putty
     url: putty.html
-    output: web, pdf
+    output: web
 
   - title: Custom Commands and G-Code
     url: custom_commands_gcode.html
-    output: web, pdf
+    output: web
 
   - title: Driver Timings
     url: driver_timings.html
-    output: web, pdf
+    output: web
 
   - title: DWC Plugins
     url: plugins.html
-    output: web, pdf
+    output: web
 
   - title: Firmware Build Instructions
     url: firmware_build.html
-    output: web, pdf
+    output: web
 
   - title: How to Know What Pin is Interrupt Capable
     url: interrupt_pins.html
-    output: web, pdf
+    output: web
 
   - title: MCU Comparisons
     url: mcu_types.html
-    output: web, pdf
+    output: web
 
   - title: SBC Transfer Ready Pin Timeouts
     url: sbc_transfer_timeout.html
-    output: web, pdf
+    output: web
 
   - title: Sensorless Homing and Stall Detection
     url: sensorless.html
-    output: web, pdf
+    output: web
 
   - title: Short to Ground Errors
     url: short_to_ground.html
-    output: web, pdf
+    output: web
 
   - title: Obtaining Information for Troubleshooting
     url: troubleshooting_information.html
-    output: web, pdf
+    output: web
   
   - title: Troubleshooting
     url: troubleshooting.html
-    output: web, pdf
+    output: web
 
   - title: Updating Standalone Setups
     url: updating_standalone.html
-    output: web, pdf
+    output: web
   
   - title: Useful Macros
     url: useful_macros.html
-    output: web, pdf
+    output: web
 
   - title: User Created Content
-    output: web, pdf
+    output: web
     children:
 
     - title: User Created Configs
       url: user_configs.html
-      output: web, pdf
+      output: web
 
     - title: User Created Guides
       url: user_guides.html
-      output: web, pdf
+      output: web
 
     - title: User Created Videos
       url: user_videos.html
-      output: web, pdf
+      output: web
 
     - title: DSF on Armbian
       url: dsf_on_armbian.html
-      output: web, pdf
+      output: web
 
 - title: LPC Boards
-  output: web, pdf
+  output: web
   children:
 
   - title: LPC Firmware Restrictions
     url: lpc_differences.html
-    output: web, pdf
+    output: web
 
   - title: Configuring an ESP8266 for LPC Boards
     url: lpc_esp8266.html
-    output: web, pdf
+    output: web
 
   - title: Configuring an SBC for LPC Boards
     url: lpc_sbc.html
-    output: web, pdf
+    output: web
 
   - title: Board.txt Configurables - LPC
     url: board_txt_lpc.html
-    output: web, pdf
+    output: web
 
   - title: Fly-CDY
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-CDY General Information
       url: fly_cdy_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via WiFi
       url: fly_cdy_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: fly_cdy_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch
       url: fly_cdy_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_cdy_pins.html
-      output: web, pdf
+      output: web
 
   - title: MKS Sbase v1.3
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: mks_sbase_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: mks_sbase_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch
       url: mks_sbase_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: mks_sbase_pins.html
-      output: web, pdf
+      output: web
 
   - title: MKS SGen L v1.0
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: mks_sgen_l_1_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: mks_sgen_l_1_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: mks_sgen_l_1_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch
       url: mks_sgen_l_1_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: mks_sgen_l_1_pins.html
-      output: web, pdf
+      output: web
 
   - title: MKS SGen L v2.0
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: mks_sgen_l_2_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: mks_sgen_l_2_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: mks_sgen_l_2_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch
       url: mks_sgen_l_2_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: mks_sgen_l_2_pins.html
-      output: web, pdf
+      output: web
 
   - title: Re-Arm
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: re_arm_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: re_arm_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: re_arm_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR v1.1
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: skr_1.1_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: skr_1.1_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: skr_1.1_screen.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_1.1_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR v1.3
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: skr_1.3_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: skr_1.3_connected_sbc.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: skr_1.3_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch
       url: skr_1.3_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: skr_1.3_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_1.3_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR v1.4 and v1.4T
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: skr_1.4_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: skr_1.4_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: skr_1.4_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch
       url: skr_1.4_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: skr_1.4_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_1.4_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR E3 Turbo
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: skr_E3T_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: skr_E3T_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: skr_E3T_screen.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a BLTouch
       url: skr_E3T_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_E3T_pins.html
-      output: web, pdf
+      output: web
 
 - title: STM32F4 Boards
-  output: web, pdf
+  output: web
   children:
 
   - title: STM32F4 Firmware Restrictions
     url: stm32_differences.html
-    output: web, pdf
+    output: web
 
   - title: STM32F4 PWM Hardware/Software
     url: stm32f4_pwm.html
-    output: web, pdf
+    output: web
 
   - title: Fly-407ZG
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-407ZG General Information
       url: fly_407zg_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via an ESP8266 WiFi Adapter
       url: fly_407zg_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Alternative ESP8266 WiFi Connection
       url: fly_407zg_alternative_esp8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via an ESP32 WiFi Adapter
       url: fly_407zg_connected_wifi_32.html
-      output: web, pdf
+      output: web
 
     - title: Alternative ESP32 WiFi Connection
       url: fly_407zg_alternative_esp32.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: fly_407zg_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: fly_407zg_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: fly_407zg_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_407zg_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: fly_407zg_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_407zg_pins.html
-      output: web, pdf
+      output: web
 
   - title: Fly-CDYv2
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-CDYv2 General Information
       url: fly_cdyv2_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via WiFi
       url: fly_cdyv2_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Adding CAN-FD
       url: fly_cdyv2_spi2canfd.html
-      output: web, pdf
+      output: web
     
     - title: Configuring Sensorless Homing
       url: fly_cdyv2_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Serial Screen
       url: fly_cdyv2_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: fly_cdyv2_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_cdyv2_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: fly_cdyv2_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Input Voltage Monitoring
       url: fly_cdyv2_voltage.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a PT100 or Type 'K' Thermocouple
       url: fly_cdyv2_pt100.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_cdyv2_pins.html
-      output: web, pdf
+      output: web
 
   - title: Fly-CDYv3
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-CDYv3 General Information
       url: fly_cdyv3_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via WiFi
       url: fly_cdyv3_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Adding CAN-FD
       url: fly_cdyv3_spi2canfd.html
-      output: web, pdf
+      output: web
     
     - title: Configuring Sensorless Homing
       url: fly_cdyv3_sensorless.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Serial Screen
       url: fly_cdyv3_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: fly_cdyv3_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_cdyv3_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: fly_cdyv3_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Input Voltage Monitoring
       url: fly_cdyv3_voltage.html
-      output: web, pdf
+      output: web
 
     - title: Reflashing the Bootloader
       url: fly_cdyv3_bootloader.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_cdyv3_pins.html
-      output: web, pdf
+      output: web
 
   - title: Fly-E3
-    output: web, pdf
+    output: web
     children:
 #
 #    - title: RRF 3.5.0-RC4 and above
@@ -753,7 +753,7 @@ children:
 #
 #      - title: Fly-E3 General Information
 #        url: fly_e3_general_3_5.html
-#        output: web, pdf
+#        output: web
 #
 #      - title: Upgrading from an earlier RRF version
 #        url: fly_e3_upgrading_3_5.html
@@ -761,35 +761,35 @@ children:
 #    
 #      - title: Connecting via WiFi
 #        url: fly_e3_connected_wifi_3_5.html
-#        output: web, pdf
+#        output: web
 #
 #      - title: CAN-FD can't be added
 #        url: fly_e3_spi2canfd_3_5.html
-#        output: web, pdf
+#        output: web
 #
 #      - title: Configuring Sensorless Homing
 #        url: fly_e3_sensorless_3_5.html
-#        output: web, pdf
+#        output: web
 #    
 #      - title: Connecting a Serial Screen
 #        url: fly_e3_screen_3_5.html
-#        output: web, pdf
+#        output: web
 #
 #      - title: Connecting a 12864 Screen
 #        url: fly_e3_screen_12864_3_5.html
-#        output: web, pdf
+#        output: web
 #
 #      - title: Connecting a BLTouch or BTT MicroProbe
 #        url: fly_e3_bltouch_3_5.html
-#        output: web, pdf
+#        output: web
 #
 #      - title: Connecting an Accelerometer
 #        url: fly_e3_accelerometer_3_5.html
-#        output: web, pdf
+#        output: web
 #
 #      - title: Connecting a PT100 or Type 'K' Thermocouple
 #        url: fly_e3_pt100_3_5.html
-#        output: web, pdf
+#        output: web
 #
 #      - title: rrfboot.txt
 #        url: fly_e3_rrfboot_3_5.html
@@ -797,7 +797,7 @@ children:
 #
 #      - title: Pin Names
 #        url: fly_e3_pins_3_5.html
-#        output: web, pdf
+#        output: web
 #    
 #    - title: RRF 3.4.6 and below
 #      output: web
@@ -805,151 +805,215 @@ children:
 #
       - title: Fly-E3 General Information
         url: fly_e3_general.html
-        output: web, pdf
+        output: web
     
       - title: Connecting via WiFi
         url: fly_e3_connected_wifi.html
-        output: web, pdf
+        output: web
 
       - title: CAN-FD can't be added
         url: fly_e3_spi2canfd.html
-        output: web, pdf
+        output: web
 
       - title: Configuring Sensorless Homing
         url: fly_e3_sensorless.html
-        output: web, pdf
+        output: web
     
       - title: Connecting a Serial Screen
         url: fly_e3_screen.html
-        output: web, pdf
+        output: web
 
       - title: Connecting a 12864 Screen
         url: fly_e3_screen_12864.html
-        output: web, pdf
+        output: web
 
       - title: Connecting a BLTouch or BTT MicroProbe
         url: fly_e3_bltouch.html
-        output: web, pdf
+        output: web
 
       - title: Connecting an Accelerometer
         url: fly_e3_accelerometer.html
-        output: web, pdf
+        output: web
 
       - title: Connecting a PT100 or Type 'K' Thermocouple
         url: fly_e3_pt100.html
-        output: web, pdf
+        output: web
 
       - title: Pin Names
         url: fly_e3_pins.html
-        output: web, pdf
+        output: web
 
   - title: Fly-E3-v2
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-E3-v2 General Information
       url: fly_e3_v2_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via WiFi
       url: fly_e3_v2_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Adding CAN-FD
       url: fly_e3_v2_spi2canfd.html
-      output: web, pdf
+      output: web
     
     - title: Configuring Sensorless Homing
       url: fly_e3_v2_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Serial Screen
       url: fly_e3_v2_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: fly_e3_v2_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_e3_v2_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: fly_e3_v2_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a PT100 or Type 'K' Thermocouple
       url: fly_e3_v2_pt100.html
-      output: web, pdf
+      output: web
 
     - title: Reflashing the Bootloader
       url: fly_e3_v2_bootloader.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_e3_v2_pins.html
-      output: web, pdf
+      output: web
   
   - title: Fly-E3-Pro
-    output: web, pdf
+    output: web
     children:
 
-    - title: Fly-E3-Pro General Information
-      url: fly_e3_pro_general.html
-      output: web, pdf
+#    - title: RRF 3.5.0-RC4 and above
+#      output: web
+#      children:
+#
+#      - title: Fly-E3-Pro General Information
+#        url: fly_e3_pro_general_3_5.html
+#        output: web
+#
+#      - title: Upgrading from an earlier RRF version
+#        url: fly_e3_pro_upgrading_3_5.html
+#        output: web
+#   
+#      - title: Connecting via WiFi
+#        url: fly_e3_pro_connected_wifi_3_5.html
+#        output: web
+#
+#      - title: CAN-FD can't be added
+#        url: fly_e3_pro_spi2canfd_3_5.html
+#        output: web
+#
+#      - title: Configuring Sensorless Homing
+#        url: fly_e3_pro_sensorless_3_5.html
+#        output: web
+#   
+#      - title: Connecting a Serial Screen
+#        url: fly_e3_pro_screen_3_5.html
+#        output: web
+#
+#      - title: Connecting a 12864 Screen
+#        url: fly_e3_pro_screen_12864_3_5.html
+#        output: web
+#
+#      - title: Connecting a BLTouch or BTT MicroProbe
+#        url: fly_e3_pro_bltouch_3_5.html
+#        output: web
+#
+#      - title: Connecting an Accelerometer
+#        url: fly_e3_pro_accelerometer_3_5.html
+#        output: web
+#
+#      - title: Connecting a PT100 or Type 'K' Thermocouple
+#        url: fly_e3_pro_pt100_3_5.html
+#        output: web
+#
+#      - title: Input Voltage Monitoring
+#        url: fly_e3_pro_voltage_3_5.html
+#        output: web
+#
+#      - title: Configuring the Onboard Temperature Sensor
+#        url: fly_e3_pro_onboard_temp_3_5.html
+#        output: web
+#
+#      - title: rrfboot.txt
+#        url: fly_e3_pro_rrfboot_3_5.html
+#        output: web
+#
+#      - title: Pin Names
+#        url: fly_e3_pro_pins_3_5.html
+#        output: web
+#
+#    - title: RRF 3.4.6 and below
+#      output: web
+#      children:
+
+      - title: Fly-E3-Pro General Information
+        url: fly_e3_pro_general.html
+        output: web
     
-    - title: Connecting via WiFi
-      url: fly_e3_pro_connected_wifi.html
-      output: web, pdf
+      - title: Connecting via WiFi
+        url: fly_e3_pro_connected_wifi.html
+        output: web
 
-    - title: CAN-FD can't be added
-      url: fly_e3_pro_spi2canfd.html
-      output: web, pdf
+      - title: CAN-FD can't be added
+        url: fly_e3_pro_spi2canfd.html
+        output: web
 
-    - title: Configuring Sensorless Homing
-      url: fly_e3_pro_sensorless.html
-      output: web, pdf
+      - title: Configuring Sensorless Homing
+        url: fly_e3_pro_sensorless.html
+        output: web
     
-    - title: Connecting a Serial Screen
-      url: fly_e3_pro_screen.html
-      output: web, pdf
+      - title: Connecting a Serial Screen
+        url: fly_e3_pro_screen.html
+        output: web
 
-    - title: Connecting a 12864 Screen
-      url: fly_e3_pro_screen_12864.html
-      output: web, pdf
+      - title: Connecting a 12864 Screen
+        url: fly_e3_pro_screen_12864.html
+        output: web
 
-    - title: Connecting a BLTouch or BTT MicroProbe
-      url: fly_e3_pro_bltouch.html
-      output: web, pdf
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_e3_pro_bltouch.html
+        output: web
 
-    - title: Connecting an Accelerometer
-      url: fly_e3_pro_accelerometer.html
-      output: web, pdf
+      - title: Connecting an Accelerometer
+        url: fly_e3_pro_accelerometer.html
+        output: web
 
-    - title: Connecting a PT100 or Type 'K' Thermocouple
-      url: fly_e3_pro_pt100.html
-      output: web, pdf
+      - title: Connecting a PT100 or Type 'K' Thermocouple
+        url: fly_e3_pro_pt100.html
+        output: web
 
-    - title: Input Voltage Monitoring
-      url: fly_e3_pro_voltage.html
-      output: web, pdf
+      - title: Input Voltage Monitoring
+        url: fly_e3_pro_voltage.html
+        output: web
 
-    - title: Configuring the Onboard Temperature Sensor
-      url: fly_e3_pro_onboard_temp.html
-      output: web, pdf
+      - title: Configuring the Onboard Temperature Sensor
+        url: fly_e3_pro_onboard_temp.html
+        output: web
 
-    - title: Pin Names
-      url: fly_e3_pro_pins.html
-      output: web, pdf
+      - title: Pin Names
+        url: fly_e3_pro_pins.html
+        output: web
 
   - title: Fly-E3-Pro-v2
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-E3-Pro-v2 General Information
       url: fly_e3_prov2_general.html
-      output: web, pdf
+      output: web
     
   - title: Fly-E3-Pro-v3
     output: web
@@ -1016,1091 +1080,1091 @@ children:
 #        output: web
 #
 #    - title: RRF 3.4.6 and below
-#      output: web, pdf
+#      output: web
 #      children:
 #
       - title: Fly-E3-Pro-v3 General Information
         url: fly_e3_pro_v3_general.html
-        output: web, pdf
+        output: web
     
       - title: Connecting via WiFi
         url: fly_e3_pro_v3_connected_wifi.html
-        output: web, pdf
+        output: web
 
       - title: Adding CAN-FD
         url: fly_e3_pro_v3_spi2canfd.html
-        output: web, pdf
+        output: web
     
       - title: Configuring Sensorless Homing
         url: fly_e3_pro_v3_sensorless.html
-        output: web, pdf
+        output: web
 
       - title: Connecting a Serial Screen
         url: fly_e3_pro_v3_screen.html
-        output: web, pdf
+        output: web
 
       - title: Connecting a 12864 Screen
         url: fly_e3_pro_v3_screen_12864.html
-        output: web, pdf
+        output: web
 
       - title: Connecting a BLTouch or BTT MicroProbe
         url: fly_e3_pro_v3_bltouch.html
-        output: web, pdf
+        output: web
 
       - title: Connecting an Accelerometer
         url: fly_e3_pro_v3_accelerometer.html
-        output: web, pdf
+        output: web
 
       - title: Connecting a PT100 or Type 'K' Thermocouple
         url: fly_e3_pro_v3_pt100.html
-        output: web, pdf
+        output: web
 
       - title: Input Voltage Monitoring
         url: fly_e3_pro_v3_voltage.html
-        output: web, pdf
+        output: web
 
       - title: Configuring the Onboard Temperature Sensor
         url: fly_e3_pro_v3_onboard_temp.html
-        output: web, pdf
+        output: web
 
       - title: Pin Names
         url: fly_e3_pro_v3_pins.html
-        output: web, pdf
+        output: web
   
   - title: Fly-Super8
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-Super8 General Information
       url: fly_super8_general.html
-      output: web, pdf
+      output: web
     
     - title: Hardware Revisions
       url: fly_super8_hardware_revisions.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via WiFi
       url: fly_super8_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Adding CAN-FD
       url: fly_super8_spi2canfd.html
-      output: web, pdf
+      output: web
     
     - title: Configuring Sensorless Homing
       url: fly_super8_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Serial Screen
       url: fly_super8_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: fly_super8_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_super8_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: fly_super8_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Input Voltage Monitoring
       url: fly_super8_voltage.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: fly_super8_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_super8_pins.html
-      output: web, pdf
+      output: web
 
   - title: BTT Octopus v1.1 f429 Version
-    output: web, pdf
+    output: web
     children:
 
     - title: BTT Octopus v1.1 f429 Version General Information
       url: btt_octopus_1.1_f429_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
       url: btt_octopus_1.1_f429_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Adding CAN-FD
       url: btt_octopus_1.1_f429_spi2canfd.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via SBC
       url: btt_octopus_1.1_f429_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: btt_octopus_1.1_f429_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: btt_octopus_1.1_f429_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: btt_octopus_1.1_f429_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: btt_octopus_1.1_f429_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: btt_octopus_1.1_f429_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: btt_octopus_1.1_f429_pins.html
-      output: web, pdf
+      output: web
 
   - title: BTT Octopus Pro v1.0 f429 Version
-    output: web, pdf
+    output: web
     children:
 
     - title: BTT Octopus Pro v1.0 f429 Version General Information
       url: btt_octopus_pro_1.0_f429_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
       url: btt_octopus_pro_1.0_f429_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Adding CAN-FD
       url: btt_octopus_pro_1.0_f429_spi2canfd.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via SBC
       url: btt_octopus_pro_1.0_f429_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: btt_octopus_pro_1.0_f429_sensorless.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: btt_octopus_pro_1.0_f429_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: btt_octopus_pro_1.0_f429_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: btt_octopus_pro_1.0_f429_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: btt_octopus_pro_1.0_f429_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a PT100 or PT1000
       url: btt_octopus_pro_1.0_f429_pt100.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: btt_octopus_pro_1.0_f429_pins.html
-      output: web, pdf
+      output: web
   
   - title: GTR + M5
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: gtr_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via an ESP32 WiFi Adapter
       url: gtr_connected_wifi_32.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: gtr_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: gtr_sensorless.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Screen
       url: gtr_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: gtr_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: gtr_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Type 'K' Thermocouple
       url: gtr_type-k.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: gtr_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: gtr_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR Pro v1.1 and v1.2
-    output: web, pdf
+    output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
       url: skr_pro_connected_wifi_8266.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via an ESP32 WiFi Adapter
       url: skr_pro_connected_wifi_32.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: skr_pro_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Adding CAN-FD
       url: skr_pro_spi2canfd.html
-      output: web, pdf
+      output: web
     
     - title: Configuring Sensorless Homing
       url: skr_pro_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: skr_pro_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: skr_pro_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_pro_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: skr_pro_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: skr_pro_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_pro_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR v2.0
-    output: web, pdf
+    output: web
     children:
 
     - title: SKR v2.0 General Information
       url: skr_2.0_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
       url: skr_2.0_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via SBC
       url: skr_2.0_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Adding CAN-FD
       url: skr_2.0_spi2canfd.html
-      output: web, pdf
+      output: web
     
     - title: Configuring Sensorless Homing
       url: skr_2.0_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: skr_2.0_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: skr_2.0_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_2.0_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: skr_2.0_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: skr_2.0_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_2.0_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR-RRF-E3 + IDEX
-    output: web, pdf
+    output: web
     children:
 
     - title: SKR-RRF-E3 General Information
       url: skr_rrf_e3_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via WiFi
       url: skr_rrf_e3_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: CAN-FD can't be added
       url: skr_rrf_e3_spi2canfd.html
-      output: web, pdf
+      output: web
     
     - title: Configuring Sensorless Homing
       url: skr_rrf_e3_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Serial Screen
       url: skr_rrf_e3_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: skr_rrf_e3_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_rrf_e3_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: skr_rrf_e3_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_rrf_e3_pins.html
-      output: web, pdf
+      output: web
       
   - title: Configuring an ESP8266 WiFi Module for STM32F4 Boards
     url: stm32_esp8266.html
-    output: web, pdf
+    output: web
 
   - title: Configuring an ESP32 WiFi Module for STM32F4 Boards
     url: stm32_esp32.html
-    output: web, pdf
+    output: web
 
   - title: Configuring an SBC for STM32F4 Boards
     url: stm32_sbc.html
-    output: web, pdf
+    output: web
 
 - title: STM32F4 + Integrated SBC Boards
-  output: web, pdf
+  output: web
   children:
 
   - title: Armbian Supported Wifi Chipsets
     url: armbian_wifi.html
-    output: web, pdf
+    output: web
 
   - title: Armbian Upgrade Intructions
     url: armbian_upgrade.html
-    output: web, pdf
+    output: web
     
   - title: Fly-Gemini-V1
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-Gemini-V1 General Information
       url: fly_gemini_general.html
-      output: web, pdf
+      output: web
       
     - title: Connecting via SBC
       url: fly_gemini_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: fly_gemini_sensorless.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a Serial Screen
       url: fly_gemini_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_gemini_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_gemini_pins.html
-      output: web, pdf
+      output: web
 
   - title: Fly-Gemini-V1.1
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-Gemini-V1.1 General Information
       url: fly_gemini_v1.1_general.html
-      output: web, pdf
+      output: web
       
     - title: Connecting via SBC
       url: fly_gemini_v1.1_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: fly_gemini_v1.1_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Serial Screen
       url: fly_gemini_v1.1_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_gemini_v1.1_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_gemini_v1.1_pins.html
-      output: web, pdf
+      output: web
 
   - title: Fly-Gemini-V2
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-Gemini-V2 General Information
       url: fly_gemini_v2_general.html
-      output: web, pdf
+      output: web
       
     - title: Connecting via SBC
       url: fly_gemini_v2_connected_sbc.html
-      output: web, pdf
+      output: web
     
     - title: Configuring Sensorless Homing
       url: fly_gemini_v2_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Serial Screen
       url: fly_gemini_v2_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_gemini_v2_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_gemini_v2_pins.html
-      output: web, pdf
+      output: web
 
 - title: STM32H7 Boards
-  output: web, pdf
+  output: web
   children:
 
   - title: STM32H7 Firmware Restrictions
     url: stm32h7_differences.html
-    output: web, pdf
+    output: web
   
   - title: STM32H7 PWM Hardware/Software
     url: stm32h7_pwm.html
-    output: web, pdf
+    output: web
 
   - title: Fly-Super5Pro H723
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-Super5Pro H723 General Information
       url: fly_super5pro_h723_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via WiFi
       url: fly_super5pro_h723_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Connecting to a CAN-FD expansion board
       url: fly_super5pro_h723_canfd.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: fly_super5pro_h723_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Serial Screen
       url: fly_super5pro_h723_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: fly_super5pro_h723_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_super5pro_h723_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: fly_super5pro_h723_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Input Voltage Monitoring
       url: fly_super5pro_h723_voltage.html
-      output: web, pdf
+      output: web
 
     - title: Reflashing the Bootloader
       url: fly_super5pro_h723_bootloader.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_super5pro_h723_pins.html
-      output: web, pdf
+      output: web
 
   - title: Fly-Super8Pro H723
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-Super8Pro H723 General Information
       url: fly_super8pro_h723_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via WiFi
       url: fly_super8pro_h723_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Connecting to a CAN-FD expansion board
       url: fly_super8pro_h723_canfd.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: fly_super8pro_h723_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Serial Screen
       url: fly_super8pro_h723_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: fly_super8pro_h723_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_super8pro_h723_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: fly_super8pro_h723_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Input Voltage Monitoring
       url: fly_super8pro_h723_voltage.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: fly_super8pro_h723_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_super8pro_h723_pins.html
-      output: web, pdf
+      output: web
   
   - title: Fly-Super8Pro H743
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-Super8Pro H743 General Information
       url: fly_super8pro_h743_general.html
-      output: web, pdf
+      output: web
     
     - title: Flashing an RRF compatible bootloader
       url: fly_super8pro_h743_bootloader.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via WiFi
       url: fly_super8pro_h743_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Connecting to a CAN-FD expansion board
       url: fly_super8pro_h743_canfd.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: fly_super8pro_h743_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Serial Screen
       url: fly_super8pro_h743_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: fly_super8pro_h743_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_super8pro_h743_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: fly_super8pro_h743_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Input Voltage Monitoring
       url: fly_super8pro_h743_voltage.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: fly_super8pro_h743_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_super8pro_h743_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR3 H743
-    output: web, pdf
+    output: web
     children:
 
     - title: SKR3 H743 General Information
       url: skr_3_h743_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
       url: skr_3_h743_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Connecting to a CAN-FD expansion board
       url: skr_3_h743_canfd.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: skr_3_h743_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: skr_3_h743_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: skr_3_h743_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_3_h743_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: skr_3_h743_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: skr_3_h743_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_3_h743_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR3 H723
-    output: web, pdf
+    output: web
     children:
 
     - title: SKR3 H723 General Information
       url: skr_3_h723_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
       url: skr_3_h723_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Connecting to a CAN-FD expansion board
       url: skr_3_h723_canfd.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: skr_3_h723_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: skr_3_h723_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: skr_3_h723_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_3_h723_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: skr_3_h723_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: skr_3_h723_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_3_h723_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR3EZ H743
-    output: web, pdf
+    output: web
     children:
 
     - title: SKR3EZ H743 General Information
       url: skr_3_ez_h743_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
       url: skr_3_ez_h743_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Connecting to a CAN-FD expansion board
       url: skr_3_ez_h743_canfd.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: skr_3_ez_h743_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: skr_3_ez_h743_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: skr_3_ez_h743_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_3_ez_h743_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: skr_3_ez_h743_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: skr_3_ez_h743_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_3_ez_h743_pins.html
-      output: web, pdf
+      output: web
 
   - title: SKR3EZ H723
-    output: web, pdf
+    output: web
     children:
 
     - title: SKR3EZ H723 General Information
       url: skr_3_ez_h723_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via an ESP8266 or ESP32 WiFi Adapter
       url: skr_3_ez_h723_connected_wifi.html
-      output: web, pdf
+      output: web
 
     - title: Connecting to a CAN-FD expansion board
       url: skr_3_ez_h723_canfd.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: skr_3_ez_h723_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: skr_3_ez_h723_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: skr_3_ez_h723_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: skr_3_ez_h723_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: skr_3_ez_h723_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BTT-MOT-EXP
       url: skr_3_ez_h723_btt_mot_exp.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: skr_3_ez_h723_pins.html
-      output: web, pdf
+      output: web
 
   - title: BTT Kraken
-    output: web, pdf
+    output: web
     children:
 
     - title: BTT Kraken General Information
       url: btt_kraken_h723_general.html
-      output: web, pdf
+      output: web
     
     - title: Connecting via an ESP32 WiFi Adapter
       url: btt_kraken_h723_connected_wifi_32.html
-      output: web, pdf
+      output: web
 
     - title: Connecting via an SBC
       url: btt_kraken_h723_connected_sbc.html
-      output: web, pdf
+      output: web
 
     - title: Connecting to a CAN-FD expansion board
       url: btt_kraken_h723_canfd.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Sensorless Homing
       url: btt_kraken_h723_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: btt_kraken_h723_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: btt_kraken_h723_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: btt_kraken_h723_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a PT100 or PT1000
       url: btt_kraken_h723_pt100.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: btt_kraken_h723_pins.html
-      output: web, pdf
+      output: web
 
 - title: CAN-FD Toolboards
-  output: web, pdf
+  output: web
   children:
 
   - title: Fly-RRF-36 Toolboard
-    output: web, pdf
+    output: web
     children:
 
     - title: Fly-RRF-36 General Information
       url: fly_rrf_36_general.html
-      output: web, pdf
+      output: web
 
     - title: Connection via CAN-FD
       url: fly_rrf_36_can_connection.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
       url: fly_rrf_36_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Accelerometer Configuration
       url: fly_rrf_36_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a PT100 Temperature Sensor
       url: fly_rrf_36_pt100.html
-      output: web, pdf
+      output: web
 
     - title: Configuring the Onboard Temperature Sensor
       url: fly_rrf_36_onboard_temp.html
-      output: web, pdf
+      output: web
 
     - title: Connecting Neopixels
       url: fly_rrf_36_neopixels.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: fly_rrf_36_pins.html
-      output: web, pdf
+      output: web
 
   - title: StrideMax Dual V2.0
-    output: web, pdf
+    output: web
     children:
 
     - title: StrideMax Dual V2.0 General Information
       url: stridemax_v2_general.html
-      output: web, pdf
+      output: web
 
     - title: Connection via CAN-FD
       url: stridemax_v2_can_connection.html
-      output: web, pdf
+      output: web
 
     - title: Connecting fans
       url: stridemax_v2_fans.html
-      output: web, pdf
+      output: web
 
     - title: Configuring the Onboard Temperature Sensor
       url: stridemax_v2_onboard_temp.html
-      output: web, pdf
+      output: web
 
     - title: Connecting Neopixels
       url: stridemax_v2_neopixels.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: stridemax_v2_pins.html
-      output: web, pdf
+      output: web
 
 - title: Consumer Printers
-  output: web, pdf
+  output: web
   children:
 
   - title: Formbot Troodon V2 Printer
-    output: web, pdf
+    output: web
     children:
 
     - title: Formbot Troodon V2 Printer General Information
       url: troodon_v2_general.html
-      output: web, pdf
+      output: web
     
     - title: Assembly Instructions
-      output: web, pdf
+      output: web
       children:
     
       - title: Assembly Instructions
         url: troodon_v2_assembly.html
-        output: web, pdf
+        output: web
 
       - title: Montageanleitung (Deutsch)
         url: troodon_v2_assembly_de.html
-        output: web, pdf
+        output: web
 
     - title: Connecting the Formbot Troodon V2 Printer to Wifi
       url: troodon_v2_connected_wifi_esp32.html
-      output: web, pdf
+      output: web
 
     - title: Adding CAN-FD
       url: troodon_v2_spi2canfd.html
-      output: web, pdf
+      output: web
 
     - title: Heater Tuning
       url: troodon_v2_heater_tuning.html
-      output: web, pdf
+      output: web
 
     - title: Configuring Z Offsets
       url: troodon_v2_zoffsets.html
-      output: web, pdf
+      output: web
     
     - title: An Improved Gantry Levelling File
       url: troodon_v2_improved_bed.html
-      output: web, pdf
+      output: web
 
     - title: Adjusting the Firmware for Native Support
       url: troodon_v2_firmware_adjustment.html
-      output: web, pdf
+      output: web
 
     - title: Recommended Upgrades
-      output: web, pdf
+      output: web
       children:
 
       - title: Extruder Bearing Change
         url: troodon_v2_bearing_change.html
-        output: web, pdf
+        output: web
 
       - title: Stealthburner Without Changing the Extruder
         url: troodon_v2_stealthburner_no_cw2.html
-        output: web, pdf
+        output: web
 
       - title: Stealthburner With Clockwork2
         url: troodon_v2_stealthburner_with_cw2.html
-        output: web, pdf
+        output: web
 
     - title: Configuring Sensorless Homing
       url: troodon_v2_sensorless.html
-      output: web, pdf
+      output: web
     
     - title: Connecting a Screen
       url: troodon_v2_screen.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a 12864 Screen
       url: troodon_v2_screen_12864.html
-      output: web, pdf
+      output: web
 
     - title: Connecting a BLTouch
       url: troodon_v2_bltouch.html
-      output: web, pdf
+      output: web
 
     - title: Connecting an Accelerometer
       url: troodon_v2_accelerometer.html
-      output: web, pdf
+      output: web
 
     - title: Pin Names
       url: troodon_v2_pins.html
-      output: web, pdf
+      output: web
 
 - title: Screens
-  output: web, pdf
+  output: web
   children:
 
   - title: TFT Screen Configuration
     url: tft.html
-    output: web, pdf
+    output: web
 
   - title: Paneldue Information
     url: paneldue.html
-    output: web, pdf
+    output: web
 
   - title: Fly Screen Information
     url: fly_screen.html
-    output: web, pdf
+    output: web
 
   - title: Fly Screen Opensource Firmware
-    output: web, pdf
+    output: web
     children:
 
     - title: Compiling the Fly Screen Firmware
       url: fly_firmware_compile.html
-      output: web, pdf
+      output: web
 
     - title: Editing the Fly Screen Firmware UI
       url: fly_firmware_ui.html
-      output: web, pdf
+      output: web
 
     - title: Editing the Fly Screen Firmware Code
       url: fly_firmware_code.html
-      output: web, pdf
+      output: web
 
     - title: Debugging the Fly Screen Firmware
       url: fly_firmware_debug.html
-      output: web, pdf
+      output: web
 
 - title: Adapters
-  output: web, pdf
+  output: web
   children:
 
   - title: Available ESP8266 WiFi and SBC Adapters
     url: adapters_esp8266.html
-    output: web, pdf
+    output: web
 
   - title: Available ESP32 WiFi Adapters
     url: adapters_esp32.html
-    output: web, pdf
+    output: web
 
 - title: Printer Specific Guides
-  output: web, pdf
+  output: web
   children:
 
   - title: Printer Guides
-    output: web, pdf
+    output: web
     children:
     - title: Intro
       url: printers.html
 
     - title: Ender 3
-      output: web, pdf
+      output: web
       children:
 
       - title: Installing and configuring a Fly-E3 to an Ender 3
         url: ender_3_conversion.html
-        output: web, pdf
+        output: web
 
       - title: Installing and configuring a BLTouch to an Ender 3 (with a Fly-E3 installed)
         url: ender_3_bltouch.html
-        output: web, pdf
+        output: web

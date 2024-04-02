@@ -1,5 +1,14 @@
 ## Downloading the board firmware
 
-Choose the  firmware ({{page.firmware}}) from [here]({{site.latestFirmware}}){:target="_blank"}. You can choose to download either the latest release (marked latest and classed by us as stable) or the latest pre-release if available (marked pre-release and classed by us as unstable). These instructions are applicable to releases from 3.5-RC4.   
+Teamgloomy now generate per board firmware files. The correct file to use for this board is **{{page.firmware}}**.  
+
+{% if {{site.latestStableFirmware}} == {{site.latestBetaFirmware}} %}
+The latest firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
+{% else %}
+The latest stable firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
+And the latest unstable firmware files can be found [here]({{site.latestBetaFirmware}}){:target="_blank"}
+{% endif %}
+
+You can choose to download either the latest release or the latest pre-release if available. These instructions are applicable to releases from 3.5-RC4.   
 
 Once downloaded, rename it firmware.bin

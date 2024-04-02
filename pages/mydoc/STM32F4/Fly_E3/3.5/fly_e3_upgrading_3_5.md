@@ -12,6 +12,7 @@ toc: false
 datatable: true
 firmware: "firmware_e3_f4.bin"
 wifiFirmware: "WiFiModule_esp8266.bin"
+rrfboot: custom/3.5/rrfboot/rrfboot_fly_e3.html
 ---
 
 ## Overview

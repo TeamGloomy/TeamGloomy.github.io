@@ -2,7 +2,7 @@
 title: Fly-E3-Pro Voltage Monitoring in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 31/03/2024
+last_updated: 02/04/2024
 summary: "Monitoring the input voltage with the Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_voltage_3_5.html
@@ -13,4 +13,4 @@ datatable: true
 boardname: Fly-E3-Pro
 ---
 
-{% include custom/3.4/voltage.html %}  
+{% include custom/3.5/voltage.html %}  

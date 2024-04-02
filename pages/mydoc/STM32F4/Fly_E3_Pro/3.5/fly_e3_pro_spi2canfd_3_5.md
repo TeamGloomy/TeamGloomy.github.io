@@ -2,7 +2,7 @@
 title: CAN-FD can't be added to the Fly-E3-Pro in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 31/03/2024
+last_updated: 02/04/2024
 summary: "CAN-FD can't be added to the Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_spi2canfd_3_5.html

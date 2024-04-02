@@ -15,3 +15,8 @@ Follow the instructions as found [here]({{page.sensorless}})
 
 You can now continue getting the SD card in the correct format.
 {% endif %}
+
+{% if page.rrfbootOverrides == true %}
+There should be no need to override any of the above preset values unless you are adding additional features, such as an accelerometer or 12864 display.  
+You will however still need a board.txt file to configure, as a minimum, the drivers used in your board.  
+{% endif %}

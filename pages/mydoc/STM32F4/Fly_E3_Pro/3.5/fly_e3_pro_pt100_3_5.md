@@ -2,7 +2,7 @@
 title: Connecting a PT100 or Type 'K' Thermocouple to a Fly-E3-Pro in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 31/03/2024
+last_updated: 02/04/2024
 summary: "How to connect a PT100 or Type 'K' Thermocouple to a Fly-E3-Pro"
 sidebar: mydoc_sidebar
 permalink: fly_e3_pro_pt100_3_5.html
@@ -23,16 +23,6 @@ If your board has the chip shown below in red, you have 'K' type thermocouple su
 
 {% include image.html file="fly_e3_pro_k.png" alt="Fly-E3-Pro K Chip" caption="Fly-E3-Pro 'K' Thermocouple Chip" %}
 
-## Board.txt modifications
-
-The following lines should be added to the board.txt file.
-
-```text
-SPI3.pins = { PD_14, PD_12, PD_13 }
-heat.spiTempSensorChannel = 3
-heat.spiTempSensorCSPins = { PD_15, PC_7 }
-```
-
 ## Config.g changes
 
 ### PT100
@@ -51,5 +41,5 @@ M308 S1 P"PD15" Y"rtd-max31865" F60 R430
 To use the Type 'K' Thermocouple on your hotend, use the following code in config.g
 
 ```text
-M308 S1 P"C7" Y"thermocouple-max31855"
+M308 S1 P"PC7" Y"thermocouple-max31855"
 ```

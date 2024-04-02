@@ -118,4 +118,5 @@ description: "Documentation for the LPC and STM32 Ports of RepRapFirmware"
 
 github: [metadata]
 
-latestFirmware: "https://github.com/gloomyandy/RRFBuild/tree/v3.5-dev/releases/3.5.0-rc.3%2B7/Debug"
+latestStableFirmware: "https://github.com/gloomyandy/RRFBuild/tree/v3.5-dev/releases/3.5.0-rc.3%2B7/Debug"
+latestBetaFirmware: "https://github.com/gloomyandy/RRFBuild/tree/v3.5-dev/releases/3.5.0-rc.3%2B7/Debug"

@@ -12,6 +12,7 @@ toc: false
 datatable: true
 firmware: "firmware_e3pro3_f4.bin"
 wifiFirmware: "WiFiModule_esp32.bin"
+rrfboot: custom/3.5/rrfboot/rrfboot_fly_e3_pro_v3.html
 ---
 
 ## Overview
