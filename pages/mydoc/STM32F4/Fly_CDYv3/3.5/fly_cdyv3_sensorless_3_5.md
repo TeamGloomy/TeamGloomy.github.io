@@ -5,7 +5,7 @@ keywords:
 last_updated: 02/04/2024
 summary: "Using and Configuring Sensorless Homing on a Fly-CDYv3"
 sidebar: mydoc_sidebar
-permalink: fly_cdyv3_sensorless.html
+permalink: fly_cdyv3_sensorless_3_5.html
 folder: mydoc
 comments: false
 toc: false

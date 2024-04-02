@@ -5,7 +5,7 @@ keywords:
 last_updated: 02/04/2024
 summary: "How to connect a serial screen to a Fly-CDYv3"
 sidebar: mydoc_sidebar
-permalink: fly_cdyv3_screen.html
+permalink: fly_cdyv3_screen_3_5.html
 folder: mydoc
 comments: false
 toc: false
