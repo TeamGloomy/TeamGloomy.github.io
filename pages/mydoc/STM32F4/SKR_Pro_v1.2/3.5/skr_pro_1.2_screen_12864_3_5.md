@@ -1,11 +1,11 @@
 ---
-title: Connecting a 12864 screen to an SKR Pro
+title: Connecting a 12864 screen to an SKR Pro v1.2 in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 13/05/2022
-summary: "How to connect a 12864 screen to an SKR Pro"
+last_updated: 03/04/2024
+summary: "How to connect a 12864 screen to an SKR Pro v1.2"
 sidebar: mydoc_sidebar
-permalink: skr_pro_screen_12864.html
+permalink: skr_pro_1.2_screen_12864_3_5.html
 folder: mydoc
 comments: false
 toc: false
@@ -20,7 +20,7 @@ The information here is aimed at connecting a Fysetc Mini v1.2 12864 display but
 
 Connect the screen as shown below.  
 
-{% include image.html file="skr_pro_mini.png" alt="SKR Pro and Fysetc Mini v1.2" caption="SKR Pro and Fysetc Mini v1.2" %}
+{% include image.html file="skr_pro_mini.png" alt="SKR Pro v1.2 and Fysetc Mini v1.2" caption="SKR Pro v1.2 and Fysetc Mini v1.2" %}
 
 ## Board.txt modifications
 

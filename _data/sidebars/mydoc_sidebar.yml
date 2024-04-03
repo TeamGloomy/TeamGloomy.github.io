@@ -1319,52 +1319,100 @@ children:
       url: gtr_pins.html
       output: web
 
-  - title: SKR Pro v1.1 and v1.2
+  - title: SKR Pro v1.1
     output: web
     children:
 
     - title: Connecting via an ESP8266 WiFi Adapter
-      url: skr_pro_connected_wifi_8266.html
+      url: skr_pro_1.1_connected_wifi_8266.html
       output: web
 
     - title: Connecting via an ESP32 WiFi Adapter
-      url: skr_pro_connected_wifi_32.html
+      url: skr_pro_1.1_connected_wifi_32.html
       output: web
 
     - title: Connecting via SBC
-      url: skr_pro_connected_sbc.html
+      url: skr_pro_1.1_connected_sbc.html
       output: web
 
     - title: Adding CAN-FD
-      url: skr_pro_spi2canfd.html
+      url: skr_pro_1.1_spi2canfd.html
       output: web
     
     - title: Configuring Sensorless Homing
-      url: skr_pro_sensorless.html
+      url: skr_pro_1.1_sensorless.html
       output: web
     
     - title: Connecting a Screen
-      url: skr_pro_screen.html
+      url: skr_pro_1.1_screen.html
       output: web
 
     - title: Connecting a 12864 Screen
-      url: skr_pro_screen_12864.html
+      url: skr_pro_1.1_screen_12864.html
       output: web
 
     - title: Connecting a BLTouch or BTT MicroProbe
-      url: skr_pro_bltouch.html
+      url: skr_pro_1.1_bltouch.html
       output: web
 
     - title: Connecting an Accelerometer
-      url: skr_pro_accelerometer.html
+      url: skr_pro_1.1_accelerometer.html
       output: web
 
     - title: Connecting a BTT-MOT-EXP
-      url: skr_pro_btt_mot_exp.html
+      url: skr_pro_1.1_btt_mot_exp.html
       output: web
 
     - title: Pin Names
-      url: skr_pro_pins.html
+      url: skr_pro_1.1_pins.html
+      output: web
+
+  - title: SKR Pro v1.2
+    output: web
+    children:
+
+    - title: Connecting via an ESP8266 WiFi Adapter
+      url: skr_pro_1.2_connected_wifi_8266.html
+      output: web
+
+    - title: Connecting via an ESP32 WiFi Adapter
+      url: skr_pro_1.2_connected_wifi_32.html
+      output: web
+
+    - title: Connecting via SBC
+      url: skr_pro_1.2_connected_sbc.html
+      output: web
+
+    - title: Adding CAN-FD
+      url: skr_pro_1.2_spi2canfd.html
+      output: web
+    
+    - title: Configuring Sensorless Homing
+      url: skr_pro_1.2_sensorless.html
+      output: web
+    
+    - title: Connecting a Screen
+      url: skr_pro_1.2_screen.html
+      output: web
+
+    - title: Connecting a 12864 Screen
+      url: skr_pro_1.2_screen_12864.html
+      output: web
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: skr_pro_1.2_bltouch.html
+      output: web
+
+    - title: Connecting an Accelerometer
+      url: skr_pro_1.2_accelerometer.html
+      output: web
+
+    - title: Connecting a BTT-MOT-EXP
+      url: skr_pro_1.2_btt_mot_exp.html
+      output: web
+
+    - title: Pin Names
+      url: skr_pro_1.2_pins.html
       output: web
 
   - title: SKR v2.0
