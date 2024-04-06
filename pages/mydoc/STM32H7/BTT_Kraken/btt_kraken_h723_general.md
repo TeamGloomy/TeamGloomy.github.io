@@ -2,7 +2,7 @@
 title: BTT Kraken General Information
 tags: []
 keywords: 
-last_updated: 27/12/2023
+last_updated: 06/04/2024
 summary: "General information regarding the BTT Kraken"
 sidebar: mydoc_sidebar
 permalink: btt_kraken_h723_general.html
@@ -30,6 +30,17 @@ RRF doesn't use the Diag pin for sensorless homing or stall detection. Please en
 ### Driver Voltage
 
 All drivers are powered from the HV-IN and the input voltage can be 24V to 60V.  
+
+### Driver Sense Resistor
+
+The first 4 drivers on the BTT Kraken use a different sense resistor than is set in the firmware. Please add the following lines to your config.g.  
+
+```text
+M569.9 P0.0 R0.022 S10
+M569.9 P0.1 R0.022 S10
+M569.9 P0.2 R0.022 S10
+M569.9 P0.3 R0.022 S10
+```
 
 ### Fan Voltage
 
