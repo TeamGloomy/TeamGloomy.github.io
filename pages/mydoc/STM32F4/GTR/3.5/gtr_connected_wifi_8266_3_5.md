@@ -50,20 +50,19 @@ rrfbootOverrides: true
 {% include custom/3.5/wifi/dwc.html %}
 
 <ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
-    <li><a class="noCrossRef" href="#manualpost35" data-toggle="tab">Manually Editing/Creating board.txt</a></li>
+    <li class="active"><a class="noCrossRef" href="#purchased" data-toggle="tab">Using a Purchased WiFi Adapter</a></li>
+    <li><a class="noCrossRef" href="#homemade" data-toggle="tab">Using a Homemade WiFi Adapter</a></li>
 </ul>
   <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
+<div role="tabpanel" class="tab-pane active" id="purchased" markdown="1">
 
-{% include custom/3.5/wifi/generate_config.html %}
+{% include custom/3.4/wifi/removeable_large.html %}
 
 </div>
 
-<div role="tabpanel" class="tab-pane" id="manualpost35" markdown="1">
+<div role="tabpanel" class="tab-pane" id="homemade" markdown="1">
 
-{% include custom/3.5/wifi/board_txt.html %}
-{% include custom/3.5/wifi/drivers_post35.html %}
+{% include custom/3.4/wifi/homemade_ESP8266.html %}
 
 </div>
 
@@ -83,6 +82,12 @@ rrfbootOverrides: true
 <div role="tabpanel" class="tab-pane" id="manual" markdown="1">
 
 {% include custom/3.5/wifi/board_txt.html %}
+
+{% include custom/3.5/wifi/wifi_board.html %}
+
+{% include custom/3.5/wifi/wifi_type.html %}
+
+{% include custom/3.5/wifi/drivers_post35.html %}
 
 </div>
 

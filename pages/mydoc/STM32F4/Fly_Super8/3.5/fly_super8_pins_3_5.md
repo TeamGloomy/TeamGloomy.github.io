@@ -100,13 +100,13 @@ Where NoPin is present, then that pin is not configured by default.
 
 <div class="datatable-begin"></div>
 
-|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
-| :------------- |:-------------|:-------------|:-------------|:-------------|
-|0|PA_5|PA_6|PA_7|Hardware|
-|1|PB_13|PB_14|PB_15|Hardware|
-|2|PB_3|PB_4|PB_5|Hardware|
-|3|PD_3|PD_4|PD_5|Software|
-|4|NoPin|NoPin|NoPin|Software|
-|5|NoPin|NoPin|NoPin|Software|
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software | Use |
+| :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware| EXP2 |
+|1|PB_13|PB_14|PB_15|Hardware| WiFi |
+|2|PB_3|PB_4|PB_5|Hardware| Drivers |
+|3|PD_3|PD_4|PD_5|Software| Accelerometer |
+|4|NoPin|NoPin|NoPin|Software||
+|5|PC_14|NoPin|PB_2|Software| Reprapdiscount Display |
 
 <div class="datatable-end"></div>

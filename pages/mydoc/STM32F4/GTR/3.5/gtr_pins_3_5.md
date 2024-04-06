@@ -129,13 +129,13 @@ Where NoPin is present, then that pin is not configured by default.
 
 <div class="datatable-begin"></div>
 
-|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
-| :------------- |:-------------|:-------------|:-------------|:-------------|
-|0|PA_5|PA_6|PA_7|Hardware|
-|1|PB_13|PB_14|PB_15|Hardware|
-|2|NoPin|NoPin|NoPin|Hardware|
-|3|NoPin|NoPin|NoPin|Software|
-|4|NoPin|NoPin|NoPin|Software|
-|5|NoPin|NoPin|NoPin|Software|
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software | Use |
+| :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware| SD Card |
+|1|PB_13|PB_14|PB_15|Hardware| WiFi |
+|2|NoPin|NoPin|NoPin|Hardware||
+|3|PI_9|PB_11|PH_11|Software| Screen |
+|4|PI_1|PI_2|NoPin|Software| Thermocouple |
+|5|PB_3|PB_6|PG_15|Software| Drivers |
 
 <div class="datatable-end"></div>

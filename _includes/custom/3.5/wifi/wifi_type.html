@@ -1,0 +1,46 @@
+### WiFi Type
+
+You will need to add the type of WiFi module you use to your board.txt so the firmware knows the correct firmware file to use for future updates.  
+
+{% if page.wifi == "both" %}
+#### ESP32
+
+If the WiFi module is an ESP32, then add the following line.  
+
+```text
+wifi.moduleType=esp32
+```
+
+#### ESP8266
+
+If the WiFi module is an ESP8266, then add the following line.  
+
+```text
+wifi.moduleType=esp8266
+```
+
+{% endif %}
+
+{% if page.wifi == "ESP32" %}
+
+#### ESP32
+
+Add the following line to your board.txt.  
+
+```text
+wifi.moduleType=esp32
+```
+
+{% endif %}
+
+{% if page.wifi == "ESP8266" %}
+
+#### ESP8266
+
+Add the following line to your board.txt.  
+
+```text
+wifi.moduleType=esp8266
+```
+
+{% endif %}

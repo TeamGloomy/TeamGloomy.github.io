@@ -15,6 +15,4 @@ wifiFirmware: "WiFiModule_esp8266.bin"
 rrfboot: custom/3.5/rrfboot/rrfboot_fly_cdyv2.html
 ---
 
-## Overview
-
 {% include custom/3.5/upgrading.html %}

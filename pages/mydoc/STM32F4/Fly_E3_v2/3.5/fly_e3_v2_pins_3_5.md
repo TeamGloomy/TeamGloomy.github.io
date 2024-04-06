@@ -88,13 +88,13 @@ Where NoPin is present, then that pin is not configured by default.
 
 <div class="datatable-begin"></div>
 
-|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
-| :------------- |:-------------|:-------------|:-------------|:-------------|
-|0|PA_5|PA_6|PA_7|Hardware|
-|1|PB_13|PB_14|PB_15|Hardware|
-|2|PB_3|PB_4|PB_5|Hardware|
-|3|PD_12|PD_13|PD_11|Software|
-|4|PE_14|NoPin|PA_13|Software|
-|5|NoPin|NoPin|NoPin|Software|
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software | Use |
+| :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware| EXP2 |
+|1|PB_13|PB_14|PB_15|Hardware| WiFi |
+|2|PB_3|PB_4|PB_5|Hardware| Drivers |
+|3|PD_12|PD_13|PD_11|Software| MAX31855 and MAX31865 |
+|4|PE_14|NoPin|PA_13|Software| Single Wire Displays |
+|5|PE_15|NoPin|PA_8|Software| Reprapdiscount Display |
 
 <div class="datatable-end"></div>

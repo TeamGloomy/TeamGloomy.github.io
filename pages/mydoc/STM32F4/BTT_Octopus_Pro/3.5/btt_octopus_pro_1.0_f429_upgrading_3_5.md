@@ -15,6 +15,4 @@ wifiFirmware: "WiFiModule_esp8266.bin or WiFiModule_esp32.bin"
 firmwareSBC: "firmware_octopuspro1_0_f4.zip"
 ---
 
-## Overview
-
 {% include custom/3.5/upgrading.html %}

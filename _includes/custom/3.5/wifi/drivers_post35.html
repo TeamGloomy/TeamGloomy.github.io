@@ -19,20 +19,11 @@ tmc5160
 tmc2240
 ```
 
-If using TMC2240 or TMC5160 drivers, you also need to add the correct spi channel:
-
-{% if page.stepperSPI == 0 or page.stepperSPI == 2 %}
-```text
-stepper.spiChannel = {{page.stepperSPI}}
-```
-{% else %}
-```text
-stepper.spiChannel = {{page.stepperSPI}}
-SPI{{page.stepperSPI}}.pins = {{page.spiInfo}}
-```
-{% endif %}
-
 The entry for stepper.numSmartDrivers is preset in the firmware for the number of drivers your board can handle. The number of drivers only needs to be changed if you are adding more drivers using something such as the BTT EXP MOT.  
+
+{% if page.boardname == "SKR Pro v1.1" or page.boardname == "SKR Pro v1.2" %}
+{% include custom/3.5/SKR_Pro_UART.html %}
+{% endif %}
 
 ### TMC2240 Driver Temperature
 

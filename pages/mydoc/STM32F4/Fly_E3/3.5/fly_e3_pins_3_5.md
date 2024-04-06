@@ -97,6 +97,6 @@ Where NoPin is present, then that pin is not configured by default.
 |2|NoPin|NoPin|NoPin|Hardware||
 |3|PC_2|PC_0|PC_1|Software|MAX6675 and MAX31865|
 |4|PE_8|NoPin|PB_1|Software|Single wire Ender screen|
-|5|PE_7|PE_10|PE_9|Software|Accelerometer|
+|5|PD_6|PD_4|PD_5|Software|Drivers|
 
 <div class="datatable-end"></div>

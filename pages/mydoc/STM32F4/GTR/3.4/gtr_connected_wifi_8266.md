@@ -48,6 +48,25 @@ sensorless: "gtr_sensorless.html"
 {% include custom/3.4/wifi/dwc.html %}
 
 <ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#purchased" data-toggle="tab">Using a Purchased WiFi Adapter</a></li>
+    <li><a class="noCrossRef" href="#homemade" data-toggle="tab">Using a Homemade WiFi Adapter</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="purchased" markdown="1">
+
+{% include custom/3.4/wifi/removeable_large.html %}
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="homemade" markdown="1">
+
+{% include custom/3.4/wifi/homemade_ESP8266.html %}
+
+</div>
+
+</div>
+
+<ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
     <li><a class="noCrossRef" href="#manualpre35" data-toggle="tab">Manually Editing/Creating board.txt Pre 3.5RC1</a></li>
     <li><a class="noCrossRef" href="#manualpost35" data-toggle="tab">Manually Editing/Creating board.txt Post 3.5RC1</a></li>
@@ -62,6 +81,7 @@ sensorless: "gtr_sensorless.html"
 <div role="tabpanel" class="tab-pane" id="manualpre35" markdown="1">
 
 {% include custom/3.4/wifi/board_txt.html %}
+
 {% include custom/3.4/wifi/drivers_pre35.html %}
 
 </div>
@@ -69,31 +89,12 @@ sensorless: "gtr_sensorless.html"
 <div role="tabpanel" class="tab-pane" id="manualpost35" markdown="1">
 
 {% include custom/3.4/wifi/board_txt.html %}
+
 {% include custom/3.4/wifi/drivers_post35.html %}
 
 </div>
 
 </div>
-
-<ul id="profileTabs" class="nav nav-tabs">
-    <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
-    <li><a class="noCrossRef" href="#manual" data-toggle="tab">Manually Editing/Creating board.txt</a></li>
-</ul>
-  <div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
-
-{% include custom/3.4/wifi/generate_config.html %}
-
-</div>
-
-<div role="tabpanel" class="tab-pane" id="manual" markdown="1">
-
-{% include custom/3.4/wifi/board_txt.html %}
-
-</div>
-
-</div>
-
 {% include custom/3.4/wifi/sdcard_prep.html %}
 
 {% include custom/3.4/wifi/sdcard_structure.html %}

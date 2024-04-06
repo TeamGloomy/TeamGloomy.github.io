@@ -16,8 +16,10 @@ SDA: PI_9
 SDO: PI_8
 CS: PH_8
 int: PH_7
-spiChannel: 5
+spiChannel: 4
 location:  Extension header 0, 1 and 2
 ---
+
+{% include important.html content="The SPI channel used below assumes that you do not use the thermocouple connection. If you use the thermocouple, you will have to setup the accelerometer to use a different SPI channel." %}
 
 {% include custom/3.5/accelerometer.html %}

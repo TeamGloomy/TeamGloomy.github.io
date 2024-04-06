@@ -19,6 +19,8 @@ schematic: https://github.com/Mellow-3D/Fly-CDYv3/blob/main/Hardware/Schematic.p
 rrfboot: "custom/3.5/rrfboot/rrfboot_fly_cdyv3.html"
 onboardDrivers: no
 sensorless: "fly_cdyv3_sensorless_3_5.html"
+rrfbootOverrides: true
+page.stepperSPIUpdate: preset
 ---
 
 {% include custom/3.5/wifi/overview.html %}

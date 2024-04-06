@@ -83,7 +83,11 @@ rrfbootOverrides: true
 <div role="tabpanel" class="tab-pane" id="manualpost35" markdown="1">
 
 {% include custom/3.5/wifi/board_txt.html %}
-{% include custom/3.5/SKR_Pro_UART.html %}
+
+{% include custom/3.5/wifi/wifi_board.html %}
+
+{% include custom/3.5/wifi/wifi_type.html %}
+
 {% include custom/3.5/wifi/drivers_post35.html %}
 
 </div>

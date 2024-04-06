@@ -16,8 +16,9 @@ SDA: PE_7
 SDO: PE_9
 CS: PE_12
 int: PE_10
-spiChannel: 5
+spiChannel: 4
 location: EXP1 header
+showSPI: false
 ---
 
 {% include custom/3.5/accelerometer.html %}

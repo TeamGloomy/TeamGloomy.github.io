@@ -108,13 +108,13 @@ Where NoPin is present, then that pin is not configured by default.
 
 <div class="datatable-begin"></div>
 
-|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
-| :------------- |:-------------|:-------------|:-------------|:-------------|
-|0|PA_5|PA_6|PA_7|Hardware|
-|1|PB_13|PC_2|PC_3|Hardware|
-|2|PB_3|PB_4|PB_5|Hardware|
-|3|NoPin|NoPin|NoPin|Software|
-|4|NoPin|NoPin|NoPin|Software|
-|5|NoPin|NoPin|NoPin|Software|
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software | Use |
+| :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware| Drivers |
+|1|PB_13|PC_2|PC_3|Hardware| WiFi |
+|2|PB_3|PB_4|PB_5|Hardware| J74 Header |
+|3|NoPin|NoPin|NoPin|Software||
+|4|PE_8|PE_9|PE_7|Software| Accelerometer |
+|5|PE_12|NoPin|NoPin|PE_9| Reprapdiscount Display |
 
 <div class="datatable-end"></div>

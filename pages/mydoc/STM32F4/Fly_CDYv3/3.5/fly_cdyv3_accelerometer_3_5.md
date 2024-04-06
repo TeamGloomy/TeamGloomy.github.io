@@ -18,6 +18,7 @@ CS: PE_7
 int: PE_8
 spiChannel: 0
 location: accelerometer header
+page.showSPI: false
 ---
 
 {% include custom/3.5/accelerometer.html %}

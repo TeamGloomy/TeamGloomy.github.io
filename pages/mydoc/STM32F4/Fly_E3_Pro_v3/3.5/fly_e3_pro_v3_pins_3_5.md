@@ -90,7 +90,7 @@ Where NoPin is present, then that pin is not configured by default.
 |SPI Channel| CLK | MISO | MOSI | Hardware or Software | Use |
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
 |0|NoPin|NoPin|NoPin|Hardware||
-|1|PB_13|PB_14|PB_15|Hardware|WiFi Module|
+|1|PB_13|PB_14|PB_15|Hardware|WiFi|
 |2|PB_3|PB_4|PB_5|Hardware|EXP2|
 |3|PD_14|PD_12|PD_13|Software|MAX31855 and MAX31865|
 |4|PE_10|NoPin|PE_8|Software|Single wire Ender displays|

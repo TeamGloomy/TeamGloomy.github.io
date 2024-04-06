@@ -16,7 +16,7 @@ datatable: true
 
 {% include image.html file="fly_cdyv2.svg" url="https://teamgloomy.github.io/images/fly_cdyv2.svg" alt="Fly-CDYv2" caption="Fly-CDYv2 Pinout" %}
 
-## fly-CDYv2 Driver Pins in Firmware
+## Fly-CDYv2 Driver Pins in Firmware
 
 Driver pin numbers. They are separated into driver number.
 
@@ -91,13 +91,13 @@ Where NoPin is present, then that pin is not configured by default.
 
 <div class="datatable-begin"></div>
 
-|SPI Channel| CLK | MISO | MOSI | Hardware or Software |
-| :------------- |:-------------|:-------------|:-------------|:-------------|
-|0|PA_5|PA_6|PA_7|Hardware|
-|1|PB_13|PB_14|PB_15|Hardware|
-|2|PB_3|PB_4|PB_5|Hardware|
-|3|PE_15|NoPin|PB_2|Software|
-|4|NoPin|NoPin|NoPin|Software|
-|5|NoPin|NoPin|NoPin|Software|
+|SPI Channel| CLK | MISO | MOSI | Hardware or Software | Use |
+| :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|
+|0|PA_5|PA_6|PA_7|Hardware| EXP2 |
+|1|PB_13|PB_14|PB_15|Hardware| WiFi |
+|2|PB_3|PB_4|PB_5|Hardware| Drivers |
+|3|PE_15|NoPin|PB_2|Software| 12864 Screens |
+|4|NoPin|NoPin|NoPin|Software||
+|5|PA_13|PE_15|PA_14|Software| Accelerometer |
 
 <div class="datatable-end"></div>

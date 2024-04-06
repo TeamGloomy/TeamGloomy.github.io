@@ -16,7 +16,7 @@ datatable: true
 
 {% include image.html file="fly_cdyv2.svg" url="https://teamgloomy.github.io/images/fly_cdyv2.svg" alt="Fly-CDYv2" caption="Fly-CDYv2 Pinout" %}
 
-## fly-CDYv2 Driver Pins in Firmware
+## Fly-CDYv2 Driver Pins in Firmware
 
 Driver pin numbers. They are separated into driver number.
 

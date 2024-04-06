@@ -24,6 +24,7 @@ sensorless: "btt_octopus_1.1_f429_sensorless_3_5.html"
 ---
 
 {% include custom/3.5/wifi/overview.html %}
+
 {% include custom/3.5/wifi/removeable.html %}
 
 {% include custom/3.5/wifi/board_firmware.html %}
@@ -46,6 +47,9 @@ sensorless: "btt_octopus_1.1_f429_sensorless_3_5.html"
 <div role="tabpanel" class="tab-pane" id="manualpost35" markdown="1">
 
 {% include custom/3.5/wifi/board_txt.html %}
+
+{% include custom/3.5/wifi/wifi_type.html %}
+
 {% include custom/3.5/wifi/drivers_post35.html %}
 
 </div>

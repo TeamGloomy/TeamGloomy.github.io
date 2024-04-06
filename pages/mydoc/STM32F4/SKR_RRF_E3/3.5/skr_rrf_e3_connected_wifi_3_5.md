@@ -35,13 +35,13 @@ rrfboot: custom/3.5/rrfboot/rrfboot_skr_rrf_e3.html
 sensorless: "skr_rrf_e3_sensorless_3_5.html"
 ---
 
-{% include custom/3.4/wifi/overview.html %}
+{% include custom/3.5/wifi/overview.html %}
 
-{% include custom/3.4/wifi/board_firmware.html %}
+{% include custom/3.5/wifi/board_firmware.html %}
 
-{% include custom/3.4/wifi/wifi_prep.html %}
+{% include custom/3.5/wifi/wifi_prep.html %}
 
-{% include custom/3.4/wifi/dwc.html %}
+{% include custom/3.5/wifi/dwc.html %}
 
 <ul id="profileTabs" class="nav nav-tabs">
     <li class="active"><a class="noCrossRef" href="#generate" data-toggle="tab">Using the Configurator</a></li>
@@ -50,20 +50,20 @@ sensorless: "skr_rrf_e3_sensorless_3_5.html"
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
 
-{% include custom/3.4/wifi/generate_config.html %}
+{% include custom/3.5/wifi/generate_config.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="manual" markdown="1">
 
-{% include custom/3.4/wifi/board_txt.html %}
+{% include custom/3.5/wifi/board_txt.html %}
 
 </div>
 
 </div>
 
-{% include custom/3.4/wifi/sdcard_prep.html %}
+{% include custom/3.5/wifi/sdcard_prep.html %}
 
-{% include custom/3.4/wifi/sdcard_structure.html %}
+{% include custom/3.5/wifi/sdcard_structure.html %}
 
-{% include custom/3.4/wifi/wrapup.html %}
+{% include custom/3.5/wifi/wrapup.html %}
