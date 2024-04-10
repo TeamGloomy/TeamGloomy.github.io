@@ -1,19 +1,19 @@
 ---
-title: Connecting an SKR3EZ H723 via an ESP8266 or ESP32 WiFi Adapter in RRF 3.5.0 Onwards
+title: Connecting an SKR3 H743 Version via an ESP8266 or ESP32 WiFi Adapter in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 07/04/2024
-summary: "How to connect to an SKR3EZ H723 via an ESP8266 or ESP32 WiFi Adapter"
+last_updated: 10/04/2024
+summary: "How to connect to an SKR3 H743 Version via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
-permalink: skr_3_ez_h723_connected_wifi_3_5.html
+permalink: skr_3_h743_connected_wifi_3_5.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: SKR3EZ H723
+boardname: SKR3 H743
 mcu: STM32H723
-firmware: firmware_skr3ez_h723.bin
-schematic: https://github.com/bigtreetech/SKR-3/blob/master/Hardware%20(SKR%203%20EZ)/BIGTREETECH%20SKR%203%20EZ%20V1.0-SCH.pdf
+firmware: firmware_skr3_h743.bin
+schematic: https://github.com/bigtreetech/SKR-3/blob/master/Hardware%20(SKR%203)/BIGTREETECH%20SKR%203-SCH.pdf
 wifi: both
 module: small
 schematic: 
@@ -29,10 +29,10 @@ stepperSPI: 3
 spiInfo: "{ PE_14, PE_15, PE_13 }"
 TMC: "{ PC_1, PC_3, PC_0, PC_2, PA_0 }"
 example: PC_1 and PC_3
-board: biquskr_3_ez_h723
+board: biquskr_3_h723
 onboardDrivers: false
-sensorless: "skr_3_ez_h723_sensorless_3_5.html"
-rrfboot: custom/3.5/rrfboot/rrfboot_skr_3_ez_h723.html
+sensorless: "skr_3_h743_sensorless_3_5.html"
+rrfboot: custom/3.5/rrfboot/rrfboot_skr_3_h743.html
 onboardDrivers: false
 rrfbootOverrides: false
 ---

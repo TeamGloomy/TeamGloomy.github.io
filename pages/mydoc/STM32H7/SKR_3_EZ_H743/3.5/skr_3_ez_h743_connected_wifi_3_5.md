@@ -54,7 +54,7 @@ rrfbootOverrides: false
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="generate" markdown="1">
 
-{% include custom/3.4/wifi/generate_config.html %}
+{% include custom/3.5/wifi/generate_config.html %}
 
 </div>
 

@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: SKR3EZ H743
-mcu: STM32F407VGT6
+mcu: STM32H743
 firmware: firmware_skr3ez_h743.bin
 schematic: https://github.com/bigtreetech/SKR-3/blob/master/Hardware%20(SKR%203%20EZ)/BIGTREETECH%20SKR%203%20EZ%20V1.0-SCH.pdf
 BCM11: PB_13

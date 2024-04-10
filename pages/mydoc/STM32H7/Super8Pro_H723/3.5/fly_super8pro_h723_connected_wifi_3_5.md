@@ -1,38 +1,37 @@
 ---
-title: Connecting an SKR3EZ H723 via an ESP8266 or ESP32 WiFi Adapter in RRF 3.5.0 Onwards
+title: Connecting a Fly-Super8Pro H723 via WiFi in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 07/04/2024
-summary: "How to connect to an SKR3EZ H723 via an ESP8266 or ESP32 WiFi Adapter"
+last_updated: 10/04/2024
+summary: "How to connect a Fly-Super8Pro H723 via WiFi"
 sidebar: mydoc_sidebar
-permalink: skr_3_ez_h723_connected_wifi_3_5.html
+permalink: fly_super8pro_h723_connected_wifi_3_5.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: SKR3EZ H723
+boardname: Fly-Super8Pro H723
 mcu: STM32H723
-firmware: firmware_skr3ez_h723.bin
-schematic: https://github.com/bigtreetech/SKR-3/blob/master/Hardware%20(SKR%203%20EZ)/BIGTREETECH%20SKR%203%20EZ%20V1.0-SCH.pdf
-wifi: both
-module: small
-schematic: 
-DRP: PB_10
-TRP: PB_11
-ERP: PC_14
-CS: 
+firmware: firmware_super8pro_h723.bin
+wifi: ESP32
+module: onboard
+schematic: https://github.com/Mellow-3D/Fly-Super8Pro/blob/main/Hardware/Schematic.pdf
+DRP: PD_13
+TRP: PD_11
+ERP: PD_10
+CS:
 ESPRXTX: "{ PD_9, PD_8 }"
 SerialRXTX: "{ PA_10, PA_9 }"
-heat: "{ PA_1, PA_2, PA_3 }"
-diagnostics: PA_13
-stepperSPI: 3
-spiInfo: "{ PE_14, PE_15, PE_13 }"
-TMC: "{ PC_1, PC_3, PC_0, PC_2, PA_0 }"
-example: PC_1 and PC_3
-board: biquskr_3_ez_h723
+heat: "{ adc0, adc1, adc2, adc3, adc4, adc5 }"
+diagnostics: ""
+smartdrivers: 
+stepperSPI: 2
+TMC: "{ PG_12, PG_11, PG_10, PG_9, PD_7, PD_6, PA_8, PF_3 }"
+example: PG_12 and PG_11
+board: fly_super8_pro_h723
 onboardDrivers: false
-sensorless: "skr_3_ez_h723_sensorless_3_5.html"
-rrfboot: custom/3.5/rrfboot/rrfboot_skr_3_ez_h723.html
+sensorless: "fly_super8pro_h723_sensorless.html"
+rrfboot: custom/3.5/rrfboot/rrfboot_fly_super8pro_h723.html
 onboardDrivers: false
 rrfbootOverrides: false
 ---
