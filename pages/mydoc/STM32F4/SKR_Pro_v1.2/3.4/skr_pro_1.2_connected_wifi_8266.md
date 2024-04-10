@@ -30,7 +30,7 @@ spiInfo: ""
 TMC: "{ PB_10, PE_12, PG_8, PE_15, PE_10, PG_5 }"
 example: PB_10 and PE_12
 board: biquskrpro_1.1
-onboardDrivers: no
+onboardDrivers: false
 GPIO15: PB_12
 GPIO13: PB_15
 GPIO12: PB_14

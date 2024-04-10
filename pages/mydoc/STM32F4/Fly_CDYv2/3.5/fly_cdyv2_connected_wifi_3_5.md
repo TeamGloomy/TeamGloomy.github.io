@@ -17,7 +17,7 @@ wifi: ESP8266
 module: onboard
 schematic: https://github.com/Mellow-3D/Fly-CDYv2/blob/main/Hardware/Schematic.pdf
 rrfboot: "custom/3.5/rrfboot/rrfboot_fly_cdyv2.html"
-onboardDrivers: no
+onboardDrivers: false
 sensorless: "fly_cdyv2_sensorless_3_5.html"
 rrfbootOverrides: true
 page.stepperSPIUpdate: preset

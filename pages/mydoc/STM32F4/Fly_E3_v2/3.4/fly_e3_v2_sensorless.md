@@ -16,7 +16,7 @@ TMC: "{ PE_7, PE_8, PE_9 }"
 example: "stepper.TmcDiagPins = { PE_7, PE_8 }"
 example2: "stepper.TmcDiagPins = { NoPin, PE_8 }"
 board: fly_e3_v2
-onboardDrivers: "no"
+onboardDrivers: false
 ---
 
 {% include important.html content="The Fly-E3-v2 only supports sensorless homing and stall detect on Driver0, Driver1 and Driver2" %}

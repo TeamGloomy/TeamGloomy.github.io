@@ -16,7 +16,7 @@ TMC: "{ PG_6, PG_9, PG_10, PG_11, PG_12, PG_13, PG_14, PG_15 }"
 example: "stepper.TmcDiagPins = { PG_6, PG_9 }"
 example2: "stepper.TmcDiagPins = { NoPin, PG_9 }"
 board: biqoctopus_1.1
-onboardDrivers: "no"
+onboardDrivers: false
 ---
 
 {% include custom/3.4/sensorless.html %}

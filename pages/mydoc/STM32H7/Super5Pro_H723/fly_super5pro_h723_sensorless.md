@@ -16,7 +16,7 @@ TMC: "{ PB_7, PC_7, PC_6, PC_13, PC_14, PC_15 }"
 example: "stepper.TmcDiagPins = { PB_7, PC_7 }"
 example2: "stepper.TmcDiagPins = { NoPin, PC_7 }"
 board: fly_super5_h723
-onboardDrivers: "no"
+onboardDrivers: false
 ---
 
 {% include custom/3.4/sensorless.html %}

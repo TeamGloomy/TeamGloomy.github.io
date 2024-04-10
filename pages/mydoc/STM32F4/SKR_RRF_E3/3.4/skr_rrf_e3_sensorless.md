@@ -17,7 +17,7 @@ TMC: "{ PC_0, PC_1, PC_2, PC_3, PB_11, PB_10 }"
 example: "stepper.TmcDiagPins = { PC_0, PC_1 }"
 example2: "stepper.TmcDiagPins = { NoPin, PC_1 }"
 board: biquskr_rrf_e3_1.1
-onboardDrivers: "yes"
+onboardDrivers: true
 driverType: TMC2209
 diagPinInfo: skr_rrf_e3_general.html
 ---

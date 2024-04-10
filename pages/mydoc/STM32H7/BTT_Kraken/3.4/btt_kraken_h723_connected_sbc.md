@@ -23,7 +23,7 @@ heat: "{ PB_0, PB_1, PC_5, PC_4, PA_7 }"
 diagnostics: 
 stepperSPI: 3
 board: biqukraken_h723
-onboardDrivers: yes
+onboardDrivers: true
 smartdrivers: 8
 sensorless: "btt_kraken_h723_sensorless.html"
 canWrite: PD_1

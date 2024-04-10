@@ -29,7 +29,7 @@ stepperSPI: 2
 TMC: "{ PC_0, PC_1, PC_2, PC_3, PB_11, PB_10 }"
 example: PC_0 and PC_1
 board: biquskr_rrf_e3_1.1
-onboardDrivers: yes
+onboardDrivers: true
 rrfbootOverrides: false
 rrfboot: custom/3.5/rrfboot/rrfboot_skr_rrf_e3.html
 sensorless: "skr_rrf_e3_sensorless_3_5.html"

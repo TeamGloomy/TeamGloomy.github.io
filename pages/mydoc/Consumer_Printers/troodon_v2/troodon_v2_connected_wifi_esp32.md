@@ -28,7 +28,7 @@ stepperSPI: 0
 TMC: "{ PF_2, PC_15, PC_14, PC_13, PE_13, PF_9, PF_15 }"
 example: "stepper.TmcDiagPins = { PF_2, PC_15 }"
 board: troodon_v2
-onboardDrivers: no
+onboardDrivers: false
 ---
 
 ## Overview

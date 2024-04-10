@@ -29,7 +29,7 @@ spiInfo: "{ PE_15, PA_14, PE_14 }"
 TMC: "{ PC_1, PC_3, PC_0, PC_2, PA_0 }"
 example: PC_1 and PC_3
 board: biquskr_2
-onboardDrivers: no
+onboardDrivers: false
 sensorless: "skr_2.0_sensorless.html"
 ---
 

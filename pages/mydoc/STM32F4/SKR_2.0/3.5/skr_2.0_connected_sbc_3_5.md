@@ -29,7 +29,7 @@ board: biquskr_2
 sensorless: "skr_2.0_sensorless_3_5.html"
 firmwareFlash: "firmware.cur"
 rrfboot: custom/3.5/rrfboot/rrfboot_skr_2.0.html
-onboardDrivers: no
+onboardDrivers: false
 rrfbootOverrides: true
 ---
 

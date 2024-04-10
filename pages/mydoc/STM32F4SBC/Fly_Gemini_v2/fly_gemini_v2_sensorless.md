@@ -17,7 +17,7 @@ TMC: "{ PA_3, PB_3, PB_10 }"
 example: "stepper.TmcDiagPins = { PA_3, PB_3 }"
 example2: "stepper.TmcDiagPins = { NoPin, PB_3 }"
 board: fly_geminiv2.0
-onboardDrivers: "no"
+onboardDrivers: false
 diagPinInfo: fly_gemini_v2_general.html
 ---
 

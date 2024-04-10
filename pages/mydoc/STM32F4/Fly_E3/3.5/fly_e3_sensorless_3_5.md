@@ -16,7 +16,7 @@ TMC: "{ PA_2, PA_1, PC_5 }"
 example: "stepper.TmcDiagPins = { PA_2, PA_1 }"
 example2: "stepper.TmcDiagPins = { NoPin, PA_1 }"
 board: fly_e3
-onboardDrivers: "no"
+onboardDrivers: false
 ---
 
 {% include custom/3.5/sensorless.html %}

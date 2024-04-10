@@ -18,7 +18,7 @@ module: onboard
 schematic: https://github.com/Mellow-3D/FLY-RRF-E3/blob/master/Hardware/Schematic.pdf
 rrfbootOverrides: true
 stepperSPI: 5
-onboardDrivers: no
+onboardDrivers: false
 rrfboot: custom/3.5/rrfboot/rrfboot_fly_e3.html
 sensorless: "fly_e3_sensorless_3_5.html"
 page.spiInfo: "{PD_6, PD_4, PD_5}"

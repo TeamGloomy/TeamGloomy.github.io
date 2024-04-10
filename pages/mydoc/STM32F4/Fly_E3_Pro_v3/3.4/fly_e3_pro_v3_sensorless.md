@@ -16,7 +16,7 @@ TMC: "{ PA_2, PB_10, PC_4 }"
 example: "stepper.TmcDiagPins = { PA_2, PB_10 }"
 example2: "stepper.TmcDiagPins = { NoPin, PB_10 }"
 board: fly_e3_prov3
-onboardDrivers: "yes"
+onboardDrivers: true
 driverType: TMC2209
 diagPinInfo: fly_e3_pro_v3_general.html
 ---

@@ -17,7 +17,7 @@ wifi: both
 module: small
 schematic: https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/blob/master/Hardware/BIGTREETECH%20Octopus%20-%20PIN.pdf
 stepperSPI: 0
-onboardDrivers: no
+onboardDrivers: false
 rrfbootOverrides: true
 rrfboot: custom/3.5/rrfboot/rrfboot_btt_octopus_1.1_f429.html
 sensorless: "btt_octopus_1.1_f429_sensorless_3_5.html"

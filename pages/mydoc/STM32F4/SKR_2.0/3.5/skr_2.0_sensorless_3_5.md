@@ -17,7 +17,7 @@ TMC: "{ PC_1, PC_3, PC_0, PC_2, PA_0 }"
 example: "stepper.TmcDiagPins = { PC_1, PC_3 }"
 example2: "stepper.TmcDiagPins = { NoPin, PC_3 }"
 board: biquskr_2
-onboardDrivers: "no"
+onboardDrivers: false
 ---
 
 {% include custom/3.5/sensorless.html %}

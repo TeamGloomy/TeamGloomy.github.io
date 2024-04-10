@@ -29,7 +29,7 @@ stepperSPI: 2
 TMC: "{ PC_0, PC_1, PC_2, PC_3, PB_11, PB_10 }"
 example: PC_0 and PC_1
 board: biquskr_rrf_e3_1.1
-onboardDrivers: yes
+onboardDrivers: true
 ---
 
 {% include custom/3.4/wifi/overview.html %}

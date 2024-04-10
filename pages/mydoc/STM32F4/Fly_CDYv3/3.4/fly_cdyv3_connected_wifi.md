@@ -28,7 +28,7 @@ stepperSPI: 2
 TMC: "{ PC_7, PC_6, PD_11, PD_10, PB_10, PB_11 }"
 example: PC_7 and PC_6
 board: fly_cdyv3
-onboardDrivers: no
+onboardDrivers: false
 sensorless: "fly_cdyv3_sensorless.html"
 ---
 

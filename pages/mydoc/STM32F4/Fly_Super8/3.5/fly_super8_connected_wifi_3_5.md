@@ -19,7 +19,7 @@ schematic: https://github.com/Mellow-3D/Fly-Super8/blob/main/Hardware/Schematic.
 rrfbootOverrides: true
 stepperSPI: 2
 rrfboot: custom/3.5/rrfboot/rrfboot_fly_super8.html
-onboardDrivers: no
+onboardDrivers: false
 sensorless: "fly_super8_sensorless_3_5.html"
 ---
 

@@ -28,7 +28,7 @@ stepperSPI: 2
 TMC: "{ PE_7, PE_8, PE_9 }"
 example: PE_7 and PE_8
 board: fly_e3_v2
-onboardDrivers: no
+onboardDrivers: false
 sensorless: "fly_e3_v2_sensorless.html"
 ---
 

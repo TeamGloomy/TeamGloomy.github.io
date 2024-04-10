@@ -28,6 +28,7 @@ board: biqoctopus_1.1
 sensorless: "btt_octopus_1.1_f429_sensorless_3_5.html"
 firmwareFlash: "firmware.cur"
 rrfboot: custom/3.5/rrfboot/rrfboot_btt_octopus_1.1_f429.html
+onboardDrivers: false
 ---
 
 {% include custom/3.5/sbc1.html %}

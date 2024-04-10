@@ -29,7 +29,7 @@ stepperSPI: 0
 TMC: "{ PB_7, PC_7, PC_6, PC_13, PC_14, PC_15 }"
 example: PB_7 and PC_7
 board: fly_super5_h723
-onboardDrivers: no
+onboardDrivers: false
 sensorless: "fly_super5pro_h723_sensorless.html"
 ---
 

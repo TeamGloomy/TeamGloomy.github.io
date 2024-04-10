@@ -1,11 +1,11 @@
 ---
-title: BTT Kraken CAN-FD Information
+title: BTT Kraken CAN-FD Information in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 27/12/2023
+last_updated: 06/04/2024
 summary: "How to connect the BTT Kraken to a CAN-FD Expansion board"
 sidebar: mydoc_sidebar
-permalink: btt_kraken_h723_canfd.html
+permalink: btt_kraken_h723_canfd_3_5.html
 folder: mydoc
 comments: false
 toc: false
@@ -39,6 +39,6 @@ Although the BTT Octopus Pro v1.1 also provides ground and 24v on that same 6 pi
 
 {% include image.html file="toolboard_canfd.png" url="<https://teamgloomy.github.io/images/toolboard_canfd.png>" alt="Toolboard CAN-FD wiring" caption="Toolboard CAN-FD wiring" %}
 
-Please ensure that you have the two jumpers installed as shown below if you are using this board as a mainboard or if it is the last expansion board on the CANbus.  
+Please ensure that you have the jumper installed as shown below if you are using this board as a mainboard or if it is the last expansion board on the CANbus.  
 
 {% include image.html file="btt_kraken_can_resistor.png" url="<https://teamgloomy.github.io/images/btt_kraken_can_resistor.png>" alt="BTT Kraken CAN-FD 120ohm Resistors" caption="BTT Kraken CAN-FD 120ohm Resistors" %}

@@ -16,7 +16,7 @@ TMC: "{ PF_2, PC_13, PE_0, PG_14, PG_9, PD_3, PI_4, PF_4, PF_6, PI_7, PF_12 }"
 example: "stepper.TmcDiagPins = { PF_2, PC_13 }"
 example2: "stepper.TmcDiagPins = { NoPin, PC_13 }"
 board: biqugtr_1.0
-onboardDrivers: "no"
+onboardDrivers: false
 GPIO15: PB_12
 GPIO13: PB_15
 GPIO12: PB_14

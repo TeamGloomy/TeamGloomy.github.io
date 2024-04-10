@@ -29,7 +29,7 @@ stepperSPI: 2
 TMC: "{ PG_12, PG_11, PG_10, PG_9, PD_7, PD_6, PA_8, PF_3 }"
 example: PG_12 and PG_11
 board: fly_super8h7
-onboardDrivers: no
+onboardDrivers: false
 sensorless: "fly_super8pro_h743_sensorless.html"
 ---
 

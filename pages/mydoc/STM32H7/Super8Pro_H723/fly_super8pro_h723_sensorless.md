@@ -16,7 +16,7 @@ TMC: "{ PG_12, PG_11, PG_10, PG_9, PD_7, PD_6, PA_8, PF_3 }"
 example: "stepper.TmcDiagPins = { PG_12, PG_11 }"
 example2: "stepper.TmcDiagPins = { NoPin, PG_11 }"
 board: fly_super8_pro_h723
-onboardDrivers: "no"
+onboardDrivers: false
 ---
 
 {% include custom/3.4/sensorless.html %}

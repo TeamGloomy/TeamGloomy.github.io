@@ -28,7 +28,7 @@ stepperSPI: 0
 TMC: "{ PG_6, PG_9, PG_10, PG_11, PG_12, PG_13, PG_14, PG_15 }"
 example: PG_6 and PG_9
 board: biquoctopuspro_V1.1_h723
-onboardDrivers: no
+onboardDrivers: false
 sensorless: "btt_octopus_pro_1.1_h723_sensorless.html"
 ---
 

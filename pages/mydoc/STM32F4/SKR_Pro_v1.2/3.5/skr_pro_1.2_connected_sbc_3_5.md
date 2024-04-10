@@ -28,7 +28,7 @@ example: PB_10 and PE_12
 board: biquskrpro_1.1
 sensorless: "skr_pro_1.2_sensorless_3_5.html"
 rrfboot: custom/3.5/rrfboot/rrfboot_skr_pro_1.2.html
-onboardDrivers: no
+onboardDrivers: false
 rrfbootOverrides: true
 ---
 

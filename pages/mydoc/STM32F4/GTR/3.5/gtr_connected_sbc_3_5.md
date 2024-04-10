@@ -29,7 +29,7 @@ board: biqugtr_1.0
 sensorless: "gtr_sensorless_3_5.html"
 firmwareFlash: "firmware.cur"
 rrfboot: custom/3.5/rrfboot/rrfboot_gtr.html
-onboardDrivers: no
+onboardDrivers: false
 rrfbootOverrides: true
 ---
 

@@ -14,11 +14,11 @@ datatable: true
 
 ## Overview
 
-BigTreeTech released the [BTT-MOT-EXP](https://github.com/bigtreetech/BTT-Expansion-module/tree/master/BTT%20EXP-MOT). It is an adapter that would ordinarily allow 3 more extra drivers to be added to an SKR v2.0.  
+BigTreeTech released the [BTT-MOT-EXP](https://github.com/bigtreetech/BTT-Expansion-module/tree/master/BTT%20EXP-MOT). It is an adapter that would ordinarily allow 3 more extra drivers to be added to an SKR3EZ H743.  
 
 ## Connecting the boards
 
-Connect two 10-pin IDC cables between EXP1 and EXP2 on the SKR v2.0 and EXP1 and EXP2 on the BTT EXP-MOT V1.0.  
+Connect two 10-pin IDC cables between EXP1 and EXP2 on the SKR3EZ H743 and EXP1 and EXP2 on the BTT EXP-MOT V1.0.  
 12/24v power should be connected to the BTT-MOT-EXP to power the drivers.  
 If using the drivers in UART mode, a jumper should be added to the pins underneath the driver as normal.  
 
@@ -50,7 +50,7 @@ stepper.TmcDiagPins = { PC_1, PC_3, PC_0, PC_2, PA_0, PE_9, PB_1, PC_5 }
 
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include PF_2 and PC_13 in your board.txt file.  
-For more information about setting up sensorless homing, please read [this](sensorless.html){:target="_blank"}.  
+For more information about setting up sensorless homing, please read [this](skr_3_ez_h743_sensorless.html){:target="_blank"}.  
 
 ## Config.g Modification
 
