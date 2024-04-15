@@ -5,7 +5,7 @@ keywords:
 last_updated: 10/04/2024
 summary: "Using and Configuring Sensorless Homing on a Fly-Super8Pro H743"
 sidebar: mydoc_sidebar
-permalink: fly_super8pro_h743_sensorless.html
+permalink: fly_super8pro_h743_sensorless_3_5.html
 folder: mydoc
 comments: false
 toc: false

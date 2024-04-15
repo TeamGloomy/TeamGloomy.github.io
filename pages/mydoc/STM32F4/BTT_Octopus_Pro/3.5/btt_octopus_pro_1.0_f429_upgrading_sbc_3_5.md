@@ -11,8 +11,7 @@ comments: false
 toc: false
 datatable: true
 firmware: "firmware_octopuspro1_0_f4.bin"
-wifiFirmware: "WiFiModule_esp8266.bin or WiFiModule_esp32.bin"
-firmwareSBC: "firmware_octopuspro1_0_f4.zip"
+rrfboot: custom/3.5/rrfboot/rrfboot_btt_octopus_pro_1.0_f429.html
 ---
 
 {% include custom/3.5/upgradingSBC.html %}

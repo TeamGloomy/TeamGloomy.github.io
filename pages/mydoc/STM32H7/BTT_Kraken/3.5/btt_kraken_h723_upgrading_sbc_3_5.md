@@ -11,10 +11,7 @@ comments: false
 toc: false
 datatable: true
 firmware: "firmware_kraken_h723.bin"
-wifiFirmware: "WiFiModule_esp32.bin"
-firmwareSBC: "firmware_kraken_h723.zip"
+rrfboot: custom/3.5/rrfboot/rrfboot_btt_kraken_h723.html
 ---
-
-## Overview
 
 {% include custom/3.5/upgradingSBC.html %}

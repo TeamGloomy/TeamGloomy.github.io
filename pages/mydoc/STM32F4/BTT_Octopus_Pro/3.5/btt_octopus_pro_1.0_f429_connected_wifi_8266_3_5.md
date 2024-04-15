@@ -47,8 +47,6 @@ sensorless: "btt_octopus_pro_1.0_f429_sensorless_3_5.html"
 
 {% include custom/3.5/wifi/board_txt.html %}
 
-{% include custom/3.5/wifi/wifi_type.html %}
-
 {% include custom/3.5/wifi/drivers_post35.html %}
 
 </div>

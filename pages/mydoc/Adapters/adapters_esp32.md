@@ -2,7 +2,7 @@
 title: Available ESP32 WiFi Adapters
 tags: []
 keywords: 
-last_updated: 25/03/2022
+last_updated: 15/04/2024
 summary: "A description of the different ESP32 WiFi Adapters available"
 sidebar: mydoc_sidebar
 permalink: adapters_esp32.html
@@ -22,6 +22,7 @@ There are two adapters that support the following boards:
 - SKR Pro
 - Fly-407ZG
 - Fly-CDYv2
+- BTT Kraken
 
 They can be purchased through [aliexpress](https://s.click.aliexpress.com/e/_Dn2O3it).  
 
@@ -30,6 +31,10 @@ They can be purchased through [aliexpress](https://s.click.aliexpress.com/e/_Dn2
 ### Adapter 2
 
 - SKR2
+- SKR3 H723
+- SKR3EZ H723
+- SKR3 H743
+- SKR3EZ H743
 - BTT Octopus v1.1 F429 Version
 - BTT Octopus Pro v1.0 F429 Version
 

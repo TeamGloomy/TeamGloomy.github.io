@@ -8,21 +8,25 @@ The main changes are:-
 
 ### Upgrading
 
-Teamgloomy now generate per board firmware files. The correct file to use for this board is **{{page.firmware}}**.  
+Teamgloomy now generate per board firmware files and going forwards will also release a complete upgrade zip called **STM32RepRapFirmwareWiFi.zip** (which includes all the firmware files, the WiFi files and DWC). These instructions are based on using the zip file.   
 
-{% if {{site.latestStableFirmware}} == {{site.latestBetaFirmware}} %}
-The latest firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
+{% if {{site.latestStableZip}} == {{site.latestBetaZip}} %}
+The latest firmware zip can be found [here]({{site.latestStableZip}}){:target="_blank"}
 {% else %}
-The latest stable firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
-And the latest unstable firmware files can be found [here]({{site.latestBetaFirmware}}){:target="_blank"}
+The latest stable firmware zip can be found [here]({{site.latestStableZip}}){:target="_blank"}
+And the latest unstable firmware zip can be found [here]({{site.latestBetaZip}}){:target="_blank"}
 {% endif %}
 
-With all the changes described above, here are some tips to upgrade the firmware from an earlier version.
+With all the changes described above, here are the steps required to upgrade the firmware.  
 
-1. After uploading the new firmware bin file, DWC will not ask you to install it. You need to use M997 P"{{page.firmware}}" to trigger the install.  
-2. On "some boards" the type of WiFi interface in use will not be known, you need to add wifi.moduleType= (esp32, esp32eth or esp8266) to board.txt to have DWC trigger when a firmware is installed.
-3. There is a bug in the current version of RRF that will prevent mainboards operating in CAN expansion mode from being upgraded over CAN. The simple solution is to remove the SD card and copy the new firmware to firmware.bin. This bug is only present if upgrading from a version of RRF lower than 3.5.0-RC4.  
-4. If for some reason you wish to install the older 1.x version of the WiFi module firmware you will need to upload the firmware file to the board and then run M997 S1 P"{{page.wifiFirmware}}".
+1. Click on the "machine-specific" page in DWC and then the "Install Update" button.
+2. After uploading the new zip file, DWC will not ask you to install it. You need to use `M997 P"{{page.firmware}}"` to trigger the install.  
+3. Once the mainboard has updated and rebooted, upgrade the WiFi firmware using `M997 S1`.  
+
+### Some notes
+
+1. There is a bug in the current version of RRF that will prevent mainboards operating in CAN expansion mode from being upgraded over CAN. The simple solution is to remove the SD card and copy the new firmware to firmware.bin. This bug is only present if upgrading from a version of RRF lower than 3.5.0-RC4.  
+2. If for some reason you wish to install the older 1.x version of the WiFi module firmware you will need to upload the firmware file to the board and then run M997 S1 P"{{page.wifiFirmware}}".
 
 ### Removing some Board.txt entries
 

@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 27/12/2023
+last_updated: 15/04/2024
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -39,6 +39,7 @@ If your board is not on the list, use the generic profile and the pin number for
 There are a number of boards which have configurations pre-configured. They are
 
 * Fly-407ZG
+* Fly-C8
 * Fly-CDYv2
 * Fly-CDYv3
 * Fly-E3
@@ -69,10 +70,12 @@ There are a number of boards which have configurations pre-configured. They are
 
 There are a number of boards which have configurations pre-configured. They are
 
+* Fly-MMU H723
 * Fly-Super5Pro H723
 * Fly-Super8Pro H743
 * Fly-Super8Pro H723
 * Fysetc Spider King H723
+* LDO Leviathan v1.3
 * SKR3 H723
 * SKR3 H743
 * SKR3 EZ H723
@@ -85,6 +88,8 @@ There are a number of boards which have configurations pre-configured. They are
 There is now a growing list of CAN-FD expansion boards that are compatible with all Duet 3, STM32F4 (using an SPI2CAN module) and STM32H7 based boards. They are
 
 * Fly-RRF36
+* Fly-SB2040 Max V3
+* Fly-SB2040 Pro Max V3
 * Fysetc StrideMax Dual V2.0
 
 ## Consumer Printers

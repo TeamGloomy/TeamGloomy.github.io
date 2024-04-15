@@ -12,9 +12,7 @@ toc: false
 datatable: true
 firmware: "firmware_super8pro_h743.bin"
 wifiFirmware: "WiFiModule_esp32.bin"
-firmwareSBC: "firmware_super8pro_h743.zip"
+rrfboot: custom/3.5/rrfboot/rrfboot_fly_super8pro_h743.html
 ---
-
-## Overview
 
 {% include custom/3.5/upgradingSBC.html %}

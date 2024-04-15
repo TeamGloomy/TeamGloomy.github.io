@@ -2,7 +2,7 @@
 title: Fly-RRF-36 General Information
 tags: []
 keywords: 
-last_updated: 27/12/2023
+last_updated: 15/04/2024
 summary: "General information regarding the Fly-RRF-36 Toolboard"
 sidebar: mydoc_sidebar
 permalink: fly_rrf_36_general.html
@@ -78,7 +78,7 @@ Follow the [CAN Connection instructions](fly_rrf_36_can_connection.html) to cont
 
 ### Updating the Toolboard Firmware before 3.5.0-rc2
 
-Download the file called `Duet3Firmware_FLY36RRF.uf2` from [here](https://github.com/gloomyandy/RepRapFirmware/releases). 
+Download the file called `Duet3Firmware_FLY36RRF.uf2` from [here](site.latestBetaFirmware).  
 Using DWC, upload the .uf2 firmware file to the system tab.  
 Navigate to the firmware folder.  
 {% include image.html file="firmware_folder.png" alt="DWC Firmware Folder" caption="DWC Firmware Folder" %}

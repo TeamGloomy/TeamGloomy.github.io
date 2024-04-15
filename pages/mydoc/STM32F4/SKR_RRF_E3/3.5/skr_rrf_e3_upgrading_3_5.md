@@ -11,10 +11,8 @@ comments: false
 toc: false
 datatable: true
 firmware: "firmware_skrrrfe3_1_1_f4.bin"
-wifiFirmware: "WiFiModule_esp8266.bin"
+wifiFirmware: "DuetWiFiServer.bin"
 rrfboot: custom/3.5/rrfboot/rrfboot_skr_rrf_e3.html
 ---
-
-## Overview
 
 {% include custom/3.5/upgrading.html %}

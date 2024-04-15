@@ -85,8 +85,6 @@ rrfbootOverrides: true
 
 {% include custom/3.5/wifi/wifi_board.html %}
 
-{% include custom/3.5/wifi/wifi_type.html %}
-
 {% include custom/3.5/wifi/drivers_post35.html %}
 
 </div>

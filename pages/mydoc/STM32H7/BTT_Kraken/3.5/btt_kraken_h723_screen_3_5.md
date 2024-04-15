@@ -12,8 +12,8 @@ toc: false
 datatable: true
 boardname: BTT Kraken
 RX: "PD_9"
-TX: "PD_8
-12864url: "/btt_octopus_pro_1.1_h723_screen_12864_3_5.html"
+TX: "PD_8"
+12864url:
 screenType: serial
 ---
 

@@ -8,20 +8,25 @@ The main changes are:-
 
 ### Upgrading
 
-Teamgloomy now generate per board firmware files. The correct file to use for this board is **{{page.firmwareSBC}}**.  
+Teamgloomy now generate per board firmware files and going forwards will also release a complete upgrade zip called **STM32RepRapFirmwareSBC.zip** (which includes all the firmware files, the WiFi files and DWC). These instructions are based on using the zip file.   
 
-{% if {{site.latestStableFirmware}} == {{site.latestBetaFirmware}} %}
-The latest firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
+{% if {{site.latestStableZip}} == {{site.latestBetaZip}} %}
+The latest firmware zip can be found [here]({{site.latestStableZip}}){:target="_blank"}
 {% else %}
-The latest stable firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
-And the latest unstable firmware files can be found [here]({{site.latestBetaFirmware}}){:target="_blank"}
+The latest stable firmware zip can be found [here]({{site.latestStableZip}}){:target="_blank"}
+And the latest unstable firmware zip can be found [here]({{site.latestBetaZip}}){:target="_blank"}
 {% endif %}
 
-With all the changes described above, here are some tips to upgrade the firmware from an earlier version.
+With all the changes described above, here are the steps required to upgrade the firmware.  
 
-1. After uploading the new firmware zip file, DWC will not ask you to install it. You need to use M997 P"{{page.firmware}}" to trigger the install.  
-2. There is a bug in the current version of RRF that will prevent mainboards operating in CAN expansion mode from being upgraded over CAN. The simple solution is to remove the SD card and copy the new firmware to firmware.bin. This bug is only present if upgrading from a version of RRF lower than 3.5.0-RC4.  
-3. It is possible that on some SBC installations after installing the new firmware, the firmware may not run in SBC mode (and so DSF/DWC will not connect correctly). To resolve this put the SD card from the RRF board in a PC and add sbc.sbcMode=1 to the board.txt. or remove the SD card entirely from the mainboard.  
+1. Click on the "machine-specific" page in DWC and then the "Install Update" button.
+2. After uploading the new zip file, DWC will not ask you to install it. You need to use `M997 P"{{page.firmware}}"` to trigger the install.  
+3. Once the mainboard has updated and rebooted, upgrade the DSF using the script as detailed [here](stm32_sbc.html#updating-dsf).  
+
+### Some notes
+
+1. There is a bug in the current version of RRF that will prevent mainboards operating in CAN expansion mode from being upgraded over CAN. The simple solution is to remove the SD card and copy the new firmware to firmware.bin. This bug is only present if upgrading from a version of RRF lower than 3.5.0-RC4.  
+2. It is possible that on some SBC installations after installing the new firmware, the firmware may not run in SBC mode (and so DSF/DWC will not connect correctly). To resolve this put the SD card from the RRF board in a PC and add sbc.sbcMode=1 to the board.txt. or remove the SD card entirely from the mainboard.  
 
 ### Removing some Board.txt entries
 

@@ -11,10 +11,7 @@ comments: false
 toc: false
 datatable: true
 firmware: "firmware_super5_h723.bin"
-wifiFirmware: "WiFiModule_esp32.bin"
-firmwareSBC: "firmware_super5_h723.zip"
+rrfboot: custom/3.5/rrfboot/rrfboot_fly_super5pro_h723.html
 ---
-
-## Overview
 
 {% include custom/3.5/upgradingSBC.html %}

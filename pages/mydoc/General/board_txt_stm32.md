@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to STM32
 tags: []
 keywords: 
-last_updated: 27/12/2023
+last_updated: 15/04/2024
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt_stm32.html
@@ -61,13 +61,15 @@ For STM32 boards, pins can take the form of PA0, PA.0, PA_0, A0, A.0 or A_0 or t
 |power.voltage|power.voltage = 24|Sets a voltage when no voltage monitoring is present on the board||
 |sbc.csPin|sbc.csPin = PE_12|Allow use of non standard CS pin||
 |sbc.loadConfig|sbc.loadConfig = 1|Load the board.txt from the SBC if board.txt is present on an SD card in the STM32 board||
-|sbc.TfrReadyPin ("sbc.lpcTfrReadyPin" is no longer supported from 3.4.1_RC1)|sbc.TfrReadyPin = C.14|This sets the transfer ready pin when attaching an SBC||
+|sbc.sbcMode|sbc.sbcMode=1|Put the firmware into SBC mode.|3.5.0-RC4 Onwards|
 |sbc.spiChannel|sbc.spiChannel = 1|This allows the SPI channel to be set that is used for SBC. The default is 1. It can only be set to channel 1 (SPI2) or channel 2 (SPI3). From 3.3rc2_2 only||
+|sbc.TfrReadyPin ("sbc.lpcTfrReadyPin" is no longer supported from 3.4.1_RC1)|sbc.TfrReadyPin = C.14|This sets the transfer ready pin when attaching an SBC||
 |sdCard.external.cardDetectPin|externalSDCard.cardDetectPin = LCD_CD|Sets the external SD card detect pin||
 |sdCard.external.csPin|externalSDCard.csPin = PA_0|Sets the external SD card chip select pin||
 |sdCard.external.spiChannel|sdCard.external.spiChannel = 255|this selects which one is used for the external SD card, can also be set to 255 to indicate no channel is used||
 |sdCard.external.spiFrequencyHz|sdCard.external.spiFrequencyHz = 4000000|Sets the SPI speed for an external SD card in Hz||
 |sdCard.internal.spiFrequencyHz|sdCard.internal.spiFrequencyHz = 4000000|Sets the SPI speed for the internal SD card in Hz||
+|sdCard.internal.type|sdCard.internal.type = 0|This sets the SD card type on the board. 0 = SD_SPI1_A, 1 = SD_SPI1_B, 2 = SD_SDIO, 3 = SD_SPI3_A, 4 = SD_SPI3_B, 5 = SD_SPI2_A, 6 = SD_UNKNOWN and 7 = SD_NONE| 3.5.0-RC4 Onwards|
 |serial.aux.rxTxPins|serial.aux.rxTxPins = { PA_10, PA_9 }|This sets the pin numbers to use for RX and TX on AUX1. Typically uses UART0. See table below for allowable RX and TX pins||
 |serial.aux2.rxTxPins|serial.aux2.rxTxPins = { PC_7, PC_6 }|This sets the pin numbers to use for RX and TX on AUX2. Typically uses UART2. See table below for allowable RX and TX pins||
 |SPI0.pins|SPI0.pins = { PA_5, PA_6, PA_7 }|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 0 - 3.2_7 Onwards|Hardware - Not Configurable|
@@ -80,6 +82,7 @@ For STM32 boards, pins can take the form of PA0, PA.0, PA_0, A0, A.0 or A_0 or t
 |SPI7.pins|SPI7.pins = { PA_5, PA_6, PA_7 }|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 7 - 3.4.1-RC1 Onwards|STM32H7 Only - Hardware|
 |SPI8.pins|SPI8.pins = { PA_5, PA_6, PA_7 }|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 8 - 3.4.1-RC1 Onwards|STM32H7 Only - Hardware|
 |stepper.directionPins|stepper.directionPins = { PD_3, PA_8, PE_3, PD_14, PD_10 }|Sets the driver direction pins in the order 0, 1, 2, 3 and so on|STM32 supports a maximum of 11 drivers|
+|stepper.DriverType|stepper.DriverType = {Tmc2208, Tmc2240, tmc2209, tmc5160, stepdir}|This sets of the type of driver in each slot and is an array|3.5.0-RC1 onwards|
 |stepper.enablePins|stepper.enablePins = { PD_6, PD_1, PE_0, PC_7, PD_13 }|Sets the driver enable pins in the order 0, 1, 2, 3 and so on|STM32 supports a maximum of 11 drivers|
 |stepper.numSmartDrivers|stepper.numSmartDrivers = 3|Sets the number of TMC22XX drivers installed between 1 and 11. Drivers must be installed from drive 0 after 5160 drivers||
 |stepper.num5160Drivers|stepper.num5160Drivers = 3|Sets the number of TMC22XX drivers installed between 1 and 11. Drivers must be installed from drive 0 before 22XX drivers||

@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 firmware: "firmware_cdy2_f4.bin"
-wifiFirmware: "WiFiModule_esp8266.bin"
+wifiFirmware: "DuetWiFiServer.bin"
 rrfboot: custom/3.5/rrfboot/rrfboot_fly_cdyv2.html
 ---
 

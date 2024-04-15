@@ -11,8 +11,8 @@ comments: false
 toc: false
 datatable: true
 firmware: "firmware_octopus1_1_f4.bin"
-wifiFirmware: "WiFiModule_esp8266.bin or WiFiModule_esp32.bin"
-firmwareSBC: "firmware_octopus1_1_f4.zip"
+wifiFirmware: "DuetWiFiServer.bin"
+rrfboot: custom/3.5/rrfboot/rrfboot_btt_octopus_1.1_f429.html
 ---
 
 {% include custom/3.5/upgrading.html %}
