@@ -68,7 +68,7 @@ You can also use the MAX31865 to connect a PT1000.
 
 The board that you will receive does come with firmware installed. It is suggested that you reflash the latest firmware anyway as the board you receive may have an older version of the firmware installed.  
 {% include important.html content="The Fly-SB2040 Pro Max V3 is only supported from release 3.5.0-RC4." %}
-Download the file called `Duet3Firmware_SB2040PROMAX3.uf2` from [here]({{site.latestBetaFirmware}}).  
+Download the file called `Duet3Firmware_SB2040PROMAX3.uf2` from [here]({{site.latestBetaFirmware}}/expansion).  
 To install the firmware, whilst holding the reset button, plug the Fly-SB2040 Pro Max V3 into your PC and drag and drop the .uf2 file onto the rpi drive that appears.
 Follow the [CAN Connection instructions](fly_sb2040_pro_max_v3_can_connection.html) to continue.  
 

@@ -50,7 +50,7 @@ If using multiple toolboards, only the last toolboard should have a CAN jumper i
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an rpi drive.  
 {% include important.html content="StrideMax Dual V2.0 is only supported from release 3.5.0-RC2." %}
-Download the file called `Duet3Firmware_STRIDEMAXV2_0.uf2` from [here](https://github.com/gloomyandy/RepRapFirmware/releases).  
+Download the file called `Duet3Firmware_STRIDEMAXV2_0.uf2` from [here]({{site.latestBetaFirmware}}/expansion).  
 To install the firmware, whilst holding the BOOTSEL button, plug the StrideMax Dual V2.0 into your PC and drag and drop the .uf2 file onto the rpi drive that appears. Once uploaded, remove the toolboard from the computer.  
 Follow the [CAN Connection instructions](stridemax_v2_can_connection.html) to continue.  
 
