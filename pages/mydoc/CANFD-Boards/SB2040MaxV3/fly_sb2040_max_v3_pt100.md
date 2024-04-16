@@ -2,7 +2,7 @@
 title: Connecting a PT100 or PT1000 to a Fly-SB2040 Max V3
 tags: []
 keywords: 
-last_updated: 14/04/2024
+last_updated: 16/04/2024
 summary: "How to connect a PT100 or PT1000 to a Fly-SB2040 Max V3"
 sidebar: mydoc_sidebar
 permalink: fly_sb2040_max_v3_pt100.html
@@ -25,7 +25,7 @@ The use of PT100 and PT1000 temperature sensors is setup using the 8 dip switche
 
 Use the image below to setup the jumpers on the 8 dip switches according to the type of PT100 or PT1000 temperature sensors you are connecting.  
 
-{% include image.html file="fly_rrf_36_max_2.png" alt="Fly-RRF-36 2-wire mode" caption="Fly-RRF-36 2-wire mode" %}  
+{% include image.html file="fly_sb2040_v3_pt100" alt="Fly-SB2040 Max V3 PT100/PT1000 DIP Switch Settings" caption="Fly-SB2040 Max V3 PT100/PT1000 DIP Switch Settings" %}  
 
 ## Config.g changes
 
