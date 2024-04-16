@@ -17,6 +17,12 @@ board: Fly-SB2040 Max V3
 
 The {{page.board}} Toolboard can be connected to any of the mainboards produced by Duet3D, an STM32H723, STM32H743 or an STM32F4 with an spican module.  
 
+### Preparation
+
+You need to make sure the CAN communication switches are in the correct orientation for RRF as shown below.  
+
+{% include image.html file="fly_sb2040_v3_can.jpg" alt="Fly-SB2040 Max V3 CAN Switches" caption="Fly-SB2040 Max V3 CAN Switches" %}  
+
 ### How to connect the board
 
 CAN-FD only requires 2 wires to be connected between each board, CAN-H and CAN-L.  
