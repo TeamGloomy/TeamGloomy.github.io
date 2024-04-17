@@ -2,7 +2,7 @@
 title: Connecting a Fly-Super5Pro H723 via WiFi in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 10/04/2024
+last_updated: 17/04/2024
 summary: "How to connect a Fly-Super5Pro H723 via WiFi"
 sidebar: mydoc_sidebar
 permalink: fly_super5pro_h723_connected_wifi_3_5.html
@@ -59,8 +59,6 @@ rrfbootOverrides: false
 <div role="tabpanel" class="tab-pane" id="manualpost35" markdown="1">
 
 {% include custom/3.5/wifi/board_txt.html %}
-
-{% include custom/3.5/wifi/wifi_board.html %}
 
 {% include custom/3.5/wifi/drivers_post35.html %}
 
