@@ -1811,106 +1811,58 @@ children:
     output: web
     children:
 
-    - title: RRF 3.5.0 and above
+    - title: BTT Kraken General Information
+      url: btt_kraken_h723_general_3_5.html
       output: web
-      children:
-
-      - title: BTT Kraken General Information
-        url: btt_kraken_h723_general_3_5.html
-        output: web
-    
-      - title: Connecting via an ESP32 WiFi Adapter
-        url: btt_kraken_h723_connected_wifi_32_3_5.html
-        output: web
-
-      - title: Connecting via an SBC
-        url: btt_kraken_h723_connected_sbc_3_5.html
-        output: web
-
-      - title: Upgrading WiFi/Standalone from an earlier RRF version
-        url: btt_kraken_h723_upgrading_3_5.html
-        output: web
-
-      - title: Upgrading SBC Mode from an earlier RRF version
-        url: btt_kraken_h723_upgrading_sbc_3_5.html
-        output: web
-
-      - title: Connecting to a CAN-FD expansion board
-        url: btt_kraken_h723_canfd_3_5.html
-        output: web
-
-      - title: Configuring Sensorless Homing
-        url: btt_kraken_h723_sensorless_3_5.html
-        output: web
-    
-      - title: Connecting a Screen
-        url: btt_kraken_h723_screen_3_5.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: btt_kraken_h723_bltouch_3_5.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: btt_kraken_h723_accelerometer_3_5.html
-        output: web
-
-      - title: Connecting a PT100 or PT1000
-        url: btt_kraken_h723_pt100_3_5.html
-        output: web
-
-      - title: rrfboot.txt
-        url: btt_kraken_h723_rrfboot_3_5.html
-        output: web
-
-      - title: Pin Names
-        url: btt_kraken_h723_pins_3_5.html
-        output: web
-
-    - title: RRF 3.4.6 and below
-      output: web
-      children:
-
-      - title: BTT Kraken General Information
-        url: btt_kraken_h723_general.html
-        output: web
-    
-      - title: Connecting via an ESP32 WiFi Adapter
-        url: btt_kraken_h723_connected_wifi_32.html
-        output: web
-
-      - title: Connecting via an SBC
-        url: btt_kraken_h723_connected_sbc.html
-        output: web
-
-      - title: Connecting to a CAN-FD expansion board
-        url: btt_kraken_h723_canfd.html
-        output: web
-
-      - title: Configuring Sensorless Homing
-        url: btt_kraken_h723_sensorless.html
-        output: web
-    
-      - title: Connecting a Screen
-        url: btt_kraken_h723_screen.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: btt_kraken_h723_bltouch.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: btt_kraken_h723_accelerometer.html
-        output: web
-
-      - title: Connecting a PT100 or PT1000
-        url: btt_kraken_h723_pt100.html
-        output: web
-
-      - title: Pin Names
-        url: btt_kraken_h723_pins.html
-        output: web
   
+    - title: Connecting via an ESP32 WiFi Adapter
+      url: btt_kraken_h723_connected_wifi_32_3_5.html
+      output: web
+
+    - title: Connecting via an SBC
+      url: btt_kraken_h723_connected_sbc_3_5.html
+      output: web
+
+    - title: Upgrading WiFi/Standalone from an earlier RRF version
+      url: btt_kraken_h723_upgrading_3_5.html
+      output: web
+
+    - title: Upgrading SBC Mode from an earlier RRF version
+      url: btt_kraken_h723_upgrading_sbc_3_5.html
+      output: web
+
+    - title: Connecting to a CAN-FD expansion board
+      url: btt_kraken_h723_canfd_3_5.html
+      output: web
+
+    - title: Configuring Sensorless Homing
+      url: btt_kraken_h723_sensorless_3_5.html
+      output: web
+  
+    - title: Connecting a Screen
+      url: btt_kraken_h723_screen_3_5.html
+      output: web
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: btt_kraken_h723_bltouch_3_5.html
+      output: web
+
+    - title: Connecting an Accelerometer
+      url: btt_kraken_h723_accelerometer_3_5.html
+      output: web
+
+    - title: Connecting a PT100 or PT1000
+      url: btt_kraken_h723_pt100_3_5.html
+      output: web
+
+    - title: rrfboot.txt
+      url: btt_kraken_h723_rrfboot_3_5.html
+      output: web
+
+    - title: Pin Names
+      url: btt_kraken_h723_pins_3_5.html
+      output: web
+     
   - title: BTT Octopus v1.1 f429 Version
     output: web
     children:
