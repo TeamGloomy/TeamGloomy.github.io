@@ -14,6 +14,14 @@ Welcome to the RepRapFirmware on LPC and STM32 boards.
 This software is a port of the open source RepRapFirmware produced by [Duet3D](http://www.duet3d.com) for their Duet range of boards.  
 The LPC port was originally created by [sadvi](https://github.com/sdavi). Support for LPC boards was dropped after RRF 3.3.0_16.  
 
+{% include warning.html content="If you are an STM32 user (all STM boards) and have already updated to the 3.5.0-RC4 release, please heed the following upgrade note:
+
+Very important! If you use a M400 command in your deployprobe.g or retractprobe.g file (or the corresponding files with the probe number added e.g. deployprobe0.g) or in any macro files that are called by those files, and your main board supports multiple motion systems (e.g. any Duet 3 main board or STM32 board), you must add parameter S1 to that command. Failure to do so is likely to result in head movement outside the configured M208 limits.
+
+Adding the S1 parameter to M400 commands has no effect if you are running older firmware versions, so you won't need to remove it if you subsequently revert to an earlier firmware version.
+
+For the timebeing we have made the decision to withdraw the 3.5.0-RC4 release for mainboards. It can still be used for expansion boards such as the recently released SB2040 Max v3 with 3.5.0-RC3 on the mainboard" %}
+
 ## Latest Firmware Versions
 
 ### Latest Stable STM32F4 and STM32H7 Build

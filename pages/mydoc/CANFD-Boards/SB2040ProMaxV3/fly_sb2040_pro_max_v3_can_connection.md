@@ -36,7 +36,7 @@ All boards in the system must have different CAN addresses. Fly-RRF36 Toolboards
 
 If the {{page.board}} is the last board on the CANbus then it requires the 120ohm resistor enabling. To do so, set DIP switch 1 to ON.
 
-{% include image.html file="fly_sb2040_v3_dips.png" alt="Fly-SB2040 Max V3 DIP Switches" caption="Fly-SB2040 Max V3 DIP Switches" %} 
+{% include image.html file="fly_sb2040_v3_dips.png" alt="Fly-SB2040 Max V3 DIP Switches" caption="Fly-SB2040 Max V3 DIP Switches" %}  
 
 #### Checking the toolboard connection is functional
 
