@@ -1698,7 +1698,7 @@ children:
         output: web
     
       - title: Flashing an RRF compatible bootloader
-        url: fly_super8pro_h743_bootloader_3_5.html
+        url: fly_super8pro_h743_bootloader.html
         output: web
     
       - title: Connecting via WiFi
