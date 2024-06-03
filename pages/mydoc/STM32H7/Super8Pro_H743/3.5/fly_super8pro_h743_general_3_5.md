@@ -5,7 +5,7 @@ keywords:
 last_updated: 16/07/2023
 summary: "General information regarding the Fly-Super8Pro H743"
 sidebar: mydoc_sidebar
-permalink: fly_super8pro_H743_general_3_5.html
+permalink: fly_super8pro_h743_general_3_5.html
 folder: mydoc
 comments: false
 toc: false
