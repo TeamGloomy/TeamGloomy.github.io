@@ -16,16 +16,17 @@ board: Fly-SB2040 Pro Max V3
 ## Overview
 
 The {{page.board}} toolboards have support for PT100 and PT1000 temperature sensors.  
+For PT1000, you can either use this connection method described here or the standard temperature sensor connector with a jumper installed as described on the general information page.  
 
 ## Hardware Setup
 
 The use of PT100 and PT1000 temperature sensors is setup using the 8 dip switches on the {{page.board}}.  
 
-{% include image.html file="fly_sb2040_v3_dips.png" alt="Fly-SB2040 Max V3 DIP Switches" caption="Fly-SB2040 Max V3 DIP Switches" %}  
+{% include image.html file="fly_sb2040_v3_dips.png" alt="Fly-SB2040 Pro Max V3 DIP Switches" caption="Fly-SB2040 Pro Max V3 DIP Switches" %}  
 
 Use the image below to setup the jumpers on the 8 dip switches according to the type of PT100 or PT1000 temperature sensors you are connecting.  
 
-{% include image.html file="fly_sb2040_v3_pt100" alt="Fly-SB2040 Max V3 PT100/PT1000 DIP Switch Settings" caption="Fly-SB2040 Max V3 PT100/PT1000 DIP Switch Settings" %}  
+{% include image.html file="fly_sb2040_v3_pt100" alt="Fly-SB2040 Pro Max V3 PT100/PT1000 DIP Switch Settings" caption="Fly-SB2040 Pro Max V3 PT100/PT1000 DIP Switch Settings" %}  
 
 ## Config.g changes
 
@@ -42,7 +43,7 @@ M308 S1 P"124.max31865cs" Y"rtd-max31865" F60 R430 W#
 
 {% include warning.html content="The # in W# is the number of wires your PT100 has, which is either 2, 3 or 4 and should be changed accordingly." %}
 
-{% include warning.html content="Make sure you include the R430 as the Fly-RRF-36 uses a different reference resistor than expected" %}
+{% include warning.html content="Make sure you include the R430 as the Fly-SB2040 Pro Max V3 uses a different reference resistor than expected" %}
 
 ### PT1000
 
@@ -55,4 +56,4 @@ M308 S1 P"124.max31865cs" Y"rtd-max31865" F60 R4300 W#
 
 {% include warning.html content="The # in W# is the number of wires your PT1000 has, which is either 2, 3 or 4 and should be changed accordingly." %}
 
-{% include warning.html content="Make sure you include the R4300 as the BTT Octopus Pro v1.0 F429 Version uses a different reference resistor than expected" %}
+{% include warning.html content="Make sure you include the R4300 as the Fly-SB2040 Pro Max V3 uses a different reference resistor than expected" %}

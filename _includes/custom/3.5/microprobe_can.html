@@ -1,0 +1,135 @@
+## Overview
+
+This page covers the connection and configuration of the [BTT MicroProbe](https://biqu.equipment/collections/expansion-board/products/microprobe-v1-0-for-b1-printers-h2-extruders-ender-3) to a {{page.boardname}}.  
+
+{% include warning.html content="BTT advertise this probe as being a drop in replacement for the BLTouch. It is a drop in wiring replacement but your config needs to be different! Please edit your files to remove M280 and replace with M42 as detailed below." %}
+
+### Physical Connections
+
+Connect the BTT MicroProbe to the {{page.boardname}} as described in the table below.  
+
+<div class="datatable-begin"></div>
+
+|BTT MicroProbe Wire Colour|{{page.boardname}}|{{page.boardname}} Pin Name|
+|:---|:---|:---|
+|Black (Brown on image)|GND||
+|Red|+5v||
+|Yellow|{{page.yellowPin}}|{{page.yellowName}}|
+|Black|GND||
+|White|{{page.whitePin}}|{{page.whiteName}}|
+
+{% capture imagefile %}
+{{ page.image }}
+{% endcapture %}
+{% capture captiontext %}
+{{ page.boardname }} MicroProbe Connection
+{% endcapture %}
+{% if page.image != "" %}
+{% include image.html file=imagefile alt="" caption=captiontext %}
+{% endif %}
+
+<div class="datatable-end"></div>
+
+### Config.g Changes
+
+#### V1 Microprobe
+
+If using a V1 Microprobe, your config.g should be modified as below.
+```
+M558 P9 H6 F250:30 T8000 C"^124.{{page.whiteName}}"       ; set Z probe type to microprobe and the dive height + speeds
+M950 P0 C"124.{{page.yellowName}}"                              ; Setup {{page.yellowName}} as on/off port on {{page.boardname}}
+```
+
+### V2 Microprobe
+
+If using a V2 Microprobe, your config.g should be modified as below.
+```
+M558 P9 H6 F250:30 T8000 C"^!124.{{page.whiteName}}"       ; set Z probe type to microprobe and the dive height + speeds
+M950 P0 C"124.{{page.yellowName}}"                              ; Setup {{page.yellowName}} as on/off port on {{page.boardname}}
+```
+
+#### Probe Offsets
+
+You will also need to set up your probe offset using [G31](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#g31-set-or-report-current-probe-status) and your [mesh probing grid](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m557-set-z-probe-point-or-define-probing-grid)
+
+## Files to Create
+
+Create the following files. 
+
+### deployprobe.g
+
+Create a file in your sys folder called
+```
+deployprobe.g
+```
+In it, paste the following code
+```
+M42 P0 S1
+G4 P500
+```
+### retractprobe.g
+
+Create a file in your sys folder called
+```
+retractprobe.g
+```
+In it, paste the following code
+```
+M42 P0 S0
+G4 P500
+```
+
+## Files to Modify
+
+If you you want to use your probe as your z endstop, you need to modify your homeall.g/homedelta.g and homez.g
+
+### homez.g
+
+For homez.g, you will have need to have something similar to this. Please modify the co-ordinates required for the centre of your bed accordingly.
+```
+; ################# Home Z Preparation ################
+
+G91 															; Relative mode
+G1 H2 Z5 F5000													; Lower the bed
+G90																; Back to absolute positioning
+G1 X0 Y0 F10000 		 										; Move to the center of the bed. Adjust to the co-ordinates required for the centre of your bed
+
+; ################# Home Z Preparation ################
+
+G30					 											; Probe a single point
+```
+
+### homeall.g 
+
+The homeall.g should have something similar to the above or should call the homez.g file using
+```
+M98 P"homez.g"
+```
+
+## Testing Macros
+
+It is suggested that you create a number of macros to allow testing of your BTT MicroProbe. These should each be created in the macros folder.  
+
+### pin up
+
+Create a file in your macros folder called
+```
+pin up
+```
+In it, paste the following code
+```
+M42 P0 S0 ; Turn off pin so it unretracts
+G4 P500 
+```
+
+### pin down
+
+Create a file in your macros folder called
+```
+pin down
+```
+In it, paste the following code
+```
+M42 P0 S1 ; Turn on pin so it deploys
+G4 P500 
+```

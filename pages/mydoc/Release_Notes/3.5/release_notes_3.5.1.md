@@ -3,7 +3,7 @@ title: Release notes release_notes_3.5.1
 tags: [getting_started]
 keywords: release notes, announcements, what's new, new features
 last_updated: 21/04/2024
-summary: "Release notes for the unstable release of 3.5.1"
+summary: "Release notes for the stable release of 3.5.1"
 sidebar: mydoc_sidebar
 permalink: release_notes_3.5.1.html
 folder: mydoc
@@ -15,7 +15,7 @@ comments: false
 
 Please see the Duet3D [release notes for 3.5.1](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x#reprapfirmware-351-stable-changes-since-346) to see whats new and what has been fixed in this release since 3.4.6.  
 
-## RepRapFirmware for STM32F4 and STM32H7 Release Notes for 3.5.16 from 3.4.6
+## RepRapFirmware for STM32F4 and STM32H7 Release Notes for 3.5.1 from 3.4.6
 
 * Duet3d 3.5.1
 * Enable MQTT support (requires ESP firmware >= V2.1b3)

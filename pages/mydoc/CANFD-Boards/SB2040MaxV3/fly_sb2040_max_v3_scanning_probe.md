@@ -30,7 +30,7 @@ To use the scanning Z probe as a secondary Z probe, assuming you already have a 
 ```text
 ; Scanning Z probe
 M558 K1 P11 C"124.i2c.ldc1612" F36000 T36000
-M308 A"SZP coil" S10 Y"thermistor" P"124.temp1" ; thermistor on PCB/coil
+M308 A"SZP coil" S10 Y"thermistor" P"124.temp1" T100000 B4092; thermistor on PCB/coil
 ```
 
 * The K1 parameter configures it as Z probe 1 so as to leave your primary probe as Z probe 0

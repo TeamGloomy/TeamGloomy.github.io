@@ -1,16 +1,16 @@
 ---
-title: Fly-SB2040 Pro Max V3 Scanning Probe
+title: Fly-SHT36 Max V3 Scanning Probe
 tags: []
 keywords: 
-last_updated: 26/06/2023
-summary: "Configuring the Scanning Probe on a Fly-SB2040 Pro Max V3"
+last_updated: 15/06/2024
+summary: "Configuring the Scanning Probe on a Fly-SHT36 Max V3"
 sidebar: mydoc_sidebar
-permalink: fly_sb2040_pro_max_v3_scanning_probe.html
+permalink: fly_sht36_max_v3_scanning_probe.html
 folder: mydoc
 comments: false
 toc: false
 datatable: true
-board: Fly-SB2040 Pro Max V3
+board: Fly-SHT36 Max V3
 ---
 
 ## Overview
