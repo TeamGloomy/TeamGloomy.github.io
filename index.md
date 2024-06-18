@@ -18,7 +18,7 @@ The LPC port was originally created by [sadvi](https://github.com/sdavi). Suppor
 
 ### Latest Stable STM32F4 and STM32H7 Build
 
-The latest stable version is [3.5.1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.5.2)
+The latest stable version is [3.5.2](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.5.2)
 
 ### Latest Unstable STM32F4, STM32H7 and STM32H723 Build
 
