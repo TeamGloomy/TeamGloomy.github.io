@@ -53,6 +53,10 @@ children:
     output: web
     children:
 
+    - title: 3.5.2 Release Notes
+      url: release_notes_3.5.2.html
+      output: web
+    
     - title: 3.5.2 - RC1 Release Notes
       url: release_notes_3.5.2-rc.1.html
       output: web
