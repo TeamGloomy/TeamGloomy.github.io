@@ -3161,7 +3161,7 @@ children:
     output: web
     children:
 
-    - title: Fly-RRF-36 General Information
+    - title: Fly-SHT36 Max V3 General Information
       url: fly_sht36_max_v3_general.html
       output: web
 

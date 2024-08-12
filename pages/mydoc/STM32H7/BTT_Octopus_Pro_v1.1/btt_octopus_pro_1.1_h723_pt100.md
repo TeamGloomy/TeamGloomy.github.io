@@ -2,7 +2,7 @@
 title: Connecting a PT100 or PT1000 to a BTT Octopus Pro v1.1
 tags: []
 keywords: 
-last_updated: 27/12/2023
+last_updated: 12/08/2023
 summary: "How to connect a PT100 or PT1000 to a BTT Octopus Pro v1.1"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.1_h723_pt100.html
@@ -61,7 +61,7 @@ To use the PT1000 on your hotend, use the following code in config.g
 If you are in a country where the mains frequency is 50Hz, change the F60 to F50 (if you don't know, look [here](https://www.oaktreeproducts.com/img/product/description/List%20of%20Worldwide%20AC%20Voltages.pdf))
 
 ```text
-M308 S1 P"PF_8" Y"rtd-max31865" F60 R4300
+M308 S1 P"PF_8" Y"rtd-max31865" F60 R430
 ```
 
-{% include warning.html content="Make sure you include the R4300 as the BTT Octopus Pro v1.1 uses a different reference resistor than expected" %}
+{% include warning.html content="Make sure you include the R430 as the BTT Octopus Pro v1.1 uses a different reference resistor than expected" %}
