@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 15/04/2024
+last_updated: 13/09/2024
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -71,6 +71,7 @@ There are a number of boards which have configurations pre-configured. They are
 There are a number of boards which have configurations pre-configured. They are
 
 * Fly-MMU H723
+* Fly-ProX10 H723
 * Fly-Super5Pro H723
 * Fly-Super8Pro H743
 * Fly-Super8Pro H723
@@ -90,6 +91,7 @@ There is now a growing list of CAN-FD expansion boards that are compatible with 
 * Fly-RRF36
 * Fly-SB2040 Max V3
 * Fly-SB2040 Pro Max V3
+* Fly-SHT36v3 Max V3
 * Fysetc StrideMax Dual V2.0
 
 ## Consumer Printers
