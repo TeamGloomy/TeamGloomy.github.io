@@ -2,7 +2,7 @@
 title: Connecting an Fly-Super8Pro H723 via SBC in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 07/04/2024
+last_updated: 13/09/2024
 summary: "How to connect to an Fly-Super8Pro H723 via SBC"
 sidebar: mydoc_sidebar
 permalink: fly_super8pro_h723_connected_sbc_3_5.html
@@ -13,10 +13,10 @@ datatable: true
 boardname: Fly-Super8Pro H723
 mcu: STM32H723
 firmware: firmware_super8pro_h723.bin
-schematic: https://github.com/Mellow-3D/Fly-Super8Pro/blob/main/Hardware/Super8Pro_Schematic.pdf
-BCM11: PB_13
-BCM9: PB_14
-BCM10: PB_15
+schematic: https://github.com/Mellow-3D/Fly-Super8Pro/blob/main/Hardware/Schematic.pdf
+BCM11: PA_5
+BCM9: PA_6
+BCM10: PA_7
 BCM8: PA_4
 BCM25: PG_15
 heat: "{ adc0, adc1, adc2 }"

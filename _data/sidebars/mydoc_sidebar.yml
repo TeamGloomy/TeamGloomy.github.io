@@ -1345,6 +1345,50 @@ children:
         url: fly_e3_pro_v3_pins.html
         output: web
   
+  - title: Fly-ProX10 H723
+    output: web
+    children:
+
+    - title: RRF 3.5.0 and above
+      output: web
+      children:
+
+      - title: Fly-ProX10 H723 General Information
+        url: fly_prox10_h723_general_3_5.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: fly_prox10_h723_connected_wifi_3_5.html
+        output: web
+
+      - title: Connecting to a CAN-FD expansion board
+        url: fly_prox10_h723_canfd_3_5.html
+        output: web
+
+      - title: Configuring Sensorless Homing
+        url: fly_prox10_h723_sensorless_3_5.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: fly_prox10_h723_screen_3_5.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_prox10_h723_bltouch_3_5.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: fly_prox10_h723_accelerometer_3_5.html
+        output: web
+
+      - title: rrfboot.txt
+        url: fly_prox10_h723_rrfboot_3_5.html
+        output: web
+
+      - title: Pin Names
+        url: fly_prox10_h723_pins_3_5.html
+        output: web
+  
   - title: Fly-Super5Pro H723
     output: web
     children:
