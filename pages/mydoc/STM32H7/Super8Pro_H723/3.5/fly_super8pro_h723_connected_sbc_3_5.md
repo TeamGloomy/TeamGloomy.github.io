@@ -13,7 +13,7 @@ datatable: true
 boardname: Fly-Super8Pro H723
 mcu: STM32H723
 firmware: firmware_super8pro_h723.bin
-schematic: https://github.com/Mellow-3D/Fly-Super8Pro/blob/main/Hardware/Schematic.pdf
+schematic: https://github.com/Mellow-3D/Fly-Super8Pro/blob/main/Hardware/Super8Pro_Schematic.pdf
 BCM11: PB_13
 BCM9: PB_14
 BCM10: PB_15

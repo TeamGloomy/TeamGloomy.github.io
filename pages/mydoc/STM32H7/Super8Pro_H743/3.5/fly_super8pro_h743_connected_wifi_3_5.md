@@ -15,7 +15,7 @@ mcu: STM32H743
 firmware: firmware_super8pro_h743.bin
 wifi: ESP32
 module: onboard
-schematic: https://github.com/Mellow-3D/Fly-Super8Pro/blob/main/Hardware/Schematic.pdf
+schematic: https://github.com/Mellow-3D/Fly-Super8Pro/blob/main/Hardware/Super8Pro_Schematic.pdf
 DRP: PD_13
 TRP: PD_11
 ERP: PD_10
