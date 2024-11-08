@@ -3513,6 +3513,10 @@ children:
     url: adapters_esp32.html
     output: web
 
+  - title: Available ESP32 WiFi/Ethernet Adapters
+    url: adapters_esp32eth.html
+    output: web
+
 - title: Printer Specific Guides
   output: web
   children:
