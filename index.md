@@ -22,7 +22,7 @@ The latest stable version is [3.5.3](https://github.com/gloomyandy/RepRapFirmwar
 
 ### Latest Unstable STM32F4, STM32H7 and STM32H723 Build
 
-The latest unstable version is [3.6.0-beta.1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.0-beta.1)
+The latest unstable version is [3.6.0-beta.2](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.0-beta.2)
 
 ### Latest Stable LPC Build
 
@@ -34,7 +34,7 @@ Please note that 3.3.X will be the last release for LPC boards.
 
 ### Latest Stable
 
-The latest stable WiFi firmware version is [2.1.0](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.5.1)
+The latest stable WiFi firmware version is [2.1.0](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.5.3)
 
 ### Latest Unstable
 
