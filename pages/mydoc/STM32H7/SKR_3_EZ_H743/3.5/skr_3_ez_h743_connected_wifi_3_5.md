@@ -2,7 +2,7 @@
 title: Connecting an SKR3EZ H743 via an ESP8266 or ESP32 WiFi Adapter in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 10/04/2024
+last_updated: 20/11/2024
 summary: "How to connect to an SKR3EZ H743 via an ESP8266 or ESP32 WiFi Adapter"
 sidebar: mydoc_sidebar
 permalink: skr_3_ez_h743_connected_wifi_3_5.html
@@ -62,7 +62,7 @@ rrfbootOverrides: false
 
 {% include custom/3.5/wifi/board_txt.html %}
 
-{% include custom/3.5/wifi/wifi_board.html %}
+{% include custom/3.5/wifi/wifi_type.html %}
 
 {% include custom/3.5/wifi/drivers_post35.html %}
 
