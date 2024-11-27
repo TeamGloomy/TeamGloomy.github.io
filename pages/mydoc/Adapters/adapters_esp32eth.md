@@ -2,7 +2,7 @@
 title: Available ESP32 WiFi/Ethernet Adapters
 tags: []
 keywords: 
-last_updated: 08/11/2024
+last_updated: 27/11/2024
 summary: "A description of the different ESP32 WiFi/Ethernet Adapters available"
 sidebar: mydoc_sidebar
 permalink: adapters_esp32eth.html
@@ -48,9 +48,11 @@ wifi.moduleType = esp32eth
 
 ## Usage
 
-To activate the ethernet connection, send
+To activate the ethernet connection when connected to WiFi already, send as a macro
 
 ```text
 M552 S-1
 M552 S1 p"ethernet"
 ```
+
+If you always want to use ethernet, replace the line `M552 S1` with `M552 S1 p"ethernet"`.  
