@@ -24,7 +24,7 @@ Driver pin numbers. They are separated into driver number.
 
 |Pin Type|0|1|2|3|4|5|6|7|8|9|
 | :------------- |:-------------|:-------------|:-------------|:-------------|:-------------|:-------------|:-------------|:-------------|:-------------|:-------------|
-|Enable Pins|PG_10|PE_13|PG_0|PF_13|PB_2|PC_0|PF_4|PG_0|PC_13|PG_15|
+|Enable Pins|PG_10|PE_13|PG_0|PF_13|PB_2|PC_0|PF_4|PF_0|PC_13|PG_15|
 |Step Pins|PE_7|PE_8|PE_9|PE_10|PE_11|PE_2|PE_3|PE_4|PE_1|PE_0|
 |Direction Pins|PG_11|PE_14|PG_1|PF_14|PF_11|PF_10|PF_2|PC_15|PB_7|PG_14|
 |UART Pins|PG_12|PE_15|PE_12|PF_15|PF_12|PF_5|PF_1|PC_14|PB_6|PG_13|
