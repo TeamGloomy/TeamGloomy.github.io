@@ -2,7 +2,7 @@
 title: Connecting an accelerometer to an BTT Octopus Pro v1.0 F429 Version in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 02/04/2024
+last_updated: 27/11/2024
 summary: "How to connect an accelerometer to an BTT Octopus Pro v1.0 F429 Version"
 sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.0_f429_accelerometer_3_5.html
@@ -16,7 +16,7 @@ SDA: PE_7
 SDO: PE_9
 CS: PE_12
 int: PE_10
-spiChannel: 5
+spiChannel: 4
 location: EXP1 header
 showSPI: false
 ---
