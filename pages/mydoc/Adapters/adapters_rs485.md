@@ -40,7 +40,7 @@ You can buy the above from Aliexpress or [module 1](https://www.amazon.co.uk/Dol
 
 ### Board.txt and Config.g changes
 
-As this uses a UART (serial) connection, you need to have one defined in board.txt. Usually you would use the header designed to attach a screen to the board. If you are using this port, depending on your board, it may be possible to use another set of pins as a second UART connection. The UART pins on an STM32F4 board are listed [here](https://teamgloomy.github.io/board_txt_stm32.html#uart-useable-pins---stm32f4-based-boards) and the UART pins on an STM32H7 board are listed [here]. You would add them as `serial.aux2.rxTxPins`.  
+As this uses a UART (serial) connection, you need to have one defined in board.txt. Usually you would use the header designed to attach a screen to the board. If you are using this port, depending on your board, it may be possible to use another set of pins as a second UART connection. The UART pins on an STM32F4 board are listed [here](https://teamgloomy.github.io/board_txt_stm32.html#uart-useable-pins---stm32f4-based-boards) and the UART pins on an STM32H7 board are listed [here](https://teamgloomy.github.io/board_txt_stm32.html#uart-useable-pins---stm32h7-based-boards). You would add them as `serial.aux2.rxTxPins`.  
 
 For config.g, you need to add a single line `M575 P1 B9600 S7` where B is the UART speed of the device you are communicating with. If you use the second UART connection, you will need to change P1 to P2.
 
