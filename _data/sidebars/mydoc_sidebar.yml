@@ -65,6 +65,10 @@ children:
     output: web
     children:
 
+    - title: 3.5.4 Release Notes
+      url: release_notes_3.5.4.html
+      output: web
+    
     - title: 3.5.3 Release Notes
       url: release_notes_3.5.3.html
       output: web
@@ -3519,6 +3523,10 @@ children:
 
   - title: Available ESP32 WiFi/Ethernet Adapters
     url: adapters_esp32eth.html
+    output: web
+
+  - title: Available UART to RS485 Modules
+    url: adapters_rs485.html
     output: web
 
 - title: Printer Specific Guides

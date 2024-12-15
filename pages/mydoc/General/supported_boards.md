@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 13/09/2024
+last_updated: 15/12/2024
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -83,6 +83,7 @@ There are a number of boards which have configurations pre-configured. They are
 * SKR3 EZ H743
 * BTT Kraken H723
 * BTT Octopus Pro v1.1 H723
+* BTT Scylla v1.0 H723
 
 ## CAN-FD Expansion Boards
 
@@ -93,6 +94,7 @@ There is now a growing list of CAN-FD expansion boards that are compatible with 
 * Fly-SB2040 Pro Max V3
 * Fly-SHT36v3 Max V3
 * Fysetc StrideMax Dual V2.0
+* Fysetc PITB V2
 
 ## Consumer Printers
 

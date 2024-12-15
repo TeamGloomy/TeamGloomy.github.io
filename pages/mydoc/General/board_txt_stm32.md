@@ -24,20 +24,25 @@ For STM32 boards, pins can take the form of PA0, PA.0, PA_0, A0, A.0 or A_0 or t
 
 |Item Name|Example|Description|STM32 Comments|
 | :------------- | :---------------|:---|:---|:---|
-|8266wifi.clockReg|8266wifi.clockReg = 8195|Sets the WiFi clock speed.ESP32 only. The default is 8195 (DMA 20MHz - Typical WiFi transfer speed of 1.56Mbytes/S for F4 and 1.63Mbytes/S for H7). F4 processors seem to work ok at 8194 (DMA 27MHz - Typical WiFi transfer speed of 1.80Mbytes/S for F4 and 1.92Mbytes/S for H7) and H7 processors (but not F4) seem to work ok at 8193 (DMA 40MHz - Typical WiFi transfer speed of 2.43Mbytes/S for H7). 3.4.1 onwards and requires DuetWifiServer 1.26_09 onwards||
-|8266wifi.csPin|8266wifi.csPin = PE_12|Allow use of non standard CS pin||
-|8266wifi.espDataReadyPin|example 8266wifi.espDataReadyPin = PE_13| used to indicate that data is available from the ESP8266||
-|8266wifi.espResetPin|8266wifi.espResetPin = PE_15|This sets the reset pin to use when connecting an ESP8266||
-|8266wifi.TfrReadyPin (8266wifi.lpcTfrReadyPin is no longer supported from 3.4.1_RC1)|8266wifi.TfrReadyPin = PE_14|This sets the transfer ready pin when connecting an ESP8266||
-|8266wifi.serialRxTxPins|8266wifi.serialRxTxPins = { PD_9, PD_8 }|This sets the pin numbers to use for RX and TX when connecting an ESP8266. See table below for allowable RX and TX pins||
-|8266wifi.spiChannel|8266wifi.spiChannel=1|This allows the SPI channel to be set that is used for WiFi. The default is 1. It can only be set to channel 1 (SPI2) or channel 2 (SPI3). From 3.3rc2_2 only||
+|wifi.clockReg (was 8266wifi.clockReg)|wifi.clockReg = 8195|Sets the WiFi clock speed.ESP32 only. The default is 8195 (DMA 20MHz - Typical WiFi transfer speed of 1.56Mbytes/S for F4 and 1.63Mbytes/S for H7). F4 processors seem to work ok at 8194 (DMA 27MHz - Typical WiFi transfer speed of 1.80Mbytes/S for F4 and 1.92Mbytes/S for H7) and H7 processors (but not F4) seem to work ok at 8193 (DMA 40MHz - Typical WiFi transfer speed of 2.43Mbytes/S for H7). 3.4.1 onwards and requires DuetWifiServer 1.26_09 onwards||
+|wifi.csPin (was 8266wifi.csPin)|wifi.csPin = PE_12|Allow use of non standard CS pin||
+|wifi.espDataReadyPin (was 8266wifi.espDataReadyPin)|example wifi.espDataReadyPin = PE_13| used to indicate that data is available from the ESP8266||
+|wifi.espResetPin (was 8266wifi.espResetPin)|wifi.espResetPin = PE_15|This sets the reset pin to use when connecting an ESP8266||
+|wifi.moduleType (was 8266wifi.moduleType)|wifi.moduleType = esp32| This sets the type of module installed so the correct firmware is installed. esp32, esp32eth and esp8266 are valid options||
+|wifi.TfrReadyPin (was 8266wifi.TfrReadyPin)|wifi.TfrReadyPin = PE_14|This sets the transfer ready pin when connecting an ESP8266||
+|wifi.serialRxTxPins (was 8266wifi.serialRxTxPins)|wifi.serialRxTxPins = { PD_9, PD_8 }|This sets the pin numbers to use for RX and TX when connecting an ESP8266. See table below for allowable RX and TX pins||
+|wifi.spiChannel (was 8266wifi.spiChannel)|wifi.spiChannel=1|This allows the SPI channel to be set that is used for WiFi. The default is 1. It can only be set to channel 1 (SPI2) or channel 2 (SPI3). From 3.3rc2_2 only||
 |accelerometer.spiChannel| accelerometer.spiChannel = 4 | This sets the SPI channel to be used for the accelerometer. From 3.3b3_2 onwards ||
 |atx.initialPowerOn|atx.initialPowerOn = 1|This sets the ATX power pin as on as soon as the board powers up rather than having to wait for M80 to be ran. The default is true||
 |atx.powerPin|atx.PowerPin = PB_12|This sets the pin to be used for controlling an ATX power supply||
 |atx.powerPinInverted|atx.powerPinInverted = 0|Some ATX power supplies are active low for off and some are active high. This allows that to be set. Use either 0 or 1||
-|board ("lpc.board" is no longer supported from 3.4.1_RC1)|board = fly_e3|This sets the correct board pin mapping to load. See table below for current list||
-|can.writePin|can.writePin = PD_1|This sets the CAN_RX pin||
+|board ("lpc.board" is no longer supported from 3.4.1_RC1)|board = fly_e3|This sets the board short name||
+|board.longName|board.longName = Fly E3 STM32F4|This sets the long name of the board used by DWC||
+|can.csPin|can.csPin = PD_1|Sets the CS pin when using an SPI2CANFD module||
 |can.readPin|can.readPin = PD_1|This sets the CAN_TX pin||
+|can.spiChannel|can.spiChannel = 1|This sets the CAN_TX pin||
+|can.spiFrequencyHz|can.spiFrequencyHz = PD_1|This sets SPI frequency for the SPI2CANFD module in Hz. The default is 15000000||
+|can.writePin|can.writePin = PD_1|This sets the CAN_RX pin||
 |heat.spiTempSensorChannel|heat.spiTempSensorChannel = 255|this selects which SPI channel is used to communicate with the temperature sensor board. Can be set to 255 to indicate no channel to be used|STM32F4 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software). STM32H7 has nine SPI interfaces (0, 1, 2, 6, 7 and 8 are hardware and 3, 4 and 5 are software)|
 |heat.spiTempSensorCSPins|heat.spiTempSensorCSPins = { PD_15, NoPin }|Sets the SPI temperature sensor chip select pin. Can be set to 255 to indicate no channel to be used|STM32 accepts a maximum of 2 sensors|
 |heat.tempSensePins|heat.tempSensePins = { PA_3, PA_4, PA_1 }|Sets the temperature sensor pins starting with the bed|STM32 accepts a maximum of 9 entries|
@@ -50,7 +55,7 @@ For STM32 boards, pins can take the form of PA0, PA.0, PA_0, A0, A.0 or A_0 or t
 |lcd.lcdDCPin|lcd.lcdDCPin = LCD_RS|Sets the data control pin (A0)||
 |lcd.panelButtonPin|lcd.panelButtonPin = PD_4|For use when a connected display has an extra button||
 |lcd.spiChannel|lcd.spiChannel = 255|This selects which SPI channel is used to communicate with the LCD. Can be set to 255 to indicate no channel to be used|STM32F4 has six SPI interfaces (three channels 0, 1, 2 are hardware based although only 0 and 1 are implemented, channels 3, 4 and 5 are software). STM32H7 has nine SPI interfaces (0, 1, 2, 6, 7 and 8 are hardware and 3, 4 and 5 are software)
-|led.neopixelPin|led.neopixelPin = PB_11|This sets the output pin for neopixel control||
+|led.neopixelPin|led.neopixelPin = PB_11|This sets the output pin for neopixel control|no longer needed with the new way of programming neopixels|
 |leds.activity|leds.activity = PA_13 |This sets the pin for the CAN-FD activity LED|3.4.2-RC2 Onwards|
 |leds.activityOn|leds.activityOn = 1|This sets polarity of acivity LED and is a boolean value|3.4.2-RC2 Onwards|
 |leds.diagnostic|leds.diagnostic = PA_13|This would set the correct pin for controlling a diagnostic LED||

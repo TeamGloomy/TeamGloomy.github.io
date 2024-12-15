@@ -34,8 +34,8 @@ The BTT Kraken can be connected to any of the CAN-FD expansion boards produced b
 CAN-FD only requires 2 wires to be connected between each board, CAN-H and CAN-L.  
 We recommend using stranded twisted wire pairs, such as those found in ethernet patch cables.
 
-Using the Duet 3 1LC toolboard as example (and the image below), the red wire on the CAN-FD cable is the CAN-H wire and the black is the CAN-L wire. They should be connected to the middle two connections on the CAN-FD connector on the BTT Octopus Pro v1.1. CAN-H is connected to CAN-H and CAN-L is connected to CAN-L.  
-Although the BTT Octopus Pro v1.1 also provides ground and 24v on that same 6 pin JST connector, we recommend wiring the toolboard directly to the PSU.
+Using the Duet 3 1LC toolboard as example (and the image below), the red wire on the CAN-FD cable is the CAN-H wire and the black is the CAN-L wire. They should be connected to the middle two connections on the CAN-FD connector on the BTT Kraken. CAN-H is connected to CAN-H and CAN-L is connected to CAN-L.  
+Although the BTT Kraken also provides ground and 24v on that same 6 pin JST connector, we recommend wiring the toolboard directly to the PSU.
 
 {% include image.html file="toolboard_canfd.png" url="<https://teamgloomy.github.io/images/toolboard_canfd.png>" alt="Toolboard CAN-FD wiring" caption="Toolboard CAN-FD wiring" %}
 
