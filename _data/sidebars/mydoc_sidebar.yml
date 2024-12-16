@@ -2157,6 +2157,38 @@ children:
         url: btt_octopus_pro_1.0_f429_pins.html
         output: web
   
+  - title: BTT Scylla V1
+    output: web
+    children:
+
+    - title: BTT Scylla V1 General Information
+      url: btt_scylla_v1_h723_general_3_5.html
+      output: web
+  
+    - title: Connecting via an ESP32 WiFi Adapter
+      url: btt_scylla_v1_h723_connected_wifi_32_3_5.html
+      output: web
+
+    - title: Connecting to a CAN-FD expansion board
+      url: btt_scylla_v1_h723_canfd_3_5.html
+      output: web
+
+    - title: Configuring Sensorless Homing
+      url: btt_scylla_v1_h723_sensorless_3_5.html
+      output: web
+  
+    - title: Connecting a Screen
+      url: btt_scylla_v1_h723_screen_3_5.html
+      output: web
+
+    - title: rrfboot.txt
+      url: btt_scylla_v1_h723_rrfboot_3_5.html
+      output: web
+
+    - title: Pin Names
+      url: btt_scylla_v1_h723_pins_3_5.html
+      output: web
+  
   - title: GTR + M5
     output: web
     children:
@@ -3383,6 +3415,30 @@ children:
 
     - title: Pin Names
       url: stridemax_v2_pins.html
+      output: web
+
+    - title: PITB V2.0
+    output: web
+    children:
+
+    - title: PITB V2.0 General Information
+      url: pitb_v2_general.html
+      output: web
+
+    - title: Connection via CAN-FD
+      url: pitb_v2_can_connection.html
+      output: web
+
+    - title: Connecting fans
+      url: pitb_v2_fans.html
+      output: web
+
+    - title: Connecting Neopixels
+      url: pitb_v2_neopixels.html
+      output: web
+
+    - title: Pin Names
+      url: pitb_v2_pins.html
       output: web
 
 - title: Consumer Printers
