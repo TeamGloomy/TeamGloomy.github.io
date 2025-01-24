@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 15/12/2024
+last_updated: 24/01/2025
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -70,7 +70,8 @@ There are a number of boards which have configurations pre-configured. They are
 
 There are a number of boards which have configurations pre-configured. They are
 
-* Fly-MMU H723
+* AFC-Lite V1.0
+* Fly-MMU V1.0 H723
 * Fly-ProX10 H723
 * Fly-Super5Pro H723
 * Fly-Super8Pro H743
@@ -82,7 +83,7 @@ There are a number of boards which have configurations pre-configured. They are
 * SKR3 EZ H723
 * SKR3 EZ H743
 * BTT Kraken H723
-* BTT Octopus Pro v1.1 H723
+* ~~BTT Octopus Pro v1.1 H723~~
 * BTT Scylla v1.0 H723
 
 ## CAN-FD Expansion Boards

@@ -2,7 +2,7 @@
 title: Firmware Building Instructions
 tags: []
 keywords: 
-last_updated: 12/05/2024
+last_updated: 06/01/2025
 summary: "Instructions to build your own version of the firmware"
 sidebar: mydoc_sidebar
 permalink: firmware_build.html
@@ -18,7 +18,7 @@ This page covers how to compile the firmware. These instructions are based on th
 1. Download and install [VSCode](https://code.visualstudio.com/).  
 2. Open VSCode and open the extension tab (this can be done by using the shortcut Ctrl+Shift+X) and search for windows-arm-none-eabi. Install the version by metalcode-eu. Close VSCode  
 3. Download and install [git](https://git-scm.com/downloads).  
-4. Then download and install [make](http://gnuwin32.sourceforge.net/packages/make.htm). Use the "complete package except sources" version. Once installed you will need to add the location of the bin folder that is installed in to your windows path environment setting. Make sure you add them to the system variables and not the user varaibles. While there also add the location of mkdir.exe, which will have been installed with git. It can be found in the usr/bin folder where git is installed.  
+4. Then download and install [make](https://www.msys2.org/). Once installed you will need to add the location of the bin folder that is installed in to your windows path environment setting (typically found in `C:\msys64\usr\bin\make.exe`). Make sure you add them to the system variables and not the user varaibles. While there also add the location of mkdir.exe, which will have been installed with git. It can be found in the usr/bin folder where git is installed.  
 5. Download and install the GNU Arm Embedded Toolchain. You can see which version of the Toolchain to use [here](https://github.com/Duet3D/RepRapFirmware/wiki/Building-RepRapFirmware#instructions-for-building-under-windows). Tick the box at the end to install it to your PATH.  
 6. Open VSCode
 7. On the top bar, click on Terminal and then New Terminal
@@ -86,6 +86,23 @@ Download the following github repositories. The preferred method for doing so is
 - [CANlib](https://github.com/gloomyandy/CANlib/tree/v3.5-dev) - CAN support library
 - [FreeRTOS](https://github.com/gloomyandy/FreeRTOS/tree/v3.5-dev) - RTOS support package  
 - [WiFiSocketServerRTOS](https://github.com/gloomyandy/WiFiSocketServerRTOS/tree/ethernet) - WiFi interface  
+- [IAP](https://github.com/gloomyandy/IAP/tree/v3.5-dev) - IAP for SBC flashing
+
+Clone all of the repositories into the RRFBuild folder.  
+
+## Preparation of firmware code - RRF3.6
+
+Download the following github repositories. The preferred method for doing so is by using a git client (terminal or GUI). This allows for changes made to be tracked. My client of choice (jay_s_uk) is [gitkracken](https://www.gitkraken.com/).  
+
+- [RRFBuild](https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev) - The main project for building
+- [RepRapFirmware](https://github.com/gloomyandy/RepRapFirmware/tree/v3.6-dev) - the main RRF source code  
+- [RRFLibraries](https://github.com/gloomyandy/RRFLibraries/tree/v3.5-dev) - Support libraries for RRF  
+- [CoreN2G](https://github.com/gloomyandy/CoreN2G/tree/v3.6-dev) - MCU specific support for STM32 builds  
+- [Duet3Expansion](https://github.com/gloomyandy/Duet3Expansion/tree/v3.6-dev) - expansion board source code
+- [CANlib](https://github.com/gloomyandy/CANlib/tree/v3.6-dev) - CAN support library
+- [FreeRTOS](https://github.com/gloomyandy/FreeRTOS/tree/v3.5-dev) - RTOS support package  
+- [WiFiSocketServerRTOS](https://github.com/gloomyandy/WiFiSocketServerRTOS/tree/ethernet) - WiFi interface  
+- [IAP](https://github.com/gloomyandy/IAP/tree/v3.6-dev) - IAP for SBC flashing
 
 Clone all of the repositories into the RRFBuild folder.  
 

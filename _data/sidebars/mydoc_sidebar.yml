@@ -53,6 +53,10 @@ children:
     output: web
     children:
 
+    - title: 3.6.0-beta.3 Release Notes
+      url: release_notes_3.6.0-beta.3.html
+      output: web
+    
     - title: 3.6.0-beta.2 Release Notes
       url: release_notes_3.6.0-beta.2.html
       output: web
@@ -321,6 +325,10 @@ children:
     url: putty.html
     output: web
 
+  - title: Configuring Filezilla
+    url: filezilla.html
+    output: web
+
   - title: Custom Commands and G-Code
     url: custom_commands_gcode.html
     output: web
@@ -335,6 +343,10 @@ children:
 
   - title: Firmware Build Instructions
     url: firmware_build.html
+    output: web
+
+  - title: Firmware Limits
+    url: firmware_limits.html
     output: web
 
   - title: How to Know What Pin is Interrupt Capable
@@ -1365,6 +1377,38 @@ children:
         url: fly_e3_pro_v3_pins.html
         output: web
   
+  - title: Fly-MMU V1.0 H723
+    output: web
+    children:
+
+    - title: RRF 3.5.0 and above
+      output: web
+      children:
+
+      - title: Fly-MMU V1.0 H723 General Information
+        url: fly_mmu_v1_0_h723_general_3_5.html
+        output: web
+
+      - title: Flashing an RRF Compatible Bootloader
+        url: fly_mmu_v1_0_h723_bootloader_3_5.html
+        output: web
+
+      - title: Flashing RRF
+        url: fly_mmu_v1_0_h723_firmware_flash_3_5.html
+        output: web
+      
+      - title: Connecting to a CAN-FD mainboard
+        url: fly_mmu_v1_0_h723_canfd_3_5.html
+        output: web
+
+      - title: Configuring Sensorless Homing
+        url: fly_prox10_h723_sensorless_3_5.html
+        output: web
+
+      - title: Pin Names
+        url: fly_prox10_h723_pins_3_5.html
+        output: web
+
   - title: Fly-ProX10 H723
     output: web
     children:
