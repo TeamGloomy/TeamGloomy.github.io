@@ -3461,7 +3461,7 @@ children:
       url: stridemax_v2_pins.html
       output: web
 
-    - title: PITB V2.0
+  - title: PITB V2.0
     output: web
     children:
 
