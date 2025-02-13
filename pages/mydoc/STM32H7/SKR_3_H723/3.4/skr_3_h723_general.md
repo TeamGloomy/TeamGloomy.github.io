@@ -24,7 +24,7 @@ Currently, the only way to identify which version of the board you have is to lo
 
 {% include image.html file="H723vH743.png" alt="STM32H723 vs STM32H743" caption="STM32H723 vs STM32H743" %}
 
-If you have an STM32H743 board, please follow the information [here](skr_3_general.html){:target="_blank"}.
+If you have an STM32H743 board, please follow the information [here](skr_3_h743_general.html){:target="_blank"}.
 
 ### Board.txt Name
 
