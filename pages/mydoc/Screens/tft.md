@@ -2,7 +2,7 @@
 title: TFT Screen Configuration
 tags: []
 keywords: 
-last_updated: 22/12/2021
+last_updated: 14/02/2025
 summary: "TFT Screen Configuration"
 sidebar: mydoc_sidebar
 permalink: tft.html
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-The most recent version of the [standard bigtreetech TFT firmware](https://github.com/bigtreetech/BIGTREETECH-TouchScreenFirmware/tree/master/Copy%20to%20SD%20Card%20root%20directory%20to%20update) has built in support for RepRapFirmware. The pre-built images have this enabled by default.
+We don't recommend using the BTT TFT firmware with RRF, even though it advertises as working with RRF. Instead, you should use [this fork](https://github.com/kisslorand/BTT-TFT-FW) as it fixes a lot of issues with the BTT version and it actuaky works.
 
 ## Connection to the board
 
