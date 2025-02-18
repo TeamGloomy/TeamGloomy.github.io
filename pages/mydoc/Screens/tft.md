@@ -2,7 +2,7 @@
 title: TFT Screen Configuration
 tags: []
 keywords: 
-last_updated: 14/02/2025
+last_updated: 18/02/2025
 summary: "TFT Screen Configuration"
 sidebar: mydoc_sidebar
 permalink: tft.html
@@ -14,7 +14,7 @@ datatable: true
 
 ## Overview
 
-We don't recommend using the BTT TFT firmware with RRF, even though it advertises as working with RRF. Instead, you should use [this fork](https://github.com/kisslorand/BTT-TFT-FW) as it fixes a lot of issues with the BTT version and it actuaky works.
+We don't recommend using the BTT TFT firmware with RRF, even though it advertises as working with RRF. Instead, you should use [this fork](https://github.com/kisslorand/BTT-TFT-FW) as it fixes a lot of issues with the BTT version and it actually works.
 
 ## Connection to the board
 
