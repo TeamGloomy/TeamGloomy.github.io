@@ -2,7 +2,7 @@
 title: PITB V2.0 General Information
 tags: []
 keywords: 
-last_updated: 15/12/2024
+last_updated: 06/03/2025
 summary: "General information regarding the PITB V2.0 Toolboard"
 sidebar: mydoc_sidebar
 permalink: pitb_v2_general.html
@@ -49,7 +49,8 @@ The CAN termination can't be removed from the PITB V2.0.
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an rpi drive.  
 {% include important.html content="PITB V2.0 is only supported from release 3.5.1." %}
-Download the file called `Duet3Firmware_PITBV2_0.uf2` from [here]({{site.latestStableFirmware}}/expansion).  
+Download either the Stable firmware file called `Duet3Firmware_PITBV2_0.uf2` from [here]({{site.latestStableFirmware}}/expansion) or the latest beta/RC firmware file called `Duet3Firmware_PITBV2_0.uf2` from [here]({{site.latestBetaFirmware}}/expansion).
+{% include warning.html content="The firware version you choose to install should be the same version number as the mainboard you are connecting it to" %}
 To install the firmware, whilst holding the BOOTSEL button, plug the StrideMax Dual V2.0 into your PC and drag and drop the .uf2 file onto the rpi drive that appears. Once uploaded, remove the toolboard from the computer.  
 Follow the [CAN Connection instructions](pitb_v2_can_connection.html) to continue.  
 

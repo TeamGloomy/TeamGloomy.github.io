@@ -23,11 +23,11 @@ The firmware release includes both SBC and WiFi modes in one. There are 3 method
 
 These instructions use option 1.  
 
-{% if {{site.latestStableFirmware}} == {{site.latestStableFirmware}} %}
+{% if {{site.latestStableFirmware}} == {{site.latestBetaFirmware}} %}
 The latest firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
 {% else %}
 The latest stable firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
-And the latest unstable firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
+And the latest unstable firmware files can be found [here]({{site.latestBetaFirmware}}){:target="_blank"}
 {% endif %}
 Remember to rename it to firmware.bin. Put it in the root of a FAT32 formatted SD card. The maximum size supported card is 32GB.  
 Load the SD card into the board and power it up (either using USB or 12/24v). Leave it for 1 minute or so and then power the board down. Check the SD card, and if firmware.bin has changed to {{page.firmwareFlash}}, then your board has been flashed correctly and an SD card is not required in the mainboard any more.  

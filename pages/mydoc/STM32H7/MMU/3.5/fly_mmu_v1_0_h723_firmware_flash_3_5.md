@@ -2,7 +2,7 @@
 title: Flashing RRF to the Fly-MMU V1.0 H723
 tags: []
 keywords: 
-last_updated: 10/04/2024
+last_updated: 06/03/2025
 summary: "How to flash RRF to the Fly-MMU V1.0 H723"
 sidebar: mydoc_sidebar
 permalink: fly_mmu_v1_0_h723_firmware_flash_3_5.html
@@ -37,7 +37,8 @@ While holding down the {{page.bootloader_button_name}}, plug in the USB cable in
 ### Process
 
 Launch the STM32CubeProgrammer Software.  
-Download the file called `firmware_mmu_h723.bin` for 2209 drivers or `firmware_mmu5160_h723.bin` from [here]({{site.latestStableFirmware}}/mainboard/fly).  
+Download either the Stable firmware file called `firmware_mmu_h723.bin` for 2209 drivers or `firmware_mmu5160_h723.bin` for 5160 drivers from [here]({{site.latestStableFirmware}}/mainboard/fly) or the latest beta/RC firmware file called `firmware_mmu_h723.bin` for 2209 drivers or `firmware_mmu5160_h723.bin` for 5160 drivers from [here]({{site.latestBetaFirmware}}/mainboard/fly).
+{% include warning.html content="The firware version you choose to install should be the same version number as the mainboard you are connecting it to" %}
 Select the correct connection method, in this instance its "USB". You may need to click the refesh button to find it. Then click connect.  
 {% include image.html file="stm32_cube_stlink_1.png" url="https://teamgloomy.github.io/images/stm32_cube_usb_1.png" alt="STM32CubeProgrammer1" caption="Connect via USB" %}  
 Then click on the "+" icon and find/open the bootloader file you downloaded earlier.  
