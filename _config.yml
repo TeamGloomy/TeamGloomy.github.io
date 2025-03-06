@@ -119,6 +119,6 @@ description: "Documentation for the LPC and STM32 Ports of RepRapFirmware"
 github: [metadata]
 
 latestStableFirmware: "https://github.com/gloomyandy/RRFBuild/tree/v3.5-dev/releases/3.5.4"
-latestBetaFirmware: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.0-beta.3"
+latestBetaFirmware: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.0-beta.4"
 latestStableZip: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.5.4"
-latestBetaZip: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.0-beta.3"
+latestBetaZip: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.0-beta.4"

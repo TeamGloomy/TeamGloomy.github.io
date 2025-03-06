@@ -2,7 +2,7 @@
 title: Board.txt Configurables Applicable to STM32
 tags: []
 keywords: 
-last_updated: 15/04/2024
+last_updated: 06/03/2025
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
 sidebar: mydoc_sidebar
 permalink: board_txt_stm32.html
@@ -39,6 +39,7 @@ For STM32 boards, pins can take the form of PA0, PA.0, PA_0, A0, A.0 or A_0 or t
 |board ("lpc.board" is no longer supported from 3.4.1_RC1)|board = fly_e3|This sets the board short name||
 |board.longName|board.longName = Fly E3 STM32F4|This sets the long name of the board used by DWC||
 |can.csPin|can.csPin = PD_1|Sets the CS pin when using an SPI2CANFD module||
+|can.exp.address| can.exp.address = 119|Sets the CAN address to use when a mainboard is in expansion board mode|From 3.6.0-RC1 onwards|
 |can.readPin|can.readPin = PD_1|This sets the CAN_TX pin||
 |can.spiChannel|can.spiChannel = 1|This sets the CAN_TX pin||
 |can.spiFrequencyHz|can.spiFrequencyHz = PD_1|This sets SPI frequency for the SPI2CANFD module in Hz. The default is 15000000||
@@ -74,7 +75,7 @@ For STM32 boards, pins can take the form of PA0, PA.0, PA_0, A0, A.0 or A_0 or t
 |sdCard.external.spiChannel|sdCard.external.spiChannel = 255|this selects which one is used for the external SD card, can also be set to 255 to indicate no channel is used||
 |sdCard.external.spiFrequencyHz|sdCard.external.spiFrequencyHz = 4000000|Sets the SPI speed for an external SD card in Hz||
 |sdCard.internal.spiFrequencyHz|sdCard.internal.spiFrequencyHz = 4000000|Sets the SPI speed for the internal SD card in Hz||
-|sdCard.internal.type|sdCard.internal.type = 0|This sets the SD card type on the board. 0 = SD_SPI1_A, 1 = SD_SPI1_B, 2 = SD_SDIO, 3 = SD_SPI3_A, 4 = SD_SPI3_B, 5 = SD_SPI2_A, 6 = SD_UNKNOWN and 7 = SD_NONE| 3.5.0-RC4 Onwards|
+|sdCard.internal.type|sdCard.internal.type = 0|This sets the SD card type on the board. 0 = SD_SPI1_A, 1 = SD_SPI1_B, 2 = SD_SDIO, 3 = SD_SPI3_A, 4 = SD_SPI3_B, 5 = SD_SPI2_A, 254 = SD_UNKNOWN and 255 = SD_NONE| 3.5.0-RC4 Onwards|
 |serial.aux.rxTxPins|serial.aux.rxTxPins = { PA_10, PA_9 }|This sets the pin numbers to use for RX and TX on AUX1. Typically uses UART0. See table below for allowable RX and TX pins||
 |serial.aux2.rxTxPins|serial.aux2.rxTxPins = { PC_7, PC_6 }|This sets the pin numbers to use for RX and TX on AUX2. Typically uses UART2. See table below for allowable RX and TX pins||
 |SPI0.pins|SPI0.pins = { PA_5, PA_6, PA_7 }|Sets the SPI pins in the order SCK, MISO, MOSI for Channel 0 - 3.2_7 Onwards|Hardware - Not Configurable|
