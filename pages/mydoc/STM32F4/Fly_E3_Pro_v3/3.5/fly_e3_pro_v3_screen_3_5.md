@@ -16,6 +16,7 @@ TX: "PA_9"
 12864url: "/fly_e3_pro_v3_screen_12864_3_5.html"
 screenType: both
 header: "screen"
+serial: 1
 ---
 
 {% include custom/3.5/screens.html %}

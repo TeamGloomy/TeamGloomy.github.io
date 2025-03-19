@@ -15,6 +15,7 @@ RX: "PA_10"
 TX: "PA_9"
 12864url: "/skr_2.0_screen_12864.html"
 screenType: both
+serial: 1
 ---
 
 {% include custom/3.5/screens.html %}

@@ -14,6 +14,7 @@ boardname: Fly-E3-v2
 RXTX: "{ PA_10, PA_9 }"
 12864url: "/fly_e3_v2_screen_12864.html"
 screenType: both
+serial: 1
 ---
 
 {% include tip.html content="PA_10 and PA_9 are shared with the EXP1 header and can only be assigned to 1 thing at a time." %}

@@ -14,6 +14,7 @@ boardname: SKR v2.0
 RXTX: "{ PA_10, PA_9 }"
 12864url: "/skr_2.0_screen_12864.html"
 screenType: both
+serial: 1
 ---
 
 {% include custom/3.4/screens.html %}

@@ -15,6 +15,7 @@ RX: "PA_10"
 TX: "PA_9"
 12864url: "/btt_octopus_pro_1.0_f429_screen_12864.html"
 screenType: both
+serial: 1
 ---
 
 {% include custom/3.5/screens.html %}

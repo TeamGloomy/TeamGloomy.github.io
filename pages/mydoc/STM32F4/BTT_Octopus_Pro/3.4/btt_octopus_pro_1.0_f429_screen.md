@@ -14,6 +14,7 @@ boardname: BTT Octopus Pro v1.0 F429 Version
 RXTX: "{ PA_10, PA_9 }"
 12864url: "/btt_octopus_pro_1.0_f429_screen_12864.html"
 screenType: both
+serial: 1
 ---
 
 {% include custom/3.4/screens.html %}

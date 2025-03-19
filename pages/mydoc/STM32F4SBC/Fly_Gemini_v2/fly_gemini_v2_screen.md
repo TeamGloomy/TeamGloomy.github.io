@@ -14,6 +14,7 @@ boardname: Fly-Gemini-V2
 RXTX: "{ PA_10, PA_9 }"
 12864url: ""
 screenType: serial
+serial: 1
 ---
 
 {% include custom/3.4/screens.html %}

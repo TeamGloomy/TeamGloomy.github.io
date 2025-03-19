@@ -15,6 +15,7 @@ RX: "PA_10"
 TX: "PA_9"
 12864url: "/fly_super8pro_h723_screen_12864_3_5.html"
 screenType: serial
+serial: 1
 ---
 
 {% include custom/3.5/screens.html %}

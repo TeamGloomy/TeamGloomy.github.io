@@ -15,6 +15,7 @@ RX: "PD_9"
 TX: "PD_8"
 12864url: "/gtr_screen_12864_3_5.html"
 screenType: both
+serial: 1
 ---
 
 {% include custom/3.5/screens.html %}

@@ -15,6 +15,7 @@ RX: "PD_9"
 TX: "PD_8"
 12864url:
 screenType: serial
+serial: 1
 ---
 
 {% include custom/3.5/screens.html %}

@@ -14,6 +14,7 @@ boardname: Fly-Super8Pro H723
 RXTX: "{ PA_10, PA_9 }"
 12864url: "/fly_super8pro_h723_screen_12864.html"
 screenType: both
+serial: 1
 ---
 
 {% include custom/3.4/screens.html %}

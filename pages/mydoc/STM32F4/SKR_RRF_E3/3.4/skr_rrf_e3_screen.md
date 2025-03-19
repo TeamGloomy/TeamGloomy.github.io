@@ -14,6 +14,7 @@ boardname: SKR-RRF-E3
 RXTX: "{ PA_10, PA_9 }"
 12864url: "/skr_rrf_e3_screen_12864.html"
 screenType: both
+serial: 1
 ---
 
 {% include custom/3.4/screens.html %}

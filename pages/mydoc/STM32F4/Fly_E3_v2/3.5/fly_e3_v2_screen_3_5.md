@@ -15,6 +15,7 @@ RX: "PA_10"
 TX: "PA_9"
 12864url: "/fly_e3_v2_screen_12864_3_5.html"
 screenType: both
+serial: 1
 ---
 
 {% include tip.html content="PA_10 and PA_9 are shared with the EXP1 header and can only be assigned to 1 thing at a time." %}

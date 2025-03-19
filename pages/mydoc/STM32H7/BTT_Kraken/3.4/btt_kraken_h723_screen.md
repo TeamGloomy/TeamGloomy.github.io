@@ -14,6 +14,7 @@ boardname: BTT Kraken
 RXTX: "{ PD_9, PD_8 }"
 12864url: "/btt_octopus_pro_1.1_h723_screen_12864.html"
 screenType: serial
+serial: 1
 ---
 
 {% include custom/3.4/screens.html %}

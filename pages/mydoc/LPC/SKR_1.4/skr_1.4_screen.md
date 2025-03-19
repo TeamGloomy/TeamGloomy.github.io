@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+serial: 1
 ---
 
 ## Overview
