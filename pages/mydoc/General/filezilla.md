@@ -2,8 +2,8 @@
 title: Setting up FileZilla
 tags: []
 keywords: 
-last_updated: 07/01/2025
-summary: "Setting up Putty for use with RRF"
+last_updated: 19/03/2025
+summary: "Setting up FileZilla for use with RRF"
 sidebar: mydoc_sidebar
 permalink: filezilla.html
 folder: mydoc
