@@ -1409,12 +1409,8 @@ children:
         url: fly_mmu_v1_0_h723_canfd_3_5.html
         output: web
 
-      - title: Configuring Sensorless Homing
-        url: fly_prox10_h723_sensorless_3_5.html
-        output: web
-
       - title: Pin Names
-        url: fly_prox10_h723_pins_3_5.html
+        url: fly_mmu_v1_0_h723_pins_3_5.html
         output: web
 
   - title: Fly-ProX10 H723
@@ -3204,6 +3200,34 @@ children:
       - title: Pin Names
         url: skr_rrf_e3_pins.html
         output: web
+
+- title: LDO Mainboards
+  output: web
+  children:
+
+  - title: AFC_Lite V1.0
+    output: web
+    children:
+
+    - title: AFC-Lite V1.0 General Information
+      url: afc_lite_h723_general_3_5.html
+      output: web
+
+    - title: Flashing an RRF Compatible Bootloader
+      url: afc_lite_v1_0_h723_bootloader_3_5.html
+      output: web
+
+    - title: Flashing RRF
+      url: afc_lite_v1_0_h723_firmware_flash_3_5.html
+      output: web
+    
+    - title: Connecting to a CAN-FD mainboard
+      url: afc_lite_v1_0_h723_canfd_3_5.html
+      output: web
+
+    - title: Pin Names
+      url: afc_lite_h723_pins_3_5.html
+      output: web
 
 - title: STM32F4 + Integrated SBC Boards
   output: web
