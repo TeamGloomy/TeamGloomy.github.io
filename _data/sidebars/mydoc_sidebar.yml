@@ -3205,12 +3205,12 @@ children:
   output: web
   children:
 
-  - title: AFC_Lite V1.0
+  - title: AFC-Lite V1.0
     output: web
     children:
 
     - title: AFC-Lite V1.0 General Information
-      url: afc_lite_h723_general_3_5.html
+      url: afc_lite_v1_0_h723_general_3_5.html
       output: web
 
     - title: Flashing an RRF Compatible Bootloader
@@ -3226,7 +3226,7 @@ children:
       output: web
 
     - title: Pin Names
-      url: afc_lite_h723_pins_3_5.html
+      url: afc_lite_v1_0_h723_pins_3_5.html
       output: web
 
 - title: STM32F4 + Integrated SBC Boards
