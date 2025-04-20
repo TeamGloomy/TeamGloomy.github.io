@@ -21,4 +21,6 @@ bootloader_jumper_qty: 2
 
 ---
 
+{% capture bootloaderURL %} {{page.bootloaderURL}} {% endcapture %}
+
 {% include custom/3.5/bootloader/bootloader_usb.html %}

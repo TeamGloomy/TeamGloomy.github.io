@@ -22,7 +22,7 @@ bootloader_jumper_qty: 2
 
 ---
 
-{% capture bootloaderURL %} {{site.latestBetaFirmware}}{{booturl2}} {% endcapture %}
+{% capture bootloaderURL %} {{site.latestBetaFirmware}}{{page.booturl2}} {% endcapture %}
 
 Make sure you slide the switch for the 5V power source to USB.
 
