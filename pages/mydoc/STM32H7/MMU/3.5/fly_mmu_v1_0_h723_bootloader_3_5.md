@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-MMU V1.0
-bootloaderURL: "({{site.latestStableFirmware}}/bootloader/bootloader_mmu_h723.bin) or ({{site.latestStableFirmware}}/bootloader/bootloader_mmu5160_h723.bin)"
+bootloaderURL: {{site.latestStableFirmware}}/bootloader/bootloader_mmu_h723.bin or {{site.latestStableFirmware}}/bootloader/bootloader_mmu5160_h723.bin
 bootloader_buttons: true
 bootloader_button_name: "BOOT"
 bootloader_img1: "fly_mmu_v1_dfu.png"

@@ -11,7 +11,7 @@ comments: false
 toc: false
 datatable: true
 boardname: AFC-Lite V1.0
-bootloaderURL: ({{site.latestStableFirmware}}/bootloader/bootloader_afclite1_h723.bin)
+bootloaderURL: {{site.latestStableFirmware}}/bootloader/bootloader_afclite1_h723.bin
 bootloader_buttons: true
 bootloader_button_name: "BOOT"
 bootloader_img1: "afc_lite_v1_DFU.png"
