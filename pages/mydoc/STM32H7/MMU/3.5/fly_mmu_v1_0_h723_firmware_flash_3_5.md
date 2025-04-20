@@ -11,7 +11,8 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-MMU V1.0
-bootloaderURL: ({{site.latestStableFirmware}}/bootloader/bootloader_mmu_h723.bin)
+booturl1: {{site.latestStableFirmware}}
+booturl2: /bootloader/bootloader_mmu_h723.bin
 bootloader_buttons: true
 bootloader_button_name: "BOOT"
 bootloader_img1: "fly_super5pro_dfu.png"
@@ -20,6 +21,8 @@ bootloader_jumpers: false
 bootloader_jumper_qty: 2
 
 ---
+
+{% capture bootloaderURL %} {{booturl1}}{{booturl2}} {% endcapture %}
 
 ## Overview
 

@@ -51,7 +51,7 @@ A "File Download Complete" popup will appear once complete.
 
 Disconnect the board.  
 
-{% if {{page.bootloader_jumpers}} == true %}
+{% if page.bootloader_jumpers == true %}
 Disconnect the board and remove the jumpers before continueing to flash the firmware as normal.
 {% endif %}
 
