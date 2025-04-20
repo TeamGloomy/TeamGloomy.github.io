@@ -21,7 +21,7 @@ The Fly-Super8Pro H743 does not come with an RRF compatible bootloader, so this 
 You need to download the following items to be able to update the bootloader.  
 
 * [STM32CubeProg](https://www.st.com/en/development-tools/stm32cubeprog.html)
-{% if {{site.latestStableFirmware}} == {{site.latestBetaFirmware}} %}
+{% if site.latestStableFirmware == site.latestBetaFirmware %}
 * [RRF Bootloader]({{site.latestStableFirmware}}/bootloader){:target="_blank"}
 {% else %}
 The latest stable firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}  
