@@ -35,7 +35,11 @@ caption=bootloader_cap1
 ### Process
 
 Launch the STM32CubeProgrammer Software.  
+{% if {{page.boardname}} == "Fly-MMU V1.0" %}
+Download the bootloader from [here]({{bootloaderURL}}) for 2209 drivers or [here]({{bootloaderURL1}}) for 5160 drivers.  
+{% else %}
 Download the bootloader from [here]({{bootloaderURL}}).  
+{% endif %}
 Select the correct connection method, in this instance its "USB". You may need to click the refesh button to find it. Then click connect.  
 {% include image.html file="stm32_cube_stlink_1.png" url="https://teamgloomy.github.io/images/stm32_cube_usb_1.png" alt="STM32CubeProgrammer1" caption="Connect via USB" %}  
 Then click on the "+" icon and find/open the bootloader file you downloaded earlier.  

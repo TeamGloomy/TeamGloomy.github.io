@@ -23,7 +23,8 @@ bootloader_jumper_qty: 2
 
 ---
 
-{% capture bootloaderURL %} {{site.latestBetaFirmware}}{{page.booturl2}} or {{site.latestBetaFirmware}}{{page.booturl3}} {% endcapture %}
+{% capture bootloaderURL %} {{site.latestBetaFirmware}}{{page.booturl2}} {% endcapture %}
+{% capture bootloaderURL1 %} {{site.latestBetaFirmware}}{{page.booturl3}} {% endcapture %}
 
 {% include custom/3.5/bootloader/bootloader_usb.html %}
 
