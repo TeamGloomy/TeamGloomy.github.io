@@ -13,7 +13,6 @@ datatable: true
 boardname: AFC-Lite V1.0
 booturl1: {{site.latestStableFirmware}}
 booturl2: /bootloader/bootloader_afclite1_h723.bin
-{% capture bootloaderURL %} {{booturl1}}{{booturl2}} {% endcapture %}
 bootloader_buttons: true
 bootloader_button_name: "BOOT"
 bootloader_img1: "afc_lite_v1_DFU.png"
@@ -22,6 +21,8 @@ bootloader_jumpers: false
 bootloader_jumper_qty: 2
 
 ---
+
+{% capture bootloaderURL %} {{booturl1}}{{booturl2}} {% endcapture %}
 
 Make sure you slide the switch for the 5V power source to USB.
 
