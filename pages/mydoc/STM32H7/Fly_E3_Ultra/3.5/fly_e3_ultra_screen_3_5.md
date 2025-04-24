@@ -5,7 +5,7 @@ keywords:
 last_updated: 27/03/2024
 summary: "How to connect a serial screen to a Fly-E3-Ultra H723"
 sidebar: mydoc_sidebar
-permalink: fly_e3_Ultra_screen_3_5.html
+permalink: fly_e3_ultra_screen_3_5.html
 folder: mydoc
 comments: false
 toc: false
