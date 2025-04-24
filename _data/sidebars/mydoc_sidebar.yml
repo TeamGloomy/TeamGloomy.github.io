@@ -881,10 +881,6 @@ children:
         url: fly_cdyv3_voltage_3_5.html
         output: web
 
-      - title: Connecting a PT100 or Type 'K' Thermocouple
-        url: fly_cdyv3_pt100_3_5.html
-        output: web
-
       - title: rrfboot.txt
         url: fly_cdyv3_rrfboot_3_5.html
         output: web
@@ -1388,6 +1384,62 @@ children:
       - title: Pin Names
         url: fly_e3_pro_v3_pins.html
         output: web
+  
+  - title: Fly-E3-Ultra and Ultra-Max H723
+    output: web
+    children:
+
+    - title: Fly-E3-Ultra and Ultra-Max H723 General Information
+      url: fly_e3_ultra_general_3_5.html
+      output: web
+  
+    - title: Connecting via WiFi
+      url: fly_e3_ultra_connected_wifi_3_5.html
+      output: web
+
+    - title: Connecting to a CAN-FD expansion board
+      url: fly_e3_ultra_canfd_3_5.html
+      output: web
+  
+    - title: Configuring Sensorless Homing
+      url: fly_e3_ultra_sensorless_3_5.html
+      output: web
+
+    - title: Connecting a Serial Screen
+      url: fly_e3_ultra_screen_3_5.html
+      output: web
+
+    - title: Connecting a 12864 Screen
+      url: fly_e3_ultra_screen_12864_3_5.html
+      output: web
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: fly_e3_ultra_bltouch_3_5.html
+      output: web
+
+    - title: Connecting an Accelerometer
+      url: fly_e3_ultra_accelerometer_3_5.html
+      output: web
+
+    - title: Connecting a PT100 or Type 'K' Thermocouple
+      url: fly_e3_ultra_pt100_3_5.html
+      output: web
+
+    - title: Input Voltage Monitoring
+      url: fly_e3_ultra_voltage_3_5.html
+      output: web
+
+    - title: Configuring the Onboard Temperature Sensor
+      url: fly_e3_ultra_onboard_temp_3_5.html
+      output: web
+
+    - title: rrfboot.txt
+      url: fly_e3_ultra_rrfboot_3_5.html
+      output: web
+
+    - title: Pin Names
+      url: fly_e3_ultra_pins_3_5.html
+      output: web
   
   - title: Fly-MMU V1.0 H723
     output: web
