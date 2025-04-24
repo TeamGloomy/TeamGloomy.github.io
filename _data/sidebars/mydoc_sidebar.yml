@@ -3717,6 +3717,30 @@ children:
     url: adapters_rs485.html
     output: web
 
+- title: Addons
+  output: web
+  children:
+
+  - title: Mellow Airclick Wireless Buttons
+    output: web
+    children:
+
+    - title: Mellow Airclick Wireless Buttons General Information
+      url: airclick_general.html
+      output: web
+
+    - title: Connecting to WiFi
+      url: airclick_wifi.html
+      output: web
+
+    - title: Connection to RRF
+      url: airclick_rrf_connection.html
+      output: web
+
+    - title: Adding Buttons
+      url: airclick_button.html
+      output: web
+
 - title: Printer Specific Guides
   output: web
   children:
