@@ -5,7 +5,7 @@ keywords:
 last_updated: 24/04/2025
 summary: "How to add a button to the Mellow Airclick"
 sidebar: mydoc_sidebar
-permalink: airclick_rrf_connection.html
+permalink: airclick_button.html
 folder: mydoc
 comments: false
 toc: false
