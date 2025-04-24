@@ -36,7 +36,7 @@ We recommend using stranded twisted wire pairs, such as those found in ethernet 
 
 Using the Fly-RRF-36 as example (and the image below), the yellow wire on the CAN-FD cable is the CAN-H wire and the white is the CAN-L wire. CAN-H is connected to CAN-H and CAN-L is connected to CAN-L.  
 
-{% include image.html file="fly_super5pro_can.png" url="<https://teamgloomy.github.io/images/fly_e3_ultra_can.png>" alt="Toolboard CAN-FD wiring" caption="Toolboard CAN-FD wiring" %}
+{% include image.html file="fly_e3_ultra_can.png" url="<https://teamgloomy.github.io/images/fly_e3_ultra_can.png>" alt="Toolboard CAN-FD wiring" caption="Toolboard CAN-FD wiring" %}
 
 Please ensure that you have switch 5 set to on as shown below if you are using this board as a mainboard or if it is the last expansion board on the CANbus.  
 
