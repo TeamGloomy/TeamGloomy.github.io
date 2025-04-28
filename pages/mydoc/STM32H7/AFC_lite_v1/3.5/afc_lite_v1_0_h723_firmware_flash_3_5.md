@@ -2,7 +2,7 @@
 title: Flashing RRF to the AFC-Lite V1.0 H723
 tags: []
 keywords: 
-last_updated: 23/03/2025
+last_updated: 28/04/2025
 summary: "How to flash RRF to the AFC-Lite V1.0 H723"
 sidebar: mydoc_sidebar
 permalink: afc_lite_v1_0_h723_firmware_flash_3_5.html
@@ -23,7 +23,7 @@ bootloader_jumper_qty: 2
 
 ## Overview
 
-This page covers how to reflash RRF on a {{page.boardname}}.  
+This page covers how to flash RRF on a {{page.boardname}}.  
 
 ### Software
 
@@ -40,7 +40,7 @@ Download either the Stable firmware file called `firmware_afclite1_h723.bin` fro
 {% include warning.html content="The firware version you choose to install should be the same version number as the mainboard you are connecting it to" %}
 Select the correct connection method, in this instance its "USB". You may need to click the refesh button to find it. Then click connect.  
 {% include image.html file="stm32_cube_stlink_1.png" url="https://teamgloomy.github.io/images/stm32_cube_usb_1.png" alt="STM32CubeProgrammer1" caption="Connect via USB" %}  
-Then click on the "+" icon and find/open the bootloader file you downloaded earlier.  
+Then click on the "+" icon and find/open the firmware file you downloaded earlier.  
 {% include image.html file="stm32_cube_stlink_2.png" url="https://teamgloomy.github.io/images/stm32_cube_stlink_2.png" alt="STM32CubeProgrammer2" caption="Open File" %}  
 Set the download address to 0x08020000 by clicking the downward pointing arrow next to the Download button.
 {% include image.html file="stm32_cube_offset.png" url="https://teamgloomy.github.io/images/stm32_cube_offset.png" alt="STM32CubeProgrammer3" caption="change address" %}  
@@ -52,7 +52,7 @@ A "File Download Complete" popup will appear once complete.
 Disconnect the board.  
 
 {% if page.bootloader_jumpers == true %}
-Disconnect the board and remove the jumpers before continueing to flash the firmware as normal.
+Disconnect the board and remove the jumpers before continuing to flash the firmware as normal.
 {% endif %}
 
 The {{page.boardname}} can now be connected to an RRF mainboard. Please see the [CAN-FD Connection Page](afc_lite_v1_0_h723_can_fd_3_5.html).
