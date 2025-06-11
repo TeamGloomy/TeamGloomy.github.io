@@ -1,6 +1,6 @@
 ---
 title: "Getting started with RepRapFirmware for LPC and STM32 based boards"
-last_updated: 06/04/2025
+last_updated: 11/06/2025
 sidebar: mydoc_sidebar
 permalink: index.html
 summary: These instructions will help you to get started running RepRapFirmware on your LPC or STM32 based 3D printer board
@@ -18,11 +18,11 @@ The LPC port was originally created by [sadvi](https://github.com/sdavi). Suppor
 
 ### Latest Stable STM32F4 and STM32H7 Build
 
-The latest stable version is [3.5.4](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.5.4)
+The latest stable version is [3.6.0](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.6.0)
 
 ### Latest Unstable STM32F4, STM32H7 and STM32H723 Build
 
-The latest unstable version is [3.6.0-RC2](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.0-rc.2)
+There are no unstable versions at the moment.
 
 ### Latest Stable LPC Build
 
@@ -34,23 +34,22 @@ Please note that 3.3.X will be the last release for LPC boards.
 
 ### Latest Stable
 
-The latest stable WiFi firmware version is [2.1.0](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.5.4)
+The latest stable WiFi firmware version is [2.2.1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.6.0)
 
 ### Latest Unstable
 
-The latest unstable WiFi firmware version is [2.2.0](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.0-rc.1)
+There are no unstable versions at the moment.
 
 ## Latest H7 bootloader
 
 ### Latest Stable H7 Bootloader
 
-The latest stable bootloader version is [1.0.3](https://github.com/gloomyandy/IAP/releases/tag/IAP_1.0.3)
-This bootloader is for H743 Super8Pro boards only.
+The latest stable bootloader version is [1.1.0](hhttps://github.com/gloomyandy/RRFBuild/tree/v3.6.0-rc.1/releases/3.6.0-rc.1/bootloader)
+This bootloader is for all H723 and H743 based boards supported by RRF.
 
 ### Latest Unstable H7 Bootloader
 
-The latest stable bootloader version is [1.1.0](hhttps://github.com/gloomyandy/RRFBuild/tree/v3.6.0-rc.1/releases/3.6.0-rc.1/bootloader)
-This bootloader is for all H723 and H743 based boards supported by RRF.
+There are no unstable versions at the moment.
 
 ## Partnership
 

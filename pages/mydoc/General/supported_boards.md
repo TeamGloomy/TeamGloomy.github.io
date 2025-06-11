@@ -2,7 +2,7 @@
 title: Supported Boards and Drivers
 tags: []
 keywords: 
-last_updated: 24/01/2025
+last_updated: 11/06/2025
 summary: "Details the boards and drivers currently supported by this software"
 sidebar: mydoc_sidebar
 permalink: supported_boards.html
@@ -71,6 +71,8 @@ There are a number of boards which have configurations pre-configured. They are
 There are a number of boards which have configurations pre-configured. They are
 
 * AFC-Lite V1.0
+* Fly-E3-Ultra H723
+* Fly-C5 H723
 * Fly-MMU V1.0 H723
 * Fly-ProX10 H723
 * Fly-Super5Pro H723
