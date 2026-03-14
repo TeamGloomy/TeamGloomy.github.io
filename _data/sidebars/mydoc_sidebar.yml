@@ -3289,6 +3289,54 @@ children:
       url: afc_lite_v1_0_h723_pins_3_5.html
       output: web
 
+- title: Fysetc Mainboards
+  output: web
+  children:
+
+  - title: Fysetc Spider H723
+    output: web
+    children:
+
+    - title: Fysetc Spider H723 General Information
+      url: fysetc_spider_h723_general_3_5.html
+      output: web
+  
+    - title: Connecting via WiFi
+      url: fysetc_spider_h723_connected_wifi_3_5.html
+      output: web
+
+    - title: Connecting via SBC
+      url: fysetc_spider_h723_connected_sbc_3_5.html
+      output: web
+
+    - title: Connecting to a CAN-FD expansion board
+      url: fysetc_spider_h723_canfd_3_5.html
+      output: web
+
+    - title: Configuring Sensorless Homing
+      url: fysetc_spider_h723_sensorless_3_5.html
+      output: web
+  
+    - title: Connecting a Serial Screen
+      url: fysetc_spider_h723_screen_3_5.html
+      output: web
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: fysetc_spider_h723_bltouch_3_5.html
+      output: web
+
+    - title: Connecting an Accelerometer
+      url: fysetc_spider_h723_accelerometer_3_5.html
+      output: web
+
+    - title: rrfboot.txt
+      url: fysetc_spider_h723_rrfboot_3_5.html
+      output: web
+
+    - title: Pin Names
+      url: fysetc_spider_h723_pins_3_5.html
+      output: web
+
 - title: STM32F4 + Integrated SBC Boards
   output: web
   children:

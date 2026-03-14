@@ -2,7 +2,7 @@
 title: BTT Kraken General Information in RRF 3.5.0 Onwards
 tags: []
 keywords: 
-last_updated: 06/04/2024
+last_updated: 12/03/2026
 summary: "General information regarding the BTT Kraken"
 sidebar: mydoc_sidebar
 permalink: btt_kraken_h723_general_3_5.html
@@ -29,13 +29,28 @@ All drivers are powered from the HV-IN and the input voltage can be 24V to 60V.
 
 ### Driver Sense Resistor
 
-The first 4 drivers on the BTT Kraken use a different sense resistor than is set in the firmware. Please add the following lines to your config.g.  
+{% include warning.html content="There are two different versions of the BTT Kraken, V1.0 and V1.1 and they use different Driver Sense Resistor values. Please make sure you use the correct ones!!!" %}
+
+#### Kraken V1.0
+
+The first 4 drivers on the BTT Kraken V1.0 use a different sense resistor than is set in the firmware. Please add the following lines to your config.g.  
 
 ```text
-M569.9 P0.0 R0.022 S10
-M569.9 P0.1 R0.022 S10
-M569.9 P0.2 R0.022 S10
-M569.9 P0.3 R0.022 S10
+M569.9 P0.0 R0.022 S8
+M569.9 P0.1 R0.022 S8
+M569.9 P0.2 R0.022 S8
+M569.9 P0.3 R0.022 S8
+```
+
+#### Kraken V1.1
+
+The first 4 drivers on the BTT Kraken V1.1 use a different sense resistor than is set in the firmware. Please add the following lines to your config.g.  
+
+```text
+M569.9 P0.0 R0.05 S4.7
+M569.9 P0.1 R0.05 S4.7
+M569.9 P0.2 R0.05 S4.7
+M569.9 P0.3 R0.05 S4.7
 ```
 
 ### Fan Voltage
