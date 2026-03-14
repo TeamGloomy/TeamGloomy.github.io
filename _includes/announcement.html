@@ -1,0 +1,73 @@
+<!-- Announcement Modal -->
+<div class="modal fade" id="announcementModal" tabindex="-1" role="dialog" aria-labelledby="announcementModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="announcementModalLabel">Important Announcement: STM32F4 Support Update</h4>
+      </div>
+      <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
+        <p>As RepRapFirmware (RRF) keeps growing and adding amazing new features, we’re starting to hit the physical limits of some of our older hardware. To make sure the TeamGloomy ports stay stable and perform at their best, we need to announce that <strong>STM32F4-based boards won't be receiving major updates after the v3.6 release cycle</strong>.</p>
+        
+        <h5>The Context</h5>
+        <p>This lines up perfectly with the official Duet3D roadmap, as the Duet 2 is also wrapping up its major feature updates after v3.6.x. RRF has simply gotten too complex, and the hardware requirements have outgrown what these older processors can reliably handle.</p>
+        
+        <p><strong>Why the F4 is maxing out:</strong></p>
+        <ul>
+            <li><strong>Not Enough RAM:</strong> Memory is our biggest roadblock right now. Modern RRF features have essentially eaten up all the available workspace on F4 chips.</li>
+            <li><strong>Slower Clock Speeds:</strong> Compared to newer hardware like the Duet 3 Mini 5+ or our STM32H7-based boards, the F4 series just isn't fast enough to keep up with the intense math and high-speed motion demands of future RRF versions.</li>
+        </ul>
+
+        <h5>What this means for you</h5>
+        <ul>
+            <li><strong>v3.6.x is the final feature branch:</strong> You get all the awesome features, refinements, and upgrades included in the 3.6 releases.</li>
+            <li><strong>Ongoing Bug Fixes:</strong> We will continue to push out maintenance and bug-fix releases for 3.6.x as soon as they are officially released by Duet3D.</li>
+            <li><strong>Looking Forward:</strong> For v3.7 and beyond, we’ll be putting our energy into STM32H7-based boards. These have plenty of headroom for the next generation of printing tech.</li>
+        </ul>
+        
+        <p>We want your current boards to remain reliable workhorses for a long time, but to keep pushing RRF forward, we have to focus our development on hardware that can handle the roadmap ahead.</p>
+        <p><em>(Note: Support for RP2040 and RP2350 toolboards and expansion boards will continue exactly as normal!)</em></p>
+        <p>Thank you for understanding, and as always, thank you for being an awesome part of the TeamGloomy community!</p>
+
+        <hr>
+
+        <h5>Frequently Asked Questions</h5>
+        
+        <p><strong>Will my current F4 board stop working?</strong><br>
+        Not at all! Your board will continue to work just as well as it always has. v3.6 is an incredibly stable and feature-rich firmware, and your printer won't lose any of the capabilities it currently has.</p>
+
+        <p><strong>Do I need to upgrade my motherboard right now?</strong><br>
+        There's absolutely no rush. Unless you see a specific feature announced for v3.7+ that you absolutely can't live without, your current setup running v3.6.x will keep printing beautifully.</p>
+
+        <p><strong>What happens if a bug is found in 3.6.x after 3.7 comes out?</strong><br>
+        Duet3D will continue to release maintenance and bug-fix updates for the 3.6 branch, and we will make sure those updates make it to the TeamGloomy ports. You'll still get critical fixes to keep things running smoothly.</p>
+
+        <p><strong>If I do want to upgrade eventually, what should I look for?</strong><br>
+        We highly recommend checking out STM32H7-based boards. They have the processing power and RAM needed to handle all the exciting features coming to RRF in the years ahead.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    // Check if the user has already seen the announcement
+    if (!$.cookie('wiki_announcement_closed')) {
+        // Show the modal
+        $('#announcementModal').modal({
+            backdrop: 'static', // Optional: prevents closing when clicking outside
+            keyboard: false     // Optional: prevents closing with Esc key
+        });
+        $('#announcementModal').modal('show');
+    }
+
+    // When the modal is hidden (closed by user), set the cookie
+    $('#announcementModal').on('hidden.bs.modal', function () {
+        // Set cookie to expire in 365 days, path '/' for the entire wiki
+        $.cookie('wiki_announcement_closed', 'true', { expires: 365, path: '/' });
+    });
+});
+</script>
