@@ -1,4 +1,4 @@
----
+﻿---
 title: BTT Scylla V1 General Information in RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -13,7 +13,11 @@ datatable: true
 boardname: BTT Scylla V1
 ---
 
+{% include warning.html content="The BTT Scylla V1 is a CNC/laser/spindle controller board, **not** a 3D printer board. It does not have a heated bed output, standard thermistor inputs, or extruder connections. If you are looking for a 3D printer board, see the other boards listed in the sidebar." %}
+
 ## Overview
+
+{% include note.html content="These instructions apply to RRF 3.5.0 and later, including RRF 3.6.x. Use the [TeamGloomy Config Tool](https://teamgloomy.github.io/configtool/) to generate a starter configuration for this board." %}
 
 This page covers any general information for the {{boardname}} board, which is supported from 3.5.1.
 

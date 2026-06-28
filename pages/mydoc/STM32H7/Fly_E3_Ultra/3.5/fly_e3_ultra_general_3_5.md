@@ -1,4 +1,4 @@
----
+﻿---
 title: Fly-E3-Ultra H723 and Fly-E3-Ultra Max H723 General Information with RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -13,6 +13,8 @@ datatable: true
 ---
 
 ## Overview
+
+{% include note.html content="These instructions apply to RRF 3.5.0 and later, including RRF 3.6.x. Use the [TeamGloomy Config Tool](https://teamgloomy.github.io/configtool/) to generate a starter configuration for this board." %}
 
 This page covers any general information for the Fly-E3-Ultra H723 and Fly-E3-Ultra-Max H723 board.  
 All pages apply to both boards except for the PT100/K Thermocouple page which applies to the Fly-E3-Ultra-Max H723 only.

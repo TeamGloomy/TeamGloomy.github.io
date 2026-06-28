@@ -10,7 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
-boardname: Fly-Super8Pro H723
+boardname: Fly-ProX10 H723
 SCL: PD_3
 SDA: PD_5
 SDO: PD_4
