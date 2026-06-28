@@ -1,4 +1,4 @@
----
+﻿---
 title: Upgrading a Fly-Super5Pro H723 to 3.5.0 from earlier versions
 tags: []
 keywords: 
@@ -13,6 +13,7 @@ datatable: true
 firmware: "firmware_super5_h723.bin"
 wifiFirmware: "DuetWiFiServer.bin"
 rrfboot: custom/3.5/rrfboot/rrfboot_fly_super5pro_h723.html
+boardname: Fly-Super5Pro H723
 ---
 
 {% include custom/3.5/upgrading.html %}

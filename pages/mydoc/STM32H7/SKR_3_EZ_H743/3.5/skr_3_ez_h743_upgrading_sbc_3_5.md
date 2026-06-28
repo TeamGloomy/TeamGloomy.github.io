@@ -1,4 +1,4 @@
----
+﻿---
 title: Upgrading a SKR3EZ H743 in SBC Mode to 3.5.0 from earlier versions in RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -12,6 +12,7 @@ toc: false
 datatable: true
 firmware: "firmware_skr3ez_h743.bin"
 rrfboot: custom/3.5/rrfboot/rrfboot_skr_3_ez_h743.html
+boardname: SKR3EZ H743
 ---
 
 {% include custom/3.5/upgradingSBC.html %}

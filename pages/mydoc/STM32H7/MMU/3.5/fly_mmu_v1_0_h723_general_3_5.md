@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: Fly-MMU V1.0
 ---
 
 ## Overview

@@ -1,4 +1,4 @@
----
+﻿---
 title: AFC-Lite V1.0 H723 CAN-FD Information in RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: AFC-Lite V1.0
 ---
 
 ## Overview

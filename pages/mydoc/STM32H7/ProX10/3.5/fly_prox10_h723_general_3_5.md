@@ -10,13 +10,14 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: Fly-ProX10 H723
 ---
 
 ## Overview
 
 {% include note.html content="These instructions apply to RRF 3.5.0 and later, including RRF 3.6.x. Use the [TeamGloomy Config Tool](https://teamgloomy.github.io/configtool/) to generate a starter configuration for this board." %}
 
-This page covers any general information for the Fly-ProX10 H723 board.  
+This page covers any general information for the {{page.boardname}} board.  
 It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DebUbVt).  
 Although the board comes with a socket for a CM4 module, this board can't be used in SBC mode with RRF due to lack of required connections between the CM4 and the STM32H723 MCU.  
 The correct SD Card socket to use with RRF is the one next to the STM32H723 MCU.  

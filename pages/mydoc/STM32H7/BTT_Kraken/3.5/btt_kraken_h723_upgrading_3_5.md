@@ -1,4 +1,4 @@
----
+﻿---
 title: Upgrading a BTT Kraken to 3.5.0 from earlier versions
 tags: []
 keywords: 
@@ -13,6 +13,7 @@ datatable: true
 firmware: "firmware_kraken_h723.bin"
 wifiFirmware: "DuetWiFiServer.bin"
 rrfboot: custom/3.5/rrfboot/rrfboot_btt_kraken_h723.html
+boardname: BTT Kraken
 ---
 
 {% include custom/3.5/upgrading.html %}

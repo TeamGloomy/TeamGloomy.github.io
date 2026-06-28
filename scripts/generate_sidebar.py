@@ -53,7 +53,7 @@ PAGE_ORDER = [
     "Pin Names",
 ]
 
-MANUFACTURER_ORDER = ["AFC", "BTT", "Fly", "LDO", "Fysetc"]
+MANUFACTURER_ORDER = ["AFC", "BTT", "Fly", "LDO", "Fysetc", "SKR"]
 
 
 def page_order_key(title: str) -> int:
@@ -112,14 +112,18 @@ def sidebar_title_for_board(board_dir: str) -> str:
         "BTT_Octopus_Pro_v1.1": "BTT Octopus Pro v1.1 H723",
         "BTT_Scylla_v1": "BTT Scylla v1.0 H723",
         "Fly_C5": "Fly-C5 H723",
+        "Fly_C8Pro": "Fly-C8 Pro H723",
         "Fly_E3_Ultra": "Fly-E3-Ultra H723",
         "Fysetc_Spider_H7": "Fysetc Spider King H723",
+        "LDO_Leviathan_H723": "LDO Leviathan v1.3 H723",
+        "LDO_Leviathan_H743": "LDO Leviathan v1.3 H743",
         "MMU": "Fly-MMU V1.0 H723",
         "ProX10": "Fly-ProX10 H723",
         "SKR_3_EZ_H723": "SKR3 EZ H723",
         "SKR_3_EZ_H743": "SKR3 EZ H743",
         "SKR_3_H723": "SKR3 H723",
         "SKR_3_H743": "SKR3 H743",
+        "SKR_SE_BX2_H743": "BTT SKR SE BX2 H743",
         "Super5Pro_H723": "Fly-Super5Pro H723",
         "Super8Pro_H723": "Fly-Super8Pro H723",
         "Super8Pro_H743": "Fly-Super8Pro H743",

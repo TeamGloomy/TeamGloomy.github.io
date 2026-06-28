@@ -1,4 +1,4 @@
----
+﻿---
 title: BTT Kraken CAN-FD Information
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: BTT Kraken
 ---
 
 ## Overview

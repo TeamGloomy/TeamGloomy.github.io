@@ -10,13 +10,14 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: Fly-Super8Pro H743
 ---
 
 ## Overview
 
 {% include note.html content="These instructions apply to RRF 3.5.0 and later, including RRF 3.6.x. Use the [TeamGloomy Config Tool](https://teamgloomy.github.io/configtool/) to generate a starter configuration for this board." %}
 
-This page covers any general information for the Fly-Super8Pro H743 board.  
+This page covers any general information for the {{page.boardname}} board.  
 It is currently available through [AliExpress](https://www.aliexpress.com/item/1005004431621335.html).  
 The Fly-Super8Pro H743 board is based on hardware revision v1.2 of the Fly-Super8. Details of each Fly-Super8 hardware revision can be found [here](fly_super8_hardware_revisions.html)
 

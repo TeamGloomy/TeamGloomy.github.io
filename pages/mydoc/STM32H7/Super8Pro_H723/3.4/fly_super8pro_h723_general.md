@@ -1,4 +1,4 @@
----
+﻿---
 title: Fly-Super8Pro H723 General Information
 tags: []
 keywords: 
@@ -10,11 +10,12 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: Fly-Super8Pro H723
 ---
 
 ## Overview
 
-This page covers any general information for the Fly-Super8Pro H723 board.  
+This page covers any general information for the {{page.boardname}} board.  
 It is currently available through [AliExpress](https://s.click.aliexpress.com/e/_DDiWwl3).  
 The Fly-Super8Pro H723 board is based on hardware revision v1.3 of the Fly-Super8. Details of each Fly-Super8 hardware revision can be found [here](fly_super8_hardware_revisions.html)
 

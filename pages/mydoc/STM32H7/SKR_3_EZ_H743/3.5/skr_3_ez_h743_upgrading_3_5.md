@@ -1,4 +1,4 @@
----
+﻿---
 title: Upgrading a SKR3EZ H743 to 3.5.0 from earlier versions
 tags: []
 keywords: 
@@ -13,6 +13,7 @@ datatable: true
 firmware: "firmware_skr3ez_h743.bin"
 wifiFirmware: "DuetWiFiServer.bin"
 rrfboot: custom/3.5/rrfboot/rrfboot_skr_3_ez_h743.html
+boardname: SKR3EZ H743
 ---
 
 {% include custom/3.5/upgrading.html %}

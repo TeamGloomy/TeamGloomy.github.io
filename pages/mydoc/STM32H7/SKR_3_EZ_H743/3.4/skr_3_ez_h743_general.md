@@ -1,4 +1,4 @@
----
+﻿---
 title: SKR3EZ H743 General Information
 tags: []
 keywords: 
@@ -10,11 +10,12 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: SKR3EZ H743
 ---
 
 ## Overview
 
-This page covers any general information for the SKR3EZ H743 board.  
+This page covers any general information for the {{page.boardname}} board.  
 
 The SKR3EZ can be purchased from [AliExpress](https://s.click.aliexpress.com/e/_DkY3Otb)
 

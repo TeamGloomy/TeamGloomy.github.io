@@ -1,0 +1,57 @@
+name: Sync rrfboot.txt from RRFBuild
+
+on:
+  schedule:
+    # Run weekly on Mondays at 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    # Allow manual trigger from the Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout wiki
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run rrfboot sync
+        id: sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/sync_rrfboot.py
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create pull request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: auto/sync-rrfboot
+          commit-message: "chore: sync rrfboot.txt from gloomyandy/RRFBuild v3.6-dev"
+          title: "chore: sync rrfboot.txt from RRFBuild"
+          body: |
+            Automated update of `_includes/custom/3.5/rrfboot/rrfboot_*.html` files
+            from the upstream [gloomyandy/RRFBuild](https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/boards)
+            repository (`v3.6-dev` branch).
+
+            This PR was generated automatically by the `sync_rrfboot.yml` workflow.
+            Review the diff below to confirm the changes look correct before merging.
+          labels: automated, rrfboot
+          delete-branch: true

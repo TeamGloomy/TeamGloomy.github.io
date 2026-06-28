@@ -10,13 +10,14 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: SKR3EZ H723
 ---
 
 ## Overview
 
 {% include note.html content="These instructions apply to RRF 3.5.0 and later, including RRF 3.6.x. Use the [TeamGloomy Config Tool](https://teamgloomy.github.io/configtool/) to generate a starter configuration for this board." %}
 
-This page covers any general information for the SKR3EZ H723 board.  
+This page covers any general information for the {{page.boardname}} board.  
 
 The SKR3EZ can be purchased from [AliExpress](https://s.click.aliexpress.com/e/_DkY3Otb)
 

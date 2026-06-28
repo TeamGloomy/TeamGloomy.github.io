@@ -1,4 +1,4 @@
----
+﻿---
 title: BTT Octopus Pro v1.1 CAN-FD Information
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: BTT Octopus Pro v1.1
 ---
 
 ## Overview

@@ -1185,6 +1185,18 @@ children:
       url: fly_c5_h723_general_3_5.html
       output: web
 
+  - title: Fly-C8 Pro H723
+    output: web
+    children:
+
+    - title: Fly-C8 Pro H723 General Information
+      url: fly_c8_pro_h723_general_3_5.html
+      output: web
+
+    - title: Connecting via SBC
+      url: fly_c8_pro_h723_connected_sbc_3_5.html
+      output: web
+
   - title: Fly-E3-Ultra and Ultra-Max H723
     output: web
     children:
@@ -2964,7 +2976,19 @@ children:
       - title: Pin Names
         url: skr_3_ez_h743_pins.html
         output: web
-  
+
+  - title: BTT SKR SE BX2 H743
+    output: web
+    children:
+
+    - title: BTT SKR SE BX2 H743 General Information
+      url: btt_skr_se_bx2_h743_general_3_5.html
+      output: web
+
+    - title: Connecting via SBC
+      url: btt_skr_se_bx2_h743_connected_sbc_3_5.html
+      output: web
+
   - title: SKR-RRF-E3 + IDEX
     output: web
     children:
@@ -3083,6 +3107,30 @@ children:
 
     - title: Pin Names
       url: afc_lite_v1_0_h723_pins_3_5.html
+      output: web
+
+  - title: LDO Leviathan v1.3 H723
+    output: web
+    children:
+
+    - title: LDO Leviathan v1.3 H723 General Information
+      url: ldo_leviathan_v1_3_h723_general_3_5.html
+      output: web
+
+    - title: Connecting via SBC
+      url: ldo_leviathan_v1_3_h723_connected_sbc_3_5.html
+      output: web
+
+  - title: LDO Leviathan v1.3 H743
+    output: web
+    children:
+
+    - title: LDO Leviathan v1.3 H743 General Information
+      url: ldo_leviathan_v1_3_h743_general_3_5.html
+      output: web
+
+    - title: Connecting via SBC
+      url: ldo_leviathan_v1_3_h743_connected_sbc_3_5.html
       output: web
 
 - title: Fysetc Mainboards

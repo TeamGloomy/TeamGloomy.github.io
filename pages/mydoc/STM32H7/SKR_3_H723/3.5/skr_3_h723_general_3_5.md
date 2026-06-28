@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: SKR3 H723
 ---
 
 ## Overview

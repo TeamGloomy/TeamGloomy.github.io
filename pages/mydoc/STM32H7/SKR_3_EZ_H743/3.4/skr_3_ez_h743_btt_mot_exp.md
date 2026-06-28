@@ -1,4 +1,4 @@
----
+﻿---
 title: Connecting a BTT-MOT-EXP to an SKR3EZ H743
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: SKR3EZ H743
 ---
 
 ## Overview

@@ -1,4 +1,4 @@
----
+﻿---
 title: BTT Scylla V1 CAN-FD Information in RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: BTT Scylla V1
 ---
 
 ## Overview

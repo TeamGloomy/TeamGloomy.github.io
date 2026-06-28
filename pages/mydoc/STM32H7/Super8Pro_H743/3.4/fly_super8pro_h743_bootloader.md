@@ -1,4 +1,4 @@
----
+﻿---
 title: Flashing a bootloader to the Fly-Super8Pro H743
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: Fly-Super8Pro H743
 ---
 
 ## Overview

@@ -1,4 +1,4 @@
----
+﻿---
 title: Fly-ProX10 H723 Pin Names in Firmware in RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -10,13 +10,14 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: Fly-ProX10 H723
 ---
 
-## Fly-ProX10 H723 Pinout Diagram
+## {{page.boardname}} Pinout Diagram
 
 {% include image.html file="fly_prox10_pins.png" url="https://teamgloomy.github.io/images/fly_prox10_pins.png" alt="Fly-ProX10 H723" caption="Fly-ProX10 H723 Pinout" %}
 
-## Fly-ProX10 H723 Driver Pins in Firmware
+## {{page.boardname}} Driver Pins in Firmware
 
 Driver pin numbers. They are separated into driver number.
 
@@ -31,7 +32,7 @@ Driver pin numbers. They are separated into driver number.
 
 <div class="datatable-end"></div>
 
-## Fly-ProX10 H723 Other Pins in Firmware
+## {{page.boardname}} Other Pins in Firmware
 
 If more than one pin name is availble, either name can be used in the firmware (config.g).  
 If the pins aren't in the table (due to not having a special name), then the pin itself can be used in the form of PA0, PA.0, PA_0, A0, A.0 or A_0.  

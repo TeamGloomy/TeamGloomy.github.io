@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: AFC-Lite V1.0
 ---
 
 ## Overview

@@ -1,4 +1,4 @@
----
+﻿---
 title: Upgrading a BTT Kraken in SBC Mode to 3.5.0 from earlier versions in RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -12,6 +12,7 @@ toc: false
 datatable: true
 firmware: "firmware_kraken_h723.bin"
 rrfboot: custom/3.5/rrfboot/rrfboot_btt_kraken_h723.html
+boardname: BTT Kraken
 ---
 
 {% include custom/3.5/upgradingSBC.html %}

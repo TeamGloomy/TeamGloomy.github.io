@@ -1,4 +1,4 @@
----
+﻿---
 title: Fly-MMU V1.0 H723 Pin Names in Firmware in RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: Fly-MMU V1.0
 ---
 
 ## Fly-MMU V1.0 H723 Pinout Diagram

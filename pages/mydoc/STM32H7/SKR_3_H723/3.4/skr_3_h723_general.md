@@ -1,4 +1,4 @@
----
+﻿---
 title: SKR3 H723 Version General Information
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: SKR3 H723
 ---
 
 ## Overview

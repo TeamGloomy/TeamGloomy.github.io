@@ -1,4 +1,4 @@
----
+﻿---
 title: Connecting a PT100 or Type 'K' Thermocouple to a Fly-E3-Ultra-Max H723 in RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: Fly-E3-Ultra H723
 ---
 
 ## Overview

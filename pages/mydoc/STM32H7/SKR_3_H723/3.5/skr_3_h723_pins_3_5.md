@@ -1,4 +1,4 @@
----
+﻿---
 title: SKR3 H723 Version Pin Names in Firmware in RRF 3.5.0 Onwards
 tags: []
 keywords: 
@@ -10,6 +10,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+boardname: SKR3 H723
 ---
 
 ## SKR3 H723 Version Pinout Diagram
