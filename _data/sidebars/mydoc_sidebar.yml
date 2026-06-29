@@ -173,22 +173,6 @@ children:
     url: short_to_ground.html
     output: web
 
-  - title: STM32F4 Firmware Restrictions
-    url: stm32_differences.html
-    output: web
-
-  - title: STM32F4 PWM Hardware/Software
-    url: stm32f4_pwm.html
-    output: web
-
-  - title: STM32H7 Firmware Restrictions
-    url: stm32h7_differences.html
-    output: web
-  
-  - title: STM32H7 PWM Hardware/Software
-    url: stm32h7_pwm.html
-    output: web
-  
   - title: Obtaining Information for Troubleshooting
     url: troubleshooting_information.html
     output: web
@@ -224,18 +208,6 @@ children:
     - title: DSF on Armbian
       url: dsf_on_armbian.html
       output: web
-
-  - title: Configuring an ESP8266 WiFi Module for STM32F4 Boards
-    url: stm32_esp8266.html
-    output: web
-
-  - title: Configuring an ESP32 WiFi Module for STM32F4 Boards
-    url: stm32_esp32.html
-    output: web
-
-  - title: Configuring an SBC for STM32F4 Boards
-    url: stm32_sbc.html
-    output: web
 
 - title: LPC Boards
   output: web
@@ -465,10 +437,34 @@ children:
       url: skr_E3T_pins.html
       output: web
 
-- title: Fly/Mellow Mainboards
+- title: STM32F4 Reference
   output: web
   children:
-  
+
+  - title: STM32F4 Firmware Restrictions
+    url: stm32_differences.html
+    output: web
+
+  - title: STM32F4 PWM Hardware/Software
+    url: stm32f4_pwm.html
+    output: web
+
+  - title: Configuring an ESP8266 WiFi Module for STM32F4 Boards
+    url: stm32_esp8266.html
+    output: web
+
+  - title: Configuring an ESP32 WiFi Module for STM32F4 Boards
+    url: stm32_esp32.html
+    output: web
+
+  - title: Configuring an SBC for STM32F4 Boards
+    url: stm32_sbc.html
+    output: web
+
+- title: Fly/Mellow STM32F4 Mainboards
+  output: web
+  children:
+
   - title: Fly-407ZG
     output: web
     children:
@@ -1177,270 +1173,6 @@ children:
         url: fly_e3_pro_v3_pins.html
         output: web
   
-  - title: Fly-C5 H723
-    output: web
-    children:
-
-    - title: Fly-C5 H723 General Information
-      url: fly_c5_h723_general_3_5.html
-      output: web
-
-  - title: Fly-C8 Pro H723
-    output: web
-    children:
-
-    - title: Fly-C8 Pro H723 General Information
-      url: fly_c8_pro_h723_general_3_5.html
-      output: web
-
-    - title: Connecting via SBC
-      url: fly_c8_pro_h723_connected_sbc_3_5.html
-      output: web
-
-  - title: Fly-E3-Ultra and Ultra-Max H723
-    output: web
-    children:
-
-    - title: Fly-E3-Ultra and Ultra-Max H723 General Information
-      url: fly_e3_ultra_general_3_5.html
-      output: web
-  
-    - title: Connecting via WiFi
-      url: fly_e3_ultra_connected_wifi_3_5.html
-      output: web
-
-    - title: Connecting to a CAN-FD expansion board
-      url: fly_e3_ultra_canfd_3_5.html
-      output: web
-  
-    - title: Configuring Sensorless Homing
-      url: fly_e3_ultra_sensorless_3_5.html
-      output: web
-
-    - title: Connecting a Serial Screen
-      url: fly_e3_ultra_screen_3_5.html
-      output: web
-
-    - title: Connecting a 12864 Screen
-      url: fly_e3_ultra_screen_12864_3_5.html
-      output: web
-
-    - title: Connecting a BLTouch or BTT MicroProbe
-      url: fly_e3_ultra_bltouch_3_5.html
-      output: web
-
-    - title: Connecting an Accelerometer
-      url: fly_e3_ultra_accelerometer_3_5.html
-      output: web
-
-    - title: Connecting a PT100 or Type 'K' Thermocouple
-      url: fly_e3_ultra_pt100_3_5.html
-      output: web
-
-    - title: Input Voltage Monitoring
-      url: fly_e3_ultra_voltage_3_5.html
-      output: web
-
-    - title: Configuring the Onboard Temperature Sensor
-      url: fly_e3_ultra_onboard_temp_3_5.html
-      output: web
-
-    - title: rrfboot.txt
-      url: fly_e3_ultra_rrfboot_3_5.html
-      output: web
-
-    - title: Pin Names
-      url: fly_e3_ultra_pins_3_5.html
-      output: web
-  
-  - title: Fly-MMU V1.0 H723
-    output: web
-    children:
-
-    - title: RRF 3.5.0 and above
-      output: web
-      children:
-
-      - title: Fly-MMU V1.0 H723 General Information
-        url: fly_mmu_v1_0_h723_general_3_5.html
-        output: web
-
-      - title: Flashing an RRF Compatible Bootloader
-        url: fly_mmu_v1_0_h723_bootloader_3_5.html
-        output: web
-
-      - title: Flashing RRF
-        url: fly_mmu_v1_0_h723_firmware_flash_3_5.html
-        output: web
-      
-      - title: Connecting to a CAN-FD mainboard
-        url: fly_mmu_v1_0_h723_canfd_3_5.html
-        output: web
-
-      - title: Pin Names
-        url: fly_mmu_v1_0_h723_pins_3_5.html
-        output: web
-
-  - title: Fly-ProX10 H723
-    output: web
-    children:
-
-    - title: RRF 3.5.0 and above
-      output: web
-      children:
-
-      - title: Fly-ProX10 H723 General Information
-        url: fly_prox10_h723_general_3_5.html
-        output: web
-    
-      - title: Connecting via WiFi
-        url: fly_prox10_h723_connected_wifi_3_5.html
-        output: web
-
-      - title: Connecting to a CAN-FD expansion board
-        url: fly_prox10_h723_canfd_3_5.html
-        output: web
-
-      - title: Configuring Sensorless Homing
-        url: fly_prox10_h723_sensorless_3_5.html
-        output: web
-    
-      - title: Connecting a Serial Screen
-        url: fly_prox10_h723_screen_3_5.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: fly_prox10_h723_bltouch_3_5.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: fly_prox10_h723_accelerometer_3_5.html
-        output: web
-
-      - title: rrfboot.txt
-        url: fly_prox10_h723_rrfboot_3_5.html
-        output: web
-
-      - title: Pin Names
-        url: fly_prox10_h723_pins_3_5.html
-        output: web
-  
-  - title: Fly-Super5Pro H723
-    output: web
-    children:
-
-    - title: RRF 3.5.0 and above
-      output: web
-      children:
-      
-      - title: Fly-Super5Pro H723 General Information
-        url: fly_super5pro_h723_general_3_5.html
-        output: web
-    
-      - title: Connecting via WiFi
-        url: fly_super5pro_h723_connected_wifi_3_5.html
-        output: web
-
-      - title: Connecting via SBC
-        url: fly_super5pro_h723_connected_sbc_3_5.html
-        output: web
-
-      - title: Upgrading WiFi/Standalone from an earlier RRF version
-        url: fly_super5pro_h723_upgrading_3_5.html
-        output: web
-
-      - title: Upgrading SBC Mode from an earlier RRF version
-        url: fly_super5pro_h723_upgrading_sbc_3_5.html
-        output: web
-
-      - title: Connecting to a CAN-FD expansion board
-        url: fly_super5pro_h723_canfd_3_5.html
-        output: web
-
-      - title: Configuring Sensorless Homing
-        url: fly_super5pro_h723_sensorless_3_5.html
-        output: web
-    
-      - title: Connecting a Serial Screen
-        url: fly_super5pro_h723_screen_3_5.html
-        output: web
-
-      - title: Connecting a 12864 Screen
-        url: fly_super5pro_h723_screen_12864_3_5.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: fly_super5pro_h723_bltouch_3_5.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: fly_super5pro_h723_accelerometer_3_5.html
-        output: web
-
-      - title: Input Voltage Monitoring
-        url: fly_super5pro_h723_voltage_3_5.html
-        output: web
-
-      - title: Reflashing the Bootloader
-        url: fly_super5pro_h723_bootloader_3_5.html
-        output: web
-
-      - title: rrfboot.txt
-        url: fly_super5pro_h723_rrfboot_3_5.html
-        output: web
-
-      - title: Pin Names
-        url: fly_super5pro_h723_pins_3_5.html
-        output: web
-
-    - title: RRF 3.4.6 and below
-      output: web
-      children:
-      
-      - title: Fly-Super5Pro H723 General Information
-        url: fly_super5pro_h723_general.html
-        output: web
-    
-      - title: Connecting via WiFi
-        url: fly_super5pro_h723_connected_wifi.html
-        output: web
-
-      - title: Connecting to a CAN-FD expansion board
-        url: fly_super5pro_h723_canfd.html
-        output: web
-
-      - title: Configuring Sensorless Homing
-        url: fly_super5pro_h723_sensorless.html
-        output: web
-    
-      - title: Connecting a Serial Screen
-        url: fly_super5pro_h723_screen.html
-        output: web
-
-      - title: Connecting a 12864 Screen
-        url: fly_super5pro_h723_screen_12864.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: fly_super5pro_h723_bltouch.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: fly_super5pro_h723_accelerometer.html
-        output: web
-
-      - title: Input Voltage Monitoring
-        url: fly_super5pro_h723_voltage.html
-        output: web
-
-      - title: Reflashing the Bootloader
-        url: fly_super5pro_h723_bootloader.html
-        output: web
-
-      - title: Pin Names
-        url: fly_super5pro_h723_pins.html
-        output: web
-  
   - title: Fly-Super8
     output: web
     children:
@@ -1557,306 +1289,10 @@ children:
         url: fly_super8_pins.html
         output: web
 
-  - title: Fly-Super8Pro H723
-    output: web
-    children:
-
-    - title: RRF 3.5.0 and above
-      output: web
-      children:
-
-      - title: Fly-Super8Pro H723 General Information
-        url: fly_super8pro_h723_general_3_5.html
-        output: web
-    
-      - title: Connecting via WiFi
-        url: fly_super8pro_h723_connected_wifi_3_5.html
-        output: web
-
-      - title: Connecting via SBC
-        url: fly_super8pro_h723_connected_sbc_3_5.html
-        output: web
-
-      - title: Upgrading WiFi/Standalone from an earlier RRF version
-        url: fly_super8pro_h723_upgrading_3_5.html
-        output: web
-
-      - title: Upgrading SBC Mode from an earlier RRF version
-        url: fly_super8pro_h723_upgrading_sbc_3_5.html
-        output: web
-
-      - title: Connecting to a CAN-FD expansion board
-        url: fly_super8pro_h723_canfd_3_5.html
-        output: web
-
-      - title: Configuring Sensorless Homing
-        url: fly_super8pro_h723_sensorless_3_5.html
-        output: web
-    
-      - title: Connecting a Serial Screen
-        url: fly_super8pro_h723_screen_3_5.html
-        output: web
-
-      - title: Connecting a 12864 Screen
-        url: fly_super8pro_h723_screen_12864_3_5.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: fly_super8pro_h723_bltouch_3_5.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: fly_super8pro_h723_accelerometer_3_5.html
-        output: web
-
-      - title: Input Voltage Monitoring
-        url: fly_super8pro_h723_voltage_3_5.html
-        output: web
-
-      - title: Connecting a BTT-MOT-EXP
-        url: fly_super8pro_h723_btt_mot_exp_3_5.html
-        output: web
-
-      - title: rrfboot.txt
-        url: fly_super8pro_h723_rrfboot_3_5.html
-        output: web
-
-      - title: Pin Names
-        url: fly_super8pro_h723_pins_3_5.html
-        output: web
-
-    - title: RRF 3.4.6 and below
-      output: web
-      children:
-
-      - title: Fly-Super8Pro H723 General Information
-        url: fly_super8pro_h723_general.html
-        output: web
-    
-      - title: Connecting via WiFi
-        url: fly_super8pro_h723_connected_wifi.html
-        output: web
-
-      - title: Connecting to a CAN-FD expansion board
-        url: fly_super8pro_h723_canfd.html
-        output: web
-
-      - title: Configuring Sensorless Homing
-        url: fly_super8pro_h723_sensorless.html
-        output: web
-    
-      - title: Connecting a Serial Screen
-        url: fly_super8pro_h723_screen.html
-        output: web
-
-      - title: Connecting a 12864 Screen
-        url: fly_super8pro_h723_screen_12864.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: fly_super8pro_h723_bltouch.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: fly_super8pro_h723_accelerometer.html
-        output: web
-
-      - title: Input Voltage Monitoring
-        url: fly_super8pro_h723_voltage.html
-        output: web
-
-      - title: Connecting a BTT-MOT-EXP
-        url: fly_super8pro_h723_btt_mot_exp.html
-        output: web
-
-      - title: Pin Names
-        url: fly_super8pro_h723_pins.html
-        output: web
-  
-  - title: Fly-Super8Pro H743
-    output: web
-    children:
-
-    - title: RRF 3.5.0 and above
-      output: web
-      children:
-    
-      - title: Fly-Super8Pro H743 General Information
-        url: fly_super8pro_h743_general_3_5.html
-        output: web
-    
-      - title: Flashing an RRF compatible bootloader
-        url: fly_super8pro_h743_bootloader.html
-        output: web
-    
-      - title: Connecting via WiFi
-        url: fly_super8pro_h743_connected_wifi_3_5.html
-        output: web
-
-      - title: Connecting via SBC
-        url: fly_super8pro_h743_connected_sbc_3_5.html
-        output: web
-
-      - title: Upgrading WiFi/Standalone from an earlier RRF version
-        url: fly_super8pro_h743_upgrading_3_5.html
-        output: web
-
-      - title: Upgrading SBC Mode from an earlier RRF version
-        url: fly_super8pro_h743_upgrading_sbc_3_5.html
-        output: web
-      
-      - title: Connecting to a CAN-FD expansion board
-        url: fly_super8pro_h743_canfd_3_5.html
-        output: web
-
-      - title: Configuring Sensorless Homing
-        url: fly_super8pro_h743_sensorless_3_5.html
-        output: web
-    
-      - title: Connecting a Serial Screen
-        url: fly_super8pro_h743_screen_3_5.html
-        output: web
-
-      - title: Connecting a 12864 Screen
-        url: fly_super8pro_h743_screen_12864_3_5.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: fly_super8pro_h743_bltouch_3_5.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: fly_super8pro_h743_accelerometer_3_5.html
-        output: web
-
-      - title: Input Voltage Monitoring
-        url: fly_super8pro_h743_voltage_3_5.html
-        output: web
-
-      - title: Connecting a BTT-MOT-EXP
-        url: fly_super8pro_h743_btt_mot_exp_3_5.html
-        output: web
-
-      - title: rrfboot.txt
-        url: fly_super8pro_h743_rrfboot_3_5.html
-        output: web
-      
-      - title: Pin Names
-        url: fly_super8pro_h743_pins_3_5.html
-        output: web
-    
-    - title: RRF 3.4.6 and below
-      output: web
-      children:
-    
-      - title: Fly-Super8Pro H743 General Information
-        url: fly_super8pro_h743_general.html
-        output: web
-    
-      - title: Flashing an RRF compatible bootloader
-        url: fly_super8pro_h743_bootloader.html
-        output: web
-    
-      - title: Connecting via WiFi
-        url: fly_super8pro_h743_connected_wifi.html
-        output: web
-
-      - title: Connecting to a CAN-FD expansion board
-        url: fly_super8pro_h743_canfd.html
-        output: web
-
-      - title: Configuring Sensorless Homing
-        url: fly_super8pro_h743_sensorless.html
-        output: web
-    
-      - title: Connecting a Serial Screen
-        url: fly_super8pro_h743_screen.html
-        output: web
-
-      - title: Connecting a 12864 Screen
-        url: fly_super8pro_h743_screen_12864.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: fly_super8pro_h743_bltouch.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: fly_super8pro_h743_accelerometer.html
-        output: web
-
-      - title: Input Voltage Monitoring
-        url: fly_super8pro_h743_voltage.html
-        output: web
-
-      - title: Connecting a BTT-MOT-EXP
-        url: fly_super8pro_h743_btt_mot_exp.html
-        output: web
-
-      - title: Pin Names
-        url: fly_super8pro_h743_pins.html
-        output: web
-
-- title: BTT Mainboards
+- title: BTT STM32F4 Mainboards
   output: web
   children:
 
-  - title: BTT Kraken
-    output: web
-    children:
-
-    - title: BTT Kraken General Information
-      url: btt_kraken_h723_general_3_5.html
-      output: web
-  
-    - title: Connecting via an ESP32 WiFi Adapter
-      url: btt_kraken_h723_connected_wifi_32_3_5.html
-      output: web
-
-    - title: Connecting via an SBC
-      url: btt_kraken_h723_connected_sbc_3_5.html
-      output: web
-
-    - title: Upgrading WiFi/Standalone from an earlier RRF version
-      url: btt_kraken_h723_upgrading_3_5.html
-      output: web
-
-    - title: Upgrading SBC Mode from an earlier RRF version
-      url: btt_kraken_h723_upgrading_sbc_3_5.html
-      output: web
-
-    - title: Connecting to a CAN-FD expansion board
-      url: btt_kraken_h723_canfd_3_5.html
-      output: web
-
-    - title: Configuring Sensorless Homing
-      url: btt_kraken_h723_sensorless_3_5.html
-      output: web
-  
-    - title: Connecting a Screen
-      url: btt_kraken_h723_screen_3_5.html
-      output: web
-
-    - title: Connecting a BLTouch or BTT MicroProbe
-      url: btt_kraken_h723_bltouch_3_5.html
-      output: web
-
-    - title: Connecting an Accelerometer
-      url: btt_kraken_h723_accelerometer_3_5.html
-      output: web
-
-    - title: Connecting a PT100 or PT1000
-      url: btt_kraken_h723_pt100_3_5.html
-      output: web
-
-    - title: rrfboot.txt
-      url: btt_kraken_h723_rrfboot_3_5.html
-      output: web
-
-    - title: Pin Names
-      url: btt_kraken_h723_pins_3_5.html
-      output: web
-     
   - title: BTT Octopus v1.1 f429 Version
     output: web
     children:
@@ -2072,38 +1508,6 @@ children:
       - title: Pin Names
         url: btt_octopus_pro_1.0_f429_pins.html
         output: web
-  
-  - title: BTT Scylla V1
-    output: web
-    children:
-
-    - title: BTT Scylla V1 General Information
-      url: btt_scylla_v1_h723_general_3_5.html
-      output: web
-  
-    - title: Connecting via an ESP32 WiFi Adapter
-      url: btt_scylla_v1_h723_connected_wifi_32_3_5.html
-      output: web
-
-    - title: Connecting to a CAN-FD expansion board
-      url: btt_scylla_v1_h723_canfd_3_5.html
-      output: web
-
-    - title: Configuring Sensorless Homing
-      url: btt_scylla_v1_h723_sensorless_3_5.html
-      output: web
-  
-    - title: Connecting a Screen
-      url: btt_scylla_v1_h723_screen_3_5.html
-      output: web
-
-    - title: rrfboot.txt
-      url: btt_scylla_v1_h723_rrfboot_3_5.html
-      output: web
-
-    - title: Pin Names
-      url: btt_scylla_v1_h723_pins_3_5.html
-      output: web
   
   - title: GTR + M5
     output: web
@@ -2545,6 +1949,810 @@ children:
         url: skr_2.0_pins.html
         output: web
 
+  - title: SKR-RRF-E3 + IDEX
+    output: web
+    children:
+
+    - title: RRF 3.5.0 and above
+      output: web
+      children:
+    
+      - title: SKR-RRF-E3 General Information
+        url: skr_rrf_e3_general_3_5.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: skr_rrf_e3_connected_wifi_3_5.html
+        output: web
+
+      - title: Upgrading from an earlier RRF version
+        url: skr_rrf_e3_upgrading_3_5.html
+        output: web
+
+      - title: CAN-FD can't be added
+        url: skr_rrf_e3_spi2canfd_3_5.html
+        output: web
+    
+      - title: Configuring Sensorless Homing
+        url: skr_rrf_e3_sensorless_3_5.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: skr_rrf_e3_screen_3_5.html
+        output: web
+
+      - title: Connecting a 12864 Screen
+        url: skr_rrf_e3_screen_12864_3_5.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: skr_rrf_e3_bltouch_3_5.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: skr_rrf_e3_accelerometer_3_5.html
+        output: web
+
+      - title: rrfboot.txt
+        url: skr_rrf_e3_rrfboot_3_5.html
+        output: web
+
+      - title: Pin Names
+        url: skr_rrf_e3_pins_3_5.html
+        output: web
+    
+    - title: RRF 3.4.6 and below
+      output: web
+      children:
+    
+      - title: SKR-RRF-E3 General Information
+        url: skr_rrf_e3_general.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: skr_rrf_e3_connected_wifi.html
+        output: web
+
+      - title: CAN-FD can't be added
+        url: skr_rrf_e3_spi2canfd.html
+        output: web
+    
+      - title: Configuring Sensorless Homing
+        url: skr_rrf_e3_sensorless.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: skr_rrf_e3_screen.html
+        output: web
+
+      - title: Connecting a 12864 Screen
+        url: skr_rrf_e3_screen_12864.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: skr_rrf_e3_bltouch.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: skr_rrf_e3_accelerometer.html
+        output: web
+
+      - title: Pin Names
+        url: skr_rrf_e3_pins.html
+        output: web
+
+- title: STM32F4 + Integrated SBC Boards
+  output: web
+  children:
+
+  - title: Armbian Supported Wifi Chipsets
+    url: armbian_wifi.html
+    output: web
+
+  - title: Armbian Upgrade Intructions
+    url: armbian_upgrade.html
+    output: web
+    
+  - title: Fly-Gemini-V1
+    output: web
+    children:
+
+    - title: Fly-Gemini-V1 General Information
+      url: fly_gemini_general.html
+      output: web
+      
+    - title: Connecting via SBC
+      url: fly_gemini_connected_sbc.html
+      output: web
+
+    - title: Configuring Sensorless Homing
+      url: fly_gemini_sensorless.html
+      output: web
+
+    - title: Connecting a Serial Screen
+      url: fly_gemini_screen.html
+      output: web
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: fly_gemini_bltouch.html
+      output: web
+
+    - title: Pin Names
+      url: fly_gemini_pins.html
+      output: web
+
+  - title: Fly-Gemini-V1.1
+    output: web
+    children:
+
+    - title: Fly-Gemini-V1.1 General Information
+      url: fly_gemini_v1.1_general.html
+      output: web
+      
+    - title: Connecting via SBC
+      url: fly_gemini_v1.1_connected_sbc.html
+      output: web
+
+    - title: Configuring Sensorless Homing
+      url: fly_gemini_v1.1_sensorless.html
+      output: web
+    
+    - title: Connecting a Serial Screen
+      url: fly_gemini_v1.1_screen.html
+      output: web
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: fly_gemini_v1.1_bltouch.html
+      output: web
+
+    - title: Pin Names
+      url: fly_gemini_v1.1_pins.html
+      output: web
+
+  - title: Fly-Gemini-V2
+    output: web
+    children:
+
+    - title: Fly-Gemini-V2 General Information
+      url: fly_gemini_v2_general.html
+      output: web
+      
+    - title: Connecting via SBC
+      url: fly_gemini_v2_connected_sbc.html
+      output: web
+    
+    - title: Configuring Sensorless Homing
+      url: fly_gemini_v2_sensorless.html
+      output: web
+    
+    - title: Connecting a Serial Screen
+      url: fly_gemini_v2_screen.html
+      output: web
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: fly_gemini_v2_bltouch.html
+      output: web
+
+    - title: Pin Names
+      url: fly_gemini_v2_pins.html
+      output: web
+
+- title: STM32H7 Reference
+  output: web
+  children:
+
+  - title: STM32H7 Firmware Restrictions
+    url: stm32h7_differences.html
+    output: web
+  
+  - title: STM32H7 PWM Hardware/Software
+    url: stm32h7_pwm.html
+    output: web
+  
+- title: Fly/Mellow STM32H7 Mainboards
+  output: web
+  children:
+
+  - title: Fly-C5 H723
+    output: web
+    children:
+
+    - title: Fly-C5 H723 General Information
+      url: fly_c5_h723_general_3_5.html
+      output: web
+
+  - title: Fly-C8 Pro H723
+    output: web
+    children:
+
+    - title: Fly-C8 Pro H723 General Information
+      url: fly_c8_pro_h723_general_3_5.html
+      output: web
+
+    - title: Connecting via SBC
+      url: fly_c8_pro_h723_connected_sbc_3_5.html
+      output: web
+
+    - title: rrfboot.txt
+      url: fly_c8_pro_h723_rrfboot_3_5.html
+      output: web
+
+  - title: Fly-E3-Ultra and Ultra-Max H723
+    output: web
+    children:
+
+    - title: Fly-E3-Ultra and Ultra-Max H723 General Information
+      url: fly_e3_ultra_general_3_5.html
+      output: web
+  
+    - title: Connecting via WiFi
+      url: fly_e3_ultra_connected_wifi_3_5.html
+      output: web
+
+    - title: Connecting to a CAN-FD expansion board
+      url: fly_e3_ultra_canfd_3_5.html
+      output: web
+  
+    - title: Configuring Sensorless Homing
+      url: fly_e3_ultra_sensorless_3_5.html
+      output: web
+
+    - title: Connecting a Serial Screen
+      url: fly_e3_ultra_screen_3_5.html
+      output: web
+
+    - title: Connecting a 12864 Screen
+      url: fly_e3_ultra_screen_12864_3_5.html
+      output: web
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: fly_e3_ultra_bltouch_3_5.html
+      output: web
+
+    - title: Connecting an Accelerometer
+      url: fly_e3_ultra_accelerometer_3_5.html
+      output: web
+
+    - title: Connecting a PT100 or Type 'K' Thermocouple
+      url: fly_e3_ultra_pt100_3_5.html
+      output: web
+
+    - title: Input Voltage Monitoring
+      url: fly_e3_ultra_voltage_3_5.html
+      output: web
+
+    - title: Configuring the Onboard Temperature Sensor
+      url: fly_e3_ultra_onboard_temp_3_5.html
+      output: web
+
+    - title: rrfboot.txt
+      url: fly_e3_ultra_rrfboot_3_5.html
+      output: web
+
+    - title: Pin Names
+      url: fly_e3_ultra_pins_3_5.html
+      output: web
+  
+  - title: Fly-MMU V1.0 H723
+    output: web
+    children:
+
+    - title: RRF 3.5.0 and above
+      output: web
+      children:
+
+      - title: Fly-MMU V1.0 H723 General Information
+        url: fly_mmu_v1_0_h723_general_3_5.html
+        output: web
+
+      - title: Flashing an RRF Compatible Bootloader
+        url: fly_mmu_v1_0_h723_bootloader_3_5.html
+        output: web
+
+      - title: Flashing RRF
+        url: fly_mmu_v1_0_h723_firmware_flash_3_5.html
+        output: web
+      
+      - title: Connecting to a CAN-FD mainboard
+        url: fly_mmu_v1_0_h723_canfd_3_5.html
+        output: web
+
+      - title: Pin Names
+        url: fly_mmu_v1_0_h723_pins_3_5.html
+        output: web
+
+  - title: Fly-ProX10 H723
+    output: web
+    children:
+
+    - title: RRF 3.5.0 and above
+      output: web
+      children:
+
+      - title: Fly-ProX10 H723 General Information
+        url: fly_prox10_h723_general_3_5.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: fly_prox10_h723_connected_wifi_3_5.html
+        output: web
+
+      - title: Connecting to a CAN-FD expansion board
+        url: fly_prox10_h723_canfd_3_5.html
+        output: web
+
+      - title: Configuring Sensorless Homing
+        url: fly_prox10_h723_sensorless_3_5.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: fly_prox10_h723_screen_3_5.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_prox10_h723_bltouch_3_5.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: fly_prox10_h723_accelerometer_3_5.html
+        output: web
+
+      - title: rrfboot.txt
+        url: fly_prox10_h723_rrfboot_3_5.html
+        output: web
+
+      - title: Pin Names
+        url: fly_prox10_h723_pins_3_5.html
+        output: web
+  
+  - title: Fly-Super5Pro H723
+    output: web
+    children:
+
+    - title: RRF 3.5.0 and above
+      output: web
+      children:
+      
+      - title: Fly-Super5Pro H723 General Information
+        url: fly_super5pro_h723_general_3_5.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: fly_super5pro_h723_connected_wifi_3_5.html
+        output: web
+
+      - title: Connecting via SBC
+        url: fly_super5pro_h723_connected_sbc_3_5.html
+        output: web
+
+      - title: Upgrading WiFi/Standalone from an earlier RRF version
+        url: fly_super5pro_h723_upgrading_3_5.html
+        output: web
+
+      - title: Upgrading SBC Mode from an earlier RRF version
+        url: fly_super5pro_h723_upgrading_sbc_3_5.html
+        output: web
+
+      - title: Connecting to a CAN-FD expansion board
+        url: fly_super5pro_h723_canfd_3_5.html
+        output: web
+
+      - title: Configuring Sensorless Homing
+        url: fly_super5pro_h723_sensorless_3_5.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: fly_super5pro_h723_screen_3_5.html
+        output: web
+
+      - title: Connecting a 12864 Screen
+        url: fly_super5pro_h723_screen_12864_3_5.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_super5pro_h723_bltouch_3_5.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: fly_super5pro_h723_accelerometer_3_5.html
+        output: web
+
+      - title: Input Voltage Monitoring
+        url: fly_super5pro_h723_voltage_3_5.html
+        output: web
+
+      - title: Reflashing the Bootloader
+        url: fly_super5pro_h723_bootloader_3_5.html
+        output: web
+
+      - title: rrfboot.txt
+        url: fly_super5pro_h723_rrfboot_3_5.html
+        output: web
+
+      - title: Pin Names
+        url: fly_super5pro_h723_pins_3_5.html
+        output: web
+
+    - title: RRF 3.4.6 and below
+      output: web
+      children:
+      
+      - title: Fly-Super5Pro H723 General Information
+        url: fly_super5pro_h723_general.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: fly_super5pro_h723_connected_wifi.html
+        output: web
+
+      - title: Connecting to a CAN-FD expansion board
+        url: fly_super5pro_h723_canfd.html
+        output: web
+
+      - title: Configuring Sensorless Homing
+        url: fly_super5pro_h723_sensorless.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: fly_super5pro_h723_screen.html
+        output: web
+
+      - title: Connecting a 12864 Screen
+        url: fly_super5pro_h723_screen_12864.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_super5pro_h723_bltouch.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: fly_super5pro_h723_accelerometer.html
+        output: web
+
+      - title: Input Voltage Monitoring
+        url: fly_super5pro_h723_voltage.html
+        output: web
+
+      - title: Reflashing the Bootloader
+        url: fly_super5pro_h723_bootloader.html
+        output: web
+
+      - title: Pin Names
+        url: fly_super5pro_h723_pins.html
+        output: web
+  
+  - title: Fly-Super8Pro H723
+    output: web
+    children:
+
+    - title: RRF 3.5.0 and above
+      output: web
+      children:
+
+      - title: Fly-Super8Pro H723 General Information
+        url: fly_super8pro_h723_general_3_5.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: fly_super8pro_h723_connected_wifi_3_5.html
+        output: web
+
+      - title: Connecting via SBC
+        url: fly_super8pro_h723_connected_sbc_3_5.html
+        output: web
+
+      - title: Upgrading WiFi/Standalone from an earlier RRF version
+        url: fly_super8pro_h723_upgrading_3_5.html
+        output: web
+
+      - title: Upgrading SBC Mode from an earlier RRF version
+        url: fly_super8pro_h723_upgrading_sbc_3_5.html
+        output: web
+
+      - title: Connecting to a CAN-FD expansion board
+        url: fly_super8pro_h723_canfd_3_5.html
+        output: web
+
+      - title: Configuring Sensorless Homing
+        url: fly_super8pro_h723_sensorless_3_5.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: fly_super8pro_h723_screen_3_5.html
+        output: web
+
+      - title: Connecting a 12864 Screen
+        url: fly_super8pro_h723_screen_12864_3_5.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_super8pro_h723_bltouch_3_5.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: fly_super8pro_h723_accelerometer_3_5.html
+        output: web
+
+      - title: Input Voltage Monitoring
+        url: fly_super8pro_h723_voltage_3_5.html
+        output: web
+
+      - title: Connecting a BTT-MOT-EXP
+        url: fly_super8pro_h723_btt_mot_exp_3_5.html
+        output: web
+
+      - title: rrfboot.txt
+        url: fly_super8pro_h723_rrfboot_3_5.html
+        output: web
+
+      - title: Pin Names
+        url: fly_super8pro_h723_pins_3_5.html
+        output: web
+
+    - title: RRF 3.4.6 and below
+      output: web
+      children:
+
+      - title: Fly-Super8Pro H723 General Information
+        url: fly_super8pro_h723_general.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: fly_super8pro_h723_connected_wifi.html
+        output: web
+
+      - title: Connecting to a CAN-FD expansion board
+        url: fly_super8pro_h723_canfd.html
+        output: web
+
+      - title: Configuring Sensorless Homing
+        url: fly_super8pro_h723_sensorless.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: fly_super8pro_h723_screen.html
+        output: web
+
+      - title: Connecting a 12864 Screen
+        url: fly_super8pro_h723_screen_12864.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_super8pro_h723_bltouch.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: fly_super8pro_h723_accelerometer.html
+        output: web
+
+      - title: Input Voltage Monitoring
+        url: fly_super8pro_h723_voltage.html
+        output: web
+
+      - title: Connecting a BTT-MOT-EXP
+        url: fly_super8pro_h723_btt_mot_exp.html
+        output: web
+
+      - title: Pin Names
+        url: fly_super8pro_h723_pins.html
+        output: web
+  
+  - title: Fly-Super8Pro H743
+    output: web
+    children:
+
+    - title: RRF 3.5.0 and above
+      output: web
+      children:
+    
+      - title: Fly-Super8Pro H743 General Information
+        url: fly_super8pro_h743_general_3_5.html
+        output: web
+    
+      - title: Flashing an RRF compatible bootloader
+        url: fly_super8pro_h743_bootloader.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: fly_super8pro_h743_connected_wifi_3_5.html
+        output: web
+
+      - title: Connecting via SBC
+        url: fly_super8pro_h743_connected_sbc_3_5.html
+        output: web
+
+      - title: Upgrading WiFi/Standalone from an earlier RRF version
+        url: fly_super8pro_h743_upgrading_3_5.html
+        output: web
+
+      - title: Upgrading SBC Mode from an earlier RRF version
+        url: fly_super8pro_h743_upgrading_sbc_3_5.html
+        output: web
+      
+      - title: Connecting to a CAN-FD expansion board
+        url: fly_super8pro_h743_canfd_3_5.html
+        output: web
+
+      - title: Configuring Sensorless Homing
+        url: fly_super8pro_h743_sensorless_3_5.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: fly_super8pro_h743_screen_3_5.html
+        output: web
+
+      - title: Connecting a 12864 Screen
+        url: fly_super8pro_h743_screen_12864_3_5.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_super8pro_h743_bltouch_3_5.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: fly_super8pro_h743_accelerometer_3_5.html
+        output: web
+
+      - title: Input Voltage Monitoring
+        url: fly_super8pro_h743_voltage_3_5.html
+        output: web
+
+      - title: Connecting a BTT-MOT-EXP
+        url: fly_super8pro_h743_btt_mot_exp_3_5.html
+        output: web
+
+      - title: rrfboot.txt
+        url: fly_super8pro_h743_rrfboot_3_5.html
+        output: web
+      
+      - title: Pin Names
+        url: fly_super8pro_h743_pins_3_5.html
+        output: web
+    
+    - title: RRF 3.4.6 and below
+      output: web
+      children:
+    
+      - title: Fly-Super8Pro H743 General Information
+        url: fly_super8pro_h743_general.html
+        output: web
+    
+      - title: Flashing an RRF compatible bootloader
+        url: fly_super8pro_h743_bootloader.html
+        output: web
+    
+      - title: Connecting via WiFi
+        url: fly_super8pro_h743_connected_wifi.html
+        output: web
+
+      - title: Connecting to a CAN-FD expansion board
+        url: fly_super8pro_h743_canfd.html
+        output: web
+
+      - title: Configuring Sensorless Homing
+        url: fly_super8pro_h743_sensorless.html
+        output: web
+    
+      - title: Connecting a Serial Screen
+        url: fly_super8pro_h743_screen.html
+        output: web
+
+      - title: Connecting a 12864 Screen
+        url: fly_super8pro_h743_screen_12864.html
+        output: web
+
+      - title: Connecting a BLTouch or BTT MicroProbe
+        url: fly_super8pro_h743_bltouch.html
+        output: web
+
+      - title: Connecting an Accelerometer
+        url: fly_super8pro_h743_accelerometer.html
+        output: web
+
+      - title: Input Voltage Monitoring
+        url: fly_super8pro_h743_voltage.html
+        output: web
+
+      - title: Connecting a BTT-MOT-EXP
+        url: fly_super8pro_h743_btt_mot_exp.html
+        output: web
+
+      - title: Pin Names
+        url: fly_super8pro_h743_pins.html
+        output: web
+
+- title: BTT STM32H7 Mainboards
+  output: web
+  children:
+
+  - title: BTT Kraken
+    output: web
+    children:
+
+    - title: BTT Kraken General Information
+      url: btt_kraken_h723_general_3_5.html
+      output: web
+  
+    - title: Connecting via an ESP32 WiFi Adapter
+      url: btt_kraken_h723_connected_wifi_32_3_5.html
+      output: web
+
+    - title: Connecting via an SBC
+      url: btt_kraken_h723_connected_sbc_3_5.html
+      output: web
+
+    - title: Upgrading WiFi/Standalone from an earlier RRF version
+      url: btt_kraken_h723_upgrading_3_5.html
+      output: web
+
+    - title: Upgrading SBC Mode from an earlier RRF version
+      url: btt_kraken_h723_upgrading_sbc_3_5.html
+      output: web
+
+    - title: Connecting to a CAN-FD expansion board
+      url: btt_kraken_h723_canfd_3_5.html
+      output: web
+
+    - title: Configuring Sensorless Homing
+      url: btt_kraken_h723_sensorless_3_5.html
+      output: web
+  
+    - title: Connecting a Screen
+      url: btt_kraken_h723_screen_3_5.html
+      output: web
+
+    - title: Connecting a BLTouch or BTT MicroProbe
+      url: btt_kraken_h723_bltouch_3_5.html
+      output: web
+
+    - title: Connecting an Accelerometer
+      url: btt_kraken_h723_accelerometer_3_5.html
+      output: web
+
+    - title: Connecting a PT100 or PT1000
+      url: btt_kraken_h723_pt100_3_5.html
+      output: web
+
+    - title: rrfboot.txt
+      url: btt_kraken_h723_rrfboot_3_5.html
+      output: web
+
+    - title: Pin Names
+      url: btt_kraken_h723_pins_3_5.html
+      output: web
+     
+  - title: BTT Scylla V1
+    output: web
+    children:
+
+    - title: BTT Scylla V1 General Information
+      url: btt_scylla_v1_h723_general_3_5.html
+      output: web
+  
+    - title: Connecting via an ESP32 WiFi Adapter
+      url: btt_scylla_v1_h723_connected_wifi_32_3_5.html
+      output: web
+
+    - title: Connecting to a CAN-FD expansion board
+      url: btt_scylla_v1_h723_canfd_3_5.html
+      output: web
+
+    - title: Configuring Sensorless Homing
+      url: btt_scylla_v1_h723_sensorless_3_5.html
+      output: web
+  
+    - title: Connecting a Screen
+      url: btt_scylla_v1_h723_screen_3_5.html
+      output: web
+
+    - title: rrfboot.txt
+      url: btt_scylla_v1_h723_rrfboot_3_5.html
+      output: web
+
+    - title: Pin Names
+      url: btt_scylla_v1_h723_pins_3_5.html
+      output: web
+  
   - title: SKR3 H723
     output: web
     children:
@@ -2989,97 +3197,9 @@ children:
       url: btt_skr_se_bx2_h743_connected_sbc_3_5.html
       output: web
 
-  - title: SKR-RRF-E3 + IDEX
-    output: web
-    children:
-
-    - title: RRF 3.5.0 and above
+    - title: rrfboot.txt
+      url: btt_skr_se_bx2_h743_rrfboot_3_5.html
       output: web
-      children:
-    
-      - title: SKR-RRF-E3 General Information
-        url: skr_rrf_e3_general_3_5.html
-        output: web
-    
-      - title: Connecting via WiFi
-        url: skr_rrf_e3_connected_wifi_3_5.html
-        output: web
-
-      - title: Upgrading from an earlier RRF version
-        url: skr_rrf_e3_upgrading_3_5.html
-        output: web
-
-      - title: CAN-FD can't be added
-        url: skr_rrf_e3_spi2canfd_3_5.html
-        output: web
-    
-      - title: Configuring Sensorless Homing
-        url: skr_rrf_e3_sensorless_3_5.html
-        output: web
-    
-      - title: Connecting a Serial Screen
-        url: skr_rrf_e3_screen_3_5.html
-        output: web
-
-      - title: Connecting a 12864 Screen
-        url: skr_rrf_e3_screen_12864_3_5.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: skr_rrf_e3_bltouch_3_5.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: skr_rrf_e3_accelerometer_3_5.html
-        output: web
-
-      - title: rrfboot.txt
-        url: skr_rrf_e3_rrfboot_3_5.html
-        output: web
-
-      - title: Pin Names
-        url: skr_rrf_e3_pins_3_5.html
-        output: web
-    
-    - title: RRF 3.4.6 and below
-      output: web
-      children:
-    
-      - title: SKR-RRF-E3 General Information
-        url: skr_rrf_e3_general.html
-        output: web
-    
-      - title: Connecting via WiFi
-        url: skr_rrf_e3_connected_wifi.html
-        output: web
-
-      - title: CAN-FD can't be added
-        url: skr_rrf_e3_spi2canfd.html
-        output: web
-    
-      - title: Configuring Sensorless Homing
-        url: skr_rrf_e3_sensorless.html
-        output: web
-    
-      - title: Connecting a Serial Screen
-        url: skr_rrf_e3_screen.html
-        output: web
-
-      - title: Connecting a 12864 Screen
-        url: skr_rrf_e3_screen_12864.html
-        output: web
-
-      - title: Connecting a BLTouch or BTT MicroProbe
-        url: skr_rrf_e3_bltouch.html
-        output: web
-
-      - title: Connecting an Accelerometer
-        url: skr_rrf_e3_accelerometer.html
-        output: web
-
-      - title: Pin Names
-        url: skr_rrf_e3_pins.html
-        output: web
 
 - title: LDO Mainboards
   output: web
@@ -3121,6 +3241,10 @@ children:
       url: ldo_leviathan_v1_3_h723_connected_sbc_3_5.html
       output: web
 
+    - title: rrfboot.txt
+      url: ldo_leviathan_v1_3_h723_rrfboot_3_5.html
+      output: web
+
   - title: LDO Leviathan v1.3 H743
     output: web
     children:
@@ -3131,6 +3255,10 @@ children:
 
     - title: Connecting via SBC
       url: ldo_leviathan_v1_3_h743_connected_sbc_3_5.html
+      output: web
+
+    - title: rrfboot.txt
+      url: ldo_leviathan_v1_3_h743_rrfboot_3_5.html
       output: web
 
 - title: Fysetc Mainboards
@@ -3179,102 +3307,6 @@ children:
 
     - title: Pin Names
       url: fysetc_spider_h723_pins_3_5.html
-      output: web
-
-- title: STM32F4 + Integrated SBC Boards
-  output: web
-  children:
-
-  - title: Armbian Supported Wifi Chipsets
-    url: armbian_wifi.html
-    output: web
-
-  - title: Armbian Upgrade Intructions
-    url: armbian_upgrade.html
-    output: web
-    
-  - title: Fly-Gemini-V1
-    output: web
-    children:
-
-    - title: Fly-Gemini-V1 General Information
-      url: fly_gemini_general.html
-      output: web
-      
-    - title: Connecting via SBC
-      url: fly_gemini_connected_sbc.html
-      output: web
-
-    - title: Configuring Sensorless Homing
-      url: fly_gemini_sensorless.html
-      output: web
-
-    - title: Connecting a Serial Screen
-      url: fly_gemini_screen.html
-      output: web
-
-    - title: Connecting a BLTouch or BTT MicroProbe
-      url: fly_gemini_bltouch.html
-      output: web
-
-    - title: Pin Names
-      url: fly_gemini_pins.html
-      output: web
-
-  - title: Fly-Gemini-V1.1
-    output: web
-    children:
-
-    - title: Fly-Gemini-V1.1 General Information
-      url: fly_gemini_v1.1_general.html
-      output: web
-      
-    - title: Connecting via SBC
-      url: fly_gemini_v1.1_connected_sbc.html
-      output: web
-
-    - title: Configuring Sensorless Homing
-      url: fly_gemini_v1.1_sensorless.html
-      output: web
-    
-    - title: Connecting a Serial Screen
-      url: fly_gemini_v1.1_screen.html
-      output: web
-
-    - title: Connecting a BLTouch or BTT MicroProbe
-      url: fly_gemini_v1.1_bltouch.html
-      output: web
-
-    - title: Pin Names
-      url: fly_gemini_v1.1_pins.html
-      output: web
-
-  - title: Fly-Gemini-V2
-    output: web
-    children:
-
-    - title: Fly-Gemini-V2 General Information
-      url: fly_gemini_v2_general.html
-      output: web
-      
-    - title: Connecting via SBC
-      url: fly_gemini_v2_connected_sbc.html
-      output: web
-    
-    - title: Configuring Sensorless Homing
-      url: fly_gemini_v2_sensorless.html
-      output: web
-    
-    - title: Connecting a Serial Screen
-      url: fly_gemini_v2_screen.html
-      output: web
-
-    - title: Connecting a BLTouch or BTT MicroProbe
-      url: fly_gemini_v2_bltouch.html
-      output: web
-
-    - title: Pin Names
-      url: fly_gemini_v2_pins.html
       output: web
 
 - title: CAN-FD Toolboards
