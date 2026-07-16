@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 03/06/2024
 summary: "Configuring the accelerometer on a Fly-SHT36 Max V3"
-permalink: fly_sht36_max_v3_accelerometer_stm32h7.html
+permalink: fly_sht36_max_v3_accelerometer.html
 folder: mydoc
 comments: false
 toc: false

@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 14/03/2026
 summary: "General information regarding the Fly-RRF-36 Toolboard"
-permalink: fly_rrf_36_general_stm32h7.html
+permalink: fly_rrf_36_general.html
 folder: mydoc
 comments: false
 toc: false
@@ -74,7 +74,7 @@ The board that you will receive does come with firmware installed. It is suggest
 Download either the Stable firmware file called `Duet3Firmware_FLY36RRF.uf2` from [here]({{site.latestStableFirmwareSTM32H7}}/expansion) or the latest beta/RC firmware file called `Duet3Firmware_FLY36RRF.uf2` from [here]({{site.latestBetaFirmwareSTM32H7}}/expansion).  
 {% include warning.html content="The firware version you choose to install should be the same version number as the mainboard you are connecting it to" %}
 To install the firmware, whilst holding the reset button, plug the Fly-RRF-36 into your PC. Let go of the reset button and drag and drop the .uf2 file onto the rpi drive that appears.
-Follow the [CAN Connection instructions](fly_rrf_36_can_connection_stm32h7.html) to continue.  
+Follow the [CAN Connection instructions](fly_rrf_36_can_connection.html) to continue.  
 
 ### Updating the Toolboard Firmware before 3.5.0-rc2
 

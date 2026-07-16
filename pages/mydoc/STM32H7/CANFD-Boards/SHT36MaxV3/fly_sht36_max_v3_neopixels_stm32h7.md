@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/06/2024
 summary: "How to connect Neopixels to a Fly-SHT36 Max V3"
-permalink: fly_sht36_max_v3_neopixels_stm32h7.html
+permalink: fly_sht36_max_v3_neopixels.html
 folder: mydoc
 comments: false
 toc: false

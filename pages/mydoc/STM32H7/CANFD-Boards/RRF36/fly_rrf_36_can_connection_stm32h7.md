@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "How to connect a Fly-RRF-36 via CAN-FD"
-permalink: fly_rrf_36_can_connection_stm32h7.html
+permalink: fly_rrf_36_can_connection.html
 folder: mydoc
 comments: false
 toc: false

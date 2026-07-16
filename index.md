@@ -27,7 +27,7 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
         <li>CAN-FD toolboards supported</li>
       </ul>
     </div>
-    <a class="mcu-btn mcu-btn-h7" href="getting_started_stm32h7.html">Get Started with STM32H7 &raquo;</a>
+    <a class="mcu-btn mcu-btn-h7" href="getting_started.html">Get Started with STM32H7 &raquo;</a>
   </div>
 
   <div class="mcu-card mcu-card-f4">

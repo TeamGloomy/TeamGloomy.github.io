@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 28/06/2023
 summary: "How to Know What Pin is Interrupt Capable"
-permalink: interrupt_pins_stm32h7.html
+permalink: interrupt_pins.html
 folder: mydoc
 comments: false
 toc: false

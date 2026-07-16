@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "How to use the Fan headers on a Fysetc StrideMax Dual V2.0"
-permalink: stridemax_v2_fans_stm32h7.html
+permalink: stridemax_v2_fans.html
 folder: mydoc
 comments: false
 toc: false

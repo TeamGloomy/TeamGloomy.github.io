@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/04/2024
 summary: "How to connect Neopixels to a Fly-SB2040 Pro Max V3"
-permalink: fly_sb2040_pro_max_v3_neopixels_stm32h7.html
+permalink: fly_sb2040_pro_max_v3_neopixels.html
 folder: mydoc
 comments: false
 toc: false

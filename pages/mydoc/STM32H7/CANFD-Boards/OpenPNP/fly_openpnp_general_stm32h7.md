@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 13/06/2023
 summary: "General information regarding the Fly-OpenPNP Toolboard"
-permalink: fly_openpnp_general_stm32h7.html
+permalink: fly_openpnp_general.html
 folder: mydoc
 comments: false
 toc: false
@@ -56,4 +56,4 @@ If using multiple toolboards, only the last toolboard should have a CAN jumper i
 ### Initial Firmware Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
-Follow the [CAN Connection instructions](fly_openpnp_can_connection_stm32h7.html) to continue.  
+Follow the [CAN Connection instructions](fly_openpnp_can_connection.html) to continue.  

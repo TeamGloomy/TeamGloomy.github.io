@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 06/09/2022
 summary: "Connecting a Smart Effector"
-permalink: smart_effector_stm32h7.html
+permalink: smart_effector.html
 folder: mydoc
 comments: false
 toc: false

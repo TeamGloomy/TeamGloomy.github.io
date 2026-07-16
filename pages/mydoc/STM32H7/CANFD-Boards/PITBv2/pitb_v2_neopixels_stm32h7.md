@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/12/2024
 summary: "How to connect Neopixels to a Fysetc PITB V2.0"
-permalink: pitb_v2_neopixels_stm32h7.html
+permalink: pitb_v2_neopixels.html
 folder: mydoc
 comments: false
 toc: false

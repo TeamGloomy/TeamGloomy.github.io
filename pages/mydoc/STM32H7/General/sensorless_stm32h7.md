@@ -4,7 +4,7 @@ tags:
 keywords: 
 last_updated: 28/06/2023
 summary: "Sensorless Homing and Stall Detection"
-permalink: sensorless_stm32h7.html
+permalink: sensorless.html
 folder: mydoc
 toc: false
 comments: false

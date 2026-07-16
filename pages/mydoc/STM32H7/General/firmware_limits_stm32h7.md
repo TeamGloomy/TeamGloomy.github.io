@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 06/01/2025
 summary: "This describes the limits within the firmware for each"
-permalink: firmware_limits_stm32h7.html
+permalink: firmware_limits.html
 folder: mydoc
 comments: false
 toc: false

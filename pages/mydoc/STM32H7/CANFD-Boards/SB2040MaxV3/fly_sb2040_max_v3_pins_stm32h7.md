@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/04/2024
 summary: "The pin names of the Fly-SB2040 Max V3 in the firmware"
-permalink: fly_sb2040_max_v3_pins_stm32h7.html
+permalink: fly_sb2040_max_v3_pins.html
 folder: mydoc
 comments: false
 toc: false

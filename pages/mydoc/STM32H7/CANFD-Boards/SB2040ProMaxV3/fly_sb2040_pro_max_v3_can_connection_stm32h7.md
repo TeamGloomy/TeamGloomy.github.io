@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/04/2024
 summary: "How to connect a Fly-SB2040 Pro Max V3 via CAN-FD"
-permalink: fly_sb2040_pro_max_v3_can_connection_stm32h7.html
+permalink: fly_sb2040_pro_max_v3_can_connection.html
 folder: mydoc
 comments: false
 toc: false

@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/04/2024
 summary: "An overview of how to get started with RepRapFirmware"
-permalink: getting_started_stm32h7.html
+permalink: getting_started.html
 folder: mydoc
 comments: false
 toc: false

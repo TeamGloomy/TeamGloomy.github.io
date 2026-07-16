@@ -124,9 +124,6 @@ sidebars:
 - lpc_sidebar
 - stm32f4_sidebar
 - stm32h7_sidebar
-#- product1_sidebar
-#- product2_sidebar
-#- other
 
 description: "Documentation for the LPC and STM32 Ports of RepRapFirmware"
 # the description is used in the feed.xml file

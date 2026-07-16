@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 03/03/2022
 summary: "How to debug the Fly Screen Firmware"
-permalink: fly_firmware_debug_stm32h7.html
+permalink: fly_firmware_debug.html
 folder: mydoc
 comments: false
 toc: false
@@ -15,7 +15,7 @@ datatable: true
 
 A brief description of how to edit the UI for the Fly Screen Firmware.  
 
-{% include tip.html content="This assumes the Flythings IDE has been setup as detailed in the [Compiling instructions](fly_firmware_compile_stm32h7.html)" %}
+{% include tip.html content="This assumes the Flythings IDE has been setup as detailed in the [Compiling instructions](fly_firmware_compile.html)" %}
 
 ### Debug
 

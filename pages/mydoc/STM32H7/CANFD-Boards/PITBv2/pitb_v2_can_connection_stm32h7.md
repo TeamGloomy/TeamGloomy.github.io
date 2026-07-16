@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "How to connect a Fysetc PITB V2.0 via CAN-FD"
-permalink: pitb_v2_can_connection_stm32h7.html
+permalink: pitb_v2_can_connection.html
 folder: mydoc
 comments: false
 toc: false

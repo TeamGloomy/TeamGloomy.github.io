@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 30/10/2022
 summary: "Troubleshooting"
-permalink: troubleshooting_stm32h7.html
+permalink: troubleshooting.html
 folder: mydoc
 comments: false
 toc: false

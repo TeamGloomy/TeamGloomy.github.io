@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 26/06/2023
 summary: "Configuring the accelerometer on a Fly-RRF-36"
-permalink: fly_rrf_36_accelerometer_stm32h7.html
+permalink: fly_rrf_36_accelerometer.html
 folder: mydoc
 comments: false
 toc: false

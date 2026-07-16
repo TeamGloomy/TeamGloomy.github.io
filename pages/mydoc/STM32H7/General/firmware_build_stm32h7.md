@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 06/01/2025
 summary: "Instructions to build your own version of the firmware"
-permalink: firmware_build_stm32h7.html
+permalink: firmware_build.html
 folder: mydoc
 comments: false
 toc: false

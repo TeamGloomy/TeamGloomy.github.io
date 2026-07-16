@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 18/01/2023
 summary: "How to connect a Fly-OpenPNP via CAN-FD"
-permalink: fly_openpnp_can_connection_stm32h7.html
+permalink: fly_openpnp_can_connection.html
 folder: mydoc
 comments: false
 toc: false

@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/06/2022
 summary: "How to connect a PT100 to a Fly-RRF-36"
-permalink: fly_rrf_36_pt100_stm32h7.html
+permalink: fly_rrf_36_pt100.html
 folder: mydoc
 comments: false
 toc: false

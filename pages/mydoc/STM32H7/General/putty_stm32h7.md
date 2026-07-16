@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 21/12/2021
 summary: "Setting up PuTTY for use with RRF"
-permalink: putty_stm32h7.html
+permalink: putty.html
 folder: mydoc
 comments: false
 toc: false

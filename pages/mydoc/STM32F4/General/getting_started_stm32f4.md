@@ -10,21 +10,7 @@ comments: false
 toc: false
 ---
 
-To run this on a supported LPC or STM32 based board, a number of items are required.
-
-{% include tip.html content="There will be no further updates to LPC based boards. The last available update is 3.3.0" %}
-
-## Firmware - Up to 3.5.0-RC3
-
-A copy of the firmware is required and can be found [here](https://github.com/gloomyandy/RepRapFirmware/releases) (remember to rename it to just firmware.bin). This is placed on the root of the SD card and is flashed to the board on first boot of the device.  
-There are a number of versions of the firmware (the correct one is identified on each board specific page):  
-
-* LPC-WiFi - Support dropped after 3.3.0_16
-* LPC-SBC - Support dropped after 3.3.0_16
-* STM32F4-WiFi
-* STM32F4-SBC
-
-## Firmware - from 3.5.0-RC4
+## Firmware
 
 A copy of the firmware is required and can be found in the zip [here](https://github.com/gloomyandy/RepRapFirmware/releases) or the individual firmware files (which are now released per board) from [here](https://github.com/gloomyandy/RRFBuild/tree/v3.5-dev/releases) (remember to rename it to just firmware.bin). This is placed on the root of the SD card and is flashed to the board on first boot of the device.  
 
@@ -62,7 +48,7 @@ This can be generated using the [Configurator](https://teamgloomy.github.io/Conf
 When updating to new versions of the firmware, please read the following files:  
 
 * [What's new in RRF](https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x){:target="_blank"} This details all of the changes made to RepRapFirmware between each version.  
-* [What's new in RRF - LPC/STM32 Specific - RRF3.3](https://github.com/gloomyandy/RepRapFirmware/blob/v3.3-dev/WHATS_NEW_UNIFIED.md){:target="_blank"} or [What's new in RRF - STM32 Specific - RRF3.4](https://github.com/gloomyandy/RepRapFirmware/blob/v3.4-dev/WHATS_NEW_UNIFIED.md){:target="_blank"} or [What's new in RRF - STM32 Specific - RRF3.5](https://github.com/gloomyandy/RepRapFirmware/blob/v3.5-dev/WHATS_NEW_UNIFIED.md){:target="_blank"} This details any specific changes which have been made to RepRapFirmware between each version.  
+* [What's new in RRF - LPC/STM32 Specific - RRF3.6](https://github.com/gloomyandy/RepRapFirmware/blob/v3.6-dev/WHATS_NEW_UNIFIED.md){:target="_blank"} 
 
 ## If new to RRF
 

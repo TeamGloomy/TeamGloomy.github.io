@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/12/2024
 summary: "The pin names of the Fysetc PITB V2.0 in the firmware"
-permalink: pitb_v2_pins_stm32h7.html
+permalink: pitb_v2_pins.html
 folder: mydoc
 comments: false
 toc: false

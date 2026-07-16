@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 19/03/2025
 summary: "Setting up FileZilla for use with RRF"
-permalink: filezilla_stm32h7.html
+permalink: filezilla.html
 folder: mydoc
 comments: false
 toc: false

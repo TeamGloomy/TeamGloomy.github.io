@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 11/03/2021
 summary: "Fly Screens General Information"
-permalink: fly_screen_stm32h7.html
+permalink: fly_screen.html
 folder: mydoc
 comments: false
 toc: false

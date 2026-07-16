@@ -4,7 +4,7 @@ tags: [getting_started]
 keywords: release notes, announcements, what's new, new features
 last_updated: 08/06/2022
 summary: "Release notes for the stable release of 3.4.1_102"
-permalink: release_notes_3.4.1_102_stm32h7.html
+permalink: release_notes_3.4.1_102.html
 folder: mydoc
 toc: false
 comments: false

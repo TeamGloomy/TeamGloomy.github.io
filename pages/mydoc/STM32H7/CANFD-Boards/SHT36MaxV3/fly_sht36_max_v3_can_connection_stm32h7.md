@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/06/2024
 summary: "How to connect a Fly-SHT36 Max V3 via CAN-FD"
-permalink: fly_sht36_max_v3_can_connection_stm32h7.html
+permalink: fly_sht36_max_v3_can_connection.html
 folder: mydoc
 comments: false
 toc: false

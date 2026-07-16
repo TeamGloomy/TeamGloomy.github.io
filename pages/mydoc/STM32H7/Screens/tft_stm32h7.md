@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 18/02/2025
 summary: "TFT Screen Configuration"
-permalink: tft_stm32h7.html
+permalink: tft.html
 folder: mydoc
 comments: false
 toc: false

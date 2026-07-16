@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 28/06/2023
 summary: "How to connect a BME280"
-permalink: bme280_stm32h7.html
+permalink: bme280.html
 folder: mydoc
 comments: false
 toc: false
@@ -20,7 +20,7 @@ The Duet docs page for BME280 sensors can be found [here](https://docs.duet3d.co
 ### What pins to choose?
 
 A BME280 sensor requires 6 pins to be connected: 3 for SPI, 1 CS pin, +3.3V (not 5V) and ground.  
-The pre-configured SPI pins for each board are listed on the pins page of each board. You can also use software SPI and set the pins using [board.txt](./board_txt_stm32_stm32h7.html).  
+The pre-configured SPI pins for each board are listed on the pins page of each board. You can also use software SPI and set the pins using [board.txt](./board_txt_stm32.html).  
 
 You also need to set the following lines in board.txt.  
 

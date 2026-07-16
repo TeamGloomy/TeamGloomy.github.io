@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 06/03/2025
 summary: "Details of each item that can be configured in Board.txt and which build they are applicable to"
-permalink: board_txt_stm32_stm32h7.html
+permalink: board_txt_stm32.html
 folder: mydoc
 comments: false
 toc: false

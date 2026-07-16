@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 14/03/2026
 summary: "General information regarding the Fysetc StrideMax Dual V2.0 Toolboard"
-permalink: stridemax_v2_general_stm32h7.html
+permalink: stridemax_v2_general.html
 folder: mydoc
 comments: false
 toc: false
@@ -38,7 +38,7 @@ The Fysetc StrideMax Dual V2.0 is compatible with all Duet 3 boards and STM32H72
 
 ### Fan Voltage
 
-The fan voltage can be set using jumpers to either 5v or 12v. See the [Fan instructions](stridemax_v2_fans_stm32h7.html) for more information.
+The fan voltage can be set using jumpers to either 5v or 12v. See the [Fan instructions](stridemax_v2_fans.html) for more information.
 
 ### CAN Termination
 
@@ -52,7 +52,7 @@ The board that you will receive doesn't have any firmware installed so when plug
 Download either the Stable firmware file called `Duet3Firmware_STRIDEMAXV2_0.uf2` from [here]({{site.latestStableFirmwareSTM32H7}}/expansion) or the latest beta/RC firmware file called `Duet3Firmware_STRIDEMAXV2_0.uf2` from [here]({{site.latestBetaFirmwareSTM32H7}}/expansion).
 {% include warning.html content="The firware version you choose to install should be the same version number as the mainboard you are connecting it to" %}
 To install the firmware, whilst holding the BOOTSEL button, plug the Fysetc StrideMax Dual V2.0 into your PC. Let go of the reset button and drag and drop the .uf2 file onto the rpi drive that appears. Once uploaded, remove the toolboard from the computer.  
-Follow the [CAN Connection instructions](stridemax_v2_can_connection_stm32h7.html) to continue.  
+Follow the [CAN Connection instructions](stridemax_v2_can_connection.html) to continue.  
 
 ### Updating the Toolboard Firmware
 

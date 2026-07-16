@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/06/2023
 summary: "Obtaining information to help when troubleshooting"
-permalink: troubleshooting_information_stm32h7.html
+permalink: troubleshooting_information.html
 folder: mydoc
 comments: false
 toc: false

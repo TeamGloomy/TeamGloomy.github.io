@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 12/08/2024
 summary: "How to connect a PT100 or PT1000 to a Fly-SB2040 Pro Max V3"
-permalink: fly_sb2040_pro_max_v3_pt100_stm32h7.html
+permalink: fly_sb2040_pro_max_v3_pt100.html
 folder: mydoc
 comments: false
 toc: false

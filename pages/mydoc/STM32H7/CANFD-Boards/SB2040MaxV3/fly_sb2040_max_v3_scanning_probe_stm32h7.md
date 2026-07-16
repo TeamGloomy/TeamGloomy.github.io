@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 26/06/2023
 summary: "Configuring the Scanning Probe on a Fly-SB2040 Max V3"
-permalink: fly_sb2040_max_v3_scanning_probe_stm32h7.html
+permalink: fly_sb2040_max_v3_scanning_probe.html
 folder: mydoc
 comments: false
 toc: false

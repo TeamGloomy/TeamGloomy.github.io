@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 20/01/2021
 summary: "Information around using a PanelDue"
-permalink: paneldue_stm32h7.html
+permalink: paneldue.html
 folder: mydoc
 comments: false
 toc: false

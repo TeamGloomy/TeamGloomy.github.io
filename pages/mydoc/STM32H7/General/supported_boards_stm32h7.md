@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 11/06/2025
 summary: "Details the boards and drivers currently supported by this software"
-permalink: supported_boards_stm32h7.html
+permalink: supported_boards.html
 folder: mydoc
 comments: false
 toc: false

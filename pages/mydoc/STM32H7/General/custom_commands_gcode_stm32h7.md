@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 28/06/2023
 summary: "Custom Commands and G-Code that have been added to this port"
-permalink: custom_commands_gcode_stm32h7.html
+permalink: custom_commands_gcode.html
 folder: mydoc
 comments: false
 toc: false

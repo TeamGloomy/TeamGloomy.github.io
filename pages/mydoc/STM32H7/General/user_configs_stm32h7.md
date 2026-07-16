@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 25/01/2021
 summary: "User Created Configs"
-permalink: user_configs_stm32h7.html
+permalink: user_configs.html
 folder: mydoc
 comments: false
 toc: false

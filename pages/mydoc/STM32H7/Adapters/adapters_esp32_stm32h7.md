@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/04/2024
 summary: "A description of the different ESP32 WiFi Adapters available"
-permalink: adapters_esp32_stm32h7.html
+permalink: adapters_esp32.html
 folder: mydoc
 comments: false
 toc: false

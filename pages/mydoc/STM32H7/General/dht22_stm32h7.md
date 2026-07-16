@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 28/06/2023
 summary: "How to connect a DHT22"
-permalink: dht22_stm32h7.html
+permalink: dht22.html
 folder: mydoc
 comments: false
 toc: false
@@ -24,4 +24,4 @@ Ideally, choose a pin that does not have any additional signal conditioning or l
 
 ### How do you know what pin is interrupt capable?
 
-Please see [this page](./interrupt_pins_stm32h7.html) for more information.  
+Please see [this page](./interrupt_pins.html) for more information.  

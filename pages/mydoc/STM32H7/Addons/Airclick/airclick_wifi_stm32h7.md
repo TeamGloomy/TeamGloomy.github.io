@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 24/04/2025
 summary: "How to connect the Mellow Airclick Wireless Buttons to your WiFi"
-permalink: airclick_wifi_stm32h7.html
+permalink: airclick_wifi.html
 folder: mydoc
 comments: false
 toc: false

@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/12/2024
 summary: "How to use the Fan headers on a Fysetc PITB V2.0"
-permalink: pitb_v2_fans_stm32h7.html
+permalink: pitb_v2_fans.html
 folder: mydoc
 comments: false
 toc: false

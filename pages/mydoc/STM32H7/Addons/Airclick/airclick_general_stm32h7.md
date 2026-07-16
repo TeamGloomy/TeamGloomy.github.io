@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 24/04/2025
 summary: "General information regarding the Mellow Airclick Wireless Buttons"
-permalink: airclick_general_stm32h7.html
+permalink: airclick_general.html
 folder: mydoc
 comments: false
 toc: false

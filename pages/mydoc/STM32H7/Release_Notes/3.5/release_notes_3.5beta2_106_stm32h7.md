@@ -4,7 +4,7 @@ tags: [getting_started]
 keywords: release notes, announcements, what's new, new features
 last_updated: 16/04/2023
 summary: "Release notes for the unstable release of 3.5beta2+_106"
-permalink: release_notes_3.5beta2_106_stm32h7.html
+permalink: release_notes_3.5beta2_106.html
 folder: mydoc
 toc: false
 comments: false

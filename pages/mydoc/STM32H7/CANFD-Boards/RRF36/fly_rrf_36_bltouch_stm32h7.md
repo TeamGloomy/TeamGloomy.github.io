@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/02/2023
 summary: "How to connect a BLTouch or BTT MicroProbe to a Fly-RRF-36"
-permalink: fly_rrf_36_bltouch_stm32h7.html
+permalink: fly_rrf_36_bltouch.html
 folder: mydoc
 comments: false
 toc: false

@@ -4,7 +4,7 @@ tags: [getting_started]
 keywords: release notes, announcements, what's new, new features
 last_updated: 19/11/2024
 summary: "Release notes for the unstable release of 3.6.0-beta.2"
-permalink: release_notes_3.6.0-beta.2_stm32h7.html
+permalink: release_notes_3.6.0-beta.2.html
 folder: mydoc
 toc: false
 comments: false

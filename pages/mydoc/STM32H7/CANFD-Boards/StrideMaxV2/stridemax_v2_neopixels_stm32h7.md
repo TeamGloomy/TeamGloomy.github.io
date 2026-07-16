@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "How to connect Neopixels to a Fysetc StrideMax Dual V2.0"
-permalink: stridemax_v2_neopixels_stm32h7.html
+permalink: stridemax_v2_neopixels.html
 folder: mydoc
 comments: false
 toc: false

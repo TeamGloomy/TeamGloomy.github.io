@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 28/01/2023
 summary: "Adding a Camera to DWC"
-permalink: camera_stm32h7.html
+permalink: camera.html
 folder: mydoc
 comments: false
 toc: false

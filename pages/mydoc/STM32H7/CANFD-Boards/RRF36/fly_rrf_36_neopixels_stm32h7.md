@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 16/07/2023
 summary: "How to connect Neopixels to a Fly-RRF-36"
-permalink: fly_rrf_36_neopixels_stm32h7.html
+permalink: fly_rrf_36_neopixels.html
 folder: mydoc
 comments: false
 toc: false

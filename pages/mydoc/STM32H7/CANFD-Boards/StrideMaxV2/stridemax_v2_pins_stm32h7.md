@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "The pin names of the Fysetc StrideMax Dual V2.0 in the firmware"
-permalink: stridemax_v2_pins_stm32h7.html
+permalink: stridemax_v2_pins.html
 folder: mydoc
 comments: false
 toc: false

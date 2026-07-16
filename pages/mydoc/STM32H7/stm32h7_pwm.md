@@ -4,7 +4,7 @@ tags:
 keywords: 
 last_updated: 17/05/2022
 summary: "An Overview of how PWM pins are allocated on STM32H7"
-permalink: stm32h7_pwm.html
+permalink: pwm.html
 folder: mydoc
 toc: false
 comments: false

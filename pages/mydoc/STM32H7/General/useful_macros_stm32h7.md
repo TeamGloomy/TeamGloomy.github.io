@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 04/01/2023
 summary: "Useful Macros for RRF"
-permalink: useful_macros_stm32h7.html
+permalink: useful_macros.html
 folder: mydoc
 comments: false
 toc: false

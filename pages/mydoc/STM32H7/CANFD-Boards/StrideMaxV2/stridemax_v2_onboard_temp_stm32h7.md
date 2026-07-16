@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "How to configure the Fysetc StrideMax Dual V2.0 onboard temperature sensor"
-permalink: stridemax_v2_onboard_temp_stm32h7.html
+permalink: stridemax_v2_onboard_temp.html
 folder: mydoc
 comments: false
 toc: false

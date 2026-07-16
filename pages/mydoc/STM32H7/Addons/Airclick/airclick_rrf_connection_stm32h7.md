@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 24/04/2025
 summary: "How to connect the Mellow Airclick Wireless Buttons to RRF"
-permalink: airclick_rrf_connection_stm32h7.html
+permalink: airclick_rrf_connection.html
 folder: mydoc
 comments: false
 toc: false

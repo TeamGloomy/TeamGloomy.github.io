@@ -265,9 +265,6 @@ children:
   - title: How to Know What Pin is Interrupt Capable
     url: interrupt_pins_stm32f4.html
     output: web
-  - title: MCU Comparisons
-    url: mcu_types_stm32f4.html
-    output: web
   - title: SBC Transfer Ready Pin Timeouts
     url: sbc_transfer_timeout_stm32f4.html
     output: web

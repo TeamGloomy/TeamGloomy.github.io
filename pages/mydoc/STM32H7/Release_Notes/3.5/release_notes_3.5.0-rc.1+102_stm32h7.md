@@ -4,7 +4,7 @@ tags: [getting_started]
 keywords: release notes, announcements, what's new, new features
 last_updated: 15/06/2023
 summary: "Release notes for the unstable release of 3.5.0-rc.1+102"
-permalink: release_notes_3.5.0-rc.1+102_stm32h7.html
+permalink: release_notes_3.5.0-rc.1+102.html
 folder: mydoc
 toc: false
 comments: false

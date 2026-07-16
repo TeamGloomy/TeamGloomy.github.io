@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "The pin names of the Fly-RRF-36 in the firmware"
-permalink: fly_rrf_36_pins_stm32h7.html
+permalink: fly_rrf_36_pins.html
 folder: mydoc
 comments: false
 toc: false

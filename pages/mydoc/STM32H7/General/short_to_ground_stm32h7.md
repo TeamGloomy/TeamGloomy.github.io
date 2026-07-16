@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/09/2021
 summary: "Details about what could cause a short to ground error"
-permalink: short_to_ground_stm32h7.html
+permalink: short_to_ground.html
 folder: mydoc
 comments: false
 toc: false

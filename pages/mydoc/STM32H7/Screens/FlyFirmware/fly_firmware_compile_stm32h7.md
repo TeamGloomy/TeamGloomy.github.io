@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 03/03/2022
 summary: "How to compile the Fly Screen Firmware"
-permalink: fly_firmware_compile_stm32h7.html
+permalink: fly_firmware_compile.html
 folder: mydoc
 comments: false
 toc: false

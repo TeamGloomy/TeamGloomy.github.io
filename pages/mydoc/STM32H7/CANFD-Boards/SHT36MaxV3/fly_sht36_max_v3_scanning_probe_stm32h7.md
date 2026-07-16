@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/06/2024
 summary: "Configuring the Scanning Probe on a Fly-SHT36 Max V3"
-permalink: fly_sht36_max_v3_scanning_probe_stm32h7.html
+permalink: fly_sht36_max_v3_scanning_probe.html
 folder: mydoc
 comments: false
 toc: false

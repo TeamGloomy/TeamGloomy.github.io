@@ -4,7 +4,7 @@ tags: [getting_started, troubleshooting]
 keywords: questions, troubleshooting, contact, support
 last_updated: 28/01/2023
 summary: "Where to get support for issues"
-permalink: support_stm32h7.html
+permalink: support.html
 folder: mydoc
 topnav: topnav
 comments: false

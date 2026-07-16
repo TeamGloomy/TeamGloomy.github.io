@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 14/07/2021
 summary: "How to configure a BTT Smart Filament Monitor"
-permalink: btt_smart_filament_stm32h7.html
+permalink: btt_smart_filament.html
 folder: mydoc
 comments: false
 toc: false

@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "How to connect a Fysetc StrideMax Dual V2.0 via CAN-FD"
-permalink: stridemax_v2_can_connection_stm32h7.html
+permalink: stridemax_v2_can_connection.html
 folder: mydoc
 comments: false
 toc: false

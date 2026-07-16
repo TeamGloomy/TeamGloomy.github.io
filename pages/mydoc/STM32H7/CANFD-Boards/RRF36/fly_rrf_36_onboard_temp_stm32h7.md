@@ -4,7 +4,7 @@ tags: []
 keywords: 
 last_updated: 15/12/2022
 summary: "How to configure the Fly-RRF-36 onboard temperature sensor"
-permalink: fly_rrf_36_onboard_temp_stm32h7.html
+permalink: fly_rrf_36_onboard_temp.html
 folder: mydoc
 comments: false
 toc: false
