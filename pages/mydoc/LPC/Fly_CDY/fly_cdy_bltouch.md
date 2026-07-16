@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 22/04/2021
 summary: "Connecting a BLTouch to a Fly-CDY"
-sidebar: mydoc_sidebar
 permalink: fly_cdy_bltouch.html
 folder: mydoc
 comments: false

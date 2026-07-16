@@ -1,0 +1,23 @@
+---
+title: Meet the Team
+tags: []
+keywords: 
+last_updated: 28/01/2023
+summary: "Meet the Team"
+permalink: TeamGloomy_stm32f4.html
+folder: mydoc
+comments: false
+toc: false
+---
+
+### Gloomyandy
+
+Lead Developer
+
+### Jay_s_uk
+
+Lead Technical Author
+
+### Falcounet
+
+Lead Linux Developer

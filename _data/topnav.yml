@@ -8,7 +8,7 @@ topnav:
     - title: News
       url: /newsite.html
     - title: Configurator
-      url: /Configurator
+      url: /configtool
     - title: Discord
       external_url: https://discord.gg/uS97Qs7
 

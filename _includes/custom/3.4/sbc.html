@@ -110,7 +110,8 @@ stepper.TmcDiagPins = {{page.TMC}}
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include {{page.example}} in your board.txt file.  
 {% endif %}
-For more information about setting up sensorless homing, please read [this](sensorless.html){:target="_blank"}.  
+{% assign mcu_suffix = page.sidebar | remove: "_sidebar" %}
+For more information about setting up sensorless homing, please read [this](sensorless_{{mcu_suffix}}.html){:target="_blank"}.
 
 {% if page.boardname == "GTR" %}
 {% include warning.html content="The GTR sensorless homing jumpers don't do anything so if you don't want to use sensorless homing and use normal endstops, you will have to remove the diag pin from your drivers - [Evidence](https://github.com/bigtreetech/BIGTREETECH-GTR-V1.0/issues/12)" %}

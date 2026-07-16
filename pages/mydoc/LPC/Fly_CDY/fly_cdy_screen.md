@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 22/12/2021
 summary: "Connecting a screen to a Fly-CDY"
-sidebar: mydoc_sidebar
 permalink: fly_cdy_screen.html
 folder: mydoc
 comments: false

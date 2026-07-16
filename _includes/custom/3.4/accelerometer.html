@@ -9,19 +9,19 @@ It is recommended to use a USB3 cable for the wiring between the board and the a
 The colours used in the table below match the colour coding above.  
 
 One possible method of connecting the accelerometer to the {{page.boardname}} is described in the table below. The image can be used to aid in identification.
-{% if {{page.boardname}} == "SKR Pro v1.1 or v1.2" %}
-We are going to use Hardware SPI in this guide but if 5160 drivers are being used, software SPI will have to be used instead and most pins can be used for this.  
-{% elsif {{page.boardname}} == "!Fly-CDYv3" {{page.boardname}} == "!Fly-Super8" %}
-Because the firmware is so flexible and we're using software SPI, most pins can be used for this.  
+{% if page.boardname == "SKR Pro v1.1" or page.boardname == "SKR Pro v1.2" %}
+We are going to use Hardware SPI in this guide but if 5160 drivers are being used, software SPI will have to be used instead and most pins can be used for this.
+{% elsif page.boardname != "Fly-CDYv3" and page.boardname != "Fly-Super8" %}
+Because the firmware is so flexible and we're using software SPI, most pins can be used for this.
 {% endif %}
 These connections are on the {{page.location}} on the board.
 
 Keep in mind some modules (E.g. the purple ones from ebay or aliexpress) don't have a voltage regulator, connect them to 3.3 V and check the voltage before plugging it in.
-{% if {{page.boardname}} == "SKR Pro v1.1 or v1.2" %}
-Keep in mind the SKR Pro v1.2 has some wrong voltage labels in the layout! See also [here](skr_pro_pins.html#known-errors){:target="_blank"}.
+{% if page.boardname == "SKR Pro v1.2" %}
+Keep in mind the SKR Pro v1.2 has some wrong voltage labels in the layout! See also [here](skr_pro_1.2_pins.html#known-errors){:target="_blank"}.
 {% endif %}
 
-{% if {{page.boardname}} == "Fly-CDYv3" %}
+{% if page.boardname == "Fly-CDYv3" %}
 {% include image.html file="fly_cdyv3_accelerometer.png" alt="Fly-CDYv3 Accelerometer" caption="Fly-CDYv3 Accelerometer" %}
 {% endif %}
 
@@ -45,10 +45,10 @@ Keep in mind the SKR Pro v1.2 has some wrong voltage labels in the layout! See a
 
 The accelerometer should be mounted firmly to the tool. For a bed slinger (such as an ender 3), it should also be possible to mount it to the bed to take readings for the Y axis.  
 
-### Boart.txt Changes
+### Board.txt Changes
 
 Add the following to board.txt
-{% if {{page.spiChannel}} == 0 or {{page.spiChannel}} == 1 or {{page.spiChannel}} == 2 or {{page.spiChannel}} == 3 %}
+{% if page.spiChannel == 0 or page.spiChannel == 1 or page.spiChannel == 2 or page.spiChannel == 3 %}
 ```
 accelerometer.spiChannel = {{page.spiChannel}}
 ```

@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 29/03/2022
 summary: "How to connect a serial screen to a Fly-407ZG"
-sidebar: mydoc_sidebar
 permalink: fly_407zg_screen.html
 folder: mydoc
 comments: false

@@ -1,0 +1,58 @@
+{% if  page.boardname == "Fly-CDYv3" %}
+## Hardware changes
+
+To be able to flash the ESP32, two jumpers require adding.  
+Install them as identified in the image below.  
+
+{% include image.html file="fly_cdyv3_jumpers.png" alt="Fly-CDYv3 ESP32 Jumpers" caption="Fly-CDYv3 ESP32 Jumpers" %}
+{% endif %}
+## Final Setup
+
+{% assign mcu_suffix = page.sidebar | remove: "_sidebar" %}
+Once connected, power up the board using 12-24V and connect the USB port on the board to your computer. Connect to the board using a program such as PuTTY. Follow the instructions [here](putty_{{mcu_suffix}}.html) to set it up for RRF. Change the COM port to match the {{page.boardname}} and connect. The baud rate does not matter.
+{% include tip.html content="A tool that shows the COM port number automatically when a serial device is plugged in can make this step easier. One example is [Serial Port Monitor](https://helmpcb.com/software/serial-port-monitor)." %}
+
+### Flashing the WiFi Firmware
+Type in the following to putty  
+
+```
+M552 S0
+M997 S1
+```
+Wait for the uploading of the WiFi firmware to finish. 
+
+### Sending your WiFi Credentials
+
+Send the following
+```
+M552 S0
+M587 S"your SSID" P"your password"
+M552 S1
+```
+
+{% capture pronterfaceWarning %}**DO NOT USE PRONTERFACE.** It will convert all text to upper case. If you really must use it, do the following. <br/>  If you wanted to use `PassWord`, you would write `P"P'a's'sW'o'r'd"`, with the `'` indicating that the following letter should be lower case. Explanation [here](https://docs.duet3d.com/en/User_manual/Reference/Gcodes#m587-add-wifi-host-network-to-remembered-list-or-list-remembered-networks).{% endcapture %}
+{% include warning.html content=pronterfaceWarning %}
+
+{% include important.html content="Both the SSID and Password used to connect to your WiFi are case sensitive."%}
+
+The blue light on the WiFi module should flash, then turn solid once a connection is established. The IP address is shown on the serial connection. You can also type `M552` on its own to see the current IP address.
+
+The final step is to add the line `M552 S1` to your config.g file. You can edit config.g through the web interface. This makes sure that WiFi starts automatically when the board powers on. You do not need to add the M587 command to config.g, since it is saved permanently to the WiFi module.
+
+## Once up and running
+
+You will need to PID tune your tools and your bed. Bed tuning may take up to an hour, and tool tuning normally takes around 15 minutes. If it takes longer, that is fine — up to 30 tuning cycles may run.
+
+To tune the bed, run the following command, changing the temperature (the S value) if a different tuning temperature is required.  
+```
+M303 H0 S60
+```  
+
+To tune each tool, run the following command, changing the temperature (the S value) if a different tuning temperature is required. This process turns on the part cooling fans during the final phase of tuning, so their cooling effect is accounted for. If your printer has more than one tool, make sure each tool is tuned.
+```
+M303 T0 S220
+```
+
+Once the tuning is complete, either copy the M307 command into the heater definitions or send M500, ensuring you have M501 at the end of your config.g.  
+If the tuning fails at the end, carry on saving the values as in most cases the outputted values still work correctly.  
+If the values still result in a heater fault, please refer to [this](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Heaters_tuning#setting-the-model-parameters-manually){:target="_blank"} wiki page for information about how to adjust the values manually.  

@@ -1,0 +1,69 @@
+## Overview
+{% if page.screenType == "both" %}
+Both serial screens (e.g. Fly Screens, BTT TFT, PanelDue) and 12864 displays (like the stock Ender 3 screen) can be connected to a {{page.boardname}}.
+These instructions cover serial screens. Instructions for 12864 screens can be found [here]({{page.12864url}}).
+{% else %}
+Serial screens only (e.g. Fly Screens, BTT TFT, PanelDue) can be connected to a {{page.boardname}}.
+{% endif%}
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a class="noCrossRef" href="#paneldue" data-toggle="tab">PanelDue</a></li>
+    <li><a class="noCrossRef" href="#tft" data-toggle="tab">TFT</a></li>
+    <li><a class="noCrossRef" href="#fly" data-toggle="tab">Fly Screen</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="paneldue" markdown="1">
+
+Use pins +5V, GND, TX({{page.TX}}) and RX({{page.RX}}){% if page.header %} on the {{page.header}} header{% endif %}. These should be connected to +5V, GND, TX and RX on the PanelDue, making sure that TX and RX are swapped.
+
+In config.g, the following command should be added.   
+```
+M575 P{{page.serial}} S1 B57600
+```
+From RepRapFirmware 3.2, it is possible to update the firmware on the PanelDue directly from the board. Please see [here](https://docs.duet3d.com/en/User_manual/RepRapFirmware/Updating_PanelDue#firmware-update-via-duet) for further instructions.  
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="tft" markdown="1">
+
+Use pins +5V, GND, TX({{page.TX}}) and RX({{page.RX}}){% if page.header %} on the {{page.header}} header{% endif %}.  These should be connected to +5V, GND, TX and RX on the TFT, making sure that TX and RX are swapped.
+
+### A Note on Firmware
+
+We don't recommend using the BTT TFT firmware with RRF, even though it advertises as working with RRF. Instead, you should use [this fork](https://github.com/kisslorand/BTT-TFT-FW), as it fixes a lot of issues with the BTT version and it actually works.
+
+### Loading the Firmware
+
+This fork includes an RRF-specific `config.ini` file (`config_rrf.ini`), which needs to be renamed to `config.ini` before flashing the firmware.
+
+### Config.g Changes
+
+Add the following line to your config.g to enable the screen
+
+```
+M575 P{{page.serial}} S2 B57600
+```
+
+If the screen says `No printer connected`, try other values for the `S` parameter (possible values are `0`, `1`, `2` and `3`).
+
+</div>
+
+<div role="tabpanel" class="tab-pane" id="fly" markdown="1">
+
+{% include image.html file="fly_screen_7.jpg" alt="Fly Screen 7 inch" caption="Fly Screen 7 inch Connection" %}
+
+Please note the pinout of 5v (connected to NC), TX, RX and 0v.
+The cable that is supplied may be equipped with the correct connection for a Duet board, so the plug will need changing to fit these boards. Remember to make sure that TX and RX are swapped.
+
+Use pins +5V, GND, TX({{page.TX}}) and RX({{page.RX}}){% if page.header %} on the {{page.header}} header{% endif %}.  These should be connected to +5V, GND, TX and RX on the Fly Screen, making sure that TX and RX are swapped.
+
+In config.g, the following command should be added.   
+```
+M575 P{{page.serial}} S0 B57600
+```  
+The latest version of the screen firmware can be found [here](https://github.com/Mellow-3D/FLY-Screen-RepRap/releases).  
+To update the screen, put the update.img onto a blank SD card. Put the SD card into the screen and power it up. The update will then be flashed automatically. Once finished, power down the screen and remove the SD card.  
+
+</div>
+
+</div>

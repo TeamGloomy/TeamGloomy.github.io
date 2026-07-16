@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 22/12/2021
 summary: "How to connect a serial screen to an MKS Sbase v1.3"
-sidebar: mydoc_sidebar
 permalink: mks_sbase_screen.html
 folder: mydoc
 comments: false

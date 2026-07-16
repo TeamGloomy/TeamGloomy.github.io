@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 16/03/2021
 summary: "General information regarding the Fly-CDY"
-sidebar: mydoc_sidebar
 permalink: fly_cdy_general.html
 folder: mydoc
 comments: false

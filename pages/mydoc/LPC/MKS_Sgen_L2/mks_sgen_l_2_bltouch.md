@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/07/2021
 summary: "How to connect a BLTouch to an MKS SGen L v2.0"
-sidebar: mydoc_sidebar
 permalink: mks_sgen_l_2_bltouch.html
 folder: mydoc
 comments: false

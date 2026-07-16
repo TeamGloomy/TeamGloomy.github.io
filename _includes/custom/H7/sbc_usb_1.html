@@ -1,0 +1,31 @@
+{% include important.html content="This USB connection method is only supported from RRF 3.7 beta 1 onwards. Do not use it with an earlier version of RRF. This method will become our preferred way to set up SBC mode in the future." %}
+
+## Prepare the SBC
+
+Before you connect the {{page.boardname}} to the SBC, complete step 1 and step 2 of the official [Duet3D SBC setup guide](https://docs.duet3d.com/en/User_manual/Machine_configuration/SBC_setup){:target="_blank"}.
+
+{% include warning.html content="If DSF (Duet Software Framework) is already installed on your SBC, you must first update to the latest Trixie-based build released by Duet3D. Trixie is the codename for Debian 13, the operating system that the latest DuetPi images are based on. Older, non-Trixie builds are not supported." %}
+
+Next, download the RRF upgrade script onto the SBC. Connect to the SBC using SSH or a console connection, then run the following command. You only need to run this command once.
+
+```text
+sudo wget https://raw.githubusercontent.com/TeamGloomy/rrf_stm32_sbc/master/armbian/userpatches/overlay/rrf_upgrade.sh -O /usr/local/bin/rrf_upgrade && sudo chmod a+x /usr/local/bin/rrf_upgrade
+```
+
+Now use the script to install the firmware build you want, and set the communication method to USB at the same time. Run the following command. Replace `<version>` with the build you want to install.
+
+```text
+rrf_upgrade <version> --comms usb
+```
+
+For example, this command installs the latest stable release and sets the communication method to USB.
+
+```text
+rrf_upgrade latest-stable --comms usb
+```
+
+{% include tip.html content="Use `latest-stable` for the newest stable release, `latest-unstable` for the newest unstable release, or a specific version number, for example `3.5-rc.2`." %}
+
+{% include note.html content="If RRF is already installed and you only want to change the communication method to USB, run `rrf_upgrade set-comms usb` instead. This does not reinstall the firmware." %}
+
+Wait for the command to finish before you continue to the next step.

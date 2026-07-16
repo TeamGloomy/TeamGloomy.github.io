@@ -1,10 +1,9 @@
 ---
-title:  Configuring an SBC for STM32 Boards
+title: Configuring an SBC for STM32 Boards
 tags: 
 keywords: 
 last_updated: 17/05/2022
 summary: "Configuring an SBC for STM32 Boards"
-sidebar: mydoc_sidebar
 permalink: stm32_sbc.html
 folder: mydoc
 toc: false
@@ -12,7 +11,7 @@ comments: false
 datatable: true
 ---
 
-A Raspberry Pi 3/3+/4 is recommended (Raspberry Pi Zero and lower than a 3 (i.e. the original and 2b) are not supported)
+A Raspberry Pi 3/3+/4 is recommended (Raspberry Pi Zero and lower than a 3 (i.e. the original and 2b) are not supported).
 
 ## Prepare the Raspberry Pi
 
@@ -25,9 +24,9 @@ There are two versions of DuetPi available, one with and another one without GUI
 
 These versions are targeted at ARMv7 processors like the Raspberry Pi 3 or 4.
 
-Once downloaded, use a flashing application like Win32DiskImager or baleanaEtcher. You can follow the [official Raspberry Pi instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) for further details.
+Once downloaded, use a flashing application like Win32DiskImager or balenaEtcher. You can follow the [official Raspberry Pi instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) for further details.
 
-When the image of your choice has been flashed, the Duet 3 can be connected to via the hostname "duet3". It comes preconfigured with mDNS enabled (via avahi), SSH activated (on the lite version only) and the standard credentials "pi" and "raspberry". To set up WiFi, you can edit "wpa_supplicant.conf" on the SD card (first partition), see [here](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md) for instructions.  
+When the image of your choice has been flashed, the board can be connected to via the hostname "duet3". It comes preconfigured with mDNS enabled (via avahi), SSH activated (on the lite version only) and the standard credentials "pi" and "raspberry". To set up WiFi, you can edit "wpa_supplicant.conf" on the SD card (first partition), see [here](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md) for instructions.  
 
 {% include important.html content="The DuetPi with GUI image does not have a wpa_supplicant.conf file. This will have to be created manually" %}
 
@@ -37,8 +36,8 @@ If you want to enable SSH on the DuetPi with GUI image, SSH can be enabled by pl
 
 A script has been provided to make updating the version of DSF on your SBC a lot easier. Although we don't make any changes to DSF to make it compatible with the STM32 port of RRF, there are a couple of features we have added to make your experience better. They are as follows:
 
-* As the STM32 port lags the official duet releases by a few days, we mark the DSF linux packages as being on hold. This allows you to continue to update the SBC without running the risk of updating DSF to a version which is incompatible with the firmware running on your board.
-* For those of you running DSF on an SBC other than a raspberry pi, we backup the transfer ready pin, SPI device and GPIO chip you've set and restore it after upgrade.
+* As the STM32 port lags the official Duet releases by a few days, we mark the DSF linux packages as being on hold. This allows you to continue to update the SBC without running the risk of updating DSF to a version which is incompatible with the firmware running on your board.
+* For those of you running DSF on an SBC other than a Raspberry Pi, we back up the transfer ready pin, SPI device and GPIO chip you've set and restore it after upgrade.
 * The script allows you to easily upgrade or downgrade to a specific version through the use of a version argument.
 * The script is self updating so you only need to install it once.
 
@@ -97,4 +96,4 @@ A list of the available arguments for the script can be found below.
 
 <div class="datatable-end"></div>
 
-For reference, the packages available and their names can be found [here](https://pkg.duet3d.com/dists/unstable/armv7/binary-armhf/)
+For reference, the packages available and their names can be found [here](https://pkg.duet3d.com/dists/unstable/armv7/binary-armhf/).

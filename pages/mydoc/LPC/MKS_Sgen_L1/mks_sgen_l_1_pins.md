@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 19/09/2021
 summary: "The pin names of the MKS SGen L v1.0 in the firmware"
-sidebar: mydoc_sidebar
 permalink: mks_sgen_l_1_pins.html
 folder: mydoc
 comments: false

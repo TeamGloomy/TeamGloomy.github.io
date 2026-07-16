@@ -1,0 +1,22 @@
+{% if page.path contains "STM32H7" %}
+{% assign stableFirmware = site.latestStableFirmwareSTM32H7 %}
+{% assign betaFirmware = site.latestBetaFirmwareSTM32H7 %}
+{% else %}
+{% assign stableFirmware = site.latestStableFirmwareSTM32F4 %}
+{% assign betaFirmware = site.latestBetaFirmwareSTM32F4 %}
+{% endif %}
+
+## Downloading the board firmware
+
+TeamGloomy provides a separate firmware file for each board. The correct file for this board is **{{page.firmware}}**.
+
+{% if stableFirmware == betaFirmware %}
+The latest firmware files can be found [here]({{stableFirmware}}){:target="_blank"}
+{% else %}
+The latest stable firmware files can be found [here]({{stableFirmware}}){:target="_blank"}
+And the latest unstable firmware files can be found [here]({{betaFirmware}}){:target="_blank"}
+{% endif %}
+
+You can download either the latest stable release or the latest pre-release, if one is available.
+
+Once downloaded, rename the file to `firmware.bin`.

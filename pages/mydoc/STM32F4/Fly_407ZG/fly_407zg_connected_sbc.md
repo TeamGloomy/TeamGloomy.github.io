@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 25/03/2022
 summary: "How to connect to a Fly-407ZG via SBC"
-sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_sbc.html
 folder: mydoc
 comments: false
@@ -13,7 +12,8 @@ datatable: true
 boardname: Fly-407ZG
 mcu: STM32F407VGT6
 firmware: firmware-stm32f4-sbc.bin
-schematic: https://github.com/Mellow-3D/FLYF407ZG/blob/master/picture/Schematic.pdf
+schematic: 
+https: //github.com/Mellow-3D/FLYF407ZG/blob/master/picture/Schematic.pdf
 BCM11: PB_13
 BCM9: PB_14
 BCM10: PB_15

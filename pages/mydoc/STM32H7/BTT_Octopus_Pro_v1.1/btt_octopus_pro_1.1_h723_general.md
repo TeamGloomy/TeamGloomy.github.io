@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "General information regarding the BTT Octopus Pro v1.1"
-sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.1_h723_general.html
 folder: mydoc
 comments: false
@@ -15,7 +14,7 @@ boardname: BTT Octopus Pro v1.1
 
 ## Overview
 
-This page covers any general information for the {{boardname}} board, which is supported from 3.5.0-rc.2.
+This page covers any general information for the {{page.boardname}} board, which is supported from 3.5.0-rc.2.
 
 {% include callout.html content="There are two types of BTT Octopus Pro v1.1. One uses an STM32H723ZE, and the other uses an STM32H723ZG. TeamGloomy and this port only support the STM32H723ZG based boards." type="danger" %}  
 
@@ -63,4 +62,4 @@ To set them VCC, set the jumpers as below.
 
 ### Initial Installation
 
-Follow the [WiFi instructions](btt_octopus_pro_1.1_h723_connected_wifi_8266.html) or [SBC instructions](btt_octopus_pro_1.1_h723_connected_sbc.html)
+Follow the [WiFi instructions](btt_octopus_pro_1.1_h723_connected_wifi.html) or [SBC instructions](btt_octopus_pro_1.1_h723_connected_sbc.html)

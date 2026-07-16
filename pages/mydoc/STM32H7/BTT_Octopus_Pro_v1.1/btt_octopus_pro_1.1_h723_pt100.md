@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 12/08/2023
 summary: "How to connect a PT100 or PT1000 to a BTT Octopus Pro v1.1"
-sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.1_h723_pt100.html
 folder: mydoc
 comments: false
@@ -15,11 +14,11 @@ boardname: BTT Octopus Pro v1.1
 
 ## Overview
 
-The {{boardname}} has support for PT100 and PT1000.  
+The {{page.boardname}} has support for PT100 and PT1000.  
 
 ## Board Setup
 
-The {{boardname}} has a series of dip switches that must be set when using 2, 3 and 4 wire PT100 and PT1000.  
+The {{page.boardname}} has a series of dip switches that must be set when using 2, 3 and 4 wire PT100 and PT1000.  
 
 {% include image.html file="btt_octopus_pro_1.0_pt100_dip.png" alt="BTT Octopus Pro v1.1 PT100/PT1000 Dip Switch Location" caption="BTT Octopus Pro v1.1 PT100/PT1000 Dip Switch Location" %}  
 

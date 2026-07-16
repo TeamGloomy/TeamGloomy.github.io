@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/07/2021
 summary: "How to connect to an SKR v1.3 via an ESP8266 WiFi Adapter"
-sidebar: mydoc_sidebar
 permalink: skr_1.3_connected_wifi_8266.html
 folder: mydoc
 comments: false
@@ -65,7 +64,7 @@ Discord user themarinus has created this image to aid in creating your own WiFi 
 
 ### Prepare the SD Card
 
-Follow the instructions on [Getting Started with RRF3](getting_started.html)
+Follow the instructions on [Getting Started with RRF3](getting_started_lpc.html)
 
 ### Board.txt file
 
@@ -104,7 +103,7 @@ If using sensorless homing/stall detection (supported by only the TMC2209 or TMC
 stepper.TmcDiagPins = { 1.29, 1.28, 1.27, 1.26, 1.25 }
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.28 in your board.txt file.  
-For more information about setting up sensorless homing, please read [this](sensorless.html).  
+For more information about setting up sensorless homing, please read [this](sensorless_lpc.html).  
 
 #### Driver Diag Pin
 
@@ -116,7 +115,7 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty_lpc.html) to set it up for RRF. Then type in the following  
 
 {% include callout.html content="If updating the ESP32 using RRF, type the following.  
 

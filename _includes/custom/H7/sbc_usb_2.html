@@ -1,0 +1,18 @@
+## Flash the Firmware
+
+Use an SD card to flash the firmware onto the {{page.boardname}}.
+
+1. Rename the firmware file to `firmware.bin`.
+2. Put `firmware.bin` in the root folder of a FAT32 formatted SD card.
+3. Put the SD card into the {{page.boardname}}.
+4. Power on the {{page.boardname}} (using USB power or 12/24V power).
+5. Leave the {{page.boardname}} powered on for 1 to 2 minutes. This gives the board enough time to flash the firmware.
+6. Power off the {{page.boardname}}.
+
+{% capture firmwareFlashTip %}You can check that the firmware has flashed correctly. Look at the SD card on a computer. If the file name has changed from `firmware.bin` to `{{page.firmwareFlash}}`, the firmware has flashed correctly.{% endcapture %}
+{% include tip.html content=firmwareFlashTip %}
+
+## Connect the Board
+
+1. Remove the SD card from the {{page.boardname}}.
+2. Connect the {{page.boardname}} to the SBC using a USB cable.

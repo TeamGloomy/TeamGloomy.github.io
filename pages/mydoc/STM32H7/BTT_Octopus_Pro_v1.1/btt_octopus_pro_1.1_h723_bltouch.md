@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 27/12/2023
 summary: "How to connect a BLTouch or BTT MicroProbe to an BTT Octopus Pro v1.1"
-sidebar: mydoc_sidebar
 permalink: btt_octopus_pro_1.1_h723_bltouch.html
 folder: mydoc
 comments: false
@@ -25,13 +24,13 @@ whiteName: probe
   <div class="tab-content">
 <div role="tabpanel" class="tab-pane active" id="bltouch" markdown="1">
 
-{% include custom/3.4/bltouch.html %}
+{% include custom/H7/bltouch.html %}
 
 </div>
 
 <div role="tabpanel" class="tab-pane" id="micro" markdown="1">
 
-{% include custom/3.4/microprobe.html %}
+{% include custom/H7/microprobe.html %}
 
 </div>
 

@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 19/09/2021
 summary: "The pin names of the MKS Sbase v1.3 in the firmware"
-sidebar: mydoc_sidebar
 permalink: mks_sbase_pins.html
 folder: mydoc
 comments: false

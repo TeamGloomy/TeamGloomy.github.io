@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 17/06/2021
 summary: "Alternative connection of an ESP8266 to a Fly-407ZG to allow SPI controlled drivers to be installed"
-sidebar: mydoc_sidebar
 permalink: fly_407zg_alternative_esp8266.html
 folder: mydoc
 comments: false
@@ -25,7 +24,7 @@ This will involve soldering some cables to the board.
   
 ### BOM
 
-* 1 x ESP8266 adapter (any of the [3 types](/adapters_esp8266.html) will be suitable)
+* 1 x ESP8266 adapter (any of the [3 types](/adapters_esp8266_stm32f4.html) will be suitable)
 * Some cable
 
 ### Connecting the Adapter

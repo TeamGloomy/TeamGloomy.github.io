@@ -1,9 +1,16 @@
-## WiFi firmware preparation
-{% if {{site.latestStableFirmware}} == {{site.latestBetaFirmware}} %}
-The latest firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}
+{% if page.path contains "STM32H7" %}
+{% assign stableFirmware = site.latestStableFirmwareSTM32H7 %}
+{% assign betaFirmware = site.latestBetaFirmwareSTM32H7 %}
 {% else %}
-The latest stable firmware files can be found [here]({{site.latestStableFirmware}}){:target="_blank"}  
-And the latest unstable firmware files can be found [here]({{site.latestBetaFirmware}}){:target="_blank"}
+{% assign stableFirmware = site.latestStableFirmwareSTM32F4 %}
+{% assign betaFirmware = site.latestBetaFirmwareSTM32F4 %}
+{% endif %}
+## WiFi firmware preparation
+{% if stableFirmware == betaFirmware %}
+The latest firmware files can be found [here]({{stableFirmware}}){:target="_blank"}
+{% else %}
+The latest stable firmware files can be found [here]({{stableFirmware}}){:target="_blank"}
+And the latest unstable firmware files can be found [here]({{betaFirmware}}){:target="_blank"}
 {% endif %}
 {% if page.wifi == "both" %}
 * WiFiModule_esp8266.bin for ESP8266

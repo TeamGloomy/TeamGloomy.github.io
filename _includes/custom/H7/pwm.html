@@ -1,0 +1,17 @@
+## Overview
+
+This port of RRF uses a combination of Hardware and Software PWM control.  
+
+### Hardware PWM
+
+Each hardware timer can handle up to four pins. If more than one pin maps to a timer then the 2nd,3rd.4th can only use hardware PWM if the frequency matches. 
+The hardware PWM is only allocated the first time that PWM is actually needed (so essentially the first time that an output is set to something that is not full on/off).
+
+### Software PWM
+
+If it doesn't use the same frequecy, it will instead be controlled as a software PWM. There are a maximum of 16 software PWM channels.  
+Software PWM uses a single 1MHz timer. Software PWM uses MCU resources and does not work well for higher PWM frequencies. Anything above about 4KHz will have a reduction in the resolution and there is a minium delta (which is complicated, but basically means that any pulse that has an on time or off time of less than 20uS will be set to just full off/on). This mainly impacts higher frequencies.
+
+### Current Limitations
+
+The hardware of the STM32 MCU limits which pins can be used with which timers. At the moment, this port has a limitation that means we have to pre-allocate the pins to a timer, so basically there is only one timer for each pin. It is planned for the future that we will be able to remove that restriction, but it is there at the moment.

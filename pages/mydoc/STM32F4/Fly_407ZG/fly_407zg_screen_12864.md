@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 14/07/2021
 summary: "How to connect a 12864 screen to a Fly-407ZG"
-sidebar: mydoc_sidebar
 permalink: fly_407zg_screen_12864.html
 folder: mydoc
 comments: false

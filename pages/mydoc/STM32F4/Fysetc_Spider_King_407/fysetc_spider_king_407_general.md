@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 07/09/2022
 summary: "General information regarding the Fysetc Spider King 407"
-sidebar: mydoc_sidebar
 permalink: fysetc_spider_king_407_general.html
 folder: mydoc
 comments: false
@@ -60,4 +59,3 @@ Driver sockets 0 to 3 can accept a maximum voltage of 55v. Driver sockets 4 to 9
 ### Initial Installation
 
 The board that you will receive doesn't have any firmware installed so when plugged into a computer, the board will show as an unidentified device.
-Follow the [WiFi instructions](fysetc_spider_king_407_connected_wifi.html).

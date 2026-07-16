@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 19/09/2021
 summary: "The pin names of the SKR v1.4 and SKR v1.4T in the firmware"
-sidebar: mydoc_sidebar
 permalink: skr_1.4_pins.html
 folder: mydoc
 comments: false

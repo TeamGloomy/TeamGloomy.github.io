@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 22/12/2021
 summary: "How to connect a serial screen to an SKR v1.4 and SKR v1.4T"
-sidebar: mydoc_sidebar
 permalink: skr_1.4_screen.html
 folder: mydoc
 comments: false

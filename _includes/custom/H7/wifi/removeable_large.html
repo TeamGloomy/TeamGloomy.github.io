@@ -1,0 +1,24 @@
+## Purchasing the WiFi Adapter
+
+You will need a WiFi adapter that plugs into the {{page.EXP}} header. It can be purchased here:
+* Mellow (who works in close collaboration with TeamGloomy) on [Aliexpress](https://s.click.aliexpress.com/e/_DCQIBehl)
+
+{% if page.wifiEth == true %}
+{% include note.html content="This board also supports an ESP32 WiFi/Ethernet adapter. See the [available ESP32 WiFi/Ethernet adapters](adapters_esp32eth_stm32h7.html) page for supported adapters and the board.txt change needed." %}
+{% endif %}
+{% if page.wifiFly == true %}
+{% include note.html content="An ESP32-C5 based WiFi adapter is also planned for release. Details will be added here once it is available." %}
+{% endif %}
+
+## Connecting the WiFi Adapter
+
+Connect the ESP32 adapter to the board as shown below. You also need to connect the antenna.
+{% capture imagefile %}
+{{ page.image }}
+{% endcapture %}
+{% capture captiontext %}
+{{ page.boardname }} ESP32 Adapter Connection
+{% endcapture %}
+{% include image.html file=imagefile alt="" caption=captiontext %}
+If you do not need to update the WiFi adapter firmware from the {{ page.boardname }}, you do not need to connect the 4-pin serial cable. Instead, add a small amount of solder in the area highlighted below to get power from {{page.EXP}}.
+{% include image.html file="fly_esp32_power.png" alt="Fly ESP32 Power" caption="Fly ESP32 Power Solder" %}

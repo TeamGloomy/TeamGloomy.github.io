@@ -1,0 +1,374 @@
+title: RepRapFirmware for LPC Boards
+children:
+- title: Overview
+  output: web
+  children:
+  - title: Homepage
+    url: index.html
+    output: web
+    type: homepage
+  - title: Getting Started
+    url: getting_started_lpc.html
+    output: web
+  - title: Supported Boards and Drivers
+    url: supported_boards_lpc.html
+    output: web
+  - title: Getting Support
+    url: support_lpc.html
+    output: web
+  - title: FAQ
+    url: faq_lpc.html
+    output: web
+  - title: TeamGloomy
+    url: TeamGloomy_lpc.html
+    output: web
+- title: Release Notes
+  output: web
+  children:
+  - title: Reprapfirmware 3.3
+    output: web
+    children:
+    - title: 3.3.0_16 Release Notes
+      url: release_notes_3.3.0_16_lpc.html
+      output: web
+  - title: Reprapfirmware 3.2
+    output: web
+    children:
+    - title: 3.2.2_2 Release Notes
+      url: release_notes_3.2.2_2_lpc.html
+      output: web
+- title: General
+  output: web
+  children:
+  - title: Adding a Camera
+    url: camera_lpc.html
+    output: web
+  - title: Board.txt Configurables
+    url: board_txt_stm32_lpc.html
+    output: web
+  - title: Connecting a Smart Effector
+    url: smart_effector_lpc.html
+    output: web
+  - title: Connecting a BME280
+    url: bme280_lpc.html
+    output: web
+  - title: Connecting a DHT22
+    url: dht22_lpc.html
+    output: web
+  - title: Configuring a BTT Smart Filament Monitor
+    url: btt_smart_filament_lpc.html
+    output: web
+  - title: Configuring ExeconMcode
+    url: execonmcode_lpc.html
+    output: web
+  - title: Configuring Neopixels
+    url: neopixels_lpc.html
+    output: web
+  - title: Configuring Putty
+    url: putty_lpc.html
+    output: web
+  - title: Configuring Filezilla
+    url: filezilla_lpc.html
+    output: web
+  - title: Custom Commands and G-Code
+    url: custom_commands_gcode_lpc.html
+    output: web
+  - title: Driver Timings
+    url: driver_timings_lpc.html
+    output: web
+  - title: DWC Plugins
+    url: plugins_lpc.html
+    output: web
+  - title: Firmware Build Instructions
+    url: firmware_build_lpc.html
+    output: web
+  - title: Firmware Limits
+    url: firmware_limits_lpc.html
+    output: web
+  - title: How to Know What Pin is Interrupt Capable
+    url: interrupt_pins_lpc.html
+    output: web
+  - title: MCU Comparisons
+    url: mcu_types_lpc.html
+    output: web
+  - title: SBC Transfer Ready Pin Timeouts
+    url: sbc_transfer_timeout_lpc.html
+    output: web
+  - title: Sensorless Homing and Stall Detection
+    url: sensorless_lpc.html
+    output: web
+  - title: Short to Ground Errors
+    url: short_to_ground_lpc.html
+    output: web
+  - title: Obtaining Information for Troubleshooting
+    url: troubleshooting_information_lpc.html
+    output: web
+  - title: Troubleshooting
+    url: troubleshooting_lpc.html
+    output: web
+  - title: Updating Standalone Setups
+    url: updating_standalone_lpc.html
+    output: web
+  - title: Useful Macros
+    url: useful_macros_lpc.html
+    output: web
+  - title: User Created Content
+    output: web
+    children:
+    - title: User Created Configs
+      url: user_configs_lpc.html
+      output: web
+    - title: User Created Guides
+      url: user_guides_lpc.html
+      output: web
+    - title: User Created Videos
+      url: user_videos_lpc.html
+      output: web
+- title: LPC Boards
+  output: web
+  children:
+  - title: LPC Firmware Restrictions
+    url: lpc_differences.html
+    output: web
+  - title: Configuring an ESP8266 for LPC Boards
+    url: lpc_esp8266.html
+    output: web
+  - title: Configuring an SBC for LPC Boards
+    url: lpc_sbc.html
+    output: web
+  - title: Board.txt Configurables - LPC
+    url: board_txt_lpc.html
+    output: web
+  - title: Fly-CDY
+    output: web
+    children:
+    - title: Fly-CDY General Information
+      url: fly_cdy_general.html
+      output: web
+    - title: Connecting via WiFi
+      url: fly_cdy_connected_wifi.html
+      output: web
+    - title: Connecting a Screen
+      url: fly_cdy_screen.html
+      output: web
+    - title: Connecting a BLTouch
+      url: fly_cdy_bltouch.html
+      output: web
+    - title: Pin Names
+      url: fly_cdy_pins.html
+      output: web
+  - title: MKS Sbase v1.3
+    output: web
+    children:
+    - title: Connecting via an ESP8266 WiFi Adapter
+      url: mks_sbase_connected_wifi_8266.html
+      output: web
+    - title: Connecting a Screen
+      url: mks_sbase_screen.html
+      output: web
+    - title: Connecting a BLTouch
+      url: mks_sbase_bltouch.html
+      output: web
+    - title: Pin Names
+      url: mks_sbase_pins.html
+      output: web
+  - title: MKS SGen L v1.0
+    output: web
+    children:
+    - title: Connecting via an ESP8266 WiFi Adapter
+      url: mks_sgen_l_1_connected_wifi_8266.html
+      output: web
+    - title: Connecting via SBC
+      url: mks_sgen_l_1_connected_sbc.html
+      output: web
+    - title: Connecting a Screen
+      url: mks_sgen_l_1_screen.html
+      output: web
+    - title: Connecting a BLTouch
+      url: mks_sgen_l_1_bltouch.html
+      output: web
+    - title: Pin Names
+      url: mks_sgen_l_1_pins.html
+      output: web
+  - title: MKS SGen L v2.0
+    output: web
+    children:
+    - title: Connecting via an ESP8266 WiFi Adapter
+      url: mks_sgen_l_2_connected_wifi_8266.html
+      output: web
+    - title: Connecting via SBC
+      url: mks_sgen_l_2_connected_sbc.html
+      output: web
+    - title: Connecting a Screen
+      url: mks_sgen_l_2_screen.html
+      output: web
+    - title: Connecting a BLTouch
+      url: mks_sgen_l_2_bltouch.html
+      output: web
+    - title: Pin Names
+      url: mks_sgen_l_2_pins.html
+      output: web
+  - title: Re-Arm
+    output: web
+    children:
+    - title: Connecting via an ESP8266 WiFi Adapter
+      url: re_arm_connected_wifi_8266.html
+      output: web
+    - title: Connecting via SBC
+      url: re_arm_connected_sbc.html
+      output: web
+    - title: Pin Names
+      url: re_arm_pins.html
+      output: web
+  - title: SKR v1.1
+    output: web
+    children:
+    - title: Connecting via an ESP8266 WiFi Adapter
+      url: skr_1.1_connected_wifi_8266.html
+      output: web
+    - title: Connecting via SBC
+      url: skr_1.1_connected_sbc.html
+      output: web
+    - title: Connecting a Screen
+      url: skr_1.1_screen.html
+      output: web
+    - title: Pin Names
+      url: skr_1.1_pins.html
+      output: web
+  - title: SKR v1.3
+    output: web
+    children:
+    - title: Connecting via an ESP8266 WiFi Adapter
+      url: skr_1.3_connected_wifi_8266.html
+      output: web
+    - title: Connecting via SBC
+      url: skr_1.3_connected_sbc.html
+      output: web
+    - title: Connecting a Screen
+      url: skr_1.3_screen.html
+      output: web
+    - title: Connecting a BLTouch
+      url: skr_1.3_bltouch.html
+      output: web
+    - title: Connecting a BTT-MOT-EXP
+      url: skr_1.3_btt_mot_exp.html
+      output: web
+    - title: Pin Names
+      url: skr_1.3_pins.html
+      output: web
+  - title: SKR v1.4 and v1.4T
+    output: web
+    children:
+    - title: Connecting via an ESP8266 WiFi Adapter
+      url: skr_1.4_connected_wifi_8266.html
+      output: web
+    - title: Connecting via SBC
+      url: skr_1.4_connected_sbc.html
+      output: web
+    - title: Connecting a Screen
+      url: skr_1.4_screen.html
+      output: web
+    - title: Connecting a BLTouch
+      url: skr_1.4_bltouch.html
+      output: web
+    - title: Connecting a BTT-MOT-EXP
+      url: skr_1.4_btt_mot_exp.html
+      output: web
+    - title: Pin Names
+      url: skr_1.4_pins.html
+      output: web
+  - title: SKR E3 Turbo
+    output: web
+    children:
+    - title: Connecting via an ESP8266 WiFi Adapter
+      url: skr_E3T_connected_wifi_8266.html
+      output: web
+    - title: Connecting via SBC
+      url: skr_E3T_connected_sbc.html
+      output: web
+    - title: Connecting a Screen
+      url: skr_E3T_screen.html
+      output: web
+    - title: Connecting a BLTouch
+      url: skr_E3T_bltouch.html
+      output: web
+    - title: Pin Names
+      url: skr_E3T_pins.html
+      output: web
+- title: Screens
+  output: web
+  children:
+  - title: TFT Screen Configuration
+    url: tft_lpc.html
+    output: web
+  - title: Paneldue Information
+    url: paneldue_lpc.html
+    output: web
+  - title: Fly Screen Information
+    url: fly_screen_lpc.html
+    output: web
+  - title: Fly Screen Opensource Firmware
+    output: web
+    children:
+    - title: Compiling the Fly Screen Firmware
+      url: fly_firmware_compile_lpc.html
+      output: web
+    - title: Editing the Fly Screen Firmware UI
+      url: fly_firmware_ui_lpc.html
+      output: web
+    - title: Editing the Fly Screen Firmware Code
+      url: fly_firmware_code_lpc.html
+      output: web
+    - title: Debugging the Fly Screen Firmware
+      url: fly_firmware_debug_lpc.html
+      output: web
+- title: Adapters
+  output: web
+  children:
+  - title: Available ESP8266 WiFi and SBC Adapters
+    url: adapters_esp8266_lpc.html
+    output: web
+  - title: Available ESP32 WiFi Adapters
+    url: adapters_esp32_lpc.html
+    output: web
+  - title: Available ESP32 WiFi/Ethernet Adapters
+    url: adapters_esp32eth_lpc.html
+    output: web
+  - title: Available UART to RS485 Modules
+    url: adapters_rs485_lpc.html
+    output: web
+- title: Addons
+  output: web
+  children:
+  - title: Mellow Airclick Wireless Buttons
+    output: web
+    children:
+    - title: Mellow Airclick Wireless Buttons General Information
+      url: airclick_general_lpc.html
+      output: web
+    - title: Connecting to WiFi
+      url: airclick_wifi_lpc.html
+      output: web
+    - title: Connection to RRF
+      url: airclick_rrf_connection_lpc.html
+      output: web
+    - title: Adding Buttons
+      url: airclick_button_lpc.html
+      output: web
+- title: Printer Specific Guides
+  output: web
+  children:
+  - title: Printer Guides
+    output: web
+    children:
+    - title: Intro
+      url: printers_lpc.html
+    - title: Ender 3
+      output: web
+      children:
+      - title: Installing and configuring a Fly-E3 to an Ender 3
+        url: ender_3_conversion_lpc.html
+        output: web
+      - title: Installing and configuring a BLTouch to an Ender 3 (with a Fly-E3 installed)
+        url: ender_3_bltouch_lpc.html
+        output: web

@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 19/09/2021
 summary: "The pin names of the SKR E3 Turbo in the firmware"
-sidebar: mydoc_sidebar
 permalink: skr_E3T_pins.html
 folder: mydoc
 comments: false

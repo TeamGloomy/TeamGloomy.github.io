@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/07/2021
 summary: "How to connect a BTT-MOT_EXP to an SKR v1.4"
-sidebar: mydoc_sidebar
 permalink: skr_1.4_btt_mot_exp.html
 folder: mydoc
 comments: false

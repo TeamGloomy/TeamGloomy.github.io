@@ -80,6 +80,24 @@ defaults:
       topnav: topnav
   -
     scope:
+      path: "pages/mydoc/LPC"
+      type: "pages"
+    values:
+      sidebar: lpc_sidebar
+  -
+    scope:
+      path: "pages/mydoc/STM32F4"
+      type: "pages"
+    values:
+      sidebar: stm32f4_sidebar
+  -
+    scope:
+      path: "pages/mydoc/STM32H7"
+      type: "pages"
+    values:
+      sidebar: stm32h7_sidebar
+  -
+    scope:
       path: ""
       type: "tooltips"
     values:
@@ -103,7 +121,9 @@ defaults:
 
 sidebars:
 - home_sidebar
-- mydoc_sidebar
+- lpc_sidebar
+- stm32f4_sidebar
+- stm32h7_sidebar
 #- product1_sidebar
 #- product2_sidebar
 #- other
@@ -118,7 +138,12 @@ description: "Documentation for the LPC and STM32 Ports of RepRapFirmware"
 
 github: [metadata]
 
-latestStableFirmware: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.2%2B1"
-latestBetaFirmware: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.2%2B1"
-latestStableZip: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.2%2B1"
-latestBetaZip: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.2%2B1"
+latestStableFirmwareSTM32F4: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.3"
+latestBetaFirmwareSTM32F4: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.3"
+latestStableZipSTM32F4: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.3"
+latestBetaZipSTM32F4: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.3"
+
+latestStableFirmwareSTM32H7: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.3"
+latestBetaFirmwareSTM32H7: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.3"
+latestStableZipSTM32H7: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.3"
+latestBetaZipSTM32H7: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.3"

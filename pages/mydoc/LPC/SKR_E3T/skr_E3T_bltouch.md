@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/07/2021
 summary: "How to connect a BLTouch to an SKR E3 Turbo"
-sidebar: mydoc_sidebar
 permalink: skr_E3T_bltouch.html
 folder: mydoc
 comments: false

@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/07/2021
 summary: "How to connect to a Re-Arm via an SBC"
-sidebar: mydoc_sidebar
 permalink: re_arm_connected_sbc.html
 folder: mydoc
 comments: false

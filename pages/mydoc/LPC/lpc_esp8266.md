@@ -1,10 +1,9 @@
 ---
-title:  Configuring an ESP8266 for LPC Boards
+title: Configuring an ESP8266 for LPC Boards
 tags: 
 keywords: 
 last_updated: 14/07/2021
 summary: "How to configure an ESP8266 for use with LPC Based Boards"
-sidebar: mydoc_sidebar
 permalink: lpc_esp8266.html
 folder: mydoc
 toc: false
@@ -21,25 +20,25 @@ comments: false
 
 {% include warning.html content="An ESP-01 cannot be used with RRF." %}  
 
-The image for to flash to the ESP8266 can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases).  
+The image to flash to the ESP8266 can be found [here](https://github.com/gloomyandy/DuetWiFiSocketServer/releases).  
 
 {% include note.html content="Use the latest release for stable builds and the newest pre-release for unstable builds.  <br/>
 Make sure you download DuetWifiServer-lpc-el.bin  " %} 
 
-It should be flashed using [esptool.py](https://github.com/espressif/esptool). Use the code below as an example. Change the Com port to match the ESP8266 device and make sure you give the .bin file its complete file location if its not in the same folder as esptools.
+It should be flashed using [esptool.py](https://github.com/espressif/esptool). Use the code below as an example. Change the COM port to match the ESP8266 device and make sure you give the .bin file its complete file location if it's not in the same folder as esptools.
 
 `esptool.py --port COM4 write_flash 0x00000 DuetWiFiServer-esp8266-lpc.bin`
 
-You can also follow [PCR's instructions](https://rosspeter.org/flashing-the-webserver-on-my-rff-skr-adapterboard) if you don't get on with esptool.
+You can also follow [PCR's instructions](https://rosspeter.org/flashing-the-webserver-on-my-rff-skr-adapterboard) if you have trouble using esptool.
 
 If flashing a board with 16MB flash size, such as the Wemos Mini Pro, the following code should be used.  
 `esptool.py --port COM4 write_flash --flash_size 4MB 0x00000 DuetWiFiServer-lpc.bin`
 
-On a side note, I have a very handy little tool installed on my main laptop thats monitoring for any serial devices as they are plugged in and you get a popup with the Com port number. If you’re interested, it can be found [here](https://helmpcb.com/software/serial-port-monitor).
+{% include tip.html content="A tool that shows the COM port number automatically when a serial device is plugged in can make this step easier. One example is [Serial Port Monitor](https://helmpcb.com/software/serial-port-monitor)." %}
 
 ### RRF based flashing
 
-The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:
+The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined). This takes the form:
 `8266wifi.serialRxTxPins = { RXPin, TXPin }`
 This information has been added to the connecting via WiFi page for each board.  
 
@@ -64,13 +63,13 @@ There are two methods to update the boards if a new version of the ESP8266 firmw
 
 ### Manual Updating
 
-This method follows the flashing instructions for preparation. To allow the ESP8266 to be put in reset mode, its best to disconnect it from the LPC based board.
+This method follows the flashing instructions for preparation. To allow the ESP8266 to be put in reset mode, it's best to disconnect it from the LPC based board.
 
 ### RRF based Updating
 
-{% include warning.html content="This cannot be used in conjunction with using a screen on the SKR v1.3" %} 
+{% include warning.html content="This cannot be used in conjunction with using a screen on the SKR v1.3." %} 
 
-The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined, this takes the form:
+The WiFi UART interface will require changes to your board.txt file. You need to define the pins used by the UART (the builds provided have support for UART0 and UART3 defined). This takes the form:
 `8266wifi.serialRxTxPins = { RXPin, TXPin }`
 This information has been added to the connecting via WiFi page for each board. 
 

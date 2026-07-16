@@ -1,59 +1,71 @@
 ---
-title: "Getting started with RepRapFirmware for LPC and STM32 based boards"
-last_updated: 12/03/2026
-sidebar: mydoc_sidebar
+title: "RepRapFirmware for LPC and STM32 Boards"
+last_updated: 12/07/2026
 permalink: index.html
-summary: These instructions will help you to get started running RepRapFirmware on your LPC or STM32 based 3D printer board
+summary: Choose your board's MCU family to get started with RepRapFirmware documentation
 toc: false
 comments: false
+hide_sidebar: true
 ---
 
-# Welcome
+Welcome to the TeamGloomy port of [RepRapFirmware](http://www.duet3d.com){:target="_blank"} for LPC and STM32 based 3D printer boards.
+This firmware brings all the power of Duet's open-source firmware to a wide range of third-party hardware.
 
-Welcome to the RepRapFirmware on LPC and STM32 boards.  
-This software is a port of the open source RepRapFirmware produced by [Duet3D](http://www.duet3d.com) for their Duet range of boards.  
-The LPC port was originally created by [sadvi](https://github.com/sdavi). Support for LPC boards was dropped after RRF 3.3.0_16.  
+**Choose your board type below to get started:**
 
-## Latest Firmware Versions
+<div class="mcu-selector">
 
-### Latest Stable STM32F4 and STM32H7 Build
+  <div class="mcu-card mcu-card-h7">
+    <div class="mcu-card-header">
+      <h3>STM32H7 Based Boards</h3>
+      <span class="mcu-badge mcu-badge-active">Stable &mdash; Actively Developed</span>
+    </div>
+    <div class="mcu-card-body">
+      <ul>
+        <li>Fly, BTT, LDO, Fysetc &amp; more</li>
+        <li>WiFi (ESP32) and SBC connectivity</li>
+        <li>CAN-FD toolboards supported</li>
+      </ul>
+    </div>
+    <a class="mcu-btn mcu-btn-h7" href="getting_started_stm32h7.html">Get Started with STM32H7 &raquo;</a>
+  </div>
 
-The latest stable version is [3.6.2+1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.6.2%2B1)
+  <div class="mcu-card mcu-card-f4">
+    <div class="mcu-card-header">
+      <h3>STM32F4 Based Boards</h3>
+      <span class="mcu-badge mcu-badge-active">Stable &mdash; Bug Fixes Only</span>
+    </div>
+    <div class="mcu-card-body">
+      <ul>
+        <li>Fly, BTT Octopus/SKR, Gemini &amp; more</li>
+        <li>WiFi (ESP8266/ESP32) and SBC connectivity</li>
+        <li>CAN-FD toolboards via SPI2CAN adapter</li>
+        <li>Firmware updates ended at RRF 3.6.3</li>
+      </ul>
+    </div>
+    <a class="mcu-btn mcu-btn-f4" href="getting_started_stm32f4.html">Get Started with STM32F4 &raquo;</a>
+  </div>
 
-### Latest Unstable STM32F4, STM32H7 and STM32H723 Build
+  <div class="mcu-card mcu-card-lpc">
+    <div class="mcu-card-header">
+      <h3>LPC Based Boards</h3>
+      <span class="mcu-badge mcu-badge-legacy">Legacy &mdash; No Further Updates</span>
+    </div>
+    <div class="mcu-card-body">
+      <ul>
+        <li>SKR, MKS Sbase, Azteeg, ReArm &amp; more</li>
+        <li>WiFi (ESP8266) and SBC connectivity</li>
+        <li>Firmware updates ended at RRF 3.3.0_16</li>
+      </ul>
+    </div>
+    <a class="mcu-btn mcu-btn-lpc" href="getting_started_lpc.html">Get Started with LPC &raquo;</a>
+  </div>
 
-There are no unstable versions at the moment.
-
-### Latest Stable LPC Build
-
-The latest stable version is [3.3.0_16](https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.3.0_16)
-
-Please note that 3.3.X will be the last release for LPC boards.
-
-## Latest WiFi Firmware Versions
-
-### Latest Stable
-
-The latest stable WiFi firmware version is [2.2.1](https://github.com/gloomyandy/RepRapFirmware/releases/tag/3.6.2%2B1)
-
-### Latest Unstable
-
-There are no unstable versions at the moment.
-
-## Latest H7 bootloader
-
-### Latest Stable H7 Bootloader
-
-The latest stable bootloader version is [1.1.0](https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.2%2B1/bootloader)
-This bootloader is for all H723 and H743 based boards supported by RRF.
-
-### Latest Unstable H7 Bootloader
-
-There are no unstable versions at the moment.
+</div>
 
 ## Partnership
 
-TeamGloomy are working in close partnership with Flymaker/Mellow to ensure that 100% compatibility is obtained with their boards and to cover all of your 3D printer electronics requirements.  
+TeamGloomy are working in close partnership with Flymaker/Mellow to ensure that 100% compatibility is obtained with their boards and to cover all of your 3D printer electronics requirements.
 
 ## Aliexpress
 

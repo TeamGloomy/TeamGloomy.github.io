@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 25/03/2022
 summary: "How to connect to a Fly-407ZG via an ESP8266 WiFi Adapter"
-sidebar: mydoc_sidebar
 permalink: fly_407zg_connected_wifi_8266.html
 folder: mydoc
 comments: false
@@ -66,7 +65,7 @@ If you would rather use a pre-made WiFI board, then the one produced by [flymake
 
 ### Prepare the SD Card
 
-Follow the instructions on [Getting Started with RRF3](getting_started.html)
+Follow the instructions on [Getting Started with RRF3](getting_started_stm32f4.html)
 
 ### Board.txt file
 
@@ -112,7 +111,7 @@ The Fly-407ZG is the only STM32 board that can't be used with 5160 drivers when 
 #### Sensorless Homing
 
 To be able to use sensorless homing on this board, a jumper cable needs to be installed between the diag pin of the driver and an endstop input.  
-For more information about setting up sensorless homing, please read [this](sensorless.html).  
+For more information about setting up sensorless homing, please read [this](sensorless_stm32f4.html).  
 
 ### Board.txt Location
 
@@ -120,7 +119,7 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty_stm32f4.html) to set it up for RRF. Then type in the following  
 
 {% include callout.html content="If updating the ESP32 using RRF, type the following.  
 

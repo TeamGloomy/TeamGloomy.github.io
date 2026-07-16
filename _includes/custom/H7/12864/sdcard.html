@@ -1,0 +1,11 @@
+## Using the SD card slot on the screen
+
+It is possible to use the external SD card.  
+To do so, add the following lines to your board.txt.  
+If you do not have a board.txt file in sys (the same location as config.g), create one using DWC.  
+
+```
+sdCard.external.spiChannel={{page.spiChannel}}
+sdCard.external.csPin=LCD_SS
+sdCard.external.cardDetectPin=LCD_CD
+```

@@ -1,10 +1,9 @@
 ---
-title:  Configuring an SBC for LPC Boards
+title: Configuring an SBC for LPC Boards
 tags: 
 keywords: 
 last_updated: 19/10/2021
 summary: "How to configure an SBC for use with LPC based Boards"
-sidebar: mydoc_sidebar
 permalink: lpc_sbc.html
 folder: mydoc
 toc: false
@@ -24,9 +23,9 @@ There are two versions of DuetPi available, one with and another one without GUI
 
 These versions are targeted at ARMv7 processors like the Raspberry Pi 3 or 4.
 
-Once downloaded, use a flashing application like Win32DiskImager or baleanaEtcher. You can follow the [official Raspberry Pi instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) for further details.
+Once downloaded, use a flashing application like Win32DiskImager or balenaEtcher. You can follow the [official Raspberry Pi instructions](https://www.raspberrypi.org/documentation/installation/installing-images/) for further details.
 
-When the image of your choice has been flashed, the Duet 3 can be connected to via the hostname "duet3". It comes preconfigured with mDNS enabled (via avahi), SSH activated (on the lite version only) and the standard credentials "pi" and "raspberry". To set up WiFi, you can edit "wpa_supplicant.conf" on the SD card (first partition), see [here](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md) for instructions.  
+When the image of your choice has been flashed, the board can be connected to via the hostname "duet3". It comes preconfigured with mDNS enabled (via avahi), SSH activated (on the lite version only) and the standard credentials "pi" and "raspberry". To set up WiFi, you can edit "wpa_supplicant.conf" on the SD card (first partition), see [here](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md) for instructions.  
 
 {% include important.html content="The DuetPi with GUI image does not have a wpa_supplicant.conf file. This will have to be created manually" %}
 
@@ -52,11 +51,11 @@ sudo chmod 755 RRF_LPC_3_3_0.sh
 ```
 
 This does everything from the manual section.  
-Thats the SBC prepared and ready.
+That's the SBC prepared and ready.
 
 </div>
 
-<div role="tabpanel" class="tab-pane active" id="autobeta" markdown="1">
+<div role="tabpanel" class="tab-pane" id="autobeta" markdown="1">
 
 To use the automatic updater, send the following:
 
@@ -83,7 +82,7 @@ sudo apt-get install --reinstall duetcontrolserver
 
 #### Holding Packages
 
-When using this manual mode, it is suggested to put all the duet packages on hold. Especially as the LPC version will not get support past 3.3.X.  
+When using this manual mode, it is suggested to put all the duet packages on hold. Especially as the LPC version will not be supported past 3.3.X.  
 To do so, run the following:  
 
 ```
@@ -125,7 +124,7 @@ sudo apt update
 sudo apt upgrade
 ```
 
-This will install the latest software components and the latest RepRapFirmware version on your Duet 3.
+This will install the latest software components and the latest RepRapFirmware version on your board.
 
 #### Prepare the LPC version of DSF 
 

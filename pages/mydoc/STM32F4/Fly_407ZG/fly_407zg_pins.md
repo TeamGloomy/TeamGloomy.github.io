@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 12/06/2023
 summary: "The pin names of the Fly-407ZG used in the firmware"
-sidebar: mydoc_sidebar
 permalink: fly_407zg_pins.html
 folder: mydoc
 comments: false

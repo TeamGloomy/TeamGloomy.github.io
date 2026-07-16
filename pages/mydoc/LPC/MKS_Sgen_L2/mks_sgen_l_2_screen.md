@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 22/12/2021
 summary: "How to connect a serial screen to an MKS SGen L v2.0"
-sidebar: mydoc_sidebar
 permalink: mks_sgen_l_2_screen.html
 folder: mydoc
 comments: false

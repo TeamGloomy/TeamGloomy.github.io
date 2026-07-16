@@ -1,0 +1,17 @@
+---
+title: Upgrading a SKR Pro v1.2 to 3.5.0 from earlier versions
+tags: []
+keywords: 
+last_updated: 03/04/2024
+summary: "How to upgrade the SKR Pro v1.2 firmware"
+permalink: skr_pro_1.2_upgrading.html
+folder: mydoc
+comments: false
+toc: false
+datatable: true
+firmware: "firmware_skrpro1_2_f4.bin"
+wifiFirmware: "DuetWiFiServer.bin"
+rrfboot: custom/3.5/rrfboot/rrfboot_skr_pro_1.2.html
+---
+
+{% include custom/3.5/upgrading.html %}

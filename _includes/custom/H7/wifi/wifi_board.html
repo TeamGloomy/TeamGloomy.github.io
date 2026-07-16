@@ -1,0 +1,20 @@
+### WiFi Pins
+
+RRF cannot automatically detect which WiFi module or connection method you are using, so you need to add the following board.txt entries.
+The entries for an {{page.wifi}} module should be as follows:
+
+```text
+//WiFi pins
+wifi.espDataReadyPin = {{page.DRP}}
+wifi.TfrReadyPin = {{page.TRP}}
+wifi.espResetPin = {{page.ERP}}
+{% if page.wifiSPI != nil %}wifi.spiChannel = {{page.wifiSPI}}{% endif %}
+{% if page.CS != nil %}wifi.csPin = {{page.CS}}{% endif %}
+//{{page.wifi}} RX/TX Settings
+wifi.serialRxTxPins = {{page.ESPRXTX}}
+{% if page.SerialRXTX != "" %}serial.aux.rxTxPins = {{page.SerialRXTX}}{% endif %}
+```
+
+{% if page.wifiEth == true %}
+{% include custom/H7/wifi/eth.html %}
+{% endif %}

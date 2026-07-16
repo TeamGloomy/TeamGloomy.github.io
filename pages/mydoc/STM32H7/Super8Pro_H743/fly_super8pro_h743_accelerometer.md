@@ -1,0 +1,22 @@
+---
+title: Connecting an accelerometer to a Fly-Super8Pro H743
+tags: []
+keywords: 
+last_updated: 10/04/2024
+summary: "How to connect an accelerometer to a Fly-Super8Pro H743"
+permalink: fly_super8pro_h743_accelerometer.html
+folder: mydoc
+comments: false
+toc: false
+datatable: true
+boardname: Fly-Super8Pro H743
+SCL: PD_3
+SDA: PD_5
+SDO: PD_4
+CS: PD_1
+int: PD_0
+spiChannel: 3
+location: Accelerometer header
+---
+
+{% include custom/H7/accelerometer.html %}

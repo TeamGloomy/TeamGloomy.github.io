@@ -1,0 +1,18 @@
+### Using an ESP32 WiFi/Ethernet Adapter
+
+The {{page.boardname}} also supports an ESP32 WiFi/Ethernet adapter. This is a drop-in physical replacement for the standard ESP32 WiFi module above (same header, same pins), so no extra wiring is required. See the [available ESP32 WiFi/Ethernet adapters](adapters_esp32eth_stm32f4.html) page for supported adapters and purchase links.
+
+To use it, add the following line to your board.txt file so the firmware knows which module you're using.
+
+```text
+wifi.moduleType = esp32eth
+```
+
+To activate the ethernet connection when connected to WiFi already, send as a macro
+
+```text
+M552 S-1
+M552 S1 p"ethernet"
+```
+
+If you always want to use ethernet, replace the line `M552 S1` with `M552 S1 p"ethernet"`.

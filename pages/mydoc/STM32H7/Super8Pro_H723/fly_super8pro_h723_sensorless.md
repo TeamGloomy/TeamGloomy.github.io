@@ -1,0 +1,21 @@
+---
+title: Sensorless Homing on a Fly-Super8Pro H723
+tags: []
+keywords: 
+last_updated: 10/04/2024
+summary: "Using and Configuring Sensorless Homing on a Fly-Super8Pro H723"
+permalink: fly_super8pro_h723_sensorless.html
+folder: mydoc
+comments: false
+toc: false
+datatable: true
+boardname: Fly-Super8Pro H723
+TMC: "{ PG_12, PG_11, PG_10, PG_9, PD_7, PD_6, PA_8, PF_3 }"
+example: "stepper.TmcDiagPins = { PG_12, PG_11 }"
+example2: "stepper.TmcDiagPins = { NoPin, PG_11 }"
+onboardDrivers: false
+---
+
+{% include custom/H7/sensorless.html %}
+
+{% include custom/H7/sensorless_2.html %}

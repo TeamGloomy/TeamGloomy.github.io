@@ -1,0 +1,38 @@
+### Smart Drivers
+
+If using TMC5160 or TMC22XX drivers (where 22XX is either the TMC2208, TMC2209, TMC2225 or TMC2226), the following line must also be added to the board.txt file
+```
+stepper.numSmartDrivers = X
+```
+Where X is the number of drivers fitted in total.
+
+#### TMC5160 SPI Drivers
+
+{% if page.boardname == "Fly-407ZG" %}
+The Fly-407ZG is the only STM32 board that can't be used with 5160 drivers. This is due to them sharing the SPI pins used to also gain WiFi/SBC support.
+{% endif %}
+If using TMC5160 drivers, the following lines must also be added to the board.txt file.  
+{% if page.stepperSPI == 0 or page.stepperSPI == 2 %}
+```
+stepper.num5160Drivers = X
+stepper.spiChannel = {{page.stepperSPI}}
+```
+{% else %}
+```
+stepper.num5160Drivers = X
+stepper.spiChannel = {{page.stepperSPI}}
+SPI{{page.stepperSPI}}.pins = {{page.spiInfo}}
+```
+{% endif %}
+
+Where X is the number of TMC5160 drivers fitted.
+
+The drivers must be grouped together with the installed TMC5160s first. They can have gaps between each driver and/or driver type. So, if you have say 3 TMC5160s and 1 TMC22XX and 1 other driver, the 5160s should installed first (e.g. in slots 0, 1 and 2 or slots 0, 3 and 4), the TMC22XX in a slot after the 5160 and the remaining driver last. You can use RRF to assign any of those slots to an axis/extruder.
+
+{% if page.boardname == "Fly-Super8Pro H723" or page.boardname == "Fly-Super8Pro H743" or page.boardname == "Fly-Super8" %}
+{% include important.html content="Keep in mind the 3 first slots are powered through the 'Drive_Power High' terminals. This means if you use 48V and 24V drivers, make sure to not connect any 24V drivers on the 3 first slots."%}
+{% endif %}
+
+### Sensorless Homing
+
+Follow the instructions as found [here]({{page.sensorless}})

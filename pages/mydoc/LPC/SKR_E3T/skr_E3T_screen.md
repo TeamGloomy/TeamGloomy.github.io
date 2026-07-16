@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 22/12/2021
 summary: "How to connect a serial screen to an SKR E3 Turbo"
-sidebar: mydoc_sidebar
 permalink: skr_E3T_screen.html
 folder: mydoc
 comments: false

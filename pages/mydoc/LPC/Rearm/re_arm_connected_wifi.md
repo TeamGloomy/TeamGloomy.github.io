@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/07/2021
 summary: "How to connect to a Re-Arm via an ESP8266 WiFi Adapter"
-sidebar: mydoc_sidebar
 permalink: re_arm_connected_wifi_8266.html
 folder: mydoc
 comments: false
@@ -60,7 +59,7 @@ The table below shows the pins required on the ESP8266 and what they are connect
 
 ### Prepare the SD Card
 
-Follow the instructions on [Getting Started with RRF3](getting_started.html)
+Follow the instructions on [Getting Started with RRF3](getting_started_lpc.html)
 
 ### Board.txt file
 
@@ -78,7 +77,7 @@ heat.tempSensePins = { 0.24, 0.23, 0.25 }
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty_lpc.html) to set it up for RRF. Then type in the following  
 
 ```
 M552 S0

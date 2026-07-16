@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/07/2021
 summary: "How to connect to an SKR v1.1 via SBC"
-sidebar: mydoc_sidebar
 permalink: skr_1.1_connected_sbc.html
 folder: mydoc
 comments: false

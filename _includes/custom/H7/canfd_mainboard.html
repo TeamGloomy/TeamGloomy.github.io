@@ -1,0 +1,42 @@
+## Overview
+
+The {{page.boardname}} can be connected to any of the CAN-FD expansion boards produced by Duet3D (or cloned by Fysetc) as well as another STM32H743 or STM32H723 board running in expansion board mode. This includes, but is not limited to:
+
+* Duet 3 6HC (in expansion board mode - M954)
+* Duet 3 6XD (in expansion board mode - M954)
+* Duet 3 Mini 5+ (in expansion board mode - M954)
+* Fysetc Big Dipper (in expansion board mode - M954)
+* Another STM32H723 board (in expansion board mode - M954)
+* Another STM32H743 board (in expansion board mode - M954)
+* Duet 3 1XD
+* Duet 3 3HC
+* Duet 3 1HCL
+* Duet 3 1LC
+* Duet 3 Distribution Board
+* Sammy-C21
+
+### How to connect the board
+
+CAN-FD only requires 2 wires to be connected between each board, CAN-H and CAN-L.
+{% if page.canCableNote == true %}
+We recommend using stranded twisted wire pairs, such as those found in ethernet patch cables. If using a board such as the Fly-RRF-36 that comes supplied with a cable, we suggest twisting the CAN wires together.
+{% else %}
+We recommend using stranded twisted wire pairs, such as those found in ethernet patch cables.
+{% endif %}
+
+{% capture connectedToClause %}{% if page.canConnectorLocation %} They should be connected to {{page.canConnectorLocation}} on the {{page.boardname}}.{% endif %}{% endcapture %}
+Using the {{page.canWireExample}} as example{% if page.canImage %} (and the image below){% endif %}, the {{page.canWireHColor}} wire on the CAN-FD cable is the CAN-H wire and the {{page.canWireLColor}} is the CAN-L wire.{{connectedToClause}} CAN-H is connected to CAN-H and CAN-L is connected to CAN-L.
+{% if page.canExtraNote %}
+{{page.canExtraNote}}
+{% endif %}
+{% if page.canImage %}
+{% capture canImageUrl %}https://teamgloomy.github.io/images/{{page.canImage}}{% endcapture %}
+{% include image.html file=page.canImage url=canImageUrl alt="Toolboard CAN-FD wiring" caption="Toolboard CAN-FD wiring" %}
+{% endif %}
+{% if page.canTerminationText %}
+{{page.canTerminationText}}
+
+{% capture canTerminationImageUrl %}https://teamgloomy.github.io/images/{{page.canTerminationImage}}{% endcapture %}
+{% capture canTerminationCaption %}{{page.boardname}} CAN-FD 120ohm Resistors{% endcapture %}
+{% include image.html file=page.canTerminationImage url=canTerminationImageUrl alt=canTerminationCaption caption=canTerminationCaption %}
+{% endif %}

@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/06/2022
 summary: "General information regarding the Fysetc Spider 407 Version"
-sidebar: mydoc_sidebar
 permalink: fysetc_spider_407_general.html
 folder: mydoc
 comments: false

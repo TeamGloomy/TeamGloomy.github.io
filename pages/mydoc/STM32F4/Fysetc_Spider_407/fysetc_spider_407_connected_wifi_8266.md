@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 25/03/2022
 summary: "How to connect to an Fysetc Spider 407 Version via an ESP8266 WiFi Adapter"
-sidebar: mydoc_sidebar
 permalink: fysetc_spider_407_connected_wifi_8266.html
 folder: mydoc
 comments: false
@@ -35,7 +34,7 @@ Another module can be used but custom cabling may be required.
 
 ### Prepare the SD Card
 
-Follow the instructions on [Getting Started with RRF3](getting_started.html){:target="_blank"}
+Follow the instructions on [Getting Started with RRF3](getting_started_stm32f4.html){:target="_blank"}
 
 ### Board.txt file
 
@@ -90,7 +89,7 @@ stepper.TmcDiagPins = { PG_6, PG_9, PG_10, PG_11, PG_12, PG_13, PG_14, PG_15 }
 
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
 For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include PG_6 and PG_9 in your board.txt file.  
-For more information about setting up sensorless homing, please read [this](sensorless.html){:target="_blank"}.  
+For more information about setting up sensorless homing, please read [this](sensorless_stm32f4.html){:target="_blank"}.  
 
 ### Driver Diag Pin
 
@@ -104,7 +103,7 @@ Place the *board.txt* file in a directory called "sys" on the SD card and instal
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty_stm32f4.html) to set it up for RRF. Then type in the following  
 
 ```text
 M997 S1

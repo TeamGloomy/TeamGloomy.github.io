@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 19/01/2022
 summary: "Connecting a Fly-CDY via WiFi"
-sidebar: mydoc_sidebar
 permalink: fly_cdy_connected_wifi.html
 folder: mydoc
 comments: false
@@ -34,7 +33,7 @@ Choose the correct corresponding firmware (DuetWiFiServer-esp8266-lpc.bin) from 
 
 ### Prepare the SD Card
 
-Follow the instructions on [Getting Started with RRF3](getting_started.html)
+Follow the instructions on [Getting Started with RRF3](getting_started_lpc.html)
 
 ### Board.txt file
 
@@ -70,7 +69,7 @@ stepper.TmcDiagPins = {1.29, 1.28, 1.27, 1.25, 1.22, 1.19}
 ```
 
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.28 in your board.txt file.  
-For more information about setting up sensorless homing, please read [this](sensorless.html).  
+For more information about setting up sensorless homing, please read [this](sensorless_lpc.html).  
 
 #### Driver Diag Pin
 
@@ -89,7 +88,7 @@ Open the config.g file that has been placed in the sys folder of the SD card and
 
 ### Final Setup
 
-Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty.html) to set it up for RRF. Then type in the following  
+Once connected, power up the board using 12-24v and connect to the USB port on the board. Using a program such as putty. Follow the instructions [here](putty_lpc.html) to set it up for RRF. Then type in the following  
 
 ```text
 M997 S1

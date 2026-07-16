@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 14/09/2021
 summary: "How to connect an accelerometer to a Fly-407ZG"
-sidebar: mydoc_sidebar
 permalink: fly_407zg_accelerometer.html
 folder: mydoc
 comments: false

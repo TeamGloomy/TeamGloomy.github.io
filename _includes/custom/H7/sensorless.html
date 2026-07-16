@@ -1,0 +1,62 @@
+{% include important.html content="Endstops can't be used with a TMC2209 or TMC2226 driver at the same time as sensorless homing/stall detection and they must be unplugged" %}
+
+## Overview
+
+{% if page.onboardDrivers %}
+Sensorless homing and stall detection is functional for the {{page.driverType}}'s onboard the {{page.boardname}}.
+{% else %}
+Sensorless homing and stall detection is functional for all TMC2209's, TMC2226's and TMC5160's and is supported on the {{page.boardname}}.
+{% endif %}
+
+Getting stall detection working can be tricky and sensorless homing will almost certainly require some tuning.  
+ 
+As always the Duet wiki pages provide a lot of information that may also be of [help](https://docs.duet3d.com/en/User_manual/Connecting_hardware/Sensors_stall_detection){:target="_blank"}.
+
+## board.txt Changes
+
+{% if page.onboardDrivers %}
+To use the sensorless homing, an addition to the board.txt file is required (to specify the pins used for the DIAG signals from the drivers). A jumper is also required to be added for each driver to enable the diag pin. Further information can be found [here]({{page.diagPinInfo}}) 
+{% else %}
+To use sensorless homing/stall detection with TMC2209 or TMC2226 the following line must be added to the board.txt file. It is not needed with TMC5160. The pin numbers below start at Driver 0 (typically the X driver)
+{% endif %}
+```
+stepper.TmcDiagPins = {{page.TMC}}
+```
+Please only include the diag pin numbers where you intend to use sensorless homing on that axis.  
+For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include {{page.example}} in your board.txt file.  
+If you only want to enable sensorless homing/stall detection on driver 1, only include {{page.example2}}
+
+{% if page.boardname == "Fly-CDYv2" or page.boardname == "Fly-CDYv3" %}
+The driver diag pins correspond to the following endstops.  
+
+<div class="datatable-begin"></div>
+
+|Driver|Endstop|Pin|
+| :------------- |:-------------|:-------------|
+|X|X-Min|PC_7|
+|Y|X-Max|PC_6|
+|Z|Y-Min|PD_11|
+|E0|Y-Max|PD_10|
+|E1|Z-Min|PB_10|
+|E2|Z-Max|PB_11|
+
+<div class="datatable-end"></div>
+{% endif %}
+{% if page.boardname == "Fly-Super8" %}
+The driver diag pins correspond to the following endstops.  
+
+<div class="datatable-begin"></div>
+
+|Driver|Endstop|Pin|
+| :------------- |:-------------|:-------------|
+|0|IO0|PG_12|
+|1|IO1|PG_11|
+|2|IO2|PG_10|
+|3|IO3|PG_9|
+|4|IO4|PD_7|
+|5|IO5|PD_6|
+|6|IO6|PA_8|
+|7|HV IN|PF_3|
+
+<div class="datatable-end"></div>
+{% endif %}

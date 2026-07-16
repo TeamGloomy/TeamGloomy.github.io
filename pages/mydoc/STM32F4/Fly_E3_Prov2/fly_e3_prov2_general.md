@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 07/01/2022
 summary: "General information regarding the Fly-E3-Pro-v2"
-sidebar: mydoc_sidebar
 permalink: fly_e3_prov2_general.html
 folder: mydoc
 comments: false

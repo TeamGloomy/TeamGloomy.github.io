@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 17/08/2022
 summary: "Details of each item that can be configured in Board.txt"
-sidebar: mydoc_sidebar
 permalink: board_txt_lpc.html
 folder: mydoc
 comments: false
@@ -14,7 +13,7 @@ datatable: true
 
 Below is a list of items that can be configured using the /sys/board.txt file.
 
-Anything entered in the board.txt file takes precidence over what is set in the firmware.
+Anything entered in the board.txt file takes precedence over what is set in the firmware.
 
 Examples are given using LPC pins.
 
@@ -31,18 +30,18 @@ Examples are given using LPC pins.
 |adc.preFilter.numberSamples|adc.preFilter.numberSamples = 8|This sets the number of samples to be used to get each value. The larger the value, the smoother the value but lag may also be introduced. The default is 8||
 |adc.preFilter.sampleRate|adc.preFilter.sampleRate = 10000|This sets the analogue to digital converter sample rate in Hz||
 |atx.initialPowerOn|atx.initialPowerOn = 1|This sets the ATX power pin as on as soon as the board powers up rather than having to wait for M80 to be ran. The default is true||
-|atx.powerPin|atx.PowerPin = 2.12|This sets the pin to be used for controlling an ATX power supply||
+|atx.powerPin|atx.powerPin = 2.12|This sets the pin to be used for controlling an ATX power supply||
 |atx.powerPinInverted|atx.powerPinInverted = 0|Some ATX power supplies are active low for off and some are active high. This allows that to be set. Use either 0 or 1||
-|heat.spiTempSensorChannel|heat.spiTempSensorChannel = 255|this selects which SPI channel is used to communicate with the temperature sensor board. Can be set to 255 to indicate no channel to be used|LPC has three SPI interfaces (two channels 0 and 1 are hardware based - SSP0 and SSP1 and channel 2 is software|
+|heat.spiTempSensorChannel|heat.spiTempSensorChannel = 255|This selects which SPI channel is used to communicate with the temperature sensor board. Can be set to 255 to indicate no channel to be used|LPC has three SPI interfaces (two channels 0 and 1 are hardware based - SSP0 and SSP1 and channel 2 is software|
 |heat.spiTempSensorCSPins|heat.spiTempSensorCSPins = {1.21, NoPin}|Sets the SPI temperature sensor chip select pin. Can be set to 255 to indicate no channel to be used|LPC accepts a maximum of 2 sensors|
 |heat.tempSensePins|heat.tempSensePins = {0.25,0.23}|Sets the temperature sensor pins starting with the bed|LPC Accepts a maximum of 3 entries|
 |led.neopixelPin|led.neopixelPin = 1.24|This sets the output pin for neopixel control||
 |leds.diagnostic|leds.diagnostic = 1.18|This would set the correct pin for controlling a diagnostic LED||
 |board|board = fly_e3|This sets the correct board pin mapping to load. See table below for current list||
 |sbc.csPin|sbc.csPin = 0.16|Allow use of non standard CS pin||
-|sbc.TfrReadyPin ("sbc.lpcTfrReadyPin" is no longer supported from 3.4.1_RC1)|sbc.TfrReadyPin = 0.28 or sbc.TfrReadyPin = 0.28|This sets the transfer ready pin when attaching an SBC||
-|sdCard.external.cardDetectPin|externalSDCard.cardDetectPin|Sets the external SD card detect pin||
-|sdCard.external.csPin|externalSDCard.csPin|Sets the external SD card chip select pin||
+|sbc.TfrReadyPin ("sbc.lpcTfrReadyPin" is no longer supported from 3.4.1_RC1)|sbc.TfrReadyPin = 0.28|This sets the transfer ready pin when attaching an SBC||
+|sdCard.external.cardDetectPin|sdCard.external.cardDetectPin|Sets the external SD card detect pin||
+|sdCard.external.csPin|sdCard.external.csPin|Sets the external SD card chip select pin||
 |sdCard.external.spiChannel|sdCard.external.spiChannel = 255|this selects which one is used for the external SD card, can also be set to 255 to indicate no channel is used||
 |sdCard.external.spiFrequencyHz|sdCard.external.spiFrequencyHz = 4000000|Sets the SPI speed for an external SD card in Hz||
 |sdCard.internal.spiFrequencyHz|sdCard.internal.spiFrequencyHz = 4000000|Sets the SPI speed for the internal SD card in Hz||
@@ -63,7 +62,7 @@ Examples are given using LPC pins.
 
 <div class="datatable-end"></div>
 
-## lpc.board Types
+## Board Types
 
 Current preprogrammed boards
 

@@ -1,0 +1,17 @@
+## First Boot
+
+{% include note.html content="These steps assume the hostname of your SBC is `duet3`. If you changed the hostname in the 'OS Customisation' settings, use that hostname instead of `duet3`." %}
+
+1. Turn on power to the {{page.boardname}} and the SBC.
+2. Wait for the SBC to boot. The first boot takes about 1 minute, and the SBC restarts two or three times during this time. Later boots take about 30 seconds.
+3. If you did not set up your Raspberry Pi using the 'OS Customisation' settings in Raspberry Pi Imager, Raspberry Pi OS will ask you for this information now. Connect a screen and a keyboard to the SBC so that you can see these messages and respond to them.
+   1. Set the keyboard language.
+   2. Set a username and password.
+4. Setup finishes and shows a command prompt. To set up WiFi and SSH, log in using the username and password you just created. Then type `sudo raspi-config` and press Enter.
+5. To set up WiFi, select 'System Options > Wireless LAN'. Select your country, then enter your WiFi network name (SSID) and password.
+6. To set up SSH, select 'Interface Options > SSH' and enable it.
+7. Select 'Finish' to close the configuration tool.
+
+{% include tip.html content="If you are using the 'full' version of DuetPi with a screen attached, the SBC boots and then the Chromium browser opens DuetWebControl in full screen automatically. Press F11 to exit full screen and see the Raspberry Pi desktop." %}
+
+If you are connecting over the network, open a web browser and go to `http://duet3.local/`.

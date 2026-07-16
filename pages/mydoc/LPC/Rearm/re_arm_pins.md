@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 19/09/2021
 summary: "The pin names of the Re-Arm in the firmware"
-sidebar: mydoc_sidebar
 permalink: re_arm_pins.html
 folder: mydoc
 comments: false

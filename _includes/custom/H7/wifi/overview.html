@@ -1,0 +1,8 @@
+## Overview
+
+The {{page.boardname}} is an {{page.mcu}} based board.
+
+Since RRF 3.5-RC4, firmware for STM32F4, STM32H723 and STM32H743 boards works as follows:
+* Each board has its own firmware file, instead of one firmware file covering many boards.
+* WiFi mode and SBC mode are both included in the same firmware file. If an SD card is present, the board starts in WiFi mode. If no SD card is present, the board starts in SBC mode. This is the same way that Duet3D boards work.
+* A board.txt setting selects which type of WiFi module is installed.

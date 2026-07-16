@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/07/2021
 summary: "How to connect an MKS SGen L v2.0 via SBC"
-sidebar: mydoc_sidebar
 permalink: mks_sgen_l_2_connected_sbc.html
 folder: mydoc
 comments: false
@@ -89,7 +88,7 @@ If using sensorless homing/stall detection (supported by only the TMC2209 or TMC
 stepper.TmcDiagPins = {1.29, 1.27, 1.25, 1.28, 1.26}
 ```
 Please only include the diag pin numbers where you intend to use sensorless homing on that axis. For example, if you only intend to use sensorless homing/stall detection on driver 0 and driver 1, only include 1.29 and 1.27 in your board.txt file.  
-For more information about setting up sensorless homing, please read [this](sensorless.html).  
+For more information about setting up sensorless homing, please read [this](sensorless_lpc.html).  
 
 #### Driver Diag Pin
 

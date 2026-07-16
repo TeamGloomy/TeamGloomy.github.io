@@ -1271,3 +1271,89 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     color: #000000;
     opacity: 1
 }
+
+/* MCU selector cards on the landing page */
+.mcu-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 28px 0 36px;
+}
+
+.mcu-card {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dde1e5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    background: #fff;
+    transition: transform .15s ease-out, box-shadow .15s ease-out;
+}
+
+.mcu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.mcu-card-header {
+    padding: 18px 20px 14px;
+    color: #fff;
+}
+
+.mcu-card-h7 .mcu-card-header { background: #2e8540; }
+.mcu-card-f4 .mcu-card-header { background: #1a7bb9; }
+.mcu-card-lpc .mcu-card-header { background: #4a4f57; }
+
+.mcu-card-header h3 {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.mcu-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(255,255,255,0.22);
+    color: #fff;
+}
+
+.mcu-card-body {
+    padding: 16px 20px;
+    flex: 1;
+}
+
+.mcu-card-body ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.mcu-card-body li {
+    margin-bottom: 6px;
+}
+
+.mcu-btn {
+    display: block;
+    text-align: center;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.mcu-btn-h7 { background: #2e8540; }
+.mcu-btn-h7:hover { background: #256b33; }
+.mcu-btn-f4 { background: #1a7bb9; }
+.mcu-btn-f4:hover { background: #15628f; }
+.mcu-btn-lpc { background: #4a4f57; }
+.mcu-btn-lpc:hover { background: #383c42; }
+
+@media (max-width: 700px) {
+    .mcu-selector {
+        flex-direction: column;
+    }
+}

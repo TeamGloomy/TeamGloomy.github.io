@@ -1,0 +1,22 @@
+## Manual board.txt Changes
+
+If you are using a set of config files provided by someone else, or do not need to use the configurator, you may need to create your board.txt file manually.
+Most board.txt settings are already pre-configured for each board.
+The preset settings for the {{page.boardname}} are listed below for reference.
+
+{% include {{page.rrfboot}} %}
+
+{% if page.rrfbootOverrides == false %}
+Unless you are overriding some of the above settings, or adding additional features, such as an accelerometer or 12864 display, a board.txt file is not required.  
+
+### Sensorless Homing
+
+Follow the instructions as found [here]({{page.sensorless}})
+
+You can now continue getting the SD card in the correct format.
+{% endif %}
+
+{% if page.rrfbootOverrides == true %}
+There should be no need to override any of the above preset values unless you are adding additional features, such as an accelerometer or 12864 display.  
+You will however still need a board.txt file to configure, as a minimum, the drivers used on your board.
+{% endif %}

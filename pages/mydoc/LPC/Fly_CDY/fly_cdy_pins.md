@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 19/09/2021
 summary: "Fly-CDY Pin Names"
-sidebar: mydoc_sidebar
 permalink: fly_cdy_pins.html
 folder: mydoc
 comments: false

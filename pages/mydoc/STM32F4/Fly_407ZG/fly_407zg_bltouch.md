@@ -4,7 +4,6 @@ tags: []
 keywords: 
 last_updated: 15/02/2023
 summary: "How to connect a BLTouch or BTT MicroProbe to a Fly-407ZG"
-sidebar: mydoc_sidebar
 permalink: fly_407zg_bltouch.html
 folder: mydoc
 comments: false
