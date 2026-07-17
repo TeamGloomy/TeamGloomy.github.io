@@ -1379,7 +1379,7 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     padding-left: 18px;
     max-height: 340px;
     overflow-y: auto;
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
 
 .mcu-board-list-items li {
