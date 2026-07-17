@@ -63,6 +63,87 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
 
 </div>
 
+## Supported Boards
+
+<div class="board-list-grid">
+
+  <div class="board-list-column board-list-h7">
+    <h4>STM32H7</h4>
+    <ul>
+      <li>AFC-Lite V1.0</li>
+      <li>Fly-E3-Ultra H723</li>
+      <li>Fly-C5 H723 (Only with RRF 3.7)</li>
+      <li>Fly-C8-Pro H723 (Only with RRF 3.7)</li>
+      <li>Fly-MMU V1.0 H723</li>
+      <li>Fly-ProX10 H723</li>
+      <li>Fly-Super5Pro H723</li>
+      <li>Fly-Super8Pro H723</li>
+      <li>Fly-Super8Pro H743</li>
+      <li>Fysetc Spider King H723</li>
+      <li>LDO Leviathan v1.3</li>
+      <li>SKR3 H723</li>
+      <li>SKR3 H743</li>
+      <li>SKR3 EZ H723</li>
+      <li>SKR3 EZ H743</li>
+      <li>BTT Kraken H723</li>
+      <li>BTT Scylla v1.0 H723</li>
+    </ul>
+    <a href="supported_boards.html">Full board and driver details &raquo;</a>
+  </div>
+
+  <div class="board-list-column board-list-f4">
+    <h4>STM32F4</h4>
+    <ul>
+      <li>Fly-407ZG</li>
+      <li>Fly-CDYv2</li>
+      <li>Fly-CDYv3</li>
+      <li>Fly-E3</li>
+      <li>Fly-E3-v2</li>
+      <li>Fly-E3-Pro</li>
+      <li>Fly-E3-Pro-v3</li>
+      <li>Fly-Gemini-V1</li>
+      <li>Fly-Gemini-V1.1</li>
+      <li>Fly-Gemini-V2.0</li>
+      <li>Fly-Gemini-V3.0</li>
+      <li>Fly-Super8-V1</li>
+      <li>Fly-Super8-V1.1</li>
+      <li>Fly-Super8-V1.2</li>
+      <li>Fly-Super8-V1.3</li>
+      <li>SKR v2</li>
+      <li>SKR-RRF-E3 + Expansion Board</li>
+      <li>SKR Pro v1.1</li>
+      <li>SKR Pro v1.2</li>
+      <li>BTT GTR v1.0 + M5 Expansion Board</li>
+      <li>BTT Octopus v1.1 F429 Version</li>
+      <li>BTT Octopus Pro v1.0 F429 Version</li>
+      <li>BTT Octopus X7</li>
+    </ul>
+    <a href="supported_boards_stm32f4.html">Full board and driver details &raquo;</a>
+  </div>
+
+  <div class="board-list-column board-list-lpc">
+    <h4>LPC</h4>
+    <ul>
+      <li>Azsmz Mini</li>
+      <li>Azteeg X5 Mini v1.1</li>
+      <li>Azteeg X5 Mini v2</li>
+      <li>Azteeg X5 Mini v3</li>
+      <li>Fly-CDY</li>
+      <li>MKS Sbase v1.3</li>
+      <li>MKS SGen L v1.0</li>
+      <li>MKS SGen L v2.0</li>
+      <li>ReArm</li>
+      <li>SKR v1.1</li>
+      <li>SKR v1.3</li>
+      <li>SKR v1.4 (standard and turbo)</li>
+      <li>SKR E3 Turbo</li>
+      <li>Smoothieboard</li>
+    </ul>
+    <a href="supported_boards_lpc.html">Full board and driver details &raquo;</a>
+  </div>
+
+</div>
+
 ## Partnership
 
 TeamGloomy are working in close partnership with Flymaker/Mellow to ensure that 100% compatibility is obtained with their boards and to cover all of your 3D printer electronics requirements.
