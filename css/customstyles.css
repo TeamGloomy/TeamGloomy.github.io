@@ -1358,44 +1358,35 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     }
 }
 
-/* Supported boards list on the landing page */
-.board-list-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    margin: 20px 0 36px;
+/* Supported boards list, embedded inside each MCU card on the landing page */
+.mcu-board-list {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e8eb;
 }
 
-.board-list-column {
-    flex: 1 1 280px;
-    border: 1px solid #dde1e5;
-    border-radius: 10px;
-    padding: 16px 20px 20px;
-    background: #fff;
+.mcu-board-list-label {
+    margin: 0 0 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: #6a7178;
 }
 
-.board-list-column h4 {
-    margin: 0 0 10px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid;
+.mcu-board-list-items {
+    margin: 0 0 8px;
+    padding-left: 18px;
+    max-height: 170px;
+    overflow-y: auto;
+    font-size: 0.85rem;
 }
 
-.board-list-h7 h4 { border-color: #2e8540; color: #2e8540; }
-.board-list-f4 h4 { border-color: #1a7bb9; color: #1a7bb9; }
-.board-list-lpc h4 { border-color: #4a4f57; color: #4a4f57; }
-
-.board-list-column ul {
-    margin: 0 0 10px;
-    padding-left: 20px;
+.mcu-board-list-items li {
+    margin-bottom: 3px;
 }
 
-.board-list-column li {
-    margin-bottom: 4px;
-    font-size: 0.92rem;
-}
-
-@media (max-width: 700px) {
-    .board-list-grid {
-        flex-direction: column;
-    }
+.mcu-board-list-more {
+    font-size: 0.85rem;
+    font-weight: 600;
 }

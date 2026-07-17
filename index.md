@@ -26,6 +26,29 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
         <li>WiFi (ESP32) and SBC connectivity</li>
         <li>CAN-FD toolboards supported</li>
       </ul>
+      <div class="mcu-board-list">
+        <p class="mcu-board-list-label">Supported boards</p>
+        <ul class="mcu-board-list-items">
+          <li>AFC-Lite V1.0</li>
+          <li>Fly-E3-Ultra H723</li>
+          <li>Fly-C5 H723 (Only with RRF 3.7)</li>
+          <li>Fly-C8-Pro H723 (Only with RRF 3.7)</li>
+          <li>Fly-MMU V1.0 H723</li>
+          <li>Fly-ProX10 H723</li>
+          <li>Fly-Super5Pro H723</li>
+          <li>Fly-Super8Pro H723</li>
+          <li>Fly-Super8Pro H743</li>
+          <li>Fysetc Spider King H723</li>
+          <li>LDO Leviathan v1.3</li>
+          <li>SKR3 H723</li>
+          <li>SKR3 H743</li>
+          <li>SKR3 EZ H723</li>
+          <li>SKR3 EZ H743</li>
+          <li>BTT Kraken H723</li>
+          <li>BTT Scylla v1.0 H723</li>
+        </ul>
+        <a class="mcu-board-list-more" href="supported_boards.html">Full board and driver details &raquo;</a>
+      </div>
     </div>
     <a class="mcu-btn mcu-btn-h7" href="getting_started.html">Get Started with STM32H7 &raquo;</a>
   </div>
@@ -42,6 +65,35 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
         <li>CAN-FD toolboards via SPI2CAN adapter</li>
         <li>Firmware updates ended at RRF 3.6.3</li>
       </ul>
+      <div class="mcu-board-list">
+        <p class="mcu-board-list-label">Supported boards</p>
+        <ul class="mcu-board-list-items">
+          <li>Fly-407ZG</li>
+          <li>Fly-CDYv2</li>
+          <li>Fly-CDYv3</li>
+          <li>Fly-E3</li>
+          <li>Fly-E3-v2</li>
+          <li>Fly-E3-Pro</li>
+          <li>Fly-E3-Pro-v3</li>
+          <li>Fly-Gemini-V1</li>
+          <li>Fly-Gemini-V1.1</li>
+          <li>Fly-Gemini-V2.0</li>
+          <li>Fly-Gemini-V3.0</li>
+          <li>Fly-Super8-V1</li>
+          <li>Fly-Super8-V1.1</li>
+          <li>Fly-Super8-V1.2</li>
+          <li>Fly-Super8-V1.3</li>
+          <li>SKR v2</li>
+          <li>SKR-RRF-E3 + Expansion Board</li>
+          <li>SKR Pro v1.1</li>
+          <li>SKR Pro v1.2</li>
+          <li>BTT GTR v1.0 + M5 Expansion Board</li>
+          <li>BTT Octopus v1.1 F429 Version</li>
+          <li>BTT Octopus Pro v1.0 F429 Version</li>
+          <li>BTT Octopus X7</li>
+        </ul>
+        <a class="mcu-board-list-more" href="supported_boards_stm32f4.html">Full board and driver details &raquo;</a>
+      </div>
     </div>
     <a class="mcu-btn mcu-btn-f4" href="getting_started_stm32f4.html">Get Started with STM32F4 &raquo;</a>
   </div>
@@ -57,89 +109,28 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
         <li>WiFi (ESP8266) and SBC connectivity</li>
         <li>Firmware updates ended at RRF 3.3.0_16</li>
       </ul>
+      <div class="mcu-board-list">
+        <p class="mcu-board-list-label">Supported boards</p>
+        <ul class="mcu-board-list-items">
+          <li>Azsmz Mini</li>
+          <li>Azteeg X5 Mini v1.1</li>
+          <li>Azteeg X5 Mini v2</li>
+          <li>Azteeg X5 Mini v3</li>
+          <li>Fly-CDY</li>
+          <li>MKS Sbase v1.3</li>
+          <li>MKS SGen L v1.0</li>
+          <li>MKS SGen L v2.0</li>
+          <li>ReArm</li>
+          <li>SKR v1.1</li>
+          <li>SKR v1.3</li>
+          <li>SKR v1.4 (standard and turbo)</li>
+          <li>SKR E3 Turbo</li>
+          <li>Smoothieboard</li>
+        </ul>
+        <a class="mcu-board-list-more" href="supported_boards_lpc.html">Full board and driver details &raquo;</a>
+      </div>
     </div>
     <a class="mcu-btn mcu-btn-lpc" href="getting_started_lpc.html">Get Started with LPC &raquo;</a>
-  </div>
-
-</div>
-
-## Supported Boards
-
-<div class="board-list-grid">
-
-  <div class="board-list-column board-list-h7">
-    <h4>STM32H7</h4>
-    <ul>
-      <li>AFC-Lite V1.0</li>
-      <li>Fly-E3-Ultra H723</li>
-      <li>Fly-C5 H723 (Only with RRF 3.7)</li>
-      <li>Fly-C8-Pro H723 (Only with RRF 3.7)</li>
-      <li>Fly-MMU V1.0 H723</li>
-      <li>Fly-ProX10 H723</li>
-      <li>Fly-Super5Pro H723</li>
-      <li>Fly-Super8Pro H723</li>
-      <li>Fly-Super8Pro H743</li>
-      <li>Fysetc Spider King H723</li>
-      <li>LDO Leviathan v1.3</li>
-      <li>SKR3 H723</li>
-      <li>SKR3 H743</li>
-      <li>SKR3 EZ H723</li>
-      <li>SKR3 EZ H743</li>
-      <li>BTT Kraken H723</li>
-      <li>BTT Scylla v1.0 H723</li>
-    </ul>
-    <a href="supported_boards.html">Full board and driver details &raquo;</a>
-  </div>
-
-  <div class="board-list-column board-list-f4">
-    <h4>STM32F4</h4>
-    <ul>
-      <li>Fly-407ZG</li>
-      <li>Fly-CDYv2</li>
-      <li>Fly-CDYv3</li>
-      <li>Fly-E3</li>
-      <li>Fly-E3-v2</li>
-      <li>Fly-E3-Pro</li>
-      <li>Fly-E3-Pro-v3</li>
-      <li>Fly-Gemini-V1</li>
-      <li>Fly-Gemini-V1.1</li>
-      <li>Fly-Gemini-V2.0</li>
-      <li>Fly-Gemini-V3.0</li>
-      <li>Fly-Super8-V1</li>
-      <li>Fly-Super8-V1.1</li>
-      <li>Fly-Super8-V1.2</li>
-      <li>Fly-Super8-V1.3</li>
-      <li>SKR v2</li>
-      <li>SKR-RRF-E3 + Expansion Board</li>
-      <li>SKR Pro v1.1</li>
-      <li>SKR Pro v1.2</li>
-      <li>BTT GTR v1.0 + M5 Expansion Board</li>
-      <li>BTT Octopus v1.1 F429 Version</li>
-      <li>BTT Octopus Pro v1.0 F429 Version</li>
-      <li>BTT Octopus X7</li>
-    </ul>
-    <a href="supported_boards_stm32f4.html">Full board and driver details &raquo;</a>
-  </div>
-
-  <div class="board-list-column board-list-lpc">
-    <h4>LPC</h4>
-    <ul>
-      <li>Azsmz Mini</li>
-      <li>Azteeg X5 Mini v1.1</li>
-      <li>Azteeg X5 Mini v2</li>
-      <li>Azteeg X5 Mini v3</li>
-      <li>Fly-CDY</li>
-      <li>MKS Sbase v1.3</li>
-      <li>MKS SGen L v1.0</li>
-      <li>MKS SGen L v2.0</li>
-      <li>ReArm</li>
-      <li>SKR v1.1</li>
-      <li>SKR v1.3</li>
-      <li>SKR v1.4 (standard and turbo)</li>
-      <li>SKR E3 Turbo</li>
-      <li>Smoothieboard</li>
-    </ul>
-    <a href="supported_boards_lpc.html">Full board and driver details &raquo;</a>
   </div>
 
 </div>
