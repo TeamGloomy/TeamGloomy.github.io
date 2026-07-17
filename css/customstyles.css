@@ -1377,7 +1377,7 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
 .mcu-board-list-items {
     margin: 0 0 8px;
     padding-left: 18px;
-    max-height: 170px;
+    max-height: 340px;
     overflow-y: auto;
     font-size: 0.85rem;
 }
