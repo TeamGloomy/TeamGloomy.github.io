@@ -1281,6 +1281,7 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
 }
 
 .mcu-card {
+    position: relative;
     flex: 1 1 280px;
     display: flex;
     flex-direction: column;
@@ -1290,6 +1291,7 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     background: #fff;
     transition: transform .15s ease-out, box-shadow .15s ease-out;
+    cursor: pointer;
 }
 
 .mcu-card:hover {
@@ -1345,6 +1347,20 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     text-decoration: none !important;
 }
 
+/* Stretch the "Get Started" link over the whole card so the entire box is
+   clickable, not just the button caption. The board-detail link keeps its
+   own higher stacking context so it still navigates to its own page. */
+.mcu-btn::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.mcu-board-list-more {
+    position: relative;
+    z-index: 2;
+}
+
 .mcu-btn-h7 { background: #2e8540; }
 .mcu-btn-h7:hover { background: #256b33; }
 .mcu-btn-f4 { background: #1a7bb9; }
@@ -1355,6 +1371,12 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
 @media (max-width: 700px) {
     .mcu-selector {
         flex-direction: column;
+    }
+    .mcu-card {
+        flex-basis: auto;
+    }
+    .mcu-board-list-items {
+        max-height: 200px;
     }
 }
 
