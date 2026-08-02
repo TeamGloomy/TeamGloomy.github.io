@@ -18,8 +18,8 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
 
 <div class="firmware-versions">
   <span class="firmware-versions-label">Latest Firmware</span>
-  <span class="firmware-versions-item"><strong>STM32H7</strong> Stable <a href="{{ site.latestStableZipSTM32H7 }}" target="_blank">v{{ h7Stable }}</a> &middot; Beta <a href="{{ site.latestBetaZipSTM32H7 }}" target="_blank">v{{ h7Beta }}</a></span>
-  <span class="firmware-versions-item"><strong>STM32F4</strong> Stable <a href="{{ site.latestStableZipSTM32F4 }}" target="_blank">v{{ f4Stable }}</a> &middot; Beta <a href="{{ site.latestBetaZipSTM32F4 }}" target="_blank">v{{ f4Beta }}</a></span>
+  <span class="firmware-versions-item"><strong>STM32H7</strong> {% if h7Stable == h7Beta %}<a href="{{ site.latestStableZipSTM32H7 }}" target="_blank">v{{ h7Stable }}</a>{% else %}Stable <a href="{{ site.latestStableZipSTM32H7 }}" target="_blank">v{{ h7Stable }}</a> &middot; Beta <a href="{{ site.latestBetaZipSTM32H7 }}" target="_blank">v{{ h7Beta }}</a>{% endif %}</span>
+  <span class="firmware-versions-item"><strong>STM32F4</strong> {% if f4Stable == f4Beta %}<a href="{{ site.latestStableZipSTM32F4 }}" target="_blank">v{{ f4Stable }}</a>{% else %}Stable <a href="{{ site.latestStableZipSTM32F4 }}" target="_blank">v{{ f4Stable }}</a> &middot; Beta <a href="{{ site.latestBetaZipSTM32F4 }}" target="_blank">v{{ f4Beta }}</a>{% endif %}</span>
 </div>
 
 **Choose your board type below to get started:**

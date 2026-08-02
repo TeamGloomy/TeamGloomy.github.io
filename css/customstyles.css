@@ -1277,20 +1277,20 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 8px 24px;
+    gap: 10px 28px;
     margin: 4px 0 20px;
-    padding: 12px 18px;
+    padding: 14px 20px;
     background: #f3f6f4;
     border: 1px solid #dde1e5;
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
 }
 
 .firmware-versions-label {
     font-weight: 700;
     color: #4a4f57;
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     letter-spacing: .04em;
 }
 
@@ -1298,17 +1298,21 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     margin-right: 4px;
 }
 
+.firmware-versions-item a {
+    font-weight: 600;
+}
+
 /* MCU selector cards on the landing page */
 .mcu-selector {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
     margin: 28px 0 36px;
 }
 
 .mcu-card {
     position: relative;
-    flex: 1 1 280px;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     border: 1px solid #dde1e5;
@@ -1397,12 +1401,15 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
 .mcu-btn-canfd { background: #8e44ad; }
 .mcu-btn-canfd:hover { background: #72368a; }
 
+@media (max-width: 1000px) {
+    .mcu-selector {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 700px) {
     .mcu-selector {
-        flex-direction: column;
-    }
-    .mcu-card {
-        flex-basis: auto;
+        grid-template-columns: 1fr;
     }
     .mcu-board-list-items,
     .mcu-toolboard-list-items {
