@@ -11,6 +11,17 @@ hide_sidebar: true
 Welcome to the TeamGloomy port of [RepRapFirmware](http://www.duet3d.com){:target="_blank"} for LPC and STM32 based 3D printer boards.
 This firmware brings all the power of Duet's open-source firmware to a wide range of third-party hardware.
 
+{% assign h7Stable = site.latestStableZipSTM32H7 | split: "/" | last | remove_first: "v" %}
+{% assign h7Beta = site.latestBetaZipSTM32H7 | split: "/" | last | remove_first: "v" %}
+{% assign f4Stable = site.latestStableZipSTM32F4 | split: "/" | last | remove_first: "v" %}
+{% assign f4Beta = site.latestBetaZipSTM32F4 | split: "/" | last | remove_first: "v" %}
+
+<div class="firmware-versions">
+  <span class="firmware-versions-label">Latest Firmware</span>
+  <span class="firmware-versions-item"><strong>STM32H7</strong> Stable <a href="{{ site.latestStableZipSTM32H7 }}" target="_blank">v{{ h7Stable }}</a> &middot; Beta <a href="{{ site.latestBetaZipSTM32H7 }}" target="_blank">v{{ h7Beta }}</a></span>
+  <span class="firmware-versions-item"><strong>STM32F4</strong> Stable <a href="{{ site.latestStableZipSTM32F4 }}" target="_blank">v{{ f4Stable }}</a> &middot; Beta <a href="{{ site.latestBetaZipSTM32F4 }}" target="_blank">v{{ f4Beta }}</a></span>
+</div>
+
 **Choose your board type below to get started:**
 
 <div class="mcu-selector">
@@ -131,6 +142,35 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
       </div>
     </div>
     <a class="mcu-btn mcu-btn-lpc" href="getting_started_lpc.html">Get Started with LPC &raquo;</a>
+  </div>
+
+  <div class="mcu-card mcu-card-canfd">
+    <div class="mcu-card-header">
+      <h3>CAN-FD Toolboards</h3>
+      <span class="mcu-badge mcu-badge-active">Works with STM32H7 Mainboards</span>
+    </div>
+    <div class="mcu-card-body">
+      <ul>
+        <li>Fly and Fysetc expansion/toolboards</li>
+        <li>Connects via 2-wire CAN-FD</li>
+        <li>Also compatible with Duet 3 mainboards</li>
+      </ul>
+      <div class="mcu-toolboard-list">
+        <p class="mcu-board-list-label">Toolboards</p>
+        <ul class="mcu-toolboard-list-items">
+          <li><a href="fly_rrf_36_general.html">Fly-RRF-36</a></li>
+          <li><a href="fly_sb2040_max_v3_general.html">Fly-SB2040 Max V3</a></li>
+          <li><a href="fly_sb2040_pro_max_v3_general.html">Fly-SB2040 Pro Max V3</a></li>
+          <li><a href="fly_sht36_max_v3_general.html">Fly-SHT36 Max V3</a></li>
+          <li><a href="fly_openpnp_general.html">Fly-OpenPNP</a></li>
+          <li><a href="stridemax_v2_general.html">Fysetc StrideMax Dual V2.0</a></li>
+          <li><a href="pitb_v2_general.html">Fysetc PITB V2.0</a></li>
+          <li><a href="afc_lite_v1_0_h723_general.html">AFC-Lite V1.0</a></li>
+          <li><a href="fly_mmu_v1_0_h723_general.html">Fly-MMU V1.0</a></li>
+        </ul>
+      </div>
+    </div>
+    <a class="mcu-btn mcu-btn-canfd" href="supported_boards.html#can-fd-expansion-boards">See All CAN-FD Boards &raquo;</a>
   </div>
 
 </div>

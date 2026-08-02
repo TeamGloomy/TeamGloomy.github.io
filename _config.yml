@@ -141,6 +141,6 @@ latestStableZipSTM32F4: "https://github.com/gloomyandy/RepRapFirmware/releases/t
 latestBetaZipSTM32F4: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.3"
 
 latestStableFirmwareSTM32H7: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.3"
-latestBetaFirmwareSTM32H7: "https://github.com/gloomyandy/RRFBuild/tree/v3.6-dev/releases/3.6.3"
+latestBetaFirmwareSTM32H7: "https://github.com/gloomyandy/RRFBuild/tree/v3.7-dev/releases/3.7.0-beta.2"
 latestStableZipSTM32H7: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.3"
-latestBetaZipSTM32H7: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.6.3"
+latestBetaZipSTM32H7: "https://github.com/gloomyandy/RepRapFirmware/releases/tag/v3.7.0-beta.2"

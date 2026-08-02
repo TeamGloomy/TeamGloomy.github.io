@@ -1272,6 +1272,32 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     opacity: 1
 }
 
+/* Latest firmware version banner on the landing page */
+.firmware-versions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 24px;
+    margin: 4px 0 20px;
+    padding: 12px 18px;
+    background: #f3f6f4;
+    border: 1px solid #dde1e5;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.firmware-versions-label {
+    font-weight: 700;
+    color: #4a4f57;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: .04em;
+}
+
+.firmware-versions-item strong {
+    margin-right: 4px;
+}
+
 /* MCU selector cards on the landing page */
 .mcu-selector {
     display: flex;
@@ -1367,6 +1393,9 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
 .mcu-btn-f4:hover { background: #15628f; }
 .mcu-btn-lpc { background: #4a4f57; }
 .mcu-btn-lpc:hover { background: #383c42; }
+.mcu-card-canfd .mcu-card-header { background: #8e44ad; }
+.mcu-btn-canfd { background: #8e44ad; }
+.mcu-btn-canfd:hover { background: #72368a; }
 
 @media (max-width: 700px) {
     .mcu-selector {
@@ -1375,9 +1404,44 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     .mcu-card {
         flex-basis: auto;
     }
-    .mcu-board-list-items {
+    .mcu-board-list-items,
+    .mcu-toolboard-list-items {
         max-height: 200px;
     }
+}
+
+/* Toolboard list on the CAN-FD card - items are real links to each
+   toolboard's page, so this needs its own stacking context above the
+   card-wide stretched link (see .mcu-btn::after) rather than inheriting
+   the plain-text behaviour of .mcu-board-list-items. */
+.mcu-toolboard-list {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e8eb;
+}
+
+.mcu-toolboard-list-items {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding-left: 18px;
+    max-height: 340px;
+    overflow-y: auto;
+    font-size: 1rem;
+}
+
+.mcu-toolboard-list-items li {
+    margin-bottom: 3px;
+}
+
+.mcu-toolboard-list-items a {
+    color: #2c2f33;
+    text-decoration: none;
+}
+
+.mcu-toolboard-list-items a:hover {
+    color: #8e44ad;
+    text-decoration: underline;
 }
 
 /* Supported boards list, embedded inside each MCU card on the landing page */
