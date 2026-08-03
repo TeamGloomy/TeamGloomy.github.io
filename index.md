@@ -40,23 +40,23 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
       <div class="mcu-board-list">
         <p class="mcu-board-list-label">Supported boards</p>
         <ul class="mcu-board-list-items">
-          <li>AFC-Lite V1.0</li>
-          <li>Fly-E3-Ultra H723</li>
-          <li>Fly-C5 H723 (Only with RRF 3.7)</li>
-          <li>Fly-C8-Pro H723 (Only with RRF 3.7)</li>
-          <li>Fly-MMU V1.0 H723</li>
-          <li>Fly-ProX10 H723</li>
-          <li>Fly-Super5Pro H723</li>
-          <li>Fly-Super8Pro H723</li>
-          <li>Fly-Super8Pro H743</li>
-          <li>Fysetc Spider King H723</li>
-          <li>LDO Leviathan v1.3</li>
-          <li>SKR3 H723</li>
-          <li>SKR3 H743</li>
-          <li>SKR3 EZ H723</li>
-          <li>SKR3 EZ H743</li>
-          <li>BTT Kraken H723</li>
-          <li>BTT Scylla v1.0 H723</li>
+          <li><a href="afc_lite_v1_0_h723_general.html">AFC-Lite V1.0</a></li>
+          <li><a href="fly_e3_ultra_general.html">Fly-E3-Ultra H723</a></li>
+          <li><a href="fly_c5_h723_general.html">Fly-C5 H723 (Only with RRF 3.7)</a></li>
+          <li><a href="fly_c8_pro_h723_general.html">Fly-C8-Pro H723 (Only with RRF 3.7)</a></li>
+          <li><a href="fly_mmu_v1_0_h723_general.html">Fly-MMU V1.0 H723</a></li>
+          <li><a href="fly_prox10_h723_general.html">Fly-ProX10 H723</a></li>
+          <li><a href="fly_super5pro_h723_general.html">Fly-Super5Pro H723</a></li>
+          <li><a href="fly_super8pro_h723_general.html">Fly-Super8Pro H723</a></li>
+          <li><a href="fly_super8pro_h743_general.html">Fly-Super8Pro H743</a></li>
+          <li><a href="fysetc_spider_h723_general.html">Fysetc Spider H723</a></li>
+          <li><a href="ldo_leviathan_v1_3_h743_general.html">LDO Leviathan v1.3</a></li>
+          <li><a href="skr_3_h723_general.html">SKR3 H723</a></li>
+          <li><a href="skr_3_h743_general.html">SKR3 H743</a></li>
+          <li><a href="skr_3_ez_h723_general.html">SKR3 EZ H723</a></li>
+          <li><a href="skr_3_ez_h743_general.html">SKR3 EZ H743</a></li>
+          <li><a href="btt_kraken_h723_general.html">BTT Kraken H723</a></li>
+          <li><a href="btt_scylla_v1_h723_general.html">BTT Scylla v1.0 H723</a></li>
         </ul>
         <a class="mcu-board-list-more" href="supported_boards.html">Full board and driver details &raquo;</a>
       </div>
@@ -79,28 +79,28 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
       <div class="mcu-board-list">
         <p class="mcu-board-list-label">Supported boards</p>
         <ul class="mcu-board-list-items">
-          <li>Fly-407ZG</li>
-          <li>Fly-CDYv2</li>
-          <li>Fly-CDYv3</li>
-          <li>Fly-E3</li>
-          <li>Fly-E3-v2</li>
-          <li>Fly-E3-Pro</li>
-          <li>Fly-E3-Pro-v3</li>
-          <li>Fly-Gemini-V1</li>
-          <li>Fly-Gemini-V1.1</li>
-          <li>Fly-Gemini-V2.0</li>
+          <li><a href="fly_407zg_general.html">Fly-407ZG</a></li>
+          <li><a href="fly_cdyv2_general.html">Fly-CDYv2</a></li>
+          <li><a href="fly_cdyv3_general.html">Fly-CDYv3</a></li>
+          <li><a href="fly_e3_general.html">Fly-E3</a></li>
+          <li><a href="fly_e3_v2_general.html">Fly-E3-v2</a></li>
+          <li><a href="fly_e3_pro_general.html">Fly-E3-Pro</a></li>
+          <li><a href="fly_e3_pro_v3_general.html">Fly-E3-Pro-v3</a></li>
+          <li><a href="fly_gemini_general.html">Fly-Gemini-V1</a></li>
+          <li><a href="fly_gemini_v1.1_general.html">Fly-Gemini-V1.1</a></li>
+          <li><a href="fly_gemini_v2_general.html">Fly-Gemini-V2.0</a></li>
           <li>Fly-Gemini-V3.0</li>
-          <li>Fly-Super8-V1</li>
-          <li>Fly-Super8-V1.1</li>
-          <li>Fly-Super8-V1.2</li>
-          <li>Fly-Super8-V1.3</li>
-          <li>SKR v2</li>
-          <li>SKR-RRF-E3 + Expansion Board</li>
-          <li>SKR Pro v1.1</li>
-          <li>SKR Pro v1.2</li>
-          <li>BTT GTR v1.0 + M5 Expansion Board</li>
-          <li>BTT Octopus v1.1 F429 Version</li>
-          <li>BTT Octopus Pro v1.0 F429 Version</li>
+          <li><a href="fly_super8_general.html">Fly-Super8-V1</a></li>
+          <li><a href="fly_super8_hardware_revisions.html">Fly-Super8-V1.1</a></li>
+          <li><a href="fly_super8_hardware_revisions.html">Fly-Super8-V1.2</a></li>
+          <li><a href="fly_super8_hardware_revisions.html">Fly-Super8-V1.3</a></li>
+          <li><a href="skr_2.0_general.html">SKR v2</a></li>
+          <li><a href="skr_rrf_e3_general.html">SKR-RRF-E3 + Expansion Board</a></li>
+          <li><a href="skr_pro_1.1_pins.html">SKR Pro v1.1</a></li>
+          <li><a href="skr_pro_1.2_pins.html">SKR Pro v1.2</a></li>
+          <li><a href="gtr_pins.html">BTT GTR v1.0 + M5 Expansion Board</a></li>
+          <li><a href="btt_octopus_1.1_f429_general.html">BTT Octopus v1.1 F429 Version</a></li>
+          <li><a href="btt_octopus_pro_1.0_f429_general.html">BTT Octopus Pro v1.0 F429 Version</a></li>
           <li>BTT Octopus X7</li>
         </ul>
         <a class="mcu-board-list-more" href="supported_boards_stm32f4.html">Full board and driver details &raquo;</a>
@@ -127,15 +127,15 @@ This firmware brings all the power of Duet's open-source firmware to a wide rang
           <li>Azteeg X5 Mini v1.1</li>
           <li>Azteeg X5 Mini v2</li>
           <li>Azteeg X5 Mini v3</li>
-          <li>Fly-CDY</li>
-          <li>MKS Sbase v1.3</li>
-          <li>MKS SGen L v1.0</li>
-          <li>MKS SGen L v2.0</li>
-          <li>ReArm</li>
-          <li>SKR v1.1</li>
-          <li>SKR v1.3</li>
-          <li>SKR v1.4 (standard and turbo)</li>
-          <li>SKR E3 Turbo</li>
+          <li><a href="fly_cdy_general.html">Fly-CDY</a></li>
+          <li><a href="mks_sbase_pins.html">MKS Sbase v1.3</a></li>
+          <li><a href="mks_sgen_l_1_pins.html">MKS SGen L v1.0</a></li>
+          <li><a href="mks_sgen_l_2_pins.html">MKS SGen L v2.0</a></li>
+          <li><a href="re_arm_pins.html">ReArm</a></li>
+          <li><a href="skr_1.1_pins.html">SKR v1.1</a></li>
+          <li><a href="skr_1.3_pins.html">SKR v1.3</a></li>
+          <li><a href="skr_1.4_pins.html">SKR v1.4 (standard and turbo)</a></li>
+          <li><a href="skr_E3T_pins.html">SKR E3 Turbo</a></li>
           <li>Smoothieboard</li>
         </ul>
         <a class="mcu-board-list-more" href="supported_boards_lpc.html">Full board and driver details &raquo;</a>

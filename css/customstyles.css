@@ -1368,6 +1368,14 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
     margin-bottom: 6px;
 }
 
+/* Fixed height for the top highlight bullets (not the board/toolboard
+   lists below) so the "Supported boards" / "Toolboards" section lines
+   up at the same vertical position across all 4 cards, regardless of
+   how many lines the highlights wrap to. */
+.mcu-card-body > ul {
+    min-height: 150px;
+}
+
 .mcu-btn {
     display: block;
     text-align: center;
@@ -1468,6 +1476,8 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
 }
 
 .mcu-board-list-items {
+    position: relative;
+    z-index: 2;
     margin: 0 0 8px;
     padding-left: 18px;
     max-height: 340px;
@@ -1478,6 +1488,19 @@ pre.highlight>button:active,pre.highlight>button:focus,pre.highlight>button:hove
 .mcu-board-list-items li {
     margin-bottom: 3px;
 }
+
+.mcu-board-list-items a {
+    color: #2c2f33;
+    text-decoration: none;
+}
+
+.mcu-board-list-items a:hover {
+    text-decoration: underline;
+}
+
+.mcu-card-h7 .mcu-board-list-items a:hover { color: #2e8540; }
+.mcu-card-f4 .mcu-board-list-items a:hover { color: #1a7bb9; }
+.mcu-card-lpc .mcu-board-list-items a:hover { color: #4a4f57; }
 
 .mcu-board-list-more {
     font-size: 0.85rem;
