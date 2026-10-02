@@ -27,10 +27,26 @@ Below is the orientation of accelerometer fitted to the Fly-RRF-36.
 
 See [M955](https://docs.duet3d.com/User_manual/Reference/Gcodes/M955) for how to setup and configure the accelerometer, including its orientation in relation to the printer XYZ axis.
 
+#### RRF 3.6.3 and below
+
 An example command would be  
 
 ```text
 M955 P124.0 I10
 ```
 
+#### RRF 3.7-RC2 and above
+
+An example command would be  
+
+```text
+M955 P0 C"124.spi.cs.acc+int.acc" I10
+```
+
+Please be aware that the P value is sequential and each accelerometer should have its own number.
+
+#### Accelerometer Orientation
+
 Duet Forum user [Nuramori](https://forum.duet3d.com/user/nuramori) has produced [a graphical guide](https://www.dropbox.com/s/hu2w5mk57l4zqpg/Accelerometer%20Orientation.pdf?dl=0) to help illustrate the orientation options.
+
+[Resonance Lab](https://github.com/jaysuk/resonance-lab) has a feature that you can run to help you identify the orientation of your accelerometer.
