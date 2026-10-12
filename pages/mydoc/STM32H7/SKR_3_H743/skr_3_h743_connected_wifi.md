@@ -17,6 +17,7 @@ wifiEth: true
 sensorless: "skr_3_h743_sensorless.html"
 rrfboot: custom/H7/rrfboot/rrfboot_skr_3_h743.html
 rrfbootOverrides: false
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/wifi/overview.html %}

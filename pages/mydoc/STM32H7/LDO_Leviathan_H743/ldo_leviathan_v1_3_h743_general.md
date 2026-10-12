@@ -10,6 +10,7 @@ comments: false
 toc: false
 datatable: true
 boardname: LDO Leviathan v1.3 H743
+mcu_suffix: stm32h7
 ---
 
 {% include warning.html content="Documentation for the LDO Leviathan v1.3 H743 is currently incomplete. The board is supported by RRF 3.5.0 and later but dedicated wiki pages have not yet been written." %}

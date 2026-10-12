@@ -16,6 +16,7 @@ canWireLColor: black
 canConnectorLocation: "the middle two connections on the CAN-FD connector"
 canExtraNote: "Although the SKR3 H743 Version also provides ground and 24v on that same 6 pin JST connector, we recommend wiring the toolboard directly to the PSU."
 canImage: toolboard_canfd.png
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/canfd_mainboard.html %}

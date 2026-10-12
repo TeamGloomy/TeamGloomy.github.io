@@ -10,6 +10,7 @@ comments: false
 toc: false
 datatable: true
 boardname: BTT Scylla V1
+mcu_suffix: stm32h7
 ---
 
 ## {{page.boardname}} Pinout Diagram

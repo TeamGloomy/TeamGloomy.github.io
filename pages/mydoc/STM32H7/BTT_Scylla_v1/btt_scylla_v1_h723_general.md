@@ -10,6 +10,7 @@ comments: false
 toc: false
 datatable: true
 boardname: BTT Scylla V1
+mcu_suffix: stm32h7
 ---
 
 {% include warning.html content="The BTT Scylla V1 is a CNC/laser/spindle controller board, **not** a 3D printer board. It does not have a heated bed output, standard thermistor inputs, or extruder connections. If you are looking for a 3D printer board, see the other boards listed in the sidebar." %}

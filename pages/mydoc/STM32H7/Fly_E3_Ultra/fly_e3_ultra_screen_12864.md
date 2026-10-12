@@ -15,6 +15,7 @@ spiChannel: 2
 reprapCustomSPI: true
 reprapSPIChannel : 5
 reprapSPIPins: "{PE_9, NoPin, PA_14}"
+mcu_suffix: stm32h7
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">

@@ -17,6 +17,7 @@ wifiEth: true
 sensorless: "btt_scylla_v1_h723_sensorless.html"
 rrfboot: custom/H7/rrfboot/rrfboot_btt_scylla_v1_h723.html
 rrfbootOverrides: false
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/wifi/overview.html %}

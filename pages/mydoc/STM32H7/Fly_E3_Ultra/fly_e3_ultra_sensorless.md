@@ -16,6 +16,7 @@ example2: "stepper.TmcDiagPins = { NoPin, PB_10 }"
 onboardDrivers: true
 driverType: TMC2209
 diagPinInfo: fly_e3_ultra_general.html
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/sensorless.html %}

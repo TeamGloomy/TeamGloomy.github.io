@@ -12,6 +12,7 @@ datatable: true
 boardname: Fly-MMU V1.0 H723
 canDefaultAddress: 119
 canRs232Slider: true
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/canfd_expansion.html %}

@@ -18,6 +18,7 @@ canImage: fly_super5pro_can.png
 canTerminationText: "Please ensure that you have the two jumpers installed as shown below if you are using this board as a mainboard or if it is the last expansion board on the CANbus."
 canTerminationImage: fly_super5pro_can_resistor.png
 canCableNote: true
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/canfd_mainboard.html %}

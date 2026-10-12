@@ -18,6 +18,7 @@ canExtraNote: "Although the BTT Scylla V1 also provides ground on the same screw
 canImage: toolboard_canfd.png
 canTerminationText: "Please ensure that you have the jumper installed as shown below if you are using this board as a mainboard or if it is the last expansion board on the CANbus."
 canTerminationImage: btt_scylla_v1_can_resistor.png
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/canfd_mainboard.html %}

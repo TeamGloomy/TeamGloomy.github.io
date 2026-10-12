@@ -16,7 +16,7 @@ bootloader_button_name: "reset1"
 bootloader_img1: "fly_super5pro_dfu.png"
 bootloader_cap1: "Fly-Super5Pro H723 DFU Mode"
 bootloader_jumpers: true
-
+mcu_suffix: stm32h7
 ---
 
 {% capture bootloaderURL %} {{page.bootloaderURL}} {% endcapture %}

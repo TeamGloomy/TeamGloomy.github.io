@@ -14,6 +14,7 @@ canWireExample: "Fly-RRF-36"
 canWireHColor: yellow
 canWireLColor: white
 canConnectorLocation: "the two CAN pins near the WiFi module"
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/canfd_mainboard.html %}

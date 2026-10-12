@@ -15,6 +15,7 @@ canWireHColor: yellow
 canWireLColor: white
 canConnectorLocation: "the two pins nearest to the WiFi module"
 canImage: fly_super8pro_can.png
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/canfd_mainboard.html %}

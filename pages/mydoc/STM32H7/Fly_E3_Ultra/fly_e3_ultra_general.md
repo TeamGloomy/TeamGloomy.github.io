@@ -8,7 +8,9 @@ permalink: fly_e3_ultra_general.html
 folder: mydoc
 comments: false
 toc: false
-datatable: true
+datatable: true
+mcu_suffix: stm32h7
+
 ---
 
 ## Overview

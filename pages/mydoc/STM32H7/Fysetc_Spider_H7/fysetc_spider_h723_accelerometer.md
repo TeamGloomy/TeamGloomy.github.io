@@ -17,6 +17,7 @@ CS: PA_4
 int: PB_10
 spiChannel: 0
 location: Accelerometer header
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/accelerometer.html %}

@@ -11,6 +11,7 @@ toc: false
 datatable: true
 firmware: "firmware_skr3ez_h723.bin"
 rrfboot: custom/H7/rrfboot/rrfboot_skr_3_ez_h723.html
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/upgradingSBC.html %}

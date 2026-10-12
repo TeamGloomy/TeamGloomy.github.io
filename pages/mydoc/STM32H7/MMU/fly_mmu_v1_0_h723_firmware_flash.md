@@ -14,6 +14,7 @@ booturl1: "{{site.latestStableFirmwareSTM32H7}}"
 booturl2: /bootloader/bootloader_mmu_h723.bin
 bootloader_button_name: "BOOT"
 bootloader_jumpers: false
+mcu_suffix: stm32h7
 
 ---
 

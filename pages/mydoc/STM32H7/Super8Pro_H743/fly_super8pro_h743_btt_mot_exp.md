@@ -8,7 +8,8 @@ permalink: fly_super8pro_h743_btt_mot_exp.html
 folder: mydoc
 comments: false
 toc: false
-datatable: true
+datatable: true
+mcu_suffix: stm32h7
 ---
 
 ## Overview

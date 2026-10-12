@@ -14,6 +14,7 @@ spiChannel: 0
 reprapCustomSPI: true
 reprapSPIChannel : 5
 reprapSPIPins: "{PE_9, NoPin, PB_1}"
+mcu_suffix: stm32h7
 ---
 
 ## Wiring

@@ -10,6 +10,7 @@ comments: false
 toc: false
 datatable: true
 boardname: SKR3EZ H723
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/rrfboot/rrfboot.html %}

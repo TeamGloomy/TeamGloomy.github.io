@@ -15,6 +15,7 @@ yellowPin: PA_2
 yellowName: ymax
 whitePin: PA_0
 whiteName: zmin
+mcu_suffix: stm32h7
 ---
 
 {% include warning.html content="The pins used for the bltouch/microprobe are shared with ymax and zmin so make sure you aren't using those ports." %}

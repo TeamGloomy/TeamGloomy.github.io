@@ -9,7 +9,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
-
+mcu_suffix: stm32h7
 ---
 
 ## SKR3 H723 Version Pinout Diagram

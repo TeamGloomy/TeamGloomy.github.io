@@ -24,6 +24,7 @@ SerialRXTX: "{ PA_10, PA_9 }"
 sensorless: "fly_super8pro_h743_sensorless.html"
 rrfboot: custom/H7/rrfboot/rrfboot_fly_super8pro_h743.html
 rrfbootOverrides: false
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/wifi/overview.html %}

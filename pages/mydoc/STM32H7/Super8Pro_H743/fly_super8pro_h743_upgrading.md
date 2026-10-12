@@ -12,6 +12,7 @@ datatable: true
 firmware: "firmware_super8pro_h743.bin"
 wifiFirmware: "DuetWiFiServer.bin"
 rrfboot: custom/H7/rrfboot/rrfboot_fly_super8pro_h743.html
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/upgrading.html %}

@@ -11,6 +11,7 @@ toc: false
 datatable: true
 boardname: LDO Leviathan v1.3 H723
 firmwareFlash: "firmware.cur"
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/sbc_usb_1.html %}

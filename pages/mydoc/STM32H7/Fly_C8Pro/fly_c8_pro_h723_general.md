@@ -10,6 +10,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-C8 Pro H723
+mcu_suffix: stm32h7
 ---
 
 {% include warning.html content="Documentation for the Fly-C8 Pro H723 is currently incomplete. The board is supported by RRF 3.5.0 and later but dedicated wiki pages have not yet been written." %}

@@ -17,6 +17,7 @@ bootloader_button_name: "BOOT"
 bootloader_img1: "fly_mmu_v1_dfu.png"
 bootloader_cap1: "Fly-MMU V1.0 H723 DFU Mode"
 bootloader_jumpers: false
+mcu_suffix: stm32h7
 
 ---
 

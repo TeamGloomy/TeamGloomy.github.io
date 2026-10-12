@@ -18,6 +18,7 @@ wifiFly: true
 rrfbootOverrides: false
 rrfboot: custom/H7/rrfboot/rrfboot_fly_e3_ultra.html
 sensorless: "fly_e3_ultra_sensorless.html"
+mcu_suffix: stm32h7
 
 ---
 

@@ -12,6 +12,7 @@ datatable: true
 boardname: Fly-E3-Ultra H723
 location: "near the X and Y stepper motor drivers"
 resistor: 
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/onboard_temp.html %}

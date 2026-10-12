@@ -17,6 +17,7 @@ canImage: fly_e3_ultra_can.png
 canTerminationText: "Please ensure that you have switch 5 set to on as shown below if you are using this board as a mainboard or if it is the last expansion board on the CANbus."
 canTerminationImage: fly_e3_ultra_120.png
 canCableNote: true
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/canfd_mainboard.html %}

@@ -9,6 +9,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+mcu_suffix: stm32h7
 ---
 
 ## Fly-MMU V1.0 H723 Pinout Diagram

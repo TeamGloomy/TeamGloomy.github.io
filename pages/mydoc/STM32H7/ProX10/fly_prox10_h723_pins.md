@@ -10,6 +10,7 @@ comments: false
 toc: false
 datatable: true
 boardname: Fly-ProX10 H723
+mcu_suffix: stm32h7
 ---
 
 ## {{page.boardname}} Pinout Diagram

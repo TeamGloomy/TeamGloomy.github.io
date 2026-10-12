@@ -14,6 +14,7 @@ RX: "PD_9"
 TX: "PD_8"
 screenType: serial
 serial: 2
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/screens.html %}

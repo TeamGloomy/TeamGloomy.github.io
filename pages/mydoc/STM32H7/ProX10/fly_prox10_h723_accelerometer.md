@@ -8,7 +8,8 @@ permalink: fly_prox10_h723_accelerometer.html
 folder: mydoc
 comments: false
 toc: false
-datatable: true
+datatable: true
+mcu_suffix: stm32h7
 ---
 
 ## Overview

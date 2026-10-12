@@ -14,6 +14,7 @@ TMC: "{ PB_14, PB_13, PA_0, PA_1, PA_2, PA_3 }"
 example: "stepper.TmcDiagPins = { PB_14, PB_13 }"
 example2: "stepper.TmcDiagPins = { NoPin, PB_13 }"
 onboardDrivers: false
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/sensorless.html %}

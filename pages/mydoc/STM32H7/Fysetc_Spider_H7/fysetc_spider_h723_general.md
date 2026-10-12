@@ -9,6 +9,7 @@ folder: mydoc
 comments: false
 toc: false
 datatable: true
+mcu_suffix: stm32h7
 ---
 
 ## Overview

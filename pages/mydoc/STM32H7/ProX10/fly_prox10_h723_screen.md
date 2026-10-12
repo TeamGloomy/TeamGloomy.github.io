@@ -14,6 +14,7 @@ RX: "PA_10"
 TX: "PA_9"
 screenType: serial
 serial: 1
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/screens.html %}
