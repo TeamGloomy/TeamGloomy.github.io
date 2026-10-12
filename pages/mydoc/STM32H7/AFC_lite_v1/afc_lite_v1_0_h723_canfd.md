@@ -11,6 +11,7 @@ toc: false
 datatable: true
 boardname: AFC-Lite V1.0 H723
 canDefaultAddress: 119
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/canfd_expansion.html %}

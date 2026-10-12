@@ -12,6 +12,7 @@ datatable: true
 boardname: AFC-Lite V1.0
 bootloader_button_name: "BOOT"
 bootloader_jumpers: false
+mcu_suffix: stm32h7
 
 ---
 

@@ -17,6 +17,7 @@ CS: PD_14
 int: PG_3
 spiChannel: 5
 location: EXP1 header
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/accelerometer.html %}

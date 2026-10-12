@@ -8,7 +8,9 @@ permalink: afc_lite_v1_0_h723_general.html
 folder: mydoc
 comments: false
 toc: false
-datatable: true
+datatable: true
+mcu_suffix: stm32h7
+
 ---
 
 ## Overview

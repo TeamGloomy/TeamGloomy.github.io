@@ -11,6 +11,7 @@ toc: false
 datatable: true
 boardname: BTT Kraken
 mcu: STM32H723VGT6
+mcu_suffix: stm32h7
 firmware: firmware_kraken_h723.bin
 wifi: ESP32
 adapterRXTX: WiFi

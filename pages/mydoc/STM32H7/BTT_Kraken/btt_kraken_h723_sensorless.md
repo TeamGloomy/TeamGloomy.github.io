@@ -12,6 +12,7 @@ datatable: true
 boardname: BTT Kraken
 onboardDrivers: true
 driverType: 2160
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/sensorless_5160.html %}

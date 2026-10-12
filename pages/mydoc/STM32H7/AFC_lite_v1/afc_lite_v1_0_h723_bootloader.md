@@ -16,6 +16,7 @@ bootloader_button_name: "BOOT"
 bootloader_img1: "afc_lite_v1_DFU.png"
 bootloader_cap1: "AFC-Lite V1.0 H723 DFU Mode"
 bootloader_jumpers: false
+mcu_suffix: stm32h7
 
 ---
 

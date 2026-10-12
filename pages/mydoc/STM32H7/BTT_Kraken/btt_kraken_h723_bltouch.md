@@ -15,6 +15,7 @@ yellowPin: PE_9
 yellowName: Servo0
 whitePin: PG_1
 whiteName: probe
+mcu_suffix: stm32h7
 ---
 
 <ul id="profileTabs" class="nav nav-tabs">

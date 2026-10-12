@@ -10,6 +10,7 @@ comments: false
 toc: false
 datatable: true
 boardname: BTT Octopus Pro v1.1
+mcu_suffix: stm32h7
 ---
 
 ## Overview

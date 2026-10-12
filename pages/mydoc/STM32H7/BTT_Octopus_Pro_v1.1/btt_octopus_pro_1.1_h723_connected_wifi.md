@@ -11,6 +11,7 @@ toc: false
 datatable: true
 boardname: BTT Octopus Pro v1.1
 mcu: STM32H723VGT6
+mcu_suffix: stm32h7
 firmware: firmware-stm32h723-wifi.bin
 wifi: ESP32
 DRP: PD_7

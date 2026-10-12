@@ -18,6 +18,7 @@ int: PE_10
 spiChannel: 5
 location: EXP1 header
 showSPI: false
+mcu_suffix: stm32h7
 ---
 
 {% include custom/H7/accelerometer.html %}

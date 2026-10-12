@@ -9,7 +9,7 @@ Install them as identified in the image below.
 ## Final Setup
 
 {% assign mcu_suffix = page.sidebar | remove: "_sidebar" %}
-Once connected, power up the board using 12-24V and connect the USB port on the board to your computer. Connect to the board using a program such as PuTTY. Follow the instructions [here](putty_{{mcu_suffix}}.html) to set it up for RRF. Change the COM port to match the {{page.boardname}} and connect. The baud rate does not matter.
+Once connected, power up the board using 12-24V and connect the USB port on the board to your computer. Connect to the board using a program such as PuTTY. Follow the instructions [here](putty_{{page.mcu_suffix}}.html) to set it up for RRF. Change the COM port to match the {{page.boardname}} and connect. The baud rate does not matter. 
 {% include tip.html content="A tool that shows the COM port number automatically when a serial device is plugged in can make this step easier. One example is [Serial Port Monitor](https://helmpcb.com/software/serial-port-monitor)." %}
 
 ### Flashing the WiFi Firmware
